@@ -2,9 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+      <meta name="description" content="ApniJourney helps you explore amazing travel destinations and plan your journey easily." />
+
     <link rel="icon" type="image/svg+xml" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ApniJourney</title>
+    <meta property="og:title" content="ApniJourney" />
+  <meta property="og:description" content="Explore your own journey with us." />
+  <meta property="og:image" content="https://apnijourney.com/logo.png" />
+  <meta property="og:url" content="https://apnijourney.com" />
+  <meta property="og:type" content="website" />
   </head>
   <body>
     <div id="root"></div>
@@ -26,6 +33,15 @@
         );
       }
     })(window.location);
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ApniJourney",
+    "url": "https://apnijourney.com",
+    "logo": "https://apnijourney.com/logo.png"
+  }
   </script>
   </body>
 </html>
