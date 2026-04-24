@@ -72,7 +72,7 @@ const AddTrip = () => {
 console.log("Token from localStorage:", token);
 
     if (!token) {
-  setMessage("❌ Please login first");
+  alert("❌ Please login first");
   return;
 }
 
