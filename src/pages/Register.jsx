@@ -1,72 +1,83 @@
-
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { handleError, handleSuccess } from '../utils'
 
-
 const Register = () => {
-  
+
   const [signupInfo, setSignupInfo] = useState({
     name: '',
     email: '',
     password: ''
   })
-  const [loading, setLoading] = useState(false)
 
+  const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
 
-  const handlechange = (e) => {
-    const inputValue = e.target.value
-    const inputName = e.target.name
-    const oldValue = { ...signupInfo }
-    oldValue[inputName] = inputValue
-    setSignupInfo(oldValue)
+  // ✅ Handle Input Change (clean version)
+  const handleChange = (e) => {
+    const { name, value } = e.target
+
+    setSignupInfo((prev) => ({
+      ...prev,
+      [name]: value
+    }))
   }
 
+  // ✅ Submit Form
   const handleSubmit = async (e) => {
-  e.preventDefault()
-  const { name, email, password } = signupInfo
+    e.preventDefault()
 
-  if (!name || !email || !password) {
-    return handleError('Name, email and password are required')
-  }
+    const { name, email, password } = signupInfo
 
-  try {
-    setLoading(true) // ✅ start loading
-
-    const url = "https://apnijourney-api.onrender.com/api/auth/signup"
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(signupInfo)
-    })
-
-    const result = await response.json()
-    const { success, message, error } = result
-
-    if (success) {
-      handleSuccess(message)
-      navigate('/verify', { state: { email } })
-    } else if (error) {
-      handleError(error?.details[0]?.message)
-    } else {
-      handleError(message)
+    if (!name || !email || !password) {
+      return handleError('All fields are required')
     }
 
-  } catch (err) {
-    handleError("Something went wrong")
-  } finally {
-    setLoading(false) // ✅ stop loading
+    try {
+      setLoading(true)
+
+      const response = await fetch(
+        "https://apnijourney-api.onrender.com/api/auth/signup",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(signupInfo)
+        }
+      )
+
+      // ❗ Check if server responded
+      if (!response) {
+        throw new Error("Server not responding")
+      }
+
+      const data = await response.json()
+      console.log("API RESPONSE 👉", data)
+
+      // ✅ Correct way to handle response
+      if (response.ok) {
+        handleSuccess(data.message || "Signup successful")
+
+        // navigate to verify page
+        navigate('/verify', { state: { email } })
+
+      } else {
+        handleError(data.message || "Signup failed")
+      }
+
+    } catch (err) {
+      console.log("ERROR 👉", err)
+      handleError(err.message || "Network error")
+    } finally {
+      setLoading(false)
+    }
   }
-}
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-100 via-green-50 to-white px-4">
-      
-      <div className="w-full max-w-md bg-white rounded-2xl p-8
-        shadow-[8px_8px_24px_0px_rgba(66,68,90,0.35)]">
+
+      <div className="w-full max-w-md bg-white rounded-2xl p-8 shadow-[8px_8px_24px_rgba(66,68,90,0.35)]">
 
         <h1 className="text-3xl font-bold text-center text-blue-700 mb-6">
           Create Account 🚀
@@ -74,79 +85,77 @@ const Register = () => {
 
         <form onSubmit={handleSubmit} className="space-y-5">
 
+          {/* Name */}
           <div>
             <label className="block text-gray-600 font-medium mb-1">
               Name
             </label>
             <input
-              onChange={handlechange}
               type="text"
               name="name"
-              autoFocus
-              placeholder="Enter your name"
               value={signupInfo.name}
-              className="w-full px-4 py-2 border rounded-lg 
-              focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onChange={handleChange}
+              placeholder="Enter your name"
+              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
 
+          {/* Email */}
           <div>
             <label className="block text-gray-600 font-medium mb-1">
               Email
             </label>
             <input
-              onChange={handlechange}
               type="email"
               name="email"
-              placeholder="Enter your email"
               value={signupInfo.email}
-              className="w-full px-4 py-2 border rounded-lg 
-              focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onChange={handleChange}
+              placeholder="Enter your email"
+              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
 
+          {/* Password */}
           <div>
             <label className="block text-gray-600 font-medium mb-1">
               Password
             </label>
             <input
-              onChange={handlechange}
               type="password"
               name="password"
-              placeholder="Create a strong password"
               value={signupInfo.password}
-              className="w-full px-4 py-2 border rounded-lg 
-              focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onChange={handleChange}
+              placeholder="Create a strong password"
+              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
 
+          {/* Button */}
           <button
-  type="submit"
-  disabled={loading}
-  className={`w-full py-2 rounded-lg text-lg font-semibold transition duration-300
-  ${loading 
-    ? "bg-blue-400 cursor-not-allowed" 
-    : "bg-blue-700 hover:bg-blue-800 text-white"
-  }`}
->
-  {loading ? (
-  <div className="flex items-center justify-center gap-2">
-    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-    Signing...
-  </div>
-) : (
-  "Sign Up"
-)}
-</button>
+            type="submit"
+            disabled={loading}
+            className={`w-full py-2 rounded-lg text-lg font-semibold transition
+              ${loading
+                ? "bg-blue-400 cursor-not-allowed"
+                : "bg-blue-700 hover:bg-blue-800 text-white"
+              }`}
+          >
+            {loading ? (
+              <div className="flex justify-center items-center gap-2">
+                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                Signing...
+              </div>
+            ) : (
+              "Sign Up"
+            )}
+          </button>
 
         </form>
 
+        {/* Login */}
         <p className="text-center text-gray-600 mt-6">
           Already have an account?{" "}
-          <Link
-            to="/login"
-            className="text-blue-700 font-semibold hover:underline"
-          >
+          <Link to="/login" className="text-blue-700 font-semibold hover:underline">
             Login
           </Link>
         </p>
