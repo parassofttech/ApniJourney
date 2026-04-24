@@ -93,7 +93,7 @@ const Footer = () => {
             <h3 className="text-white font-bold text-xl mb-6">Explore</h3>
 
             <ul className="space-y-4">
-              <a href="/about">About Us</a>
+              <a href="/about" className="text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2 group text-md">About Us</a>
               {["Home", "My Trips", "Add Trip", "Gallery", "Contact"].map((link) => (
                 <li key={link}>
                   <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2 group text-md">
