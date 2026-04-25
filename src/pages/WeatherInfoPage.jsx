@@ -90,7 +90,7 @@ const WeatherInfoPage = () => {
             <div className="bg-white/20 p-3 rounded-2xl backdrop-blur-md">
               <CloudSun size={32} className="text-white" />
             </div>
-            <h1 className="text-2xl font-black tracking-tighter uppercase">SkyCast</h1>
+            <h2 className="text-2xl font-black tracking-tighter uppercase">SkyCast</h2>
           </motion.div>
 
           <form onSubmit={handleSearch} className="relative group w-full md:w-96">

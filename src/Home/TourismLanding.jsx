@@ -55,6 +55,7 @@ const TourismLanding = () => {
                     whileHover={{ scale: 1.1 }}
                     src="https://images.unsplash.com/photo-1514222134-b57cbb8ce073"
                     className="w-full h-full object-cover"
+                    alt="mountain"
                   />
                 </div>
 
@@ -62,6 +63,7 @@ const TourismLanding = () => {
                   <img
                     src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3"
                     className="w-full h-full object-cover"
+                    alt="upsplash"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/20">
                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-blue-600 shadow-lg">
@@ -116,12 +118,12 @@ const TourismLanding = () => {
               ✨ Discover the Magic of India
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 leading-tight">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 leading-tight">
               One Land, <br />
               <span className="bg-gradient-to-r from-blue-700 via-indigo-600 to-cyan-500 bg-clip-text text-transparent">
                 A Million Stories.
               </span>
-            </h1>
+            </h2>
 
             <p className="mt-8 text-slate-700 text-lg max-w-xl font-medium">
               Experience the heartbeat of India, from the majestic Himalayas

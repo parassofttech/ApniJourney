@@ -32,7 +32,7 @@ const Home = () => {
     <div>
 
       <Helmet>
-        <title>ApniJourney - Explore Your Own Journey | Travel & Weather</title>
+        
         <meta
           name="description"
           content="Discover top travel destinations, check live weather updates, and plan your perfect journey with ApniJourney."
@@ -41,7 +41,7 @@ const Home = () => {
 
     
       <h1 className="hidden">
-        ApniJourney - Explore Travel Destinations and Weather Information
+       Explore Travel Destinations and Weather Information
       </h1>
         <div><HeroSection/></div>
         {/* <div><SearchBar/></div> */}
