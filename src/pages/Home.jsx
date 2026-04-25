@@ -22,7 +22,7 @@ import UpcomingTrips from "../Home/UpcomingTrips";
 import TourismLanding from "../Home/TourismLanding";
 import WildlifeSlider from "../Home/WildlifeSlider";
 import WeatherInfo from "../Dashboard/WeatherInfo";
-import { Helmet } from "react-helmet-async";
+
 
 
 
@@ -30,14 +30,6 @@ const Home = () => {
   return (
    
     <div>
-
-      <Helmet>
-        
-        <meta
-          name="description"
-          content="Discover top travel destinations, check live weather updates, and plan your perfect journey with ApniJourney."
-        />
-      </Helmet>
 
     
       <h1 className="hidden">
