@@ -33,7 +33,7 @@ const Home = () => {
 
     
       <h1 className="hidden">
-       Explore Travel Destinations and Weather Information
+      ApniJourney -  Explore Travel Destinations and Weather Information
       </h1>
         <div><HeroSection/></div>
         {/* <div><SearchBar/></div> */}
