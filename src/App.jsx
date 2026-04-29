@@ -32,6 +32,7 @@ import VerifyOTP from "./pages/VerifyOTP";
 import AdminRoutes from "./admin/routes/AdminRoutes";
 import AdminTrips from "./admin/pages/AdminTrips";
 import Users from "./admin/pages/Users";
+import AdminLayout from "./admin/AdminLayout";
 
 
 const App = () => {
@@ -71,6 +72,9 @@ const App = () => {
             <Route path="/verify" element={<VerifyOTP />} />
             {/* <Route path="admin-trips" element={<AdminTrips />} />
             <Route path="/admin/users" element={<Users />} /> */}
+
+            <Route path="/admin/*" element={<AdminLayout />}/>
+
 
             
           </Routes>
