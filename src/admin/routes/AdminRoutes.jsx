@@ -16,6 +16,8 @@ const AdminRoutes = () => {
         <Route path="users" element={<Users />} />
         <Route path="message" element={<ContactMessages />} />
         <Route path="settings" element={<Settings />} />
+
+        
       </Route>
     
   );
