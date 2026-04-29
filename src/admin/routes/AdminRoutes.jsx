@@ -9,17 +9,15 @@ import Settings from "../pages/Settings";
 
 const AdminRoutes = () => {
   return (
-    
+    <Routes>
       <Route path="/admin" element={<AdminLayout />}>
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="trips" element={<Trips />} />
         <Route path="users" element={<Users />} />
         <Route path="message" element={<ContactMessages />} />
         <Route path="settings" element={<Settings />} />
-
-        
       </Route>
-    
+    </Routes>
   );
 };
 
