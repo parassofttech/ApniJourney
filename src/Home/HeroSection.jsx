@@ -5,7 +5,7 @@ import { Search, MapPin, Plane, Compass, Sparkles } from "lucide-react";
 
 const HeroSection = () => {
   const videos = [
-    "https://videos.pexels.com/video-files/13970899/13970899-hd_1920_1080_60fps.mp4",
+    
     "https://videos.pexels.com/video-files/856191/856191-hd_1920_1080_30fps.mp4",
     "https://videos.pexels.com/video-files/34379970/14564702_2560_1440_30fps.mp4",
     "https://videos.pexels.com/video-files/16668740/16668740-uhd_2560_1440_24fps.mp4",
