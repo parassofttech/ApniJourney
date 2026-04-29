@@ -69,7 +69,7 @@ const testimonials = [
     quote:
       "Trip reminders and packing checklists saved me from forgetting essentials. Super helpful!",
     avatar:
-      "https://kpopping.com/documents/c7/3/800/240309-TWICE-Sana-Music-Korea-Fansign-documents-2(1).jpeg?v=d965b",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg4sfsepfmmNfuCTozFRNbMVVhRaRHJoeVbQ&s",
   },
   {
     id: 8,
@@ -119,7 +119,7 @@ const testimonials = [
     quote:
       "The quick stats on dashboard help track my trips and budget at a glance. Nicely done!",
     avatar:
-      "https://media.licdn.com/dms/image/v2/D5603AQEeyXHe3ttrHg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718219339933?e=2147483647&v=beta&t=BGLEzwf5UKDiAtIWAOC6oxvxmdfYtwzc9Nf7sK3SS40",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8YpvtePR5FyMFMkMnX6mq-GQN_yl9lkgBWQ&s",
   },
 ];
 
