@@ -18,6 +18,8 @@ const AdminRoutes = () => {
         <Route path="settings" element={<Settings />} />
       </Route>
     </Routes>
+
+    
   );
 };
 
