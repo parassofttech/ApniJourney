@@ -7,7 +7,7 @@ const destinations = [
   {
     id: 1,
     title: "National Chambal Sanctuary",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Big_Mama_National_Chambal_sanctuary_01.jpg/250px-Big_Mama_National_Chambal_sanctuary_01.jpg",
+    image: "https://www.shutterstock.com/image-photo/crocodiles-large-semiaquatic-reptiles-powerful-600nw-2662580205.jpg",
     desc: "Home to the rare gharials and Ganges river dolphins.",
     color: "from-blue-900/80"
   },
