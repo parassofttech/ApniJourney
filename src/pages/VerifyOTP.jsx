@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import axios from "axios";
@@ -46,6 +46,12 @@ export default function VerifyOTP() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+  if (!email) {
+    navigate("/register"); // ya jo tumhara actual route hai
+  }
+}, [email, navigate]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 px-4">
