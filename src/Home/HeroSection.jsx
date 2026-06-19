@@ -31,7 +31,7 @@ const HeroSection = () => {
       
       {/* 🎥 Background Video with Transition */}
       <div className="absolute inset-0 w-full h-full">
-        <video
+        {/* <video
           key={currentVideo}
           autoPlay
           muted
@@ -40,7 +40,12 @@ const HeroSection = () => {
           onEnded={() => setCurrentVideo((prev) => (prev + 1) % videos.length)}
         >
           <source src={videos[currentVideo]} type="video/mp4" />
-        </video>
+        </video> */}
+
+        <img src="https://as2.ftcdn.net/v2/jpg/02/26/60/99/1000_F_226609917_0yjH7gIgK0NcSrhVLH0NwliBQdBQszaj.jpg" alt=""
+        className="w-full h-full object-cover transition-opacity duration-1000" />
+
+
         {/* Cinematic Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-[#020617]"></div>
       </div>
