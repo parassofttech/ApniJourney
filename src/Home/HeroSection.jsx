@@ -42,8 +42,8 @@ const HeroSection = () => {
           <source src={videos[currentVideo]} type="video/mp4" />
         </video> */}
 
-        <img src="https://as2.ftcdn.net/v2/jpg/02/26/60/99/1000_F_226609917_0yjH7gIgK0NcSrhVLH0NwliBQdBQszaj.jpg" alt=""
-        className="w-full h-full object-cover transition-opacity duration-1000" />
+        <img src="https://tailkits.com/hero-section-images-12.png" alt=""
+        className="w-full h-full object-cover " />
 
 
         {/* Cinematic Gradient Overlay */}
