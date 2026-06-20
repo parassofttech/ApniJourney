@@ -90,10 +90,10 @@ const WeatherInfo = () => {
 
         {/* HEADER */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-black text-slate-800 mb-2 flex justify-center items-center gap-2">
+          <h2 className="text-4xl font-black text-slate-800 mb-2 flex justify-center items-center gap-2">
             <CloudSun className="text-yellow-500" />
             Live Weather
-          </h1>
+          </h2>
 
           <form onSubmit={handleSearch} className="flex justify-center gap-3 mt-4">
             <input

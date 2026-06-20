@@ -32,9 +32,9 @@ const Home = () => {
     <div>
 
     
-      <h1 className="hidden">
+      {/* <h1 className="hidden">
       ApniJourney -  Explore Travel Destinations and Weather Information
-      </h1>
+      </h1> */}
         <div><HeroSection/></div>
         {/* <div><SearchBar/></div> */}
         <div className="relative "><DestPopular/></div>
