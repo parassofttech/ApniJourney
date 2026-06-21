@@ -22,7 +22,7 @@ import UpcomingTrips from "../Home/UpcomingTrips";
 import TourismLanding from "../Home/TourismLanding";
 import WildlifeSlider from "../Home/WildlifeSlider";
 import WeatherInfo from "../Dashboard/WeatherInfo";
-import GoogleAds from "../components/GoogleAds";
+// import GoogleAds from "../components/GoogleAds";
 
 
 
@@ -38,7 +38,7 @@ const Home = () => {
       </h1> */}
         <div><HeroSection/></div>
         {/* <div><SearchBar/></div> */}
-        <GoogleAds/>
+        {/* <GoogleAds/> */}
         <div className="relative "><DestPopular/></div>
         <div><PopularDestinations/></div>
         {/* <div><DestinationCard/></div> */}
