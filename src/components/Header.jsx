@@ -159,7 +159,7 @@ const Header = () => {
             Contact
           </Link>
           <Link
-            to="/contact"
+            to="/privacy-policy"
             className="relative text-gray-700 font-medium transition duration-300 
             hover:text-blue-600 
              after:content-[''] after:absolute after:left-0 after:-bottom-1 
@@ -325,12 +325,20 @@ const Header = () => {
   <Info size={18} /> About
 </Link>
 
+
 <Link
   to="/contact"
   onClick={() => setMenuOpen(false)}
   className="flex items-center gap-2 text-gray-700 hover:text-blue-600 font-medium transition"
 >
   <Phone size={18} /> Contact
+</Link>
+<Link
+  to="/privacy-policy"
+  onClick={() => setMenuOpen(false)}
+  className="flex items-center gap-2 text-gray-700 hover:text-blue-600 font-medium transition"
+>
+  <Info size={18} /> Privacy Policy
 </Link>
               {isAdmin === "true" && (
   <Link
