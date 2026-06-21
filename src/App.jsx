@@ -32,6 +32,7 @@ import VerifyOTP from "./pages/VerifyOTP";
 import AdminRoutes from "./admin/routes/AdminRoutes";
 import AdminTrips from "./admin/pages/AdminTrips";
 import Users from "./admin/pages/Users";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 
 const App = () => {
@@ -69,6 +70,8 @@ const App = () => {
             <Route path="/photo" element={<PhotoGalleryPage />} />
             <Route path="/weatherpage" element={<WeatherInfoPage />} />
             <Route path="/verify" element={<VerifyOTP />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
             {/* <Route path="admin-trips" element={<AdminTrips />} />
             <Route path="/admin/users" element={<Users />} /> */}
 

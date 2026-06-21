@@ -158,6 +158,16 @@ const Header = () => {
              hover:after:w-full"          >
             Contact
           </Link>
+          <Link
+            to="/contact"
+            className="relative text-gray-700 font-medium transition duration-300 
+            hover:text-blue-600 
+             after:content-[''] after:absolute after:left-0 after:-bottom-1 
+             after:w-0 after:h-[2px] after:bg-blue-600 
+             after:transition-all after:duration-300 
+             hover:after:w-full"          >
+            Privacy Policy
+          </Link>
           {isAdmin === "true" && (
   <Link
   to="/admin/dashboard"
