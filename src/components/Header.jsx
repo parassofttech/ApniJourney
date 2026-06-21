@@ -54,7 +54,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex  md:space-x-6 lg:space-x-4 items-center">
+        <div className="hidden lg:flex  md:space-x-4 lg:space-x-3 items-center">
           <Link
             to="/"
             className="relative text-gray-700 font-medium transition duration-300 
@@ -106,7 +106,7 @@ const Header = () => {
              hover:after:w-full"          >
             National Parks
           </Link>
-          <Link
+          {/* <Link
                 to="/weatherpage"
                 onClick={() => setMenuOpen(false)}
             className="relative text-gray-700 font-medium transition duration-300 
@@ -116,7 +116,7 @@ const Header = () => {
              after:transition-all after:duration-300 
              hover:after:w-full"              >
                 Weather Page
-              </Link>
+              </Link> */}
           <Link
             to="/add-trip"
             className="relative text-gray-700 font-medium transition duration-300 
@@ -168,6 +168,17 @@ const Header = () => {
              hover:after:w-full"          >
             Privacy Policy
           </Link>
+          <Link
+                to="/terms-and-conditions"
+                onClick={() => setMenuOpen(false)}
+            className="relative text-gray-700 font-medium transition duration-300 
+            hover:text-blue-600 
+             after:content-[''] after:absolute after:left-0 after:-bottom-1 
+             after:w-0 after:h-[2px] after:bg-blue-600 
+             after:transition-all after:duration-300 
+             hover:after:w-full"              >
+                Terms & Conditions
+              </Link>
           {isAdmin === "true" && (
   <Link
   to="/admin/dashboard"
@@ -339,6 +350,13 @@ const Header = () => {
   className="flex items-center gap-2 text-gray-700 hover:text-blue-600 font-medium transition"
 >
   <Info size={18} /> Privacy Policy
+</Link>
+<Link
+  to="/terms-and-conditions"
+  onClick={() => setMenuOpen(false)}
+  className="flex items-center gap-2 text-gray-700 hover:text-blue-600 font-medium transition"
+>
+  <Info size={18} /> Terms & Conditions
 </Link>
               {isAdmin === "true" && (
   <Link
