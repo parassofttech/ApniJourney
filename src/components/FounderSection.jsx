@@ -81,7 +81,7 @@ const FounderSection = () => {
                   {initials}
                 </div>
                 <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQGeEbP3nrtzJA/profile-displayphoto-shrink_200_200/B56ZpQCMbyKEAY-/0/1762279346709?e=2147483647&v=beta&t=Y6oUc5PAUMh5STJvJ5u_9Z5QtCyP7cLk5q_2HhKNfwY"
+                  src="/paras.jpg"
                   alt={founderName}
                   className="relative z-10 w-full h-full object-cover transition-all duration-700"
                   onError={(e) => { e.target.style.opacity = 0; }}
