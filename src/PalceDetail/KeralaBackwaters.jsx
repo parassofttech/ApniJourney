@@ -607,6 +607,339 @@ const KeralaBackwaters = () => {
 
 </section>
 
+{/* Budget Breakdown Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-500 selection:text-white">
+  
+  {/* Cyber-Atmospheric Background Glows */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-emerald-300/10 to-cyan-300/10 blur-[140px] rounded-full"></div>
+  </div>
+
+  {/* Header Block */}
+  <div className="text-center mb-16">
+    <span className="inline-flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-md">
+      ⚡ Financial Planner
+    </span>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900">
+      Budget Breakdown for Kerala
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Analyze daily cost structures and pick the ideal travel configuration that matches your pace.
+    </p>
+  </div>
+
+  {/* Premium Tier Matrix */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+    {/* Card 1: Budget Traveler */}
+    <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-emerald-400/60 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold border border-emerald-100 shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+            💸
+          </div>
+          <span className="text-[10px] font-black tracking-widest uppercase bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md">
+            Eco Tier
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Budget Nomad
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Perfect for backpackers and solo creators looking to scale coastal grids and hostels efficiently.
+        </p>
+
+        {/* Breakdown Items */}
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹450 – ₹950</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹350 – ₹700</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚌 Transp.</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹300 – ₹600</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Aggregate */}
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-emerald-600 tracking-tight">
+          ₹1,100 – ₹2,250 <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 2: Mid Range (Featured Column) */}
+    <div className="group bg-white border-2 border-cyan-500 hover:border-cyan-400 shadow-xl hover:shadow-2xl hover:shadow-cyan-500/10 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 relative ring-8 ring-cyan-500/5">
+      <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-black text-[10px] tracking-widest uppercase px-4 py-1 rounded-full shadow-md">
+        Recommended
+      </div>
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-lg font-bold border border-cyan-100 shadow-sm group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+            🌴
+          </div>
+          <span className="text-[10px] tracking-widest uppercase bg-cyan-50 text-cyan-700 px-2.5 py-1 rounded-md font-bold">
+            Balanced
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Mid-Range Explorer
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Ideal setup for couples and family units aiming for comfortable hotels and private canal boating.
+        </p>
+
+        {/* Breakdown Items */}
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹2,500 – ₹6,000</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹900 – ₹2,200</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚕 Transp.</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹1,500 – ₹2,500</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Aggregate */}
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-cyan-600 tracking-tight">
+          ₹4,900 – ₹10,700 <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 3: Luxury */}
+    <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-purple-400/60 shadow-md hover:shadow-xl hover:shadow-purple-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-lg font-bold border border-purple-100 shadow-sm group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+            👑
+          </div>
+          <span className="text-[10px] tracking-widest uppercase bg-purple-50 text-purple-700 px-2.5 py-1 rounded-md font-bold">
+            Elite Premium
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Luxury Opulence
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Crafted for elite backwater cruises, premium lagoon resorts, and intensive Ayurvedic spa stays.
+        </p>
+
+        {/* Breakdown Items */}
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹12,000 – ₹40k+</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹2,200 – ₹6,000</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">✈️ Transp.</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹3,000 – ₹7,000</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Aggregate */}
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-purple-600 tracking-tight">
+          ₹17,200 – ₹53k+ <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  {/* Pro-Tip Floating Banner */}
+  <div className="mt-14 text-center">
+    <div className="inline-flex items-center gap-3.5 bg-gradient-to-r from-cyan-500/10 via-emerald-500/5 to-transparent border border-cyan-500/20 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-cyan-950 font-semibold text-sm md:text-[15px] leading-relaxed">
+        <strong className="text-cyan-800 font-black">Smart Commute:</strong> Booking multi-destination intercity cabs directly through certified tourist unions or using Kerala's highly economical state water transport ferries is highly recommended to bypass expensive individual tourist traps!
+      </p>
+    </div>
+  </div>
+
+</section>
+
+{/* Shopping Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-violet-500 selection:text-white">
+  
+  {/* Dynamic Retail Background Tints (Spices & Silk Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-violet-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-50 to-amber-50 border border-violet-100 text-violet-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🛍️ Retail Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-violet-950 to-gray-950">
+      Shopping in Kerala
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Explore historic colonial trade streets, organic plantation markets, and legacy handloom cooperatives.
+    </p>
+  </div>
+
+  {/* Premium Bento Grid Arrangement */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Fort Kochi Antique Street (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-violet-300 shadow-lg hover:shadow-xl hover:shadow-violet-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-violet-50 text-xl flex items-center justify-center border border-violet-100/70 group-hover:bg-violet-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🎡
+          </div>
+          <span className="text-xs font-bold bg-violet-100/60 text-violet-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Iconic Bazaars
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-violet-800 transition-colors duration-200">
+          Jew Town Antique Shops & Flea Alleys
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dive deep into ancient maritime commerce at the iconic <span className="font-semibold text-gray-900">Jew Town Bazaar</span> in Mattancherry. These lanes are perfect spots to scout for detailed colonial-era Portuguese furniture, authentic bronze cooking vessels (<span className="font-semibold text-gray-900">Urli</span>), vintage maps, hand-carved wooden elephant structures, and rare historical curio assets.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-violet-600 tracking-wider uppercase">
+        Vibrant Cultural Bargains & Antiques
+      </div>
+    </div>
+
+    {/* Card 2: Traditional Kerala Kasavu Handlooms */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧵
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Kasavu Sarees & Attire
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Upgrade your cultural wardrobe instantly with authentic white-and-gold hand-woven garments. Secure pure gold-bordered traditional <span className="font-semibold text-gray-900">Kasavu Sarees</span> and premium cotton <span className="font-semibold text-gray-900">Mundu</span> directly across native retail avenues.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Traditional Elegant Textiles
+      </div>
+    </div>
+
+    {/* Card 3: Coconut Shell Artifacts & Crafts */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥥
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Coir & Eco Handicrafts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          The coast boasts a rich heritage of tangible eco-art. Discover polished coconut shell bowls, highly detailed house-decor straw mats, and sturdy woven coir strings straight from local backwater artisan setups.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Artisan Crafts & Sustainable Decor
+      </div>
+    </div>
+
+    {/* Card 4: Hill-Station Spice Board Markets (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-indigo-300 shadow-lg hover:shadow-xl hover:shadow-indigo-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-xl flex items-center justify-center border border-indigo-100/70 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌱
+          </div>
+          <span className="text-xs font-bold bg-indigo-100/60 text-indigo-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Premium Plantations
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-indigo-800 transition-colors duration-200">
+          Munnar & Thekkady Exotic Spice Markets
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience a sensory retail journey inside the plantation slopes of <span className="font-semibold text-gray-900">Kumily & Munnar Town</span>. These authorized local bazaars offer freshly harvested green cardamom packs, organic black pepper strands, pure cloves, multi-layered cinnamon rolls, and premium grade nutmeg seeds.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-indigo-600 tracking-wider uppercase">
+        Aromatic Spice Hubs
+      </div>
+    </div>
+
+    {/* Card 5: Single Estate Teas & Filter Coffees */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍃
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          High-Grown Brew Souvenirs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Take home tactile memories ranging from premium crush-tear-curl (CTC) tea dusts, organic green teas from <span className="font-semibold text-gray-900">Kannan Devan Hills</span>, to strong dark-roasted Malabar Monsooned coffee packs.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Estate Leaf Blends & Aromas
+      </div>
+    </div>
+
+    {/* Card 6: Pure Banana Chips & Cashews */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍌
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Snacks & Crunch Treats
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Navigate busy corner stores inside central hubs for freshly prepared, golden <span className="font-semibold text-gray-900">Coconut-Oil Fried Banana Chips</span>, sweet jaggery coated <span className="font-semibold text-gray-900">Sharkara Upperi</span>, and top-grade crunchy whole cashews.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Fresh Local Crunch Delights
+      </div>
+    </div>
+
+  </div>
+
+  {/* Smart Retail Glass Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-violet-500/10 via-amber-500/5 to-transparent border border-violet-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-violet-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-violet-900 font-bold">Shopping Tip:</strong> Friendly bargaining works wonderfully across local street flea setups in Jew Town! However, for pure authenticated spices and pure handloom Kasavu textiles, always prefer direct government-backed cooperatives and Spices Board of India stores to ensure genuine quality.
+      </p>
+    </div>
+  </div>
+
+</section>
+
           {/* Info Grid */}
           <div className="grid md:grid-cols-2 gap-6">
             {/* Popular Backwater Destinations */}
