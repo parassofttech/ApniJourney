@@ -17,7 +17,7 @@ const LehLadakh = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Hero Image */}
         <motion.img
@@ -1005,7 +1005,7 @@ const LehLadakh = () => {
             <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
               📸 Gallery – Explore Leh & Ladakh
             </h2>
-            <div className="grid sm:grid-cols-2  gap-4">
+            <div className="grid sm:grid-cols-2    lg:grid-cols-3 gap-4">
               {[
                 "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTpS5il7ARF3ieMtyhQ5YsAnVNH-ysZwHmX3pMKjq0b1l1vv0ggZWanyuKzOv4Cb_9Hs4KcUS9UdtzSzvEXqrocALk&s=19",
                 "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQRubr_9AOTLET5xqioNR_j9Qf0jKmrgcQSaVfnObOPXSaTodbewYEyox0xvTdPX0rOKKrImxWh53GzkxoWXoN6Xcs&s=19",
