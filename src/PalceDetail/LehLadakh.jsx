@@ -423,6 +423,126 @@ const LehLadakh = () => {
 </section>
 
 
+{/* Best Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-20 selection:bg-orange-500 selection:text-white">
+  
+  {/* Tactical High-Altitude Atmosphere Glows */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-orange-500/10 to-amber-500/5 blur-[150px] rounded-full"></div>
+  </div>
+
+  {/* Header Block */}
+  <div className="mb-12 space-y-4">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500/10 via-amber-500/5 to-transparent border border-orange-500/20 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest text-orange-600 dark:text-orange-400 backdrop-blur-md">
+      🍽️ Trans-Himalayan Gastronomy
+    </div>
+    <h2 className="text-3xl md:text-5xl font-black tracking-tight text-gray-900">
+      Where to Eat: <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-600 to-red-600">Culinary Hotspots</span>
+    </h2>
+    <p className="text-gray-500 text-sm md:text-base font-medium max-w-2xl">
+      From authentic hyper-local Ladakhi and Tibetan culinary spaces to premium modern garden cafes serving high-altitude global comfort food.
+    </p>
+  </div>
+
+  {/* Asymmetric Bento Grid System */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+    {/* Card 1: Authentic Heritage Dining - Leh (Double Width) */}
+    <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-orange-400/50 transition-all duration-300">
+      <div className="absolute -top-12 -right-12 w-28 h-28 bg-orange-500/10 rounded-full blur-xl group-hover:bg-orange-500/20 transition-all duration-300"></div>
+      <div className="flex items-start gap-5">
+        <span className="text-3xl p-3.5 rounded-2xl bg-orange-50 text-orange-600 shrink-0 shadow-inner">🥟</span>
+        <div className="space-y-2">
+          <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">The Tibetan Kitchen (Leh)</h3>
+          <p className="text-gray-600 text-sm leading-relaxed font-medium">
+            The undisputed culinary institution of Leh town. Featuring a beautiful open-air traditional courtyard setting, this spot specializes in authentic Tibetan and Ladakhi multi-course slow-cooked meals. Must-order delicacies include their famous hand-rolled *Menthuk* (thick noodle soup), pristine artisanal *Momos*, and *Shabalay* (deep-fried meat/veg bread) paired with warm butter tea.
+          </p>
+          <div className="pt-2 flex flex-wrap gap-2">
+            <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md bg-orange-500/10 text-orange-700">Traditional Courtyard</span>
+            <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md bg-gray-100 text-gray-600">Authentic Tibetan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 2: Modern German Bakery Culture - Leh (Single Width) */}
+    <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-amber-400/50 transition-all duration-300">
+      <div className="absolute -bottom-12 -left-12 w-24 h-24 bg-amber-500/10 rounded-full blur-xl group-hover:bg-amber-500/20 transition-all duration-300"></div>
+      <div className="flex flex-col h-full justify-between space-y-6">
+        <div className="space-y-3">
+          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-amber-50 text-amber-600 shadow-inner">☕</span>
+          <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Pumpernickel German Bakery</h3>
+          <p className="text-gray-600 text-xs leading-relaxed font-medium">
+            Located right in the bustling Old Leh Market. Famous for high-altitude freshly brewed espresso shots, legendary apple pies, yak cheese sandwiches, and artisanal tracking breakfast platters for early travelers.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 3: Rooftop Views & Global Eats - Leh (Single Width) */}
+    <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-indigo-400/50 transition-all duration-300">
+      <div className="flex flex-col h-full justify-between space-y-6">
+        <div className="space-y-3">
+          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-indigo-50 text-indigo-600 shadow-inner">🌆</span>
+          <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Bon Appétit</h3>
+          <p className="text-gray-600 text-xs leading-relaxed font-medium">
+            A minimalist, high-end fine dining space crafted out of traditional mud architecture. Features a premium rooftop deck with unobstructed sunset views of the Stok range, serving elegant continental and tandoori infusions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 4: Organic Farm-to-Table Experience - Leh (Double Width) */}
+    <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-emerald-400/50 transition-all duration-300">
+      <div className="absolute -top-12 -left-12 w-28 h-28 bg-emerald-500/10 rounded-full blur-xl group-hover:bg-emerald-500/20 transition-all duration-300"></div>
+      <div className="flex items-start gap-5">
+        <span className="text-3xl p-3.5 rounded-2xl bg-emerald-50 text-emerald-600 shrink-0 shadow-inner">🌱</span>
+        <div className="space-y-2">
+          <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Alchi Kitchen (Leh / Alchi)</h3>
+          <p className="text-gray-600 text-sm leading-relaxed font-medium">
+            A pioneering culinary venture celebrating lost Ladakhi recipes with a modern farm-to-table spin. Spearheaded by local women chefs, it offers a highly curated dining architecture. Don't miss their sweet and savory *Khambir* (local fermented whole-wheat bread) and *Thukpa* varieties loaded with organic valley greens.
+          </p>
+          <div className="pt-2 flex flex-wrap gap-2">
+            <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-700">Farm-to-Table</span>
+            <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md bg-gray-100 text-gray-600">Women-Led Enterprise</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 5: Hippie-Vibe Garden Oasis - Leh (Single Width) */}
+    <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-yellow-400/50 transition-all duration-300">
+      <div className="flex flex-col h-full justify-between space-y-6">
+        <div className="space-y-3">
+          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-yellow-50 text-yellow-600 shadow-inner">🌳</span>
+          <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Lala's Art Café</h3>
+          <p className="text-gray-600 text-xs leading-relaxed font-medium">
+            A cozy, bohemian structural restoration project right in Old Leh town. Offers an artistic layout featuring local photography, smooth cold brews, vegan treats, and a highly intimate mountain terrace.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 6: Premium Desert Oasis Comfort - Nubra Valley (Double Width) */}
+    <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-red-400/50 transition-all duration-300">
+      <div className="absolute -bottom-12 -right-12 w-28 h-28 bg-red-500/10 rounded-full blur-xl group-hover:bg-red-500/20 transition-all duration-300"></div>
+      <div className="flex items-start gap-5">
+        <span className="text-3xl p-3.5 rounded-2xl bg-red-50 text-red-600 shrink-0 shadow-inner">🍛</span>
+        <div className="space-y-2">
+          <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Crazy Burger & Himalayan Cafe (Hunder)</h3>
+          <p className="text-gray-600 text-sm leading-relaxed font-medium">
+            A structural culinary surprise tucked deep within the cold sand dunes of Nubra Valley. Known for serving remarkably juicy gourmet burgers, piping hot sizzlers, and premium multi-cuisine comfort layouts designed perfectly to refuel riders after navigating the challenging terrain of Khardung La.
+          </p>
+          <div className="pt-2 flex flex-wrap gap-2">
+            <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md bg-red-500/10 text-red-700">Rider Fuel Stop</span>
+            <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md bg-gray-100 text-gray-600">Nubra Valley Hub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
           {/* Info Grid */}
           <div className="grid md:grid-cols-2 gap-6 mt-6">
