@@ -939,80 +939,171 @@ const KeralaBackwaters = () => {
   </div>
 
 </section>
+{/* Safety Tips Section */}
+<section className="relative max-w-6xl mx-auto md:px-1 py-16 selection:bg-rose-500 selection:text-white">
+  
+  {/* Dynamic Safeguard Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-rose-400/10 blur-[130px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-blue-400/15 blur-[130px] rounded-full"></div>
+  </div>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Popular Backwater Destinations */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-teal-50 border border-teal-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-teal-700 mb-3">
-                <MapPin /> Top Backwater Destinations
-              </h2>
-              <ul className="text-gray-700 Sproutce-y-2">
-                <li>🚤 Alleppey (Alappuzha) – Houseboat capital of India</li>
-                <li>🌾 Kumarakom – Bird sanctuary & luxury resorts</li>
-                <li>🌊 Kollam – Gateway to Ashtamudi Lake</li>
-                <li>🏞️ Kasaragod – Peaceful unexplored waters</li>
-              </ul>
-            </motion.div>
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-blue-50 border border-rose-100 text-rose-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🛡️ Travel Advisory
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
+      Safety Tips in Kerala
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Proactive guidelines to keep your coastal cruises, hill explorations, and tropical stays secure and smooth.
+    </p>
+  </div>
 
-            {/* Houseboat Experience */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-yellow-50 border border-yellow-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Ship /> Houseboat Experience
-              </h2>
-              <ul className="text-gray-700 Sproutce-y-2">
-                <li>🛶 Luxurious wooden houseboats with air-conditioned cabins</li>
-                <li>🍛 Onboard Kerala cuisine & candlelight dinners</li>
-                <li>🌅 Sunrise and sunset cruises</li>
-                <li>🎶 Traditional Kathakali & Mohiniyattam performances onboard</li>
-              </ul>
-            </motion.div>
+  {/* Asymmetric Security Bento Grid */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
 
-            {/* Ayurvedic Wellness */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-green-50 border border-green-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Sprout /> Ayurveda & Wellness
-              </h2>
-              <ul className="text-gray-700 Sproutce-y-2">
-                <li>💆‍♀️ Authentic Ayurvedic therapies</li>
-                <li>🌸 Sprout retreats & yoga centers by the water</li>
-                <li>🍃 Herbal treatments for rejuvenation</li>
-                <li>🧘 Detox & meditation sessions amidst nature</li>
-              </ul>
-            </motion.div>
-
-            {/* Travel Information */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-orange-50 border border-orange-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-orange-700 mb-3">
-                <Plane /> Travel Information
-              </h2>
-              <ul className="text-gray-700 Sproutce-y-2">
-                <li>✈️ Nearest Airport: Cochin International Airport (COK)</li>
-                <li>🚉 Nearest Railway Station: Alleppey & Kottayam</li>
-                <li>🚗 Distance from Kochi: 53 km to Alleppey</li>
-                <li>🕒 Best Time to Visit: October – March</li>
-              </ul>
-            </motion.div>
+    {/* Card 1: Monsoon & Backwater Safety (Featured Large Block) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🛶
           </div>
+          <span className="text-xs font-bold bg-rose-100/60 text-rose-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Critical Guide
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
+          Backwater Currents & Houseboat Operations
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          While the backwaters appear serene, undercurrents can be tricky. Strictly avoid swimming in unmonitored canals or lakes. When booking houseboats in <span className="font-semibold text-rose-600">Alappuzha or Kumarakom</span>, always check for functional onboard life jackets and verify that the boat anchors by nightfall (6:00 PM) as per government safety mandates.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Waterway Navigation Security
+      </div>
+    </div>
+
+    {/* Card 2: Coastal Waves & Strong Riptides */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌊
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Ocean Tides & Cliff Safety
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Beaches like <span className="font-semibold text-gray-900">Varkala and Kovalam</span> are prone to sudden high tides and strong riptides. Pay close attention to lifeguard flags, avoid night swimming, and exercise extreme caution near crumbling cliff edges during high winds.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Beach & Shoreline Awareness
+      </div>
+    </div>
+
+    {/* Card 3: Western Ghats Driving Conditions */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🚗
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Munnar Fog & Hairpin Curves
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Ascending the Western Ghats to hill stations requires careful driving. Dense fog can reduce visibility to near-zero around <span className="font-semibold text-gray-900">Munnar and Wayanad</span> gaps. Keep fog lights functional, avoid overtaking on narrow switchbacks, and check brake health.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Mountain Road Precautions
+      </div>
+    </div>
+
+    {/* Card 4: Wildlife & Forest Trekking Regulations (Featured Large Block) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-sky-300 shadow-lg hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-sky-50 text-xl flex items-center justify-center border border-sky-100/70 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🐘
+          </div>
+          <span className="text-xs font-bold bg-sky-100/60 text-sky-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Operator Audit
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-sky-800 transition-colors duration-200">
+          Forest Reserves & Wildlife Protocols
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          When exploring rich biological reserves like <span className="font-semibold text-gray-900">Periyar Tiger Reserve or Silent Valley</span>, always venture out with authorized eco-guides. Maintain a safe distance from wild elephants on forest highways, never feed wild animals, and strictly adhere to non-littering green laws.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-sky-600 tracking-wider uppercase">
+        Authorized Eco-Trekking Only
+      </div>
+    </div>
+
+    {/* Card 5: Tropical Hydration & Heat */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-indigo-300 shadow-lg hover:shadow-xl hover:shadow-indigo-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-xl flex items-center justify-center border border-indigo-100/70 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☀️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-indigo-700 transition-colors duration-200">
+          Tropical Climate Prep
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Kerala boasts high tropical humidity year-round. Prevent swift dehydration or heat fatigue by carrying bottled mineral water, sipping on fresh tender coconut water, and applying broad-spectrum sunscreen when touring heritage monuments.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-indigo-600 tracking-wider uppercase">
+        Humidity & Fluid Management
+      </div>
+    </div>
+
+    {/* Card 6: Authenticity Check for Ayurvedic Centers */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌿
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Ayurveda Accreditation
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          To ensure genuine healthcare therapy, always choose wellness spas and massage clinics certified with the Kerala Tourism Department's official <span className="font-semibold text-gray-900">Green Leaf or Olive Leaf</span> ratings. This guarantees authentic herbal formulations and trained specialists.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Verified Medical Wellness
+      </div>
+    </div>
+
+  </div>
+
+  {/* Reassuring Advisory Footnote */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-rose-500/10 via-blue-500/5 to-transparent border border-rose-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-rose-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-rose-900 font-bold">Confidence Note:</strong> Kerala is consistently ranked among the safest, most hospitable, and progressive destinations for solo, family, and international travelers. Keeping track of regional monsoon guidelines is all it takes to lock in a seamless tropical getaway!
+      </p>
+    </div>
+  </div>
+
+</section>
+
+          
 
           {/* Gallery */}
           <div className="mt-10">
             <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
               📸 Kerala Backwaters Gallery – Nature’s Tranquil Escape
             </h2>
-            <div className="grid sm:grid-cols-2  gap-4">
+            <div className="grid sm:grid-cols-2   lg:grid-cols-3 gap-4">
               {[
                 "https://static.toiimg.com/photo/58490365/.jpg",
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkx7wsBi8OoZvmEDrPLF5xUguH1x6t5EZnUg&s",
