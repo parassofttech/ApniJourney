@@ -492,13 +492,13 @@ const Destinations = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400/30 via-green-500/30 to-yellow-400/30 -z-10 ">
-      
+
       {/* 🏔️ IMMERSIVE HERO SECTION */}
       <section className="relative w-full min-h-[75vh] md:h-[60vh] flex items-center justify-center py-16 md:py-0">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?q=80&w=2070" 
-            className="w-full h-full object-cover" 
+          <img
+            src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?q=80&w=2070"
+            className="w-full h-full object-cover"
             alt="Hero"
           />
           <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
@@ -519,21 +519,21 @@ const Destinations = () => {
           </motion.div>
 
           {/* 🔍 Interactive Search & Filter Bar */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
             className="w-full md:max-w-5xl mx-auto bg-white rounded-2xl md:rounded-full p-3 md:p-2 shadow-2xl flex flex-col md:flex-row items-stretch md:items-center gap-2">
             <div className="flex items-center flex-1 px-4 w-full">
               <Search className="text-gray-400 w-5 h-5 mr-2" />
-              <input 
-                type="text" 
+              <input
+                type="text"
                 placeholder="Search by city or state..."
                 className="w-full py-3 outline-none text-gray-700"
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
             </div>
-            
+
             <div className="hidden md:block h-8 w-[1px] bg-gray-200"></div>
 
             <div className="flex overflow-x-auto gap-2 p-1 no-scrollbar w-full md:w-auto">
@@ -541,9 +541,8 @@ const Destinations = () => {
                 <button
                   key={cat}
                   onClick={() => setFilter(cat)}
-                  className={`px-5 py-2 rounded-full text-sm font-bold transition-all whitespace-nowrap ${
-                    filter === cat ? "bg-cyan-500 text-white shadow-lg" : "text-gray-500 hover:bg-gray-100"
-                  }`}
+                  className={`px-5 py-2 rounded-full text-sm font-bold transition-all whitespace-nowrap ${filter === cat ? "bg-cyan-500 text-white shadow-lg" : "text-gray-500 hover:bg-gray-100"
+                    }`}
                 >
                   {cat}
                 </button>
@@ -556,18 +555,18 @@ const Destinations = () => {
       {/* 🌏 DESTINATIONS GRID */}
       <section className="max-w-7xl mx-auto py-20 px-6">
         <div className="flex items-end justify-between mb-12">
-            <div className="text-left">
-                <h2 className="text-4xl font-black text-gray-900">Popular Getaways</h2>
-                <p className="text-gray-500 mt-2">Carefully curated experiences for every traveler.</p>
+          <div className="text-left">
+            <h2 className="text-4xl font-black text-gray-900">Popular Getaways</h2>
+            <p className="text-gray-500 mt-2">Carefully curated experiences for every traveler.</p>
+          </div>
+          <div className="hidden md:flex gap-2">
+            <div className="p-3 bg-white shadow-md rounded-full text-cyan-500 cursor-pointer hover:bg-cyan-500 hover:text-white transition">
+              <Compass className="w-6 h-6" />
             </div>
-            <div className="hidden md:flex gap-2">
-                <div className="p-3 bg-white shadow-md rounded-full text-cyan-500 cursor-pointer hover:bg-cyan-500 hover:text-white transition">
-                    <Compass className="w-6 h-6" />
-                </div>
-            </div>
+          </div>
         </div>
 
-        <motion.div 
+        <motion.div
           layout
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
         >
@@ -593,12 +592,31 @@ const Destinations = () => {
                     <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
                     <span className="text-xs font-bold text-gray-800">{place.rating || "4.5"}</span>
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                    <button 
-                       onClick={() => navigate(`/destinations/${place.id}`)}
-                       className="w-full bg-cyan-400 text-blue-900 py-3 rounded-xl font-bold flex items-center justify-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+                  <div className="absolute inset-x-0 bottom-0 p-4">
+                    <button
+                      onClick={() => navigate(`/destinations/${place.id}`)}
+                      className="
+      w-full
+      bg-cyan-400
+      text-blue-900
+      py-3
+      rounded-xl
+      font-bold
+      flex
+      items-center
+      justify-center
+      gap-2
+      shadow-xl
+      md:opacity-0
+      md:translate-y-4
+      md:group-hover:opacity-100
+      md:group-hover:translate-y-0
+      transition-all
+      duration-500
+    "
                     >
-                        Explore Now <ArrowRight className="w-4 h-4" />
+                      Explore Now
+                      <ArrowRight className="w-5 h-5" />
                     </button>
                   </div>
                 </div>
@@ -607,7 +625,7 @@ const Destinations = () => {
                 <div className="p-6">
                   <div className="flex items-center text-cyan-500 text-[10px] font-black uppercase tracking-widest mb-2">
                     <MapPin className="w-3 h-3 mr-1" />
-                    { place.location}
+                    {place.location}
                   </div>
                   <h3 className="text-2xl font-black text-gray-900 mb-2 group-hover:text-cyan-600 transition-colors">
                     {place.name}
@@ -628,7 +646,7 @@ const Destinations = () => {
           </div>
         )}
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
