@@ -544,103 +544,339 @@ const LehLadakh = () => {
   </div>
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* History */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-blue-50 rounded-2xl shadow-sm border border-blue-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-blue-700 mb-3">
-                <Info /> History & Heritage
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Leh and Ladakh were once part of the ancient **Silk Route**
-                connecting Tibet with Central Asia. The region boasts centuries-old
-                Buddhist monasteries such as **Thiksey**, **Hemis**, and **Diskit**.
-                You can witness the influence of **Tibetan culture, art, and
-                spirituality** throughout the valley.
-              </p>
-            </motion.div>
 
-            {/* Attractions */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-green-50 rounded-2xl shadow-sm border border-green-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Camera /> Top Attractions
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🏞️ <b>Pangong Tso:</b> A breathtaking high-altitude lake</li>
-                <li>🕌 <b>Hemis Monastery:</b> Largest and richest monastery in Ladakh</li>
-                <li>🕍 <b>Shanti Stupa:</b> Symbol of world peace overlooking Leh</li>
-                <li>🌌 <b>Nubra Valley:</b> Desert between snow mountains</li>
-                <li>🛕 <b>Thiksey Monastery:</b> Replica of Potala Palace in Tibet</li>
-              </ul>
-              <a
-                href="https://ladakh.gov.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-sm text-green-700 mt-3 underline hover:text-green-900"
-              >
-                Visit Ladakh Tourism <ExternalLink size={14} />
-              </a>
-            </motion.div>
+{/* Budget Breakdown Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-500 selection:text-white">
+  
+  {/* Cyber-Atmospheric Background Glows */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-emerald-300/10 to-cyan-300/10 blur-[140px] rounded-full"></div>
+  </div>
 
-            {/* Adventure */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-yellow-50 rounded-2xl shadow-sm border border-yellow-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Bike /> Adventure & Activities
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Leh–Ladakh is a paradise for adventure lovers. Popular experiences
-                include **biking across Khardung La (world’s highest motorable
-                road)**, **river rafting in Zanskar**, **trekking**, and **camping by
-                Pangong Lake**. Every turn on these mountain roads reveals a new
-                wonder.
-              </p>
-            </motion.div>
+  {/* Header Block */}
+  <div className="text-center mb-16">
+    <span className="inline-flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-md">
+      ⚡ Financial Planner
+    </span>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900">
+      Budget Breakdown for Ladakh
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Analyze daily cost structures and pick the ideal travel configuration that matches your pace.
+    </p>
+  </div>
 
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-pink-50 rounded-2xl shadow-sm border border-pink-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-pink-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🕒 <b>Best Time to Visit:</b> May – September</li>
-                <li>🚗 <b>By Road:</b> From Manali or Srinagar via scenic highways</li>
-                <li>✈️ <b>Nearest Airport:</b> Kushok Bakula Rimpochee Airport, Leh</li>
-                <li>🏍️ <b>Famous Route:</b> Manali → Leh → Nubra → Pangong → Kargil</li>
-                <li>🏡 <b>Stay:</b> Boutique hotels, monasteries, campsites</li>
-              </ul>
-            </motion.div>
+  {/* Premium Tier Matrix */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+    {/* Card 1: Budget Traveler */}
+    <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-emerald-400/60 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold border border-emerald-100 shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+            💸
           </div>
+          <span className="text-[10px] font-black tracking-widest uppercase bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md">
+            Eco Tier
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Budget Nomad
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Perfect for backpackers and solo travelers looking to scale Ladakh efficiently on low overheads using homestays.
+        </p>
 
-          {/* Culture & People */}
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 40 }}
-            transition={{ delay: 0.2 }}
-            className="mt-10 bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-2xl border border-green-300"
-          >
-            <h2 className="flex items-center gap-2 text-xl font-semibold text-blue-700 mb-3">
-              <CloudSnow /> Culture & People
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              Ladakh’s people are warm, humble, and deeply spiritual. Their
-              culture is influenced by **Tibetan Buddhism**, visible in art, dance,
-              and prayer flags fluttering across mountains. Traditional dishes like
-              **Thukpa**, **Momos**, and **Butter Tea** offer a taste of the
-              Himalayas.
-            </p>
-          </motion.div>
+        {/* Breakdown Items */}
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹800 – ₹1,500</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹400 – ₹800</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🛵 Transp.</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹500 – ₹1,000</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Aggregate */}
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-emerald-600 tracking-tight">
+          ₹1,700 – ₹3,300 <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 2: Mid Range (Featured Column) */}
+    <div className="group bg-white border-2 border-cyan-500 hover:border-cyan-400 shadow-xl hover:shadow-2xl hover:shadow-cyan-500/10 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 relative ring-8 ring-cyan-500/5">
+      <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-black text-[10px] tracking-widest uppercase px-4 py-1 rounded-full shadow-md">
+        Recommended
+      </div>
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-lg font-bold border border-cyan-100 shadow-sm group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+            🏔️
+          </div>
+          <span className="text-[10px] tracking-widest uppercase bg-cyan-50 text-cyan-700 px-2.5 py-1 rounded-md font-bold">
+            Balanced
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Mid-Range Explorer
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Ideal setup for groups and family units aiming for insulated stays, private cabs, and maximum pass coverage.
+        </p>
+
+        {/* Breakdown Items */}
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹2,500 – ₹5,500</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹800 – ₹1,500</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚕 Transp.</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹2,000 – ₹4,000</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Aggregate */}
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-cyan-600 tracking-tight">
+          ₹5,300 – ₹11,000 <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 3: Luxury */}
+    <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-purple-400/60 shadow-md hover:shadow-xl hover:shadow-purple-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-lg font-bold border border-purple-100 shadow-sm group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+            🌟
+          </div>
+          <span className="text-[10px] tracking-widest uppercase bg-purple-50 text-purple-700 px-2.5 py-1 rounded-md font-bold">
+            Elite Premium
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Luxury Opulence
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Crafted for premium travelers wanting centralized heating properties, luxury camps, and high-end transport options.
+        </p>
+
+        {/* Breakdown Items */}
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹9,000 – ₹20k+</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹1,500 – ₹3,500</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚕 Transp.</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹4,500 – ₹7,000</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Aggregate */}
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-purple-600 tracking-tight">
+          ₹15,000 – ₹30.5k+ <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  {/* Pro-Tip Floating Banner */}
+  <div className="mt-14 text-center">
+    <div className="inline-flex items-center gap-3.5 bg-gradient-to-r from-cyan-500/10 via-emerald-500/5 to-transparent border border-cyan-500/20 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-cyan-950 font-semibold text-sm md:text-[15px] leading-relaxed">
+        <strong className="text-cyan-800 font-black">Smart Commute:</strong> Sharing local cabs via union pools or splitting private SUV rates with groups is the absolute best strategy to drastically minimize the transportation overhead across the circuit!
+      </p>
+    </div>
+  </div>
+
+</section>
+{/* Shopping Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-violet-500 selection:text-white">
+  
+  {/* Dynamic Retail Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-violet-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-50 to-amber-50 border border-violet-100 text-violet-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🛍️ Retail Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-violet-950 to-gray-950">
+      Shopping in Manali
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Explore bustling mountain avenues, authentic handloom cooperatives, and Tibetan artisan craft hubs.
+    </p>
+  </div>
+
+  {/* Premium Bento Grid Arrangement */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Tibetan Market (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-violet-300 shadow-lg hover:shadow-xl hover:shadow-violet-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-violet-50 text-xl flex items-center justify-center border border-violet-100/70 group-hover:bg-violet-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🎡
+          </div>
+          <span className="text-xs font-bold bg-violet-100/60 text-violet-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Iconic Bazaars
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-violet-800 transition-colors duration-200">
+          Tibetan Market & Flea Alleys
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dive deep into mountain commerce at the iconic central <span className="font-semibold text-gray-900">Tibetan Market</span>. Perfect spots to scout for detailed silver amulets, bamboo-crafted artifacts, hand-woven carpets, spinning prayer wheels, and intricate singing bowls.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-violet-600 tracking-wider uppercase">
+        Vibrant Cultural Bargains
+      </div>
+    </div>
+
+    {/* Card 2: Winter & Mountain Fashion */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧥
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Winter Wear
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Upgrade your mountain wardrobe instantly along <span className="font-semibold text-gray-900">Mall Road</span> lanes. Score heavy fleece jackets, cozy woolen caps, polarized snow shades, and embroidered leather boots.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Alpine & Warm Attire
+      </div>
+    </div>
+
+    {/* Card 3: Handloom & Handicrafts */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧶
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Kullu Handlooms
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          The valley boasts a rich heritage of tangible art. Discover certified pure wool weavers at state cooperatives like <span className="font-semibold text-gray-900">Bhuttico</span>, famous for geometric Kullu shawls and heavy pashminas.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Artisan Weaves & Heritage
+      </div>
+    </div>
+
+    {/* Card 4: Old Manali Boutiques (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-indigo-300 shadow-lg hover:shadow-xl hover:shadow-indigo-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-xl flex items-center justify-center border border-indigo-100/70 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏘️
+          </div>
+          <span className="text-xs font-bold bg-indigo-100/60 text-indigo-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Bohemian Retail
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-indigo-800 transition-colors duration-200">
+          Old Manali Alley Shops
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience a laid-back retail journey blended with hippy subcultures inside the rustic slopes of <span className="font-semibold text-gray-900">Old Manali Lanes</span>. These boutique wooden shops bring together indie silver jewelry, hemp bags, customized dreamcatchers, and trippy custom-painted merchandise.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-indigo-600 tracking-wider uppercase">
+        Boho Hillside Emporiums
+      </div>
+    </div>
+
+    {/* Card 5: Local Food Souvenirs */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍎
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Orchard Treasures
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Take home tactile memories ranging from farm-fresh Apple Jams and organic rhododendron juices to local wild honey and packaged Himachali fruit wines.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Flavors & Fresh Preserves
+      </div>
+    </div>
+
+    {/* Card 6: Herbal Extracts & Saffron */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌱
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Spices & Shilajit
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Navigate legacy corner stores tucked inside <span className="font-semibold text-gray-900">Manu Market</span> for budget-friendly authentic items like pure strands of Kashmiri saffron, organic tea packs, and high-altitude resin extracts.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        High-Altitude Herbal Roots
+      </div>
+    </div>
+
+  </div>
+
+  {/* Smart Retail Glass Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-violet-500/10 via-amber-500/5 to-transparent border border-violet-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-violet-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-violet-900 font-bold">Shopping Tip:</strong> Polite bargaining works wonderfully in open flea stalls and the Tibetan market! However, for pure woolen items like handloom blankets and shawls, always stick to the government-authorized fixed price outlets like Bhuttico to ensure genuine quality.
+      </p>
+    </div>
+  </div>
+
+</section>
+
 
 
           {/* Safety Advisory Section */}
