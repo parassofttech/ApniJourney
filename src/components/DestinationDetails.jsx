@@ -480,7 +480,7 @@ const DestinationDetails = () => {
       
 
       {/* Detail Section */}
-      <div className="max-w-5xl mx-auto py-12 px-6">
+      <div className="max-w-9xl mx-auto py-12 ">
         <p className="text-gray-700 text-lg leading-relaxed mb-8">
           {data.description}
         </p>

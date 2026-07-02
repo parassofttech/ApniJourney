@@ -28,7 +28,7 @@ const Goa = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Header Image */}
         <motion.img
@@ -46,7 +46,7 @@ const Goa = () => {
 
         {/* Introduncion */}
         
-       <section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-cyan-500 selection:text-white">
+       <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-500 selection:text-white">
   
   {/* Advanced Radial Background Glows */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -169,7 +169,7 @@ const Goa = () => {
 
         {/* best time to visite */}
 
-        <section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-amber-500 selection:text-white">
+        <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
   
   {/* Advanced Radial Background Glows (Sunset Theme) */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -289,7 +289,7 @@ const Goa = () => {
 
         {/* How to Reach */}
 
-        <section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-indigo-500 selection:text-white">
+        <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-indigo-500 selection:text-white">
   
   {/* Modern Tech-Themed Radial Glows */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -389,7 +389,7 @@ const Goa = () => {
 
         {/* Top Attractions */}
 
-        <section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-emerald-500 selection:text-white">
+        <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
   
   {/* Advanced Tropical Radial Glows */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -547,7 +547,7 @@ const Goa = () => {
 
         {/* Hotels */}
 
-        <section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-purple-500 selection:text-white">
+        <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-purple-500 selection:text-white">
   
   {/* Advanced Radial Background Glows */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -707,7 +707,7 @@ const Goa = () => {
 
         {/* Restaurants */}
 
-        <section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-rose-500 selection:text-white">
+        <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-500 selection:text-white">
   
   {/* Dynamic Culinary Background Tints */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -865,7 +865,7 @@ const Goa = () => {
 
         {/* Budget Breakdown */}
 
-        <section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-cyan-500 selection:text-white">
+        <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-500 selection:text-white">
   
   {/* Cyber-Atmospheric Background Glows */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -1042,7 +1042,7 @@ const Goa = () => {
 
         {/* Local Food */}
 
-        <section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-orange-500 selection:text-white">
+        <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-orange-500 selection:text-white">
   
   {/* Dynamic Culinary Background Tints */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -1200,7 +1200,7 @@ const Goa = () => {
 
         {/* Shopping */}
 
-        <section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-violet-500 selection:text-white">
+        <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-violet-500 selection:text-white">
   
   {/* Dynamic Retail Background Tints */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -1358,7 +1358,7 @@ const Goa = () => {
 
         {/* Safety Tips */}
 
-        <section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-rose-500 selection:text-white">
+        <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-500 selection:text-white">
   
   {/* Dynamic Safeguard Background Tints */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -1517,7 +1517,7 @@ const Goa = () => {
         {/* 8–10 FAQs */}
 
 
-       <section className="relative max-w-4xl mx-auto px-6 py-16 selection:bg-indigo-500 selection:text-white">
+       <section className="relative max-w-4xl mx-auto md:px-6 py-16 selection:bg-indigo-500 selection:text-white">
       
       {/* Dynamic Background Glassy Glows */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -1602,7 +1602,7 @@ const Goa = () => {
 
         {/* Conclusion */}
 
-        <section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-teal-500 selection:text-white">
+        <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-500 selection:text-white">
   
   {/* Dynamic Tropical Gradient Background Tints */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">

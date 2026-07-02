@@ -16,12 +16,12 @@ import {
 
 const Manali = () => {
   return (
-    <div className="min-h-screen bg-[#f4faff] font-sans selection:bg-green-200">
+    <div className="min-h-screen bg-[#f4fffb] font-sans selection:bg-green-200">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-9xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
+        className="w-full mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
       >
 
         {/* HERO SECTION */}
@@ -1372,7 +1372,7 @@ const Manali = () => {
               Photo Gallery
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
               {[
                 "https://lh3.googleusercontent.com/gps-cs-s/AHVAwer0YcZTsX9AcNInXvW7kSRqM3s0NxsO3bsDASKbfULHSTd1VbeM0eycnXRY0Q7DeGgxxHyebSOzw0ZeKtAP3qwdrGN0HUI6Ol31dtpMqoAcVoN0fMj-BhANCP9A-hgQeqZoSo2c=w675-h390-n-k-no",
                 "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepFVBHZuCqRj99KFQxIQfYycUvCTBtdlcUb5QX2bGhppowus-oehtBIzQ66V3mylTnLqK3ypAxB-s14r9M-tqAJM0MK7AmbiPk0MZW-EeUdumqfGvGwT76TKguIvSW8aiwAhT8=w675-h390-n-k-no",
