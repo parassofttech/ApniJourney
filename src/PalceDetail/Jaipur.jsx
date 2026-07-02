@@ -17,7 +17,7 @@ const Jaipur = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Header Image */}
         <motion.img
@@ -302,6 +302,324 @@ const Jaipur = () => {
         </div>
 
       </section>
+
+
+      {/* Best Hotels Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+  
+  {/* Advanced Radial Background Glows */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-rose-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-rose-50 border border-amber-100 text-amber-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏨 Accommodation Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Hotels in Jaipur
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Handpicked stays curated perfectly for luxury seekers, heritage wanderers, and smart backpackers.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Luxury Palaces (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌟
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Premium Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Grand Heritage Palaces
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience world-class royal hospitality at legendary palaces like <span className="font-semibold text-gray-900">Rambagh Palace</span> and <span className="font-semibold text-gray-900">The Taj Mahal Palace (Jai Mahal)</span>. Flawless options for ultra-luxury leisure, complete with peacock-filled courtyard lawns, marble arches, regal vintage suites, and holistic royal wellness spas.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Ultra-Luxury & Living Legends
+      </div>
+    </div>
+
+    {/* Card 2: Mid-Range Heritage Hotels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏰
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Mid-Range Haveli Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Highly comfortable, artistic vibes at historic properties like <span className="font-semibold text-gray-900">Alsisar Haveli</span> and <span className="font-semibold text-gray-900">Samode Haveli</span>. These deliver upscale traditional carved rooms, stunning swimming pools, arches, and rich breakfast buffets at highly optimized prices—perfect for families.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Value & Royal Aesthetics
+      </div>
+    </div>
+
+    {/* Card 3: Budget Backpackers */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          💰
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Social Hostels
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Highly affordable backpacker hostels and vibrant common workspaces nestled along areas like <span className="font-semibold text-gray-900">C-Scheme & MI Road</span>. Unmatched setups for solo travelers and remote creators looking to network over rooftop folk music nights.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Backpacker Centric
+      </div>
+    </div>
+
+    {/* Card 4: Walled City Facing Stays (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-300 shadow-lg hover:shadow-xl hover:shadow-purple-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🕌
+          </div>
+          <span className="text-xs font-bold bg-purple-100/60 text-purple-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Prime Location
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-800 transition-colors duration-200">
+          City Palace & Walled City Boutique Hotels
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Wake up straight to views of historic pink avenues. Premium boutique properties situated directly near the bustling lanes of <span className="font-semibold text-gray-900">Johari Bazaar</span> or facing the serene waters of <span className="font-semibold text-gray-900">Jal Mahal</span>. Secure these dynamic balconies to unlock instant access to traditional block-print markets, exquisite heritage interiors, and rooftop views of old forts.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-purple-600 tracking-wider uppercase">
+        Heritage Walled City Vibe
+      </div>
+    </div>
+
+    {/* Card 5: Modern Luxury Hotels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏢
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Modern Business Luxury
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Sleek, high-concept modern luxury business hotels near the premium corporate and dining lines of <span className="font-semibold text-gray-900">Malviya Nagar & Tonk Road</span>. These offer infinity pools, centralized air conditioning, gym frameworks, and premium multi-cuisine fine dining.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Contemporary Comforts
+      </div>
+    </div>
+
+    {/* Card 6: Exclusive Luxury Desert Resort Villas */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-300 shadow-lg hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center shrink-0 border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          🏡
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-700 transition-colors duration-200">
+            Exclusive Luxury Heritage Villas & Fort Resorts
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Tailor-made for large group retreats and family celebrations. Independent luxury villas scattered around Kukas and Jaipur outskirts feature dedicated private plunge pools, authentic stone architecture, courtyard layouts, private parking spots, and 100% boundary privacy for a laid-back royal experience.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-red-100/70 text-red-800 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Maximum Privacy
+      </span>
+    </div>
+
+  </div>
+
+  {/* Smart Booking Advisory Glass Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-500/10 via-rose-500/5 to-transparent border border-amber-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-amber-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-amber-900 font-bold">Booking Window Tip:</strong> Planning a trip during the high-demand festival seasons of Diwali, Literary Fest, or winter holidays? Make sure to lock down your haveli or palace bookings early to avoid heavily inflated season surges and secure rooms with proper cultural views!
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+{/* Restaurants Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-500 selection:text-white">
+  
+  {/* Dynamic Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-rose-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-amber-50 border border-rose-100 text-rose-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍽️ Culinary Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
+      Best Restaurants & Cafes in Jaipur
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Savor everything from magnificent palace restaurants to authentic hot Rajasthani legacy kitchens.
+    </p>
+  </div>
+
+  {/* Premium Bento Grid Arrangement */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Rajasthani Thali Special (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍲
+          </div>
+          <span className="text-xs font-bold bg-rose-100/60 text-rose-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Must Visit
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
+          Authentic Dal Baati Churma & Royal Thalis
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Savor Rajasthan's true culinary pride at legendary landmarks like <span className="font-semibold text-gray-900">Laxmi Mishthan Bhandar (LMB)</span> and the cultural village layout of <span className="font-semibold text-gray-900">Chokhi Dhani</span>. Do not leave the city without diving into rich, ghee-laden Dal Baati Churma, Ker Sangri, Gatte ki Sabzi, and crispy hot Pyaz Kachoris.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Pure Ghee Delicacies & Legacy Spots
+      </div>
+    </div>
+
+    {/* Card 2: Aesthetic Rooftop Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          📸
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Hawa Mahal Facing Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind completely with straight-on architectural views of the palace of winds across rooftop lounges like <span className="font-semibold text-gray-900">The Wind View Cafe</span> or <span className="font-semibold text-gray-900">Tattoo Cafe</span>. The absolute premier choice for evening sips, light snacks, and postcard-perfect photography loops.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Wind Palace View Sips
+      </div>
+    </div>
+
+    {/* Card 3: Royal Fine Dining */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          👑
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Palace Fine Dining
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Indulge in premium high-end royal environments at iconic elite restaurants like <span className="font-semibold text-gray-900">Suvarna Mahal</span> or the stunning indoor frescoes of heritage structures, offering masterfully curated Indian platters fit for kings.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Regal Heritage Ambience
+      </div>
+    </div>
+
+    {/* Card 4: Non-Veg Heritage Cuisine (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-300 shadow-lg hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍖
+          </div>
+          <span className="text-xs font-bold bg-red-100/60 text-red-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Heritage Non-Veg
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-800 transition-colors duration-200">
+          Legendary Laal Maas & Royal Meat Crafts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Embark on an intense spice journey with signature Rajput warrior recipes. Make sure to try the authentic fiery <span className="font-semibold text-gray-900">Laal Maas</span> cooked with Mathania chilies at historic hot spots like <span className="font-semibold text-gray-900">Handi Restaurant</span> or the upscale dining rooms of NIROS, known for rich, slow-simmered gravy setups.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Authentic Rajput Kitchens
+      </div>
+    </div>
+
+    {/* Card 5: Upscale Modern Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Boutique Artisan Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind your afternoons at beautifully designed contemporary spots in <span className="font-semibold text-gray-900">C-Scheme</span> like <span className="font-semibold text-gray-900">Anokhi Cafe</span> or <span className="font-semibold text-gray-900">Tapri Central</span> for unmatched gourmet organic salads, loose-leaf chai varieties, and modern global fusion snacks.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Chic Aesthetics & Artisanal Blends
+      </div>
+    </div>
+
+    {/* Card 6: Legendary Sweet & Street Hubs */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-sky-300 shadow-lg hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-sky-50 text-xl flex items-center justify-center border border-sky-100/70 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍯
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
+          Traditional Ghewar & Street Gems
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Jaipur packs highly distinct dessert cultures. Explore world-famous saffron-infused <span className="font-semibold text-gray-900">Ghewar</span> at <span className="font-semibold text-gray-900">Rawat Mishthan Bhandar</span>, rich creamy kulfis, or traditional thick lassi served in earthen kulhads at the iconic Lassiwala on MI Road.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-sky-600 tracking-wider uppercase">
+        Kulhad sips & Heritage Dessert Crafts
+      </div>
+    </div>
+
+  </div>
+
+  {/* Foodie Glass Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-rose-500/10 via-amber-500/5 to-transparent border border-rose-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-rose-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-rose-900 font-bold">Foodie Tip:</strong> Always make it a priority to head down to the Hawa Mahal facing rooftop cafes around 6:35 PM. Watching the intricate palace facades light up in amber hues with a piping hot cup of masala tea is an irreplaceable royal ritual!
+      </p>
+    </div>
+  </div>
+
+</section>
           {/* Info Grid */}
           <div className="grid md:grid-cols-2 gap-6 mt-6">
             {/* History */}
