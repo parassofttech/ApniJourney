@@ -449,6 +449,164 @@ const KeralaBackwaters = () => {
 
 </section>
 
+
+{/* Restaurants Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-500 selection:text-white">
+  
+  {/* Dynamic Culinary Background Tints (Coastal Spice Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-rose-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-amber-50 border border-rose-100 text-rose-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍽️ Culinary Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
+      Best Restaurants & Cafes in Kerala
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Savor everything from aromatic backwater toddy shops to colonial heritage beachside cafes.
+    </p>
+  </div>
+
+  {/* Premium Bento Grid Arrangement */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Seafood Specials (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🦀
+          </div>
+          <span className="text-xs font-bold bg-rose-100/60 text-rose-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Must Visit
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
+          Coastal Seafood & Karimeen Specials
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Savor the coast's freshest marine catch at globally acclaimed culinary landmarks like <span className="font-semibold text-gray-900">The Oceanos Restaurant</span> in Fort Kochi and <span className="font-semibold text-gray-900">Grand Pavilion</span> in Ernakulam. Do not leave the state without diving into fresh banana-leaf wrapped <span className="font-semibold text-gray-900">Karimeen Pollichathu</span> (Pearl Spot fish), spicy clay-pot fish curries, and crispy fiery prawns.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Fresh Catch & Legendary Seafood Hubs
+      </div>
+    </div>
+
+    {/* Card 2: Cliff & Beachside Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏄‍♂️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Ocean-View Cliff Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind completely with direct rushing wave views across the vibrant edges of <span className="font-semibold text-gray-900">Varkala Cliff</span>. The absolute premier choice for fresh fruit smoothie bowls, authentic iced filter coffees, and memorable sunset-lit acoustic musical dinners.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Arabian Sea Sunset Sips
+      </div>
+    </div>
+
+    {/* Card 3: Colonial Fine Dining */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏰
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Colonial Fine Dining
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Indulge in premium high-end environments at iconic elite boutique setups like <span className="font-semibold text-gray-900">Malabar House</span> and heritage bungalow structures, offering unparalleled vintage luxury alongside masterfully curated Anglo-Indian fusion platters.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Vintage Malabar Ambience
+      </div>
+    </div>
+
+    {/* Card 4: Traditional Sadhya & Spice Delicacies (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-300 shadow-lg hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌴
+          </div>
+          <span className="text-xs font-bold bg-red-100/60 text-red-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Heritage Tastes
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-800 transition-colors duration-200">
+          Traditional Banana-Leaf Sadhya & Appam
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Embark on a deep heritage flavor journey with legacy coastal recipes. Make sure to try authentic coconut-milk laced lacey laced <span className="font-semibold text-gray-900">Appam with Veg/Chicken Stew</span>, multi-course vegetarian banana-leaf feast called <span className="font-semibold text-gray-900">Sadhya</span>, and intensely aromatic Malabar Parotta loops paired with rich spice-cooked beef or jackfruit roasts.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Authentic Keraleeyam Roots
+      </div>
+    </div>
+
+    {/* Card 5: Backwater Toddy Shops */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍶
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Backwater Shaap Food
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Warm up your tropical afternoons at authentic rustic waterside setups like the iconic <span className="font-semibold text-gray-900">Kuttanad Toddy Shops</span> for unmatched fiery-spicy red fish curries, boiled tapioca (<span className="font-semibold text-gray-900">Kappa</span>), and sweet, freshly tapped coconut palm nectar extracts.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Lagoon-Side Native Spice Shacks
+      </div>
+    </div>
+
+    {/* Card 6: Art Cafes of Fort Kochi */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-sky-300 shadow-lg hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-sky-50 text-xl flex items-center justify-center border border-sky-100/70 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🎨
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
+          Artisan & Heritage Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Kerala packs highly diverse international palettes. Explore slow-brewed single origin coffees, fresh continental bakes, and vibrant art gallery walls at the iconic <span className="font-semibold text-gray-900">Kashi Art Cafe</span> or Pepper House across the creative cobblestone streets of <span className="font-semibold text-gray-900">Fort Kochi</span>.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-sky-600 tracking-wider uppercase">
+        Bohemian Colonial Courtyards
+      </div>
+    </div>
+
+  </div>
+
+  {/* Foodie Glass Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-rose-500/10 via-amber-500/5 to-transparent border border-rose-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-rose-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-rose-900 font-bold">Foodie Tip:</strong> Always make it a priority to head down to the local backwater "Shaaps" or cliffside cafes around 5:30 PM. Watching the tropical golden hour sweep over the coconut groves with a sizzling plate of Karimeen Pollichathu or a freshly brewed filter coffee is an irreplaceable coastal ritual!
+      </p>
+    </div>
+  </div>
+
+</section>
+
           {/* Info Grid */}
           <div className="grid md:grid-cols-2 gap-6">
             {/* Popular Backwater Destinations */}
