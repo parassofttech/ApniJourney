@@ -21,7 +21,7 @@ const Manali = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
+        className="max-w-9xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
       >
 
         {/* HERO SECTION */}
@@ -46,10 +46,10 @@ const Manali = () => {
           </div>
         </div>
 
-        <div className="p-8 md:p-16 -mt-16 relative z-10 bg-white rounded-t-[3rem]">
+        <div className="p-3 md:p-2 -mt-16 relative z-10 bg-white rounded-t-[3rem]">
 
           {/* ABOUT SECTION */}
-          <section className="mb-24 text-center">
+          <section className="mb-24 md:p-16 text-center">
             <h2 className="text-4xl font-black text-green-900 italic mb-8">
               About The Destination
             </h2>
@@ -61,7 +61,7 @@ const Manali = () => {
           </section>
 
           {/* Introduction */}
-<section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-sky-500 selection:text-white">
+<section className="relative max-w-6xl mx-auto  md:px-6 py-16 selection:bg-sky-500 selection:text-white">
 
   {/* Advanced Radial Background Glows (Alpine Theme) */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -183,7 +183,7 @@ const Manali = () => {
 </section>
 
 {/* Best Time to Visit */}
-<section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-sky-500 selection:text-white">
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-sky-500 selection:text-white">
 
   {/* Advanced Radial Background Glows (Snow & Pine Theme) */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -302,7 +302,7 @@ const Manali = () => {
 </section>
 
 {/* How to Reach */}
-<section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-indigo-500 selection:text-white">
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-indigo-500 selection:text-white">
 
   {/* Modern Tech-Themed Radial Glows (Mountain Transit) */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -398,7 +398,7 @@ const Manali = () => {
  {/* Top attractions/ */}
 
  {/* Top Attractions Section */}
-<section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-emerald-500 selection:text-white">
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
   
   {/* Advanced Alpine Radial Glows */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -555,7 +555,7 @@ const Manali = () => {
 </section>
 
 {/* Accommodation Section */}
-<section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-purple-500 selection:text-white">
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-purple-500 selection:text-white">
   
   {/* Advanced Radial Background Glows */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -715,7 +715,7 @@ const Manali = () => {
 
 
 {/* Restaurants Section */}
-<section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-rose-500 selection:text-white">
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-500 selection:text-white">
   
   {/* Dynamic Culinary Background Tints */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -872,7 +872,7 @@ const Manali = () => {
 </section>
 
 {/* Budget Breakdown Section */}
-<section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-cyan-500 selection:text-white">
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-500 selection:text-white">
   
   {/* Cyber-Atmospheric Background Glows */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -1048,7 +1048,7 @@ const Manali = () => {
 </section>
 
 {/* Shopping Section */}
-<section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-violet-500 selection:text-white">
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-violet-500 selection:text-white">
   
   {/* Dynamic Retail Background Tints */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -1205,7 +1205,7 @@ const Manali = () => {
 </section>
 
 {/* Safety Tips Section */}
-<section className="relative max-w-6xl mx-auto px-6 py-16 selection:bg-rose-500 selection:text-white">
+<section className="relative max-w-6xl mx-auto md:px-1 py-16 selection:bg-rose-500 selection:text-white">
   
   {/* Dynamic Safeguard Background Tints */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
