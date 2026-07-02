@@ -554,7 +554,7 @@ const Manali = () => {
 
 </section>
 
-{/* Accommodation Section */}
+{/*best hotels*/}
 <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-purple-500 selection:text-white">
   
   {/* Advanced Radial Background Glows */}
@@ -563,7 +563,7 @@ const Manali = () => {
     <div className="absolute bottom-10 left-10 w-96 h-96 bg-blue-400/15 blur-[120px] rounded-full"></div>
   </div>
 
-  {/* Header Title Section */}
+  {/* Header Title Sectionbe */}
   <div className="text-center mb-14">
     <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-100 text-purple-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
       🏨 Accommodation Guide
