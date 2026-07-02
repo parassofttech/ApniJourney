@@ -290,6 +290,165 @@ const KeralaBackwaters = () => {
 
 </section>
 
+{/* Best Hotels Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-500 selection:text-white">
+  
+  {/* Advanced Radial Background Glows (Coastal Luxury Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-teal-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-emerald-50 border border-teal-100 text-teal-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏨 Accommodation Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
+      Best Hotels in Kerala
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Handpicked stays curated perfectly for luxury seekers, backwater wanderers, and smart backpackers.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Luxury Resorts (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌟
+          </div>
+          <span className="text-xs font-bold bg-teal-100/60 text-teal-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Premium Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
+          Luxury Heritage & Beach Resorts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience ultra-premium coastal luxury at iconic world-class retreats like <span className="font-semibold text-gray-900">The Leela Ashtamudi</span> and <span className="font-semibold text-gray-900">Kumarakom Lake Resort</span>. Flawless options for premium leisure, complete with private infinity pools overlooking the lake, authentic wood-carved heritage villas, open-air dining networks, and intensive, holistic Ayurvedic wellness spas.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Ultra-Luxury & Heritage Retreats
+      </div>
+    </div>
+
+    {/* Card 2: Mid-Range Hotels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌴
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Mid-Range Hideaways
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Highly comfortable, premium views at properties like <span className="font-semibold text-gray-900">Sterling Munnar</span> and <span className="font-semibold text-gray-900">Abad Whispering Palms</span>. These deliver upscale modern cooling/heating systems, deep plantation vistas, private balconies, and rich traditional buffet spreads at highly optimized prices—perfect for family groups.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Value & Vista Packed
+      </div>
+    </div>
+
+    {/* Card 3: Budget Backpackers */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          💰
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Social Hostels
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Highly affordable backpacker hostels and vibrant, tropical workspaces nestled along the artistic, beachside lanes of <span className="font-semibold text-gray-900">Fort Kochi & Varkala Cliff</span>. Unmatched setups for remote creators looking to cut down expenses, surf, and enjoy cafe-centric networking loops.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Backpacker Centric
+      </div>
+    </div>
+
+    {/* Card 4: Valley & Lagoon-Facing Hotels (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-300 shadow-lg hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌊
+          </div>
+          <span className="text-xs font-bold bg-cyan-100/60 text-cyan-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Prime Location
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-800 transition-colors duration-200">
+          Lagoon & Backwater-Facing Hotels
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Wake up straight to mist-covered water expanses and coconut groves. Premium boutique properties situated directly on the tranquil banks of <span className="font-semibold text-gray-900">Alleppey Backwaters & Punnamada Lake</span>. Secure these private floating decks to unlock instant access to peaceful country boat rows, high-end insect-insulation frameworks, and morning tea overlooking deep water drops.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+        Tropical Horizon Panoramas
+      </div>
+    </div>
+
+    {/* Card 5: Heritage Boutique Cottages */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🎨
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Boutique Spice Cottages
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Artistic, high-concept stone-and-teak cottages near the historic plantation town of <span className="font-semibold text-gray-900">Thekkady</span>. These offer private spice orchard charm, deeply personalized hospitality loops, and slow-paced quiet spaces far removed from the mainstream commercial grids.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Artistic Curations
+      </div>
+    </div>
+
+    {/* Card 6: Luxury Houseboat Villas */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center shrink-0 border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          🚤
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+            Exclusive Luxury Floating Cruise Villas
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Tailor-made for big island reunion groups and family structures. Independent floating cruises anchored around Vembanad Lake feature dedicated glass-walled air-conditioned lounge rooms, fully equipped modular kitchen architectures, multi-crew private service slots, and 100% water boundary privacy for a laid-back cruise.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Maximum Privacy
+      </span>
+    </div>
+
+  </div>
+
+  {/* Smart Booking Advisory Glass Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-500/10 via-emerald-500/5 to-transparent border border-teal-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-teal-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-teal-900 font-bold">Booking Window Tip:</strong> Planning a trip during the high-demand winter rush of late December or during Nehru Trophy Boat Race events? Make sure to lock down your premium houseboat bookings early to avoid heavily inflated season surges and ensure fully functional power backup setups!
+      </p>
+    </div>
+  </div>
+
+</section>
+
           {/* Info Grid */}
           <div className="grid md:grid-cols-2 gap-6">
             {/* Popular Backwater Destinations */}
