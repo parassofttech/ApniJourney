@@ -86,11 +86,11 @@ const LehLadakh = () => {
     {/* Card 1: Core Essence (Double Width) */}
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-sky-400/50 transition-all duration-300">
       <div className="absolute -top-12 -right-12 w-28 h-28 bg-sky-500/10 rounded-full blur-xl group-hover:bg-sky-500/20 transition-all duration-300"></div>
-      <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-sky-50 text-sky-600 shrink-0 shadow-inner">✨</span>
+      <div className="inline-block gap-5">
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-sky-50 text-sky-600 shrink-0 shadow-inner">✨</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">The Cold Desert Reality</h3>
-          <p className="text-gray-600 text-sm leading-relaxed font-medium">
+          <p className="text-gray-600 text-sm leading-relaxed items-start font-medium">
             Ladakh represents an unparalleled blend of raw exploration and deep spiritual tranquility. It is a realm defined by ancient Tibetan Buddhist monasteries, fluttering prayer flags, and high-altitude mountain ranges that constantly challenge a traveler's ultimate endurance.
           </p>
           <div className="pt-2 flex flex-wrap gap-2">
@@ -106,7 +106,7 @@ const LehLadakh = () => {
       <div className="absolute -bottom-12 -left-12 w-24 h-24 bg-indigo-500/10 rounded-full blur-xl group-hover:bg-indigo-500/20 transition-all duration-300"></div>
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-indigo-50 text-indigo-600 shadow-inner">📍</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-indigo-50 text-indigo-600 shadow-inner">📍</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Geographic Hub</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             Leh District, Union Territory of Ladakh, India. This strategic frontier features rugged high-altitude valleys and deep geological canyons bordering sensitive international lines.
@@ -119,7 +119,7 @@ const LehLadakh = () => {
     <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-blue-400/50 transition-all duration-300">
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-blue-50 text-blue-600 shadow-inner">✈️</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-blue-50 text-blue-600 shadow-inner">✈️</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Primary Gateway</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             Kushok Bakula Rimpochee Airport (IXL), Leh. Standing as one of the highest commercial airports globally, flight operations run strictly in the early morning due to intense mountain thermal winds.
@@ -131,8 +131,8 @@ const LehLadakh = () => {
     {/* Card 4: Signature Landscapes (Double Width) */}
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-emerald-400/50 transition-all duration-300">
       <div className="absolute -top-12 -left-12 w-28 h-28 bg-emerald-500/10 rounded-full blur-xl group-hover:bg-emerald-500/20 transition-all duration-300"></div>
-      <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-emerald-50 text-emerald-600 shrink-0 shadow-inner">🐫</span>
+      <div className=" inline-block gap-5">
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-emerald-50 text-emerald-600 shrink-0 shadow-inner">🐫</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Extraterrestrial Terrains</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -150,7 +150,7 @@ const LehLadakh = () => {
     <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-amber-400/50 transition-all duration-300">
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-amber-50 text-amber-600 shadow-inner">☀️</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-amber-50 text-amber-600 shadow-inner">☀️</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Ideal Horizon</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             **May to September** unlocks the optimum high summer and early autumn travel window, guaranteeing open mountain passes and standard climate stabilization ranging safely between 10°C and 25°C.
@@ -163,7 +163,7 @@ const LehLadakh = () => {
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-purple-400/50 transition-all duration-300">
       <div className="absolute -bottom-12 -right-12 w-28 h-28 bg-purple-500/10 rounded-full blur-xl group-hover:bg-purple-500/20 transition-all duration-300"></div>
       <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-purple-50 text-purple-600 shrink-0 shadow-inner">🕉️</span>
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-purple-50 text-purple-600 shrink-0 shadow-inner">🕉️</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Cultural Essence & Silk Route Legacy</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -208,7 +208,7 @@ const LehLadakh = () => {
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-amber-400/50 transition-all duration-300">
       <div className="absolute -top-12 -right-12 w-28 h-28 bg-amber-500/10 rounded-full blur-xl group-hover:bg-amber-500/20 transition-all duration-300"></div>
       <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-amber-50 text-amber-600 shrink-0 shadow-inner">☀️</span>
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-amber-50 text-amber-600 shrink-0 shadow-inner">☀️</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">The Golden Window (June - Sept)</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -227,7 +227,7 @@ const LehLadakh = () => {
       <div className="absolute -bottom-12 -left-12 w-24 h-24 bg-emerald-500/10 rounded-full blur-xl group-hover:bg-emerald-500/20 transition-all duration-300"></div>
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-emerald-50 text-emerald-600 shadow-inner">🏔️</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-emerald-50 text-emerald-600 shadow-inner">🏔️</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Early Summer (May)</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             May marks the launch of the regional tourism cycle. While the Srinagar highway generally clears early, the Manali axis can remain restricted. Travelers can witness massive, pristine snow walls lining the approaches to Chang La and Khardung La passes, making it a highly photogenic period.
@@ -240,7 +240,7 @@ const LehLadakh = () => {
     <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-blue-400/50 transition-all duration-300">
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-blue-50 text-blue-600 shadow-inner">🍁</span>
+          <span className="inline-block md:text-3xl md:p-3.55 rounded-2xl bg-blue-50 text-blue-600 shadow-inner">🍁</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">The Autumn Crisp (October)</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             October welcomes the onset of sub-zero temperatures. Peak crowds dissipate rapidly, leaving behind a stark landscape painted in brilliant golden and deep crimson tones. Overland highways start closing due to unpredictable blizzards late in the month; fly-in tracking is heavily prioritized.
@@ -252,8 +252,8 @@ const LehLadakh = () => {
     {/* Card 4: Extreme Winter - Nov to April (Double Width) */}
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-indigo-400/50 transition-all duration-300">
       <div className="absolute -top-12 -left-12 w-28 h-28 bg-indigo-500/10 rounded-full blur-xl group-hover:bg-indigo-500/20 transition-all duration-300"></div>
-      <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-indigo-50 text-indigo-600 shrink-0 shadow-inner">❄️</span>
+      <div className="md:flex items-start inline-block gap-5">
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-indigo-50 text-indigo-600 shrink-0 shadow-inner">❄️</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Frozen Desert (Nov - April)</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -271,7 +271,7 @@ const LehLadakh = () => {
     <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-purple-400/50 transition-all duration-300">
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-purple-50 text-purple-600 shadow-inner">⛓️</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-purple-50 text-purple-600 shadow-inner">⛓️</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Pass Clearance Status</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             The BRO (Border Roads Organisation) drives precision mechanical clearance across all strategic sectors. Early seasonal transitions can trigger road closures from sudden cloudbursts, requiring continuous status monitoring before departure.
@@ -283,8 +283,8 @@ const LehLadakh = () => {
     {/* Card 6: Cultural Festivals Window (Double Width) */}
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-rose-400/50 transition-all duration-300">
       <div className="absolute -bottom-12 -right-12 w-28 h-28 bg-rose-500/10 rounded-full blur-xl group-hover:bg-rose-500/20 transition-all duration-300"></div>
-      <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-rose-50 text-rose-600 shrink-0 shadow-inner">🎭</span>
+      <div className="flex items-start md:inline-block gap-5">
+        <span className=" md:text-3xl md:p-3.5 rounded-2xl bg-rose-50 text-rose-600 shrink-0 shadow-inner">🎭</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Monastery Festivals (June - July)</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -329,7 +329,7 @@ const LehLadakh = () => {
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-rose-400/50 transition-all duration-300">
       <div className="absolute -top-12 -right-12 w-28 h-28 bg-rose-500/10 rounded-full blur-xl group-hover:bg-rose-500/20 transition-all duration-300"></div>
       <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-rose-50 text-rose-600 shrink-0 shadow-inner">👑</span>
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-rose-50 text-rose-600 shrink-0 shadow-inner">👑</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">The Grand Dragon Ladakh (Leh)</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -348,7 +348,7 @@ const LehLadakh = () => {
       <div className="absolute -bottom-12 -left-12 w-24 h-24 bg-indigo-500/10 rounded-full blur-xl group-hover:bg-indigo-500/20 transition-all duration-300"></div>
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-indigo-50 text-indigo-600 shadow-inner">🏛️</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-indigo-50 text-indigo-600 shadow-inner">🏛️</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">The Zen Ladakh</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             An eco-conscious luxury boutique hotel featuring locally crafted wood carvings, private villas, and an indoor temperature-controlled swimming pool. Perfect for travelers prioritizing quiet wellness.
@@ -361,7 +361,7 @@ const LehLadakh = () => {
     <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-emerald-400/50 transition-all duration-300">
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-emerald-50 text-emerald-600 shadow-inner">🎪</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-emerald-50 text-emerald-600 shadow-inner">🎪</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">The Ultimate Travelling Camp</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             Chamba Camp (Diskit/Thiksey). Ultra-exclusive canvas luxury tents featuring private butler services, customized gourmet dining, and elevated wooden decks framing ancient monasteries.
@@ -374,7 +374,7 @@ const LehLadakh = () => {
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-amber-400/50 transition-all duration-300">
       <div className="absolute -top-12 -left-12 w-28 h-28 bg-amber-500/10 rounded-full blur-xl group-hover:bg-amber-500/20 transition-all duration-300"></div>
       <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-amber-50 text-amber-600 shrink-0 shadow-inner">🌳</span>
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-amber-50 text-amber-600 shrink-0 shadow-inner">🌳</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Nimmu House (Nimmu Valley)</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -392,7 +392,7 @@ const LehLadakh = () => {
     <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-blue-400/50 transition-all duration-300">
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-blue-50 text-blue-600 shadow-inner">🌊</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-blue-50 text-blue-600 shadow-inner">🌊</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Pangong Eco-Resort</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             Premium luxury wooden cottages located right near the shoreline of Pangong Tso (Spangmik). Features insulated structural walls to tackle sub-zero night drop-offs and unobstructed lake-view panoramas.
@@ -405,7 +405,7 @@ const LehLadakh = () => {
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-purple-400/50 transition-all duration-300">
       <div className="absolute -bottom-12 -right-12 w-28 h-28 bg-purple-500/10 rounded-full blur-xl group-hover:bg-purple-500/20 transition-all duration-300"></div>
       <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-purple-50 text-purple-600 shrink-0 shadow-inner">🏔️</span>
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-purple-50 text-purple-600 shrink-0 shadow-inner">🏔️</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Stone Hedge Luxury Resort (Nubra Valley)</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -451,7 +451,7 @@ const LehLadakh = () => {
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-orange-400/50 transition-all duration-300">
       <div className="absolute -top-12 -right-12 w-28 h-28 bg-orange-500/10 rounded-full blur-xl group-hover:bg-orange-500/20 transition-all duration-300"></div>
       <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-orange-50 text-orange-600 shrink-0 shadow-inner">🥟</span>
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-orange-50 text-orange-600 shrink-0 shadow-inner">🥟</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">The Tibetan Kitchen (Leh)</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -470,7 +470,7 @@ const LehLadakh = () => {
       <div className="absolute -bottom-12 -left-12 w-24 h-24 bg-amber-500/10 rounded-full blur-xl group-hover:bg-amber-500/20 transition-all duration-300"></div>
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-amber-50 text-amber-600 shadow-inner">☕</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-amber-50 text-amber-600 shadow-inner">☕</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Pumpernickel German Bakery</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             Located right in the bustling Old Leh Market. Famous for high-altitude freshly brewed espresso shots, legendary apple pies, yak cheese sandwiches, and artisanal tracking breakfast platters for early travelers.
@@ -483,7 +483,7 @@ const LehLadakh = () => {
     <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-indigo-400/50 transition-all duration-300">
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-indigo-50 text-indigo-600 shadow-inner">🌆</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-indigo-50 text-indigo-600 shadow-inner">🌆</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Bon Appétit</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             A minimalist, high-end fine dining space crafted out of traditional mud architecture. Features a premium rooftop deck with unobstructed sunset views of the Stok range, serving elegant continental and tandoori infusions.
@@ -496,7 +496,7 @@ const LehLadakh = () => {
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-emerald-400/50 transition-all duration-300">
       <div className="absolute -top-12 -left-12 w-28 h-28 bg-emerald-500/10 rounded-full blur-xl group-hover:bg-emerald-500/20 transition-all duration-300"></div>
       <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-emerald-50 text-emerald-600 shrink-0 shadow-inner">🌱</span>
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-emerald-50 text-emerald-600 shrink-0 shadow-inner">🌱</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Alchi Kitchen (Leh / Alchi)</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -514,7 +514,7 @@ const LehLadakh = () => {
     <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-yellow-400/50 transition-all duration-300">
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-yellow-50 text-yellow-600 shadow-inner">🌳</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-yellow-50 text-yellow-600 shadow-inner">🌳</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Lala's Art Café</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             A cozy, bohemian structural restoration project right in Old Leh town. Offers an artistic layout featuring local photography, smooth cold brews, vegan treats, and a highly intimate mountain terrace.
@@ -527,7 +527,7 @@ const LehLadakh = () => {
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-red-400/50 transition-all duration-300">
       <div className="absolute -bottom-12 -right-12 w-28 h-28 bg-red-500/10 rounded-full blur-xl group-hover:bg-red-500/20 transition-all duration-300"></div>
       <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-red-50 text-red-600 shrink-0 shadow-inner">🍛</span>
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-red-50 text-red-600 shrink-0 shadow-inner">🍛</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Crazy Burger & Himalayan Cafe (Hunder)</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -907,7 +907,7 @@ const LehLadakh = () => {
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-rose-400/50 transition-all duration-300">
       <div className="absolute -top-12 -right-12 w-28 h-28 bg-rose-500/10 rounded-full blur-xl group-hover:bg-rose-500/20 transition-all duration-300"></div>
       <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-rose-50 text-rose-600 shrink-0 shadow-inner">🏔️</span>
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-rose-50 text-rose-600 shrink-0 shadow-inner">🏔️</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Mandatory Acclimatization</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -926,7 +926,7 @@ const LehLadakh = () => {
       <div className="absolute -bottom-12 -left-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl group-hover:bg-blue-500/20 transition-all duration-300"></div>
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-blue-50 text-blue-600 shadow-inner">💧</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-blue-50 text-blue-600 shadow-inner">💧</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Hydration Rule</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             Thin atmospheric pressure me dehydration fast hota hai. Din me kam se kam **4-5 Liters paani** piyein. Light carbs consume karein aur alcohol/smoking ko strictly avoid karein.
@@ -939,7 +939,7 @@ const LehLadakh = () => {
     <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-purple-400/50 transition-all duration-300">
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-purple-50 text-purple-600 shadow-inner">📄</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-purple-50 text-purple-600 shadow-inner">📄</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Inner Line Permits (ILP)</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             Pangong Tso, Nubra Valley, aur Hanle jaise sensitive border zones ke liye **ILP (Inner Line Permit)** mandatory hai. Leh counter ya online portal se documents verify karakar multiple physical copies carry karein.
@@ -952,7 +952,7 @@ const LehLadakh = () => {
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-amber-400/50 transition-all duration-300">
       <div className="absolute -top-12 -left-12 w-28 h-28 bg-amber-500/10 rounded-full blur-xl group-hover:bg-amber-500/20 transition-all duration-300"></div>
       <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-amber-50 text-amber-600 shrink-0 shadow-inner">🏍️</span>
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-amber-50 text-amber-600 shrink-0 shadow-inner">🏍️</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Water Crossings & Passes</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -970,7 +970,7 @@ const LehLadakh = () => {
     <div className="bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-emerald-400/50 transition-all duration-300">
       <div className="flex flex-col h-full justify-between space-y-6">
         <div className="space-y-3">
-          <span className="inline-block text-3xl p-3.5 rounded-2xl bg-emerald-50 text-emerald-600 shadow-inner">📡</span>
+          <span className="inline-block md:text-3xl md:p-3.5 rounded-2xl bg-emerald-50 text-emerald-600 shadow-inner">📡</span>
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Network Blackouts</h3>
           <p className="text-gray-600 text-xs leading-relaxed font-medium">
             Ladakh me sirf **Postpaid SIM cards** (majorly Jio aur Airtel) kaam karte hain. Leh se aage nikalte hi signal dead zones milenge, isliye offline maps aur emergency contacts pehle hi download kar lein.
@@ -983,7 +983,7 @@ const LehLadakh = () => {
     <div className="md:col-span-2 bg-white/70 backdrop-blur-xl border border-gray-200/80 rounded-3xl p-8 shadow-xl relative overflow-hidden group hover:border-indigo-400/50 transition-all duration-300">
       <div className="absolute -bottom-12 -right-12 w-28 h-28 bg-indigo-500/10 rounded-full blur-xl group-hover:bg-indigo-500/20 transition-all duration-300"></div>
       <div className="flex items-start gap-5">
-        <span className="text-3xl p-3.5 rounded-2xl bg-indigo-50 text-indigo-600 shrink-0 shadow-inner">🧥</span>
+        <span className="md:text-3xl md:p-3.5 rounded-2xl bg-indigo-50 text-indigo-600 shrink-0 shadow-inner">🧥</span>
         <div className="space-y-2">
           <h3 className="text-lg font-black text-gray-900 uppercase tracking-wide">Thermal Dynamics & UV Shield</h3>
           <p className="text-gray-600 text-sm leading-relaxed font-medium">

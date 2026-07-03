@@ -60,6 +60,132 @@ const Shimla = () => {
             </motion.p>
           </header>
 
+
+          {/* Introduction Section: Shimla */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Heritage Raj-Era Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 left-10 w-96 h-96 bg-rose-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-amber-50 border border-rose-100 text-rose-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      <span>🚂</span> Destination Spotlight
+    </div>
+    <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
+      Discover Shimla
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+      The timeless Queen of Hills, where majestic colonial heritage meets pine-scented mountain ridges.
+    </p>
+  </div>
+
+  {/* Main Layout Container */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    
+    {/* Left Column: Premium Introduction (Glass Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-rose-950/5 rounded-3xl p-8 sticky top-6">
+      <div className="text-4xl mb-4">👑</div>
+      <h3 className="text-2xl font-bold text-gray-900 mb-4">
+        The Queen of Hills
+      </h3>
+      <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+        Shimla, the iconic capital of Himachal Pradesh, stands as a grand testament to natural beauty intertwined with rich British-era history. Once the summer capital of British India, it preserves its old-world charm effortlessly.
+      </p>
+      <p className="text-gray-600 leading-relaxed text-[15.5px]">
+        Stretching across a 12-kilometer ridge in the lower Himalayas, Shimla offers dynamic street vistas, pedestrian-only avenues, and a majestic backdrop of oak and deodar forests.
+      </p>
+      
+      {/* Quick Stats Banner inside Left Card */}
+      <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
+        <div className="bg-rose-50/50 p-3 rounded-2xl">
+          <p className="text-2xl font-black text-rose-600">2,205m</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Altitude</p>
+        </div>
+        <div className="bg-amber-50/50 p-3 rounded-2xl">
+          <p className="text-2xl font-black text-amber-600">UNESCO</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Toy Train Route</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Right Column: Dynamic Feature Grid */}
+    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      
+      {/* Card 1: Colonial Architecture */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-md hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center text-xl font-bold text-rose-600 mb-5 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
+          🏛️
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Colonial Architecture & History
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Step back into the 19th century. From the magnificent, Scottish-baronial style <span className="font-semibold">Viceregal Lodge</span> to the Neo-Gothic architecture of Christ Church on The Ridge, history is etched in stone.
+        </p>
+      </div>
+
+      {/* Card 2: The Ridge & Mall Road Vibe */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-purple-300 shadow-md hover:shadow-xl hover:shadow-purple-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-purple-50 flex items-center justify-center text-xl font-bold text-purple-600 mb-5 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
+          🌇
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-purple-700 transition-colors duration-200">
+          The Mall Road Vibe
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          A completely vehicle-free pedestrian paradise. Enjoy evening strolls on the bustling <span className="font-semibold">Mall Road</span>, explore local handicraft emporiums, or just relax on the wooden benches watching the sunset.
+        </p>
+      </div>
+
+      {/* Card 3: Himachali Flavors */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+          🍲
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Traditional Himachali Dham
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          A true feast for your tastebuds. Dive into authentic Himachali cuisine with a slow-cooked festival meal called <span className="font-semibold">Dham</span>, sweet and savory Sepu Badi, and delicious street-side chana kulcha.
+        </p>
+      </div>
+
+      {/* Card 4: Toy Train Magic */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-xl font-bold text-emerald-600 mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+          🚂
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Kalka-Shimla Toy Train
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Experience a legendary fairy-tale journey. The UNESCO World Heritage narrow-gauge train chugs slowly through 103 dark tunnels, over 800 bridges, and past spectacular pine-covered valley bends.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  {/* Bottom Premium Sticky Note */}
+  <div className="mt-12 bg-gradient-to-r from-rose-600 via-pink-600 to-amber-600 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
+    <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+    <div className="relative z-10 max-w-3xl">
+      <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
+      <p className="text-rose-50 mt-2 text-sm md:text-base leading-relaxed opacity-90">
+        In short, Shimla is a brilliant blend of colonial nostalgia, romantic misty walks, and vibrant mountain culture. It remains the perfect all-weather mountain escape that promises a vintage hill station experience you will cherish forever.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+    
+
           {/* 📊 INFO GRID - Advanced Bento Style */}
           <div className="grid md:grid-cols-2 gap-8">
             

@@ -63,6 +63,128 @@ const Tawang = () => {
             </motion.p>
           </header>
 
+          {/* Introduction Section: Tawang */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Mystical Himalayan Border Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 left-10 w-96 h-96 bg-cyan-500/10 blur-[130px] rounded-full"></div>
+    <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-50 to-amber-50 border border-cyan-100 text-cyan-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      <span>🏔️</span> Destination Spotlight
+    </div>
+    <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-cyan-950 to-gray-950">
+      Discover Tawang
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+      The hidden land of dawn-lit mountains, pristine glacial valleys, and the soaring heritage of the Monpa soul.
+    </p>
+  </div>
+
+  {/* Main Layout Container */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    
+    {/* Left Column: Premium Introduction (Glass Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-cyan-950/5 rounded-3xl p-8 sticky top-6">
+      <div className="text-4xl mb-4">☸️</div>
+      <h3 className="text-2xl font-bold text-gray-900 mb-4">
+        The Mystical Corner of Arunachal
+      </h3>
+      <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+        Tawang, perched at a breathtaking altitude of 3,048 meters in the northwestern corner of Arunachal Pradesh, is a ruggedly beautiful paradise. It is a land deeply steeped in Tibetan Buddhist culture, dramatic mountain passes, and stunning alpine lakes.
+      </p>
+      <p className="text-gray-600 leading-relaxed text-[15.5px]">
+        Home to the welcoming Monpa tribe, this remote valley is bounded by Tibet to the north and Bhutan to the southwest, serving as a peaceful guardian of timeless ancient wisdom and high-altitude wilderness.
+      </p>
+      
+      {/* Quick Stats Banner inside Left Card */}
+      <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
+        <div className="bg-cyan-50/50 p-3 rounded-2xl">
+          <p className="text-2xl font-black text-cyan-600">3,048m</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Town Altitude</p>
+        </div>
+        <div className="bg-amber-50/50 p-3 rounded-2xl">
+          <p className="text-2xl font-black text-amber-600">2nd Largest</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Monastery in World</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Right Column: Dynamic Feature Grid */}
+    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      
+      {/* Card 1: The Tawang Monastery */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-cyan-300 shadow-md hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-cyan-50 flex items-center justify-center text-xl font-bold text-cyan-600 mb-5 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300">
+          🕌
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+          The Great Tawang Monastery
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Founded in the 17th century, <span className="font-semibold">Gaden Namgyal Lhatse</span> is India's largest monastery. Perched like a citadel on a ridge, it houses priceless ancient scriptures and a magnificent 26-foot gilded Buddha statue.
+        </p>
+      </div>
+
+      {/* Card 2: Sela Pass Ascent */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-md hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-xl font-bold text-blue-600 mb-5 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+          ❄️
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          The Mighty Sela Pass
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          The breathtaking gateway to Tawang at 13,700 feet. Experience the surreal thrill of crossing through absolute snow, framed beautifully by the frozen, mystical waters of the sacred <span className="font-semibold">Sela Lake</span>.
+        </p>
+      </div>
+
+      {/* Card 3: High-Altitude Glacial Lakes */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-md hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 flex items-center justify-center text-xl font-bold text-teal-600 mb-5 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
+          💧
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          Madhuri Lake & Beyond
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Discover remote glacial lakes hidden in the mountains. Visit <span className="font-semibold">Sangetsar Lake (Madhuri Lake)</span>, formed by an earthquake, where upright dead tree trunks emerge eerily out of crystal-clear mountain waters.
+        </p>
+      </div>
+
+      {/* Card 4: Monpa Cuisine & Hospitality */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+          🍲
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Hearty Monpa Flavors
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Warm your soul in the cold weather. Try authentic Monpa delicacies like <span className="font-semibold">Zan</span> (a savory millet porridge), handmade spicy buckwheat noodles, traditional momos, and hot butter tea.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  {/* Bottom Premium Sticky Note */}
+  <div className="mt-12 bg-gradient-to-r from-cyan-700 via-teal-700 to-amber-600 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
+    <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+    <div className="relative z-10 max-w-3xl">
+      <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
+      <p className="text-cyan-50 mt-2 text-sm md:text-base leading-relaxed opacity-90">
+        In short, Tawang is a raw journey into the clouds. It requires a bit of effort to reach, but the reward is an unparalleled frontier experience blending pristine, snow-clad valleys with powerful, tranquil Buddhist roots that will stay etched in your memory forever.
+      </p>
+    </div>
+  </div>
+
+</section>
+
           {/* 📊 INFO GRID */}
           <div className="grid md:grid-cols-2 gap-8">
             
