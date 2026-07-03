@@ -12,7 +12,7 @@ const Majuli = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
+        className="w-full  mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
       >
 
         {/* 🌊 HERO SECTION */}
@@ -184,78 +184,7 @@ const Majuli = () => {
 
 </section>
 
-          {/* 📊 INFO GRID */}
-          <div className="grid md:grid-cols-2 gap-8">
-            
-            {/* Top Attractions */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-yellow-50 to-amber-50 rounded-[2.5rem] border border-yellow-100/50 shadow-sm relative overflow-hidden group"
-            >
-              <Landmark className="absolute -right-6 -top-6 text-yellow-200/40 w-32 h-32 group-hover:rotate-12 transition-transform duration-500" />
-              <h2 className="text-2xl font-black text-yellow-900 mb-8 flex items-center gap-3 italic">
-                <Compass className="text-yellow-500" /> Cultural Highlights
-              </h2>
-              <ul className="space-y-5">
-                <AttractionItem emoji="🏯" bold="Satras" text="Neo-Vaishnavite monasteries" />
-                <AttractionItem emoji="🎨" bold="Tribal Art" text="Mask-making and pottery" />
-                <AttractionItem emoji="🌾" bold="Floodplains" text="Lush green paddy fields" />
-                <AttractionItem emoji="🛶" bold="River Life" text="Majuli's floating charm" />
-              </ul>
-            </motion.div>
-
-            {/* Adventure */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-amber-50 to-orange-50 rounded-[2.5rem] border border-amber-100/50 shadow-sm"
-            >
-              <h2 className="text-2xl font-black text-orange-900 mb-8 flex items-center gap-3 italic">
-                <Plane className="text-orange-500" /> Experiences
-              </h2>
-              <div className="space-y-4">
-                <AdventureItem text="Boat Rides on Brahmaputra" />
-                <AdventureItem text="Cycling Across the Island" />
-                <AdventureItem text="Village Walks & Photography" />
-              </div>
-            </motion.div>
-
-            {/* Culture */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-green-50 to-emerald-50 rounded-[2.5rem] border border-green-100/50 shadow-sm"
-            >
-              <h2 className="text-2xl font-black text-green-900 mb-8 flex items-center gap-3 italic">
-                <Utensils className="text-green-500" /> Local Cuisine
-              </h2>
-              <p className="text-slate-600 font-medium leading-relaxed mb-6">
-                Taste authentic Assamese dishes like <span className="text-green-700 font-bold">pitha</span>, 
-                <span className="text-green-700 font-bold">masor tenga</span>, and fresh river fish specialties.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {["#Satras", "#RiverIsland", "#MajuliVibes", "#AssamCulture"].map(tag => (
-                  <span key={tag} className="px-3 py-1 bg-white rounded-full text-[10px] font-black text-green-400 border border-green-100 uppercase tracking-widest">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-slate-900 rounded-[2.5rem] text-white shadow-2xl"
-            >
-              <h2 className="text-2xl font-black mb-8 flex items-center gap-3 italic">
-                <Plane className="text-yellow-400" /> Travel Intel
-              </h2>
-              <div className="space-y-5">
-                <TravelDetail icon={<Plane />} label="Nearest Airport" value="Jorhat Airport" />
-                <TravelDetail icon={<Train />} label="Railway Access" value="Sibsagar Junction" />
-                <TravelDetail icon={<Calendar />} label="Best Season" value="Nov – Mar" />
-                <TravelDetail icon={<MapPin />} label="From Guwahati" value="~300 KM (6 hrs)" />
-              </div>
-            </motion.div>
-          </div>
+          
 
           {/* 📸 GALLERY */}
           <section className="mt-28">
@@ -292,6 +221,125 @@ const Majuli = () => {
               ))}
             </div>
           </section>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-sky-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (River Island Mystique & Satra Heritage Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-sky-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-50 to-amber-50 border border-sky-100 text-sky-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🚣 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-sky-950 to-gray-950">
+      Best Time to Visit Majuli
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect cultural escape to the world's largest river island aligned with spectacular winter festivals, pleasant ferry rides, and migratory bird loops.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-sky-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl font-bold mb-6 border border-sky-100">
+          🌾
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Gentle River Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Majuli unfolds its absolute best cultural colors and comfortable climate from <span className="font-bold text-sky-700 bg-sky-50 px-1.5 py-0.5 rounded-md">October to March</span>. After the heavy monsoon currents recede, the Brahmaputra River calms down completely, bringing pleasant daytime weather between 12°C - 26°C with cool, foggy island nights.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this premium tourist cycle, riding country boats across silent channels, cycling along the bamboo hut villages, or witnessing the ancient mask-making arts at <span className="font-semibold text-gray-900">Samaguri Satra</span> feels extraordinarily peaceful.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-sky-50 to-amber-50 rounded-2xl border border-sky-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-sky-900 font-medium leading-relaxed">
+          <strong className="text-sky-950">Pro Tip:</strong> Want to witness Majuli's ultimate cultural grand loop? Plan your trip specifically for mid-November to catch the globally renowned <strong className="text-amber-950">Raas Mahotsav</strong>. The entire island comes alive with overnight theatrical dance performances depicting Lord Krishna's life, organized across various historic Satras.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak & Festivals */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-sm hover:shadow-lg hover:shadow-sky-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-sky-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🎭
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-sky-700 transition-colors duration-200">
+              Crisp Monastic Winters (October – February)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The absolute peak travel window. Enjoy smooth ferry crossings from Nimati Ghat, explore Neo-Vaishnavite monasteries, and spot beautiful winter migratory birds at the wetlands.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Cultural Peak
+        </span>
+      </div>
+
+      {/* Season 2: Pre-Monsoon Winds */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
+              Humid Spring & Ali-Aye-Ligang (March – May)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The weather gets warmer and brings occasional thunderstorms (Bordoisila). Great for experiencing the vibrant spring festival of the indigenous Mising tribe with traditional dances.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Tribal Spring
+        </span>
+      </div>
+
+      {/* Season 3: Heavy Monsoon Overflows */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-rose-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-rose-700 transition-colors duration-200">
+              Intense Monsoons & Floods (June – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The Brahmaputra River swells drastically, flooding large areas of the island. Ferry services are regularly suspended due to risky swift currents. Strongly recommend avoiding travel.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          High Risk
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
         </div>
       </motion.div>

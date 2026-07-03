@@ -13,7 +13,7 @@ const DzukouValley = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
+        className="w-full  mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
       >
 
         {/* 🌄 HERO SECTION */}
@@ -185,78 +185,7 @@ const DzukouValley = () => {
 
 </section>
 
-          {/* 📊 INFO GRID */}
-          <div className="grid md:grid-cols-2 gap-8">
-            
-            {/* Top Attractions */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-green-50 to-emerald-50 rounded-[2.5rem] border border-green-100/50 shadow-sm relative overflow-hidden group"
-            >
-              <Landmark className="absolute -right-6 -top-6 text-green-200/40 w-32 h-32 group-hover:rotate-12 transition-transform duration-500" />
-              <h2 className="text-2xl font-black text-green-900 mb-8 flex items-center gap-3 italic">
-                <Compass className="text-green-500" /> Scenic Highlights
-              </h2>
-              <ul className="space-y-5">
-                <AttractionItem emoji="🏞️" bold="Dzukou River" text="Crystal clear mountain waters" />
-                <AttractionItem emoji="🌸" bold="Flowers & Blooms" text="Seasonal lily carpets" />
-                <AttractionItem emoji="⛰️" bold="Rolling Hills" text="Panoramic green landscapes" />
-                <AttractionItem emoji="🌄" bold="Sunrise Views" text="Golden morning skies" />
-              </ul>
-            </motion.div>
-
-            {/* Adventure */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-[2.5rem] border border-emerald-100/50 shadow-sm relative overflow-hidden group"
-            >
-              <h2 className="text-2xl font-black text-emerald-900 mb-8 flex items-center gap-3 italic">
-                <Mountain className="text-emerald-500" /> Outdoor Adventures
-              </h2>
-              <div className="space-y-4">
-                <AdventureItem text="Trekking through the valley" />
-                <AdventureItem text="Photography of seasonal blooms" />
-                <AdventureItem text="Camping in serene meadows" />
-              </div>
-            </motion.div>
-
-            {/* Culture & Cuisine */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-yellow-50 to-amber-50 rounded-[2.5rem] border border-yellow-100/50 shadow-sm"
-            >
-              <h2 className="text-2xl font-black text-yellow-900 mb-8 flex items-center gap-3 italic">
-                <Utensils className="text-yellow-500" /> Local Flavors
-              </h2>
-              <p className="text-slate-600 font-medium leading-relaxed mb-6">
-                Savor the local Naga cuisine, from smoked meat delicacies to fresh river fish, 
-                served with warm hospitality.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {["#Trekking", "#Blooms", "#ValleyVibes", "#NagalandCulture"].map(tag => (
-                  <span key={tag} className="px-3 py-1 bg-white rounded-full text-[10px] font-black text-yellow-400 border border-yellow-100 uppercase tracking-widest">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-slate-900 rounded-[2.5rem] text-white shadow-2xl"
-            >
-              <h2 className="text-2xl font-black mb-8 flex items-center gap-3 italic">
-                <Plane className="text-green-400" /> Travel Intel
-              </h2>
-              <div className="space-y-5">
-                <TravelDetail icon={<Plane />} label="Nearest Airport" value="Kohima Airport" />
-                <TravelDetail icon={<Train />} label="Railway Access" value="Dimapur Junction" />
-                <TravelDetail icon={<Calendar />} label="Best Season" value="Oct – Mar" />
-                <TravelDetail icon={<MapPin />} label="From Kohima" value="~30 KM (1 hr)" />
-              </div>
-            </motion.div>
-          </div>
+         
 
           {/* 📸 GALLERY */}
           <section className="mt-28">
@@ -293,6 +222,125 @@ const DzukouValley = () => {
               ))}
             </div>
           </section>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Celestial Valley & Floating Cloud Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-cyan-50 border border-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      ⛰️ Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Best Time to Visit Dzukou Valley
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your ultimate northeastern trekking loop aligned with emerald summer slopes, rare endemic flower blooms, or frost-covered winter horizons.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-emerald-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-6 border border-emerald-100">
+          🌸
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Highland Blooming Cycles
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Dzukou Valley shifts its magic across two distinct peak windows: <span className="font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-md">June to September</span> for intense lush greenery and rare flower blooms, and <span className="font-bold text-cyan-700 bg-cyan-50 px-1.5 py-0.5 rounded-md">October to March</span> for completely clear crisp views. Sitting at 2,452 meters, the day weather stays incredibly pleasant while winter nights frequently dive near freezing points.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During these pristine blocks, ascending the steep trails from <span className="font-semibold text-gray-900">Viswema or Jakhama villages</span>, walking through the completely flat dwarf-bamboo carpet loops, or exploring natural caves near freezing streams feels like stepping onto another planet.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-emerald-50 to-cyan-50 rounded-2xl border border-emerald-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-emerald-900 font-medium leading-relaxed">
+          <strong className="text-emerald-950">Pro Tip:</strong> Want to catch the exclusive pink and white blanket across the landscape? Target the monsoon onset from <strong className="text-emerald-950">late June to mid-July</strong>. This is the precise window when the endemic, ultra-rare <strong className="text-rose-950">Dzukou Lily</strong> blooms across the riverbeds, offering an unforgettable sight despite occasional light showers.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Emerald Rain & Blooms */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌿
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+              Lush Monsoon & Lily Blooms (June – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The valley turns an unbelievable shade of neon green. While the trekking trails require good physical grip due to rain mud, the mist-laden slopes and exploding flower fields make it the most iconic season.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Lush Peak
+        </span>
+      </div>
+
+      {/* Season 2: Crystal Blue Autumn */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-cyan-300 shadow-sm hover:shadow-lg hover:shadow-cyan-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-cyan-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-cyan-700 transition-colors duration-200">
+              Clear Autumn Skylines (October – November)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The rains exit completely, giving way to bright golden sunshine and flawless horizon loops. The absolute prime time for stargazing and setting up outdoor valley campsites.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-cyan-100/70 text-cyan-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Perfect Skies
+        </span>
+      </div>
+
+      {/* Season 3: Frosty Deep Winter */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-blue-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ❄️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-200">
+              Frozen Crisp Winters (December – February)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The valley floor switches to pale brown hues, and early morning frost completely freezes the running riverbeds. Perfect for adventurers chasing cold alpine nights and crisp sunny mornings.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Frozen Slopes
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
         </div>
       </motion.div>

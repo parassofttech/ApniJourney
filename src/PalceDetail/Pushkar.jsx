@@ -13,7 +13,7 @@ const Pushkar = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
+        className="w-full  mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
       >
 
         {/* 🌄 HERO SECTION */}
@@ -185,57 +185,7 @@ const Pushkar = () => {
 
 </section>
 
-          {/* 📊 INFO GRID */}
-          <div className="grid md:grid-cols-2 gap-8">
-            
-            {/* Top Attractions */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-pink-50 to-rose-50 rounded-[2.5rem] border border-pink-100/50 shadow-sm relative overflow-hidden group"
-            >
-              <Landmark className="absolute -right-6 -top-6 text-pink-200/40 w-32 h-32 group-hover:rotate-12 transition-transform duration-500" />
-              <h2 className="text-2xl font-black text-pink-900 mb-8 flex items-center gap-3 italic">
-                <Compass className="text-pink-500" /> Must-Visit Sites
-              </h2>
-              <ul className="space-y-5">
-                <AttractionItem emoji="🛕" bold="Brahma Temple" text="One of the few dedicated to Lord Brahma" />
-                <AttractionItem emoji="🌊" bold="Pushkar Lake" text="Sacred waterbody for rituals" />
-                <AttractionItem emoji="🛕" bold="Savitri Temple" text="Hilltop spiritual site with panoramic views" />
-                <AttractionItem emoji="🎪" bold="Pushkar Camel Fair" text="Famous annual cultural festival" />
-              </ul>
-            </motion.div>
-
-            {/* Culture & Cuisine */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-rose-50 to-pink-50 rounded-[2.5rem] border border-rose-100/50 shadow-sm"
-            >
-              <h2 className="text-2xl font-black text-rose-900 mb-8 flex items-center gap-3 italic">
-                <Utensils className="text-rose-500" /> Local Culture & Cuisine
-              </h2>
-              <div className="space-y-4">
-                <CulinaryItem text="Traditional Rajasthani dishes" />
-                <CulinaryItem text="Street food near Pushkar Lake" />
-                <CulinaryItem text="Camel fair festivities and local crafts" />
-              </div>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-slate-900 rounded-[2.5rem] text-white shadow-2xl"
-            >
-              <h2 className="text-2xl font-black mb-8 flex items-center gap-3 italic">
-                <Plane className="text-pink-400" /> Travel Intel
-              </h2>
-              <div className="space-y-5">
-                <TravelDetail icon={<Plane />} label="Nearest Airport" value="Sanganer Airport, Jaipur" />
-                <TravelDetail icon={<Train />} label="Nearest Railway" value="Ajmer Junction" />
-                <TravelDetail icon={<Calendar />} label="Best Season" value="Oct – Mar" />
-                <TravelDetail icon={<MapPin />} label="From Jaipur" value="~145 KM (3 hrs)" />
-              </div>
-            </motion.div>
-          </div>
+          
 
           {/* 📸 GALLERY */}
           <section className="mt-28">
@@ -272,6 +222,125 @@ const Pushkar = () => {
               ))}
             </div>
           </section>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Sacred Oasis & Golden Desert Dune Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-cyan-50 border border-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🐪 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Time to Visit Pushkar
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your magical desert escape to the sacred lake town aligned with pleasant winter breezes, spectacular hot air balloons, and iconic camel cultural loops.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-amber-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl font-bold mb-6 border border-amber-100">
+          🕉️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Mystic Desert Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Pushkar unveils its most beautiful spiritual colors, pleasant weather, and desert charm from <span className="font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded-md">October to March</span>. As the harsh summer sun fades, the desert climate cools down gracefully, offering pleasant daytime sun between 15°C - 30°C and crisp, chilly desert nights.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this premium tourist cycle, exploring the incredibly rare <span className="font-semibold text-gray-900">Jagatpita Brahma Temple</span>, watching the surreal sunset over the 52 holy lake ghats, or taking a quiet camel safari ride across the ripple dunes feels deeply spiritual.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-amber-50 to-cyan-50 rounded-2xl border border-amber-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-amber-900 font-medium leading-relaxed">
+          <strong className="text-amber-950">Pro Tip:</strong> Looking to witness Pushkar’s ultimate global grand loop? Plan your trip around October or November to match the iconic <strong className="text-amber-950">Pushkar Camel Fair</strong> (Kartik Purnima). The sleepy town transforms into a sea of colorful turbans, thousands of camels, desert sports, and hot air balloons.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Crisp Desert Winters */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ⛺
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
+              Chilly Desert Winters (October – February)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The absolute peak travel window. Enjoy warm sunny days perfect for cafe hopping and market exploration, followed by cold starlit nights perfect for sand dune camping loops.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Desert Peak
+        </span>
+      </div>
+
+      {/* Season 2: Quiet Pre-Summer Transition */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-cyan-300 shadow-sm hover:shadow-lg hover:shadow-cyan-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-cyan-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌅
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-cyan-700 transition-colors duration-200">
+              Mellow Spring Sunsets (March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The weather shifts slightly warmer but remains highly pleasant for evening aartis. A fantastic low-crowd window for spiritual travelers to enjoy peaceful lake meditations.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-cyan-100/70 text-cyan-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Mellow Spring
+        </span>
+      </div>
+
+      {/* Season 3: Scorching Desert Summer & Monsoons */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-rose-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-rose-700 transition-colors duration-200">
+              Scorching Heat & Dry Monsoons (April – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Summers are intensely hot, with temperatures spiking past 42°C. Monsoons bring slight humidity and scanty rainfall. Avoid peak daytime loops if traveling during this phase.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Off Season
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
         </div>
       </motion.div>

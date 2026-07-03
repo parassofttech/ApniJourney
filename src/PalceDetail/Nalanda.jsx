@@ -16,7 +16,7 @@ import {
 
 const Nalanda = () => {
   return (
-    <div className="min-h-screen bg-[#f4faff] font-sans selection:bg-green-200">
+    <div className="w-full  bg-[#f4faff] font-sans selection:bg-green-200">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -182,96 +182,7 @@ const Nalanda = () => {
 
 </section>
 
-          {/* ATTRACTIONS */}
-          <section className="mb-28">
-            <h2 className="text-3xl font-black text-green-900 mb-12 italic text-center">
-              Must Visit Attractions
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {[
-                { title: "Nalanda University Ruins", desc: "Ancient monastic university complex." },
-                { title: "Nalanda Archaeological Museum", desc: "Exhibits artifacts and sculptures from ancient times." },
-                { title: "Hieun Tsang Memorial Hall", desc: "Commemorates the famous Chinese scholar's visit." },
-                { title: "Stupas of Nalanda", desc: "Historic Buddhist stupas with intricate carvings." }
-              ].map((item) => (
-                <motion.div
-                  key={item.title}
-                  whileHover={{ y: -6 }}
-                  className="p-8 bg-green-50 rounded-3xl shadow-lg border border-green-100"
-                >
-                  <h3 className="text-xl font-black text-green-800 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600">{item.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </section>
-
-          {/* THINGS TO DO */}
-          <section className="mb-28 text-center">
-            <h2 className="text-3xl font-black text-green-900 italic mb-14">
-              Things To Experience
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-10">
-              {[
-                "Heritage Walks",
-                "Photography",
-                "Exploring Ancient Ruins",
-                "Buddhist Studies",
-                "Local Handicrafts Shopping",
-                "Sunset Views over Ruins"
-              ].map((item) => (
-                <motion.div
-                  key={item}
-                  whileHover={{ scale: 1.05 }}
-                  className="p-8 bg-white rounded-3xl shadow-xl border border-green-100"
-                >
-                  <h3 className="font-black text-green-900">{item}</h3>
-                </motion.div>
-              ))}
-            </div>
-          </section>
-
-          {/* TRAVEL INFO */}
-          <section className="mb-28 bg-slate-900 text-white p-12 rounded-3xl shadow-2xl">
-            <h2 className="text-3xl font-black mb-10 italic text-center">
-              Travel Information
-            </h2>
-
-            <div className="space-y-6 max-w-3xl mx-auto">
-              <TravelDetail icon={<Plane />} label="Nearest Airport" value="Patna Airport" />
-              <TravelDetail icon={<Train />} label="Nearest Railway" value="Nalanda Railway Station" />
-              <TravelDetail icon={<Calendar />} label="Best Time" value="October – March" />
-              <TravelDetail icon={<MapPin />} label="Distance from Patna" value="90 KM (~2 hrs)" />
-            </div>
-          </section>
-
-          {/* ITINERARY */}
-          <section className="mb-28">
-            <h2 className="text-3xl font-black text-green-900 italic text-center mb-12">
-              Suggested 1-2 Day Itinerary
-            </h2>
-
-            <div className="space-y-8 max-w-3xl mx-auto">
-              <ItineraryDay day="Day 1" text="Nalanda University Ruins → Archaeological Museum → Hieun Tsang Memorial Hall" />
-              <ItineraryDay day="Day 2" text="Stupas of Nalanda → Local Markets → Return" />
-            </div>
-          </section>
-
-          {/* WEATHER */}
-          <section className="mb-28 text-center bg-green-50 p-12 rounded-3xl shadow-lg">
-            <Snowflake className="mx-auto text-green-500 w-14 h-14 mb-6" />
-            <h2 className="text-3xl font-black text-green-900 italic mb-4">
-              Climate & Weather
-            </h2>
-            <p className="text-slate-600 max-w-3xl mx-auto">
-              Summers are hot (35°C – 45°C), winters are mild (10°C – 22°C), and monsoon brings moderate rainfall. 
-              Best visiting months are October to March.
-            </p>
-          </section>
+          
 
           {/* GALLERY */}
           <section className="mb-28">
@@ -298,6 +209,126 @@ const Nalanda = () => {
               ))}
             </div>
           </section>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-orange-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Ancient Brick Ruins & Scholarly Heritage Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-orange-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-emerald-50 border border-orange-100 text-orange-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      📜 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-orange-950 to-gray-950">
+      Best Time to Visit Nalanda
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your historic walking exploration across the UNESCO World Heritage university ruins, aligned with pleasant winter breezes and crisp, unshaded outdoor trails.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-orange-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-orange-600 flex items-center justify-center text-2xl font-bold mb-6 border border-orange-100">
+          🏛️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Archaeological Walking Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Nalanda is best explored during the cool, dry winter stretch from <span className="font-bold text-orange-700 bg-orange-50 px-1.5 py-0.5 rounded-md">October to March</span>. Because walking across the sprawling, unshaded brick residential complexes and massive stupa structures takes hours under the open sky, mild daytime conditions (12°C to 25°C) are essential.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this premium seasonal block, climbing the steps of the iconic <span className="font-semibold text-gray-900">Sariputra Stupa (Temple No. 3)</span>, walking through the ancient classroom cells, or mapping history at the Nalanda Archaeological Museum feels incredibly engaging and physically refreshing.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-orange-50 to-emerald-50 rounded-2xl border border-orange-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-orange-900 font-medium leading-relaxed">
+          <strong className="text-orange-950">Pro Tip:</strong> Looking for a deeply immersive heritage circuit? Combine your Nalanda winter loop with the nearby <strong className="text-emerald-950">Rajgir Mahotsav</strong>, usually celebrated around <strong className="text-orange-950">November/December</strong>. It offers a spectacular showcase of classical dances, martial arts, and vibrant folk music loops just a short transit away.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Crisp Historical Winters */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Crisp Heritage Winters (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The gold-standard travel window. Gentle sunshine makes it perfect for extensive open-air photography and walking tours, followed by chilly, refreshing evenings.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Peak Comfort
+        </span>
+      </div>
+
+      {/* Season 2: Rainwashed Ancient Terracotta */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+              Monsoon Showers & Greenery (July – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The surrounding manicured lawns and countryside gardens break into rich emerald green. The rain washes the 1,500-year-old structures, bringing out a beautiful, deep earthy texture.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Lush Vistas
+        </span>
+      </div>
+
+      {/* Season 3: Extreme Plains Summer */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-rose-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🔥
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-rose-700 transition-colors duration-200">
+              Blazing Plains Summer (April – June)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Temperatures intensely branch past 42°C, accompanied by dry, scorching winds. Walking on the open, radiating brick masonry becomes highly draining. If visiting, stick strictly to early morning hours.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Off Season
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
 
           {/* WHY VISIT */}
           <section className="mb-28 bg-gradient-to-r from-green-600 to-emerald-700 text-white p-4 md:p-12 rounded-3xl text-center shadow-2xl">

@@ -21,7 +21,7 @@ const Kumbhalgarh = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
+        className="w-full  mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
       >
 
         {/* HERO SECTION */}
@@ -182,96 +182,7 @@ const Kumbhalgarh = () => {
 
 </section>
 
-          {/* ATTRACTIONS */}
-          <section className="mb-28">
-            <h2 className="text-3xl font-black text-green-900 mb-12 italic text-center">
-              Must Visit Attractions
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {[
-                { title: "Kumbhalgarh Fort", desc: "UNESCO site with massive walls and historic architecture." },
-                { title: "Badal Mahal", desc: "Palace within the fort, known for clouds hovering nearby." },
-                { title: "Neelkanth Mahadev Temple", desc: "Ancient temple dedicated to Lord Shiva." },
-                { title: "Wildlife Sanctuary", desc: "Part of Aravalli Hills, rich in flora and fauna." }
-              ].map((item) => (
-                <motion.div
-                  key={item.title}
-                  whileHover={{ y: -6 }}
-                  className="p-8 bg-green-50 rounded-3xl shadow-lg border border-green-100"
-                >
-                  <h3 className="text-xl font-black text-green-800 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600">{item.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </section>
-
-          {/* THINGS TO DO */}
-          <section className="mb-28 text-center">
-            <h2 className="text-3xl font-black text-green-900 italic mb-14">
-              Things To Experience
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-10">
-              {[
-                "Fort Exploration",
-                "Trekking",
-                "Sunset Views",
-                "Photography",
-                "Wildlife Safari",
-                "Cultural Walks"
-              ].map((item) => (
-                <motion.div
-                  key={item}
-                  whileHover={{ scale: 1.05 }}
-                  className="p-8 bg-white rounded-3xl shadow-xl border border-green-100"
-                >
-                  <h3 className="font-black text-green-900">{item}</h3>
-                </motion.div>
-              ))}
-            </div>
-          </section>
-
-          {/* TRAVEL INFO */}
-          <section className="mb-28 bg-slate-900 text-white p-12 rounded-3xl shadow-2xl">
-            <h2 className="text-3xl font-black mb-10 italic text-center">
-              Travel Information
-            </h2>
-
-            <div className="space-y-6 max-w-3xl mx-auto">
-              <TravelDetail icon={<Plane />} label="Nearest Airport" value="Udaipur Airport" />
-              <TravelDetail icon={<Train />} label="Nearest Railway" value="Falna Station" />
-              <TravelDetail icon={<Calendar />} label="Best Time" value="October – March" />
-              <TravelDetail icon={<MapPin />} label="Distance from Udaipur" value="85 KM (~2 hrs)" />
-            </div>
-          </section>
-
-          {/* ITINERARY */}
-          <section className="mb-28">
-            <h2 className="text-3xl font-black text-green-900 italic text-center mb-12">
-              Suggested 2 Day Itinerary
-            </h2>
-
-            <div className="space-y-8 max-w-3xl mx-auto">
-              <ItineraryDay day="Day 1" text="Explore Kumbhalgarh Fort → Badal Mahal → Sunset Viewpoint" />
-              <ItineraryDay day="Day 2" text="Neelkanth Mahadev Temple → Wildlife Sanctuary → Return" />
-            </div>
-          </section>
-
-          {/* WEATHER */}
-          <section className="mb-28 text-center bg-green-50 p-12 rounded-3xl shadow-lg">
-            <Snowflake className="mx-auto text-green-500 w-14 h-14 mb-6" />
-            <h2 className="text-3xl font-black text-green-900 italic mb-4">
-              Climate & Weather
-            </h2>
-            <p className="text-slate-600 max-w-3xl mx-auto">
-              Warm summers and cool winters, with monsoon showers between July and September. 
-              Ideal visiting months are October to March.
-            </p>
-          </section>
+          
 
           {/* GALLERY */}
           <section className="mb-28">
@@ -298,6 +209,126 @@ const Kumbhalgarh = () => {
               ))}
             </div>
           </section>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Aravalli Ridges & Majestic Mewar Fort Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-emerald-50 border border-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏰 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Time to Visit Kumbhalgarh
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your royal fortress exploration across the second-longest continuous wall in the world, aligned with crisp winter breezes or misty monsoon hill station loops.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-amber-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl font-bold mb-6 border border-amber-100">
+          🛡️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Fortress Trekking Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Kumbhalgarh reveals its most magnificent royal charm, clear mountain horizons, and comfortable weather from <span className="font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded-md">October to March</span>. Perched at an altitude of 1,100 meters in the Aravalli range, winters are beautifully crisp, with daytime temps sitting nicely between 12°C and 28°C.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this prime tourist cycle, hiking across the massive <span className="font-semibold text-gray-900">36-kilometer fort wall perimeter</span>, exploring the elevated Badal Mahal (Palace of Clouds), or going for a heritage wildlife safari loop feels immensely rewarding and physically comforting.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-amber-50 to-emerald-50 rounded-2xl border border-amber-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-amber-900 font-medium leading-relaxed">
+          <strong className="text-amber-950">Pro Tip:</strong> Want to witness the ultimate regal spectacle? Align your winter plans with the 3-day <strong className="text-amber-950">Kumbhalgarh Festival</strong> held in <strong className="text-amber-950">December</strong>. The massive fortress is illuminated beautifully with thousands of yellow lanterns, accompanied by vibrant folk performances and traditional games.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Crisp Regal Winters */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
+              Crisp Heritage Winters (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The ultimate high-demand travel window. Bright sunny days are ideal for walking the massive ramparts, followed by cold, starry desert-mountain nights perfect for heritage bonfire loops.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Peak Window
+        </span>
+      </div>
+
+      {/* Season 2: Misty Monsoon Hills */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+              Misty Monsoon Ridges (July – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              A visually jaw-dropping window. The rugged Aravallis turn into a rich velvet green oasis, and dense fog often blankets the watchtowers. Highly favored by photography enthusiasts and luxury staycationers.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Scenic Peak
+        </span>
+      </div>
+
+      {/* Season 3: Scorching Mountain Summer */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-rose-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🔥
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-rose-700 transition-colors duration-200">
+              Intense Summer Heatwaves (April – June)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Daytime temperatures frequently cross 40°C, making open-air stone climbing exceptionally tiring. If you visit, schedule all fort exploration strictly during early morning or sunset loops.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Off Season
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
 
           {/* WHY VISIT */}
           <section className="mb-28 bg-gradient-to-r from-green-600 to-emerald-700 text-white p-4 md:p-12 rounded-3xl text-center shadow-2xl">

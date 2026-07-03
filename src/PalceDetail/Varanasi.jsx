@@ -9,7 +9,7 @@ const Varanasi = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}  
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full  mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Hero Image */}
         <motion.img
@@ -171,100 +171,7 @@ const Varanasi = () => {
 
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* History */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-yellow-50 rounded-2xl shadow-sm border border-yellow-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Info /> History & Significance
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Varanasi is over **3000 years old** and has been a cultural and
-                spiritual center of India. It is considered the **holiest city** in
-                Hinduism and attracts pilgrims for its **rituals, temples, and ghats**.
-              </p>
-            </motion.div>
-
-            {/* Ghats */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-blue-50 rounded-2xl shadow-sm border border-blue-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-blue-700 mb-3">
-                <Ship /> Famous Ghats
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🛶 <b>Dashashwamedh Ghat:</b> Evening aarti & rituals</li>
-                <li>🌊 <b>Assi Ghat:</b> Sunrise ship rides & local culture</li>
-                <li>🕉️ <b>Manikarnika Ghat:</b> One of the holiest cremation ghats</li>
-                <li>🌅 <b>Harishchandra Ghat:</b> Traditional cremation & rituals</li>
-              </ul>
-            </motion.div>
-
-            {/* Temples */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-green-50 rounded-2xl shadow-sm border border-green-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Church /> Famous Temples
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🛕 <b>Kashi Vishwanath Temple:</b> Lord Shiva temple, central attraction</li>
-                <li>🛕 <b>Durga Temple:</b> Historic temple with vibrant architecture</li>
-                <li>🛕 <b>Tulsi Manas Temple:</b> Ramayana inscriptions & art</li>
-              </ul>
-            </motion.div>
-
-            {/* Festivals */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-orange-50 rounded-2xl shadow-sm border border-orange-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-orange-700 mb-3">
-                <Sparkles /> Festivals
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🎉 <b>Dev Deepawali:</b> Millions of lamps on ghats</li>
-                <li>🕯️ <b>Ganga Mahotsav:</b> Cultural performances & crafts</li>
-                <li>🎶 <b>Makar Sankranti:</b> Kite flying & traditional fairs</li>
-              </ul>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-pink-50 rounded-2xl shadow-sm border border-pink-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-pink-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🕒 <b>Best Time to Visit:</b> October – March</li>
-                <li>✈️ <b>Nearest Airport:</b> Lal Bahadur Shastri Airport</li>
-                <li>🚆 <b>By Train:</b> Major Indian cities connected by rail</li>
-                <li>🏨 <b>Stay:</b> Riverside hotels, guesthouses & heritage stays</li>
-              </ul>
-            </motion.div>
-          </div>
-
-          {/* Culture & Local Life */}
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 40 }}
-            transition={{ delay: 0.2 }}
-            className="mt-10 bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-2xl border border-orange-300"
-          >
-            <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-              <Info /> Culture & Local Life
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              Varanasi’s culture is deeply spiritual and artistic. Witness **street music, classical dances, silk weaving**, and **evening aartis** along the Ganges. The city never sleeps and offers an immersive experience of India’s traditions.
-            </p>
-          </motion.div>
+         
 
           {/* Gallery */}
           <div className="mt-10">
@@ -294,6 +201,124 @@ const Varanasi = () => {
               ))}
             </div>
           </div>
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-orange-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Mystic Ghats & Eternal Kashi Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-orange-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-rose-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-rose-50 border border-orange-100 text-orange-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🪔 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-orange-950 to-gray-950">
+      Best Time to Visit Varanasi
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect spiritual journey aligned with pleasant Ganga breeze loops and mesmerizing festival calendars.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-orange-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-orange-600 flex items-center justify-center text-2xl font-bold mb-6 border border-orange-100">
+          🕉️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Spiritual Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Varanasi is at its cultural and atmospheric peak from <span className="font-bold text-orange-700 bg-orange-50 px-1.5 py-0.5 rounded-md">October to March</span>. During these cooler months, temperatures range between a comfortable 10°C - 25°C, creating the ideal setting for exploring the narrow alleys and sitting on the open stone ghats.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this magnificent window, high-spirit hubs like <span className="font-semibold text-gray-900">Dashashwamedh Ghat</span>, Assi Ghat, and the Kashi Vishwanath corridor burst with cultural music festivals, early morning boat loops, and grand evening rituals.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-orange-50 to-rose-50 rounded-2xl border border-orange-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-orange-900 font-medium leading-relaxed">
+          <strong className="text-orange-950">Pro Tip:</strong> Want to witness Dev Deepawali when millions of diyas light up the entire riverfront? Target the mid-November window, but make sure to book boat allocations and stays months in advance.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🙏
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Winter Breeze (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The high pilgrim and tourist season. Perfect for Subah-e-Banaras sunrise loops, temple exploration, and witnessing the grand Mahashivratri celebrations.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Mystic Peak
+        </span>
+      </div>
+
+      {/* Season 2: Summer Heat */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
+              Summer Radiance (April – June)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Scorching sub-continental heat (up to 44°C). Best suited for budget backpackers looking for crowd-free ghat exploration during twilight hours and peaceful ashram retreats.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Quiet Solitude
+        </span>
+      </div>
+
+      {/* Season 3: Monsoon Floods */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-rose-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-rose-700 transition-colors duration-200">
+              Monsoon Surges (July – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Heavy rains raise Ganga water levels, often submerging the ghat steps and restricting boat rides, but the dramatic sky setups create incredibly cinematic views.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          High Water Alerts
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
         </div>
       </motion.div>
     </div>

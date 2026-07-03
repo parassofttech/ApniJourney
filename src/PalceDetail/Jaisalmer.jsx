@@ -18,7 +18,7 @@ const Jaisalmer = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full  mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Header Image */}
         <motion.img
@@ -177,99 +177,7 @@ const Jaisalmer = () => {
 
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* History */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-yellow-50 rounded-2xl shadow-sm border border-yellow-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Info /> Historical Significance
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Jaisalmer was founded in 1156 AD by **Rawal Jaisal**.
-                The iconic **Jaisalmer Fort (Sonar Quila)** is one of the
-                largest living forts in the world. The city once thrived
-                as an important trade route connecting India with Central Asia.
-              </p>
-            </motion.div>
-
-            {/* Attractions */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-orange-50 rounded-2xl shadow-sm border border-orange-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-orange-700 mb-3">
-                <Camera /> Must-Visit Attractions
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🏰 <b>Jaisalmer Fort:</b> Golden architectural wonder</li>
-                <li>🏜️ <b>Sam Sand Dunes:</b> Desert safari & camping</li>
-                <li>🏛️ <b>Patwon Ki Haveli:</b> Intricate carvings</li>
-                <li>🌅 <b>Gadisar Lake:</b> Scenic sunset views</li>
-              </ul>
-              <a
-                href="https://tourism.rajasthan.gov.in/jaisalmer.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-sm text-orange-700 mt-3 underline hover:text-orange-900"
-              >
-                Visit Rajasthan Tourism <ExternalLink size={14} />
-              </a>
-            </motion.div>
-
-            {/* Culture */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-red-50 rounded-2xl shadow-sm border border-red-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-red-700 mb-3">
-                <Flag /> Culture & Traditions
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Jaisalmer showcases vibrant **Rajasthani folk music,
-                Kalbelia dance, puppet shows**, and colorful turbans.
-                Traditional handicrafts, mirror work, and camel fairs
-                add to its cultural richness.
-              </p>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-amber-50 rounded-2xl shadow-sm border border-amber-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-amber-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🕒 <b>Best Time:</b> October – March</li>
-                <li>🎟️ <b>Ideal Duration:</b> 2–3 days</li>
-                <li>✈️ <b>Nearest Airport:</b> Jodhpur Airport</li>
-                <li>🚆 <b>Rail:</b> Direct trains from Delhi & Jaipur</li>
-                <li>🏨 <b>Stay:</b> Desert camps, heritage hotels</li>
-              </ul>
-            </motion.div>
-          </div>
-
-          {/* Desert Experience */}
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 40 }}
-            transition={{ delay: 0.2 }}
-            className="mt-10 bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-2xl border border-yellow-300"
-          >
-            <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-              <Tent /> Desert Adventure
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              Experience the thrill of **camel safari, jeep safari,
-              night camping under the stars**, and traditional Rajasthani
-              dinner in desert camps. Watching the sunset over golden
-              sand dunes is unforgettable.
-            </p>
-          </motion.div>
+          
 
           {/* Gallery */}
           <div className="mt-10">
@@ -295,6 +203,125 @@ const Jaisalmer = () => {
               ))}
             </div>
           </div>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (The Golden City & Desert Safari Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-orange-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🐪 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Time to Visit Jaisalmer
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect Thar Desert escape aligned with chilling winter nights, clear sand horizons, and festival loops.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-amber-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl font-bold mb-6 border border-amber-100">
+          🏰
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Golden Desert Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Jaisalmer is at its absolute peak of beauty and comfort from <span className="font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded-md">October to March</span>. During these winter months, the scorching heat of the Thar Desert drops heavily, bringing golden sunny days and crisp, cold nights averaging 5°C - 24°C.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this premium timeline, traversing the living corridors of the <span className="font-semibold text-gray-900">Jaisalmer Fort</span>, capturing complex architecture loops at Patwon Ki Haveli, and enjoying camel safaris over the Sam Sand Dunes feels completely effortless.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl border border-amber-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-amber-900 font-medium leading-relaxed">
+          <strong className="text-amber-950">Pro Tip:</strong> Want to witness the ultimate explosion of Rajasthani culture? Target your travel loops specifically around January or February to experience the legendary <strong className="text-amber-950">Jaisalmer Desert Festival</strong>, featuring folk fire dances, camel races, and beautiful turban tying displays.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ✨
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
+              Chilly Winters (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The grand premium cycle. Ideal for open-air desert camping, jeep safaris, exploring ghost villages like Kuldhara, and stargazing under pollution-free night loops.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Desert Peak
+        </span>
+      </div>
+
+      {/* Season 2: Shoulder/Transition Weeks */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌤️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Transition Phase (March & September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The desert starts heating up rapidly or experiences minor breeze transitions. Highly suited for off-beat backpackers who want crowd-free fort architecture frames and heavy stay discounts.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Quiet Stays
+        </span>
+      </div>
+
+      {/* Season 3: Extreme Summer Scorcher */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-red-300 shadow-sm hover:shadow-lg hover:shadow-red-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-red-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-red-700 transition-colors duration-200">
+              Summer Heatwaves (April – August)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Intense, unforgiving desert heat scaling past 42°C with dry sandstorms. Outdoor movement blocks during the day, making sand dune camping completely non-operational.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-red-100/70 text-red-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Extreme Heat
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
           {/* Tourism Link */}
           <div className="mt-8 text-center">

@@ -9,7 +9,7 @@ const CherrapunjiMeghalaya = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full  mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Hero Image */}
         <motion.img
@@ -170,69 +170,7 @@ const CherrapunjiMeghalaya = () => {
 
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* Waterfalls */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-blue-50 rounded-2xl shadow-sm border border-blue-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-blue-700 mb-3">
-                <Waves /> Famous Waterfalls
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>💧 <b>Nohkalikai Falls:</b> Tallest plunge waterfall in India</li>
-                <li>🌊 <b>Seven Sisters Falls:</b> Stunning multi-tier waterfall</li>
-                <li>💦 <b>Mawsmai Falls:</b> Picturesque & accessible waterfall</li>
-              </ul>
-            </motion.div>
-
-            {/* Adventure */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-green-50 rounded-2xl shadow-sm border border-green-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Umbrella /> Adventure & Activities
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🥾 Trekking through dense forests and hills</li>
-                <li>🌉 Explore living root bridges in nearby villages</li>
-                <li>📸 Photography & nature walks</li>
-              </ul>
-            </motion.div>
-
-            {/* Culture & Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-yellow-50 rounded-2xl shadow-sm border border-yellow-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Sun /> Culture & Lifestyle
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                The Khasi tribe predominates in Cherrapunji, with a rich cultural heritage. 
-                Festivals like **Nongkrem Dance Festival** celebrate traditional music, 
-                dance, and rituals, offering a deep insight into tribal life.
-              </p>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-orange-50 rounded-2xl shadow-sm border border-orange-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-orange-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>✈️ Nearest Airport: Shillong Airport (~55 km)</li>
-                <li>🚆 Nearest Railway Station: Guwahati Railway Station (~140 km)</li>
-                <li>🚌 Local Transport: Shared cabs & taxis</li>
-                <li>🕒 Best Time to Visit: September – May</li>
-              </ul>
-            </motion.div>
-          </div>
+         
 
           {/* Gallery */}
           <div className="mt-10">
@@ -262,6 +200,125 @@ const CherrapunjiMeghalaya = () => {
               ))}
             </div>
           </div>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Mystical Clouds & Living Root Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-cyan-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-50 to-emerald-50 border border-cyan-100 text-cyan-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🌧️ Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-cyan-950 to-gray-950">
+      Best Time to Visit Cherrapunji
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect Meghalayan escape aligned with powerful post-monsoon roars and crisp winter valley views.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-cyan-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-2xl font-bold mb-6 border border-cyan-100">
+          🌫️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Khasi Cloud Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Cherrapunji experiences its prime exploration cycle from <span className="font-bold text-cyan-700 bg-cyan-50 px-1.5 py-0.5 rounded-md">October to February</span>. During these autumn and winter months, the record-breaking downpours recede into a comfortable 10°C - 22°C rhythm, clearing the intense valley mist for hiking.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this dry window, deep nature tracks like the legendary <span className="font-semibold text-gray-900">Double Decker Living Root Bridge</span>, Mawsmai Caves, and Nohkalikai viewpoint offer safe paths free from slick mud margins.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-cyan-50 to-emerald-50 rounded-2xl border border-cyan-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-cyan-900 font-medium leading-relaxed">
+          <strong className="text-cyan-950">Pro Tip:</strong> Want to witness the pure, uninhibited force of the world's wettest ecosystems without complete outdoor lockouts? Target the shoulder weeks of September when the heavy monsoons slow down but waterfalls roar at full capacity.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Post-Monsoon & Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-cyan-300 shadow-sm hover:shadow-lg hover:shadow-cyan-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-cyan-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🥾
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-cyan-700 transition-colors duration-200">
+              Winter Clarity (October – February)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The supreme trekking phase. Clear, bright blue horizons reveal massive canyons, easy root-bridge trekking loops, and dry entry access into deep limestone caves.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-cyan-100/70 text-cyan-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Prime Trekking
+        </span>
+      </div>
+
+      {/* Season 2: Spring & Pre-Monsoon */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ⛅
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+              Spring Shifts (March – May)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Pleasant daytime winds averaging around 20°C. Intermittent light showers start revitalizing the dried valley vectors, keeping the sub-tropical flora incredibly fresh.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Breezy Valleys
+        </span>
+      </div>
+
+      {/* Season 3: The Big Monsoons */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ⛈️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Monsoon Deluxe (June – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The legendary torrential deluge. Trekking networks close down due to heavy water volumes, but the sheer sight of canyon waterfalls crashing down is an unmatched spectacle.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Extreme Rain
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
         </div>
       </motion.div>
     </div>

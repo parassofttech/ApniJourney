@@ -19,7 +19,7 @@ const Varkala = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
+        className="w-full  mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
       >
 
         {/* HERO SECTION */}
@@ -181,96 +181,7 @@ const Varkala = () => {
 
 </section>
 
-          {/* ATTRACTIONS */}
-          <section className="mb-28">
-            <h2 className="text-3xl font-black text-green-900 mb-12 italic text-center">
-              Must Visit Attractions
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {[
-                { title: "Varkala Cliff", desc: "Scenic cliffside promenade with cafes & ocean views." },
-                { title: "Papanasam Beach", desc: "Sacred beach known for sunset views." },
-                { title: "Janardanaswamy Temple", desc: "Ancient temple dedicated to Lord Vishnu." },
-                { title: "Kappil Beach", desc: "Serene beach with backwaters nearby." }
-              ].map((item) => (
-                <motion.div
-                  key={item.title}
-                  whileHover={{ y: -6 }}
-                  className="p-8 bg-green-50 rounded-3xl shadow-lg border border-green-100"
-                >
-                  <h3 className="text-xl font-black text-green-800 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600">{item.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </section>
-
-          {/* THINGS TO DO */}
-          <section className="mb-28 text-center">
-            <h2 className="text-3xl font-black text-green-900 italic mb-14">
-              Things To Experience
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-10">
-              {[
-                "Beach Walks",
-                "Yoga & Meditation",
-                "Ayurvedic Spa",
-                "Sunset Watching",
-                "Cliff Shopping",
-                "Seafood Dining"
-              ].map((item) => (
-                <motion.div
-                  key={item}
-                  whileHover={{ scale: 1.05 }}
-                  className="p-8 bg-white rounded-3xl shadow-xl border border-green-100"
-                >
-                  <h3 className="font-black text-green-900">{item}</h3>
-                </motion.div>
-              ))}
-            </div>
-          </section>
-
-          {/* TRAVEL INFO */}
-          <section className="mb-28 bg-slate-900 text-white p-12 rounded-3xl shadow-2xl">
-            <h2 className="text-3xl font-black mb-10 italic text-center">
-              Travel Information
-            </h2>
-
-            <div className="space-y-6 max-w-3xl mx-auto">
-              <TravelDetail icon={<Plane />} label="Nearest Airport" value="Trivandrum Airport" />
-              <TravelDetail icon={<Train />} label="Nearest Railway" value="Varkala Sivagiri Station" />
-              <TravelDetail icon={<Calendar />} label="Best Time" value="October – March" />
-              <TravelDetail icon={<MapPin />} label="From Trivandrum" value="45 KM (~1 hr)" />
-            </div>
-          </section>
-
-          {/* ITINERARY */}
-          <section className="mb-28">
-            <h2 className="text-3xl font-black text-green-900 italic text-center mb-12">
-              Suggested 2 Day Itinerary
-            </h2>
-
-            <div className="space-y-8 max-w-3xl mx-auto">
-              <ItineraryDay day="Day 1" text="Varkala Cliff Walk → Papanasam Beach → Sunset View" />
-              <ItineraryDay day="Day 2" text="Temple Visit → Kappil Beach → Ayurvedic Spa → Local Market" />
-            </div>
-          </section>
-
-          {/* WEATHER */}
-          <section className="mb-28 text-center bg-green-50 p-12 rounded-3xl shadow-lg">
-            <Snowflake className="mx-auto text-green-500 w-14 h-14 mb-6" />
-            <h2 className="text-3xl font-black text-green-900 italic mb-4">
-              Climate & Weather
-            </h2>
-            <p className="text-slate-600 max-w-3xl mx-auto">
-              Tropical coastal climate with warm summers and pleasant winters.
-              Best time to visit is between October and March.
-            </p>
-          </section>
+          
 
           {/* GALLERY */}
           <section className="mb-28">
@@ -297,6 +208,126 @@ const Varkala = () => {
               ))}
             </div>
           </section>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Laterite Cliffs & Arabian Sea Wave Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-rose-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-teal-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-teal-50 border border-rose-100 text-rose-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🌊 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
+      Best Time to Visit Varkala
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your ultimate bohemian cliff-side getaway along Kerala's striking coastline, aligned with breezy winter sunsets, paragliding loops, and calming tides.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-rose-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center text-2xl font-bold mb-6 border border-rose-100">
+          🌅
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Premium Cliff Cycles
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Varkala unveils its absolute finest coastal soul and dry breezy weather from <span className="font-bold text-rose-700 bg-rose-50 px-1.5 py-0.5 rounded-md">October to March</span>. After the heavy monsoon tides recede, the tropical climate drops to a comforting sweet spot, bringing daily temperatures between 22°C and 32°C.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this premium travel block, cafe hopping across the vibrant <span className="font-semibold text-gray-900">North Cliff layout</span>, paragliding over the continuous beach contours, or walking the sacred sand steps of the 2000-year-old Janardanaswamy Temple feels incredibly refreshing.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-rose-50 to-teal-50 rounded-2xl border border-rose-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">🪂</span>
+        <p className="text-xs md:text-sm text-rose-900 font-medium leading-relaxed">
+          <strong className="text-rose-950">Pro Tip:</strong> Looking to catch Varkala's ultimate adventure window? Target your journey for <strong className="text-rose-950">December to February</strong>. The wind vectors on the cliffs become perfectly consistent, making it the prime cycle for tandem paragliding loops over the ocean and exploring the pristine Black Sand Beach.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Crisp Bohemian Winters */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-rose-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-rose-700 transition-colors duration-200">
+              Breezy Winter Peak (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The signature tourist window. Skies are crystal clear, the seas are calm for swimming loops, and sunset times reveal a beautiful golden glow from the cliff viewpoints.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Peak Season
+        </span>
+      </div>
+
+      {/* Season 2: Warm Shoulder Phase */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-sm hover:shadow-lg hover:shadow-teal-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-teal-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ⛱️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-teal-700 transition-colors duration-200">
+              Humid Pre-Monsoon Cycle (April – May)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Temperatures and coastal humidity rise significantly. However, it serves as a wonderful, peaceful window for budget backpackers looking for affordable cliff shacks and quiet yoga retreats.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-teal-100/70 text-teal-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Low Volume
+        </span>
+      </div>
+
+      {/* Season 3: Heavy Monsoon Downpours */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-blue-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-200">
+              Torrential Monsoon Waves (June – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The Arabian Sea turns fiercely rough, bringing massive tides that submerge the lower beaches. Cliff walkways get slippery and paragliding is completely halted, but the greenery is stunning.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Rough Tides
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
 
           {/* WHY VISIT */}
           <section className="mb-28 bg-gradient-to-r from-green-600 to-emerald-700 text-white p-16 rounded-3xl text-center shadow-2xl">

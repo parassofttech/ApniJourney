@@ -6,7 +6,7 @@ import { Mountain, Trees, Landmark, Sun } from "lucide-react";
 const Chhattisgarh = () => {
   return (
     <section className="bg-gradient-to-br from-green-50 via-emerald-100 to-green-200 min-h-screen py-16 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="w-full  mx-auto">
         {/* Title Section */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -218,50 +218,125 @@ const Chhattisgarh = () => {
         </div>
 
         {/* Highlights Section */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 1 }}
-          className="mt-16 bg-white/80 rounded-2xl shadow-md p-8 backdrop-blur-md"
-        >
-          <h3 className="text-2xl font-semibold text-emerald-700 mb-6 text-center">
-            ✨ Highlights of Chhattisgarh
-          </h3>
+        {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
 
-          <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-6 text-center">
-            <div className="p-6 bg-emerald-100 rounded-xl hover:shadow-lg transition">
-              <Mountain className="w-10 h-10 text-emerald-700 mx-auto mb-3" />
-              <h4 className="font-semibold">Chitrakote Falls</h4>
-              <p className="text-sm text-gray-600">
-                India’s Niagara – breathtaking in monsoon.
-              </p>
-            </div>
+  {/* Advanced Radial Background Glows (Wild Wilderness & Ancient Heritage Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+  </div>
 
-            <div className="p-6 bg-emerald-100 rounded-xl hover:shadow-lg transition">
-              <Trees className="w-10 h-10 text-emerald-700 mx-auto mb-3" />
-              <h4 className="font-semibold">Kanger Valley</h4>
-              <p className="text-sm text-gray-600">
-                Home to caves, wildlife, and dense forests.
-              </p>
-            </div>
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-amber-50 border border-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍂 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Best Time to Visit Chhattisgarh
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect wilderness escape aligned with massive roaring waterfalls, pleasant winter winds, and vibrant tribal loops.
+    </p>
+  </div>
 
-            <div className="p-6 bg-emerald-100 rounded-xl hover:shadow-lg transition">
-              <Landmark className="w-10 h-10 text-emerald-700 mx-auto mb-3" />
-              <h4 className="font-semibold">Bastar Dussehra</h4>
-              <p className="text-sm text-gray-600">
-                A 75-day grand tribal festival unique to India.
-              </p>
-            </div>
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-emerald-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-6 border border-emerald-100">
+          🐅
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Heartland Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Chhattisgarh shines at its absolute best from <span className="font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-md">October to March</span>. During this refreshing post-monsoon and winter cycle, temperatures hover gracefully between 12°C - 28°C, paving the way for comfortable wildlife safaris and ancient temple explorations.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this ideal timeline, iconic hubs like the sprawling <span className="font-semibold text-gray-900">Bastar tribal circuits</span>, Barnawapara Wildlife Sanctuary, and the historical Sirpur heritage loops operate at full swing.
+        </p>
+      </div>
 
-            <div className="p-6 bg-emerald-100 rounded-xl hover:shadow-lg transition">
-              <Sun className="w-10 h-10 text-emerald-700 mx-auto mb-3" />
-              <h4 className="font-semibold">Rich Culture</h4>
-              <p className="text-sm text-gray-600">
-                Experience ancient crafts, dance, and cuisine.
-              </p>
-            </div>
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-emerald-50 to-amber-50 rounded-2xl border border-emerald-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-emerald-900 font-medium leading-relaxed">
+          <strong className="text-sky-950">Pro Tip:</strong> Eager to catch the iconic Bastar Dussehra—the longest festival loops in the world lasting 75 days? Plan your travel window strictly around late September or October to witness this unique tribal spectacle.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🏹
           </div>
-        </motion.div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+              Winter Wilderness (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The premium travel season. Absolute goldmine for exploring Mainpat (the Shimla of Chhattisgarh), tracking wildlife, camping under clear skies, and visiting historic caves.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Heritage Peak
+        </span>
+      </div>
+
+      {/* Season 2: Monsoon Roar */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-blue-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌊
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-200">
+              Monsoon Magic (July – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Heavy central rainfall turns the landscape dramatically emerald. This is the prime phase to see the majestic Chitrakote and Tirathgarh waterfalls roaring at maximum width.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Waterfall Glory
+        </span>
+      </div>
+
+      {/* Season 3: Summer Slump */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Summer Heat (April – June)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Intense sun vectors pushing past 42°C. Sightseeing becomes restricted to early mornings, but it serves as an excellent time for tracking tigers near drying waterbeds.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Dry Safaris
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+        
       </div>
     </section>
   );

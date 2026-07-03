@@ -22,7 +22,7 @@ const Pachmarhi = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
+        className="w-full  mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
       >
 
         {/* 🌄 HERO SECTION */}
@@ -196,79 +196,7 @@ const Pachmarhi = () => {
 
 </section>
 
-          {/* INFO GRID */}
-          <div className="grid md:grid-cols-2 gap-8">
-
-            {/* Natural Wonders */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-emerald-50 to-green-50 rounded-[2.5rem] border border-emerald-100/50 shadow-sm relative overflow-hidden group"
-            >
-              <Mountain className="absolute -right-6 -top-6 text-emerald-200/40 w-32 h-32 group-hover:rotate-12 transition-transform duration-500" />
-              <h2 className="text-2xl font-black text-emerald-900 mb-8 flex items-center gap-3 italic">
-                <Compass className="text-emerald-500" /> Natural Wonders
-              </h2>
-              <ul className="space-y-5">
-                <AttractionItem emoji="🌊" bold="Bee Falls" text="Crystal clear cascading beauty" />
-                <AttractionItem emoji="🕳️" bold="Pandav Caves" text="Mythological rock shelters" />
-                <AttractionItem emoji="🌄" bold="Dhoopgarh" text="Highest sunset point in MP" />
-                <AttractionItem emoji="🌿" bold="Satpura National Park" text="Wildlife & jungle safari" />
-              </ul>
-            </motion.div>
-
-            {/* Adventure */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-[2.5rem] border border-teal-100/50 shadow-sm relative overflow-hidden group"
-            >
-              <Trees className="absolute -right-6 -top-6 text-teal-200/40 w-32 h-32 group-hover:scale-125 transition-transform duration-500" />
-              <h2 className="text-2xl font-black text-teal-900 mb-8 flex items-center gap-3 italic">
-                <Mountain className="text-teal-500" /> Forest Adventures
-              </h2>
-              <div className="space-y-4">
-                <AdventureItem text="Trekking to Handi Khoh" />
-                <AdventureItem text="Jungle Safari Experience" />
-                <AdventureItem text="Rock Climbing & Valley Views" />
-              </div>
-            </motion.div>
-
-            {/* Local Taste */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-orange-50 to-amber-50 rounded-[2.5rem] border border-orange-100/50 shadow-sm"
-            >
-              <h2 className="text-2xl font-black text-orange-900 mb-8 flex items-center gap-3 italic">
-                <Utensils className="text-orange-500" /> Local Flavours
-              </h2>
-              <p className="text-slate-600 font-medium leading-relaxed mb-6">
-                Enjoy simple tribal cuisine and local delicacies surrounded by forests.
-                Warm chai at hill viewpoints is a must-have experience.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {["#NatureRetreat", "#Waterfalls", "#Satpura", "#PeacefulStay"].map(tag => (
-                  <span key={tag} className="px-3 py-1 bg-white rounded-full text-[10px] font-black text-orange-400 border border-orange-100 uppercase tracking-widest">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Travel Intel */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              className="p-10 bg-slate-900 rounded-[2.5rem] text-white shadow-2xl"
-            >
-              <h2 className="text-2xl font-black mb-8 flex items-center gap-3 italic">
-                <Plane className="text-emerald-400" /> Travel Intel
-              </h2>
-              <div className="space-y-5">
-                <TravelDetail icon={<Plane />} label="Nearest Airport" value="Bhopal (200 KM)" />
-                <TravelDetail icon={<Train />} label="Nearest Rail" value="Pipariya (50 KM)" />
-                <TravelDetail icon={<Calendar />} label="Best Time" value="Oct – March" />
-                <TravelDetail icon={<MapPin />} label="Altitude" value="1,067 m above sea level" />
-              </div>
-            </motion.div>
-          </div>
+          
 
           {/* GALLERY */}
           <section className="mt-28">
@@ -311,6 +239,125 @@ const Pachmarhi = () => {
               ))}
             </div>
           </section>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Satpura Highland & Waterfall Mist Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-amber-50 border border-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      ⛰️ Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Best Time to Visit Pachmarhi
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect highland getaway aligned with crisp mountain winters, roaring forest waterfalls, or refreshing summer breezes.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-emerald-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-6 border border-emerald-100">
+          🌲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Satpura Queen Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Pachmarhi welcomes travelers with an incredibly crisp and magical climate loop from <span className="font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-md">October to March</span>. Being the highest point in Madhya Pradesh, the winter breeze drops temperatures to a cold 4°C - 22°C, blanketing the deep pine and sal forests in beautiful white mist.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this ideal window, standing at the highest peak of MP — <span className="font-semibold text-gray-900">Dhupgarh</span> for sunset, trekking down to Bee Falls, or exploring the legendary architectural loops of Pandav Caves feels completely refreshing.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-emerald-50 to-amber-50 rounded-2xl border border-emerald-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-emerald-900 font-medium leading-relaxed">
+          <strong className="text-emerald-950">Pro Tip:</strong> Planning an adventurous spiritual loop? Try to visit around February or March during <strong className="text-emerald-950">Mahashivratri</strong>. Thousands of devotees trek up the steep mountain trails to Chauragarh Temple carrying massive trishuls, creating a high-energy cultural spectacle.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ❄️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+              Chilly Winter Peak (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The premium tourist cycle. Sharp, misty morning breezes with comfortable sunny days. Perfect for jeep safaris through Satpura Tiger Reserve, valley viewpoint loops, and bonfire nights.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Misty Peak
+        </span>
+      </div>
+
+      {/* Season 2: Summer Escape */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Pleasant Summer Respite (April – June)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              While the central plains of India burn over 42°C, Pachmarhi stays significantly cooler under a pleasant 35°C ceiling. Ideal for swimming in natural pools like Duchess Falls to escape the heat.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Plains Relief
+        </span>
+      </div>
+
+      {/* Season 3: Monsoon Mist */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-indigo-300 shadow-sm hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-indigo-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-indigo-700 transition-colors duration-200">
+              Monsoon Magic (July – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Heavy mountain showers transform the entire plateau into a hyper-vibrant green zone. Heavy fog blocks view points but waterfalls cascade at wild speeds, making it intensely romantic.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-indigo-100/70 text-indigo-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Lush Cascades
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
           {/* CTA */}
           <div className="mt-20 text-center">

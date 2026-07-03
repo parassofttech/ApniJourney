@@ -10,7 +10,7 @@ const Andaman = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-6xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full  mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Hero Image */}
         <motion.img
@@ -171,72 +171,7 @@ const Andaman = () => {
 
 </section>
 
-          {/* Info Sections */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* Famous Beaches */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-blue-50 rounded-2xl shadow-sm border border-blue-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-blue-700 mb-3">
-                <Waves /> Famous Beaches
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🏖️ <b>Radhanagar Beach (Havelock):</b> Ranked among Asia’s best</li>
-                <li>🌅 <b>Elephant Beach:</b> Known for coral snorkeling</li>
-                <li>🐚 <b>Corbyn’s Cove:</b> Port Blair’s popular hangout</li>
-                <li>🌊 <b>Kalapathar Beach:</b> Peaceful and scenic</li>
-              </ul>
-            </motion.div>
-
-            {/* Adventure Activities */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-green-50 rounded-2xl shadow-sm border border-green-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Ship /> Adventure & Water Sports
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🤿 Scuba Diving & Snorkeling</li>
-                <li>🛥️ Glass-bottom boat rides</li>
-                <li>🏄 Jet skiing & kayaking</li>
-                <li>🔥 Beach bonfire & night camping</li>
-              </ul>
-            </motion.div>
-
-            {/* Historical Attractions */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-orange-50 rounded-2xl shadow-sm border border-orange-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-orange-700 mb-3">
-                <MapPin /> Must-Visit Places
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🏛️ <b>Cellular Jail:</b> National Memorial of Freedom Struggle</li>
-                <li>🪶 <b>Ross Island:</b> Colonial ruins amid lush greenery</li>
-                <li>🌋 <b>Baratang Island:</b> Mud volcanoes & limestone caves</li>
-                <li>🐠 <b>North Bay Island:</b> Coral & underwater view</li>
-              </ul>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-pink-50 rounded-2xl shadow-sm border border-pink-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-pink-700 mb-3">
-                <Plane /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>✈️ Nearest Airport: Veer Savarkar International Airport (Port Blair)</li>
-                <li>🚢 Ferry Services from Chennai, Kolkata, and Vizag</li>
-                <li>🏨 Stay: Beach resorts, eco-huts, and luxury stays</li>
-                <li>🕒 Best Time to Visit: October – May</li>
-              </ul>
-            </motion.div>
-          </div>
+          
 
           {/* Gallery */}
           <div className="mt-10">
@@ -265,6 +200,125 @@ const Andaman = () => {
               ))}
             </div>
           </div>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Tropical Ocean & Coral Lagoon Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-cyan-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-50 to-emerald-50 border border-cyan-100 text-cyan-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏝️ Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-cyan-950 to-gray-950">
+      Best Time to Visit Andaman Islands
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect tropical getaway aligned with calm sea waves, deep diving windows, and sun-kissed skies.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-cyan-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-2xl font-bold mb-6 border border-cyan-100">
+          🌊
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Tropical Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          The Andaman Islands are at their absolute premium from <span className="font-bold text-cyan-700 bg-cyan-50 px-1.5 py-0.5 rounded-md">October to May</span>. During these gorgeous months, the tropical climate transitions into a steady 22°C - 30°C range, bringing flat, calm sea surfaces and excellent underwater visibility.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this peak window, adventure hotspots like Havelock Island (Swaraj Dweep), Neil Island, and the <span className="font-semibold text-gray-900">Radhanagar Beach</span> circuit burst with active scuba diving, bioluminescent night kayaking, and island hopping ferries.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-cyan-50 to-emerald-50 rounded-2xl border border-cyan-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-cyan-900 font-medium leading-relaxed">
+          <strong className="text-cyan-950">Pro Tip:</strong> Want to enjoy completely private beaches and experience a cheaper luxury resort infrastructure? Target the shoulder weeks of early October or late April when water currents are starting to shift.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter & Spring Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-cyan-300 shadow-sm hover:shadow-lg hover:shadow-cyan-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-cyan-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🤿
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-cyan-700 transition-colors duration-200">
+              Winter & Spring (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The high beach season. Absolute goldmine for crystal-clear scuba diving, pristine coral visibility, sea walking, and attending the vibrant island cultural festivals.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-cyan-100/70 text-cyan-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Pristine Diving
+        </span>
+      </div>
+
+      {/* Season 2: Summer Cruising */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+              Summer Breeze (April – May)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Warm coastal days with refreshing evening sea winds. Water sports operate fully, and it is a beautiful window for beach trekking and tracking giant sea turtle nesting grounds.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Sunny Skies
+        </span>
+      </div>
+
+      {/* Season 3: Heavy Monsoons */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ⛈️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Monsoon (June – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Heavy ocean downpours and strong winds. High sea volatility frequently halts inter-island ferry networks and water sports loops, but indoor heritage sites offer great solace.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          High Tide Risk
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
         </div>
       </motion.div>
     </div>

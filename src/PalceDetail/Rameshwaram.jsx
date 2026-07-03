@@ -9,7 +9,7 @@ const Rameshwaram = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full  mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Header Image */}
         <motion.img
@@ -172,100 +172,124 @@ const Rameshwaram = () => {
 
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* History */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-blue-50 rounded-2xl shadow-sm border border-blue-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-blue-700 mb-3">
-                <Info /> Mythology & History
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                According to the <b>Ramayana</b>, Lord Rama prayed to Lord Shiva
-                here to absolve any sins committed during his war against Ravana.
-                The <b>Ramanathaswamy Temple</b> was built at this sacred site.
-                The temple has one of the **longest corridors in Asia** and is
-                considered a masterpiece of Dravidian architecture.
-              </p>
-            </motion.div>
+         {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-sky-500 selection:text-white">
 
-            {/* Attractions */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-green-50 rounded-2xl shadow-sm border border-green-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Camera /> Top Attractions
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🏛️ Ramanathaswamy Temple – 1000+ pillar corridor</li>
-                <li>🌉 Pamban Bridge – Engineering marvel over the sea</li>
-                <li>🌊 Dhanushkodi – The “Ghost Town” at India’s tip</li>
-                <li>🏖️ Agni Theertham – Sacred sea for ritual bathing</li>
-              </ul>
-              <a
-                href="https://www.tamilnadutourism.tn.gov.in/destinations/rameswaram"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-sm text-green-600 mt-3 underline hover:text-green-800"
-              >
-                Explore Rameshwaram attractions <ExternalLink size={14} />
-              </a>
-            </motion.div>
+  {/* Advanced Radial Background Glows (Sacred Coastline & Heritage Temple Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-sky-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+  </div>
 
-            {/* Spiritual Significance */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-yellow-50 rounded-2xl shadow-sm border border-yellow-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Landmark /> Spiritual Significance
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                It is believed that a pilgrimage to Rameshwaram **completes the
-                Char Dham Yatra**, along with Badrinath, Dwarka, and Puri. The
-                **22 holy wells (Teerthams)** inside the temple are believed to
-                wash away sins and purify the soul.
-              </p>
-            </motion.div>
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-50 to-amber-50 border border-sky-100 text-sky-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🌅 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-sky-950 to-gray-950">
+      Best Time to Visit Rameshwaram
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect island pilgrimage aligned with pleasant maritime breezes and dramatic coastal sunsets.
+    </p>
+  </div>
 
-            {/* Travel Information */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-purple-50 rounded-2xl shadow-sm border border-purple-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-purple-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🕒 <b>Best Time:</b> October – April</li>
-                <li>🎟️ <b>Ideal Duration:</b> 2–3 days</li>
-                <li>✈️ <b>Nearest Airport:</b> Madurai (170 km)</li>
-                <li>🚆 <b>Rail:</b> Rameswaram Junction</li>
-                <li>🚗 <b>Transport:</b> Autos, taxis, local buses</li>
-              </ul>
-            </motion.div>
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-sky-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl font-bold mb-6 border border-sky-100">
+          🕉️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Sacred Island Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Rameshwaram offers its most comfortable and spiritually enriching weather from <span className="font-bold text-sky-700 bg-sky-50 px-1.5 py-0.5 rounded-md">October to March</span>. During these winter months, the intense tropical humidity drops as pleasant sea breezes cruise between 20°C - 30°C.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this premium timeline, structural wonders like the monumental <span className="font-semibold text-gray-900">Pamban Bridge rail crossings</span>, the majestic Ramanathaswamy Temple pillared corridors, and the ghost town of Dhanushkodi are highly accessible.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-sky-50 to-amber-50 rounded-2xl border border-sky-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-sky-900 font-medium leading-relaxed">
+          <strong className="text-sky-950">Pro Tip:</strong> Want to witness the ghost town of Dhanushkodi and the starting point of Ram Setu with maximum clarity? Plan your trip loops for January or February when foggy mornings give way to crystal-clear turquoise horizons.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-sm hover:shadow-lg hover:shadow-sky-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-sky-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🛕
           </div>
-
-          {/* Experience Section */}
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 40 }}
-            transition={{ delay: 0.2 }}
-            className="mt-10 bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-2xl border border-blue-300"
-          >
-            <h2 className="flex items-center gap-2 text-xl font-semibold text-blue-700 mb-3">
-              <Sun /> Spiritual & Natural Harmony
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              Witness the sunrise at **Dhanushkodi**, take a dip in **Agni
-              Theertham**, explore **Pamban Bridge**, and experience the peaceful
-              aura of the **Ramanathaswamy Temple**. Every corner of Rameshwaram
-              reflects devotion, purity, and the calmness of the sea.
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-sky-700 transition-colors duration-200">
+              Winter Comfort (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The grand premium season. Highly favorable for beach exploration, watching stunning ocean sunrises over Agni Tirtham, and taking spiritual holy dips across all 22 teerthams.
             </p>
-          </motion.div>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Spiritual Peak
+        </span>
+      </div>
+
+      {/* Season 2: Monsoon Retreat */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-sm hover:shadow-lg hover:shadow-teal-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-teal-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-teal-700 transition-colors duration-200">
+              Monsoon Rhythms (July – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Rameshwaram experiences moderate rains with high wind currents. The coastal landscape looks incredibly raw, though boat operations and bridge train schedules can encounter occasional delays.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-teal-100/70 text-teal-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Ocean Breeze
+        </span>
+      </div>
+
+      {/* Season 3: Summer Humid Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Summer Humidity (April – June)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Intense coastal heat pushing up to 38°C with heavy humidity. Best suited for late evening architecture walks inside the temple interiors or enjoying crowd-free beach view discounts.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Quiet Stays
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
           {/* Gallery */}
           <div className="mt-10">

@@ -19,7 +19,7 @@ const AjantaEllora = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
+        className="w-full  mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
       >
 
         {/* HERO SECTION */}
@@ -181,96 +181,7 @@ const AjantaEllora = () => {
 
 </section>
 
-          {/* ATTRACTIONS */}
-          <section className="mb-28">
-            <h2 className="text-3xl font-black text-green-900 mb-12 italic text-center">
-              Must Visit Attractions
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {[
-                { title: "Ajanta Caves", desc: "Ancient Buddhist caves with stunning murals." },
-                { title: "Ellora Caves", desc: "34 caves representing Buddhist, Hindu & Jain faiths." },
-                { title: "Kailasa Temple", desc: "World’s largest monolithic rock-cut temple." },
-                { title: "Daulatabad Fort", desc: "Historic hill fort near the caves." }
-              ].map((item) => (
-                <motion.div
-                  key={item.title}
-                  whileHover={{ y: -6 }}
-                  className="p-8 bg-green-50 rounded-3xl shadow-lg border border-green-100"
-                >
-                  <h3 className="text-xl font-black text-green-800 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600">{item.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </section>
-
-          {/* THINGS TO DO */}
-          <section className="mb-28 text-center">
-            <h2 className="text-3xl font-black text-green-900 italic mb-14">
-              Things To Experience
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-10">
-              {[
-                "Explore Rock-Cut Caves",
-                "Photography",
-                "Historical Walk",
-                "Temple Architecture Study",
-                "Museum Visit",
-                "Sunset Views"
-              ].map((item) => (
-                <motion.div
-                  key={item}
-                  whileHover={{ scale: 1.05 }}
-                  className="p-8 bg-white rounded-3xl shadow-xl border border-green-100"
-                >
-                  <h3 className="font-black text-green-900">{item}</h3>
-                </motion.div>
-              ))}
-            </div>
-          </section>
-
-          {/* TRAVEL INFO */}
-          <section className="mb-28 bg-slate-900 text-white p-12 rounded-3xl shadow-2xl">
-            <h2 className="text-3xl font-black mb-10 italic text-center">
-              Travel Information
-            </h2>
-
-            <div className="space-y-6 max-w-3xl mx-auto">
-              <TravelDetail icon={<Plane />} label="Nearest Airport" value="Aurangabad Airport" />
-              <TravelDetail icon={<Train />} label="Nearest Railway" value="Aurangabad Station" />
-              <TravelDetail icon={<Calendar />} label="Best Time" value="October – March" />
-              <TravelDetail icon={<MapPin />} label="Distance from Aurangabad" value="~30 KM" />
-            </div>
-          </section>
-
-          {/* ITINERARY */}
-          <section className="mb-28">
-            <h2 className="text-3xl font-black text-green-900 italic text-center mb-12">
-              Suggested 2 Day Itinerary
-            </h2>
-
-            <div className="space-y-8 max-w-3xl mx-auto">
-              <ItineraryDay day="Day 1" text="Explore Ajanta Caves → Photography → Museum Visit" />
-              <ItineraryDay day="Day 2" text="Ellora Caves → Kailasa Temple → Daulatabad Fort" />
-            </div>
-          </section>
-
-          {/* WEATHER */}
-          <section className="mb-28 text-center bg-green-50 p-12 rounded-3xl shadow-lg">
-            <Snowflake className="mx-auto text-green-500 w-14 h-14 mb-6" />
-            <h2 className="text-3xl font-black text-green-900 italic mb-4">
-              Climate & Weather
-            </h2>
-            <p className="text-slate-600 max-w-3xl mx-auto">
-              Summers can be hot, while winters are pleasant and ideal for exploring.
-              Best time to visit is between October and March.
-            </p>
-          </section>
+         
 
           {/* GALLERY */}
           <section className="mb-28">
@@ -309,6 +220,126 @@ const AjantaEllora = () => {
               photographers, and cultural explorers.
             </p>
           </section>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Monolithic Rocks & Ancient Heritage Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-sky-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-sky-50 border border-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🗿 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Time to Visit Ajanta & Ellora
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your historic exploration to India's greatest architectural wonders aligned with pleasant winter walking loops, misty monsoon ravines, and global cultural festivals.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-amber-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl font-bold mb-6 border border-amber-100">
+          🏛️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Historical Walking Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          The absolute finest window to map out the cave circuits is from <span className="font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded-md">October to March</span>. Because exploring these expansive rock-cut wonders requires hours of outdoor walking and open-air climbing, the mild winters (15°C - 30°C) offer the ultimate climate comfort.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this peak block, standing in front of the awe-inspiring monolithic architecture of <span className="font-semibold text-gray-900">Kailash Temple (Cave 16)</span> at Ellora or admiring the timeless Jataka tale murals at Ajanta feels highly immersive without the exhaustion of the Deccan heat.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-amber-50 to-sky-50 rounded-2xl border border-amber-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-amber-900 font-medium leading-relaxed">
+          <strong className="text-sky-950">Pro Tip:</strong> Want to immerse yourself in classical arts? Try to align your winter travels with the iconic <strong className="text-amber-950">Ellora Ajanta International Festival</strong> held around November/December. The historic backdrop lights up beautifully with live music loops and classical dance showcases from India's master artists.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Crisp Historical Winters */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
+              Crisp Heritage Winters (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The absolute gold-standard travel window. Exceptionally pleasant skies make it highly seamless to explore both complex architectures extensively without breaking a sweat.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Peak Comfort
+        </span>
+      </div>
+
+      {/* Season 2: Rainwashed Ravines */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-sm hover:shadow-lg hover:shadow-sky-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-sky-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-sky-700 transition-colors duration-200">
+              Lush Monsoon Waterfalls (June – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              A visually breathtaking season. The dry Deccan landscapes transform into deep velvet green, and the iconic Waghora river waterfall cascades dramatically right opposite the Ajanta horseshoe cave loops.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Scenic Peak
+        </span>
+      </div>
+
+      {/* Season 3: Extreme Deccan Summer */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-rose-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🔥
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-rose-700 transition-colors duration-200">
+              Intense Summer Heatwaves (April – May)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Temperatures climb intensely, frequently breaching 42°C. The blazing sun makes trekking the rocky staircases highly draining. If visiting, restrict your exploration strictly to early morning slots.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Off Season
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
 
           {/* CTA */}
           <section className="text-center">

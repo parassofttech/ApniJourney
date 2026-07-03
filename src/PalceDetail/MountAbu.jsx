@@ -17,7 +17,7 @@ const MountAbu = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full  mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Header Image */}
         <motion.img
@@ -176,101 +176,7 @@ const MountAbu = () => {
 
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* History */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-green-50 rounded-2xl shadow-sm border border-green-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Info /> Historical Significance
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Mount Abu has been an important religious and cultural
-                center for centuries. It is famous for the
-                **Dilwara Jain Temples**, known for their stunning marble
-                carvings. The region also holds significance in Hindu
-                mythology.
-              </p>
-            </motion.div>
-
-            {/* Attractions */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-emerald-50 rounded-2xl shadow-sm border border-emerald-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-emerald-700 mb-3">
-                <Camera /> Must-Visit Attractions
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🛕 <b>Dilwara Temples:</b> Marble masterpiece</li>
-                <li>🌅 <b>Nakki Lake:</b> Boating & sunset views</li>
-                <li>🏔️ <b>Guru Shikhar:</b> Highest peak of Aravalli</li>
-                <li>🌳 <b>Sunset Point:</b> Scenic evening spot</li>
-              </ul>
-              <a
-                href="https://tourism.rajasthan.gov.in/mount-abu.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-sm text-emerald-700 mt-3 underline hover:text-emerald-900"
-              >
-                Visit Rajasthan Tourism <ExternalLink size={14} />
-              </a>
-            </motion.div>
-
-            {/* Nature */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-lime-50 rounded-2xl shadow-sm border border-lime-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-lime-700 mb-3">
-                <TreePine /> Nature & Wildlife
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Surrounded by forests and rocky hills, Mount Abu is
-                home to the **Mount Abu Wildlife Sanctuary**.
-                You can spot rare flora, fauna, and enjoy trekking
-                through scenic trails.
-              </p>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-teal-50 rounded-2xl shadow-sm border border-teal-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-teal-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🕒 <b>Best Time:</b> October – March</li>
-                <li>🎟️ <b>Ideal Duration:</b> 2–3 days</li>
-                <li>🚆 <b>Nearest Railway:</b> Abu Road (28 km)</li>
-                <li>✈️ <b>Nearest Airport:</b> Udaipur Airport</li>
-                <li>🏨 <b>Stay:</b> Hill resorts, heritage hotels</li>
-              </ul>
-            </motion.div>
-          </div>
-
-          {/* Experience Section */}
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 40 }}
-            transition={{ delay: 0.2 }}
-            className="mt-10 bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-2xl border border-green-300"
-          >
-            <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-              <Mountain /> Peaceful Escape
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              Mount Abu is perfect for a **relaxing vacation**. Enjoy
-              boating in Nakki Lake, trekking to Guru Shikhar,
-              and witnessing beautiful sunsets. The cool breeze
-              and serene atmosphere make it a romantic and peaceful
-              getaway.
-            </p>
-          </motion.div>
+          
 
           {/* Gallery */}
           <div className="mt-10">
@@ -296,6 +202,125 @@ const MountAbu = () => {
               ))}
             </div>
           </div>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Highland Mist & Dilwara Marble Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-indigo-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-indigo-50 border border-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      ⛰️ Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Best Time to Visit Mount Abu
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect highland escape aligned with crisp mountain winters, lush monsoon mist, or cool summer reprieves.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-emerald-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-6 border border-emerald-100">
+          🌲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Aravali Highland Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Mount Abu offers an exceptional and crisp holiday cycle from <span className="font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-md">October to March</span>. During these winter months, temperatures comfortably range between 12°C - 25°C, occasionally dipping close to freezing at night, making it perfect for cozy bonfire setups.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this peak block, exploring the stunning marble architecture loops of <span className="font-semibold text-gray-900">Dilwara Temples</span>, boating across Nakki Lake, and tracking sunsets from Toad Rock feels completely refreshing.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-emerald-50 to-indigo-50 rounded-2xl border border-emerald-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-emerald-900 font-medium leading-relaxed">
+          <strong className="text-emerald-950">Pro Tip:</strong> Want to catch the town at its most festive? Plan your loop around late December to witness the vibrant <strong className="text-emerald-950">Winter Festival</strong>, featuring cultural folk dances, traditional music concerts, and gorgeous deepam processions across Nakki Lake.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ❄️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+              Crisp Winter Peak (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The grand peak cycle. Sharp, chilly night breezes with pleasant sunny days. Ideal for hiking to Guru Shikhar, outdoor plateau picnics, and exploring wildlife sanctuaries.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Highland Peak
+        </span>
+      </div>
+
+      {/* Season 2: Summer Reprieve */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Cool Summer Escape (April – June)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              While the rest of Rajasthan scorches past 40°C, Mount Abu stays pleasant under a 33°C ceiling. Perfect for escaping the plains, evening strolls, and relaxing lake breezes.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Plains Escape
+        </span>
+      </div>
+
+      {/* Season 3: Monsoon Mist */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-indigo-300 shadow-sm hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-indigo-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-indigo-700 transition-colors duration-200">
+              Misty Monsoons (July – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The hill station gets covered in lush green loops and heavy mountain mist. Waterfalls like Dhrudhiya waterfalls revive completely, creating an incredibly romantic, off-beat vibe.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-indigo-100/70 text-indigo-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Lush Mist
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
           {/* Tourism Link */}
           <div className="mt-8 text-center">

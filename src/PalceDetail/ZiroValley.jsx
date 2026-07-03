@@ -22,7 +22,7 @@ const ZiroValley = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
+        className="w-full  mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
       >
         {/* 🌾 HERO SECTION */}
         <div className="relative h-[500px] overflow-hidden group">
@@ -196,80 +196,7 @@ const ZiroValley = () => {
 
 </section>
 
-          {/* GRID */}
-          <div className="grid md:grid-cols-2 gap-8">
-
-            {/* Natural Beauty */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-green-50 to-emerald-50 rounded-[2.5rem] border border-green-100/50 shadow-sm relative overflow-hidden group"
-            >
-              <Mountain className="absolute -right-6 -top-6 text-green-200/40 w-32 h-32 group-hover:rotate-12 transition-transform duration-500" />
-              <h2 className="text-2xl font-black text-green-900 mb-8 flex items-center gap-3 italic">
-                <Compass className="text-green-500" /> Natural Wonders
-              </h2>
-              <ul className="space-y-5">
-                <AttractionItem emoji="🌾" bold="Paddy Fields" text="Iconic step farming landscape" />
-                <AttractionItem emoji="🌲" bold="Talley Valley" text="Dense forest sanctuary" />
-                <AttractionItem emoji="🌄" bold="Kile Pakho" text="Panoramic sunrise views" />
-                <AttractionItem emoji="🌿" bold="Pine Groves" text="Tranquil walking trails" />
-              </ul>
-            </motion.div>
-
-            {/* Culture */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-[2.5rem] border border-teal-100/50 shadow-sm relative overflow-hidden group"
-            >
-              <Music className="absolute -right-6 -top-6 text-teal-200/40 w-32 h-32 group-hover:scale-125 transition-transform duration-500" />
-              <h2 className="text-2xl font-black text-teal-900 mb-8 flex items-center gap-3 italic">
-                <Trees className="text-teal-500" /> Tribal Culture
-              </h2>
-              <div className="space-y-4">
-                <CultureItem text="Apatani Tribal Heritage" />
-                <CultureItem text="Ziro Music Festival" />
-                <CultureItem text="Traditional Bamboo Houses" />
-              </div>
-            </motion.div>
-
-            {/* Food */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-orange-50 to-amber-50 rounded-[2.5rem] border border-orange-100/50 shadow-sm"
-            >
-              <h2 className="text-2xl font-black text-orange-900 mb-8 flex items-center gap-3 italic">
-                <Utensils className="text-orange-500" /> Local Flavours
-              </h2>
-              <p className="text-slate-600 font-medium leading-relaxed mb-6">
-                Taste authentic tribal cuisine, bamboo shoot dishes,
-                smoked meats, and local rice beer —
-                simple yet deeply rooted in tradition.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {["#Apatani", "#MusicFestival", "#NorthEastIndia", "#EcoTourism"].map(tag => (
-                  <span key={tag} className="px-3 py-1 bg-white rounded-full text-[10px] font-black text-orange-400 border border-orange-100 uppercase tracking-widest">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Travel Intel */}
-            <motion.div
-              whileHover={{ y: -8 }}
-              className="p-10 bg-slate-900 rounded-[2.5rem] text-white shadow-2xl"
-            >
-              <h2 className="text-2xl font-black mb-8 flex items-center gap-3 italic">
-                <Plane className="text-green-400" /> Travel Intel
-              </h2>
-              <div className="space-y-5">
-                <TravelDetail icon={<Plane />} label="Nearest Airport" value="Lilabari (Assam)" />
-                <TravelDetail icon={<Train />} label="Nearest Rail" value="Naharlagun" />
-                <TravelDetail icon={<Calendar />} label="Best Time" value="March – October" />
-                <TravelDetail icon={<MapPin />} label="Altitude" value="1,500 m above sea level" />
-              </div>
-            </motion.div>
-          </div>
+          
 
           {/* GALLERY */}
           <section className="mt-28">
@@ -312,6 +239,125 @@ const ZiroValley = () => {
               ))}
             </div>
           </section>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Indigenous Valley & Musical Mist Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-violet-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-violet-50 border border-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🌾 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Best Time to Visit Ziro Valley
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect northeastern high-altitude escape aligned with pristine green summers, golden harvest fields, and iconic music loops.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-emerald-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-6 border border-emerald-100">
+          🛖
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Plateau Harvest Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Ziro Valley boasts a remarkably soothing, pleasant climate across two key loops: <span className="font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-md">March to May</span> (spring blooms) and <span className="font-bold text-violet-700 bg-violet-50 px-1.5 py-0.5 rounded-md">October to November</span> (autumn golden harvest). Temperatures hover cleanly between 15°C and 25°C, keeping outdoor exploration exceptionally refreshing.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During these pristine blocks, exploring the unique sustainable farming patterns at <span className="font-semibold text-gray-900">Hong Village</span>, understanding the deep cultural loops of the tattooed Apatani tribe elders, or trekking up Kile Pakho ridge feels deeply transcendental.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-emerald-50 to-violet-50 rounded-2xl border border-emerald-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">🎸</span>
+        <p className="text-xs md:text-sm text-emerald-900 font-medium leading-relaxed">
+          <strong className="text-emerald-950">Pro Tip:</strong> Looking for the ultimate independent cultural vibe? Pack your bags for late September to catch the legendary outdoor <strong className="text-emerald-950">Ziro Festival of Music</strong>. The entire valley fills up with global indie artists, camping setups under the stars, and cool rain-washed pine horizons.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Golden Autumn & Festival */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-violet-300 shadow-sm hover:shadow-lg hover:shadow-violet-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-violet-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌾
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-violet-700 transition-colors duration-200">
+              September Music & Golden Harvest (Sep – November)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The valley transforms completely from lush green to a glittering golden yellow just before the rice harvest. Perfect weather for cultural village strolls and open-air musical loops.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-violet-100/70 text-violet-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Harvest Peak
+        </span>
+      </div>
+
+      {/* Season 2: Crisp Spring Green */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌸
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+              Pleasant Valley Spring (March – May)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Refreshing post-winter mountain breezes with bright, colorful local orchid blooms. Ideal window for high-altitude trekking across the Talley Valley Wildlife Sanctuary loops.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Lush Spring
+        </span>
+      </div>
+
+      {/* Season 3: Sub-Zero Winter Chill */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-blue-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ❄️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-200">
+              Frosty Winter Loops (December – February)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The temperature drops sharply, touching sub-zero levels (-1°C to 10°C) with thick morning frost layers over the pine trees. Recommended strictly for raw, quiet winter lovers.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Frozen Phase
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
           {/* CTA */}
           <div className="mt-20 text-center">

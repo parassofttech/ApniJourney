@@ -21,7 +21,7 @@ const Alleppey = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
+        className="w-full  mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
       >
 
         {/* HERO SECTION */}
@@ -182,97 +182,7 @@ const Alleppey = () => {
 
 </section>
 
-          {/* ATTRACTIONS */}
-          <section className="mb-28">
-            <h2 className="text-3xl font-black text-green-900 mb-12 italic text-center">
-              Must Visit Attractions
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {[
-                { title: "Alleppey Backwaters", desc: "Serene canals perfect for houseboat cruises." },
-                { title: "Vembanad Lake", desc: "Largest lake in Kerala with stunning sunsets." },
-                { title: "Alappuzha Beach", desc: "Beautiful coastal area with lighthouse and promenade." },
-                { title: "Krishnapuram Palace", desc: "Historic palace showcasing Kerala architecture." }
-              ].map((item) => (
-                <motion.div
-                  key={item.title}
-                  whileHover={{ y: -6 }}
-                  className="p-8 bg-green-50 rounded-3xl shadow-lg border border-green-100"
-                >
-                  <h3 className="text-xl font-black text-green-800 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600">{item.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </section>
-
-          {/* THINGS TO DO */}
-          <section className="mb-28 text-center">
-            <h2 className="text-3xl font-black text-green-900 italic mb-14">
-              Things To Experience
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-10">
-              {[
-                "Houseboat Cruise",
-                "Village Exploration",
-                "Sunset Photography",
-                "Canoeing",
-                "Traditional Food Tasting",
-                "Market Shopping"
-              ].map((item) => (
-                <motion.div
-                  key={item}
-                  whileHover={{ scale: 1.05 }}
-                  className="p-8 bg-white rounded-3xl shadow-xl border border-green-100"
-                >
-                  <h3 className="font-black text-green-900">{item}</h3>
-                </motion.div>
-              ))}
-            </div>
-          </section>
-
-          {/* TRAVEL INFO */}
-          <section className="mb-28 bg-slate-900 text-white p-12 rounded-3xl shadow-2xl">
-            <h2 className="text-3xl font-black mb-10 italic text-center">
-              Travel Information
-            </h2>
-
-            <div className="space-y-6 max-w-3xl mx-auto">
-              <TravelDetail icon={<Plane />} label="Nearest Airport" value="Cochin International Airport" />
-              <TravelDetail icon={<Train />} label="Nearest Railway" value="Alleppey Station" />
-              <TravelDetail icon={<Calendar />} label="Best Time" value="October – March" />
-              <TravelDetail icon={<MapPin />} label="Distance from Kochi" value="53 KM (~1.5 hrs)" />
-            </div>
-          </section>
-
-          {/* ITINERARY */}
-          <section className="mb-28">
-            <h2 className="text-3xl font-black text-green-900 italic text-center mb-12">
-              Suggested 3 Day Itinerary
-            </h2>
-
-            <div className="space-y-8 max-w-3xl mx-auto">
-              <ItineraryDay day="Day 1" text="Alleppey Backwaters → Houseboat Stay → Sunset View" />
-              <ItineraryDay day="Day 2" text="Krishnapuram Palace → Alappuzha Beach → Local Market" />
-              <ItineraryDay day="Day 3" text="Village Walk → Canoeing → Return" />
-            </div>
-          </section>
-
-          {/* WEATHER */}
-          <section className="mb-28 text-center bg-green-50 p-12 rounded-3xl shadow-lg">
-            <Snowflake className="mx-auto text-green-500 w-14 h-14 mb-6" />
-            <h2 className="text-3xl font-black text-green-900 italic mb-4">
-              Climate & Weather
-            </h2>
-            <p className="text-slate-600 max-w-3xl mx-auto">
-              Pleasant temperatures (24°C – 32°C) with heavy monsoons. 
-              Best visited between October and March.
-            </p>
-          </section>
+         
 
           {/* GALLERY */}
           <section className="mb-28">
@@ -299,6 +209,125 @@ const Alleppey = () => {
               ))}
             </div>
           </section>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Tranquil Backwaters & Palm Grove Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-teal-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-emerald-50 border border-teal-100 text-teal-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🛶 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
+      Best Time to Visit Alleppey
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your serene escape to India's ultimate backwater kingdom, aligned with smooth houseboat cruising winds, pleasant winter sun, and legendary boat races.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-teal-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl font-bold mb-6 border border-teal-100">
+          🌅
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Liquid Highway Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Alleppey welcomes its most flawless, breezy, and pleasant cruising weather from <span className="font-bold text-teal-700 bg-teal-50 px-1.5 py-0.5 rounded-md">October to March</span>. As the heavy monsoon depressions clear up, the humidity drops to its annual minimum, offering beautiful daytime temps between 20°C and 32°C.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this premium seasonal block, booking a vintage luxury <span className="font-semibold text-gray-900">Kettuvallam (Houseboat)</span> cruise, canoeing through the micro-canals of Kuttanad, or watching the orange sun melt into Alleppey Beach feels exceptionally magical and peaceful.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-teal-50 to-emerald-50 rounded-2xl border border-teal-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">🏆</span>
+        <p className="text-xs md:text-sm text-teal-900 font-medium leading-relaxed">
+          <strong className="text-teal-950">Pro Tip:</strong> Want to witness the ultimate adrenaline rush on water? Plan your travel loop around the <strong className="text-emerald-950">second Saturday of August</strong> to witness the world-famous <strong className="text-teal-950">Nehru Trophy Boat Race</strong> on Punnamada Lake. The atmosphere goes electric with massive snake boats rowing in perfect rhythm!
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Crisp Winter Houseboats */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-sm hover:shadow-lg hover:shadow-teal-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-teal-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌾
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-teal-700 transition-colors duration-200">
+              Cool Winter Cruising (October – February)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The ultimate high-demand travel cycle. Mild breezes blow continuously across the lagoons, making overnight houseboat stays, village walks, and open-air kayaking completely effortless.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-teal-100/70 text-teal-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Peak Window
+        </span>
+      </div>
+
+      {/* Season 2: Warm Tropical Transits */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+              Humid Tropical Summers (March – May)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Temperatures edge past 35°C, raising backwater humidity levels significantly. It works as an exceptional low-crowd window to secure high-end premium houseboats at heavily slashed off-season rates.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Budget Friendly
+        </span>
+      </div>
+
+      {/* Season 3: Torrential Monsoon Lagoons */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-blue-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-200">
+              Dramatic Monsoon Magic (June – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The backwaters swell with heavy downpours, turning the entire landscape hyper-green. While open houseboats face strict cruising limits during heavy rains, it is the prime time for authentic Ayurvedic treatments.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Ayurveda Phase
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
           {/* WHY VISIT */}
           <section className="mb-28 bg-gradient-to-r from-green-600 to-emerald-700 text-white p-4 md:p-12 rounded-3xl text-center shadow-2xl">

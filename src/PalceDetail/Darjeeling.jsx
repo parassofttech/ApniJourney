@@ -9,7 +9,7 @@ const Darjeeling = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Hero Image */}
         <motion.img
@@ -170,6 +170,153 @@ const Darjeeling = () => {
 
 </section>
 
+{/* Gallery */}
+          <div className="mt-10">
+            <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
+              📸 Gallery – Explore Darjeeling
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3  gap-4">
+              {[
+                "https://hikerwolf.com/wp-content/uploads/2020/04/Darjeeling-toy-train-route.jpg",
+                "https://www.thelostpassport.com/wp-content/uploads/2020/08/Darjeeling-Tea-Fields.jpg",
+                "https://www.dreamtravelyaari.com/admin/img/uploads/blog/1750850617_88639-Top-10-Places-to-Visit-in-Darjeeling-2025.webp",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjmBQTgb4BV86-IiwnFQpG3J4UGR8xi8xpew&s",
+               
+              ].map((img, i) => (
+                <motion.img
+                  key={i}
+                  src={img}
+                  alt="Darjeeling"
+                  whileHover={{ scale: 1.05 }}
+                  className="rounded-2xl shadow-md h-52 w-full object-cover"
+                  onError={(e) =>
+                    (e.target.src =
+                      "https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=900&q=80")
+                  }
+                />
+              ))}
+            </div>
+          </div>
+
+{/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Mist & Tea Garden Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-sky-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-sky-50 border border-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍃 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Best Time to Visit Darjeeling
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect Himalayan holiday aligned with clear Kanchenjunga views and refreshing tea loops.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-emerald-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-6 border border-emerald-100">
+          🏔️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Himalayan Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Darjeeling shines brightest in two specific seasons: the crisp spring/summer from <span className="font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-md">March to May</span> with temperatures around 10°C - 20°C, and the golden autumn/winter from <span className="font-bold text-sky-700 bg-sky-50 px-1.5 py-0.5 rounded-md">October to December</span> when skies open up for crystal-clear mountain views.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During these times, iconic spots like the <span className="font-semibold text-gray-900">Tiger Hill Sunrise point</span>, Batasia Loop, and the legendary Toy Train tracks are perfect for heavy exploration and photography.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-emerald-50 to-sky-50 rounded-2xl border border-emerald-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-emerald-900 font-medium leading-relaxed">
+          <strong className="text-emerald-950">Pro Tip:</strong> Want to capture the mystical fog rolling over sprawling tea leaves without tourist rush? Early October or late February offer excellent weather transitions with cheaper stay rates.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Spring & Summer */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌸
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+              Spring / Summer (March – May)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Extremely pleasant mountain climate. Absolute goldmine for rhododendron blooms, fresh tea harvesting views, and escaping plains' scorching heat waves.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Peak Holiday
+        </span>
+      </div>
+
+      {/* Season 2: Autumn & Winter */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-sm hover:shadow-lg hover:shadow-sky-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-sky-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ❄️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-sky-700 transition-colors duration-200">
+              Autumn / Winter (October – February)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Chilly winds and clear blues. Best window for uninterrupted Kanchenjunga peaks, clear sunrise loops, and enjoying local warm thukpa bowles.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Clear Horizons
+        </span>
+      </div>
+
+      {/* Season 3: Monsoon */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Monsoon (June – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Heavy Eastern Himalayan showers. High risk of mist-blocked routes and landslides, but the valley turns dramatically green and resorts slash prices.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          High Rainfall Risk
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
           {/* Info Grid */}
           <div className="grid md:grid-cols-2 gap-6 mt-6">
             {/* History */}
@@ -249,33 +396,7 @@ const Darjeeling = () => {
             </motion.div>
           </div>
 
-          {/* Gallery */}
-          <div className="mt-10">
-            <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
-              📸 Gallery – Explore Darjeeling
-            </h2>
-            <div className="grid sm:grid-cols-2  gap-4">
-              {[
-                "https://hikerwolf.com/wp-content/uploads/2020/04/Darjeeling-toy-train-route.jpg",
-                "https://www.thelostpassport.com/wp-content/uploads/2020/08/Darjeeling-Tea-Fields.jpg",
-                "https://www.dreamtravelyaari.com/admin/img/uploads/blog/1750850617_88639-Top-10-Places-to-Visit-in-Darjeeling-2025.webp",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjmBQTgb4BV86-IiwnFQpG3J4UGR8xi8xpew&s",
-               
-              ].map((img, i) => (
-                <motion.img
-                  key={i}
-                  src={img}
-                  alt="Darjeeling"
-                  whileHover={{ scale: 1.05 }}
-                  className="rounded-2xl shadow-md h-52 w-full object-cover"
-                  onError={(e) =>
-                    (e.target.src =
-                      "https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=900&q=80")
-                  }
-                />
-              ))}
-            </div>
-          </div>
+          
         </div>
       </motion.div>
     </div>

@@ -17,7 +17,7 @@ const Amritsar = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full  mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Header Image */}
         <motion.img
@@ -176,99 +176,7 @@ const Amritsar = () => {
 
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* History */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-orange-50 rounded-2xl shadow-sm border border-orange-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-orange-700 mb-3">
-                <Info /> Historical Significance
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Amritsar was founded in the 16th century by **Guru Ram Das Ji**.
-                It is the spiritual center of Sikhism and home to the
-                **Harmandir Sahib (Golden Temple)**. The city also witnessed the
-                tragic **Jallianwala Bagh massacre**, a turning point in India’s
-                freedom struggle.
-              </p>
-            </motion.div>
-
-            {/* Attractions */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-green-50 rounded-2xl shadow-sm border border-green-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Camera /> Must-Visit Attractions
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🛕 <b>Golden Temple:</b> Spiritual & architectural marvel</li>
-                <li>🇮🇳 <b>Jallianwala Bagh:</b> Historic freedom memorial</li>
-                <li>🚩 <b>Wagah Border:</b> Patriotic retreat ceremony</li>
-                <li>🏛️ <b>Partition Museum:</b> Stories of 1947</li>
-              </ul>
-              <a
-                href="https://punjabtourism.punjab.gov.in/amritsar"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-sm text-green-700 mt-3 underline hover:text-green-900"
-              >
-                Visit Punjab Tourism <ExternalLink size={14} />
-              </a>
-            </motion.div>
-
-            {/* Culture & Food */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-yellow-50 rounded-2xl shadow-sm border border-yellow-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Utensils /> Culture & Cuisine
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Amritsar is a paradise for food lovers. Famous dishes include
-                **Amritsari Kulcha, Chole, Lassi, Langar**, and street food from
-                **Hall Bazaar**. Punjabi hospitality and Bhangra vibes are felt
-                everywhere.
-              </p>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-pink-50 rounded-2xl shadow-sm border border-pink-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-pink-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🕒 <b>Best Time:</b> October – March</li>
-                <li>🎟️ <b>Ideal Duration:</b> 2–3 days</li>
-                <li>✈️ <b>Airport:</b> Sri Guru Ram Dass Jee Intl Airport</li>
-                <li>🚆 <b>Rail:</b> Well connected to major cities</li>
-                <li>🏨 <b>Stay:</b> Heritage hotels, budget stays, luxury rooms</li>
-              </ul>
-            </motion.div>
-          </div>
-
-          {/* Patriotic Section */}
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 40 }}
-            transition={{ delay: 0.2 }}
-            className="mt-10 bg-gradient-to-r from-orange-50 to-green-50 p-6 rounded-2xl border border-orange-300"
-          >
-            <h2 className="flex items-center gap-2 text-xl font-semibold text-orange-700 mb-3">
-              <Flag /> Patriotism & Spirit
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              The **Wagah Border ceremony** fills visitors with national pride.
-              The chants, synchronized drills, and energy create an unforgettable
-              experience that truly represents the spirit of India.
-            </p>
-          </motion.div>
+        
 
           {/* Gallery */}
           <div className="mt-10">
@@ -294,6 +202,125 @@ const Amritsar = () => {
               ))}
             </div>
           </div>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Sacred Golden Aura & Rich Heritage Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-rose-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-rose-50 border border-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      ✨ Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Time to Visit Amritsar
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect spiritual getaway aligned with crisp winter suns, vibrant festivals, and legendary street food loops.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-amber-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl font-bold mb-6 border border-amber-100">
+          ੴ
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Sacred Punjab Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Amritsar is exceptionally inviting and comfortable from <span className="font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded-md">October to March</span>. During this winter phase, the intense northern plains heat completely breaks down, bringing crisp, cool days and chilly nights between 5°C - 25°C.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this premium block, walking through the beautifully redesigned <span className="font-semibold text-gray-900">Heritage Street</span>, sitting peacefully by the Sarovar at the Golden Temple, and watching the energetic flag ceremony at the Wagah Border feels incredibly pleasant.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-amber-50 to-rose-50 rounded-2xl border border-amber-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-amber-900 font-medium leading-relaxed">
+          <strong className="text-amber-950">Pro Tip:</strong> Eager to see the Golden Temple dazzling at its absolute grandest? Try to plan your travel loop around <strong className="text-amber-950">Gurpurab</strong> or <strong className="text-amber-950">Diwali/Bandi Chhor Divas</strong>, when the entire complex is illuminated with millions of lights and spectacular fireworks displays.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
+              Crisp Winters (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The grand peak tourist cycle. Favorable weather for all-day city expeditions, visiting Jallianwala Bagh, and binging on hot, crispy Amritsari Kulchas with melting butter loops.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Golden Peak
+        </span>
+      </div>
+
+      {/* Season 2: Spring Celebrations */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-rose-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌾
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-rose-700 transition-colors duration-200">
+              Spring & Baisakhi (April)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The air turns warmer but the fields fill up with golden harvest loops. Perfect for catching the high-energy celebrations, bhangra beats, and traditional fairs of Baisakhi.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Harvest Beats
+        </span>
+      </div>
+
+      {/* Season 3: Summer & Monsoons */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Summer Heat & Monsoon (May – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Temperatures flare past 40°C followed by humid monsoon downpours. Outdoor walks are best saved for peaceful midnight temple loops or enjoying cold tall glasses of sweet Lassi.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Quiet Windows
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
           {/* Tourism Link */}
           <div className="mt-8 text-center">

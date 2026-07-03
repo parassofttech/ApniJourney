@@ -17,7 +17,7 @@ const Kodaikanal = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full  mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Header Image */}
         <motion.img
@@ -176,99 +176,7 @@ const Kodaikanal = () => {
 
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* History */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-indigo-50 rounded-2xl shadow-sm border border-indigo-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-indigo-700 mb-3">
-                <Info /> Historical Significance
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Established as a hill retreat by British missionaries in
-                the 19th century, Kodaikanal became a popular summer
-                getaway. Its colonial-era buildings and churches reflect
-                its historical charm.
-              </p>
-            </motion.div>
-
-            {/* Attractions */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-blue-50 rounded-2xl shadow-sm border border-blue-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-blue-700 mb-3">
-                <Camera /> Must-Visit Attractions
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🚣 <b>Kodaikanal Lake:</b> Star-shaped lake for boating</li>
-                <li>🌄 <b>Coaker’s Walk:</b> Scenic walking path</li>
-                <li>🌲 <b>Pine Forest:</b> Iconic movie shooting spot</li>
-                <li>💧 <b>Silver Cascade Falls:</b> Beautiful waterfall</li>
-              </ul>
-              <a
-                href="https://www.tamilnadutourism.tn.gov.in/destinations/kodaikanal"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-sm text-blue-700 mt-3 underline hover:text-blue-900"
-              >
-                Visit Tamil Nadu Tourism <ExternalLink size={14} />
-              </a>
-            </motion.div>
-
-            {/* Nature */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-green-50 rounded-2xl shadow-sm border border-green-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Trees /> Nature & Climate
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Kodaikanal is known for its **cool climate year-round**.
-                Surrounded by lush forests, valleys, and waterfalls,
-                it offers perfect conditions for trekking, camping,
-                and photography lovers.
-              </p>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-purple-50 rounded-2xl shadow-sm border border-purple-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-purple-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🕒 <b>Best Time:</b> April – June, September – October</li>
-                <li>🎟️ <b>Ideal Duration:</b> 2–4 days</li>
-                <li>✈️ <b>Nearest Airport:</b> Madurai Airport</li>
-                <li>🚆 <b>Nearest Railway:</b> Kodai Road (80 km)</li>
-                <li>🏨 <b>Stay:</b> Lake-view resorts, cottages</li>
-              </ul>
-            </motion.div>
-          </div>
-
-          {/* Experience Section */}
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 40 }}
-            transition={{ delay: 0.2 }}
-            className="mt-10 bg-gradient-to-r from-indigo-50 to-blue-50 p-6 rounded-2xl border border-indigo-300"
-          >
-            <h2 className="flex items-center gap-2 text-xl font-semibold text-indigo-700 mb-3">
-              <Mountain /> Romantic & Peaceful Escape
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              Whether you're boating on the lake, walking through
-              misty hills, or enjoying sunset viewpoints,
-              Kodaikanal offers a calm and romantic atmosphere.
-              It is perfect for couples, families, and nature lovers.
-            </p>
-          </motion.div>
+         
 
           {/* Gallery */}
           <div className="mt-10">
@@ -294,6 +202,125 @@ const Kodaikanal = () => {
               ))}
             </div>
           </div>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-violet-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Highland Mist & Shola Forest Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-violet-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-teal-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-50 to-teal-50 border border-violet-100 text-violet-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      ⛰️ Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-violet-950 to-gray-950">
+      Best Time to Visit Kodaikanal
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect misty retreat aligned with crisp mountain winters, blooming valleys, or fresh monsoon petrichor.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-violet-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-violet-50 text-violet-600 flex items-center justify-center text-2xl font-bold mb-6 border border-violet-100">
+          🌲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Princess of Hills Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Kodaikanal embraces its finest and most crisp travel window from <span className="font-bold text-violet-700 bg-violet-50 px-1.5 py-0.5 rounded-md">October to March</span>. During these winter months, the high altitude triggers beautifully cold mornings and sharp evening breezes ranging comfortably from 8°C to 20°C.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this peak block, row-boating across the star-shaped <span className="font-semibold text-gray-900">Kodaikanal Lake</span>, walking through the towering Pine Forest loops, and catching the rolling fog at Coaker's Walk feels absolutely magical.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-violet-50 to-teal-50 rounded-2xl border border-violet-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-violet-900 font-medium leading-relaxed">
+          <strong className="text-violet-950">Pro Tip:</strong> If you are planning a visit during May, keep a lookout for the annual <strong className="text-violet-950">Bryant Park Flower Show</strong>. The park erupts into stunning multi-colored floral loops, making it an incredible time for photography enthusiasts.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Crisp */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-violet-300 shadow-sm hover:shadow-lg hover:shadow-violet-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-violet-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ❄️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-violet-700 transition-colors duration-200">
+              Chilly Winter Peak (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The grand peak tourist cycle. Heavy evening mist blankets the town. Perfect for campfire stays, cycling around the lake, and trekking up to Pillar Rocks.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-violet-100/70 text-violet-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Misty Peak
+        </span>
+      </div>
+
+      {/* Season 2: Summer Relief */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-sm hover:shadow-lg hover:shadow-teal-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-teal-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-teal-700 transition-colors duration-200">
+              Pleasant Summer Escape (April – June)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              While South Indian plains face intense summer heat, Kodai stays cool around 25°C. Excellent for escaping the humidity, checking out fruit orchards, and enjoying clear valley views.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-teal-100/70 text-teal-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Plains Escape
+        </span>
+      </div>
+
+      {/* Season 3: Monsoon Greens */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-blue-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-200">
+              Monsoon Magic (July – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Frequent mountain downpours make the rolling Shola hills incredibly green. Waterfalls like Bear Shola Falls jump back to life, creating a beautiful setting for budget backpackers.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Lush Cascades
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
           {/* Tourism Link */}
           <div className="mt-8 text-center">

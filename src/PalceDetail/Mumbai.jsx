@@ -20,7 +20,7 @@ const Mumbai = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white selection:bg-yellow-500 selection:text-black">
+    <div className="min-h-screen bg-[#a3e7ed] text-white selection:bg-yellow-500 selection:text-black">
       
       {/* 🏙️ HERO SECTION WITH PARALLAX & OVERLAY */}
       <div className="relative h-[85vh] w-full overflow-hidden">
@@ -309,6 +309,124 @@ const Mumbai = () => {
             ))}
           </div>
         </div>
+        {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-indigo-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Metropolitan Coastline & City Lights Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-indigo-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-sky-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-50 to-sky-50 border border-indigo-100 text-indigo-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🌊 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-indigo-950 to-gray-950">
+      Best Time to Visit Mumbai
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect coastal city escape aligned with breezy winter sunsets and dramatic monsoon coffee loops.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-indigo-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl font-bold mb-6 border border-indigo-100">
+          🏙️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Maximum City Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Mumbai welcomes its most pleasant and comfortable travel loop from <span className="font-bold text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded-md">October to March</span>. During these winter months, the intense tropical humidity breaks down, replaced by cool sea breezes averaging a highly enjoyable 18°C - 30°C.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this ideal timeline, walking across the iconic <span className="font-semibold text-gray-900">Colaba Causeway</span>, catching sunset drives over the Bandra-Worli Sea Link, or taking ferry loops to Elephanta Caves feels completely effortless.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-indigo-50 to-sky-50 rounded-2xl border border-indigo-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-indigo-900 font-medium leading-relaxed">
+          <strong className="text-indigo-950">Pro Tip:</strong> Want to witness the true emotional heartbeat of Mumbai? Plan your trip around late August or September to witness the grand <strong className="text-indigo-950">Ganesh Chaturthi</strong> festival, when the entire city erupts in massive cultural street loops and spectacular processions.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-indigo-300 shadow-sm hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-indigo-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🍦
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-indigo-700 transition-colors duration-200">
+              Mild Winters (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The premium tourist cycle. Low humidity levels make it perfect for late-night Marine Drive walks, open-air music festivals, street-food exploration, and celebrity spotting.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-indigo-100/70 text-indigo-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Coastal Breeze
+        </span>
+      </div>
+
+      {/* Season 2: Monsoon Drama */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-sm hover:shadow-lg hover:shadow-sky-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-sky-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-sky-700 transition-colors duration-200">
+              Monsoon Romance (June – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Heavy, iconic downpours. While local trains encounter delays, watching massive ocean waves crash against the Worli Seaface with piping hot cutting chai is an irreplaceable vibe.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Marine Rains
+        </span>
+      </div>
+
+      {/* Season 3: Summer Sultry Heat */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Summer Humidity (April – May)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Intense sticky humidity with mercury touching 35°C. Outdoor exploration triggers quick exhaustion, making it an excellent time to duck into premium air-conditioned malls, theaters, and luxury hotel bars.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Indoor Loops
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
         {/* 🔗 FOOTER ACTION */}
         <div className="mt-32 text-center bg-white/5 p-16 rounded-[4rem] border border-white/10">

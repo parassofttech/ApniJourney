@@ -568,71 +568,98 @@ const Destinations = () => {
 
         <motion.div
           layout
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
+          className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
         >
           <AnimatePresence>
             {filteredDestinations.map((place) => (
               <motion.div
                 layout
                 key={place.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                whileHover={{ y: -10 }}
-                className="group relative bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100"
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.4 }}
+                whileHover={{
+                  y: -12,
+                  rotateX: 3,
+                  rotateY: -3,
+                  transition: { duration: 0.3 }
+                }}
+                className="group relative overflow-hidden rounded-3xl bg-white shadow-md hover:shadow-[0_20px_60px_rgba(0,0,0,0.18)] transition-all duration-500"
               >
-                {/* Image Container */}
-                <div className="relative h-72 overflow-hidden">
+                {/* Image */}
+                <div className="relative overflow-hidden h-40 sm:h-52 md:h-64">
+
                   <img
                     src={place.image}
                     alt={place.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
+                    className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
-                    <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
-                    <span className="text-xs font-bold text-gray-800">{place.rating || "4.5"}</span>
+
+                  {/* Gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+
+                  {/* Rating */}
+                  <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-xl px-2 py-1 rounded-full flex items-center gap-1 shadow-lg">
+                    <Star className="w-3 h-3 fill-yellow-400 text-yellow-400" />
+                    <span className="text-xs font-bold">
+                      {place.rating || "4.8"}
+                    </span>
                   </div>
-                  <div className="absolute inset-x-0 bottom-0 p-4">
-                    <button
-                      onClick={() => navigate(`/destinations/${place.id}`)}
-                      className="
+
+                  {/* Location */}
+                  <div className="absolute bottom-3 left-3 flex items-center gap-1 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full">
+
+                    <MapPin className="w-3 h-3 text-cyan-300" />
+
+                    <span className="text-white text-[11px] font-semibold">
+                      {place.location}
+                    </span>
+
+                  </div>
+
+                </div>
+
+                {/* Content */}
+                <div className="p-4 md:p-6">
+
+                  <h3 className="text-base md:text-2xl font-black text-gray-900 group-hover:text-cyan-600 transition">
+                    {place.name}
+                  </h3>
+
+                  <p className="text-gray-500 text-xs md:text-sm mt-2 line-clamp-2 leading-relaxed">
+                    {place.description}
+                  </p>
+
+                  {/* Button */}
+                  <button
+                    onClick={() => navigate(`/destinations/${place.id}`)}
+                    className="
+      mt-5
       w-full
-      bg-cyan-400
-      text-blue-900
-      py-3
       rounded-xl
-      font-bold
+      bg-gradient-to-r
+      from-cyan-500
+      to-blue-600
+      text-white
+      py-2.5
+      md:py-3
+      font-semibold
       flex
       items-center
       justify-center
       gap-2
-      shadow-xl
-      md:opacity-0
-      md:translate-y-4
-      md:group-hover:opacity-100
-      md:group-hover:translate-y-0
       transition-all
-      duration-500
+      duration-300
+      hover:scale-105
+      hover:shadow-xl
     "
-                    >
-                      Explore Now
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
-                  </div>
-                </div>
+                  >
+                    Explore
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
 
-                {/* Content */}
-                <div className="p-6">
-                  <div className="flex items-center text-cyan-500 text-[10px] font-black uppercase tracking-widest mb-2">
-                    <MapPin className="w-3 h-3 mr-1" />
-                    {place.location}
-                  </div>
-                  <h3 className="text-2xl font-black text-gray-900 mb-2 group-hover:text-cyan-600 transition-colors">
-                    {place.name}
-                  </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed line-clamp-2">
-                    {place.description}
-                  </p>
                 </div>
               </motion.div>
             ))}

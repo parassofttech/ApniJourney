@@ -10,7 +10,7 @@ const RannOfKutch = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="max-w-6xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden"
+        className="w-full  mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden"
       >
         {/* Hero Image */}
         <motion.img
@@ -173,72 +173,6 @@ const RannOfKutch = () => {
 
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Natural Beauty */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-orange-50 border border-orange-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-orange-700 mb-3">
-                <Sun /> Natural Wonder
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🌅 White Salt Desert that glows under moonlight</li>
-                <li>🐪 Camel safaris across the desert plains</li>
-                <li>🌙 Mesmerizing sunsets and starlit skies</li>
-                <li>🦩 Visit the Flamingo Sanctuary in winter</li>
-              </ul>
-            </motion.div>
-
-            {/* Rann Utsav */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-yellow-50 border border-yellow-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Tent /> Rann Utsav Festival
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🎪 Annual festival from November to February</li>
-                <li>💃 Folk dance, music, food, and handicrafts</li>
-                <li>🏕️ Stay in luxury tents in Dhordo village</li>
-                <li>🌕 Best experience during full moon nights</li>
-              </ul>
-            </motion.div>
-
-            {/* Cultural Heritage */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-pink-50 border border-pink-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-pink-700 mb-3">
-                <Gift /> Kutchi Culture & Art
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🧵 Vibrant mirror embroidery & leatherwork</li>
-                <li>🎨 Visit Bhuj & local artisan villages</li>
-                <li>🛍️ Buy handmade bandhani sarees & pottery</li>
-                <li>🍛 Try Kutchi cuisine – Bajra rotla & khichdi</li>
-              </ul>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-green-50 border border-green-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>✈️ Nearest Airport: Bhuj Airport (85 km from Rann)</li>
-                <li>🚆 Bhuj Railway Station connects to major cities</li>
-                <li>🚗 Private taxis and state buses available to Dhordo</li>
-                <li>🕒 Best Time to Visit: November – February</li>
-              </ul>
-            </motion.div>
-          </div>
 
           {/* Gallery */}
           <div className="mt-10">
@@ -268,6 +202,126 @@ const RannOfKutch = () => {
               ))}
             </div>
           </div>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-orange-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (White Salt Desert & Kutchi Culture Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-slate-200/20 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-orange-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-slate-100 to-orange-50 border border-slate-200 text-slate-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🐪 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-slate-950 to-gray-950">
+      Best Time to Visit Rann of Kutch
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect desert getaway aligned with completely dried salt fields, cool night winds, and festival loops.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-slate-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-slate-50 text-slate-700 flex items-center justify-center text-2xl font-bold mb-6 border border-slate-200">
+          🎪
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Great Salt Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          The Great Rann of Kutch is exclusively accessible and enjoyable from <span className="font-bold text-orange-700 bg-orange-50 px-1.5 py-0.5 rounded-md">November to February</span>. During this winter block, monsoon waters dry out entirely, transforming the massive basin into a pristine white sheet under pleasant 12°C - 25°C daytime conditions.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this premium timeline, the world-famous <span className="font-semibold text-gray-900">Rann Utsav tent city loops</span>, Dhordo cultural hubs, Kala Dungar peaks, and local artisan handicraft markets are fully operational.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-slate-100 to-orange-50 rounded-2xl border border-slate-200/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-slate-900 font-medium leading-relaxed">
+          <strong className="text-slate-950">Pro Tip:</strong> To experience the salt desert at its absolute most surreal, book your travel loops strictly around the <strong className="text-orange-950">Full Moon nights</strong>. The vast white landscape glows brilliantly silver under the moon, creating a magical view.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Rann Utsav Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ✨
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Winter Glory (November – February)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The grand peak cycle. The salt flats are perfectly white and dry. Ideal for camel cart safaris, cultural folk dance spectacles, paramotoring loops, and chilly stargazing nights.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          White Desert Peak
+        </span>
+      </div>
+
+      {/* Season 2: Shoulder / Transition Weeks */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-slate-300 shadow-sm hover:shadow-lg hover:shadow-slate-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-slate-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌤️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-slate-700 transition-colors duration-200">
+              Shoulder Months (March & October)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Weather gets progressively warmer or marks the start of the drying sequence. The tent cities are usually packed up, but independent travelers can explore the salt flats with zero tourist crowds.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-slate-100/70 text-slate-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Off-Beat Windows
+        </span>
+      </div>
+
+      {/* Season 3: Monsoon Inundation */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-blue-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-200">
+              Monsoon Flooding (April – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Intense summer heat followed by heavy monsoon water filling the marshland basin. The entire desert turns completely into an submerged inland sea loop, making it inaccessible for walking.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Submerged Marsh
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
         </div>
       </motion.div>
     </div>

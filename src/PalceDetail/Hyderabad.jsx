@@ -10,7 +10,7 @@ const Hyderabad = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden"
+        className="w-full  mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden"
       >
         {/* Hero Image */}
         <motion.img
@@ -171,72 +171,7 @@ const Hyderabad = () => {
 
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Historical Landmarks */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-indigo-50 border border-indigo-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-indigo-700 mb-3">
-                <Landmark /> Historical Landmarks
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🏰 Golconda Fort – echoing walls & royal history</li>
-                <li>🕌 Charminar – Hyderabad’s iconic 16th-century monument</li>
-                <li>💎 Chowmahalla Palace – grandeur of the Nizams</li>
-                <li>🕍 Qutb Shahi Tombs – intricate Indo-Islamic architecture</li>
-              </ul>
-            </motion.div>
-
-            {/* Cuisine */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-yellow-50 border border-yellow-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Utensils /> Culinary Delights
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🍗 Hyderabadi Biryani – world-famous & flavorful</li>
-                <li>🥘 Haleem – Ramadan specialty dish</li>
-                <li>☕ Irani Chai & Osmania Biscuits – cafe culture of Hyderabad</li>
-                <li>🍢 Pathar-ka-Gosht & Double-ka-Meetha desserts</li>
-              </ul>
-            </motion.div>
-
-            {/* Attractions */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-pink-50 border border-pink-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-pink-700 mb-3">
-                <Camera /> Top Attractions
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🌇 Hussain Sagar Lake & Buddha Statue</li>
-                <li>🎡 Ramoji Film City – world’s largest film studio</li>
-                <li>🛍️ Laad Bazaar – pearls, bangles & handicrafts</li>
-                <li>🏙️ HITEC City – India’s Silicon Valley of the South</li>
-              </ul>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-green-50 border border-green-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>✈️ Nearest Airport: Rajiv Gandhi International Airport</li>
-                <li>🚆 Hyderabad Deccan Station (Nampally)</li>
-                <li>🚗 Metro & local cabs available throughout the city</li>
-                <li>🕒 Best Time to Visit: October – February</li>
-              </ul>
-            </motion.div>
-          </div>
+         
 
           {/* Gallery */}
           <div className="mt-10">
@@ -266,6 +201,126 @@ const Hyderabad = () => {
               ))}
             </div>
           </div>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Nizami Heritage & Modern Tech Skyline Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-indigo-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-indigo-50 border border-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🕌 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Time to Visit Hyderabad
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect Deccani getaway aligned with pleasant fort-walking weather and buzzing evening lake breezes.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-amber-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl font-bold mb-6 border border-amber-100">
+          👑
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Pearl City Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Hyderabad is exceptionally pleasant and travel-friendly from <span className="font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded-md">October to March</span>. During this winter sequence, the harsh Deccan sun mellows down, offering crisp, breezy temperatures ranging between 15°C - 29°C.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During these premium months, navigating the vast architectural loops of <span className="font-semibold text-gray-900">Golconda Fort</span>, exploring the ornate chambers of Chowmahalla Palace, or walking around the bustling Charminar markets feels completely comfortable.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-amber-50 to-indigo-50 rounded-2xl border border-amber-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-amber-900 font-medium leading-relaxed">
+          <strong className="text-amber-950">Pro Tip:</strong> Looking for a rich cultural experience? Try to align your visit with the annual <strong className="text-amber-950">Numaish Exhibition</strong> (held through January and February). It is a massive heritage shopping loop that brings unique handicrafts from all over India directly to Nampally.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🕌
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
+              Crisp Winters (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The grand tourist peak. Perfect weather for all-day heritage walks, breezy evening boating loops at Hussain Sagar Lake, and exploring Ramoji Film City.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Nizami Glory
+        </span>
+      </div>
+
+      {/* Season 2: Monsoon Shifts */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-indigo-300 shadow-sm hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-indigo-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-indigo-700 transition-colors duration-200">
+              Monsoon Relief (July – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Moderate Deccani downpours wash the city parks and fort ruins into clean green setups. Ideal for long evening drives across the outer ring road and piping hot Irani Chai sessions.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-indigo-100/70 text-indigo-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Fresh Breezes
+        </span>
+      </div>
+
+      {/* Season 3: Summer Heat */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Summer Scorcher (April – June)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Intense, dry heat vectors pushing past 40°C. Outdoor exploration triggers exhaustion quickly, making it a great phase to explore indoor museums like Salar Jung or chill at premium breweries in Hitech City.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Indoor Loops
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
         </div>
       </motion.div>
     </div>

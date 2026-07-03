@@ -481,9 +481,9 @@ const DestinationDetails = () => {
 
       {/* Detail Section */}
       <div className="max-w-9xl mx-auto py-12 ">
-        <p className="text-gray-700 text-lg leading-relaxed mb-8">
+        <h3 className="text-gray-700 text-lg leading-relaxed mb-8">
           {data.description}
-        </p>
+        </h3>
 
         <div className="grid sm:grid-cols-2 gap-6 mb-10">
           {/* Best Time Card */}

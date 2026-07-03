@@ -16,7 +16,7 @@ const Coorg = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Header Image */}
         <motion.img
@@ -174,97 +174,7 @@ const Coorg = () => {
 
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* History */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-green-50 rounded-2xl shadow-sm border border-green-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Info /> Historical & Cultural Significance
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Coorg is home to the **Kodava people** with a rich cultural
-                heritage. Ancient temples like **Madikeri Fort** and the
-                **Omkareshwara Temple** showcase the region’s history and
-                architecture.
-              </p>
-            </motion.div>
-
-            {/* Attractions */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-lime-50 rounded-2xl shadow-sm border border-lime-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-lime-700 mb-3">
-                <Camera /> Must-Visit Attractions
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🏞️ <b>Abbey Falls:</b> Picturesque waterfall</li>
-                <li>⛰️ <b>Talakaveri:</b> Source of River Kaveri</li>
-                <li>🌳 <b>Brahmagiri Hills:</b> Trekking hotspot</li>
-                <li>🏯 <b>Madikeri Fort:</b> Historical landmark</li>
-              </ul>
-              <a
-                href="https://karnatakatourism.org/tour-item/coorg/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-sm text-lime-700 mt-3 underline hover:text-lime-900"
-              >
-                Visit Karnataka Tourism <ExternalLink size={14} />
-              </a>
-            </motion.div>
-
-            {/* Coffee & Nature */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-emerald-50 rounded-2xl shadow-sm border border-emerald-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-emerald-700 mb-3">
-                <Coffee /> Coffee & Nature
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Coorg is famous for its aromatic **coffee plantations** and
-                green landscapes. Visit local estates for coffee tasting and
-                nature walks, or simply relax amidst rolling hills.
-              </p>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-teal-50 rounded-2xl shadow-sm border border-teal-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-teal-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🕒 <b>Best Time:</b> October – March</li>
-                <li>🎟️ <b>Ideal Duration:</b> 2–4 days</li>
-                <li>✈️ <b>Nearest Airport:</b> Mangalore / Bangalore</li>
-                <li>🚆 <b>Nearest Railway:</b> Mysore</li>
-                <li>🏨 <b>Stay:</b> Coffee resorts, homestays, boutique hotels</li>
-              </ul>
-            </motion.div>
-          </div>
-
-          {/* Experience Section */}
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 40 }}
-            transition={{ delay: 0.2 }}
-            className="mt-10 bg-gradient-to-r from-green-50 to-lime-50 p-6 rounded-2xl border border-green-300"
-          >
-            <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-              <TreeDeciduous /> Nature & Adventure
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              Trekking, plantation walks, and river rafting in Coorg provide
-              adventure lovers with plenty of fun, while the misty hills offer
-              serenity and rejuvenation for the soul.
-            </p>
-          </motion.div>
+          
 
           {/* Gallery */}
           <div className="mt-10">
@@ -291,6 +201,124 @@ const Coorg = () => {
             </div>
           </div>
 
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Highland Mist & Coffee Plantation Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-amber-50 border border-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      ⛰️ Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Best Time to Visit Coorg
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect Western Ghats escape aligned with crisp spice-scented winters, rolling clouds, and roaring waterfalls.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-emerald-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-6 border border-emerald-100">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Coffee Valley Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Coorg opens its most magical and crisp weather loop from <span className="font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-md">October to March</span>. During this premium winter stretch, temperatures fluctuate beautifully between 15°C - 25°C, creating refreshing chilly mornings wrapped in thick blankets of white mist.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During these comfortable months, exploring the golden temple inside <span className="font-semibold text-gray-900">Bylakuppe Tibetan Settlement</span>, trekking the sprawling ridges of Raja's Seat, or walking through private spice and coffee plantation loops feels completely heavenly.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-emerald-50 to-amber-50 rounded-2xl border border-emerald-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-emerald-900 font-medium leading-relaxed">
+          <strong className="text-amber-950">Pro Tip:</strong> Traveling right after the monsoons in October or early November? You will catch the spectacular <strong className="text-amber-950">Abbey and Abbey-adjacent waterfalls</strong> at their absolute maximum speed and volume, right when the coffee valley smells freshest.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌲
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+              Crisp Coffee Winters (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The premium tourist window. Ideal for high-altitude trekking up Tadiandamol Peak, cozy homestay bonfires, bird watching, and plantation safari loops.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Misty Peaks
+        </span>
+      </div>
+
+      {/* Season 2: Monsoon Cascades */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-blue-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-200">
+              Heavy Monsoon Blends (June – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The region receives intense rainfall, reviving the forest canopy into an electric green setup. Outdoor trekking lines pause, but it is a dream loop for luxury resort staycations.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Lush Rains
+        </span>
+      </div>
+
+      {/* Season 3: Summer Spice */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Mild Summer Respite (April – May)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The weather gets warmer but stays significantly cooler than the scorching plains of South India, peaking around 34°C. Perfect for a quiet weekend escape and catching white coffee blossoms.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Blossom Phase
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
           {/* Tourism Link */}
           <div className="mt-8 text-center">
             <a

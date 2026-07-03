@@ -16,7 +16,7 @@ const Hampi = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full  mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Header Image */}
         <motion.img
@@ -178,98 +178,6 @@ const Hampi = () => {
 
         
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* History */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-orange-50 rounded-2xl shadow-sm border border-orange-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-orange-700 mb-3">
-                <Info /> Historical Significance
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Hampi was once the capital of the mighty Vijayanagara Empire
-                in the 14th century. It was one of the richest cities in the world
-                during its time and is now known for its grand ruins and temples.
-              </p>
-            </motion.div>
-
-            {/* Attractions */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-yellow-50 rounded-2xl shadow-sm border border-yellow-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Camera /> Must-Visit Attractions
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🏛️ <b>Virupaksha Temple:</b> Ancient functioning temple</li>
-                <li>🛕 <b>Vittala Temple:</b> Famous stone chariot</li>
-                <li>🌄 <b>Matanga Hill:</b> Best sunrise viewpoint</li>
-                <li>🏞️ <b>Hampi Bazaar:</b> Historic marketplace ruins</li>
-              </ul>
-              <a
-                href="https://karnatakatourism.org/tour-item/hampi/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-sm text-yellow-700 mt-3 underline hover:text-yellow-900"
-              >
-                Visit Karnataka Tourism <ExternalLink size={14} />
-              </a>
-            </motion.div>
-
-            {/* Architecture */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-red-50 rounded-2xl shadow-sm border border-red-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-red-700 mb-3">
-                <Landmark /> Architecture & Culture
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                The architecture of Hampi reflects intricate carvings,
-                massive pillars, and unique stone engineering.
-                The musical pillars of Vittala Temple are a masterpiece
-                of ancient Indian craftsmanship.
-              </p>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-amber-50 rounded-2xl shadow-sm border border-amber-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-amber-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🕒 <b>Best Time:</b> October – February</li>
-                <li>🎟️ <b>Ideal Duration:</b> 2–3 days</li>
-                <li>✈️ <b>Nearest Airport:</b> Hubli Airport</li>
-                <li>🚆 <b>Nearest Railway:</b> Hospet Junction</li>
-                <li>🏨 <b>Stay:</b> Heritage guest houses</li>
-              </ul>
-            </motion.div>
-          </div>
-
-          {/* Experience Section */}
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 40 }}
-            transition={{ delay: 0.2 }}
-            className="mt-10 bg-gradient-to-r from-orange-50 to-yellow-50 p-6 rounded-2xl border border-orange-300"
-          >
-            <h2 className="flex items-center gap-2 text-xl font-semibold text-orange-700 mb-3">
-              <Sun /> Magical Sunrise & Sunset Views
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              Watching the sunrise from Matanga Hill or sunset among the
-              giant boulders of Hampi is a surreal experience.
-              The golden light over ancient ruins creates a breathtaking view.
-            </p>
-          </motion.div>
-
           {/* Gallery */}
           <div className="mt-10">
             <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
@@ -294,6 +202,124 @@ const Hampi = () => {
               ))}
             </div>
           </div>
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Empire Ruins & Boulder Landscape Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-teal-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-teal-50 border border-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏺 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Time to Visit Hampi
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect historical escape aligned with crisp boulder-climbing winters, active river cross loops, and dramatic heritage festivals.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-amber-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl font-bold mb-6 border border-amber-100">
+          🏛️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Frozen Empire Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Hampi displays its most brilliant, outdoor-friendly climate loop from <span className="font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded-md">October to March</span>. Since Hampi is an open-air museum completely carved out of massive granite stone blocks, the cool winter temperatures averaging 15°C - 32°C make traversing the vast terrains incredibly comfortable.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this ideal window, tracking sunsets from <span className="font-semibold text-gray-900">Matanga Hill</span>, taking coracle boat rides across the Tungabhadra River, or exploring the architectural loops of the Stone Chariot at Vittala Temple feels effortlessly magical.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-amber-50 to-teal-50 rounded-2xl border border-amber-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-amber-900 font-medium leading-relaxed">
+          <strong className="text-amber-950">Pro Tip:</strong> Want to witness the ancient capital come to life? Align your holiday loop with November to catch the grand <strong className="text-amber-950">Hampi Utsav</strong>, when the archaeological ruins are completely illuminated with multi-colored light vectors, accompanied by traditional mega-concerts.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🧗‍♂️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
+              Crisp Golden Winters (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The grand peak tourist loop. Perfect weather for rigorous boulder trekking, bicycle trail exploration, café hopping across Sanapur, and taking endless architecture photographs.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Golden Peak
+        </span>
+      </div>
+
+      {/* Season 2: Monsoon Greenery */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-sm hover:shadow-lg hover:shadow-teal-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-teal-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-teal-700 transition-colors duration-200">
+              Monsoon Riverscapes (July – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Intermittent rainfall washes the stone architecture and turns the surrounding banana plantations into hyper-vibrant green zones. Coracle loops might pause due to rising river flows.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-teal-100/70 text-teal-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Lush Horizons
+        </span>
+      </div>
+
+      {/* Season 3: Summer Scorcher */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Dry Summer Heat (April – June)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The rocky landscape traps extreme heat, sending temperatures climbing past 40°C. Walking across non-shaded temple ruins triggers intense exhaustion; only recommended for solo budget loops.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Arid Phase
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
           {/* Tourism Link */}
           <div className="mt-8 text-center">

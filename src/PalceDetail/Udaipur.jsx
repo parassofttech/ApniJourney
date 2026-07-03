@@ -10,7 +10,7 @@ const Udaipur = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="max-w-6xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden"
+        className="w-full  mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden"
       >
         {/* Hero Image */}
         <motion.img
@@ -172,72 +172,9 @@ const Udaipur = () => {
 
 </section>
 
+
           {/* Info Sections */}
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Top Attractions */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-yellow-50 border border-yellow-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Crown /> Top Attractions
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🏰 <b>City Palace:</b> The grand symbol of Udaipur’s royal past</li>
-                <li>🌅 <b>Pichola Lake:</b> Boat rides with sunset views</li>
-                <li>🕌 <b>Jag Mandir:</b> A palace on an island in Pichola Lake</li>
-                <li>🏞️ <b>Saheliyon Ki Bari:</b> Historic garden of fountains & marble</li>
-              </ul>
-            </motion.div>
-
-            {/* Culture & Food */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-rose-50 border border-rose-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-rose-700 mb-3">
-                <MapPin /> Culture & Cuisine
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🍛 Rajasthani thali – Dal Baati Churma, Gatte ki Sabzi</li>
-                <li>💃 Mewar cultural shows at Bagore Ki Haveli</li>
-                <li>🎭 Shilpgram Festival – Folk dance, art, and handicrafts</li>
-                <li>🛍️ Handcrafted jewelry & miniature paintings</li>
-              </ul>
-            </motion.div>
-
-            {/* Adventure & Lakes */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-blue-50 border border-blue-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-blue-700 mb-3">
-                <Ship /> Adventure & Lakes
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🚤 Sunset boat ride on Fateh Sagar Lake</li>
-                <li>🧗 Trekking in the Aravalli Hills</li>
-                <li>📸 Lake view cafés and rooftop dining</li>
-                <li>🚴 Cycling tours around the countryside</li>
-              </ul>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="p-6 bg-green-50 border border-green-200 rounded-2xl shadow-sm"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Plane /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>✈️ Nearest Airport: Maharana Pratap Airport (22 km)</li>
-                <li>🚆 Udaipur Railway Station connects to Delhi, Mumbai, Jaipur</li>
-                <li>🚌 Well connected by luxury buses & taxis</li>
-                <li>🕒 Best Time: September – March</li>
-              </ul>
-            </motion.div>
-          </div>
+         
 
           {/* Gallery */}
           <div className="mt-10">
@@ -268,6 +205,124 @@ const Udaipur = () => {
               ))}
             </div>
           </div>
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Royal Lakes & White Palace Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-rose-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-rose-50 border border-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      👑 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Time to Visit Udaipur
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect romantic escape aligned with pleasant lake breezes and brilliant royal sunsets.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-amber-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl font-bold mb-6 border border-amber-100">
+          ⛵
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Lake City Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Udaipur is at its absolute majestic peak from <span className="font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded-md">October to March</span>. During these winter months, temperatures glide smoothly between 10°C - 25°C, making it highly comfortable to cruise through the waters and walk across grand courtyards.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During this premium cycle, iconic hotspots like the <span className="font-semibold text-gray-900">Lake Pichola boat circuits</span>, City Palace, and Saheliyon-ki-Bari are packed with vibrant folk dance festivals and heritage light shows.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-amber-50 to-rose-50 rounded-2xl border border-amber-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-amber-900 font-medium leading-relaxed">
+          <strong className="text-amber-950">Pro Tip:</strong> Want to enjoy crowd-free rooftop views and snag premium heritage haveli stays at unbelievable discounts? Book your travel loop during the late monsoon weeks of September when the lakes are brimming with fresh rainwater.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🏰
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
+              Winter Royalty (October – March)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The premium tourist season. Ideal for sunset boating loops, exploring Chittorgarh Fort day trips, and witnessing the grand World Music Festival strings.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Regal Peak
+        </span>
+      </div>
+
+      {/* Season 2: Summer Heat */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Summer Heatwaves (April – June)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Intense desert heat climbing up to 40°C. Recommended for late evening palace explorations, relaxing indoor spa loops, and booking top-tier luxury resorts at massive price slashes.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Budget Windows
+        </span>
+      </div>
+
+      {/* Season 3: Monsoon Romanticism */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-rose-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-rose-700 transition-colors duration-200">
+              Monsoon Romance (July – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Refreshing rains fill up Fatehsagar and Pichola lakes completely. The Aravalli hills turn highly lush green, turning the Monsoon Palace views extremely cinematic.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Lush Lakes
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
         </div>
       </motion.div>
     </div>

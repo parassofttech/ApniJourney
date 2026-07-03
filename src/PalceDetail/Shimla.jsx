@@ -13,7 +13,7 @@ const Shimla = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
+        className="w-full  mx-auto bg-white/80 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] rounded-[3rem] overflow-hidden border border-white"
       >
         {/* 🏔️ HERO SECTION - Cinematic Zoom */}
         <div className="relative h-[500px] overflow-hidden group">
@@ -186,86 +186,7 @@ const Shimla = () => {
 
     
 
-          {/* 📊 INFO GRID - Advanced Bento Style */}
-          <div className="grid md:grid-cols-2 gap-8">
-            
-            {/* Top Attractions */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-blue-50 to-sky-50 rounded-[2.5rem] border border-blue-100/50 shadow-sm relative overflow-hidden group"
-            >
-              <Landmark className="absolute -right-6 -top-6 text-blue-200/40 w-32 h-32 group-hover:rotate-12 transition-transform duration-500" />
-              <h2 className="text-2xl font-black text-sky-900 mb-8 flex items-center gap-3  italic">
-                <Compass className="text-sky-500" /> Legendary Landmarks
-              </h2>
-              <ul className="space-y-5">
-                <AttractionItem emoji="🏞️" bold="The Ridge" text="Panoramic Himalayan skyline" />
-                <AttractionItem emoji="🏛️" bold="Christ Church" text="Vintage Neo-Gothic soul" />
-                <AttractionItem emoji="🚡" bold="Jakhoo Hill" text="Guardian Hanuman statue" />
-                <AttractionItem emoji="🌸" bold="Mall Road" text="The heart of hill-culture" />
-              </ul>
-            </motion.div>
-
-            {/* Adventure Section */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-[2.5rem] border border-emerald-100/50 shadow-sm relative overflow-hidden group"
-            >
-              <Snowflake className="absolute -right-6 -top-6 text-emerald-200/40 w-32 h-32 group-hover:scale-125 transition-transform duration-500" />
-              <h2 className="text-2xl font-black text-emerald-900 mb-8 flex items-center gap-3 italic">
-                <Mountain className="text-emerald-500" /> Alpine Adventures
-              </h2>
-              <div className="space-y-4">
-                <div className="p-4 bg-white/60 rounded-2xl flex items-center justify-between group/item cursor-default hover:bg-white transition-all">
-                  <span className="font-bold text-slate-700">Skiing in Kufri</span>
-                  <ArrowUpRight size={18} className="text-emerald-400 opacity-0 group-hover/item:opacity-100 transition-all" />
-                </div>
-                <div className="p-4 bg-white/60 rounded-2xl flex items-center justify-between group/item cursor-default hover:bg-white transition-all">
-                  <span className="font-bold text-slate-700">Mountain Biking Trails</span>
-                  <ArrowUpRight size={18} className="text-emerald-400 opacity-0 group-hover/item:opacity-100 transition-all" />
-                </div>
-                <div className="p-4 bg-white/60 rounded-2xl flex items-center justify-between group/item cursor-default hover:bg-white transition-all">
-                  <span className="font-bold text-slate-700">Mashobra Forest Camping</span>
-                  <ArrowUpRight size={18} className="text-emerald-400 opacity-0 group-hover/item:opacity-100 transition-all" />
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Culture & Food */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-gradient-to-br from-orange-50 to-amber-50 rounded-[2.5rem] border border-orange-100/50 shadow-sm"
-            >
-              <h2 className="text-2xl font-black text-orange-900 mb-8 flex items-center gap-3 italic">
-                <Utensils className="text-orange-500" /> Culinary Heritage
-              </h2>
-              <p className="text-slate-600 font-medium leading-relaxed mb-6">
-                From the spicy <span className="text-orange-700 font-bold">Himachali Dham</span> to a vintage coffee at the 
-                <span className="text-orange-700 font-bold"> Indian Coffee House</span>, Shimla's food tells a story of royalty and warmth.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {["#Sidu", "#PahadiThali", "#SimlaTimes", "#Handicrafts"].map(tag => (
-                  <span key={tag} className="px-3 py-1 bg-white rounded-full text-[10px] font-black text-orange-400 border border-orange-100 uppercase tracking-widest">{tag}</span>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Travel Intel - Dark Glass Section */}
-            <motion.div 
-              whileHover={{ y: -8 }}
-              className="p-10 bg-slate-900 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden shadow-blue-900/20"
-            >
-              <h2 className="text-2xl font-black mb-8 flex items-center gap-3 italic">
-                <Plane className="text-sky-400" /> Travel Intel
-              </h2>
-              <div className="space-y-5">
-                <TravelDetail icon={<Train />} label="The Toy Train" value="UNESCO Heritage Route" />
-                <TravelDetail icon={<Plane />} label="Nearest Hub" value="Jubbarhatti Airport" />
-                <TravelDetail icon={<Calendar />} label="Best Season" value="Oct – Feb (Snowfall)" />
-                <TravelDetail icon={<MapPin />} label="From Delhi" value="~340 KM (7 hrs)" />
-              </div>
-            </motion.div>
-          </div>
+          
 
           {/* 📸 PREMIUM GALLERY */}
 <section className="mt-28">
@@ -332,6 +253,125 @@ const Shimla = () => {
 ))}
   </div>
 </section>
+{/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-indigo-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Snowy Ridge & Colonial Heritage Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-indigo-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-sky-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-50 to-sky-50 border border-indigo-100 text-indigo-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      ❄️ Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-indigo-950 to-gray-950">
+      Best Time to Visit Shimla
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect colonial hill escape aligned with fresh snowfall windows and pleasant summer loops.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-indigo-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl font-bold mb-6 border border-indigo-100">
+          🏔️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Queen of Hills Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Shimla features two premium travel windows: the pleasant summer escape from <span className="font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-md">March to June</span> with comfortable days around 15°C - 30°C, and the magical winter snow wonderland from <span className="font-bold text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded-md">December to February</span> when temperatures plummet to freezing lows.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During these peaks, the historic <span className="font-semibold text-gray-900">Mall Road</span> circuit, The Ridge, and the snow-laden slopes of Kufri come alive with ice skating loops, colonial heritage walks, and busy local bazaars.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-indigo-50 to-sky-50 rounded-2xl border border-indigo-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-indigo-900 font-medium leading-relaxed">
+          <strong className="text-indigo-950">Pro Tip:</strong> Want to capture crisp, clear views of the snow-capped Himalayas without the crazy summer or winter crowds? Book your trip during the golden autumn months of October and November.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Winter Snow Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-indigo-300 shadow-sm hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-indigo-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ⛄
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-indigo-700 transition-colors duration-200">
+              Winter (December – February)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              The high white season. Prime time for catching live snowfall, skiing loops in Kufri, exploring Christ Church under frost, and enjoying the open-air Ice Skating Rink.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-indigo-100/70 text-indigo-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Snow Magic
+        </span>
+      </div>
+
+      {/* Season 2: Summer Escape */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-sm hover:shadow-lg hover:shadow-sky-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-sky-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ☀️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-sky-700 transition-colors duration-200">
+              Summer (March – June)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Pleasant mountain climate. Ideal for riding the legendary Toy Train, trekking through pine forests, and escaping the intense heatwaves of the plains.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Peak Holiday
+        </span>
+      </div>
+
+      {/* Season 3: Monsoons */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌧️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+              Monsoon (July – September)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Heavy mountain downpours with dense rolling fog. Landslide margins close major highway loops, but it offers deep emerald greens and heavy luxury resort discounts.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Monsoon Fog
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
           {/* 🚀 CALL TO ACTION */}
           <div className="mt-20 text-center">
             <motion.a 

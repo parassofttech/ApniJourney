@@ -119,6 +119,8 @@ const PopularDestinations = () => {
               }}
               whileHover={{ y: -8 }}
               className="group relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100"
+
+              
             >
               
               {/* Image */}
@@ -129,6 +131,7 @@ const PopularDestinations = () => {
                   alt={dest.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
+
 
                 {/* Category Badge */}
                 <div className="absolute top-2 sm:top-4 left-2 sm:left-4">

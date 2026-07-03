@@ -184,6 +184,35 @@ const Jaipur = () => {
 
       </section>
 
+      {/* Gallery */}
+          <div className="mt-10">
+            <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
+              📸 Gallery – Explore Jaipur
+            </h2>
+            <div className="grid sm:grid-cols-2 
+            lg:grid-cols-3 gap-4">
+              {[
+                "https://assets.cntraveller.in/photos/60ba007145469a6a570b1dbf/16:9/w_1024%2Cc_limit/Jal-Mahal-Jaipur-123rf-2-1366x768.jpg",
+                "https://s7ap1.scene7.com/is/image/incredibleindia/amber-fort-jaipur-rajasthan-1-attr-hero?qlt=82&ts=1742157903972",
+                "https://hblimg.mmtcdn.com/content/hubble/img/jaipur/mmt/activities/t_ufs/m_activities_amber_fort_2_l_436_573.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ieTRj-SKTS3lGReyK8eF9ZQZM6Ym9Meu6g&s",
+               
+              ].map((img, i) => (
+                <motion.img
+                  key={i}
+                  src={img}
+                  alt="Jaipur"
+                  whileHover={{ scale: 1.05 }}
+                  className="rounded-2xl shadow-md h-52 w-full object-cover"
+                  onError={(e) =>
+                    (e.target.src =
+                      "https://images.unsplash.com/photo-1589133190621-ded89a1a80db?auto=format&fit=crop&w=900&q=80")
+                  }
+                />
+              ))}
+            </div>
+          </div>
+
       {/* Best Time to Visit Section */}
       <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
 
@@ -1113,34 +1142,7 @@ const Jaipur = () => {
 </section>
           
 
-          {/* Gallery */}
-          <div className="mt-10">
-            <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
-              📸 Gallery – Explore Jaipur
-            </h2>
-            <div className="grid sm:grid-cols-2 
-            lg:grid-cols-3 gap-4">
-              {[
-                "https://assets.cntraveller.in/photos/60ba007145469a6a570b1dbf/16:9/w_1024%2Cc_limit/Jal-Mahal-Jaipur-123rf-2-1366x768.jpg",
-                "https://s7ap1.scene7.com/is/image/incredibleindia/amber-fort-jaipur-rajasthan-1-attr-hero?qlt=82&ts=1742157903972",
-                "https://hblimg.mmtcdn.com/content/hubble/img/jaipur/mmt/activities/t_ufs/m_activities_amber_fort_2_l_436_573.jpg",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ieTRj-SKTS3lGReyK8eF9ZQZM6Ym9Meu6g&s",
-               
-              ].map((img, i) => (
-                <motion.img
-                  key={i}
-                  src={img}
-                  alt="Jaipur"
-                  whileHover={{ scale: 1.05 }}
-                  className="rounded-2xl shadow-md h-52 w-full object-cover"
-                  onError={(e) =>
-                    (e.target.src =
-                      "https://images.unsplash.com/photo-1589133190621-ded89a1a80db?auto=format&fit=crop&w=900&q=80")
-                  }
-                />
-              ))}
-            </div>
-          </div>
+          
 
           {/* Official Link */}
           <div className="mt-8 text-center">

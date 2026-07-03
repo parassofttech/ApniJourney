@@ -9,7 +9,7 @@ const Srinagar = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
+        className="w-full  mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"
       >
         {/* Hero Image */}
         <motion.img
@@ -171,82 +171,7 @@ const Srinagar = () => {
 
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* History */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-yellow-50 rounded-2xl shadow-sm border border-yellow-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Info /> Historical Background
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Srinagar has a rich history influenced by **Mughals, Buddhists, and Dogra rulers**. 
-                The famous **Shankaracharya Temple** and **Hazratbal Shrine** showcase the city’s spiritual diversity.
-              </p>
-            </motion.div>
-
-            {/* Dal Lake & Houseboats */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-blue-50 rounded-2xl shadow-sm border border-blue-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-blue-700 mb-3">
-                <Waves /> Dal Lake & Houseboats
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Enjoy a serene **shikara ride** on Dal Lake, stay in floating **houseboats**, 
-                and experience the mesmerizing reflections of the Himalayas in the water.
-              </p>
-            </motion.div>
-
-            {/* Gardens & Culture */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-green-50 rounded-2xl shadow-sm border border-green-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Sun /> Gardens & Culture
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🌺 Mughal Gardens: Shalimar Bagh, Nishat Bagh, Chashme Shahi</li>
-                <li>🎭 Local handicrafts: Pashmina, Papier-mâché, Kashmiri carpets</li>
-                <li>🍵 Traditional cuisine: Rogan josh, Gushtaba, Kahwa tea</li>
-              </ul>
-            </motion.div>
-
-            {/* Adventure & Activities */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-pink-50 rounded-2xl shadow-sm border border-pink-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-pink-700 mb-3">
-                <Waves /> Adventure & Activities
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🥾 Trekking in nearby hills and valleys</li>
-                <li>🛶 Boating and kayaking in Dal and Nigeen Lakes</li>
-                <li>📸 Photography of Himalayan landscapes</li>
-              </ul>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-orange-50 rounded-2xl shadow-sm border border-orange-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-orange-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>✈️ Nearest Airport: Srinagar International Airport (SXR)</li>
-                <li>🚆 Nearest Railway Station: Jammu Tawi</li>
-                <li>🚌 Local Transport: Taxis, auto-rickshaws, shared cabs</li>
-                <li>🕒 Best Time to Visit: March – October</li>
-              </ul>
-            </motion.div>
-          </div>
+         
 
           {/* Gallery */}
           <div className="mt-10">
@@ -277,6 +202,127 @@ const Srinagar = () => {
               ))}
             </div>
           </div>
+
+          {/* Best Time to Visit */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Dal Lake & Paradise Valley Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-teal-400/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-rose-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-rose-50 border border-teal-100 text-teal-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🌸 Weather & Planning
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
+      Best Time to Visit Srinagar
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Plan your perfect Kashmiri holiday aligned with blooming flower loops, pleasant summers, and fresh winter snow windows.
+    </p>
+  </div>
+
+  {/* Main Interactive Grid Layout */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    
+    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-teal-950/5 rounded-3xl p-8 flex flex-col justify-between">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl font-bold mb-6 border border-teal-100">
+          🏔️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          The Paradise Windows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+          Srinagar is exceptionally beautiful in two major cycles: the refreshing summer and spring escape from <span className="font-bold text-teal-700 bg-teal-50 px-1.5 py-0.5 rounded-md">March to October</span> when temperatures cruise around a pleasant 15°C - 30°C, and the pure snow wonderland phase from <span className="font-bold text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded-md">December to February</span>.
+        </p>
+        <p className="text-gray-600 leading-relaxed text-[15.5px]">
+          During the warm months, the iconic <span className="font-semibold text-gray-900">Dal Lake Shikara routes</span>, Nishat Bagh, and Shalimar gardens offer golden suns, while winter blankets the houseboats in pure white magic.
+        </p>
+      </div>
+
+      {/* Pro Tip Alert Section */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-teal-50 to-rose-50 rounded-2xl border border-teal-100/50 flex gap-3 items-start">
+        <span className="text-lg mt-0.5">💡</span>
+        <p className="text-xs md:text-sm text-teal-900 font-medium leading-relaxed">
+          <strong className="text-teal-950">Pro Tip:</strong> Eager to catch Asia's largest Indira Gandhi Memorial Tulip Garden in full vibrant bloom? Plan your travel loop strictly around the early April window, as these unique flowers last for just a few weeks.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Side: Seasonal Breakdown Matrix */}
+    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+      
+      {/* Season 1: Spring & Summer Peak */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-sm hover:shadow-lg hover:shadow-teal-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-teal-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🌷
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-teal-700 transition-colors duration-200">
+              Spring & Summer (March – August)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Extremely pleasant climate. Absolute prime time for blooming orchards, floating market loops, peaceful evening houseboats, and escaping mainland heat waves.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-teal-100/70 text-teal-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Valley Peak
+        </span>
+      </div>
+
+      {/* Season 2: Golden Autumn */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-rose-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            🍁
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-rose-700 transition-colors duration-200">
+              Autumn Magic (September – November)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              A treat for photographers. Chinar trees shed golden-orange leaves across valley fields, the mountain air turns highly crisp, and apple harvests are fully ripe.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Golden Chinar
+        </span>
+      </div>
+
+      {/* Season 3: White Winter */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-indigo-300 shadow-sm hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex gap-4 items-start sm:items-center">
+          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-indigo-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+            ❄️
+          </div>
+          <div>
+            <h4 className="font-bold text-gray-900 text-lg group-hover:text-indigo-700 transition-colors duration-200">
+              Winter Chill (December – February)
+            </h4>
+            <p className="text-gray-500 text-sm mt-1 max-w-md">
+              Freezing lows turning the landscape white. Ideal for day-trip skiing loops in Gulmarg, experiencing frozen edges of lakes, and enjoying hot Kahwa tea sips.
+            </p>
+          </div>
+        </div>
+        <span className="text-xs font-bold tracking-wider uppercase bg-indigo-100/70 text-indigo-800 px-3 py-1 rounded-full self-start sm:self-auto">
+          Snow Wonderland
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
         </div>
       </motion.div>
     </div>
