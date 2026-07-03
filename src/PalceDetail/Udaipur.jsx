@@ -323,6 +323,323 @@ const Udaipur = () => {
   </div>
 
 </section>
+
+{/* Best Hotels & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-blue-600 selection:text-white">
+  
+  {/* Royal-Themed Background Glows (Lakeside Dusk & Antique Gold Tints) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-500/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-amber-50 border border-blue-100 text-blue-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏰 Regal Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-blue-950 to-gray-950">
+      Best Hotels & Resorts in Udaipur
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From ultra-luxury floating white marble palaces to beautifully restored heritage havelis tucked in old alleyways.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Grand Floating Palaces & Luxury Living (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-600/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-700 group-hover:text-white transition-all duration-300 shadow-sm">
+            👑
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-900 px-3 py-1 rounded-full uppercase tracking-wider">
+            Palatial Luxury Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-800 transition-colors duration-200">
+          Taj Lake Palace & Iconic Waterfront Enclaves
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience unmatched royal hospitality at world-renowned destinations like the floating <span className="font-semibold text-gray-900">Taj Lake Palace</span> rising directly out of Lake Pichola, <span className="font-semibold text-gray-900">The Leela Palace Udaipur</span>, or <span className="font-semibold text-gray-900">The Oberoi Udaivilas</span>. These legendary properties boast intricate Mewari architecture, arrival by private wooden boats, lakeside infinity pools, and vast courtyards adorned with dancing peacocks and fountains.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-700 tracking-wider uppercase">
+        Mewari Grandeur & Private Boat Transfers
+      </div>
+    </div>
+
+    {/* Card 2: Boutique Heritage Havelis */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🕌
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Old City Heritage Havelis
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Immerse yourself in history along the steps of <span className="font-semibold text-gray-900">Ambrai Ghat</span> or <span className="font-semibold text-gray-900">Hanuman Ghat</span>. Beautifully restored ancestral havelis like <span className="font-semibold text-gray-900">Amet Haveli</span> or <span className="font-semibold text-gray-900">Jagat Niwas Palace</span> feature antique jharokhas (overhanging balconies) framing direct waterfront sunset views.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Historic Jharokhas & Waterfront Ghat Access
+      </div>
+    </div>
+
+    {/* Card 3: Scenic Hillside Fort-Resorts */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ⛰️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Sajjangarh Hillside Forts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Retreat away from the center toward the rugged Aravalli hillsides underneath the <span className="font-semibold text-gray-900">Sajjangarh Monsoon Palace</span>. Premium hillside boutique resorts offer grand panoramic vistas across the entire lake basin and clean, bird-rich valley breezes.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Aravalli Valley Vistas & Peaceful Nature Loops
+      </div>
+    </div>
+
+    {/* Card 4: Modern Luxury Oasis Stays (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏊‍♂️
+          </div>
+          <span className="text-xs font-bold bg-blue-100/60 text-blue-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Premium Modern Resorts
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-800 transition-colors duration-200">
+          Contemporary Lakeside Oasis Resorts & Wellness Retreats
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For traveler groups searching for sprawling modern layouts, spaces around <span className="font-semibold text-gray-900">Lake Fateh Sagar</span> or Badi Lake like <span className="font-semibold text-gray-900">Radisson Blu Udaipur Palace Resort</span> provide an amazing alternative. Expect massive swimming pools, luxury wellness spas, multi-cuisine open terraces, and broad lawns designed for relaxing evening walks.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Sprawling Pools & Premium Wellness Spas
+      </div>
+    </div>
+
+    {/* Card 5: Backpacker Lofts & Artsy Hostels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🎒
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Social Lakeside Hostels
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Budget-friendly, highly vibrant lake-view hostels and artistic dorms situated near <span className="font-semibold text-gray-900">Gangaur Ghat</span>. Exceptional spots for solo wanderers looking for shared rooftop workspaces, local painting workshops, and walking tour hubs.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Rooftop Co-Working & Miniature Art Circles
+      </div>
+    </div>
+
+    {/* Card 6: Secluded Countryside Heritage Outposts */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center shrink-0 border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          🐎
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+            Out-of-City Fort Hideaways & Mewar Countryside Retreats
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Escape completely to rural luxury strongholds outside the main metropolis toward <span className="font-semibold text-gray-900">Delwara</span> or <span className="font-semibold text-gray-900">RAAS Devigarh</span>. These magnificent fort-palaces trade city streets for deep stone stepped wells, Marwari horse riding tracks, organic farms, and quiet, star-filled village desert nights.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-950 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Rural Palace Fortresses
+      </span>
+    </div>
+
+  </div>
+
+  {/* City Narrow Streets Glass Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600/10 via-amber-600/5 to-transparent border border-blue-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-blue-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-blue-900 font-bold">Old City Navigation Advisory:</strong> The beautiful alleyways leading into Jagdish Temple and the ghats are incredibly narrow and completely closed off to large auto-vehicles or cabs. Ensure your old-city haveli handles porter support or arranges authorized auto-rickshaw pickup loops from the main town gates!
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
+  
+  {/* Palatial Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-blue-900/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-blue-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      ☕ Lakeside Bistro Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Restaurants & Cafes in Udaipur
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From romantic candlelit rooftop dinners overlooking illuminated palaces to cozy modern specialty roasteries.
+    </p>
+  </div>
+
+  {/* Premium Bento Grid Arrangement */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Iconic Waterfront Dining (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🕯️
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Waterfront Institutions
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Ambrai Restaurant & Romantic Rooftop Terraces
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dine right at the water's edge at legendary dining pillars like <span className="font-semibold text-gray-900">Ambrai (Amet Haveli)</span>, <span className="font-semibold text-gray-900">Upré by 1559 AD</span>, or <span className="font-semibold text-gray-900">Khamma Ghani</span>. Facing the fully illuminated facades of the City Palace and Jag Mandir, these iconic terraces are famous for fine candlelit setups, slow-cooked royal Mewari mutton curries (<span className="font-semibold text-gray-900">Laal Maas</span>), and rich artisan flatbreads.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+        Palace Views & Signature Royal Laal Maas
+      </div>
+    </div>
+
+    {/* Card 2: Authentic Rajasthani Thali Masters */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Traditional Thali Courtyards
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Savor an endless feast of genuine local heritage flavors at specialized kitchens like <span className="font-semibold text-gray-900">Natraj Dining Hall</span> or <span className="font-semibold text-gray-900">Traditional Khana</span>. Indulge in unlimited piping hot servings of authentic <span className="font-semibold text-gray-900">Dal Baati Churma</span> topped with plenty of pure desi ghee.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Unlimited Traditional Dal Baati Churma
+      </div>
+    </div>
+
+    {/* Card 3: Bohemian Ghat Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Jharokha Rooftop Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind across casual backpacker rooftop spots like <span className="font-semibold text-gray-900">Jameel's</span> or lake-view corners. Sip refreshing ice blended coffees, thin crust pizzas, and continental light bites while watching small boats glide across the lake surface below.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Bohemian Lake Views & Casual Continental Bites
+      </div>
+    </div>
+
+    {/* Card 4: Lakeside Specialty Coffee Roasteries (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ☕
+          </div>
+          <span className="text-xs font-bold bg-blue-100/60 text-blue-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Specialty Coffee
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-800 transition-colors duration-200">
+          Artisanal Hideaway Roasteries & Bakery Decks
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Discover modern, minimalist coffee sanctuaries tucked along the quieter banks of <span className="font-semibold text-gray-900">Fateh Sagar Lake</span>. These highly rated espresso bars offer custom single-origin pour-overs, delicious cold brews, freshly baked sourdough pastries, and quiet spots to read or catch a brilliant sunset.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Specialty Espresso Bars & Sunset Lake Promenade
+      </div>
+    </div>
+
+    {/* Card 5: Vintage Continental Garden Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌳
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          1559 AD & Vintage Courtyards
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dine inside classic green garden estates featuring retro gramophones and colonial-era furniture. Enjoy a great mix of Indian and European continental platters accompanied by soft, live acoustic background tracks.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Vintage Heritage Gardens & Live Music
+      </div>
+    </div>
+
+    {/* Card 6: Pure Vegetarian Heritage Viewpoints */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥬
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Clean Veg Lake Viewpoints
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For family groups looking for specialized pure vegetarian options, several beautiful rooftop spots around the old city gates offer entirely separate kitchens serving high-quality North Indian, Gujarati, and Jain-friendly culinary spreads.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Pristine Family-Friendly Vegetarian Layouts
+      </div>
+    </div>
+
+  </div>
+
+  {/* Culinary Table Booking Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-600/10 via-blue-600/5 to-transparent border border-amber-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-amber-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-amber-900 font-bold">Lakeside Dining Tip:</strong> Top-tier waterfront spots like Ambrai or Upré are incredibly popular and book out days in advance for sunset times. Always call ahead to lock in a frontline table right on the water edge by 5:30 PM to catch the gorgeous dusk lighting reflecting across the palaces!
+      </p>
+    </div>
+  </div>
+
+</section>
         </div>
       </motion.div>
     </div>

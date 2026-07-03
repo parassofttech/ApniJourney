@@ -372,6 +372,323 @@ const Shimla = () => {
 
 </section>
 
+{/* Best Hotels & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-600 selection:text-white">
+  
+  {/* Alpine-Themed Background Glows (Mountain Mist & Pine Forest Tints) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-800/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-700/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-amber-50 border border-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏔️ Alpine Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Best Hotels & Resorts in Shimla
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From grand colonial-era heritage manors to luxury glass chalets perched above rolling valley clouds.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Grand Colonial Heritage (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-600/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-700 group-hover:text-white transition-all duration-300 shadow-sm">
+            👑
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-900 px-3 py-1 rounded-full uppercase tracking-wider">
+            Colonial Luxury Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Wildflower Hall & Iconic Heritage Manors
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Step into timeless elegance at legendary properties like <span className="font-semibold text-gray-900">Wildflower Hall (An Oberoi Resort)</span> or <span className="font-semibold text-gray-900">The Oberoi Cecil</span>. Situated amidst thick cedar forests, these grand estates feature vintage fireplaces, teak wood floors, and heated indoor pools overlooking snow-capped peaks, flawlessly capturing the opulence of the British summer capital era.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-700 tracking-wider uppercase">
+        Old-World Grandeur & Heated Infinity Pools
+      </div>
+    </div>
+
+    {/* Card 2: Luxury Forest Chalets */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Mashobra Eco-Retreats
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Escape the crowded Mall Road by heading up to secluded sanctuaries in <span className="font-semibold text-gray-900">Mashobra</span> or <span className="font-semibold text-gray-900">Kufri</span>. Boutique spots offer luxury glass cabins surrounded by orchards, perfect for quiet stargazing and apple-picking trails.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Secluded Pine Valley Sanctuary
+      </div>
+    </div>
+
+    {/* Card 3: Mall Road Boutique Stays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🛍️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          The Ridge Viewpoints
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Stay right in the historic heart near the iconic <span className="font-semibold text-gray-900">Christ Church</span>. Upscale boutique hotels built along the steep hillsides provide private balconies with breathtaking sunset panoramas over the bustling promenade.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Immediate Walking Access to The Ridge
+      </div>
+    </div>
+
+    {/* Card 4: Modern Luxury Valley Resorts (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏢
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Premium Contemporary
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Contemporary Mountain Resorts & Wellness Havens
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For traveler groups seeking cutting-edge modern comfort, properties like <span className="font-semibold text-gray-900">Radisson Jass Shimla</span> or <span className="font-semibold text-gray-900">Taj The Trees (Theog)</span> provide an incredible balance. Expect floor-to-ceiling glass windows framing deep valley fogs, world-class spa facilities, multi-cuisine open decks, and fully automated room climate control systems.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Panoramic Valley Vistas & Premium Spa Circuits
+      </div>
+    </div>
+
+    {/* Card 5: Cozy Backpacker & Solo Cottages */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🎒
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Rustic Wooden Homeseekers
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Budget-friendly, artsy wooden chalets and hostels located around the quieter slopes of <span className="font-semibold text-gray-900">Sanjauli</span>. Ideal settings for solo writers or hitchhikers seeking warm community kitchens and local guiding circles.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Bohemian Lofts & Co-Working Hubs
+      </div>
+    </div>
+
+    {/* Card 6: Off-Grid Shoghi Wilderness Stays */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          🚂
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+            Shoghi & Chail Heritage Glamping & Forest Outposts
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Tucked deep within pristine pine hillsides along the historic Toy Train track routes like <span className="font-semibold text-gray-900">Shoghi</span>. These unique eco-camps and treehouses swap the urban traffic for peaceful nature walks, birdwatching trails, and crackling evening bonfires under starry skies.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-950 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Untamed Pine Wilderness
+      </span>
+    </div>
+
+  </div>
+
+  {/* Mountain Traffic Glass Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-600/10 via-amber-600/5 to-transparent border border-emerald-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-emerald-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-emerald-900 font-bold">Hill Station Transit Advisory:</strong> Main Shimla enforces a strict no-vehicle policy on the central Mall Road to preserve its walking charm. Ensure your chosen resort provides a dedicated shuttle or porter service from the authorized parking drop-off points, especially if traveling with heavy luggage!
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
+  
+  {/* Alpine Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-800/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-emerald-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      ☕ Mountain Cafe Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Restaurants & Cafes in Shimla
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From cozy vintage wooden tea rooms to spectacular sunset viewpoints serving authentic Himachali Dham.
+    </p>
+  </div>
+
+  {/* Premium Bento Grid Arrangement */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Vintage Bakery Landmarks (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🥧
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Legendary Vintage Bakeries
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Iconic Colonial Tea Rooms & Old-School Bakeries
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Step inside historical dining institutions on the Mall Road like the legendary <span className="font-semibold text-gray-900">Wake & Bake Cafe</span>, <span className="font-semibold text-gray-900">Cafe Sol</span>, or the classic <span className="font-semibold text-gray-900">Indian Coffee House</span>. Cherished for their rustic wooden benches, they dish up fresh apple crumbles, artisan wood-fired pizzas, traditional English breakfasts, and spiced hot chocolates right overlooking the busy mountain streets.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+        Fresh Apple Pies & Rich Heritage Coffee Blends
+      </div>
+    </div>
+
+    {/* Card 2: Authentic Himachali Dham Experiences */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Traditional Culinary Havens
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Savor genuine ethnic flavors at specialized spots like <span className="font-semibold text-gray-900">Himachali Rasoi</span>. Discover traditional slow-cooked delicacies like <span className="font-semibold text-gray-900">Madra</span> (chickpeas cooked in a rich yogurt gravy) and sweet, fragrant <span className="font-semibold text-gray-900">Mittha</span>.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Slow-Cooked Authentic Himachali Dham
+      </div>
+    </div>
+
+    {/* Card 3: Sky-High Sunset Lounges */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍹
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Open-Air Ridge Terraces
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind at upscale open-top bistros perched right along the ridge line. Enjoy craft beers or fine wine paired with Asian fusion snacks while the setting sun paints the valley below in gorgeous shades of crimson.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Golden Hour Dining & Crafted Mocktails
+      </div>
+    </div>
+
+    {/* Card 4: Cozy Wooden Attic Roasteries (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ☕
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Specialty Brews
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Artisanal Hideaway Roasteries & Bakery Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Escape into cozy, attic-style cafes tucked just a few steps off the main walkways. These wood-accented sanctuaries feature comfortable reading corners, board game collections, and freshly roasted single-origin Indian coffees—perfect for passing a misty, rainy mountain afternoon.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Specialty Espresso Bars & Cozy Board-Game Nooks
+      </div>
+    </div>
+
+    {/* Card 5: Comfort North Indian Dhaba Kitchens */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🫓
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Sher-e-Punjab & Local Grills
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Enjoy big, hearty meals at famous Mall Road staples. Feast on sizzling, butter-brushed tandoori rotis, creamy dal makhani, and classic spiced chicken tikkas that taste amazing in the chilly mountain air.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Hearty Mountain Tandoori Comfort
+      </div>
+    </div>
+
+    {/* Card 6: Pure Vegetarian Heritage Spots */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥬
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Clean Veg Hill Dining
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For families looking for strict vegetarian kitchens, multiple highly-rated dining spots on Mall Road offer pristine, cozy indoor layouts serving everything from piping hot South Indian idlis to multi-tier Punjabi thalis.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Pristine Family-Friendly Vegetarian Circuits
+      </div>
+    </div>
+
+  </div>
+
+  {/* Culinary Timing Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-600/10 via-emerald-600/5 to-transparent border border-amber-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-amber-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-amber-900 font-bold">Mountain Dining Tip:</strong> Most iconic restaurants and cafés on Shimla's Mall Road take their final dinner orders by 10:00 PM as the pedestrian streets wind down. Snag a window seat by 7:30 PM to catch the beautiful lights twinkling across the surrounding hillsides!
+      </p>
+    </div>
+  </div>
+
+</section>
+
           {/* 🚀 CALL TO ACTION */}
           <div className="mt-20 text-center">
             <motion.a 

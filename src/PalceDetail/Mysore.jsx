@@ -321,6 +321,309 @@ const Mysore = () => {
 
 </section>
 
+{/* Best Hotels & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
+  
+  {/* Mysore Royal Palace Background Glows (Palace Gold & Magenta Silk Tints) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-fuchsia-900/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-fuchsia-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      👑 The Cultural Capital Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Hotels & Resorts in Mysore
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From magnificent grand heritage palaces of the Wodeyar era to premium luxury business stays and wellness retreats.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Grand Royal Heritage Palaces (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-600/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏰
+          </div>
+          <span className="text-xs font-bold bg-fuchsia-100/60 text-fuchsia-900 px-3 py-1 rounded-full uppercase tracking-wider">
+            Royal Palace Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Grand Heritage Palaces & Princely Estates
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience authentic royal living at iconic landmarks like the <span className="font-semibold text-gray-900">Grand Mercure</span> or heritage properties reflecting the Wodeyar dynasty's grandeur. Featuring intricate vintage archways, magnificent crystal chandeliers, sprawling royal courtyards, and classic high ceilings, these properties let you wake up in the majestic heart of Karnataka's history.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+        Royal Courtyards & Vintage Colonial Suites
+      </div>
+    </div>
+
+    {/* Card 2: Luxury Wellness & Nature Resorts */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧘
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Sandalwood Wellness Retreats
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Escape the city center to serene eco-resorts near the Chamundi Hills perimeter. These properties specialize in traditional Ayurvedic spa packages, signature sandalwood oil therapies, and quiet yoga pavillons set against peaceful, lush green landscaping.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Ayurvedic Spa Loops & Yoga Pavilions
+      </div>
+    </div>
+
+    {/* Card 3: Premium Modern Business Hotels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-fuchsia-500/30 shadow-lg hover:shadow-xl hover:shadow-fuchsia-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-fuchsia-50 text-xl flex items-center justify-center border border-fuchsia-100/70 group-hover:bg-fuchsia-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏙️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-fuchsia-700 transition-colors duration-200">
+          Central Urban Luxury Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For professional workflows and sleek stays, high-end business hotels like <span className="font-semibold text-gray-900">Radisson Blu Plaza</span> offer premier skyline pools, contemporary designs, and direct, seamless access to the prominent Mysore zoo and business circuits.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-fuchsia-600 tracking-wider uppercase">
+        Skyline Pools & Central Transit Access
+      </div>
+    </div>
+
+    {/* Card 4: Brindavan Garden Perimeter Stays (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ⛲
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Scenic Fountains
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Brindavan Gardens Waterfront Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Stay right on the banks of the Kaveri river perimeter near the grand <span className="font-semibold text-gray-900">Brindavan Gardens</span>. Luxury heritage resorts here like the <span className="font-semibold text-gray-900">Royal Orchid Brindavan Garden</span> offer direct room views of the iconic illuminated musical fountains, stepping out straight onto manicured terraced flowerbeds.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Frontline Fountain Vistas & Terrace Walkways
+      </div>
+    </div>
+
+    {/* Card 5: Boutique Silk-Route Homestays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-fuchsia-500/30 shadow-lg hover:shadow-xl hover:shadow-fuchsia-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-fuchsia-50 text-xl flex items-center justify-center border border-fuchsia-100/70 group-hover:bg-fuchsia-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏡
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-fuchsia-700 transition-colors duration-200">
+          Charming Artistic Homestays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Ideal for independent wanderers and backpackers, Mysore's cozy residential colony guesthouses offer warm local families, organic filter coffee yards, and prompt curation for silk weaver colony tours.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-fuchsia-600 tracking-wider uppercase">
+        Local Silk Weaver Curation & Home Brews
+      </div>
+    </div>
+
+    {/* Card 6: Chamundi Foothill Outposts */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center shrink-0 border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          ⛰️
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+            Chamundi Foothill Hideaways & High-Ceiling Villas
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Retreat close to the spiritual crest of the city near the base of <span className="font-semibold text-gray-900">Chamundi Hill</span>. Standalone premium villas here feature early morning temple bell echoes, pristine clean air grids, and breathtaking night views of the fully illuminated Mysore Palace complex in the distance.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-950 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Spiritual Ridge Vistas & Temple Loops
+      </span>
+    </div>
+
+  </div>
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-fuchsia-600 selection:text-white">
+  
+  {/* Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-fuchsia-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-900/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-fuchsia-50 to-amber-50 border border-fuchsia-100 text-fuchsia-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍛 Aromatic Heritage Plates
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-fuchsia-950 to-gray-950">
+      Best Restaurants & Cafes in Mysore
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From legendary crispy Mylari Masala Dosas to royal traditional multi-course plantain leaf thalis.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Iconic Mysore Masala Dosa Hubs (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-fuchsia-500/30 shadow-lg hover:shadow-xl hover:shadow-fuchsia-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-fuchsia-50 text-xl flex items-center justify-center border border-fuchsia-100/70 group-hover:bg-fuchsia-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🥞
+          </div>
+          <span className="text-xs font-bold bg-fuchsia-100/60 text-fuchsia-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Legendary Breakfast Institutions
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-fuchsia-800 transition-colors duration-200">
+          The Original Mylari & Vintage Crispy Ghee Roast Circuits
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Taste breakfast history at legendary local institutions like <span className="font-semibold text-gray-900">Hotel Vinayaka Mylari</span>. Quite distinct from standard variations, authentic Mysore masala dosas are prized for their unique cloud-soft internal texture, a deep golden crispy blistered exterior, a generous smear of signature spicy garlic-red chili chutney, and a fresh melt-of-ghee finish.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-fuchsia-700 tracking-wider uppercase">
+        Signature Mylari Soft-Crusts & Fresh Coconut Butter
+      </div>
+    </div>
+
+    {/* Card 2: Modern Heritage Filter Coffee Yards */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Frothy Filter Coffee Roasteries
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind in beautifully restored old villa courtyard cafes. Sip on intensely aromatic brass-tumbler <span className="font-semibold text-gray-900">Filter Coffee</span> blends, snack on crunchy maddur vadas, and soak in the slow, nostalgic intellectual pace of the city.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Brass-Tumbler Chic & Maddur Vada Bops
+      </div>
+    </div>
+
+    {/* Card 3: Traditional Veg Royal Palace Thalis */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-fuchsia-500/30 shadow-lg hover:shadow-xl hover:shadow-fuchsia-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-fuchsia-50 text-xl flex items-center justify-center border border-fuchsia-100/70 group-hover:bg-fuchsia-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥬
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-fuchsia-700 transition-colors duration-200">
+          Grand Plantain Leaf Thalis
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Indulge in a wholesome regional feast. Traditional heritage diners serve spectacular multi-course meals featuring <span className="font-semibold text-gray-900">Bisi Bele Bath</span>, tangy rasam variants, sandige, and freshly made, aromatic kootu preparations.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-fuchsia-600 tracking-wider uppercase">
+        Authentic Bisi Bele Bath & Ghee-Rich Rasams
+      </div>
+    </div>
+
+    {/* Card 4: Fine Dining Courtyard Saloons (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍽️
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Palatial Banquets
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Royal Silk-Route Multi-Cuisine Halls
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For formal dinners and family celebrations, enjoy elegant courtyard restaurants. Serving a sophisticated curation of rich royal Mughlai barbecues, South Indian classical profiles, and delicate Continental selections in historic settings.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Royal Mughlai Grills & Vintage Ambiance
+      </div>
+    </div>
+
+    {/* Card 5: Sweet Artisanal Confectioners (Mysore Pak) */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-fuchsia-500/30 shadow-lg hover:shadow-xl hover:shadow-fuchsia-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-fuchsia-50 text-xl flex items-center justify-center border border-fuchsia-100/70 group-hover:bg-fuchsia-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          👑
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-fuchsia-700 transition-colors duration-200">
+          The Original Mysore Pak Sweetmakers
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Visit sweet legends like <span className="font-semibold text-gray-900">Guru Sweet Mart</span>—held by descendants of the original royal palace cooks. Treat your family to fresh, melt-in-the-mouth, ultra-rich ghee <span className="font-semibold text-gray-900">Mysore Pak</span>.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-fuchsia-600 tracking-wider uppercase">
+        Pure Royal Ghee Confections & Legacy Halwas
+      </div>
+    </div>
+
+    {/* Card 6: Pure Vegetarian Heritage Mess Circuits */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥛
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Traditional Brahmin Veg Messes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For pristine clean family food circuits, time-tested local veg dining halls serve exceptional value options, including hyper-fresh set-meals, crispy vadas, and frothy buttermilk rounds.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Pristine Family-Friendly Vegetarian Layouts
+      </div>
+    </div>
+
+  </div>
+
+  {/* Travel Guide Tip Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-fuchsia-600/10 via-amber-600/5 to-transparent border border-fuchsia-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-fuchsia-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-fuchsia-900 font-bold">Mysore Foodie Tip:</strong> When shopping for souvenirs or sweets to carry home, always buy 'Mysore Pak' on the absolute final day of your trip to preserve its rich buttery aroma! For an incredible sensory experience, pair your morning exploration walk with a quick stop to sample fresh local 'Mysuru Mallige' (jasmine) or local sandalwood incense items at the vibrant Devaraja Market.
+      </p>
+    </div>
+  </div>
+
+</section>
 
         </div>
       </motion.div>

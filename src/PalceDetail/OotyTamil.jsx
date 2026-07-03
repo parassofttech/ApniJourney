@@ -320,6 +320,310 @@ const OotyTamil = () => {
 
 </section>
 
+{/* Best Hotels & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-600 selection:text-white">
+  
+  {/* Ooty Colonial Tea Estate Background Glows (Botanical Green & Clay Tints) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-rose-900/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-rose-50 border border-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🚂 The Queen of Hill Stations Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Best Hotels & Resorts in Ooty
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From 19th-century colonial heritage bungalows to luxury resorts nestled deep within rolling tea estates.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: 19th-Century Heritage Bungalows (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-600/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-700 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏰
+          </div>
+          <span className="text-xs font-bold bg-rose-100/60 text-rose-900 px-3 py-1 rounded-full uppercase tracking-wider">
+            Colonial Luxury Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Vintage Colonial Manors & Heritage Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Step back into the British era at legendary properties like <span className="font-semibold text-gray-900">Savoy - IHCL SeleQtions</span> or <span className="font-semibold text-gray-900">Fernhills Royal Palace</span>. Featuring authentic grand fireplaces, dark teak wood paneling, expansive manicured lawns, and classic high ceilings, these majestic estates offer a timeless glimpse into old-world Nilgiri royalty.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-700 tracking-wider uppercase">
+        Fireplace Suites & High English High Tea Lawns
+      </div>
+    </div>
+
+    {/* Card 2: Luxury Tea Estate Escapes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌱
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Rolling Tea Plantation Resorts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Wake up to sweeping views of manicured tea shrubs. High-end boutique resorts hidden in the valley ridges of Lovedale or Coonoor perimeter offer misty plantation walks, private glass balconies, and interactive tea-tasting sessions directly from the estate's fresh pickings.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Valley Views & Signature Tea Tastings
+      </div>
+    </div>
+
+    {/* Card 3: Cozy Alpine Pine Cabins */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-500/30 shadow-lg hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏡
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Misty Pine Wood Cabins
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Perfect for couples and families looking to hide away in the hills. These insulated, rustically designed alpine wooden chalets are surrounded by soaring eucalyptus trees and offer crisp, breezy mountain air away from the bustling town market.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Eucalyptus Groves & Secluded Porches
+      </div>
+    </div>
+
+    {/* Card 4: Lakefront View Retreats (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🚣
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Waterfront Circuits
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Ooty Lake & Boat House Perimeter Lodging
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Stay close to the pulse of the town at premium properties overlooking the iconic <span className="font-semibold text-gray-900">Ooty Lake</span>. These highly accessible hotels and resorts provide prompt boating setup access, cycle tracks along the shoreline, and stunning, early-morning views of fog blanketing the waters.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Frontline Lake Vistas & Shoreline Walkways
+      </div>
+    </div>
+
+    {/* Card 5: High Value Market Stays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-500/30 shadow-lg hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🛍️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Central Town Value Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For business or quick weekend shopping tours, central guest houses offer stellar proximity to chocolate shops, botanical gardens, and the central railway station for the heritage Toy Train.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Toy Train Proximity & Homemade Chocolate Walks
+      </div>
+    </div>
+
+    {/* Card 6: Highest Altitude Doddabetta Peak Hideouts */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          ⛰️
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+            Doddabetta Base Outposts & High Ridge Villas
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Escape completely to the cool heights of the <span className="font-semibold text-gray-900">Doddabetta Peak perimeter</span>. Premium standalone villas here sit above the cloud layer, featuring brilliant sunrises, heavy woolen luxury linen setups, and panoramic telescope lounges.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-950 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Chilly Altitudes & Cloud Rims
+      </span>
+    </div>
+
+  </div>
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-600 selection:text-white">
+  
+  {/* Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-rose-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-900/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-emerald-50 border border-rose-100 text-rose-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🧁 Artisanal Highland Plates
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
+      Best Restaurants & Cafes in Ooty
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From classic English high teas and freshly baked pies to spicy, aromatic Nilgiri style curries.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Colonial High Tea & Bakery Masters (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-500/30 shadow-lg hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍰
+          </div>
+          <span className="text-xs font-bold bg-rose-100/60 text-rose-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Elite Baking Legacy
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
+          Legendary Colonial Bakeries & English High Teas
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Indulge in Ooty's baking legacy at iconic institutions like <span className="font-semibold text-gray-900">King Star Chocolate</span> or classic resort tearooms. Treat yourself to fresh, buttery scones, rich fruit cakes, hot shepherd's pies, and the region's famous <span className="font-semibold text-gray-900">Ooty Varkey</span> (a crispy, layered biscuit) paired flawlessly with local single-estate orange pekoe tea.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-700 tracking-wider uppercase">
+        Signature Ooty Varkey & Rich Truffle Logs
+      </div>
+    </div>
+
+    {/* Card 2: Aesthetic Botanical Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Glasshouse Greenhouse Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind in gorgeous greenhouse-inspired cafes featuring creeping ivy and stone floors. Enjoy single-origin espresso roasts, comforting artisanal pastas, and hot chocolate while looking out onto misty valley horizons.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Greenhouse Ambience & Artisanal Espresso
+      </div>
+    </div>
+
+    {/* Card 3: Authentic Nilgiri Spiced Dining */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-500/30 shadow-lg hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌶️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Spicy Nilgiri Korma Circuits
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Savor the warmth of regional South Indian hill cooking. Traditional military mess kitchens and family diners specialize in aromatic <span className="font-semibold text-gray-900">Nilgiri Korma</span>—a rich, comforting curry base packed with fresh coriander, mint, and green chilies.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Aromatic Green Mint Herbs & Pepper Fries
+      </div>
+    </div>
+
+    {/* Card 4: Heritage Fine Dining Rooms (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍽️
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Grand Banquets
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Grand Colonial Saloons & Royal Multi-Cuisine
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For special family dinners, reserve a table at the heritage dining rooms of grand old hotels. These dining spaces offer sophisticated continental roasts, classical pan-Asian selections, and legendary service alongside majestic vintage colonial fireplaces.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Continental Roast Platters & Fireplace Settings
+      </div>
+    </div>
+
+    {/* Card 5: Wood-Fired Pizzerias */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-500/30 shadow-lg hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Rustic Mountain Pizzerias
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Bite into thin, bubbly crusts pulled straight from authentic wood-burning brick ovens. Drizzled generously with local highland herb oils, these cozy pizzerias offer the ultimate evening carb comfort.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Bubbling Brick-Oven Crusts & Herb Oils
+      </div>
+    </div>
+
+    {/* Card 6: Clean Pure Veg South Indian Mess */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥬
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Pure Veg Ghee Roast Circuits
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          To satisfy family-friendly groups, prominent pure vegetarian restaurants serve up hyper-crisp ghee roast dosas, steaming button idlis, and traditional filter coffee from early morning onwards.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Steaming Hot Idlis & Frothy Filter Coffee
+      </div>
+    </div>
+
+  </div>
+
+  {/* Travel Guide Tip Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-rose-600/10 via-emerald-600/5 to-transparent border border-rose-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-rose-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-rose-900 font-bold">Ooty Foodie Tip:</strong> Do not leave the hill station without shopping for authentic Ooty homemade chocolates! Look specifically for premium, dark truffle varieties, fudges, and chocolate-coated roasted almonds available near the Botanical Garden markets—they survive transport incredibly well and make for perfect souvenirs.
+      </p>
+    </div>
+  </div>
+
+</section>
+
 
         </div>
       </motion.div>

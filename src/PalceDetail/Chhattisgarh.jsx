@@ -336,6 +336,308 @@ const Chhattisgarh = () => {
   </div>
 
 </section>
+{/* Best Hotels & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-600 selection:text-white">
+  
+  {/* Chhattisgarh Forest Background Glows (Emerald & Earthy Clay Tints) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-orange-600/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-orange-50 border border-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🌿 Forest & Tribal Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Best Hotels & Resorts in Chhattisgarh
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From luxury wildlife eco-retreats near dense sanctuaries to premium stays in the heart of Raipur.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Luxury Eco-Wildlife Retreats (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-600/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-700 group-hover:text-white transition-all duration-300 shadow-sm">
+            🐅
+          </div>
+          <span className="text-xs font-bold bg-orange-100/60 text-orange-900 px-3 py-1 rounded-full uppercase tracking-wider">
+            Wildlife Luxury Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Eco-Retreats near Achanakmar & Wildlife Sanctuaries
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Immerse yourself in nature at premium eco-resorts located near the dense <span className="font-semibold text-gray-900">Achanakmar Tiger Reserve</span>. These properties offer luxury cottages designed with sustainable materials, private porches overlooking the forest canopy, wildlife safari arrangements, and guided forest treks that capture the raw beauty of the central Indian wilderness.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-700 tracking-wider uppercase">
+        Jungle Safari Loops & Sustainable Forest Stays
+      </div>
+    </div>
+
+    {/* Card 2: Modern Premium Business Hotels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏙️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Raipur Premium Business Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For professional travelers and tourists, Raipur offers world-class luxury at hotels like <span className="font-semibold text-gray-900">Sayaji</span> or <span className="font-semibold text-gray-900">Taj</span>. These central city hubs feature premium rooftop pools, high-end fine dining, and excellent connectivity to the major state transit nodes.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Central City Access & Rooftop Pools
+      </div>
+    </div>
+
+    {/* Card 3: Bastar Heritage Culture Stays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏺
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Bastar Tribal Art Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Discover unique heritage-inspired stays near Jagdalpur. These boutique spots often showcase indigenous <span className="font-semibold text-gray-900">Dokra metal art</span> and tribal aesthetics, giving you an authentic window into the incredible cultural richness of the local indigenous communities.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Indigenous Culture & Bastar Art Vistas
+      </div>
+    </div>
+
+    {/* Card 4: Waterfall View Resort Havens (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌊
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Scenic Nature Resorts
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Chitrakoot & Waterfall Perimeter Retreats
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Stay close to the 'Niagara of India'—the <span className="font-semibold text-gray-900">Chitrakoot Falls</span>. Resorts in this perimeter provide serene, mist-filled views and peaceful nature trails, perfect for travelers wanting to disconnect and simply listen to the sound of flowing water and birdsong.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Frontline Waterfall Views & Mist-Filled Mornings
+      </div>
+    </div>
+
+    {/* Card 5: Boutique Homestays & Hostels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏡
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Artsy Boutique Homestays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Ideal for budget travelers and young professionals, Chhattisgarh's growing network of artistic homestays in Bilaspur and Raipur offers warm local hospitality, kitchen access, and curated local tour experiences.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Warm Local Hospitality & Curated Tours
+      </div>
+    </div>
+
+    {/* Card 6: Hilltop Plateau Retreats */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          ⛰️
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+            Mainpat Hill Station Outposts
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Retreat to the cooler altitudes of <span className="font-semibold text-gray-900">Mainpat</span>, known as the 'Mini Tibet of Chhattisgarh'. Secluded resorts here offer breezy plateaus, Tibetan cultural experiences, and clear blue mountain skies, far from the summer heat of the plains.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-950 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Breezy Plateau Outposts
+      </span>
+    </div>
+
+  </div>
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-orange-600 selection:text-white">
+  
+  {/* Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-orange-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-900/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-emerald-50 border border-orange-100 text-orange-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍛 Authentic Flavors Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-orange-950 to-gray-950">
+      Best Restaurants & Cafes in Chhattisgarh
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From traditional tribal delicacies like Chilla to modern dining in Raipur’s urban culinary scene.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Authentic Tribal Cuisine (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌶️
+          </div>
+          <span className="text-xs font-bold bg-orange-100/60 text-orange-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Tribal Culinary Heritage
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
+          Traditional Chhattisgarh Thali & Local Delicacies
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dive into the heart of local culture with authentic dishes like <span className="font-semibold text-gray-900">Chilla</span> (rice flour pancakes), <span className="font-semibold text-gray-900">Fara</span> (steamed rice dumplings), and <span className="font-semibold text-gray-900">Muthia</span>. Various local heritage kitchens across Raipur and Bilaspur specialize in these nutritious, fiber-rich, and comforting tribal foods that are a staple of the region's culinary identity.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-700 tracking-wider uppercase">
+        Authentic Chilla & Steamed Fara Delicacies
+      </div>
+    </div>
+
+    {/* Card 2: Modern Urban Fine Dining */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍷
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Raipur Urban Bistros
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Explore Raipur’s bustling urban food scene. Upscale restaurants offer high-quality multi-cuisine menus, craft mocktails, and polished service, providing a perfect contrast to the rustic wilderness exploring planned for the rest of your trip.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Modern Urban Fusion & Craft Beverages
+      </div>
+    </div>
+
+    {/* Card 3: Nature-View Garden Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌳
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Greenery & Viewpoint Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind in charming garden cafes located near scenic lake points or forest fringes. Enjoy fresh coffee, hot light snacks, and relaxed acoustic tunes in these quiet nature spots that perfectly capture the slower, peaceful pace of state life.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Peaceful Garden & Nature Spots
+      </div>
+    </div>
+
+    {/* Card 4: Heritage Authentic Kitchens (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🥣
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Heritage Dining
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Authentic Heritage & Family-Style Kitchens
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For families and groups searching for home-style cooking, several heritage-focused kitchen chains serve high-quality regional plates. These clean, highly-rated spots maintain a traditional touch, serving fresh, wholesome, and nutritious meals that feel exactly like home.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Wholesome Home-Style Regional Thalis
+      </div>
+    </div>
+
+    {/* Card 5: Modern Specialty Espresso Bars */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Artisanal Espresso Roasteries
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Discover minimalist, modern specialty coffee bars popping up across Raipur’s premium neighborhoods. These spots provide excellent single-origin roasts, cold brews, and fresh bakery items perfect for a casual morning work session.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Single-Origin Roasts & Modern Work Spaces
+      </div>
+    </div>
+
+    {/* Card 6: Pure Vegetarian Heritage Spots */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥬
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Clean Veg Heritage Circuits
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For family-friendly travels, specialized pure veg kitchens in Raipur and Bilaspur serve everything from piping hot regional breakfasts to comprehensive, high-quality, and clean multi-cuisine buffet spreads.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Pristine Family-Friendly Vegetarian Layouts
+      </div>
+    </div>
+
+  </div>
+
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-600/10 via-emerald-600/5 to-transparent border border-orange-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-orange-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-orange-900 font-bold">Culinary Tip:</strong> When visiting the rural Bastar or forest regions, always prioritize local heritage kitchens or resort-in-house dining! Tribal food is best enjoyed fresh, so don't hesitate to ask your hotel concierge for the day's special local 'Bastar-special' tribal meal recommendations.
+      </p>
+    </div>
+  </div>
+
+</section>
         
       </div>
     </section>

@@ -317,84 +317,324 @@ const Darjeeling = () => {
 
 </section>
 
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            {/* History */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-yellow-50 rounded-2xl shadow-sm border border-yellow-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-yellow-700 mb-3">
-                <Info /> Historical Background
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Darjeeling became prominent during the **British colonial era** for its **tea plantations** 
-                and **hill station resorts**. The famous **Darjeeling Himalayan Railway** is a UNESCO World Heritage Site.
-              </p>
-            </motion.div>
+         
+         {/* Best Hotels Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-500 selection:text-white">
+  
+  {/* Advanced Radial Background Glows (Misty Tea Estates & Alpine Horizon) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-teal-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-400/15 blur-[120px] rounded-full"></div>
+  </div>
 
-            {/* Coffee Gardens */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-green-50 rounded-2xl shadow-sm border border-green-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-green-700 mb-3">
-                <Coffee /> Coffee Gardens
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🍃 Happy Valley Coffee Estate</li>
-                <li>🍂 Glenburn Coffee Estate</li>
-                <li>🌱 Makaibari Coffee Estate</li>
-              </ul>
-            </motion.div>
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-emerald-50 border border-teal-100 text-teal-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏨 Accommodation Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
+      Best Hotels in Darjeeling
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Handpicked colonial retreats, panoramic ridge-view hotels, and cozy hill-station getaways.
+    </p>
+  </div>
 
-            {/* Adventure */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-blue-50 rounded-2xl shadow-sm border border-blue-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-blue-700 mb-3">
-                <Waves /> Adventure & Activities
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🚠 Toy Train rides on Darjeeling Himalayan Railway</li>
-                <li>🥾 Trekking in Tiger Hill & Sandakphu</li>
-                <li>🛶 River rafting & paragliding nearby</li>
-                <li>📸 Photography of sunrise at Tiger Hill</li>
-              </ul>
-            </motion.div>
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
 
-            {/* Festivals */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-pink-50 rounded-2xl shadow-sm border border-pink-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-pink-700 mb-3">
-                <Sparkles /> Festivals
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>🎉 Darjeeling Carnival</li>
-                <li>🧘 Buddha Jayanti</li>
-                <li>🌼 Losar Festival</li>
-              </ul>
-            </motion.div>
-
-            {/* Travel Info */}
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="p-6 bg-orange-50 rounded-2xl shadow-sm border border-orange-200"
-            >
-              <h2 className="flex items-center gap-2 text-xl font-semibold text-orange-700 mb-3">
-                <MapPin /> Travel Information
-              </h2>
-              <ul className="text-gray-700 space-y-2">
-                <li>✈️ Nearest Airport: Bagdogra Airport</li>
-                <li>🚆 Well-connected by train & road from Siliguri & Kolkata</li>
-                <li>🏨 Stay: Hill resorts, boutique hotels, and homestays</li>
-                <li>🕒 Best Time to Visit: March – May & September – November</li>
-              </ul>
-            </motion.div>
+    {/* Card 1: Luxury Resorts (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            👑
           </div>
+          <span className="text-xs font-bold bg-teal-100/60 text-teal-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Colonial Luxury
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
+          Vintage Colonial Heritage Properties
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Step back into British-era opulence at legendary landmarks like <span className="font-semibold text-gray-900">Windamere Hotel</span> and <span className="font-semibold text-gray-900">Mayfair Darjeeling</span>. Unmatched choices for luxury purists, boasting stone fireplaces, vintage wooden library setups, classic English high-tea courtyards, and grand heritage suites facing the misty hillside ridges.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Royal British Legacy & Luxury
+      </div>
+    </div>
+
+    {/* Card 2: Premium Tea Estate Stays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌱
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Boutique Tea Estates
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Immerse yourself directly within thousands of rolling emerald bushes at ultra-premium retreats like <span className="font-semibold text-gray-900">Glenburn Tea Estate</span>. These offer bespoke bungalow living, curated factory processing loops, and private glass balconies overlooking the deep valley slopes.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Lush Plantation Retreation
+      </div>
+    </div>
+
+    {/* Card 3: Budget Backpackers */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          💰
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Social Hostels & Homestays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Highly dynamic, pocket-friendly setups situated around the winding slopes near <span className="font-semibold text-gray-900">Jalapahar Road</span>. Excellent communities for solo travelers, remote workers, and backpackers wanting vibrant common rooms and authentic local Nepalese hospitality.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Backpacker & Community Centric
+      </div>
+    </div>
+
+    {/* Card 4: Kanchenjunga View Hotels (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-300 shadow-lg hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏔️
+          </div>
+          <span className="text-xs font-bold bg-cyan-100/60 text-cyan-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Prime Location
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-800 transition-colors duration-200">
+          Mall Road & Kanchenjunga Facing Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Wake up straight to the gold-infused snow tips of the world's third-highest peak. Premium properties like <span className="font-semibold text-gray-900">The Elgin</span> and boutique stays along <span className="font-semibold text-gray-900">The Chowrasta (Mall Road)</span> offer absolute immediate access to local walking zones, fully insulated luxury frameworks, and private viewing decks that capture the incredible early morning clouds.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+        Alpine Horizon Views
+      </div>
+    </div>
+
+    {/* Card 5: Mid-Range Valley Hotels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏢
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Mid-Range View Hotels
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Highly reliable, value-packed options like <span className="font-semibold text-gray-900">Summit Hermon</span> and properties near Gandhi Road. These deliver upscale modern heaters, large viewing windows, clean glass frameworks, and rich multi-cuisine buffet spreads perfect for family travelers.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Optimized Comfort & Value
+      </div>
+    </div>
+
+    {/* Card 6: Exclusive Private Villas */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center shrink-0 border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          🏡
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+            Independent Luxury Mountain Villas
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Tailor-made for premium group getaways and corporate retreats. Spread gracefully across the serene pine belts of Kurseong or Ghum, these include dedicated indoor electric hearths, personalized local cook modules, large private parking lawns, and absolute boundary isolation.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Complete Seclusion
+      </span>
+    </div>
+
+  </div>
+
+  {/* Smart Booking Advisory Glass Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-500/10 via-emerald-500/5 to-transparent border border-teal-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-teal-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-teal-900 font-bold">Booking Window Tip:</strong> Visiting during the high-demand autumn skies of October to November? Ensure you lock down your Kanchenjunga-facing hotel decks early to avoid heavy peak surge premiums and confirm fully functional radiator installations!
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+{/* Restaurants Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-500 selection:text-white">
+  
+  {/* Dynamic Culinary Background Tints (Vintage Bakeries & Tea Rooms) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-rose-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-amber-50 border border-rose-100 text-rose-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍽️ Culinary Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
+      Best Restaurants & Cafes in Darjeeling
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Savor everything from vintage British tea lounges to steaming authentic Himalayan kitchen plates.
+    </p>
+  </div>
+
+  {/* Premium Bento Grid Arrangement */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Vintage Bakeries & Breakfast (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ☕
+          </div>
+          <span className="text-xs font-bold bg-rose-100/60 text-rose-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Legendary Iconic Spots
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
+          Vintage Colonial Bakeries & Tea Lounges
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Savor legacy breakfast platters at world-famous icons like <span className="font-semibold text-gray-900">Glenary's Bakery & Cafe</span> and <span className="font-semibold text-gray-900">Nathmulls Tea Lounge</span>. An absolute hill station obligation; spend your misty mornings diving into fresh apple strudels, warm cinnamon buns, loaded traditional English breakfasts, and fine First Flush Darjeeling teas.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Legacy Baking & Finest Tea Brewing
+      </div>
+    </div>
+
+    {/* Card 2: Authentic Tibetan Comfort Food */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥟
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Kunga & Tibetan Comforts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Beat the mountain chill at legendary spots like <span className="font-semibold text-gray-900">Kunga Restaurant</span>. Unmatched setups for authentic hand-rolled cheese momos, steaming noodle hotpots, rich pan-fried Gyathuk, and thick comforting Tibetan soups.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Himalayan Comfort Platters
+      </div>
+    </div>
+
+    {/* Card 3: Elite Fine Dining */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍽️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Heritage Fine Dining
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Indulge in premium culinary layouts at high-end environments like <span className="font-semibold text-gray-900">The Grand Eating Room</span> inside local heritage hotels. These serve flawless multi-course continental meals alongside classic colonial-era roasts.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Aristocratic Alpine Dining
+      </div>
+    </div>
+
+    {/* Card 4: Local Gorkha & Nepalese Cuisine (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-300 shadow-lg hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍛
+          </div>
+          <span className="text-xs font-bold bg-red-100/60 text-red-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Authentic Roots
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-800 transition-colors duration-200">
+          Traditional Nepalese Thalis & Local Platters
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dive straight into local community culinary traditions at highly rated joints like <span className="font-semibold text-gray-900">Sonam's Kitchen</span> or specialty ethnic houses. Experience authentic ghee-laden Nepalese <span className="font-semibold text-gray-900">Sel Roti</span>, spicy local Gundruk configurations, rich slow-cooked Rai Saag, and fiercely aromatic traditional chicken thalis.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Gorkhaland Flavor Heritage
+      </div>
+    </div>
+
+    {/* Card 5: Modern Rooftop Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🎵
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Acoustic Slopeline Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind with sweeping valley cloud movements at modern hotspots near the Ridge area. The premier choices for freshly brewed espresso shots, artisan hot cocoas, and evening acoustic setups.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Chowrasta Ridge Vibes
+      </div>
+    </div>
+
+    {/* Card 6: Cozy Streetside Momos */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-sky-300 shadow-lg hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-sky-50 text-xl flex items-center justify-center border border-sky-100/70 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
+          Street Food Trails
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Explore the hidden back-lane stalls near the old market grids. Secure a hot plate of fire-charred momos or spicy aloo dum loops paired with piping hot broth for an exceptional local street culinary dive.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-sky-600 tracking-wider uppercase">
+        Quick Mountain Bites
+      </div>
+    </div>
+
+  </div>
+
+  {/* Foodie Glass Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-rose-500/10 via-amber-500/5 to-transparent border border-rose-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-rose-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-rose-900 font-bold">Foodie Tip:</strong> Head over to Glenary's red-brick balcony around 4:30 PM. Snagging an open-air edge seat to witness the twilight fog roll over Mall Road with a cup of authentic Muscatel Darjeeling tea is an irreplaceable mountain luxury!
+      </p>
+    </div>
+  </div>
+
+</section>
+
 
           
         </div>

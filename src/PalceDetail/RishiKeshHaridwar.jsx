@@ -321,6 +321,323 @@ const RishikeshHaridwar = () => {
   </div>
 
 </section>
+
+{/* Best Hotels Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+  
+  {/* Advanced Radial Background Glows (Sacred Ganga & Foothill Retreat Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-teal-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-100 text-emerald-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏨 Accommodation Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Best Hotels in Rishikesh
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Handpicked luxury wellness sanctuaries, panoramic river-view retreats, and vibrant backpacker hubs.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Luxury Wellness Sanctuary (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🧘‍♂️
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Ultra-Wellness Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Luxury Riverside & Wellness Retreats
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience world-class spiritual rejuvenation and holistic luxury at elite retreats like <span className="font-semibold text-gray-900">Ananda in the Himalayas</span>, <span className="font-semibold text-gray-900">Taj Rishikesh Resort & Spa</span>, and <span className="font-semibold text-gray-900">The Roseate Ganges</span>. Flawless selections for premium leisure, offering private white-sand beach accesses, glass-fronted yoga pavilions overlooking the emerald Ganga, and specialized Ayurvedic wellness pipelines.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Eco-Luxury & Ayurvedic Sanctuaries
+      </div>
+    </div>
+
+    {/* Card 2: Boutique River-View Hotels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌊
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          Boutique Riverfronts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Secure premium vantage points at upscale properties like <span className="font-semibold text-gray-900">Aloha on the Ganges</span>. Nestled along the sweeping cliffs of Tapovan, these offer stunning infinity pools, soundproofed glass layouts, and wide balconies capturing the rafts drifting down the river.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Ganga Horizon Views
+      </div>
+    </div>
+
+    {/* Card 3: Social Backpackers */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🎒
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Vibrant Backpacker Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Highly social, interactive properties and lively hostels nestled deep within the artistic alleyways of <span className="font-semibold text-gray-900">Tapovan & Laxman Jhula</span>. Fantastic setups for digital nomads featuring rooftop community spaces, open-air jam zones, and quick access to adventure tour grids.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Nomad & Community Centric
+      </div>
+    </div>
+
+    {/* Card 4: Heritage Ashram Stays (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🛕
+          </div>
+          <span className="text-xs font-bold bg-orange-100/60 text-orange-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Spiritual Living
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
+          Spiritual Ashrams & Satvik Living Centers
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Immerse yourself into authentic, minimalist ashram life at legendary institutes like <span className="font-semibold text-gray-900">Parmarth Niketan</span> or <span className="font-semibold text-gray-900">Sivananda Ashram</span> along the peaceful banks of Swargashram. These deliver meditative, quiet environments, mandatory early morning satsang modules, clean satvik dietary loops, and absolute isolation from chaotic city grids.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Timeless Spiritual Solitude
+      </div>
+    </div>
+
+    {/* Card 5: Mid-Range Family Resorts */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏢
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Mid-Range Family Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Highly optimized comfort options situated along the main Badrinath Road and near the peaceful Muni Ki Reti block. These provide modern room air-conditioners, internal glass elevators, and rich vegetarian dining halls tailored perfectly for multi-generational families.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Value-Packed Comfort Circuits
+      </div>
+    </div>
+
+    {/* Card 6: Luxury Glamping Camps */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center shrink-0 border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          ⛺
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+            Exclusive Luxury Camps & Glamping Sites
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Tailor-made for adventure groups and stargazers. Premium setups tucked away in the mountain valleys of <span className="font-semibold text-gray-900">Shivpuri & Marine Drive</span> feature heavy-canvas luxury attached tents, private bonfire platforms, outdoor swimming docks, and soundscapes of active river rapids.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Rushing Rapids & Privacy
+      </span>
+    </div>
+
+  </div>
+
+  {/* Smart Booking Advisory Glass Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500/10 via-teal-500/5 to-transparent border border-emerald-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-emerald-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-emerald-900 font-bold">Booking Window Tip:</strong> Planning an autumn/winter trip or visiting during the peak rafting windows of March? Ensure you lock down your cliffside or ashram bookings exceptionally early to beat heavily inflated seasonal prices!
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+{/* Restaurants Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-500 selection:text-white">
+  
+  {/* Dynamic Culinary Background Tints (Vegan Cafes & Satvik Lounges) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-rose-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-amber-50 border border-rose-100 text-rose-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍽️ Culinary Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
+      Best Restaurants & Cafes in Rishikesh
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Explore everything from bohemian cliffside wellness bars to iconic local legacy heritage dining.
+    </p>
+  </div>
+
+  {/* Premium Bento Grid Arrangement */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Bohemian Organic Cafes (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ☕
+          </div>
+          <span className="text-xs font-bold bg-rose-100/60 text-rose-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Global Nomad Favorites
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
+          Bohemian Wellness & Cliffside Vegan Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Savor exceptional health-focused culinary art at world-famous icons like <span className="font-semibold text-gray-900">The Little Buddha Cafe</span>, <span className="font-semibold text-gray-900">Beatles Cafe</span>, and <span className="font-semibold text-gray-900">Freedom Cafe</span>. Spend breezy afternoons overlooking the suspension bridges, diving into cold-pressed wheatgrass juices, hand-stretched thin-crust wood pizzas, rich avocado sourdough sliders, and organic vegan bakes.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Organic Baking, Kombuchas & River Views
+      </div>
+    </div>
+
+    {/* Card 2: Ayurvedic Health Bowls */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥗
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Ayurvedic & Sattvic Dining
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Balance your systems at mindful joints like <span className="font-semibold text-gray-900">Tattva Cafe</span>. Premier spots for macrobiotic nourish salads, gluten-free dessert items, ginger-turmeric immunity teas, and fiber-heavy detox bowls.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Mindful Conscious Eating
+      </div>
+    </div>
+
+    {/* Card 3: Elite High-End Dining */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍽️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Premium Riverside Lounges
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience gourmet fine dining inside top-tier hotel venues located along the pristine upscale curves of the Ganges, serving exquisite pan-Asian vegetarian spreads and multi-course Mediterranean delicacies.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Sophisticated Hillside Ambience
+      </div>
+    </div>
+
+    {/* Card 4: Authentic Local North Indian Legacy (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-300 shadow-lg hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍛
+          </div>
+          <span className="text-xs font-bold bg-red-100/60 text-red-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Legacy Landmarks
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-800 transition-colors duration-200">
+          Chotiwala & Old City Heritage Thalis
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dive straight into decades-old culinary heritage at legendary icons like <span className="font-semibold text-gray-900">Chotiwala Restaurant</span> near Swargashram. Experience massive authentic North Indian <span className="font-semibold text-gray-900">Satvik Thalis</span>, perfectly crisp ghee-toasted flatbreads, slow-simmered rich dal variants, and melting streetside Malpua desserts.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Traditional Pure Vegetarian Heritage
+      </div>
+    </div>
+
+    {/* Card 5: Riverside Israeli & Continental Hubs */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧆
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Continental & Israeli Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind across comfortable floor-cushion layouts overlooking the active river currents. Perfect settings for crispy hot falafel wraps, creamy hummus platters, shakshuka pots, and hot mint-lemon brews.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Global Fusion Streamside
+      </div>
+    </div>
+
+    {/* Card 6: Local Garhwali Delicacies */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-sky-300 shadow-lg hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-sky-50 text-xl flex items-center justify-center border border-sky-100/70 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
+          Garhwali Soul Bowls
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Explore the rich ethnic mountain grains of Uttarakhand at boutique local outlets. Try the nutritious local <span className="font-semibold text-gray-900">Mandua Roti</span>, organic local lentil chainsoo, and unique hemp-seed chutneys.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-sky-600 tracking-wider uppercase">
+        Pahadi Flavor Profiles
+      </div>
+    </div>
+
+  </div>
+
+  {/* Foodie Glass Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-rose-500/10 via-amber-500/5 to-transparent border border-rose-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-rose-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-rose-900 font-bold">Foodie Tip:</strong> Head over to the Tapovan open-air cliffside decks around 5:45 PM. Grabbing an edge table to watch the heavy sunset gold bounce off the emerald Ganga currents with a fresh cup of organic hibiscus tea or hot espresso is an essential Rishikesh ritual!
+      </p>
+    </div>
+  </div>
+
+</section>
         </div>
       </motion.div>
     </div>

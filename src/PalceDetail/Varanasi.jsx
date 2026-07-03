@@ -319,6 +319,323 @@ const Varanasi = () => {
   </div>
 
 </section>
+
+    {/* Best Hotels Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-orange-500 selection:text-white">
+  
+  {/* Advanced Radial Background Glows (Sacred Kashi Sunrises & Temple Lamps) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-orange-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-100 text-orange-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🛕 Spiritual Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-orange-950 to-gray-950">
+      Best Hotels in Varanasi
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Handpicked ultra-luxury heritage palaces on the ghats, serene boutique estates, and vibrant traveler hubs.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Luxury Heritage Ghat Palace (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            👑
+          </div>
+          <span className="text-xs font-bold bg-orange-100/60 text-orange-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            7-Star Heritage Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
+          BrijRama Palace & Ultra-Luxury Heritage Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience unrivaled royal opulence directly on the stone steps of the Ganga at landmarks like <span className="font-semibold text-gray-900">BrijRama Palace (Darbhanga Ghat)</span> or <span className="font-semibold text-gray-900">Taj Ganges Varanasi</span>. These extraordinary structures offer classic Maratha-style architecture, private boat-ponton check-in setups, majestic central atrium skylights, and early morning live classical thumri recitals right above the sweeping riverbanks.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Regal Living & Direct River View Panoramas
+      </div>
+    </div>
+
+    {/* Card 2: Boutique Properties Near the Main Artery */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏢
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Boutique Ghatfront Hotels
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Secure premium vantage points at upscale properties like <span className="font-semibold text-gray-900">Alka Hotel</span> or boutique structures near <span className="font-semibold text-gray-900">Assi Ghat</span>. These offer pristine rooftop vegetarian dining blocks, instant walking loops to the cultural events, and fully climate-controlled modern rooms.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Cultural Proximity & Panoramic Decks
+      </div>
+    </div>
+
+    {/* Card 3: Social Backpackers & Digital Nomads */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-300 shadow-lg hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🎒
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-700 transition-colors duration-200">
+          Vibrant Social Hostels
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Highly dynamic, community-centric setups tucked away inside the fascinating maze-like alleyways of <span className="font-semibold text-gray-900">Bengali Tola & Assi Road</span>. Perfect frameworks for international travelers and solo nomads wanting graffiti-laden open rooftops and group walking loops.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Alleyway Culture & Nomad Hubs
+      </div>
+    </div>
+
+    {/* Card 4: Peaceful Cantonment Estates (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌿
+          </div>
+          <span className="text-xs font-bold bg-teal-100/60 text-teal-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Serene Buffer Zone
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
+          Cantonment Luxury Resorts & Estates
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Escape the intense kinetic energy of the old temple lanes by retreating into the massive, lush green compounds of the <span className="font-semibold text-gray-900">Varanasi Cantonment area</span>. Upscale resorts here provide vast manicured lawns, pristine outdoor swimming pools, large secure parking loops, and highly sophisticated modern wellness spas perfect for family travelers.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Lush Isolation & Premium Comfort Circuits
+      </div>
+    </div>
+
+    {/* Card 5: Smart Value Business Stays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏢
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Smart Modern Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Highly efficient, modern corporate style establishments near Sigra or Godowlia blocks. These provide great high-speed Wi-Fi frameworks, soundproofed window installations, and clean multi-cuisine vegetarian restaurant setups.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Optimized Connectivity & Value
+      </div>
+    </div>
+
+    {/* Card 6: Spiritual Eco-Ashram Retreations */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          🧘‍♂️
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+            Traditional Ashram Living & Satvik Retreats
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Tailor-made for guests chasing pure spiritual immersion, meditation structures, and yoga loops. Located in the quiet peripheral stretches of Sarnath or downstream ghat areas, these provide minimalist, spotlessly clean accommodations alongside traditional Vedic diet modules.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Vedic Solitude
+      </span>
+    </div>
+
+  </div>
+
+  {/* Smart Booking Advisory Glass Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500/10 via-amber-500/5 to-transparent border border-orange-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-orange-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-orange-900 font-bold">Ghat Access Advisory:</strong> Ancient heritage properties directly on the ghats can only be reached via walking or public boat drops due to tight historic street layouts. If traveling with heavy luggage or elderly family members, ensure your hotel provides a dedicated porter module from the nearest vehicle drop point!
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+{/* Restaurants Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-red-500 selection:text-white">
+  
+  {/* Dynamic Culinary Background Tints (Street Food Gems & Artistic Rooftops) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-red-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-orange-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-50 to-orange-50 border border-red-100 text-red-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍽️ Culinary Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-red-950 to-gray-950">
+      Best Restaurants & Cafes in Varanasi
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From legendary ghee-laden street food kiosks to contemporary bohemian riverside espresso lounges.
+    </p>
+  </div>
+
+  {/* Premium Bento Grid Arrangement */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Legendary Street Food Landmarks (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-300 shadow-lg hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍯
+          </div>
+          <span className="text-xs font-bold bg-red-100/60 text-red-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Historic Street Legends
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-800 transition-colors duration-200">
+          Legendary Kachori Trails & Creamy Lassi Kiosks
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dive straight into the iconic culinary heartbeat of Kashi at generations-old milestones like <span className="font-semibold text-gray-900">Kachori Gali</span>, <span className="font-semibold text-gray-900">Ramnagar Lassi</span>, and <span className="font-semibold text-gray-900">Blue Lassi Shop</span>. Absolute mandatory culinary circuits; spend your mornings tasting crisp, wood-fired saffron <span className="font-semibold text-gray-900">Chhena Dahi Badas</span>, ghee-dipped cross-layered kachoris, and thick, clay-pot saffron lassis topped with dense hand-churned malai cream layers.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Varanasi's Authentic Century-Old Street Legacy
+      </div>
+    </div>
+
+    {/* Card 2: Bohemian Assi Ghat Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Pizzeria Vaatika & Bohemian Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Savor the famous apple pie with vanilla ice-cream and authentic clay-oven wood-fired thin pizzas right on the edge steps at <span className="font-semibold text-gray-900">Pizzeria Vaatika Cafe</span> near Assi Ghat. The perfect melting pot for global backpackers and acoustic sessions.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Riverside Baking & Traveler Vibes
+      </div>
+    </div>
+
+    {/* Card 3: Elite Fine Dining Satvik Lounges */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍽️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Gourmet Satvik Fine Dining
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience sophisticated culinary art at premium fine-dining spots located inside heritage parameters. Indulge in refined, no-onion, no-garlic Royal Banarasi Thalis curated with artisanal ghee and seasonal organic herbs.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Regal Pure Vegetarian Experiences
+      </div>
+    </div>
+
+    {/* Card 4: Multi-Cuisine Rooftop Restos (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏙️
+          </div>
+          <span className="text-xs font-bold bg-teal-100/60 text-teal-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Panoramic Dining
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
+          Ghat-Facing Rooftop Terraces
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind across top-voted multi-cuisine establishments like <span className="font-semibold text-gray-900">Dolphin Restaurant</span> or rooftop decks near Dashashwamedh Ghat. These settings deliver highly reliable menus spanning sizzling Indian starters, comforting Chinese setups, and amazing global continental choices while providing front-row bird's-eye views of the boat traffic below.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Skyline Vistas & Multi-Cuisine Spreads
+      </div>
+    </div>
+
+    {/* Card 5: Tamatar Chaat & Street Fried Snacks */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-300 shadow-lg hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-700 transition-colors duration-200">
+          Kashi Chat Bhandar
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience Varanasi's hyper-exclusive street snack innovations at legendary spots like <span className="font-semibold text-gray-900">Kashi Chat Bhandar</span>. Try their spicy, ghee-laden signature <span className="font-semibold text-gray-900">Tamatar Chaat</span> served in hot baked-earth kulhads.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Fiery Local Hotplates
+      </div>
+    </div>
+
+    {/* Card 6: The Iconic Banarasi Paan Finales */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍃
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Authentic Banarasi Paan Trails
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Conclude your historic food pilgrimage by visiting elite, certified local kiosks like <span className="font-semibold text-gray-900">Keshav Tambool</span>. Savor the hyper-fragrant, smooth, and melting texture of a classic silver-foiled Banarasi Meetha Paan.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        GI-Tagged Imperial Digestives
+      </div>
+    </div>
+
+  </div>
+
+  {/* Foodie Glass Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-red-500/10 via-orange-500/5 to-transparent border border-red-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-red-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-red-900 font-bold">Foodie Tip:</strong> Head down to the Godowlia crossing or Dashashwamedh lane by 7:30 AM. Grabbing a bowl of piping hot Chuda Matar or Malai Toast with hot cardamom tea right as the city wakes up is a sensory memory you cannot replace!
+      </p>
+    </div>
+  </div>
+
+</section>
         </div>
       </motion.div>
     </div>

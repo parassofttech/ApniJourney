@@ -319,6 +319,271 @@ const Pondicherry = () => {
   </div>
 
 </section>
+{/* Best Hotels & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+  
+  {/* Franco-Tamil Background Glows (Mustard Colonial & Azure Sea Tints) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-600/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-pink-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🇫🇷 The French Riviera Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Hotels & Resorts in Pondicherry
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From pastel-hued French colonial mansions in White Town to bohemian eco-stays near Auroville and luxury beach resorts.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: White Town French Heritage Mansions (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏛️
+          </div>
+          <span className="text-xs font-bold bg-pink-100/60 text-pink-900 px-3 py-1 rounded-full uppercase tracking-wider">
+            Colonial White Town Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Vintage French Villas & Restored Heritage Mansions
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Step back in time by staying at boutique heritage properties like <span className="font-semibold text-gray-900">Palais de Mahé</span> or ultra-charming villas inside White Town. These architecture-rich gems feature high wooden rafters, gorgeous terracotta tiled floors, classic louvers, and beautiful central courtyards covered in cascading pink bougainvillea, placing you within walking distance of Rock Beach.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+        Arched Verandas & High-Ceiling Heritage Suites
+      </div>
+    </div>
+
+    {/* Card 2: Luxury Beachfront Resorts */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏖️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+          Coastal Surf & Sand Resorts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Escape north to premium beachfront retreats like <span className="font-semibold text-gray-900">The Promenade</span> or pristine properties along ECR. These resorts offer gorgeous ocean-view infinity pools, private beach access, and breezy open-air sunset decks perfect for sea lovers.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+        Ocean-View Infinity Pools & Private Beach Access
+      </div>
+    </div>
+
+    {/* Card 3: Auroville Eco-Friendly Spiritual Retrears */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧘
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Auroville Bohemian Eco-Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Immerse yourself in tranquil harmony around the Auroville periphery. Think organic mud brick huts, sustainable forest stays, and peaceful wellness retreats that feature locally sourced thatch roofs, yoga shalas, and completely serene meditation gardens.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Sustainable Earth-Architecture & Yoga Shalas
+      </div>
+    </div>
+
+    {/* Card 4: Tamil Quarter Heritage Houses (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-pink-500/30 shadow-lg hover:shadow-xl hover:shadow-pink-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-pink-50 text-xl flex items-center justify-center border border-pink-100/70 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏡
+          </div>
+          <span className="text-xs font-bold bg-pink-100/60 text-pink-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Franco-Tamil Fusion
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-pink-800 transition-colors duration-200">
+          Traditional Tamil Quarter Heritage Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Discover beautiful cross-cultural living in the vibrant Tamil Quarter (*Vysial Street*). Painstakingly restored homes like <span className="font-semibold text-gray-900">Maison Perumal</span> show off stunning vernacular architecture, characterized by massive street-facing wooden verandas (*thinnai*), carved pillars, and central skylights.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-pink-600 tracking-wider uppercase">
+        Classic Thinnai Verandas & Sculpted Wooden Pillars
+      </div>
+    </div>
+
+    {/* Card 5: Smart Transit & Chic Backpacker Hostels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🚲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+          Chic Backpacker Pods & Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Perfect for modern remote workers and solo travelers. Vibrant boutique hostels offer air-conditioned bunk pods, cozy open-roof workspaces, high-speed mesh networks, and instant custom bicycle rentals to zip through the colonial grid.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+        Co-Working Roofs & Direct Cycle Rentals
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-pink-500 selection:text-white">
+  
+  {/* Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-pink-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-900/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-50 to-amber-50 border border-pink-100 text-pink-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      ☕ Wood-fired Crusts & Croissants
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-pink-950 to-gray-950">
+      Best Restaurants & Cafes in Pondicherry
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From slow-baked butter croissants in hidden French courtyards to rare, aromatic Creole seafood curries.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Iconic Courtyard Bakeries (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-pink-500/30 shadow-lg hover:shadow-xl hover:shadow-pink-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-pink-50 text-xl flex items-center justify-center border border-pink-100/70 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 shadow-sm">
+            🥐
+          </div>
+          <span className="text-xs font-bold bg-pink-100/60 text-pink-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Authentic Patisseries
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-pink-800 transition-colors duration-200">
+          The French Courtyard Cafes & Artisan Patisseries
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Indulge in classic Parisian baking at beloved institutions like <span className="font-semibold text-gray-900">Baker Street</span> or gorgeous garden spaces like <span className="font-semibold text-gray-900">Café Des Arts</span>. Sip on smooth iced lattes and sample exceptionally flaky, golden-brown butter croissants, pain au chocolat, fresh fruit tarts, and gourmet French baguettes baked fresh every morning.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-pink-700 tracking-wider uppercase">
+        Flaky Hand-Rolled Croissants & Gourmet Baguettes
+      </div>
+    </div>
+
+    {/* Card 2: Auroville Wood-Fired Pizza Pizzerias */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Artisanal Wood-Fired Neapolitan Pizzerias
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For pizza aficionados, legendary spots like <span className="font-semibold text-gray-900">Tanto Pizzeria</span> near Auroville churn out stunning rustic crusts. Baked directly inside glowing brick ovens using wood fires, they feature home-grown herbs, rich buffalo mozzarella, and premium olive oils.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Rustic Brick-Oven Cranks & Fresh Garden Basils
+      </div>
+    </div>
+
+    {/* Card 3: Rare Pondicherry Creole Kitchens */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-pink-500/30 shadow-lg hover:shadow-xl hover:shadow-pink-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-pink-50 text-xl flex items-center justify-center border border-pink-100/70 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-pink-700 transition-colors duration-200">
+          Traditional Franco-Tamil Creole Dining
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Taste the highly unique, fading culinary art of Creole cooking. Select fine-dining heritage hotels serve signature local dishes like *Prawn Court-Bouillon*, aromatic coconut-milk fish curries blended with subtle French wine reductions and local South Indian spices.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-pink-600 tracking-wider uppercase">
+        Signature Prawn Court-Bouillons & Mild Coconut Curries
+      </div>
+    </div>
+
+    {/* Card 4: Rooftop Ocean-View Bistros (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🥂
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Promenade Frontlines
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Rooftop Sea-Breeze Resto-Bars & Grills
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind in style at elegant rooftop bistros directly overlooking the crashing waves of Rock Beach. Perfect for dynamic evening groups wanting premium cocktails, grilled seafood samplers, and a beautiful panoramic view of the dark blue Bay of Bengal skyline.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Panoramas of the Old Pier & Craft Mixology
+      </div>
+    </div>
+
+    {/* Card 5: Wholesome Organic Vegan Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-pink-500/30 shadow-lg hover:shadow-xl hover:shadow-pink-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-pink-50 text-xl flex items-center justify-center border border-pink-100/70 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥗
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-pink-700 transition-colors duration-200">
+          Auroville Inspired Whole-Food Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Soak in the slow-paced bohemian lifestyle at healthy, eco-friendly cafes. They specialize in fresh cold-pressed green smoothies, loaded avocado sourdough breaks, raw organic dessert bars, and beautifully vibrant vegan salads.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-pink-600 tracking-wider uppercase">
+        Cold-Pressed Elixirs & Organic Avocado Sourdough
+      </div>
+    </div>
+
+  </div>
+
+  {/* Travel Guide Tip Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-600/10 via-amber-600/5 to-transparent border border-pink-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-pink-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-pink-900 font-bold">Pondicherry Explorer Tip:</strong> Inside White Town (French Quarter), vehicular traffic is fully barred every single evening on the main Promenade beach road. Rent an elegant vintage pastel bicycle for your stay—it's the most immersive, eco-friendly, and highly photographable way to explore the grid!
+      </p>
+    </div>
+  </div>
+
+</section>
 
         </div>
       </motion.div>

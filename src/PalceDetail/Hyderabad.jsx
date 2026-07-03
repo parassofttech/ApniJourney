@@ -321,6 +321,272 @@ const Hyderabad = () => {
 
 </section>
 
+{/* Best Hotels & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
+  
+  {/* Nizami Heritage Background Glows (Imperial Amber & Deccani Teal) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-teal-900/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-teal-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🕌 The Imperial Pearl Capital Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Hotels & Palatial Resorts in Hyderabad
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From breathtaking, actual palace structures belonging to the Nizams to state-of-the-art corporate luxury high-rises in the tech city hubs.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Ultimate Royal Living (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            👑
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Nizami Palatial Living
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Taj Falaknuma Palace & Heritage Grand Residences
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Step back into the golden era of the Asaf Jahi dynasty. Perched 2,000 feet above the historic city lines, architectural landmarks like <span className="font-semibold text-gray-900">Taj Falaknuma Palace</span> offer a majestic horse-drawn carriage arrival, massive Venetian chandeliers, marble-laden grand staircases, and immaculate palace gardens overlooking the old city lights.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+        Royal Horse Carriage Arrivals & Historic Grand Dining Halls
+      </div>
+    </div>
+
+    {/* Card 2: Cyberabad Modern Tech Towers */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-700 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏢
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          HITEC City Tech-District Hotels
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Position your itinerary in the thriving technical heartland of Gachibowli and HITEC City. Ultra-modern properties like <span className="font-semibold text-gray-900">The Westin Mindspace</span> or ITC Kohenur deliver stunning viewports of the tech skyline, smart-automated workspace desks, and top-tier fine dining lounges.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Skyline View Infinity Pools & Automated Tech-Suite Controls
+      </div>
+    </div>
+
+    {/* Card 3: Hussain Sagar Lakefront Hotels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌊
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Hussain Sagar Lakefront Luxury
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Enjoy peaceful panoramic waterscapes right in the center of the town. Grand premium hotels lining the Hussain Sagar perimeter provide uninterrupted sights of the massive stone Buddha statue, glowing evening embankments, and easy access to Somajiguda corridors.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Panoramas of the Buddha Monolith & Deck Restaurants
+      </div>
+    </div>
+
+    {/* Card 4: Banjara Hills Premium Boutiques (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌳
+          </div>
+          <span className="text-xs font-bold bg-teal-100/60 text-teal-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Elite Urban District
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Banjara Hills & Jubilee Hills Luxury Enclaves
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Anchor your stays in the most upscale, leafy residential zones of Hyderabad. High-end lifestyle spaces and luxury outposts like <span className="font-semibold text-gray-900">Park Hyatt</span> present serene architectural water features, incredible contemporary art galleries, signature spas, and absolute proximity to elite boutiques and high-profile cafes.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Boutique Spa Arcades & Fine-Art Gallery Walkways
+      </div>
+    </div>
+
+    {/* Card 5: Smart Transit Airport Stays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-700 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ✈️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          Shamshabad RGIA Airport Retreats
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Designed elegantly for international flight transits. Premium spaces located right within the Rajiv Gandhi International Airport perimeter feature extensive manicured greens, rapid check-ins, sound-insulated glass setups, and direct shuttle routes.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Rapid Airport Shuttles & Sound-Insulated Relax Chambers
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+  
+  {/* Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-teal-950/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-teal-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍲 Authentic Dum Biryanis & Osmania Biscuits
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Restaurants & Food Havens in Hyderabad
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From legendary slow-cooked aromatic Dum Biryanis infused with royal saffron to vintage cafés serving hot, buttery Irani chai.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Iconic Hyderabadi Biryani Vaults (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍲
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            The Biryani Kings
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Legendary Hyderabadi Dum Biryani Institutions
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Tuck into the definitive epicenter of aromatic rice craftsmanship. Heritage bastions like <span className="font-semibold text-gray-900">Bawarchi (RTC X Roads)</span>, <span className="font-semibold text-gray-900">Cafe Bahar</span>, or <span className="font-semibold text-gray-900">Shadab</span> in the Old City serve iconic hand-sealed copper handis. These are packed with perfectly long-grain basmati rice, tender spiced meat slow-marinated over charcoal, rich pure ghee swirls, and served with tangy Mirchi ka Salan.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+        Copper-Handi Sealed Dum Methods & Rich Saffron Strands
+      </div>
+    </div>
+
+    {/* Card 2: Vintage Irani Tea Hubs */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-700 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          Historic Irani Cafés & Bakery Spots
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience the daily rhythm of the city at landmarks like <span className="font-semibold text-gray-900">Nimrah Cafe</span> right next to Charminar. Sit back with a cup of rich, creamy, slow-boiled <span className="font-semibold text-gray-900">Irani Chai</span> paired beautifully with crisp, salty Osmania biscuits or buttery tie-biscuits.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Creamy Slow-Boiled Irani Chai & Salty Osmania Bites
+      </div>
+    </div>
+
+    {/* Card 3: Royal Nizami Fine Dining */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍖
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Traditional Deccani Imperial Kitchens
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dine like royal courtiers at specialized Deccani fine-dining houses. Savour classic dishes like creamy <span className="font-semibold text-gray-900">Haleem</span> (during the festive season), ultra-tender *Pathar ka Gosht* (meat slow-cooked on slabs of granite stone), and rich apricot-based desserts like *Khubani ka Meetha*.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Granite-Stone Charcoal Grills & Golden Apricot Compotes
+      </div>
+    </div>
+
+    {/* Card 4: Spicy Telugu Food Houses (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-700 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌶️
+          </div>
+          <span className="text-xs font-bold bg-teal-100/60 text-teal-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Andhra & Telangana Spice
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
+          Fiery Andhra & Local Telangana Mess Networks
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Explore the intense, tongue-tingling culinary spice paths of the regions at spaces like <span className="font-semibold text-gray-900">Kakatiya Mess</span> or Subbaiah Gari Hotel. Feast on unlimited banana-leaf meals topped with highly fiery Gongura chutneys, pure ghee infusions, crunchy Avakaya mango pickles, and spicy country chicken gravies.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Unlimited Banana-Leaf Meals & Tangy Pungent Gongura Paste
+      </div>
+    </div>
+
+    {/* Card 5: Modern Jubilee Hills Global Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍻
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Jubilee Hills Upmarket Microbreweries
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind in the country's most expansive, architecturally striking microbreweries and open-air multi-cuisine cafes dotted along Jubilee Hills. These stunning architectural spaces dish out global artisan cocktails alongside fusion appetizers.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Handcrafted Wheat Brews & Global Wood-Fired Sourdoughs
+      </div>
+    </div>
+
+  </div>
+
+  {/* Travel Guide Tip Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-600/10 via-teal-600/5 to-transparent border border-amber-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-amber-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-amber-900 font-bold">Hyderabad City Travel Tip:</strong> When exploring the dense historical streets surrounding Charminar, Laad Bazaar, and Chowmahalla Palace, avoid booking cabs due to tight bottleneck lanes. Prefer hopping onto the hyper-efficient **Hyderabad Metro Rail (Green/Red Lines)** to commute comfortably from modern hubs directly to the core heritage enclaves!
+      </p>
+    </div>
+  </div>
+
+</section>
+
         </div>
       </motion.div>
     </div>

@@ -322,6 +322,322 @@ const Srinagar = () => {
 
 </section>
 
+{/* Best Hotels & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-600 selection:text-white">
+  
+  {/* Kashmir Valley Background Glows (Chinar Leaf Crimson & Glacial Mist Tints) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-rose-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-600/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-amber-50 border border-rose-100 text-rose-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍁 Paradise Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
+      Best Hotels & Resorts in Srinagar
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From legendary carved cedar-wood houseboats floating on quiet waters to elite luxury mountain resorts.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Iconic Luxury Houseboats (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-600/30 shadow-lg hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-700 group-hover:text-white transition-all duration-300 shadow-sm">
+            ⛵
+          </div>
+          <span className="text-xs font-bold bg-rose-100/60 text-rose-900 px-3 py-1 rounded-full uppercase tracking-wider">
+            Heritage Water Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
+          Luxury Heritage Houseboats on Dal & Nigeen Lake
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience the absolute romance of Kashmir aboard ultra-premium houseboats like <span className="font-semibold text-gray-900">Sukoon Houseboat</span> or the royal groups of <span className="font-semibold text-gray-900">WelcomHeritage Gurkha Houseboats</span>. Handcrafted from native cedar wood (Deodar) and decorated with intricate Kashmiri Khatamband ceilings and handmade silk carpets, these floating palaces feature private sun decks and attached baths, offering a peaceful escape from the main city buzz.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-700 tracking-wider uppercase">
+        Cedar Carvings & Dedicated 24/7 Shikara Porters
+      </div>
+    </div>
+
+    {/* Card 2: 5-Star Elite Lake Resorts */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏰
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+          The Khyber & Palace Enclaves
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For global travelers looking for standard luxury, properties like <span className="font-semibold text-gray-900">Taj Palace Srinagar (The Lalit Grand Palace)</span> or <span className="font-semibold text-gray-900">Vivanta Dal View</span> are exceptional choices. Nestled on the high Zabarwan mountain slopes, they offer jaw-dropping views of the lake basin along with vast manicured lawns.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+        Zabarwan Mountain Ridges & Infinity Decks
+      </div>
+    </div>
+
+    {/* Card 3: Boulevard Road Boutique Stays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌸
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          The Boulevard Promenades
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Stay right where the local culture lives along the vibrant Boulevard Road. Upscale boutique properties like <span className="font-semibold text-gray-900">Fortune Resort Heevan</span> offer quick walking access to the main Shikara ghats, local Kashmiri art emporiums, and iconic Mughal gardens.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Immediate Access to Ghat No. 1-15 & Lake Walks
+      </div>
+    </div>
+
+    {/* Card 4: Modern Orchard Wellness Retreats (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-500/30 shadow-lg hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏊‍♂️
+          </div>
+          <span className="text-xs font-bold bg-rose-100/60 text-rose-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Premium Contemporary Wellness
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
+          Contemporary Mountain Resorts & Walnut Orchard Villas
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For family groups looking for spacious and secluded layouts, resorts around <span className="font-semibold text-gray-900">Harwan</span> or the outer valleys provide an incredible alternative. These modern properties feature floor-to-ceiling glass panel walls framing apple and walnut orchards, world-class steam spas, multi-cuisine open decks, and central temperature heating for chilly mountain nights.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Orchard Green Panoramas & Central Climate Heating
+      </div>
+    </div>
+
+    {/* Card 5: Backpacker & Solo Hostel Havens */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🎒
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Social Backpacker Lofts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Budget-friendly, highly social hostels and cozy wooden homestays located around the peaceful corners of <span className="font-semibold text-gray-900">Rajbagh</span> or Nigeen slopes. They are perfect options for solo travelers seeking community kitchen hubs, shared cycling tracks, and local trek guides.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Co-Working Coffee Spaces & Trekking Circles
+      </div>
+    </div>
+
+    {/* Card 6: Off-Grid Out-of-City Wilderness Stays */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-500/30 shadow-lg hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center shrink-0 border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          🏔️
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+            Dachigam Forest Outposts & Luxury Eco-Glamping
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Escape completely toward the pristine buffers of <span className="font-semibold text-gray-900">Dachigam National Park</span>. These unique eco-resorts and luxury glass glamping pods swap city crowds for bubbling mountain freshwater streams, quiet trout-fishing trails, and deep nature walks under dense pine canopies.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-950 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Untamed Valley Wilderness
+      </span>
+    </div>
+
+  </div>
+
+  {/* Houseboat Water Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-rose-600/10 via-amber-600/5 to-transparent border border-rose-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-rose-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-rose-900 font-bold">Houseboat Transit Note:</strong> Luxury houseboats are fixed structures floating on the water and accessed exclusively via small Shikaras. Always double-check if your booking includes complimentary unlimited Shikara pick-and-drop links to the main Boulevard road ghats!
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
+  
+  {/* Kashmiri Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-rose-900/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-rose-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      ☕ Wazwan & Cafe Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Restaurants & Cafes in Srinagar
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From majestic traditional multi-course Wazwan halls to cozy lake-facing specialty artisan coffee cafes.
+    </p>
+  </div>
+
+  {/* Premium Bento Grid Arrangement */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Authentic Wazwan Institutions (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍖
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Legendary Wazwan Centers
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Ahdoos Restaurant & Traditional Culinary Pillars
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Step into a century of culinary heritage at the world-famous <span className="font-semibold text-gray-900">Ahdoos Restaurant</span> or the iconic <span className="font-semibold text-gray-900">Mughal Darbar</span> on Residency Road. Universally loved for their authentic, multi-course feast, they serve legendary hand-pounded delicacies like <span className="font-semibold text-gray-900">Rista</span> (meatballs in saffron gravy), <span className="font-semibold text-gray-900">Gustaba</span>, and rich velvet <span className="font-semibold text-gray-900">Rogan Josh</span> that highlight genuine Kashmiri culinary craft.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+        Authentic Wazwan Courses & Traditional Copper Tramis
+      </div>
+    </div>
+
+    {/* Card 2: Aesthetic Floating Lake Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-500/30 shadow-lg hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Chai Jaai Tea Rooms
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Sip beautiful, fragrant local brews inside artsy, highly aesthetic spaces like <span className="font-semibold text-gray-900">Chai Jaai</span>. Adorned with Cotswold-inspired pink walls and classic copper samovars, it's the perfect spot to try traditional pink salt <span className="font-semibold text-gray-900">Noon Chai</span> and fresh baker-flatbreads (<span className="font-semibold text-gray-900">Girda</span>).
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Aromatic Pink Noon Chai & Fresh Girda Bakeries
+      </div>
+    </div>
+
+    {/* Card 3: Modern Boulevard Lake-View Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Boulevard Lake Decks
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind along contemporary open decks like <span className="font-semibold text-gray-900">Cafe Liberty</span> or lake-front spots. Enjoy single-origin espresso shots, artisan thin-crust wood pizzas, and fresh walnut pastries while watching Shikaras pass under golden-hour rays.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Lake Front Panoramas & Modern Fusion Snacks
+      </div>
+    </div>
+
+    {/* Card 4: Traditional Bakeries & Bakery Hubs (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-500/30 shadow-lg hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🥖
+          </div>
+          <span className="text-xs font-bold bg-rose-100/60 text-rose-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Kandur Heritage
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
+          Local Kandur Bakeries & Golden Crust Teatime Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Discover the authentic morning life of Srinagar by visiting traditional mud-oven bakeries, known as <span className="font-semibold text-gray-900">Kandurs</span>, in downtown or Rajbagh corridors. Sample fresh-out-of-the-coals <span className="font-semibold text-gray-900">Tsot</span>, crispy sesame <span className="font-semibold text-gray-900">Telvor</span>, or sweet butter biscuits (<span className="font-semibold text-gray-900">Bakarkhani</span>) paired with fresh saffron Kahwa.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Hot Clay-Oven Tsot & Saffron Kahwa Blends
+      </div>
+    </div>
+
+    {/* Card 5: Vintage Continental Dining Halls */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          The Grand Chinar Gardens
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dine underneath ancient, massive chinar trees at high-end hotel heritage gardens. Feast on premium North Indian curries and fine European continental sizzlers accompanied by cold mountain breezes.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Heritage Garden Seating & Elite Continental Platters
+      </div>
+    </div>
+
+    {/* Card 6: Pure Vegetarian Heritage Kitchens */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-500/30 shadow-lg hover:shadow-xl hover:shadow-rose-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥬
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Clean Veg Punjabi Dhabas
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For family groups searching for strict pure vegetarian options, multiple top-rated spots like <span className="font-semibold text-gray-900">Krishna Vaishno Dhaba</span> near Sonwar offer highly authentic, comforting, and piping hot North Indian dishes.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Pristine Family-Friendly Vegetarian Layouts
+      </div>
+    </div>
+
+  </div>
+
+  {/* Culinary Wazwan Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-600/10 via-rose-600/5 to-transparent border border-amber-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-amber-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-amber-900 font-bold">Wazwan Dining Advisory:</strong> Authentic Wazwan dishes are traditionally prepared by expert chefs (Vastas) using fresh minced meat processed early in the morning. For the absolute finest experience, try planning your heavy Wazwan dinners by 8:00 PM before top heritage outlets start running out of signature cuts like Rista!
+      </p>
+    </div>
+  </div>
+
+</section>
 
         </div>
       </motion.div>

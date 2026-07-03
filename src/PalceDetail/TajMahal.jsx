@@ -273,6 +273,323 @@ const TajMahal = () => {
 
 </section>
 
+       {/* Best Hotels Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+  
+  {/* Advanced Radial Background Glows (Imperial Mughal Court & Marble Reflection Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-orange-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-100 text-amber-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      👑 Royal Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Hotels Near Taj Mahal
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Handpicked ultra-luxury Mughal palaces, panoramic monument-view decks, and comfortable modern stays.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Ultra-Luxury Palace (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm">
+            🕌
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            7-Star Elite Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          The Oberoi Amarvilas & Ultra-Luxury Palaces
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience unrivaled regal opulence at world-renowned destinations like <span className="font-semibold text-gray-900">The Oberoi Amarvilas</span>. Located just 600 meters from the monument, every single room offers uninterrupted, breathtaking views of the Taj Mahal. Indulge in royal Mughal arches, sprawling reflection pools, private terraced lawns, and dedicated golf-buggy transfers directly to the heritage gates.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Imperial Living & Absolute Taj Proximity
+      </div>
+    </div>
+
+    {/* Card 2: Premium Monument View Hotels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏢
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Premium Rooftop Views
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Secure incredible viewing decks at premium properties like <span className="font-semibold text-gray-900">Taj Hotel & Convention Centre</span> or <span className="font-semibold text-gray-900">Radisson Hotel Agra</span>. These offer stunning rooftop infinity pools looking over the white dome horizon, modern wellness layouts, and massive banquet grids.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Modern Rooftops & Skyline Vistas
+      </div>
+    </div>
+
+    {/* Card 3: Boutique Heritage Properties */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏺
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Boutique Heritage Havelis
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Immerse yourself into authentic vintage charm at properties reflecting classic red-sandstone aesthetics. These feature lush inner courtyards, traditional Jharokha window frameworks, and localized folk dance showcases perfect for cultural travelers.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Classic Courtyards & Local Culture
+      </div>
+    </div>
+
+    {/* Card 4: Executive Business & Leisure Blocks (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🛡️
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Premium Reliability
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Fatehabad Road Luxury Business Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Explore sprawling luxury parameters along the main Fatehabad Road circuit, featuring grand setups like <span className="font-semibold text-gray-900">ITC Mughal</span> and <span className="font-semibold text-gray-900">Courtyard by Marriott</span>. These massive estates host premium Mughal-inspired landscape gardens, expansive multi-cuisine buffets, signature luxury spas, and comprehensive family play zones.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Sprawling Estate Luxury & Hospitality
+      </div>
+    </div>
+
+    {/* Card 5: Smart Budget & Traveler Hubs */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🎒
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          Smart Backpacker Spaces
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Highly secure, vibrant budget hostels and homestays located within the pedestrian-only Taj East Gate area. Excellent common room environments for backpackers, complete with quick bicycle rentals and walking tour groups.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Pocket-Friendly Walkway Stays
+      </div>
+    </div>
+
+    {/* Card 6: Ultra-Premium Private Luxury Residences */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-300 shadow-lg hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center shrink-0 border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          💎
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-700 transition-colors duration-200">
+            Exclusive Luxury Villas & Premium Suites
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Tailor-made for VIP groups and family gatherings requiring total privacy. These high-end properties offer private temperature-controlled dip pools, butler service pipelines, and bespoke open-air terrace dinners looking out toward the distant Yamuna banks.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-red-100/70 text-red-800 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Complete Elite Seclusion
+      </span>
+    </div>
+
+  </div>
+
+  {/* Smart Booking Advisory Glass Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-500/10 via-orange-500/5 to-transparent border border-amber-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-amber-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-amber-900 font-bold">Booking Window Tip:</strong> Visiting for the legendary Full Moon night viewings or during the pleasant winter peak of December to February? Book your monument-facing terrace views months in advance to outrun heavy premium surge windows!
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+{/* Restaurants Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-500 selection:text-white">
+  
+  {/* Dynamic Culinary Background Tints (Mughlai Fine Dine & Rooftop Lounges) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-rose-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-amber-50 border border-rose-100 text-rose-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍽️ Culinary Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
+      Best Restaurants & Cafes Near Taj Mahal
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Savor everything from aromatic clay-oven imperial Mughlai feasts to modern, artistic rooftop espresso spaces.
+    </p>
+  </div>
+
+  {/* Premium Bento Grid Arrangement */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Authentic Imperial Mughlai (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍖
+          </div>
+          <span className="text-xs font-bold bg-rose-100/60 text-rose-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Legendary Fine Dining
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
+          Imperial Mughlai Fine Dining & Clay-Oven Grills
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Indulge in legendary, slow-cooked royal culinary arts at elite icons like <span className="font-semibold text-gray-900">Peshawri (ITC Mughal)</span> and <span className="font-semibold text-gray-900">Pinch of Spice</span>. These are absolute milestones for gastronomic purists, offering world-famous slow-simmered rich black dals, clay-oven tandoori kebabs, saffron-infused mutton biryanis, and rich Mughlai gravy configurations.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Timeless Slow-Cooked Royal Mughlai Heritage
+      </div>
+    </div>
+
+    {/* Card 2: Iconic Local Breakfast & Sweets */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥞
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Bedai Breakfast Loops
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dive into local breakfast traditions at generational institutions like <span className="font-semibold text-gray-900">Deviram Sweets</span>. Try the crispy, lentil-stuffed <span className="font-semibold text-gray-900">Bedai Puri</span> paired with fiery potato gravies, fresh curd, and piping hot, syrupy jalebis.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Agra's Signature Local Morning Trails
+      </div>
+    </div>
+
+    {/* Card 3: Modern Skyline Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Taj-Facing Panoramic Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Savor artisanal espresso shots and continental bakes at modern setup spaces near Taj Ganj. These deliver sweeping sunset views over the marble domes, making them prime blocks for evening relaxation.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Aesthetic Rooftop Monument Layouts
+      </div>
+    </div>
+
+    {/* Card 4: Authentic Multi-Cuisine Hubs (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-300 shadow-lg hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍲
+          </div>
+          <span className="text-xs font-bold bg-red-100/60 text-red-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Traveler Hotspots
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-800 transition-colors duration-200">
+          Taj East Gate Multi-Cuisine Diners
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind at top-voted global traveler spots like <span className="font-semibold text-gray-900">Sanskriti Restaurant</span> or hubs along the premium walkways. These offer exceptionally reliable multi-cuisine menus spanning traditional North Indian spreads, fresh tandoori appetizers, and comforting global continental options.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Optimized Family Comfort Dining
+      </div>
+    </div>
+
+    {/* Card 5: Social & Impact Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌱
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Sheroes Hangout
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Visit the inspirational <span className="font-semibold text-gray-900">Sheroes Hangout</span>, a deeply impactful social cafe run completely by brave acid attack survivors. Stop by for heartfelt conversations, great library setups, and delicious home-style vegetarian snacks.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Conscious Social Dining
+      </div>
+    </div>
+
+    {/* Card 6: Traditional Petha Trail */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-sky-300 shadow-lg hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-sky-50 text-xl flex items-center justify-center border border-sky-100/70 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍬
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
+          Authentic Petha Lounges
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          No Agra excursion is complete without visiting authentic hubs like <span className="font-semibold text-gray-900">Panchi Petha</span>. Secure premium boxes of classic translucent white pethas, saffron Angoori variations, and rich roasted dry-fruit configurations.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-sky-600 tracking-wider uppercase">
+        Agra's Signature Confectionery
+      </div>
+    </div>
+
+  </div>
+
+  {/* Foodie Glass Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-rose-500/10 via-amber-500/5 to-transparent border border-rose-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-rose-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-rose-900 font-bold">Foodie Tip:</strong> Plan your high-end Mughlai dinner at Peshawri around 8:00 PM. Watching their expert chefs handle massive iron skewers over roaring open coals while you enjoy tender Sikandari Raan with massive artisan tandoori naans is an incredible culinary experience!
+      </p>
+    </div>
+  </div>
+
+</section>
+
       {/* Key facts grid */}
       <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
         <div className="bg-white rounded-lg p-3 shadow-sm">

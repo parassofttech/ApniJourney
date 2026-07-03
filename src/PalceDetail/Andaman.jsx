@@ -319,6 +319,323 @@ const Andaman = () => {
   </div>
 
 </section>
+
+{/* Best Hotels & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-500 selection:text-white">
+  
+  {/* Ocean-Themed Background Glows (Tropical Lagoons & Deep Sea Tints) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-cyan-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-blue-500/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-100 text-cyan-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏝️ Island Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-cyan-950 to-gray-950">
+      Best Hotels & Resorts in Andamans
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From ultra-luxury beachside eco-villas nestled under canopy trees to vibrant beachfront dive resorts.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Premium Eco-Luxury Villas (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-300 shadow-lg hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            👑
+          </div>
+          <span className="text-xs font-bold bg-cyan-100/60 text-cyan-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Ultra-Luxury Eco-Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-800 transition-colors duration-200">
+          Taj Exotica & Luxury Beachfront Villas
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Immerse yourself in world-class sustainable luxury on the edge of the world-famous <span className="font-semibold text-gray-900">Radhanagar Beach (Havelock Island)</span>. Properties like <span className="font-semibold text-gray-900">Taj Exotica Resort & Spa</span> or <span className="font-semibold text-gray-900">Barefoot at Havelock</span> offer stunning stilted villas crafted from sustainable timber, private plunge pools, and canopy walkways winding through dense, ancient endemic rainforests just steps from the powdery white sands.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+        Eco-Sustainability & Exclusive Beachfront Access
+      </div>
+    </div>
+
+  {/* Card 2: Boutique Scuba & Dive Resorts */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🤿
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Boutique Dive Resorts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Perfect for oceanic adventurers checking out properties like <span className="font-semibold text-gray-900">Symphony Palms</span> or custom dive-centric resorts on <span className="font-semibold text-gray-900">Beach No. 3 and 5</span>. These offer in-house SSI/PADI certified diving facilities, cozy wooden cottages, and lively beach bars.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Marine Explorations & Coastal Cabanas
+      </div>
+    </div>
+
+    {/* Card 3: Mid-Range Floating Horizon Estates */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌅
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          Cliffside & Sunrise Retreats
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Discover striking panoramic properties on <span className="font-semibold text-gray-900">Neil Island (Shaheed Dweep)</span> like <span className="font-semibold text-gray-900">Sea Shell Samsara</span>. Perched along dramatic rocky viewpoints or quiet eastern beaches, these spots provide unparalleled sunrise decks and tranquil infinity pools.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Serene Vistas & Low-Tide Explorations
+      </div>
+    </div>
+
+    {/* Card 4: Port Blair Transit Hubs (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ⚓
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Gateway Infrastructure
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Port Blair Luxury Transit Stays & Historic Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Ensure premium comfort during your mandatory mainland arrival and departure transit stops in <span className="font-semibold text-gray-900">Port Blair</span>. Top-tier properties like <span className="font-semibold text-gray-900">Welcomehotel by ITC Hotels (Bay Island)</span> or <span className="font-semibold text-gray-900">Sea Shell Port Blair</span> offer sweeping views over the busy shipping channels, close proximity to the historic Cellular Jail, and premium business-class amenities.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Harbor Views & Seamless Ferry Proximity
+      </div>
+    </div>
+
+    {/* Card 5: Backpacker & Back-To-Basics Eco Hostels */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🎒
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Social Backpacker Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Budget-friendly, community-heavy structures located near Havelock's jetty market loops. Perfect environments for solo travelers searching for cheap dorms, island-hopping groups, and shared scooter rental systems.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Nomadic Networking & Budget Trails
+      </div>
+    </div>
+
+    {/* Card 6: Secluded Off-Grid Resorts (Little Andaman/Diglipur) */}
+    <div className="group md:col-span-3 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-sky-300 shadow-lg hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:-translate-y-1">
+      <div className="flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-sky-50 text-xl flex items-center justify-center shrink-0 border border-sky-100/70 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300 shadow-sm">
+          🧭
+        </div>
+        <div>
+          <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
+            Far-Northern Expeditions & Pristine Wilderness Eco-Lodges
+          </h3>
+          <p className="text-gray-600 leading-relaxed text-[15px] mt-2 max-w-3xl">
+            Tailor-made for off-the-beaten-path travelers venturing up toward <span className="font-semibold text-gray-900">Diglipur</span> or down to <span className="font-semibold text-gray-900">Little Andaman</span>. These properties offer minimalist but comfortable wooden structures focused entirely on jungle trekking routes, nesting sea turtle sanctuaries, and untouched coral reefs.
+          </p>
+        </div>
+      </div>
+      <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1.5 rounded-full shrink-0 self-start sm:self-auto">
+        Wild Untamed Archipelago
+      </span>
+    </div>
+
+  </div>
+
+  {/* Ferry Logistics Glass Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-500/10 via-blue-500/5 to-transparent border border-cyan-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-cyan-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-cyan-900 font-bold">Inter-Island Transit Advisory:</strong> Reaching Havelock and Neil Island depends entirely on private catamaran cruise modules (Nautika/Makruzz) operating out of Port Blair. Always book your ferry schedules simultaneously with your hotel bookings, especially during the peak sailing months (October to April)!
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-500 selection:text-white">
+  
+  {/* Coastal Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-teal-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Section Header */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-cyan-50 border border-teal-100 text-teal-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🦞 Coastal Culinary Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
+      Best Restaurants & Cafes in Andamans
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From exceptional catching-of-the-day beach barbeques to laid-back bohemian woodfired pizza decks.
+    </p>
+  </div>
+
+  {/* Premium Bento Grid Arrangement */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Fresh Ocean Catch Landmarks (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🦀
+          </div>
+          <span className="text-xs font-bold bg-teal-100/60 text-teal-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Fresh Catch Culinary Elite
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
+          Legendary Seafood Grills & Premium Coastal Kitchens
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Indulge in the finest marine delicacies across Havelock and Port Blair at iconic dining pillars like <span className="font-semibold text-gray-900">Full Moon Cafe</span>, <span className="font-semibold text-gray-900">Something Different</span>, and <span className="font-semibold text-gray-900">New Lighthouse Restaurant</span>. These venues are celebrated for sourcing directly from local fishermen, offering clay-oven roasted king prawns, red snappers served on fresh banana leaves, and aromatic, classic coconut-based crab curries.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Sustainably Sourced Catch-Of-The-Day Delicacies
+      </div>
+    </div>
+
+    {/* Card 2: Bohemian Havelock Roasteries */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-300 shadow-lg hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+          Anju Coco Resto & Cozy Surf Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind over rich specialty coffee and stacked custom breakfast platters at iconic landmarks like <span className="font-semibold text-gray-900">Anju Coco Resto</span> on Havelock. Known for its laid-back low seating loops, legendary grilled tuna steaks, and delicious banana pancakes.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+        Surf Culture & Hearty Traveler Breakfasts
+      </div>
+    </div>
+
+    {/* Card 3: Beachside Candlelit Dining */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🕯️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Fine Dining Beach Lounges
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dine under starry night skies at upscale coastal open-air bistros. Sip custom tropical cocktails and enjoy curated global continental tasting menus right against the rhythmic, crashing shoreline waves.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Oceanfront Ambiance & Artisanal Cocktails
+      </div>
+    </div>
+
+    {/* Card 4: Multi-Cuisine Island Terraces (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌴
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Sunset Viewpoints
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Neil Island Sunset Open-Decks
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Relax across top-rated open-air beach shacks near <span className="font-semibold text-gray-900">Laxmanpur & Bharatpur Beach</span>. These breezy terraces serve up delicious North Indian dishes, refreshing mocktails, and fresh indo-chinese stir-fries, making them perfect stops right after your afternoon snorkeling tours.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Golden Hour Decks & Multi-Cuisine Comfort
+      </div>
+    </div>
+
+    {/* Card 5: Local Dhaba Style Curry Houses */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍛
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          Local Bengali Eateries
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Taste amazing local flavors at budget-friendly curry spots in Havelock's main villages. Feast on authentic, home-style <span className="font-semibold text-gray-900">Maach er Jhol</span> (traditional Bengali fish curry) accompanied by classic steaming jasmine rice blocks.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Authentic Local Fish-Curry Thalis
+      </div>
+    </div>
+
+    {/* Card 6: Pure Vegetarian Island Havens */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-sky-300 shadow-lg hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-sky-50 text-xl flex items-center justify-center border border-sky-100/70 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥦
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
+          Pure Veg Island Dining
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For family groups looking for specialized pure vegetarian options, several reliable kitchens across Havelock and Port Blair offer pristine, clean environments serving North and South Indian thalis completely free of cross-contamination.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-sky-600 tracking-wider uppercase">
+        Clean Vegetarian Comfort Circuits
+      </div>
+    </div>
+
+  </div>
+
+  {/* Culinary Logistics Advisory Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-500/10 via-cyan-500/5 to-transparent border border-teal-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-teal-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-teal-900 font-bold">Island Dining Tip:</strong> Most upscale cafes on Havelock and Neil Island wrap up dinner orders surprisingly early by 9:30 PM due to standard eco-island electricity conserving habits. Head over early to snag the absolute best outdoor table layouts right on the shoreline!
+      </p>
+    </div>
+  </div>
+
+</section>
         </div>
       </motion.div>
     </div>

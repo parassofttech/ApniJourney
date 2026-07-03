@@ -322,6 +322,272 @@ const RannOfKutch = () => {
 
 </section>
 
+{/* Best Hotels & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-orange-600 selection:text-white">
+  
+  {/* Desert Horizon Background Glows (Salt White, Saffron Sunset & Indigo Nights) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-orange-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-indigo-900/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-indigo-50 border border-orange-100 text-orange-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🐪 The Great Salt Desert Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-orange-950 to-gray-950">
+      Best Hotels, Resorts & Tent Cities in Kutch
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From the spectacular luxury glamping clusters at Dhordo Tent City to traditional mud-cottage Bhungas near the white salt desert.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Premium Luxury Glamping (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🎪
+          </div>
+          <span className="text-xs font-bold bg-orange-100/60 text-orange-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Rann Utsav Prime
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
+          The Official Tent City & Premium Glamping Resorts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Immerse yourself directly into the carnival core at the luxurious <span className="font-semibold text-gray-900">Tent City Dhordo</span> or premium eco-resorts close by. These immense seasonal setups offer beautifully crafted, air-conditioned Swiss chalets, grand premium dining halls serving royal Gujarati thalis, high-end cultural pavilions, and seamless VIP transport layouts directly reaching the white salt horizon.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-700 tracking-wider uppercase">
+        AC Swiss Tents & Custom Desert Stargazing Gazebos
+      </div>
+    </div>
+
+    {/* Card 2: Authentic Vernacular Bhungas */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-indigo-500/30 shadow-lg hover:shadow-xl hover:shadow-indigo-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-xl flex items-center justify-center border border-indigo-100/70 group-hover:bg-indigo-900 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🛖
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-indigo-700 transition-colors duration-200">
+          Traditional Kutchi Bhunga Cottages
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Stay inside signature mud-brick circular houses called <span className="font-semibold text-gray-900">Bhungas</span> available at premium heritage resorts. Built to withstand fierce desert winds, they feature gorgeous interior clay reliefs, authentic intricate mirror-work details, and rustic thatch finishes.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-indigo-600 tracking-wider uppercase">
+        Clay Relief Borders & Hand-Carved Mirror Aesthetics
+      </div>
+    </div>
+
+    {/* Card 3: Peaceful Eco-Resorts */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌿
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Tranquil Eco-Villas near Hodka Village
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Escape the massive crowds by checking into locally-run boutique eco-villages near Hodka. These spaces focus on quiet rural community interaction, offering incredible artisanal workshop linkages and beautiful courtyard bonfires under the clear sky.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Open-Air Courtyard Bonfires & Village Craft Tours
+      </div>
+    </div>
+
+    {/* Card 4: Heritage Stays in Bhuj Hub (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏰
+          </div>
+          <span className="text-xs font-bold bg-indigo-100/60 text-indigo-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Historic Gateway Hub
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
+          Classic Business Hotels & Royal Palaces in Bhuj
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For a reliable, highly connected itinerary, position your group inside the historic city of <span className="font-semibold text-gray-900">Bhuj</span>. Excellent modern premium options and vintage palace residencies provide structured luxury amenities, prompt 24x7 travel desks, and instant access to Aina Mahal, Prag Mahal, and the Bhuj airport corridors.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Airport Transit Lounges & Heritage City Access
+      </div>
+    </div>
+
+    {/* Card 5: Coastal Mandvi Retreats */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-indigo-500/30 shadow-lg hover:shadow-xl hover:shadow-indigo-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-xl flex items-center justify-center border border-indigo-100/70 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌊
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-indigo-700 transition-colors duration-200">
+          Coastal Mandvi Beach Resorts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Extend your desert circuit to the Arabian Sea lines. Beautiful luxury tented retreats directly situated on private beaches inside the Vijay Vilas Palace perimeter offer serene golden sands and gorgeous flamingo spotting loops.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-indigo-600 tracking-wider uppercase">
+        Private Palace Beaches & Wood-Deck Sunsets
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-orange-500 selection:text-white">
+  
+  {/* Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-orange-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-indigo-950/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-indigo-50 border border-orange-100 text-orange-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍛 Royal Bajra Rotlas & Ghee Swirls
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-orange-950 to-gray-950">
+      Best Restaurants & Dining Spots in Kutch
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From unlimited, authentic Kathiyawadi and Kutchi thalis rich with hand-churned buttermilk to warm winter jaggery crumbles.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Iconic Authentic Kutchi Thali Spaces (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🫓
+          </div>
+          <span className="text-xs font-bold bg-orange-100/60 text-orange-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Traditional Village Rasoi
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
+          Traditional Kutchi & Kathiyawadi Thali Diners
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Indulge in authentic local hospitality at highly rated culinary hubs like <span className="font-semibold text-gray-900">Green Rock Restaurant</span> in Bhuj or heritage dining setups inside Hodka. These legendary dining rooms feature rustic, endless courses of thick wood-fired <span className="font-semibold text-gray-900">Bajra na Rotla</span> smeared with fresh white butter, savory *Ringan no Oro* (smoky roasted eggplant mash), spicy garlicky chutneys, sweet *Vadi*, and bowls of endless cold buttermilk.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-700 tracking-wider uppercase">
+        Unlimited Desi Ghee Spreads & Infinite Chhas Rounds
+      </div>
+    </div>
+
+    {/* Card 2: Famous Spicy Kutchi Dabeli Hubs */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-indigo-500/30 shadow-lg hover:shadow-xl hover:shadow-indigo-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-xl flex items-center justify-center border border-indigo-100/70 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍔
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-indigo-700 transition-colors duration-200">
+          The Original Spicy Kutchi Dabeli Outlets
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          You simply cannot skip the birthplace of <span className="font-semibold text-gray-900">Dabeli</span>! Street food stalls across Mandvi and Bhuj press soft buns with a highly specific sweet-and-spicy potato mash, loaded with crunch roasted peanuts, fresh pomegranate seeds, and iconic garlic chutneys.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-indigo-600 tracking-wider uppercase">
+        Tava-Grilled Butter Buns & Pomegranate Crunches
+      </div>
+    </div>
+
+    {/* Card 3: Sweet Mawa Halwa Parlours */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥛
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Famous Kutchi Sweet-Mawa Confectioneries
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Satiate your post-meal dessert cravings at historic milk sweet counters like <span className="font-semibold text-gray-900">Khavda Sweet House</span>. Their signature item is the rich caramelised <span className="font-semibold text-gray-900">Kutchi Dry Mawa</span>, a slow-boiled condensed milk sweet delicately infused with green cardamom and saffron.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Authentic Khavda Dry-Mawa Cakes & Pakwans
+      </div>
+    </div>
+
+    {/* Card 4: Open-Air Highway Food Squares (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-indigo-500/30 shadow-lg hover:shadow-xl hover:shadow-indigo-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-xl flex items-center justify-center border border-indigo-100/70 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌾
+          </div>
+          <span className="text-xs font-bold bg-indigo-100/60 text-indigo-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Rann Highway Pitstops
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-indigo-800 transition-colors duration-200">
+          Breezy Highway Food Courts & Traditional Dhabas
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Fuel your road-trip along the expansive Bhuj-Dhordo highway corridor. Modern multi-cuisine open-sky plazas provide clean resting washrooms and a mixed menu of piping hot Punjabi paneer gravies, crispy hot butter parathas, and light snacks for crisp winter evening drives.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-indigo-600 tracking-wider uppercase">
+        Clay-Oven Tandoori Spreads & Fast Highway Munchies
+      </div>
+    </div>
+
+    {/* Card 5: Smart Transit Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Artisanal Coffee & Quick-Bite Stations
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For urban travelers needing a swift dose of modern caffeine, cozy contemporary cafes inside Bhuj serve rich espresso variations, loaded grilled vegetable paninis, and refreshing iced sodas to beat the sharp afternoon desert sun.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Chilled Espresso Blends & Grilled Cheesy Paninis
+      </div>
+    </div>
+
+  </div>
+
+  {/* Travel Guide Tip Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-600/10 via-indigo-600/5 to-transparent border border-orange-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-orange-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-orange-900 font-bold">Rann of Kutch Traveler Tip:</strong> Because the White Rann borders high-security military zones near the frontier, it is absolutely mandatory to acquire a tourism permit online or at the Bhirandiyara checkpoint. Keep your original government ID card physical copies accessible before entering the main desert access lines!
+      </p>
+    </div>
+  </div>
+
+</section>
+
         </div>
       </motion.div>
     </div>

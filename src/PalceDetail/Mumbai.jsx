@@ -427,6 +427,271 @@ const Mumbai = () => {
   </div>
 
 </section>
+{/* Best Hotels & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-600 selection:text-white">
+  
+  {/* Coastal Heritage Background Glows (Arabian Sea Teal & Gateway Gold) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-cyan-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-500/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-50 to-amber-50 border border-cyan-100 text-cyan-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏙️ The Maximum City Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-cyan-950 to-gray-950">
+      Best Hotels & Luxury Resorts in Mumbai
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From legendary grand heritage hotels facing the Arabian Sea in South Bombay to ultra-modern sea-facing luxury towers in Bandra and Juhu.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Iconic Royal Heritage (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm">
+            👑
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Colonial Grand Luxury
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          The Taj Mahal Palace & Historic South Bombay Hotels
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience unrivaled colonial majesty by anchoring your stay near Colaba. Iconic architectural marvels like <span className="font-semibold text-gray-900">The Taj Mahal Palace</span> present rich Edwardian Moorish vaulted ceilings, legendary high-tea lounges, floating sea-facing balconies, and absolute front-row vistas of the historic Gateway of India framing the bay.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+        Moorish Grand Pillars & Signature Sea-View Butler Suites
+      </div>
+    </div>
+
+    {/* Card 2: Queen's Necklace Art Deco Skyscrapes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          💎
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+          Marine Drive Skyline Panoramas
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Book breathtaking premium heights directly perched over Nariman Point or Marine Drive at luxury monoliths like <span className="font-semibold text-gray-900">The Oberoi</span>. Watch the entire C-shaped curve of the glowing street lamps glisten beautifully at midnight.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+        Panoramic Queen's Necklace Facing Glass Windows
+      </div>
+    </div>
+
+    {/* Card 3: Coastal Suburban Beach Resorts */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-coral-500/30 shadow-lg hover:shadow-xl hover:shadow-coral-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏖️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Juhu & Bandra Elite Coastal Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind in the vibrant suburban heartlands near the golden stretches of Juhu Beach or Bandra West. Celebrated high-end boutique properties give you instant access to celebrity lanes, beachfront infinity decks, and premium open-air pools.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Beachfront Cocktail Lounges & Celebrity Neighborhood Circles
+      </div>
+    </div>
+
+    {/* Card 4: High-Velocity Business Enclaves (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-sm">
+            💼
+          </div>
+          <span className="text-xs font-bold bg-cyan-100/60 text-cyan-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            BKC Corporate Hub
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-800 transition-colors duration-200">
+          Bandra-Kurla Complex (BKC) Ultra-Luxury Atriums
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Perfect for modern executives and corporate delegations demanding frictionless premium logistics. Properties inside BKC like <span className="font-semibold text-gray-900">The Trident</span> feature massive, naturally lit architectural glass lobbies, automated smart suites, signature spa enclaves, and direct access to high-end consulates.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+        Helipad Transit Triggers & Automated Executive Smart Hubs
+      </div>
+    </div>
+
+    {/* Card 5: Smart Airport Transit Pods */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ✈️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Chhatrapati Shivaji Terminal Airport Hotels
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Optimized for quick international layovers. Sleek, hyper-soundproofed luxury airport hotels offer high-speed workstation terminals, premium breakfast bars, and rapid sky-bridge paths straight to Terminal 2 gates.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Soundproofed Glass Walls & Express Runway Overlooks
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-orange-500 selection:text-white">
+  
+  {/* Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-orange-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-950/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-cyan-50 border border-orange-100 text-orange-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🦀 Butter-Garlic Crabs & Irani Chai
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-orange-950 to-gray-950">
+      Best Restaurants & Food Spots in Mumbai
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From iconic coastal seafood legends dripping in coastal butter-garlic masalas to nostalgic, bun-maska serving old Irani cafes.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Coastal Seafood Institutions (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🦀
+          </div>
+          <span className="text-xs font-bold bg-orange-100/60 text-orange-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Arabian Sea Catch
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
+          Legendary Coastal Seafood Culinary Vaults
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Savor Mumbai’s undisputed crown jewel of seafood dining at iconic institutions like <span className="font-semibold text-gray-900">Trishna</span> or <span className="font-semibold text-gray-900">Mahesh Lunch Home</span> in Fort. These globally revered food halls dish out monumental platefuls of signature <span className="font-semibold text-gray-900">Butter Garlic Mud Crabs</span>, rich Mangalorean style Surmai tawa fries, and incredibly delicate, piping hot soft Neer Dosas dripping with thick coconut seafood curries.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-700 tracking-wider uppercase">
+        Signature Butter Garlic Pepper Crabs & Crispy Bombil Platters
+      </div>
+    </div>
+
+    {/* Card 2: Nostalgic Irani Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Vintage Parsi-Irani Café Icons
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Step right into old-world Bombay nostalgia at landmarks like <span className="font-semibold text-gray-900">Kyani & Co.</span> or <span className="font-semibold text-gray-900">Britannia & Co.</span> Gather around classic checkered tablecloths for sweet, aromatic Irani Chai paired with heavily buttered Bun Maska, famous berry pulavs, and authentic mutton dhansak.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Classic Bun Maska Plates & Rich Fragrant Berry Pulavs
+      </div>
+    </div>
+
+    {/* Card 3: Elite High-End Global Bistros */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥂
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+          Colaba & BKC Modern Fine Dining
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience world-class culinary art inside beautifully converted warehouses or high-rises. Award-winning spots like <span className="font-semibold text-gray-900">The Bombay Canteen</span> present ultra-modern, highly creative reinventions of regional Indian dishes alongside state-of-the-art cocktail mixology.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+        Progressive Indian Gastronomy & Handcrafted Botanical Spritzers
+      </div>
+    </div>
+
+    {/* Card 4: Street Food Havens & Pav Grills (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍔
+          </div>
+          <span className="text-xs font-bold bg-orange-100/60 text-orange-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Born In Bombay
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
+          Hyper-Local Vada Pav & Pav Bhaji Street Hotspots
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Trace the pulsating soul of Mumbai’s fast-paced food grid. From the fiery, golden-fried garlic <span className="font-semibold text-gray-900">Vada Pav</span> hubs outside Kirti College to massive, butter-drenched tawa-fried <span className="font-semibold text-gray-900">Pav Bhaji</span> stalls like Sardar or Cannon, this is culinary performance art under blazing night lights.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Blazing Large-Tava Masalas & Spicy Fried Green Chillies
+      </div>
+    </div>
+
+    {/* Card 5: Late Night Juices & Overstuffed Sandwiches */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥪
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+          Midnight Bombay-Toasted Sandwich Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Dine right at the curb with massive multi-layered <span className="font-semibold text-gray-900">Bombay Grill Sandwiches</span>. Stacked with thinly sliced beets, potatoes, cucumbers, spicy mint chutney, and a mountain of shredded processed cheese, it's a legendary midnight comfort food.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+        Grilled Charcoal Multi-Decker Sandwiches & Fresh Seasonal Fruit Cream Bowls
+      </div>
+    </div>
+
+  </div>
+
+  {/* Travel Guide Tip Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-600/10 via-cyan-600/5 to-transparent border border-orange-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-orange-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-orange-900 font-bold">Mumbai Local Mobility Tip:</strong> To beat Mumbai's heavy peak-hour road traffic between South Bombay and the Western Suburbs, leverage the iconic Local Train network or take the breathtaking **Atal Setu / Bandra-Worli Sea Link** highway lanes for a completely seamless, panoramic coastal transit layout!
+      </p>
+    </div>
+  </div>
+
+</section>
 
         {/* 🔗 FOOTER ACTION */}
         <div className="mt-32 text-center bg-white/5 p-16 rounded-[4rem] border border-white/10">
