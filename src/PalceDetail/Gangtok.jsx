@@ -358,6 +358,125 @@ const Gangtok = () => {
 
 </section>
 
+{/* Best Heritage Stays & Himalayan Retreats Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-purple-600 selection:text-white">
+  
+  {/* Himalayan Mist Background Glows (Purple & Saffron) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-purple-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-orange-500/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-50 to-orange-50 border border-purple-100 text-purple-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏔️ The Himalayan Kingdom Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-purple-950 to-gray-950">
+      Mountain View Haveli & Monastic Retreats
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From luxury glass-fronted suites overlooking the Kanchenjunga massif to peaceful Buddhist heritage stays nestled in the quiet corners of the Eastern Himalayas.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Kanchenjunga View Suites (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-500/30 shadow-lg hover:shadow-xl hover:shadow-purple-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ✨
+          </div>
+          <span className="text-xs font-bold bg-purple-100/60 text-purple-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Peak View Luxury
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-800 transition-colors duration-200">
+          Kanchenjunga Panoramic Suites
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Wake up to the golden sunrise over the world’s third-highest peak. These suites offer floor-to-ceiling glass walls, private observation decks, and heated wooden interiors designed for the Himalayan chill.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-purple-700 tracking-wider uppercase">
+        Floor-to-Ceiling Peak Views & Heated Timber Interiors
+      </div>
+    </div>
+
+    {/* Card 2: Monastic Wellness Stays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          📿
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Monastic Heritage Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience authentic Sikkimese culture in stays inspired by local monastery architecture. Featuring intricate wood carvings, peaceful meditation gardens, and direct access to morning chanting sessions.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Meditation Gardens & Traditional Wood Craft
+      </div>
+    </div>
+
+    {/* Card 3: Cloud-Forest Boutique Lodges */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-500/30 shadow-lg hover:shadow-xl hover:shadow-purple-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-700 transition-colors duration-200">
+          Cloud-Forest Eco-Lodges
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Tucked away in the misty Rhododendron forests surrounding Gangtok. These lodges offer a true immersion into nature, with bird-watching balconies and guided trails into the high-altitude wildlife corridors.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-purple-600 tracking-wider uppercase">
+        Rhododendron Trails & Bird-Watching Balconies
+      </div>
+    </div>
+
+    {/* Card 4: Modern City Chic (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏙️
+          </div>
+          <span className="text-xs font-bold bg-purple-100/60 text-purple-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            City Central
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
+          MG Marg Boutique Hotels
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Stay right in the heart of the action. These chic hotels offer modern amenities, trendy café terraces overlooking the bustling MG Marg, and quick access to the city’s best handicraft shops.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        MG Marg Terrace Cafes & Local Handicraft Access
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Culinary Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16">
+  <div className="text-center mb-14">
+    <h2 className="text-4xl font-black text-gray-950">High-Altitude Flavors</h2>
+    <p className="text-gray-500 mt-3 text-lg">Authentic Momos, Thukpa, and Himalayan spice blends.</p>
+  </div>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+     {/* Add local food cards here... */}
+  </div>
+</section>
+
           {/* CTA */}
           <div className="mt-20 text-center">
             <motion.a

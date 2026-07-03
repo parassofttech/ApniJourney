@@ -359,6 +359,270 @@ const ZiroValley = () => {
 
 </section>
 
+{/* Best Stays & Cultural Homesteads Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-lime-600 selection:text-white">
+  
+  {/* Ziro Valley Background Glows (Emerald & Bamboo-Cream) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-lime-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-800/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-lime-50 to-amber-50 border border-lime-100 text-lime-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🌾 The Apatani Heartland Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-lime-950 to-gray-950">
+      Homestays & Eco-Resorts in Ziro
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Live amongst the legendary Apatani tribe in traditional bamboo homes or upscale eco-retreats overlooking the vast, undulating emerald paddy fields.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Traditional Apatani Homesteads (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-lime-500/30 shadow-lg hover:shadow-xl hover:shadow-lime-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-lime-50 text-xl flex items-center justify-center border border-lime-100/70 group-hover:bg-lime-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏠
+          </div>
+          <span className="text-xs font-bold bg-lime-100/60 text-lime-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Authentic Cultural Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-lime-800 transition-colors duration-200">
+          Traditional Apatani Bamboo Homesteads
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Deep dive into the Apatani lifestyle by staying in community-run bamboo homes. Experience the warmth of local hearths, learn traditional weaving techniques, and enjoy home-cooked meals featuring fresh, organic forest produce.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-lime-700 tracking-wider uppercase">
+        Community-Run Bamboo Stays & Traditional Hearth Dining
+      </div>
+    </div>
+
+    {/* Card 2: Valley-View Eco-Resorts */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌄
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Emerald Valley Eco-Resorts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For those seeking comfort without sacrificing nature, these resorts offer floor-to-ceiling views of the Ziro valley floor. Perfect for Ziro Music Festival attendees who prefer a quiet base away from the central venue.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Panoramic Valley Views & Festival-Ready Bases
+      </div>
+    </div>
+
+    {/* Card 3: Pine-Forest Retreats */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-lime-500/30 shadow-lg hover:shadow-xl hover:shadow-lime-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-lime-50 text-xl flex items-center justify-center border border-lime-100/70 group-hover:bg-lime-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-lime-700 transition-colors duration-200">
+          Pine-Forest Meditation Lodges
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Located in the pine-dense outskirts, these lodges are sanctuaries of silence. Ideal for nature lovers and photographers looking to capture the misty morning light filtering through the evergreen canopies.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-lime-600 tracking-wider uppercase">
+        Silent Forest Trails & Morning Mist Photography
+      </div>
+    </div>
+
+    {/* Card 4: Modern Boutique Lodges (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ✨
+          </div>
+          <span className="text-xs font-bold bg-lime-100/60 text-lime-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Modern Boutique
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Modern Comfort Boutique Lodges
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Sophisticated design meets mountain ruggedness. Featuring heated bedding, private balconies, and dedicated concierge support to organize local village treks and tribal cultural tours.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Heated Bedding & Dedicated Tribal Tour Concierge
+      </div>
+    </div>
+
+    {/* Card 5: Smart Adventure Transit Hubs */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-lime-500/30 shadow-lg hover:shadow-xl hover:shadow-lime-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-lime-50 text-xl flex items-center justify-center border border-lime-100/70 group-hover:bg-lime-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥾
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-lime-700 transition-colors duration-200">
+          Adventure Basecamps
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Optimized for trekkers. Providing rental trekking gear, reliable transport connections to nearby Talley Valley Wildlife Sanctuary, and communal social lounges for meeting fellow explorers.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-lime-600 tracking-wider uppercase">
+        Talley Valley Transit & Social Trekker Lounges
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{/* Restaurants & Culinary Experiences Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
+  
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-lime-950/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-lime-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🥢 Authentic Apatani Flavors
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Dining & Culinary Heritage
+    </h2>
+    <p className="text-gray-600 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Explore the unique tastes of Apatani cuisine—from wild herbs and bamboo-shoot delicacies to smoky meats and organic mountain rice.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Traditional Tribal Kitchens (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍲
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Authentic Kitchens
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Apatani Traditional Tribal Kitchens
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Step into a local Apatani kitchen to experience truly indigenous flavors. Feast on unique preparations of bamboo shoots, wild leafy herbs, and naturally smoked meats that tell the history of the valley through every bite.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+        Smoked Forest Meats & Bamboo Shoot Delicacies
+      </div>
+    </div>
+
+    {/* Card 2: Valley-View Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-lime-500/30 shadow-lg hover:shadow-xl hover:shadow-lime-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-lime-50 text-xl flex items-center justify-center border border-lime-100/70 group-hover:bg-lime-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-lime-700 transition-colors duration-200">
+          Emerald Valley Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Unwind in cafes designed for quiet contemplation. Enjoy high-altitude tea, fusion breakfast platters, and locally sourced honey snacks while looking out over the endless green rice paddies.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-lime-600 tracking-wider uppercase">
+        High-Altitude Tea & Locally Sourced Honey Bites
+      </div>
+    </div>
+
+    {/* Card 3: Rustic Picnic Spots */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧺
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Forest Picnic Outposts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For adventure days, pre-order picnic baskets from local homesteads. Packed with organic rice, roasted grains, and forest berries, they are perfect for enjoying in the heart of the pine forests.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Organic Picnic Baskets & Forest-Berry Snacks
+      </div>
+    </div>
+
+    {/* Card 4: Artisan Bakery Corners (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-lime-500/30 shadow-lg hover:shadow-xl hover:shadow-lime-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-lime-50 text-xl flex items-center justify-center border border-lime-100/70 group-hover:bg-lime-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍰
+          </div>
+          <span className="text-xs font-bold bg-lime-100/60 text-lime-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Bakery Treats
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-lime-800 transition-colors duration-200">
+          Ziro Artisan Bakery Corners
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience local fusion sweets. From cakes baked with local ingredients to warm cinnamon bread—ideal for those cool, misty Ziro evenings.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-lime-600 tracking-wider uppercase">
+        Fresh Baked Bread & Local Ingredient Cakes
+      </div>
+    </div>
+
+    {/* Card 5: Fusion Hilltop Cafes */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥗
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Modern Fusion Hilltop Cafes
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Modern, aesthetic cafes perched on the valley ridges. Offering great coffee, continental fusion dishes, and the best views of the Ziro valley floor below.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Continental Fusion Dishes & Valley Ridge Views
+      </div>
+    </div>
+
+  </div>
+
+  {/* Travel Guide Tip Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-600/10 via-lime-600/5 to-transparent border border-amber-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-amber-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-amber-900 font-bold">Ziro Cultural Transit Tip:</strong> Ziro is best explored at a slow pace. Ensure you hire a local Apatani guide for village tours—not only to navigate the terrain but to truly understand the deep-rooted customs and the ecological genius behind their unique wet-rice cultivation systems!
+      </p>
+    </div>
+  </div>
+
+</section>
+
           {/* CTA */}
           <div className="mt-20 text-center">
             <motion.a

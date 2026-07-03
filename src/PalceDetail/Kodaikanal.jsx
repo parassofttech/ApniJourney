@@ -322,6 +322,272 @@ const Kodaikanal = () => {
 
 </section>
 
+{/* Best Stays & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-600 selection:text-white">
+  
+  {/* Shola Forest Background Glows (Fern Green & Mist Silver) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-blue-200/20 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-blue-50 border border-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🌲 The Shola Mist Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Best Hotels & Forest Retreats in Kodaikanal
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From secluded eco-lodges hidden inside pine-drenched valleys to colonial cottages overlooking the ethereal Kodai Lake.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Eco-Lodge Forest Sanctuaries (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌿
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Deep-Forest Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Eco-Conscious Valley Sanctuaries
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Deep within the Palani Hills, find serenity in premium eco-lodges that blend into the canopy. Featuring floor-to-ceiling glass walls, private balconies facing misty mountain folds, and fireplace-lit interiors designed to keep the crisp, alpine chill of Kodaikanal at bay.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-700 tracking-wider uppercase">
+        Glass-Wall Forest Vistas & Alpine Fireplace Comforts
+      </div>
+    </div>
+
+    {/* Card 2: Lakefront Heritage Villas */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🛶
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Lakefront Heritage Cottages
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For clients who prefer proximity to the town’s heartbeat, these charming, century-old colonial bungalows offer direct access to the Kodai Lake loop, complete with rosewood furniture, antique fireplaces, and private, flower-filled gardens.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Colonial Rosewood Interiors & Private Flower Gardens
+      </div>
+    </div>
+
+    {/* Card 3: Plantation Luxury Manors */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☕
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Working Coffee & Spice Estates
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Elevate the stay with immersive luxury in working estates on the town's outskirts. Wake up to the scent of freshly roasted coffee, guided plantation walks, and open-air decks perfect for yoga amidst rolling, emerald-green mountain slopes.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Guided Plantation Walks & Fresh Estate-Brewed Mornings
+      </div>
+    </div>
+
+    {/* Card 4: Modern Wellness Huts (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🧘
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Zen Retreats
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Cloud-Top Zen & Yoga Retreats
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Tucked away from the tourism corridor, these zen-inspired minimalist retreats focus on complete digital detox. Featuring meditation halls, organic farm-to-table dining, and silence zones situated right above the cloud layer, these offer a transformative, peaceful escape.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Minimalist Silence Zones & Organic Farm-To-Table Dining
+      </div>
+    </div>
+
+    {/* Card 5: Smart Adventure Basecamps */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥾
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Adventure Hub Basecamps
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Built for the explorer, these high-end, adventure-focused hostels provide equipment lockers, guided trek briefings every morning, and social lounges for networking with fellow wanderers before setting off to Coakers Walk or Pillar Rocks.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Guided Trek Briefings & Social Wanderer Lounges
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-orange-500 selection:text-white">
+  
+  {/* Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-orange-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-950/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-emerald-50 border border-orange-100 text-orange-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍫 Handmade Chocolate & Forest Flavors
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-orange-950 to-gray-950">
+      Best Restaurants & Dining in Kodaikanal
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From cozy cafés serving piping hot organic coffee and handmade chocolates to hidden forest gems serving authentic mountain comfort food.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Cloud-Top Cafes (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ☕
+          </div>
+          <span className="text-xs font-bold bg-orange-100/60 text-orange-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Aromatic Hideaways
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
+          Artisanal Coffee & Chocolate Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Kodai is famous for its artisanal culinary scene. Visit iconic, cozy cafés where you can sample small-batch, handmade dark chocolates and organic, shade-grown mountain coffee. These spots are perfect for wrapping up a chilly afternoon with a warm, indulgent treat.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-700 tracking-wider uppercase">
+        Handmade Dark Chocolates & Shade-Grown Mountain Roasts
+      </div>
+    </div>
+
+    {/* Card 2: Mountain Comfort Kitchens */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥘
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Mountain Comfort Kitchens
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For heartier meals, visit established local kitchens known for their fusion comfort food—think spicy, warm Shakshuka, fresh wood-fired thin-crust pizzas, and farm-fresh vegetable soups served in cozy, rustic interiors.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Fusion Shakshuka & Farm-Fresh Wood-Fired Pies
+      </div>
+    </div>
+
+    {/* Card 3: Plantation Dining Estates */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥗
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Estate-To-Table Fine Dining
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Indulge in fine-dining experiences set within sprawling colonial-era estates. These curated menus prioritize local produce—featuring garden-picked organic vegetables, estate-aged cheeses, and traditional local slow-cooked delicacies.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Garden-Picked Organic Produce & Estate-Aged Cheeses
+      </div>
+    </div>
+
+    {/* Card 4: Iconic Street Bites (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🥟
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Bazaar Street Flavors
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Bazaar Street-Food & Spicy Local Snacks
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Wander the central bazaars to find hidden gems serving steaming, spicy *Momos*, crispy *Gobi Manchurian*—a local hill favorite—and hot cups of ginger chai. Perfect for grabbing a quick, flavorful bite while shopping for local eucalyptus oils and homemade spice mixes.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Steaming Spicy Momos & Crispy Gobi Manchurian Baskets
+      </div>
+    </div>
+
+    {/* Card 5: Rustic Tea-Room Traditions */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍰
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Colonial Tea-Room Traditions
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Finish your dining journey at old-school tea rooms. Serving classic scones, thick Devonshire-style cream, and piping hot English breakfast tea, these rooms preserve the charming, relaxed colonial social pace of the hill station.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Classic Scones & Devonshire-Style Cream Traditions
+      </div>
+    </div>
+
+  </div>
+
+  {/* Travel Guide Tip Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-600/10 via-emerald-600/5 to-transparent border border-orange-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-orange-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-orange-900 font-bold">Kodai Misty Transit Tip:</strong> Kodaikanal's forest roads can get incredibly misty, often reducing visibility to near zero after sunset. Always recommend that your travel groups finish their long-distance sightseeing by late afternoon and stick to the well-lit town loops for dinner and evening social walks!
+      </p>
+    </div>
+  </div>
+
+</section>
+
           {/* Tourism Link */}
           <div className="mt-8 text-center">
             <a

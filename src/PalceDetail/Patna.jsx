@@ -329,6 +329,149 @@ const Patna = () => {
 
 </section>
 
+{/* Heritage Explorations & Riverfront Stays Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-blue-600 selection:text-white">
+  
+  {/* Riverfront Background Glows (Blue & Terracotta) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-blue-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-amber-50 border border-blue-100 text-blue-900 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏛️ The Ancient Pataliputra Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-blue-950 to-gray-950">
+      Riverfront Heritage & Modern Urban Retreats
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Explore the cradle of ancient empires. From stays overlooking the holy Ganges to boutique hotels that blend modern Bihar’s urban evolution with its profound historical legacy.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Riverfront Boutique Suites (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌊
+          </div>
+          <span className="text-xs font-bold bg-blue-100/60 text-blue-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Premium Riverfront
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-800 transition-colors duration-200">
+          Ganges-View Boutique Suites
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience serenity by the Ganges. These suites offer panoramic views of the river, sunrise meditation decks, and easy access to the city’s historic ghats, blending tranquil river life with modern luxury.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-700 tracking-wider uppercase">
+        Sunrise Meditation Decks & Historic Ghat Access
+      </div>
+    </div>
+
+    {/* Card 2: Ancient History Retreats */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏺
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Pataliputra Heritage Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Stay near the archaeological roots of ancient Magadh. These stays incorporate traditional brickwork and motifs from Maurya-era excavations, offering history-themed tours of Kumrahar and Golghar.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Archaeological Tours & Maurya-Era Inspired Design
+      </div>
+    </div>
+
+    {/* Card 3: Modern Business Hubs */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          💼
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Modern Business Suites
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For the urban professional. Centrally located in Patna, these suites provide high-speed connectivity, premium conference spaces, and expert-led logistics for city-wide exploration.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Digital Nomad Connectivity & City-Wide Concierge
+      </div>
+    </div>
+
+    {/* Card 4: Spiritual Harmony Retreats (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ✨
+          </div>
+          <span className="text-xs font-bold bg-blue-100/60 text-blue-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Cultural Focus
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Sikh-Heritage Enclaves
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Located in proximity to Takht Sri Patna Sahib, these enclaves provide a quiet, contemplative environment with focus on cultural immersion, organic local dining, and meditation sessions.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Cultural Immersion & Takht Sahib Proximity
+      </div>
+    </div>
+
+    {/* Card 5: Eco-Park Nature Retreats */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌿
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+          Eco-Urban Retreats
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Find green space in the heart of the city. These retreats offer lush garden spaces, walking trails, and fresh, farm-to-table dining experiences right in the urban center.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Urban Garden Trails & Farm-to-Table Dining
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{/* Culinary Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-blue-600 selection:text-white">
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <h2 className="text-4xl font-black text-gray-950">Bihari Gastronomy</h2>
+    <p className="text-gray-600 mt-3 text-lg">Indulge in authentic Litti Chokha, Sattu-based delicacies, and traditional Khaja sweets.</p>
+  </div>
+  
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+     {/* Culinary Cards here... */}
+  </div>
+</section>
 
 
           {/* WHY VISIT */}

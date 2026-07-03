@@ -341,6 +341,150 @@ const Aizawl = () => {
   </div>
 
 </section>
+{/* Best Stays & Highland Retreats Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-600 selection:text-white">
+  
+  {/* Highland Background Glows (Teal & Misty White) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-teal-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-slate-400/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-slate-50 border border-teal-100 text-teal-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      ☁️ The Misty Highland Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
+      Terraced Highland Stays & Mizo Retreats
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Experience life perched on the ridge-tops. From boutique homestays offering panoramic valley views to heritage lodges deep in Mizo cultural heartlands.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Boutique Ridge-Top Villas (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ⛰️
+          </div>
+          <span className="text-xs font-bold bg-teal-100/60 text-teal-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Premium Highland
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
+          Ridge-Top Boutique Villas
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Perched on Aizawl’s famous ridges, these villas offer unobstructed views of the Tlawng river valley. Perfect for those looking to wake up above the clouds with modern amenities and local Mizo hospitality.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-700 tracking-wider uppercase">
+        Valley-View Terraces & Cloud-Line Balconies
+      </div>
+    </div>
+
+    {/* Card 2: Cultural Heritage Homestays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-slate-500/30 shadow-lg hover:shadow-xl hover:shadow-slate-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-slate-50 text-xl flex items-center justify-center border border-slate-100/70 group-hover:bg-slate-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏠
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-slate-700 transition-colors duration-200">
+          Heritage Mizo Homestays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Deep dive into Mizo culture. Stay with local families to experience authentic Mizo cuisine, traditional folk stories, and the warmth of the 'Zofest' lifestyle in the heart of Aizawl.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-slate-600 tracking-wider uppercase">
+        Local Culinary Experiences & Traditional Storytelling
+      </div>
+    </div>
+
+    {/* Card 3: Nature-Enclave Retreats */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍃
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          Forest-Edge Nature Enclaves
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Located on the outskirts where the city meets the wild. These retreats are surrounded by thick greenery, offering quiet pathways for morning treks and evening forest walks.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Forest Trekking Pathways & Quiet Wildlife Vistas
+      </div>
+    </div>
+
+    {/* Card 4: Modern City Center Stays (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-slate-500/30 shadow-lg hover:shadow-xl hover:shadow-slate-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-slate-50 text-xl flex items-center justify-center border border-slate-100/70 group-hover:bg-slate-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ✨
+          </div>
+          <span className="text-xs font-bold bg-teal-100/60 text-teal-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Modern Aizawl
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-slate-800 transition-colors duration-200">
+          Urban Highland Suites
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Centralized for your Aizawl shopping and city exploration. Featuring modern amenities, reliable connectivity for digital nomads, and easy transport access to local markets like Bara Bazar.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-slate-600 tracking-wider uppercase">
+        Digital Nomad Friendly & Bara Bazar Proximity
+      </div>
+    </div>
+
+    {/* Card 5: Research & Learning Hubs */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🎨
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          Mizo Art & Culture Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Collaborative spaces for travelers interested in Mizo handloom, tribal jewelry crafting, and local music traditions. Meet local artists and contribute to cultural preservation.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Handloom Crafting Workshops & Mizo Music Sessions
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{/* Culinary Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-600 selection:text-white">
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-teal-600/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <h2 className="text-4xl font-black text-gray-950">Mizo Gastronomy</h2>
+    <p className="text-gray-600 mt-3 text-lg">Experience authentic Mizo soul food: Bai, Sawhchiar, and fresh bamboo-shoot delights.</p>
+  </div>
+  
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+     {/* Culinary Cards here... */}
+  </div>
+</section>
+
 
         </div>
       </motion.div>

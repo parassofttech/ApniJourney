@@ -329,6 +329,150 @@ const Kumbhalgarh = () => {
 
 </section>
 
+{/* Heritage Stays & Fortress Retreats Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
+  
+  {/* Fortress Background Glows (Stone Grey & Saffron) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-slate-500/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-slate-50 border border-amber-100 text-amber-900 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🏰 The Guardian of Mewar Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Fortress Heritage Stays & Highland Retreats
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Experience the majesty of the Great Wall of India. From luxury heritage resorts offering direct views of the fort to rustic eco-stays tucked into the Aravalli wilderness.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Luxury Fortress-View Resorts (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            👑
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Royal Heritage Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Luxury Fortress-View Resorts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Reside in opulence with unobstructed views of the Kumbhalgarh Fort. Featuring traditional Rajputi architecture, grand courtyards, and sunset terraces that are perfect for evening stargazing over the Aravalli peaks.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+        Fort-View Sunset Terraces & Rajput Architecture
+      </div>
+    </div>
+
+    {/* Card 2: Aravalli Eco-Wilderness Lodges */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-slate-500/30 shadow-lg hover:shadow-xl hover:shadow-slate-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-slate-50 text-xl flex items-center justify-center border border-slate-100/70 group-hover:bg-slate-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌳
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-slate-700 transition-colors duration-200">
+          Aravalli Eco-Lodges
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Tucked away in the forested Aravalli hills, these eco-lodges provide a serene escape from the tourist bustle. Perfect for nature lovers, offering private trekking paths and bird-watching sessions.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-slate-600 tracking-wider uppercase">
+        Aravalli Forest Trails & Private Nature Walks
+      </div>
+    </div>
+
+    {/* Card 3: Historical Exploration Camps */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🛡️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Historical Expedition Camps
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For the true history enthusiast. These camps offer structured exploration of the fort’s architecture, guide-led heritage walks, and evening folklore storytelling sessions near the fire-pit.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Fort Architecture Tours & Folklore Storytelling
+      </div>
+    </div>
+
+    {/* Card 4: Modern Boutique Villas (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-slate-500/30 shadow-lg hover:shadow-xl hover:shadow-slate-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-slate-50 text-xl flex items-center justify-center border border-slate-100/70 group-hover:bg-slate-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ✨
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Modern Comfort
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-slate-800 transition-colors duration-200">
+          Modern Boutique Villas
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Contemporary hill-station living in the heart of Mewar. Featuring high-speed internet for digital nomads, heated pools for the winter months, and premium concierge access for local safari tours.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-slate-600 tracking-wider uppercase">
+        Digital Nomad Connectivity & Safari Tour Concierge
+      </div>
+    </div>
+
+    {/* Card 5: Wellness Enclaves */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧘
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Wellness Yoga Retreats
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Find your center amidst the Aravallis. Featuring open-air yoga shalas, organic farm-to-table dining, and holistic Ayurvedic treatments designed for complete relaxation.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Open-Air Yoga Shalas & Organic Farm-Dining
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{/* Culinary Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <h2 className="text-4xl font-black text-gray-950">Mewari Royal Flavors</h2>
+    <p className="text-gray-600 mt-3 text-lg">Indulge in authentic Laal Maas, Dal Baati Churma, and traditional Mewari Gatta curry.</p>
+  </div>
+  
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+     {/* Culinary Cards here... */}
+  </div>
+</section>
+
 
           {/* WHY VISIT */}
           <section className="mb-28 bg-gradient-to-r from-green-600 to-emerald-700 text-white p-4 md:p-12 rounded-3xl text-center shadow-2xl">

@@ -343,6 +343,149 @@ const KazirangaNationalPark = () => {
   </div>
 
 </section>
+{/* Best Wildlife Stays & Safari Lodges Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-600 selection:text-white">
+  
+  {/* Savannah Background Glows (Emerald & Golden Grass) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-amber-50 border border-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🦏 The Rhino Heartland Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Luxury Safari Lodges & Wild Wetland Retreats
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From immersive jungle resorts nestled right on the park periphery to private cottages offering sunrise views of the wetlands teeming with wildlife.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Luxury Jungle Safari Resorts (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🌿
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Premium Safari Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Luxury Jungle Safari Resorts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Stay in the heart of the wilderness. These resorts offer eco-luxury suites, naturalist-led safari planning, and private viewing decks where you can listen to the symphony of the jungle at dawn.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-700 tracking-wider uppercase">
+        Naturalist-Led Safaris & Private Jungle Viewing Decks
+      </div>
+    </div>
+
+    {/* Card 2: Wetland View Cottages */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌅
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Wetland Sunrise Cottages
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Wake up to the golden hues of the Kaziranga marshlands. These cottages provide peaceful, serene surroundings perfect for bird watching and observing rare wetland fauna from your porch.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Marshland Bird Watching & Sunrise Porch Views
+      </div>
+    </div>
+
+    {/* Card 3: Eco-Conscious Tented Camps */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ⛺
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Eco-Luxury Tented Camps
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Get closer to the wild. Featuring premium, all-weather luxury tents that provide an authentic camping experience with high-end comforts, fire-pits, and star-gazing sessions.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Authentic Tented Luxury & Evening Fire-Pit Sessions
+      </div>
+    </div>
+
+    {/* Card 4: Modern Comfort Suites (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ✨
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Modern Safari
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Modern Safari Boutique Villas
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Where modern sophistication meets raw nature. These villas offer spacious interiors, floor-to-ceiling windows, and dedicated 24/7 concierge support for arranging elephant back or jeep safaris.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Jeep Safari Concierge & Spacious Boutique Interiors
+      </div>
+    </div>
+
+    {/* Card 5: Research & Learning Bases */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          📚
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Nature Research Basecamps
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Ideal for wildlife enthusiasts and photographers. Includes access to library resources on Kaziranga’s flora/fauna and guided workshops on wildlife preservation.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Wildlife Photography Workshops & Eco-Library Access
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{/* Culinary Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <h2 className="text-4xl font-black text-gray-950">Assamese Culinary Delights</h2>
+    <p className="text-gray-600 mt-3 text-lg">Authentic flavors: Jolpan, Rice delicacies, and organic farm-fresh produce.</p>
+  </div>
+  
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Culinary Cards here... */}
+  </div>
+</section>
 
         </div>
       </motion.div>

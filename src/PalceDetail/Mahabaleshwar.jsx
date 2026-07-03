@@ -332,6 +332,150 @@ const Mahabaleshwar = () => {
 
 </section>
 
+{/* Best Stays & Highland Retreats Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-red-600 selection:text-white">
+  
+  {/* Highland Background Glows (Strawberry Red & Misty White) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-red-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-600/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-50 to-emerald-50 border border-red-100 text-red-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🍓 The Strawberry Highland Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-red-950 to-gray-950">
+      Heritage Colonial Bungalows & Valley Retreats
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From restored British-era bungalows nestled in dense forests to modern eco-retreats overlooking the vast, misty Sahyadri valleys.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Colonial Heritage Bungalows (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-500/30 shadow-lg hover:shadow-xl hover:shadow-red-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏰
+          </div>
+          <span className="text-xs font-bold bg-red-100/60 text-red-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Colonial Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-800 transition-colors duration-200">
+          Heritage Colonial Bungalows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Step back in time within restored estate bungalows. Featuring high ceilings, antique wooden furniture, and private verandas that open into lush, strawberry-scented gardens.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-700 tracking-wider uppercase">
+        Antique Estate Architecture & Strawberry Garden Verandas
+      </div>
+    </div>
+
+    {/* Card 2: Valley-View Eco-Retreats */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏔️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Valley-View Eco-Retreats
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience the Sahyadri mountains from the edge. These eco-lodges feature expansive glass walls and private viewing decks perfect for watching the sunset over the deep, misty valleys.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Sahyadri Sunset Decks & Panoramic Glass Suites
+      </div>
+    </div>
+
+    {/* Card 3: Strawberry Farm Stays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-500/30 shadow-lg hover:shadow-xl hover:shadow-red-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍓
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-700 transition-colors duration-200">
+          Farm-to-Table Stays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Live amidst the fruit fields. These farm-stays allow you to participate in daily berry-picking sessions, farm-fresh breakfasts, and learn about organic farming in the hills.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Organic Berry Picking & Farm-Fresh Breakfasts
+      </div>
+    </div>
+
+    {/* Card 4: Modern Comfort Boutique Suites (Featured) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            ✨
+          </div>
+          <span className="text-xs font-bold bg-red-100/60 text-red-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Modern Hills
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Modern Boutique Hill-Suites
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Contemporary hill-station comfort. Featuring thermal insulation for the misty nights, heated indoor pools, and dedicated concierge teams to arrange treks to Pratapgad Fort.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Heated Indoor Pools & Pratapgad Fort Trek Coordination
+      </div>
+    </div>
+
+    {/* Card 5: Nature & Wellness Hubs */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-500/30 shadow-lg hover:shadow-xl hover:shadow-red-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧘
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-700 transition-colors duration-200">
+          Wellness Enclaves
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Focus on rejuvenation. Surrounded by forest, these enclaves offer forest-bathing sessions, yoga terraces, and detox diets based on seasonal hill produce.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Forest-Bathing Sessions & Seasonal Detox Diets
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{/* Dining Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-red-600 selection:text-white">
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-red-600/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <h2 className="text-4xl font-black text-gray-950">Hillside Gastronomy</h2>
+    <p className="text-gray-600 mt-3 text-lg">Indulge in Fresh Strawberries with Cream, Corn Pattice, and local Maharashtrian delicacies.</p>
+  </div>
+  
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+     {/* Culinary Cards here... */}
+  </div>
+</section>
+
           {/* WHY VISIT */}
           <section className="mb-28 bg-gradient-to-r from-green-600 to-emerald-700 text-white p-4 md:p-12 rounded-3xl text-center shadow-2xl">
             <h2 className="text-4xl font-black italic mb-6">

@@ -342,6 +342,156 @@ const DzukouValley = () => {
 
 </section>
 
+{/* Dzukou Valley Stays & Explorer Basecamps Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-purple-600 selection:text-white">
+  
+  {/* Celestial Valley Glows (Lily Magenta & Mist-Grey) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-purple-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-600/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-50 to-emerald-50 border border-purple-100 text-purple-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🌸 The Celestial Valley Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-purple-950 to-gray-950">
+      High-Altitude Basecamps & Mountain Huts
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Discover the raw magic of the Naga highlands. From rugged basecamps perched on cliff edges to cozy homestays in the gateway village of Viswema.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Dzukou Valley Basecamps (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-500/30 shadow-lg hover:shadow-xl hover:shadow-purple-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏕️
+          </div>
+          <span className="text-xs font-bold bg-purple-100/60 text-purple-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Adventure Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-800 transition-colors duration-200">
+          The Dzukou Valley Trekker Basecamp
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Located right inside the valley, this is the ultimate spot for sunrise chasers. Offering basic dormitory-style wooden huts that put you inches away from the rolling grassy slopes and fields of lilies.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-purple-700 tracking-wider uppercase">
+        Valley-Floor Sunrise Access & Rugged Trekker Dorms
+      </div>
+    </div>
+
+    {/* Card 2: Viswema Gateway Homestays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏠
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Viswema Gateway Homestays
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Start your journey in the traditional Naga village of Viswema. These warm, community-run stays offer the perfect acclimatization before tackling the steep ascent into the valley.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Pre-Trek Acclimatization & Authentic Naga Hospitality
+      </div>
+    </div>
+
+    {/* Card 3: Cloud-View Ridge Huts */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-500/30 shadow-lg hover:shadow-xl hover:shadow-purple-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          ☁️
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-700 transition-colors duration-200">
+          Ridge-Top Cloud Huts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For photographers looking for the perfect 'above-the-clouds' shot. These elevated huts offer panoramic vistas of the surrounding Naga hills as they fade into the evening blue.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-purple-600 tracking-wider uppercase">
+        Panoramic Valley Vistas & High-Altitude Photography
+      </div>
+    </div>
+
+    {/* Card 4: Adventure Transit Hubs (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🥾
+          </div>
+          <span className="text-xs font-bold bg-purple-100/60 text-purple-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Trekker Essential
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Trekker Coordination & Supply Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Located in Kohima/Viswema, these hubs provide essential trekking gear rentals, porter coordination, and updated trail safety reports for the Dzukou climb.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Porter Services & Trail Safety Coordination
+      </div>
+    </div>
+
+    {/* Card 5: Sustainable Nature Camps */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-500/30 shadow-lg hover:shadow-xl hover:shadow-purple-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌿
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-700 transition-colors duration-200">
+          Sustainable Nature Camps
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Eco-friendly camping spots focused on leaving no trace. Perfectly positioned for stargazing without light pollution, deep in the heart of the valley.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-purple-600 tracking-wider uppercase">
+        Leave-No-Trace Camping & Stargazing
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{/* Culinary & Travel Tip Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-purple-600 selection:text-white">
+  
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-purple-600/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <h2 className="text-4xl font-black text-gray-950">Highland Trekking Advice</h2>
+    <p className="text-gray-600 mt-3 text-lg">Essential tips for a safe and memorable Dzukou experience.</p>
+  </div>
+  
+  <div className="bg-white/50 border border-gray-200 p-8 rounded-3xl shadow-lg max-w-3xl mx-auto backdrop-blur-lg">
+    <ul className="space-y-4 text-gray-700 font-medium">
+      <li className="flex items-start gap-3"><span>✅</span> <strong>Permits:</strong> Ensure your Inner Line Permit (ILP) is processed in advance for Kohima entry.</li>
+      <li className="flex items-start gap-3"><span>✅</span> <strong>Fitness:</strong> The trek involves a steep initial climb; carry light, high-energy snacks.</li>
+      <li className="flex items-start gap-3"><span>✅</span> <strong>Seasonality:</strong> Best visited during the monsoon (June–Sept) for full lily blooms, but be prepared for mud!</li>
+      <li className="flex items-start gap-3"><span>✅</span> <strong>Waste:</strong> Dzukou is a plastic-free zone; ensure all your gear and waste are accounted for.</li>
+    </ul>
+  </div>
+</section>
+
         </div>
       </motion.div>
     </div>

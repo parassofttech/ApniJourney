@@ -321,6 +321,271 @@ const Amritsar = () => {
   </div>
 
 </section>
+{/* Best Hotels & Resorts Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
+  
+  {/* Spiritual Heritage Background Glows (Golden Shimmer & Crimson Phulkari) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-red-900/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-red-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🙏 The Sacred Heritage Stay Guide
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Hotels & Luxury Resorts in Amritsar
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From premium luxury stays within walking distance of the Golden Temple to expansive, rustic wellness eco-resorts capturing true Punjabi village life.
+    </p>
+  </div>
+
+  {/* Advanced Bento Grid Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Sacred Golden Temple Hub (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 shadow-sm">
+            🕌
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Divine Corridor Tier
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Premium Stays Inside the Golden Temple Corridor
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Immerse your travelers directly into the spiritual epicenter. Premium hospitality spots located right along the beautifully designed Heritage Street or Town Hall corridor place you within a 5-minute barefoot walk of <span className="font-semibold text-gray-900">Sri Harmandir Sahib</span>, allowing your group to easily attend the breathtaking early morning Palki Sahib ceremony.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+        Heritage Street Walkways & 24/7 Gurbani Audio Streams
+      </div>
+    </div>
+
+    {/* Card 2: High-End Urban Luxury */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-500/30 shadow-lg hover:shadow-xl hover:shadow-red-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏨
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-700 transition-colors duration-200">
+          Ranjit Avenue Luxury Outposts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Choose upscale modern comfort in Amritsar's elite commercial hub. Flagship properties like <span className="font-semibold text-gray-900">Taj Swarna</span> or Radisson Blu offer sprawling swimming pools, world-class luxury spas, and swift transit connections toward the Wagah Border.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Five-Star Wellness Spas & International Transit Desks
+      </div>
+    </div>
+
+    {/* Card 3: Authentic Punjabi Farmstays */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🚜
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Rustic Heritage Farmstays & Villages
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Experience authentic Punjabi hospitality at stunning eco-farms like <span className="font-semibold text-gray-900">Amritsar Vikas Farms</span>. These properties feature beautiful green mustard field boundaries, exciting tractor rides, and traditional open-air clay hearth dining.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Mustard Field Walking Paths & Open-Air Tractor Safaris
+      </div>
+    </div>
+
+    {/* Card 4: Colonial Heritage Mansions (Featured - Larger width) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🏡
+          </div>
+          <span className="text-xs font-bold bg-red-100/60 text-red-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Historic Haveli Living
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Restored Grand Havelis & Vintage Boutique Bungalows
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Discover old-world charm in painstakingly restored structures showcasing magnificent Nanakshahi brick architecture. These boutique spaces feature deep central courtyards, beautifully exposed vintage brick walls, high-set archways, and curated Punjabi folk antiquities.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Exposed Nanakshahi Brick Interiors & Central Folk Courtyards
+      </div>
+    </div>
+
+    {/* Card 5: Smart Transit & Group Lodges */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-500/30 shadow-lg hover:shadow-xl hover:shadow-red-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧳
+          </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-700 transition-colors duration-200">
+          Smart Group Hotels near Mall Road
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Perfect for families and group itineraries. Highly accessible business-class hotels provide vast multi-bed executive suites, prompt 24x7 kitchen service, and direct multi-utility vehicle parking zones.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Multi-Bed Family Suites & Direct Highway Access
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+{/* Restaurants & Cafes Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+  
+  {/* Culinary Background Tints */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-red-950/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-red-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🧈 Pure Desi Ghee & Crispy Kulcha Layers
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Best Restaurants & Food Havens in Amritsar
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      From insanely flaky, wood-fired Amritsari Kulchas dripping in pure butter to the legendary, divine community kitchen experience at Guru Ka Langar.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+    {/* Card 1: Iconic Amritsari Kulcha Hubs (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🫓
+          </div>
+          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Clay Oven Legends
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+          Legendary Crisp-Layered Amritsari Kulcha Outlets
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Savor the ultimate gold-standard of breakfast culinary craft at world-famous legacy institutions like <span className="font-semibold text-gray-900">Bhai Kulwant Singh Kulchawale</span> or <span className="font-semibold text-gray-900">The Kulcha Land</span>. These clay-oven masters serve hyper-flaky, multiple-layered <span className="font-semibold text-gray-900">Amritsari Kulchas</span> stuffed with spiced potatoes and cauliflower, crushed by hand right before your eyes to unleash fresh butter pools, and paired with tangy chole and sweet-sour onion chutney.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+        Hand-Crushed Layered Pastry Techniques & Endless Butter Pools
+      </div>
+    </div>
+
+    {/* Card 2: Iconic Dhabas for Dal Makhani */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-500/30 shadow-lg hover:shadow-xl hover:shadow-red-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍲
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-700 transition-colors duration-200">
+          Historic Punjabi Dhaba institutions
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Step into standard culinary folklore at globally recognized heritage dhabas like <span className="font-semibold text-gray-900">Kesar Da Dhaba</span> (established 1916) or <span className="font-semibold text-gray-900">Bharawan Da Dhaba</span>. Experience rich, slow-simmered, charcoal-fired Dal Makhani cooked for over 12 hours, served alongside immense, crispy laccha parathas.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        12-Hour Slow Charcoal Simmers & Giant Laccha Parathas
+      </div>
+    </div>
+
+    {/* Card 3: Divine Guru Ka Langar */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥣
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          The Spiritual Community Kitchen: Guru Ka Langar
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Participate in the world's most humbling, colossal community dining paradigm inside the Golden Temple complex. Sit cross-legged on jute mats inside the grand halls alongside thousands of daily pilgrims to receive delicious, soul-satisfying dal, simple rotis, and divine kheer prepared entirely by volunteers.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Humbling Mega-Scale Volunteer Service & Hot Soulful Kada Prasad
+      </div>
+    </div>
+
+    {/* Card 4: Iconic Non-Veg Legacy Grills (Featured Large Layout) */}
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-500/30 shadow-lg hover:shadow-xl hover:shadow-red-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🐟
+          </div>
+          <span className="text-xs font-bold bg-red-100/60 text-red-950 px-3 py-1 rounded-full uppercase tracking-wider">
+            Amritsari Street Grills
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-800 transition-colors duration-200">
+          Famous Amritsari Fish & Tandoori Tawa Hubs
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          For non-vegetarian culinary routes, explore legendary heritage joints like <span className="font-semibold text-gray-900">Beera Chicken House</span> or <span className="font-semibold text-gray-900">Makhan Fish corner</span>. Feast on the iconic <span className="font-semibold text-gray-900">Amritsari Fish Fry</span>—tender fish cubes coated in a spicy, carom-seeded (*ajwain*) gram flour batter and fried to absolute golden perfection.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Ajwain-Infused Gram Flour Batters & Whole Tandoori Chicken Grills
+      </div>
+    </div>
+
+    {/* Card 5: Tall Sweet Cream Lassi Creameries */}
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🥛
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Monumental Frothy Punjabi Lassi Corners
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Quench your thirst with giant steel tumblers of authentic <span className="font-semibold text-gray-900">Amritsari Lassi</span> at legacy milk shops like Ahuja Milk Bhandar. It is a slow-churned, ultra-thick yogurt drink topped with a massive, decadent dollop of fresh milk cream (*malai*).
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Giant Steel Tumblers & Heavy Malai Spoon Scoops
+      </div>
+    </div>
+
+  </div>
+
+  {/* Travel Guide Tip Banner */}
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-600/10 via-red-600/5 to-transparent border border-amber-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-amber-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-amber-900 font-bold">Amritsar Spiritual Etiquette Tip:</strong> While accessing the pristine marble parikrama lines of the Golden Temple complex, keep your head completely covered with a scarf or bandana at all times, remove your footwear at the designated step-counters, and wash your feet in the shallow entry water streams!
+      </p>
+    </div>
+  </div>
+
+</section>
 
           {/* Tourism Link */}
           <div className="mt-8 text-center">
