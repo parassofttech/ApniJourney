@@ -60,6 +60,128 @@ const Nalanda = () => {
             </p>
           </section>
 
+          {/* Introduction Section: Nalanda */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Monastic Clay & Saffron Light Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 left-10 w-96 h-96 bg-amber-600/10 blur-[130px] rounded-full"></div>
+    <div className="absolute bottom-10 right-10 w-96 h-96 bg-orange-600/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      <span>📜</span> UNESCO Ancient Heritage Spotlight
+    </div>
+    <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+      Discover Nalanda
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+      The Light of Asia—the ruins of the world's premier residential university, standing as a monumental testament to classical Indian architecture, philosophy, and intellectual dominance.
+    </p>
+  </div>
+
+  {/* Main Layout Container */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    
+    {/* Left Column: Premium Introduction (Glass Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-amber-950/5 rounded-3xl p-8 sticky top-6">
+      <div className="text-4xl mb-4">🧱</div>
+      <h3 className="text-2xl font-bold text-gray-900 mb-4">
+        The Epicenter of Ancient Knowledge Systems
+      </h3>
+      <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+        Nalanda, located just a short distance from Patna and Rajgir in Bihar, is a globally awe-inspiring archaeological wonder. Flourishing from the 5th century CE to the 12th century CE under the patronage of the Gupta and Pala Empires, this sprawling brick-built Mahavihara hosted over 10,000 international scholars and 2,000 revered teachers.
+      </p>
+      <p className="text-gray-600 leading-relaxed text-[15.5px]">
+        Designed with meticulous geometrical precision, the excavated ruins reveal a stunning grid of grand monasteries, step-down water reservoirs, symmetric prayer stupas, and specialized cooling cellars, anchoring it as a deeply moving monument to human wisdom.
+      </p>
+      
+      {/* Quick Stats Banner inside Left Card */}
+      <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
+        <div className="bg-amber-50/50 p-3 rounded-2xl">
+          <p className="text-2xl font-black text-amber-600">9 Million</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Manuscripts Lost</p>
+        </div>
+        <div className="bg-orange-50/50 p-3 rounded-2xl">
+          <p className="text-2xl font-black text-orange-600">11+</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Layered Monasteries</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Right Column: Dynamic Feature Grid */}
+    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      
+      {/* Card 1: The Great Stupa of Sariputra */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+          🏛️
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          The Sariputra Monument
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Gaze at Temple No. 3—the defining architectural icon of Nalanda. This massive, multi-tiered pyramid structure features multiple corner towers adorned with beautiful, classical stucco art niches of Buddhist deities.
+        </p>
+      </div>
+
+      {/* Card 2: Dharma Gunj (The Library Devastation) */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-md hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 flex items-center justify-center text-xl font-bold text-orange-600 mb-5 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300">
+          📜
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          The Legendary Nine-Story Library
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Trace the tragic history of *Dharma Gunj* (The Mountain of Truth), the institution's legendary library complex. Historical accounts state that the burning repository of knowledge smoked for three straight months after foreign attacks.
+        </p>
+      </div>
+
+      {/* Card 3: Advanced Thermal Engineering */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-stone-300 shadow-md hover:shadow-xl hover:shadow-stone-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-stone-50 flex items-center justify-center text-xl font-bold text-stone-600 mb-5 group-hover:bg-stone-600 group-hover:text-white transition-all duration-300">
+          📐
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-stone-700 transition-colors duration-200">
+          Symmetric Brick Monasteries
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Examine the highly advanced architectural grid layouts. Built entirely with beautifully thick burnt bricks, the double-story residential halls feature central shared courtyards, stone ventilation networks, and internal drainage canals.
+        </p>
+      </div>
+
+      {/* Card 4: Xuanzang Memorial Hall */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-red-300 shadow-md hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-red-50 flex items-center justify-center text-xl font-bold text-red-600 mb-5 group-hover:bg-red-600 group-hover:text-white transition-all duration-300">
+          🎐
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-red-700 transition-colors duration-200">
+          The Hiuen Tsang Repository
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Visit the peaceful contemporary peace pavilion nearby, built in honor of Xuanzang (Hiuen Tsang), the brave 7th-century Chinese traveler who documented Nalanda’s academic curricula and stellar operational discipline.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  {/* Bottom Premium Sticky Note */}
+  <div className="mt-12 bg-gradient-to-r from-amber-950 via-slate-900 to-orange-950 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
+    <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+    <div className="relative z-10 max-w-3xl">
+      <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
+      <p className="text-amber-100 mt-2 text-sm md:text-base leading-relaxed opacity-90">
+        In short, Nalanda is an absolutely profound destination for global design minds, thinkers, and historical purists. It beautifully documents structural engineering and early human academic infrastructure, offering an incredible, quiet look into classic India's golden age of logic and philosophy.
+      </p>
+    </div>
+  </div>
+
+</section>
+
           {/* ATTRACTIONS */}
           <section className="mb-28">
             <h2 className="text-3xl font-black text-green-900 mb-12 italic text-center">

@@ -60,6 +60,128 @@ const Alleppey = () => {
             </p>
           </section>
 
+          {/* Introduction Section: Alleppey */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-600 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Lagoon Estuary & Palm Canopy Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 left-10 w-96 h-96 bg-teal-500/10 blur-[130px] rounded-full"></div>
+    <div className="absolute bottom-10 right-10 w-96 h-96 bg-emerald-500/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-emerald-50 border border-teal-100 text-teal-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      <span>🛶</span> Maritime Spotlight
+    </div>
+    <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
+      Discover Alleppey
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+      The Venice of the East—a surreal watery labyrinth where majestic houseboats glide through mirror-like lagoons, interconnected canals, and vibrant floating villages.
+    </p>
+  </div>
+
+  {/* Main Layout Container */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    
+    {/* Left Column: Premium Introduction (Glass Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-teal-950/5 rounded-3xl p-8 sticky top-6">
+      <div className="text-4xl mb-4">🌴</div>
+      <h3 className="text-2xl font-bold text-gray-900 mb-4">
+        A Liquid Wilderness Carved in Emerald
+      </h3>
+      <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+        Alleppey (Alappuzha), anchored perfectly along the edge of the sprawling Vembanad Lake in Kerala, is a stunning geographic masterclass in slow, aquatic living. Fringed by thousands of leaning coconut palms, this unique coastal plain forms the gateway to a vast, multi-tiered ecosystem of natural backwaters and brackish canals.
+      </p>
+      <p className="text-gray-600 leading-relaxed text-[15.5px]">
+        Steeped in maritime trading history, Alleppey is world-renowned for its heritage <span className="font-semibold">Kettuvallam houseboats</span>—ancient spice vessels beautifully re-engineered using bamboo mats and coir ropes into floating luxury suites. It offers an intimate window into a quiet world where life unfolds entirely on water.
+      </p>
+      
+      {/* Quick Stats Banner inside Left Card */}
+      <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
+        <div className="bg-teal-50/50 p-3 rounded-2xl">
+          <p className="text-2xl font-black text-teal-600">Vembanad</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">India's Longest Lake</p>
+        </div>
+        <div className="bg-emerald-50/50 p-3 rounded-2xl">
+          <p className="text-2xl font-black text-emerald-600">Below 0</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Kuttanad Sea Level</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Right Column: Dynamic Feature Grid */}
+    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      
+      {/* Card 1: Traditional Houseboat Cruises */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-md hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 flex items-center justify-center text-xl font-bold text-teal-600 mb-5 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
+          🚢
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          Heritage Houseboat Voyages
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Board a hand-crafted wooden flagship cruiser. Drift overnight past shimmering marshlands while enjoying fresh, locally harvested Karimeen (pearl spot fish) fry prepared by your private onboard chef.
+        </p>
+      </div>
+
+      {/* Card 2: Narrow Village Canal Kayaking */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-xl font-bold text-emerald-600 mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+          🚣‍♂️
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Interlocking Canal Kayaking
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Paddle through the ultra-narrow veins of the backwaters. Kayaking gets you up close to local villages, duck farming collectives, toddy shops, and children paddling mini canoes to school.
+        </p>
+      </div>
+
+      {/* Card 3: Kuttanad Agro-Tourism */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+          🌾
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          The Below-Sea-Level Farms
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Explore the "Rice Bowl of Kerala." Witness <span className="font-semibold">Kuttanad</span>, a striking agricultural valley where vast, bright green paddy fields are cultivated up to 2.5 meters *below* sea level using massive dikes.
+        </p>
+      </div>
+
+      {/* Card 4: Marari Beach & Coir Heritage */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-md hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-sky-50 flex items-center justify-center text-xl font-bold text-sky-600 mb-5 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300">
+          🏖️
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
+          Pristine Marari Coastline
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Unwind on a quiet, undeveloped white-sand paradise. Located just a short drive away from the hectic docks, Marari Beach provides a tranquil escape with wild sea-grass dunes and peaceful fishing hamlets.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  {/* Bottom Premium Sticky Note */}
+  <div className="mt-12 bg-gradient-to-r from-teal-950 via-slate-900 to-emerald-950 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
+    <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+    <div className="relative z-10 max-w-3xl">
+      <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
+      <p className="text-teal-100 mt-2 text-sm md:text-base leading-relaxed opacity-90">
+        In short, Alleppey is an absolute masterpiece of water-based travel architecture. It seamlessly transitions you out of chaotic overland rhythms into a soothing, low-impact world of premium houseboat bays and intimate canal trails—making it a mandatory slow-travel pivot for your platform.
+      </p>
+    </div>
+  </div>
+
+</section>
+
           {/* ATTRACTIONS */}
           <section className="mb-28">
             <h2 className="text-3xl font-black text-green-900 mb-12 italic text-center">

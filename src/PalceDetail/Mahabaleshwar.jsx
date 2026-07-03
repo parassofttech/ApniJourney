@@ -63,6 +63,128 @@ const Mahabaleshwar = () => {
             </p>
           </section>
 
+          {/* Introduction Section: Mahabaleshwar */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-600 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Evergreen Forests & Valley Mist Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 left-10 w-96 h-96 bg-rose-600/10 blur-[130px] rounded-full"></div>
+    <div className="absolute bottom-10 right-10 w-96 h-96 bg-emerald-600/5 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-emerald-50 border border-rose-100 text-rose-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      <span>🍓</span> Highland Spotlight
+    </div>
+    <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
+      Discover Mahabaleshwar
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+      The Queen of Maharashtra's Hills—a soaring, mist-veiled tableland of sprawling strawberry fields, ancient cliffside lookouts, and dense forest canopies.
+    </p>
+  </div>
+
+  {/* Main Layout Container */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    
+    {/* Left Column: Premium Introduction (Glass Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-rose-950/5 rounded-3xl p-8 sticky top-6">
+      <div className="text-4xl mb-4">🌿</div>
+      <h3 className="text-2xl font-bold text-gray-900 mb-4">
+        The Verdant Cradle of Five Holy Rivers
+      </h3>
+      <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+        Mahabaleshwar, resting beautifully on a massive plateau within the rugged Sahyadri Mountain Range (Western Ghats), is a breathtaking sanctuary of cloud and canopy. Perched at an altitude of 1,353 meters, this historic hill station serves as the source of five sacred rivers, including the mighty Krishna River.
+      </p>
+      <p className="text-gray-600 leading-relaxed text-[15.5px]">
+        Famed for its year-long crisp mountain air and cool microclimate, it produces over <span className="font-semibold">85% of India's strawberries</span>. Here, old colonial stone bungalows blend seamlessly with rugged red laterite cliffs, cascading waterfalls, and thick, untouched evergreen reserves.
+      </p>
+      
+      {/* Quick Stats Banner inside Left Card */}
+      <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
+        <div className="bg-rose-50/50 p-3 rounded-2xl">
+          <p className="text-2xl font-black text-rose-600">1,353m</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Plateau Altitude</p>
+        </div>
+        <div className="bg-emerald-50/50 p-3 rounded-2xl">
+          <p className="text-2xl font-black text-emerald-600">85%+</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Strawberry Harvest</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Right Column: Dynamic Feature Grid */}
+    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      
+      {/* Card 1: Arthur's Seat & Canyons */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-md hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center text-xl font-bold text-rose-600 mb-5 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
+          ⛰️
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          The Dramatic Arthur's Seat
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Stand over the "Queen of Points." Looming at 1,470 meters, <span className="font-semibold">Arthur's Seat</span> offers a sheer drop into the deep Brahma-Arayan canyon, where rising air currents famously push light objects right back up.
+        </p>
+      </div>
+
+      {/* Card 2: Venna Lake Boating */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-md hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-sky-50 flex items-center justify-center text-xl font-bold text-sky-600 mb-5 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300">
+          🛶
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
+          The Scenic Venna Lake
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Glide through the mountain mist. Surrounded by tall, leafy trees and vibrant lakeside food stalls, a rowboat ride on the clear, sprawling waters of <span className="font-semibold">Venna Lake</span> is a classic highland leisure experience.
+        </p>
+      </div>
+
+      {/* Card 3: Strawberry Farm Tourism */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-xl font-bold text-emerald-600 mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+          🍓
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Agro-Tourism & Orchards
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Walk through endless, sweet-scented berry patches. Visit dynamic farms along the Panchgani road to pick fresh strawberries, mulberry treats, and enjoy the iconic local dessert—fresh strawberry cream.
+        </p>
+      </div>
+
+      {/* Card 4: Panch Ganga Temple */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+          🛕
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Old Mahabaleshwar Mysticism
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Discover the spiritual roots of the plateau. The 13th-century stone <span className="font-semibold">Panch Ganga Temple</span> captures the underground convergence of 5 rivers flowing cleanly out of a carved stone cow spout.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  {/* Bottom Premium Sticky Note */}
+  <div className="mt-12 bg-gradient-to-r from-rose-950 via-slate-900 to-emerald-950 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
+    <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+    <div className="relative z-10 max-w-3xl">
+      <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
+      <p className="text-rose-100 mt-2 text-sm md:text-base leading-relaxed opacity-90">
+        In short, Mahabaleshwar is a beautifully balanced mountain escape. It perfectly combines the nostalgic luxury of old colonial viewpoints with the pure rustic charm of sweet agro-tourism and dramatic Sahyadri cliffside trails, making it an exceptional wellness retreat.
+      </p>
+    </div>
+  </div>
+
+</section>
+
           {/* ATTRACTIONS */}
           <section className="mb-28">
             <h2 className="text-3xl font-black text-green-900 mb-12 italic text-center">
