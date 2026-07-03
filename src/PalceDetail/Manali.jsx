@@ -182,6 +182,32 @@ const Manali = () => {
 
 </section>
 
+      {/* GALLERY */}
+          <section className="mb-28">
+            <h2 className="text-3xl font-black text-green-900 italic mb-12 text-center">
+              Photo Gallery
+            </h2>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+              {[
+                "https://lh3.googleusercontent.com/gps-cs-s/AHVAwer0YcZTsX9AcNInXvW7kSRqM3s0NxsO3bsDASKbfULHSTd1VbeM0eycnXRY0Q7DeGgxxHyebSOzw0ZeKtAP3qwdrGN0HUI6Ol31dtpMqoAcVoN0fMj-BhANCP9A-hgQeqZoSo2c=w675-h390-n-k-no",
+                "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepFVBHZuCqRj99KFQxIQfYycUvCTBtdlcUb5QX2bGhppowus-oehtBIzQ66V3mylTnLqK3ypAxB-s14r9M-tqAJM0MK7AmbiPk0MZW-EeUdumqfGvGwT76TKguIvSW8aiwAhT8=w675-h390-n-k-no",
+                "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRPlS89pBrLwhqgpntjCNFRUfYvLGSwFJw0GVA4xJ-q7cDQkKGlCc7nVBwIZOpPJZolHrg1EhSP24wb7jFlR3uk3iI&s=19",
+                "https://lh3.googleusercontent.com/gps-cs-s/AHVAweraUXkV7Ad9ggpDHpL3x7IScKuu9bqfAIoJzqNOvbhVFn4_At06EqfJ8Qnh6Gmh-wtRKkKw3CmmZF4IRwwR73FU-LVsKWAPWl7pqAKfyM52uxZWqgq76snkK2NGsOKeAAOJ7E1_=w675-h390-n-k-no",
+                "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTECfLF3SfvdVWteW23gC5ZYgaU_qSI97NBKvb466TH5LOxmoHny1K5zbcXuv-MeN2ZZmZ4pVE8MAMSC_16MqEX-EE&s=19",
+                "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQlmJeaLOiVRItXiOXLcN9nkMyKQ01g11uB0ZCAtO4ymG-luzZ2YfXHbkPFEovD5PubZJ4btRWiMS8WndIU87w47Gw&s=19"
+              ].map((img, i) => (
+                <motion.img
+                  key={i}
+                  whileHover={{ scale: 1.05 }}
+                  src={img}
+                  alt="Manali"
+                  className="rounded-3xl shadow-xl h-64 w-full object-cover"
+                />
+              ))}
+            </div>
+          </section>
+
 {/* Best Time to Visit */}
 <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-sky-500 selection:text-white">
 
@@ -1366,31 +1392,7 @@ const Manali = () => {
           
 
          
-          {/* GALLERY */}
-          <section className="mb-28">
-            <h2 className="text-3xl font-black text-green-900 italic mb-12 text-center">
-              Photo Gallery
-            </h2>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-              {[
-                "https://lh3.googleusercontent.com/gps-cs-s/AHVAwer0YcZTsX9AcNInXvW7kSRqM3s0NxsO3bsDASKbfULHSTd1VbeM0eycnXRY0Q7DeGgxxHyebSOzw0ZeKtAP3qwdrGN0HUI6Ol31dtpMqoAcVoN0fMj-BhANCP9A-hgQeqZoSo2c=w675-h390-n-k-no",
-                "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepFVBHZuCqRj99KFQxIQfYycUvCTBtdlcUb5QX2bGhppowus-oehtBIzQ66V3mylTnLqK3ypAxB-s14r9M-tqAJM0MK7AmbiPk0MZW-EeUdumqfGvGwT76TKguIvSW8aiwAhT8=w675-h390-n-k-no",
-                "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRPlS89pBrLwhqgpntjCNFRUfYvLGSwFJw0GVA4xJ-q7cDQkKGlCc7nVBwIZOpPJZolHrg1EhSP24wb7jFlR3uk3iI&s=19",
-                "https://lh3.googleusercontent.com/gps-cs-s/AHVAweraUXkV7Ad9ggpDHpL3x7IScKuu9bqfAIoJzqNOvbhVFn4_At06EqfJ8Qnh6Gmh-wtRKkKw3CmmZF4IRwwR73FU-LVsKWAPWl7pqAKfyM52uxZWqgq76snkK2NGsOKeAAOJ7E1_=w675-h390-n-k-no",
-                "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTECfLF3SfvdVWteW23gC5ZYgaU_qSI97NBKvb466TH5LOxmoHny1K5zbcXuv-MeN2ZZmZ4pVE8MAMSC_16MqEX-EE&s=19",
-                "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQlmJeaLOiVRItXiOXLcN9nkMyKQ01g11uB0ZCAtO4ymG-luzZ2YfXHbkPFEovD5PubZJ4btRWiMS8WndIU87w47Gw&s=19"
-              ].map((img, i) => (
-                <motion.img
-                  key={i}
-                  whileHover={{ scale: 1.05 }}
-                  src={img}
-                  alt="Manali"
-                  className="rounded-3xl shadow-xl h-64 w-full object-cover"
-                />
-              ))}
-            </div>
-          </section>
+          
 
           {/* WHY VISIT */}
           <section className="mb-28 bg-gradient-to-r from-green-600 to-emerald-700 text-white p-4 md:p-12 rounded-3xl text-center shadow-2xl">

@@ -48,6 +48,128 @@ const Darjeeling = () => {
             **stunning viewpoints**, and **pleasant climate**. A perfect blend of nature, culture, and adventure.
           </motion.p>
 
+          {/* Introduction Section: Darjeeling */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+
+  {/* Advanced Radial Background Glows (Himalayan Tea Highlands Theme) */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 left-10 w-96 h-96 bg-emerald-500/10 blur-[130px] rounded-full"></div>
+    <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  {/* Header Title Section */}
+  <div className="text-center mb-16">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-amber-50 border border-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      <span>🚂</span> Destination Spotlight
+    </div>
+    <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Discover Darjeeling
+    </h2>
+    <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+      The Queen of the Hills, where emerald-green tea estates paint rolling slopes beneath the majestic sunrise of Mount Kanchenjunga.
+    </p>
+  </div>
+
+  {/* Main Layout Container */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    
+    {/* Left Column: Premium Introduction (Glass Card) */}
+    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-emerald-950/5 rounded-3xl p-8 sticky top-6">
+      <div className="text-4xl mb-4">🍃</div>
+      <h3 className="text-2xl font-bold text-gray-900 mb-4">
+        The Crown Jewel of West Bengal
+      </h3>
+      <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+        Darjeeling, nestled in the lesser Himalayas at a stunning altitude of 2,042 meters, is a timeless mountain escape. It is globally celebrated for its sprawling tea plantations, colonial-era heritage, and unparalleled views of the world's third-highest peak.
+      </p>
+      <p className="text-gray-600 leading-relaxed text-[15.5px]">
+        A beautiful melting pot of Nepali, Tibetan, and Bengali cultures, Darjeeling charms travelers with its crisp mountain breeze, winding narrow ridges, and the nostalgic whistle of its vintage steam engines.
+      </p>
+      
+      {/* Quick Stats Banner inside Left Card */}
+      <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
+        <div className="bg-emerald-50/50 p-3 rounded-2xl">
+          <p className="text-2xl font-black text-emerald-600">2,042m</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Town Altitude</p>
+        </div>
+        <div className="bg-amber-50/50 p-3 rounded-2xl">
+          <p className="text-2xl font-black text-amber-600">86+</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Active Tea Estates</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Right Column: Dynamic Feature Grid */}
+    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      
+      {/* Card 1: Tiger Hill Sunrise */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+          🌅
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          The Tiger Hill Sunrise
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          An unforgettable dawn experience. Stand atop <span className="font-semibold">Tiger Hill</span> at 4:00 AM to watch the first rays of the sun paint the snowy twin peaks of Mt. Kanchenjunga in surreal shades of pink and fiery gold.
+        </p>
+      </div>
+
+      {/* Card 2: UNESCO Heritage Toy Train */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-xl font-bold text-emerald-600 mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+          🚂
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          The Vintage Toy Train
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Ride through living history. The UNESCO-listed <span className="font-semibold">Darjeeling Himalayan Railway</span> features 19th-century steam loops chugging gracefully past local mountain markets and the iconic Batasia Loop garden.
+        </p>
+      </div>
+
+      {/* Card 3: Premium Tea Tasting */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-md hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 flex items-center justify-center text-xl font-bold text-teal-600 mb-5 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
+          ☕
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          The Champagne of Teas
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Savor the ultimate aromatic luxury. Walk through geometric slopes at Happy Valley Tea Estate, interact with local pluckers, and sip on authentic, globally coveted muscatel-flavored <span className="font-semibold">Darjeeling First Flush tea</span>.
+        </p>
+      </div>
+
+      {/* Card 4: Ghoom & Tibetan Culture */}
+      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-md hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center text-xl font-bold text-rose-600 mb-5 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
+          ☸️
+        </div>
+        <h4 className="text-lg font-bold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Spiritual Ghoom Heritage
+        </h4>
+        <p className="text-gray-600 text-sm leading-relaxed mt-2">
+          Explore serene ancient roots. Visit the historic <span className="font-semibold">Yiga Choeling (Ghoom) Monastery</span> built in 1850, home to a massive 15-foot clay Maitreya Buddha statue and beautiful, multi-colored prayer wheels.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  {/* Bottom Premium Sticky Note */}
+  <div className="mt-12 bg-gradient-to-r from-emerald-700 via-teal-700 to-amber-600 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
+    <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+    <div className="relative z-10 max-w-3xl">
+      <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
+      <p className="text-emerald-50 mt-2 text-sm md:text-base leading-relaxed opacity-90">
+        In short, Darjeeling is a sensory masterclass. It effortlessly combines the nostalgia of British-era colonial clubs and vintage trains with pristine Himalayan views and world-class tea tasting, creating a deeply relaxing, premium highland experience.
+      </p>
+    </div>
+  </div>
+
+</section>
+
           {/* Info Grid */}
           <div className="grid md:grid-cols-2 gap-6 mt-6">
             {/* History */}
