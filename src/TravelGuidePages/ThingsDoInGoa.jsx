@@ -137,9 +137,9 @@ export default function ThingsDoInGoa() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-teal-600 selection:text-white font-sans antialiased pb-24">
       
-      {/* =========================================================================
+      {/* 
           1. HERO SECTION: THE TROPICAL ESCAPE ANCHOR
-          ========================================================================= */}
+*/}
       <div className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-teal-950 to-slate-900 text-white py-28 px-4 sm:px-6 lg:px-8 shadow-2xl">
         {/* Abstract Fluid Grid Overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:5rem_5rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-25 pointer-events-none"></div>
@@ -161,9 +161,7 @@ export default function ThingsDoInGoa() {
         </div>
       </div>
 
-      {/* =========================================================================
-          2. ADVANCED INTERACTIVE TAB NAVIGATION
-          ========================================================================= */}
+      {/*  2. ADVANCED INTERACTIVE TAB NAVIGATION*/}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
         <div className="bg-white/80 backdrop-blur-xl border border-slate-200/60 p-3 rounded-3xl shadow-xl shadow-slate-300/40 overflow-x-auto no-scrollbar">
           <div className="flex space-x-2 min-w-max md:justify-center">
@@ -188,9 +186,9 @@ export default function ThingsDoInGoa() {
         </div>
       </div>
 
-      {/* =========================================================================
+      {/* 
           3. EXPERIENCE CONTENT CARDS GRID
-          ========================================================================= */}
+         */}
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
         
         {/* Dynamic Category Sub-Header */}
@@ -241,9 +239,9 @@ export default function ThingsDoInGoa() {
           ))}
         </div>
 
-        {/* =========================================================================
+        {/* 
             4. BOTTOM ARCHITECTURAL VERDICT BANNER
-            ========================================================================= */}
+            */}
         <div className="mt-20 bg-gradient-to-r from-slate-950 via-teal-950 to-slate-900 text-white p-8 rounded-3xl shadow-xl relative overflow-hidden group">
           <div className="absolute right-0 top-0 translate-x-12 -translate-y-12 w-48 h-48 bg-teal-500/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
           
