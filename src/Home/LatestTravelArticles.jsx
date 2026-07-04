@@ -71,13 +71,7 @@ const LatestTravelArticles=()=> {
             </p>
           </div>
 
-          <Link to="/article/1" className="group flex items-center gap-2 font-bold text-cyan-700 hover:text-cyan-900 transition">
-            View All Articles
-            <ArrowRight
-              size={18}
-              className="group-hover:translate-x-1 transition-transform"
-            />
-          </Link>
+          
 
         </div>
 
