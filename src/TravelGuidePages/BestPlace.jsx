@@ -5,9 +5,22 @@ import { Link } from 'react-router-dom';
 
 // Best Destinations Database
 const bestPlaces = [
-  { id: "leh", name: "Leh-Ladakh", state: "Ladakh", tag: "Adventure", image: "https://www.kashmirtourpackage.org/blog/wp-content/uploads/2024/02/Leh-Ladakh.jpg", desc: "High altitude, higher spirits.", longDesc: "Ladakh is a life-changing experience for every traveler. Rent a motorcycle, stay in local homestays, and soak in the silence of Pangong Lake. It’s the ultimate destination for those seeking solitude amidst the most dramatic mountain landscapes on Earth." },
+  { id:"manali", name: "Manali", state: "Himachal", tag: "Adventure", image: "https://www.naturetravelagency.com/uploads/1703234831best%20time%20to%20visit%20Manali%20for%20snowfall.jpg", desc: "Digital nomad hub with mountain charm.", longDesc: "Old Manali is the quintessential solo hub. It’s perfect for digital nomads looking for reliable Wi-Fi in cozy cafes, coupled with the raw beauty of the Himalayas. You can work during the day and head for a Bhrigu Lake trek on the weekend. The community here is incredibly welcoming, making it easy to form lifelong friendships." },
+  { id: "goa", name: "South Goa", state: "Goa", tag: "Beach", image: "https://media.moustachescapes.com/location/1740561583.jpg", desc: "Private beaches and luxury.", longDesc: "South Goa is perfect for couples who want to enjoy the beach without the crowd. With its pristine, quiet sands and luxury boutique resorts, it offers a romantic backdrop where you can spend your days in a hammock and your evenings enjoying a candlelight dinner." },
+  
+  { id: "gokarna", name: "Gokarna", state: "Karnataka", tag: "Value", image: "https://s7ap1.scene7.com/is/image/incredibleindia/tsomgo-lake-gangtok-sikkim-3-attr-hero?qlt=82&ts=1742159961340", desc: "Beach life, low price tag.", longDesc: "Gokarna is the perfect alternative to expensive beach destinations. With simple beach shacks and budget-friendly cafes, you can enjoy sun, sand, and solitude while keeping your expenses well under control." },
   { id: "rishikesh", name: "Rishikesh", state: "Uttarakhand", tag: "Spiritual", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhUEJYMzJ3a4Y74HPHE5fHcKK58Z6ZMJl8vDlE2UXwA4Up5gLrLSMZVB8&s=10", desc: "The Yoga Capital of the World.", longDesc: "Rishikesh offers a perfect blend of thrill and tranquility. Whether you want to try white-water rafting on the Ganges or participate in a silent meditation retreat, the town's energy is unmatched. It is a world-class hub for spiritual growth and adventure." },
   { id:"ladakh", name: "Leh-Ladakh", state: "Ladakh", tag: "Wild", image: "https://www.kashmirtourpackage.org/blog/wp-content/uploads/2024/02/Leh-Ladakh.jpg", desc: "Rugged mountains and starry skies.", longDesc: "Ladakh tests your resilience and rewards you with otherworldly beauty. Solo travelers here often bond over shared taxi rides or motorcycling expeditions. The silence of the high-altitude deserts and the kindness of the local homestays create a transformative experience for anyone traveling solo." },
+   {
+    id: "jaipur",
+    name: "Jaipur",
+    state: "Rajasthan",
+    tag: "Heritage",
+    image: "https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Jaipur.jpg?w=1000&ssl=1",
+    desc: "The Pink City’s royal grandeur.",
+    longDesc: "Jaipur offers a royal experience with its magnificent forts and bustling bazaars. As a solo traveler, the city is incredibly easy to navigate. Spend your days hopping between the Hawa Mahal and Amer Fort, and your evenings getting lost in the colorful markets of Johari Bazaar. It's a goldmine for photography lovers and culture seekers."
+  },
+  { id: "rishikesh", name: "Rishikesh", state: "Uttarakhand", tag: "Low-Cost", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhUEJYMzJ3a4Y74HPHE5fHcKK58Z6ZMJl8vDlE2UXwA4Up5gLrLSMZVB8&s=10", desc: "Spiritual stay, minimal spend.", longDesc: "Rishikesh offers world-class backpacker hostels that are both cheap and social. You can enjoy free river-side views, affordable yoga classes, and delicious local food, making it an excellent choice for a budget-friendly solo adventure." },
   { id: "hampi", name: "Hampi", state: "Karnataka", tag: "Heritage", image: "https://s7ap1.scene7.com/is/image/incredibleindia/a-journey-through-masthead-hero-1?qlt=82&ts=1727368343764", desc: "Ancient ruins and history.", longDesc: "Hampi is a dreamer's paradise and a UNESCO World Heritage site. Stepping into Hampi feels like traveling back to the glory of the Vijayanagara Empire. The massive boulders and temple ruins create a landscape that is truly unique and historically profound." }
 ];
 

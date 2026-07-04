@@ -11,6 +11,7 @@ import {
   Send,
   ExternalLink
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -31,7 +32,7 @@ const Footer = () => {
 
   return (
     <footer className="relative min-h-[500px] flex items-end text-gray-200 overflow-hidden">
-      
+
       {/* 🎥 Background Video with Overlay */}
       <div className="absolute inset-0 -z-20">
         <video
@@ -51,17 +52,17 @@ const Footer = () => {
       </div>
 
       {/* 🧪 Main Content Container */}
-      <motion.div 
+      <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         className="relative w-full max-w-7xl mx-auto px-6 pb-10 pt-20"
       >
-        
+
         {/* 💎 Glass Card Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[40px] p-8 md:p-14 shadow-2xl">
-          
+
           {/* BRAND SECTION (4 Cols) */}
           <motion.div variants={itemVariants} className="md:col-span-5">
             <div className="flex items-center gap-2 mb-6 group cursor-default">
@@ -71,15 +72,15 @@ const Footer = () => {
               </h2>
             </div>
             <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-md">
-              Redefining the way you travel. Smart planning, seamless memories, 
+              Redefining the way you travel. Smart planning, seamless memories,
               and a world of adventures waiting for you.
             </p>
-            
+
             {/* Newsletter Simple Input */}
             <div className="relative max-w-sm group">
-              <input 
-                type="email" 
-                placeholder="Get travel updates..." 
+              <input
+                type="email"
+                placeholder="Get travel updates..."
                 className="w-full bg-white/10 border border-white/20 rounded-full py-4 px-6 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder:text-gray-500"
               />
               <button className="absolute right-2 top-2 p-2 bg-blue-600 hover:bg-blue-500 rounded-full transition-transform active:scale-95">
@@ -93,13 +94,23 @@ const Footer = () => {
             <h3 className="text-white font-bold text-xl mb-6">Explore</h3>
 
             <ul className="space-y-4">
-              <a href="/about" className="text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2 group text-md">About Us</a>
-              {["Home", "My Trips", "Add Trip", "Gallery", "Contact"].map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2 group text-md">
+              {[
+                { name: "Home", path: "/" },
+                { name: "About Us", path: "/about" },
+                { name: "Contact Us", path: "/contact" },
+                { name: "Privacy Policy", path: "/privacy-policy" },
+                { name: "Terms & Cconditions", path: "/terms-and-conditions" },
+                { name: "Destinations", path: "/destinations" },
+               
+              ].map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.path}
+                    className="text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2 group text-md"
+                  >
                     <span className="h-px w-0 bg-blue-400 group-hover:w-4 transition-all duration-300"></span>
-                    {link}
-                  </a>
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -145,16 +156,16 @@ const Footer = () => {
 
         {/* 🌐 SOCIALS & COPYRIGHT */}
         <div className="mt-12 flex flex-col md:flex-row justify-between items-center gap-8 px-4">
-          
+
           <motion.div variants={itemVariants} className="flex gap-4">
             {[
-              { icon: Github, color: "hover:bg-gray-800" },
-              { icon: Linkedin, color: "hover:bg-blue-700" },
-              { icon: Instagram, color: "hover:bg-pink-600" }
+              { icon: Github, color: "hover:bg-gray-800",link:"https://github.com/parassofttech/ApniJourney" },
+              { icon: Linkedin, color: "hover:bg-blue-700",link:"https://in.linkedin.com/in/paras-sahu-02849029a" },
+              // { icon: Instagram, color: "hover:bg-pink-600",link:"" }
             ].map((social, i) => (
               <a
                 key={i}
-                href="#"
+                href={social.link}
                 className={`p-4 bg-white/5 rounded-2xl border border-white/10 transition-all duration-300 hover:-translate-y-2 ${social.color}`}
               >
                 <social.icon size={22} />
@@ -167,7 +178,7 @@ const Footer = () => {
               © {year} ApniJourney. All rights reserved.
             </p>
             <p className="flex items-center justify-center md:justify-end gap-2 text-md text-gray-300">
-              Crafted with <Heart size={16} className="text-red-500 fill-red-500 animate-pulse" /> by 
+              Crafted with <Heart size={16} className="text-red-500 fill-red-500 animate-pulse" /> by
               <span className="font-bold text-white hover:text-blue-400 transition-colors cursor-pointer flex items-center gap-1">
                 Paras <ExternalLink size={14} />
               </span>
