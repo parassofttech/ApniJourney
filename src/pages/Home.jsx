@@ -25,6 +25,8 @@ import WeatherInfo from "../Dashboard/WeatherInfo";
 import WhyChooseApnijourney from "../Home/WhyChooseApnijourney";
 import FAQs from "../Home/FAQs";
 import LatestTravelArticles from "../Home/LatestTravelArticles";
+import TripsHome from "../Home/TripsHome";
+import TravelGuide from "../Home/TravelGuide";
 // import GoogleAds from "../components/GoogleAds";
 
 
@@ -60,9 +62,12 @@ const Home = () => {
         <div><BlogHighlights/></div>
         {/* <div className="mb-7"><PhotoGallery/></div> */}
         <div><WeatherInfo/></div>
+        <div><TripsHome/></div>
         <div><CTASection/></div>
-        <div><FAQs/></div>
+        <div><TravelGuide/></div>
         <div><LatestTravelArticles/></div>
+        
+        <div><FAQs/></div>
         <div><FeaturesSection/></div>
         {/* <div className="max-sm:hidden min-lg:visible"><AppHighlights/></div> */}
          <div><TestimonialsSection/></div>

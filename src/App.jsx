@@ -35,6 +35,14 @@ import Users from "./admin/pages/Users";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import LatestArticlesDetails from "./Home/LatestArticlesDetails";
+import SoloTravel from "./TravelGuidePages/SoloTravel";
+import BestPlace from "./TravelGuidePages/BestPlace";
+import HoneymoonDestination from "./TravelGuidePages/HoneymoonDestination";
+import MonsoonTravel from "./TravelGuidePages/MonsoonTravel";
+import BudgetTravel from "./TravelGuidePages/BudgetTravel";
+import WeekendTrips from "./TravelGuidePages/WeekendTrips";
+import PackingChecklist from "./TravelGuidePages/PackingChecklist";
+import ThingsDoInGoa from "./TravelGuidePages/ThingsDoInGoa";
 
 
 const App = () => {
@@ -75,6 +83,14 @@ const App = () => {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
             <Route path="/article/:id" element={<LatestArticlesDetails />} />
+            <Route path="/solo-travel" element={<SoloTravel />} />
+            <Route path="/best-places" element={<BestPlace />} />
+            <Route path="/honeymoon-destinations" element={<HoneymoonDestination />} />
+            <Route path="/monsoon-travel" element={<MonsoonTravel />} />
+            <Route path="/budget-travel" element={<BudgetTravel />} />
+            <Route path="/weekend-trips" element={<WeekendTrips/>} />
+            <Route path="/packing-checklist" element={<PackingChecklist/>} />
+            <Route path="/things-to-do-goa" element={<ThingsDoInGoa/>} />
             {/* <Route path="admin-trips" element={<AdminTrips />} />
             <Route path="/admin/users" element={<Users />} /> */}
 

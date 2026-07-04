@@ -179,7 +179,7 @@ const Footer = () => {
       </motion.div>
 
       {/* Decorative Shimmer Animation CSS */}
-      <style jsx>{`
+      {/* <style jsx>{`
         @keyframes shimmer {
           0% { background-position: -200% center; }
           100% { background-position: 200% center; }
@@ -188,7 +188,7 @@ const Footer = () => {
           background-size: 200% auto;
           animation: shimmer 5s linear infinite;
         }
-      `}</style>
+      `}</style> */}
 
     </footer>
   );

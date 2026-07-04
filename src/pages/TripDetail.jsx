@@ -62,9 +62,9 @@ const TripDetail = () => {
     <div className="min-h-screen bg-[#fcfcfd] pb-20">
       {/* STICKY TOP NAV */}
       <nav className="fixed top-0 inset-x-0 h-20 bg-white/80 backdrop-blur-md z-50 border-b border-slate-100 flex items-center px-6 md:px-12 justify-between">
-        <Link to="/dashboard" className="p-3 rounded-full hover:bg-slate-100 transition-colors text-slate-600">
+        {/* <Link to="/dashboard" className="p-3 rounded-full hover:bg-slate-100 transition-colors text-slate-600">
           <ArrowLeft size={24} />
-        </Link>
+        </Link> */}
         <div className="text-center">
           <p className="text-[10px] font-black uppercase tracking-widest text-blue-600">Travel Journal</p>
           <h1 className="text-slate-900 font-bold truncate max-w-[200px] md:max-w-none">{title}</h1>
