@@ -2,6 +2,141 @@ import React from "react";
 import { Calendar, Clock, User, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
+const articles = [
+  {
+    id: 1,
+    title: "10 Hidden Places in Manali That Most Tourists Miss",
+    category: "Adventure",
+    date: "June 25, 2026",
+    readTime: "6 min read",
+    image:
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&auto=format&fit=crop&q=80",
+
+    author: "ApniJourney Team",
+
+    content: [
+      {
+        type: "paragraph",
+        text: "Manali is full of famous tourist attractions, but beyond Solang Valley and Mall Road lie many hidden gems waiting to be explored. These peaceful places offer breathtaking landscapes and a unique experience away from the crowds."
+      },
+      {
+        type: "heading",
+        text: "Top Hidden Places"
+      },
+      {
+        type: "list",
+        items: [
+          "Hampta Village",
+          "Sethan Valley",
+          "Lama Dugh Trek",
+          "Jana Waterfall",
+          "Nehru Kund"
+        ]
+      }
+    ]
+  },
+
+  {
+    id: 2,
+    title: "Complete Goa Budget Guide for 2026 Travelers",
+    category: "Travel Guide",
+    date: "June 20, 2026",
+    readTime: "8 min read",
+    image:
+      "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1200&auto=format&fit=crop&q=80",
+
+    author: "ApniJourney Team",
+
+    content: [
+      {
+        type: "paragraph",
+        text: "Goa can be enjoyed on almost any budget. Whether you're a backpacker or a luxury traveler, planning your expenses wisely helps you enjoy more while spending less."
+      },
+      {
+        type: "heading",
+        text: "Average Budget"
+      },
+      {
+        type: "list",
+        items: [
+          "Hostel: ₹600-1200/night",
+          "Hotel: ₹2000-5000/night",
+          "Food: ₹500/day",
+          "Bike Rent: ₹400-700/day",
+          "Water Sports: ₹1000-3000"
+        ]
+      }
+    ]
+  },
+
+  {
+    id: 3,
+    title: "Top 15 Cafes in Himachal With Stunning Views",
+    category: "Food & Cafe",
+    date: "June 18, 2026",
+    readTime: "5 min read",
+    image:
+      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop&q=80",
+
+    author: "ApniJourney Team",
+
+    content: [
+      {
+        type: "paragraph",
+        text: "Himachal is home to some of India's most scenic mountain cafés where delicious food meets breathtaking Himalayan views."
+      },
+      {
+        type: "heading",
+        text: "Must Visit Cafes"
+      },
+      {
+        type: "list",
+        items: [
+          "Cafe 1947",
+          "Johnson's Cafe",
+          "The Lazy Dog",
+          "Drifter's Cafe",
+          "Moon Dance Cafe"
+        ]
+      }
+    ]
+  },
+
+  {
+    id: 4,
+    title: "Best Time to Visit Kashmir: Month-by-Month Guide",
+    category: "Planning",
+    date: "June 15, 2026",
+    readTime: "7 min read",
+    image:
+      "https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=1200&auto=format&fit=crop&q=80",
+
+    author: "ApniJourney Team",
+
+    content: [
+      {
+        type: "paragraph",
+        text: "Every season in Kashmir has its own charm. Spring brings flowers, summer offers pleasant weather, autumn paints the valleys golden, and winter transforms everything into a snowy paradise."
+      },
+      {
+        type: "heading",
+        text: "Season Guide"
+      },
+      {
+        type: "list",
+        items: [
+          "March-May : Tulip Season",
+          "June-August : Pleasant Weather",
+          "September-November : Autumn",
+          "December-February : Snowfall"
+        ]
+      }
+    ]
+  }
+];
+
+export default articles;
+
 const LatestArticlesDetails = () => {
   return (
     <section className="min-h-screen bg-gray-50 py-16">
