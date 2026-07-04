@@ -34,6 +34,7 @@ import AdminTrips from "./admin/pages/AdminTrips";
 import Users from "./admin/pages/Users";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import LatestArticlesDetails from "./Home/LatestArticlesDetails";
 
 
 const App = () => {
@@ -73,6 +74,7 @@ const App = () => {
             <Route path="/verify" element={<VerifyOTP />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/article/:id" element={<LatestArticlesDetails />} />
             {/* <Route path="admin-trips" element={<AdminTrips />} />
             <Route path="/admin/users" element={<Users />} /> */}
 

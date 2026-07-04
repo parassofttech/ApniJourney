@@ -67,7 +67,7 @@ const destinationsData = [
     category: "Spiritual",
     location: "Uttarakhand, India",
     description: "The yoga capital of the world — perfect for meditation, rafting, and spiritual rejuvenation.",
-    image: "https://rishikeshdaytour.com/blog/wp-content/uploads/2019/03/Rishikesh-Uttarakhand-India.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhUEJYMzJ3a4Y74HPHE5fHcKK58Z6ZMJl8vDlE2UXwA4Up5gLrLSMZVB8&s=10",
     rating: 4.7
   },
   {
@@ -427,7 +427,7 @@ const destinationsData = [
     category: "Nature",
     location: "Kerala, India",
     description: "Famous for backwaters, houseboats, and tranquil lagoons.",
-    image: "https://media4.thrillophilia.com/images/photos/000/012/900/original/1551428022_alleppeyPlaces_feature.png",
+    image: "https://deih43ym53wif.cloudfront.net/large_alleppey-kerala-india-shutterstock_1154918653_25793b1171.jpeg",
     rating: 4.9
   },
   {
