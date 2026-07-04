@@ -61,128 +61,128 @@ const Kanyakumari = () => {
           </section>
 
           {/* Introduction Section: Kanyakumari */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-indigo-600 selection:text-white">
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-indigo-600 selection:text-white">
 
-  {/* Advanced Radial Background Glows (Ocean Confluence & Sunrise Crimson Theme) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 left-10 w-96 h-96 bg-indigo-500/10 blur-[130px] rounded-full"></div>
-    <div className="absolute bottom-10 right-10 w-96 h-96 bg-rose-500/10 blur-[120px] rounded-full"></div>
-  </div>
+            {/* Advanced Radial Background Glows (Ocean Confluence & Sunrise Crimson Theme) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 left-10 w-96 h-96 bg-indigo-500/10 blur-[130px] rounded-full"></div>
+              <div className="absolute bottom-10 right-10 w-96 h-96 bg-rose-500/10 blur-[120px] rounded-full"></div>
+            </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-16">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-50 to-rose-50 border border-indigo-100 text-indigo-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      <span>⚓</span> Geographical Spotlight
-    </div>
-    <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-indigo-950 to-gray-950">
-      Discover Kanyakumari
-    </h2>
-    <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
-      The Land's End—a spectacular, wind-swept coastal frontier where three mighty oceans merge, and sacred rock memorials guard India's southernmost tip.
-    </p>
-  </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-50 to-rose-50 border border-indigo-100 text-indigo-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                <span>⚓</span> Geographical Spotlight
+              </div>
+              <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-indigo-950 to-gray-950">
+                Discover Kanyakumari
+              </h2>
+              <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+                The Land's End—a spectacular, wind-swept coastal frontier where three mighty oceans merge, and sacred rock memorials guard India's southernmost tip.
+              </p>
+            </div>
 
-  {/* Main Layout Container */}
-  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-    
-    {/* Left Column: Premium Introduction (Glass Card) */}
-    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-indigo-950/5 rounded-3xl p-8 sticky top-6">
-      <div className="text-4xl mb-4">🌊</div>
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        Where Three Ocean Currents Interlock
-      </h3>
-      <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
-        Kanyakumari, formerly known as Cape Comorin, stands proudly at the absolute southernmost point of mainland India in Tamil Nadu. It is a geographically magical destination where the Arabian Sea, the Bay of Bengal, and the vast Indian Ocean meet in a dramatic, multi-hued watery convergence known as the *Triveni Sangam*.
-      </p>
-      <p className="text-gray-600 leading-relaxed text-[15.5px]">
-        Steeped in spiritual lore and dedicated to the virgin goddess Kanya Kumari, this rugged coastline is globally unique: it is one of the rare places on Earth where you can watch the <span className="font-semibold">sun rise and set from the exact same beach</span>, especially breathtaking during full moon nights.
-      </p>
-      
-      {/* Quick Stats Banner inside Left Card */}
-      <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
-        <div className="bg-indigo-50/50 p-3 rounded-2xl">
-          <p className="text-2xl font-black text-indigo-600">3 Seas</p>
-          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Triveni Sangam</p>
-        </div>
-        <div className="bg-rose-50/50 p-3 rounded-2xl">
-          <p className="text-2xl font-black text-rose-600">133 ft</p>
-          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Thiruvalluvar Statue</p>
-        </div>
-      </div>
-    </div>
+            {/* Main Layout Container */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
-    {/* Right Column: Dynamic Feature Grid */}
-    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
-      
-      {/* Card 1: Vivekananda Rock Memorial */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-indigo-300 shadow-md hover:shadow-xl hover:shadow-indigo-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center text-xl font-bold text-indigo-600 mb-5 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
-          🪨
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-indigo-700 transition-colors duration-200">
-          Vivekananda Rock Memorial
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Take a brief, thrilling ferry ride to the offshore structural monument where Swami Vivekananda meditated in 1892. The architectural design seamlessly reflects distinct stone carving styles from across India.
-        </p>
-      </div>
+              {/* Left Column: Premium Introduction (Glass Card) */}
+              <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-indigo-950/5 rounded-3xl p-8 sticky top-6">
+                <div className="text-4xl mb-4">🌊</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Where Three Ocean Currents Interlock
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+                  Kanyakumari, formerly known as Cape Comorin, stands proudly at the absolute southernmost point of mainland India in Tamil Nadu. It is a geographically magical destination where the Arabian Sea, the Bay of Bengal, and the vast Indian Ocean meet in a dramatic, multi-hued watery convergence known as the *Triveni Sangam*.
+                </p>
+                <p className="text-gray-600 leading-relaxed text-[15.5px]">
+                  Steeped in spiritual lore and dedicated to the virgin goddess Kanya Kumari, this rugged coastline is globally unique: it is one of the rare places on Earth where you can watch the <span className="font-semibold">sun rise and set from the exact same beach</span>, especially breathtaking during full moon nights.
+                </p>
 
-      {/* Card 2: Thiruvalluvar Statue */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-md hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center text-xl font-bold text-rose-600 mb-5 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
-          🗿
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
-          The Colossal Stone Icon
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Gaze at the massive 133-foot-tall stone sculpture of the legendary Tamil poet and philosopher Thiruvalluvar. The monument's precise height symbolically honors the 133 chapters of his timeless work, the *Tirukkural*.
-        </p>
-      </div>
+                {/* Quick Stats Banner inside Left Card */}
+                <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
+                  <div className="bg-indigo-50/50 p-3 rounded-2xl">
+                    <p className="text-2xl font-black text-indigo-600">3 Seas</p>
+                    <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Triveni Sangam</p>
+                  </div>
+                  <div className="bg-rose-50/50 p-3 rounded-2xl">
+                    <p className="text-2xl font-black text-rose-600">133 ft</p>
+                    <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Thiruvalluvar Statue</p>
+                  </div>
+                </div>
+              </div>
 
-      {/* Card 3: Kanyakumari Amman Temple */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
-          🛕
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          The 3,000-Year-Old Shrine
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Visit the ancient sea-facing temple dedicated to Goddess Bhagavathi. It is famous for the deity's striking diamond nose ring, which historical accounts claim gleamed so brightly that ships mistook it for a lighthouse.
-        </p>
-      </div>
+              {/* Right Column: Dynamic Feature Grid */}
+              <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-      {/* Card 4: Multi-Reflective Sunsets & Sands */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-md hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-sky-50 flex items-center justify-center text-xl font-bold text-sky-600 mb-5 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300">
-          🌅
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
-          Celestial Horizon Displays
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Stroll along the rocky shores to witness the sky turn brilliant shades of crimson and violet. Walk past unique stretches of beach where mineral-rich geological forces have left patches of multi-colored volcanic sand.
-        </p>
-      </div>
+                {/* Card 1: Vivekananda Rock Memorial */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-indigo-300 shadow-md hover:shadow-xl hover:shadow-indigo-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center text-xl font-bold text-indigo-600 mb-5 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                    🪨
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-indigo-700 transition-colors duration-200">
+                    Vivekananda Rock Memorial
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Take a brief, thrilling ferry ride to the offshore structural monument where Swami Vivekananda meditated in 1892. The architectural design seamlessly reflects distinct stone carving styles from across India.
+                  </p>
+                </div>
 
-    </div>
-  </div>
+                {/* Card 2: Thiruvalluvar Statue */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-md hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center text-xl font-bold text-rose-600 mb-5 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
+                    🗿
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+                    The Colossal Stone Icon
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Gaze at the massive 133-foot-tall stone sculpture of the legendary Tamil poet and philosopher Thiruvalluvar. The monument's precise height symbolically honors the 133 chapters of his timeless work, the *Tirukkural*.
+                  </p>
+                </div>
 
-  {/* Bottom Premium Sticky Note */}
-  <div className="mt-12 bg-gradient-to-r from-indigo-950 via-slate-900 to-rose-950 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
-    <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
-    <div className="relative z-10 max-w-3xl">
-      <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
-      <p className="text-indigo-100 mt-2 text-sm md:text-base leading-relaxed opacity-90">
-        In short, Kanyakumari is a deeply poetic geographic finale. It beautifully balances the immense power of overlapping marine currents with legendary rock-cut monuments and serene maritime rituals, making it a powerful spiritual and visual anchor for travelers tracking the layout of the Indian subcontinent.
-      </p>
-    </div>
-  </div>
+                {/* Card 3: Kanyakumari Amman Temple */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+                    🛕
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    The 3,000-Year-Old Shrine
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Visit the ancient sea-facing temple dedicated to Goddess Bhagavathi. It is famous for the deity's striking diamond nose ring, which historical accounts claim gleamed so brightly that ships mistook it for a lighthouse.
+                  </p>
+                </div>
 
-</section>
+                {/* Card 4: Multi-Reflective Sunsets & Sands */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-md hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-sky-50 flex items-center justify-center text-xl font-bold text-sky-600 mb-5 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300">
+                    🌅
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
+                    Celestial Horizon Displays
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Stroll along the rocky shores to witness the sky turn brilliant shades of crimson and violet. Walk past unique stretches of beach where mineral-rich geological forces have left patches of multi-colored volcanic sand.
+                  </p>
+                </div>
 
-          
+              </div>
+            </div>
+
+            {/* Bottom Premium Sticky Note */}
+            <div className="mt-12 bg-gradient-to-r from-indigo-950 via-slate-900 to-rose-950 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
+              <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+              <div className="relative z-10 max-w-3xl">
+                <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
+                <p className="text-indigo-100 mt-2 text-sm md:text-base leading-relaxed opacity-90">
+                  In short, Kanyakumari is a deeply poetic geographic finale. It beautifully balances the immense power of overlapping marine currents with legendary rock-cut monuments and serene maritime rituals, making it a powerful spiritual and visual anchor for travelers tracking the layout of the Indian subcontinent.
+                </p>
+              </div>
+            </div>
+
+          </section>
+
+
 
           {/* GALLERY */}
           <section className="mb-28">
@@ -198,7 +198,7 @@ const Kanyakumari = () => {
                 "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcReJ63QdDNHnjVFn_-D16UJsxVE-gD2Ij1QZHMqMbeKWW8w5mSpxefpxY167dxNv-USDSaVe5O_WYKwkMKStDkkF9S3&s=19",
                 "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepTW4H7HbgD5p3POjayx0zx9wi_t6cfyYUMyCNJXaNTTqCYzrRhYxtMqyRHmtWnuwz-IvBDyAubJ83TjYAtSpgypW0jUJXM0AIL9vIuMwTK0BuT3Rx-Y6HHSbYhKMHrhuqs6OU3=w675-h390-n-k-no",
                 "https://lh3.googleusercontent.com/gps-cs-s/AHVAwer0d_Pu-s9xJ4d8JsBgTAiVMG8oQhBp-o0tmP8DANRuCia65Mne1wgENiUcxP1HabrF8_giEhxW4sS6YEmmoll_8Fa1GIzs-0_JNwzJe1GDpXMUWJGZfsm8WuoM_IPBtbLj9o0H=w675-h390-n-k-no",
-              
+
               ].map((img, i) => (
                 <motion.img
                   key={i}
@@ -224,268 +224,557 @@ const Kanyakumari = () => {
           </section>
 
           {/* Best Time to Visit */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-indigo-500 selection:text-white">
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-indigo-500 selection:text-white">
 
-  {/* Advanced Radial Background Glows (Three-Seas Union & Sunset Horizon Theme) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-indigo-400/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
-  </div>
+            {/* Advanced Radial Background Glows (Three-Seas Union & Sunset Horizon Theme) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-indigo-400/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+            </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-16">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-50 to-amber-50 border border-indigo-100 text-indigo-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      🌊 Weather & Planning
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-indigo-950 to-gray-950">
-      Best Time to Visit Kanyakumari
-    </h2>
-    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
-      Plan your premium coastal pilgrimage to India's absolute southern edge aligned with refreshing sea breezes, crystal clear horizons, and cosmic full-moon vistas.
-    </p>
-  </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-50 to-amber-50 border border-indigo-100 text-indigo-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🌊 Weather & Planning
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-indigo-950 to-gray-950">
+                Best Time to Visit Kanyakumari
+              </h2>
+              <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+                Plan your premium coastal pilgrimage to India's absolute southern edge aligned with refreshing sea breezes, crystal clear horizons, and cosmic full-moon vistas.
+              </p>
+            </div>
 
-  {/* Main Interactive Grid Layout */}
-  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-    
-    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
-    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-indigo-950/5 rounded-3xl p-8 flex flex-col justify-between">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl font-bold mb-6 border border-indigo-100">
-          🌅
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
-          The Peninsula Climate Windows
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
-          Kanyakumari hosts its most breathtaking coastal horizons and comfortable weather from <span className="font-bold text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded-md">October to March</span>. Because it is surrounded by vast oceans on three sides, the tropical humidity drops significantly during winters, maintaining highly pleasant daytime temperatures between 22°C and 32°C.
-        </p>
-        <p className="text-gray-600 leading-relaxed text-[15.5px]">
-          During this clear-sky block, taking the ferry cruise to the majestic <span className="font-semibold text-gray-900">Vivekananda Rock Memorial</span>, exploring the historic corridors of Padmanabhapuram Palace, or witnessing the simultaneous sunrise and sunset loops feels absolutely magical.
-        </p>
-      </div>
+            {/* Main Interactive Grid Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
-      {/* Pro Tip Alert Section */}
-      <div className="mt-8 p-4 bg-gradient-to-r from-indigo-50 to-amber-50 rounded-2xl border border-indigo-100/50 flex gap-3 items-start">
-        <span className="text-lg mt-0.5">🌕</span>
-        <p className="text-xs md:text-sm text-indigo-900 font-medium leading-relaxed">
-          <strong className="text-indigo-950">Pro Tip:</strong> Want to catch a globally unique celestial marvel? Target the <strong className="text-amber-950">Chitra Purnima</strong> full moon day around <strong className="text-indigo-950">April/May</strong>. On this precise evening, you can stand on the beach and witness the giant moon rising out of the Bay of Bengal at the exact same moment the sun sets into the Arabian Sea.
-        </p>
-      </div>
-    </div>
+              {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+              <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-indigo-950/5 rounded-3xl p-8 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl font-bold mb-6 border border-indigo-100">
+                    🌅
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                    The Peninsula Climate Windows
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+                    Kanyakumari hosts its most breathtaking coastal horizons and comfortable weather from <span className="font-bold text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded-md">October to March</span>. Because it is surrounded by vast oceans on three sides, the tropical humidity drops significantly during winters, maintaining highly pleasant daytime temperatures between 22°C and 32°C.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed text-[15.5px]">
+                    During this clear-sky block, taking the ferry cruise to the majestic <span className="font-semibold text-gray-900">Vivekananda Rock Memorial</span>, exploring the historic corridors of Padmanabhapuram Palace, or witnessing the simultaneous sunrise and sunset loops feels absolutely magical.
+                  </p>
+                </div>
 
-    {/* Right Side: Seasonal Breakdown Matrix */}
-    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
-      
-      {/* Season 1: Crisp Oceanic Winters */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-indigo-300 shadow-sm hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-indigo-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            ☀️
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-indigo-700 transition-colors duration-200">
-              Breezy Winter Horizons (October – March)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              The absolute peak travel window. Skies are completely clear, sea conditions remain highly stable for ferry rides, and the cooler winds make coastal sightseeing exceptionally relaxing.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-indigo-100/70 text-indigo-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Peak Window
-        </span>
-      </div>
+                {/* Pro Tip Alert Section */}
+                <div className="mt-8 p-4 bg-gradient-to-r from-indigo-50 to-amber-50 rounded-2xl border border-indigo-100/50 flex gap-3 items-start">
+                  <span className="text-lg mt-0.5">🌕</span>
+                  <p className="text-xs md:text-sm text-indigo-900 font-medium leading-relaxed">
+                    <strong className="text-indigo-950">Pro Tip:</strong> Want to catch a globally unique celestial marvel? Target the <strong className="text-amber-950">Chitra Purnima</strong> full moon day around <strong className="text-indigo-950">April/May</strong>. On this precise evening, you can stand on the beach and witness the giant moon rising out of the Bay of Bengal at the exact same moment the sun sets into the Arabian Sea.
+                  </p>
+                </div>
+              </div>
 
-      {/* Season 2: Tropical Summer Sunsets */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            ⛱️
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
-              Warm Maritime Summers (April – May)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              Temperatures stay moderate near 35°C, but coastal humidity levels climb sharply. It is a fantastic low-volume window for budget travelers who want to enjoy uncrowded beach spaces.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Low Volume
-        </span>
-      </div>
+              {/* Right Side: Seasonal Breakdown Matrix */}
+              <div className="lg:col-span-7 flex flex-col justify-between gap-6">
 
-      {/* Season 3: Dual Monsoon Waves */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-blue-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            🌧️
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-200">
-              Dramatic Dual Monsoons (June – September)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              Kanyakumari receives rains from both Southwest and Northeast monsoons. The roaring ocean waves are intensely rough, and ferry operations to the rock memorials are frequently suspended for safety.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Rough Seas
-        </span>
-      </div>
+                {/* Season 1: Crisp Oceanic Winters */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-indigo-300 shadow-sm hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-indigo-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      ☀️
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-indigo-700 transition-colors duration-200">
+                        Breezy Winter Horizons (October – March)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        The absolute peak travel window. Skies are completely clear, sea conditions remain highly stable for ferry rides, and the cooler winds make coastal sightseeing exceptionally relaxing.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-indigo-100/70 text-indigo-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Peak Window
+                  </span>
+                </div>
 
-    </div>
-  </div>
+                {/* Season 2: Tropical Summer Sunsets */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      ⛱️
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
+                        Warm Maritime Summers (April – May)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        Temperatures stay moderate near 35°C, but coastal humidity levels climb sharply. It is a fantastic low-volume window for budget travelers who want to enjoy uncrowded beach spaces.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Low Volume
+                  </span>
+                </div>
 
-</section>
+                {/* Season 3: Dual Monsoon Waves */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-blue-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      🌧️
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-200">
+                        Dramatic Dual Monsoons (June – September)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        Kanyakumari receives rains from both Southwest and Northeast monsoons. The roaring ocean waves are intensely rough, and ferry operations to the rock memorials are frequently suspended for safety.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Rough Seas
+                  </span>
+                </div>
 
-{/* Coastal Retreats & Horizon Views Section */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-blue-600 selection:text-white">
-  
-  {/* Coastal Background Glows (Ocean Blue & Sunrise Amber) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-blue-500/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
-  </div>
+              </div>
+            </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-14">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-amber-50 border border-blue-100 text-blue-900 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      🌊 The Confluence of Three Oceans
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-blue-950 to-gray-950">
-      Ocean-View Retreats & Sunrise Sanctuaries
-    </h2>
-    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
-      Experience the edge of the Indian peninsula. From luxury suites overlooking the confluence of the Bay of Bengal, Arabian Sea, and Indian Ocean, to peaceful seaside ashrams.
-    </p>
-  </div>
+          </section>
 
-  {/* Advanced Bento Grid Layout */}
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+          {/* Coastal Retreats & Horizon Views Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-blue-600 selection:text-white">
 
-    {/* Card 1: Ocean-Front Luxury Suites (Featured) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            🌅
-          </div>
-          <span className="text-xs font-bold bg-blue-100/60 text-blue-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            Horizon View Tier
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-800 transition-colors duration-200">
-          Ocean-Front Horizon Suites
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Wake up to the sound of three oceans. These luxury suites feature floor-to-ceiling glass walls oriented towards the Vivekananda Rock Memorial, perfect for viewing the sunrise over the vast expanse of water.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-blue-700 tracking-wider uppercase">
-        Panaromic Sunrise Decks & Vivekananda Rock Views
-      </div>
-    </div>
+            {/* Coastal Background Glows (Ocean Blue & Sunrise Amber) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-blue-500/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
+            </div>
 
-    {/* Card 2: Coastal Heritage Stays */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🌴
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          Coastal Heritage Havelis
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Traditional architectural brilliance by the coast. These havelis offer an authentic South Indian experience, with lush gardens and proximity to the historic Kanyakumari temple.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        Authentic Traditional Architecture & Temple Access
-      </div>
-    </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-amber-50 border border-blue-100 text-blue-900 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🌊 The Confluence of Three Oceans
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-blue-950 to-gray-950">
+                Ocean-View Retreats & Sunrise Sanctuaries
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+                Experience the edge of the Indian peninsula. From luxury suites overlooking the confluence of the Bay of Bengal, Arabian Sea, and Indian Ocean, to peaceful seaside ashrams.
+              </p>
+            </div>
 
-    {/* Card 3: Serene Meditation Ashrams */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🧘
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
-          Sea-Breeze Meditation Ashrams
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          For those seeking absolute quiet. Located away from the main tourist trail, these ashrams offer guided meditation sessions, sattvic meals, and long contemplative walks along the secluded beaches.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
-        Meditation Workshops & Secluded Beach Walks
-      </div>
-    </div>
+            {/* Advanced Bento Grid Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
 
-    {/* Card 4: Modern Travel-Hub Hotels (Featured) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            ✨
-          </div>
-          <span className="text-xs font-bold bg-blue-100/60 text-blue-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            City Central
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
-          Kanyakumari City Boutique Stays
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Perfect for travelers on the go. These suites provide excellent connectivity to the ferry terminal, local transport hubs, and curated day-trips to the nearby Padmanabhapuram Palace.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        Ferry Terminal Logistics & Palace Trip Coordination
-      </div>
-    </div>
+              {/* Card 1: Ocean-Front Luxury Suites (Featured) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🌅
+                    </div>
+                    <span className="text-xs font-bold bg-blue-100/60 text-blue-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Horizon View Tier
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-800 transition-colors duration-200">
+                    Ocean-Front Horizon Suites
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Wake up to the sound of three oceans. These luxury suites feature floor-to-ceiling glass walls oriented towards the Vivekananda Rock Memorial, perfect for viewing the sunrise over the vast expanse of water.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-blue-700 tracking-wider uppercase">
+                  Panaromic Sunrise Decks & Vivekananda Rock Views
+                </div>
+              </div>
 
-    {/* Card 5: Eco-Beach Glamping */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          ⛺
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
-          Eco-Beach Glamping Camps
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          For the beach lover. These eco-friendly glamping setups provide a direct sand-to-room experience, perfect for coastal stargazing and early morning seashell hunts.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
-        Beach-Side Stargazing & Early Morning Shell Hunts
-      </div>
-    </div>
+              {/* Card 2: Coastal Heritage Stays */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🌴
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Coastal Heritage Havelis
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Traditional architectural brilliance by the coast. These havelis offer an authentic South Indian experience, with lush gardens and proximity to the historic Kanyakumari temple.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Authentic Traditional Architecture & Temple Access
+                </div>
+              </div>
 
-  </div>
-</section>
+              {/* Card 3: Serene Meditation Ashrams */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🧘
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+                    Sea-Breeze Meditation Ashrams
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    For those seeking absolute quiet. Located away from the main tourist trail, these ashrams offer guided meditation sessions, sattvic meals, and long contemplative walks along the secluded beaches.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+                  Meditation Workshops & Secluded Beach Walks
+                </div>
+              </div>
 
-{/* Culinary Section */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-blue-600 selection:text-white">
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full"></div>
-  </div>
+              {/* Card 4: Modern Travel-Hub Hotels (Featured) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      ✨
+                    </div>
+                    <span className="text-xs font-bold bg-blue-100/60 text-blue-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      City Central
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+                    Kanyakumari City Boutique Stays
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Perfect for travelers on the go. These suites provide excellent connectivity to the ferry terminal, local transport hubs, and curated day-trips to the nearby Padmanabhapuram Palace.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Ferry Terminal Logistics & Palace Trip Coordination
+                </div>
+              </div>
 
-  <div className="text-center mb-14">
-    <h2 className="text-4xl font-black text-gray-950">Coastal South Indian Flavors</h2>
-    <p className="text-gray-600 mt-3 text-lg">Fresh catch seafood, traditional Sadya (feast on banana leaf), and spicy filter coffee.</p>
-  </div>
-  
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-     {/* Culinary Cards here... */}
-  </div>
-</section>
+              {/* Card 5: Eco-Beach Glamping */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-500/30 shadow-lg hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    ⛺
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+                    Eco-Beach Glamping Camps
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    For the beach lover. These eco-friendly glamping setups provide a direct sand-to-room experience, perfect for coastal stargazing and early morning seashell hunts.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+                  Beach-Side Stargazing & Early Morning Shell Hunts
+                </div>
+              </div>
 
+            </div>
+          </section>
+
+          {/* Culinary Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-blue-600 selection:text-white">
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full"></div>
+            </div>
+
+            <div className="text-center mb-14">
+              <h2 className="text-4xl font-black text-gray-950">Coastal South Indian Flavors</h2>
+              <p className="text-gray-600 mt-3 text-lg">Fresh catch seafood, traditional Sadya (feast on banana leaf), and spicy filter coffee.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Culinary Cards here... */}
+            </div>
+          </section>
+
+          {/* Budget Breakdown Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+
+            {/* Cyber-Atmospheric Background Glows */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-emerald-400/10 to-teal-400/10 blur-[140px] rounded-full"></div>
+            </div>
+
+            {/* Header Block */}
+            <div className="text-center mb-16">
+              <span className="inline-flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-md">
+                🌊 The Southern Tip
+              </span>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900">
+                Budget Breakdown for Kanyakumari
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+                Experience the unique confluence of three oceans at the southernmost point of mainland India.
+              </p>
+            </div>
+
+            {/* Premium Tier Matrix */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+              {/* Card 1: Budget Traveler */}
+              <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-emerald-400/60 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold border border-emerald-100 shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                      🌅
+                    </div>
+                    <span className="text-[10px] font-black tracking-widest uppercase bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md">
+                      Coastline Tier
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Beachside Backpacker
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Best for budget guesthouses, local South Indian eateries, and public ferries to the Vivekananda Rock.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏠 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹800 – ₹1.5k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹300 – ₹600</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">⛴️ Ferry</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹50 – ₹100</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-emerald-600 tracking-tight">
+                    ₹1.2k – ₹2.2k <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2: Mid Range */}
+              <div className="group bg-white border-2 border-emerald-500 hover:border-emerald-400 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 relative ring-8 ring-emerald-500/5">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-black text-[10px] tracking-widest uppercase px-4 py-1 rounded-full shadow-md">
+                  Recommended
+                </div>
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold border border-emerald-100 shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                      ✨
+                    </div>
+                    <span className="text-[10px] tracking-widest uppercase bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-bold">
+                      Ocean View
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Coastal Voyager
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Standard sea-view hotels, authentic multi-cuisine dining, and local auto-rickshaw hire for sightseeing.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹2.5k – ₹4.5k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Meals</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹1k – ₹2k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🛺 Auto</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹500 – ₹1k</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-emerald-600 tracking-tight">
+                    ₹4k – ₹7.5k <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3: Luxury */}
+              <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-teal-400/60 shadow-md hover:shadow-xl hover:shadow-teal-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg font-bold border border-teal-100 shadow-sm group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                      👑
+                    </div>
+                    <span className="text-[10px] tracking-widest uppercase bg-teal-50 text-teal-700 px-2.5 py-1 rounded-md font-bold">
+                      Luxury Stay
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Horizon Retreat
+                  </h3>
+                  <p className="text-gray-600 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Premium beach resorts, fine-dine coastal seafood, and private taxis for hassle-free exploration.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹8k – ₹15k+</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Fine</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹2k – ₹4k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚗 Priv.</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹3k – ₹5k</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-teal-600 tracking-tight">
+                    ₹13k – ₹24k+ <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-14 text-center">
+              <div className="inline-flex items-center gap-3.5 bg-gradient-to-r from-emerald-500/10 via-teal-500/5 to-transparent border border-emerald-500/20 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-emerald-950 font-semibold text-sm md:text-[15px] leading-relaxed">
+                  <strong className="text-emerald-800 font-black">Pro Tip:</strong> Kanyakumari is famous for its stunning sunrise and sunset. Reach the Vivekananda Rock Memorial early to secure a ferry ticket and enjoy the panoramic views.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Shopping Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-500 selection:text-white">
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-400/15 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-teal-400/15 blur-[120px] rounded-full"></div>
+            </div>
+
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-100 text-emerald-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🐚 Seaside Finds
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+                Shopping by the Shore
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+                Take home souvenirs from the ocean's edge, featuring unique conch shells, palm-leaf crafts, and traditional textiles.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🐚
+                    </div>
+                    <span className="text-xs font-bold bg-emerald-100/60 text-emerald-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Oceanic Treasures
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+                    Shell Artifacts
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Explore a stunning variety of <span className="font-semibold text-gray-900">ornate conch shells, pearl jewelry, and shell-crafted home decor</span> that capture the essence of the coast.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+                  Marine Souvenirs
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🌴
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Palm-Leaf Crafts
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Support local artisans by choosing <span className="font-semibold text-gray-900">intricately woven palm-leaf baskets, mats, and small wall hangings</span>.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Sustainable Crafts
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🧵
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+                    Textiles
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Discover colorful <span className="font-semibold text-gray-900">cotton garments and traditional weaves</span> that reflect the vibrant cultural spirit of Tamil Nadu.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+                  Traditional Apparel
+                </div>
+              </div>
+
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      ☕
+                    </div>
+                    <span className="text-xs font-bold bg-rose-100/60 text-rose-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Local Produce
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
+                    Spices & Tea
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Kanyakumari's proximity to the Western Ghats offers premium <span className="font-semibold text-gray-900">spices, tea leaves, and local snacks</span> that make perfect gifts.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+                  Regional Pantry
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-300 shadow-lg hover:shadow-xl hover:shadow-purple-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🎁
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-700 transition-colors duration-200">
+                    Souvenirs
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    From <span className="font-semibold text-gray-900">miniature wooden boats to local religious artifacts</span>, bring home a piece of the southern tip.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-purple-600 tracking-wider uppercase">
+                  Memory Keepsakes
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500/10 via-teal-500/5 to-transparent border border-emerald-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-emerald-950 font-medium text-sm md:text-base leading-relaxed">
+                  <strong className="text-emerald-900 font-bold">Shopping Tip:</strong> Bargaining is common at the street-side stalls. Always compare prices between a few vendors before finalizing your purchase, especially for shell and palm-leaf items.
+                </p>
+              </div>
+            </div>
+          </section>
           {/* CTA */}
           <section className="text-center">
             <motion.button

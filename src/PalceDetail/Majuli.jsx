@@ -484,6 +484,295 @@ const Majuli = () => {
   </div>
 </section>
 
+{/* Budget Breakdown Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-indigo-500 selection:text-white">
+  
+  {/* Cyber-Atmospheric Background Glows */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-indigo-400/10 to-blue-400/10 blur-[140px] rounded-full"></div>
+  </div>
+
+  {/* Header Block */}
+  <div className="text-center mb-16">
+    <span className="inline-flex items-center gap-1.5 bg-indigo-500/10 border border-indigo-500/20 text-indigo-600 dark:text-indigo-400 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-md">
+      🌊 River Island Soul
+    </span>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900">
+      Budget Breakdown for Majuli
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Discover the world's largest river island, a haven of Neo-Vaishnavite culture and serene Brahmaputra landscapes.
+    </p>
+  </div>
+
+  {/* Premium Tier Matrix */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+    {/* Card 1: Budget Traveler */}
+    <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-indigo-400/60 shadow-md hover:shadow-xl hover:shadow-indigo-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg font-bold border border-indigo-100 shadow-sm group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+            🛶
+          </div>
+          <span className="text-[10px] font-black tracking-widest uppercase bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md">
+            Island Nomad Tier
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          River Nomad
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Focus on basic bamboo huts, local ferry crossings, and authentic village home-cooked meals.
+        </p>
+
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏠 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹500 – ₹1k</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Meals</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹300 – ₹500</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚲 Bike</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹300 – ₹500</span>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-indigo-600 tracking-tight">
+          ₹1,100 – ₹2,000 <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 2: Mid Range */}
+    <div className="group bg-white border-2 border-indigo-500 hover:border-indigo-400 shadow-xl hover:shadow-2xl hover:shadow-indigo-500/10 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 relative ring-8 ring-indigo-500/5">
+      <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-black text-[10px] tracking-widest uppercase px-4 py-1 rounded-full shadow-md">
+        Recommended
+      </div>
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg font-bold border border-indigo-100 shadow-sm group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+            ✨
+          </div>
+          <span className="text-[10px] tracking-widest uppercase bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-md font-bold">
+            Balanced
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Cultural Explorer
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Best for eco-lodges, private hired cars for sightseeing, and guided Satra tours.
+        </p>
+
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹2.5k – ₹4k</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Meals</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹800 – ₹1.5k</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚕 Cab</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹1.5k – ₹2.5k</span>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-indigo-600 tracking-tight">
+          ₹4,800 – ₹8,000 <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 3: Luxury */}
+    <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-blue-400/60 shadow-md hover:shadow-xl hover:shadow-blue-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg font-bold border border-blue-100 shadow-sm group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+            👑
+          </div>
+          <span className="text-[10px] tracking-widest uppercase bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md font-bold">
+            Elite Comfort
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Island Retreat
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Premium river-front cottages, private boat tours, and specialized cultural workshops.
+        </p>
+
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹6k – ₹10k+</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Meals</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹2k – ₹3k</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚗 Priv.</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹3k – ₹5k</span>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-blue-600 tracking-tight">
+          ₹11k – ₹18k+ <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="mt-14 text-center">
+    <div className="inline-flex items-center gap-3.5 bg-gradient-to-r from-indigo-500/10 via-blue-500/5 to-transparent border border-indigo-500/20 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-indigo-950 font-semibold text-sm md:text-[15px] leading-relaxed">
+        <strong className="text-indigo-800 font-black">Pro Tip:</strong> Ferry schedules to Majuli (from Jorhat) depend heavily on the river conditions. Always check the status locally the evening before, and carry cash as card acceptance is limited on the island.
+      </p>
+    </div>
+  </div>
+</section>
+
+{/* Shopping Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-purple-500 selection:text-white">
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-purple-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-violet-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-50 to-violet-50 border border-purple-100 text-purple-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🎭 Cultural Artistry
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-purple-950 to-gray-950">
+      Shopping in Majuli
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Discover the unique craftsmanship of the island, from traditional masks to hand-loomed textiles.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-300 shadow-lg hover:shadow-xl hover:shadow-purple-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🎭
+          </div>
+          <span className="text-xs font-bold bg-purple-100/60 text-purple-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Satra Craft
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-800 transition-colors duration-200">
+          Traditional Masks
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Explore iconic <span className="font-semibold text-gray-900">Majuli masks</span>, hand-crafted from bamboo, clay, and cloth, used in Raas Leela performances.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-purple-600 tracking-wider uppercase">
+        Artistic Heritage
+      </div>
+    </div>
+
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧣
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+          Mishing Textiles
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Buy authentic <span className="font-semibold text-gray-900">Mishing shawls and mekhelas</span>, famous for their vibrant natural dyes and complex geometric motifs.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+        Hand-loom Woven
+      </div>
+    </div>
+
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏺
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Terracotta Pottery
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Discover unique <span className="font-semibold text-gray-900">unbaked clay pottery</span>, an ancient craft style preserved by the island’s artisans.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Ancient Craft
+      </div>
+    </div>
+
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-indigo-300 shadow-lg hover:shadow-xl hover:shadow-indigo-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-xl flex items-center justify-center border border-indigo-100/70 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🧶
+          </div>
+          <span className="text-xs font-bold bg-indigo-100/60 text-indigo-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Natural Fabrics
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-indigo-800 transition-colors duration-200">
+          Organic Cotton Goods
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Find soft <span className="font-semibold text-gray-900">hand-spun organic cotton</span> products, ranging from bags to home linens, all produced locally.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-indigo-600 tracking-wider uppercase">
+        Eco-Friendly
+      </div>
+    </div>
+
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🎋
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Bamboo Artifacts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Shop for intricate <span className="font-semibold text-gray-900">bamboo-work decor</span> including pen stands, wall hangings, and decorative household items.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Cane & Bamboo
+      </div>
+    </div>
+  </div>
+
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500/10 via-indigo-500/5 to-transparent border border-purple-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-purple-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-purple-900 font-bold">Shopping Tip:</strong> For the most authentic masks and textiles, visit the workshops directly within the Satras. It provides a deeper connection to the craft and ensures artisans receive direct support.
+      </p>
+    </div>
+  </div>
+</section>
         </div>
       </motion.div>
     </div>

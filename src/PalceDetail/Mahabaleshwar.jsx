@@ -476,6 +476,295 @@ const Mahabaleshwar = () => {
   </div>
 </section>
 
+{/* Budget Breakdown Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+  
+  {/* Cyber-Atmospheric Background Glows */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-emerald-400/10 to-teal-400/10 blur-[140px] rounded-full"></div>
+  </div>
+
+  {/* Header Block */}
+  <div className="text-center mb-16">
+    <span className="inline-flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-md">
+      🍓 Hill Station Retreat
+    </span>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900">
+      Budget Breakdown for Mahabaleshwar
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Escape to the misty Sahyadri peaks, famous for its sprawling strawberry farms, colonial charm, and breathtaking viewpoints.
+    </p>
+  </div>
+
+  {/* Premium Tier Matrix */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+    {/* Card 1: Budget Traveler */}
+    <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-emerald-400/60 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold border border-emerald-100 shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+            🌿
+          </div>
+          <span className="text-[10px] font-black tracking-widest uppercase bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md">
+            Nature Tier
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Valley Backpacker
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Perfect for homestays, local Maharashtrian 'Misal Pav' breakfasts, and exploring points using local shared transport.
+        </p>
+
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏠 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹800 – ₹1.5k</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹300 – ₹600</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚌 Local</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹200 – ₹400</span>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-emerald-600 tracking-tight">
+          ₹1.3k – ₹2.5k <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 2: Mid Range */}
+    <div className="group bg-white border-2 border-emerald-500 hover:border-emerald-400 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 relative ring-8 ring-emerald-500/5">
+      <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-black text-[10px] tracking-widest uppercase px-4 py-1 rounded-full shadow-md">
+        Recommended
+      </div>
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold border border-emerald-100 shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+            ✨
+          </div>
+          <span className="text-[10px] tracking-widest uppercase bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-bold">
+            Balanced
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Mist Explorer
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Includes standard hillside resorts, cafe lunches, and dedicated taxi hiring for scenic viewpoint rounds.
+        </p>
+
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹2.5k – ₹5k</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Meals</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹1k – ₹2k</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚕 Cab</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹1k – ₹1.5k</span>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-emerald-600 tracking-tight">
+          ₹4.5k – ₹8.5k <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 3: Luxury */}
+    <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-teal-400/60 shadow-md hover:shadow-xl hover:shadow-teal-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg font-bold border border-teal-100 shadow-sm group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+            👑
+          </div>
+          <span className="text-[10px] tracking-widest uppercase bg-teal-50 text-teal-700 px-2.5 py-1 rounded-md font-bold">
+            Elite Escape
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Sahyadri Luxe
+        </h3>
+        <p className="text-gray-600 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          High-end valley view resorts, private strawberry farm tours, luxury dining, and spa treatments.
+        </p>
+
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹8k – ₹15k+</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Fine</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹3k – ₹5k</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚗 Priv.</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹3k – ₹5k</span>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-teal-600 tracking-tight">
+          ₹14k – ₹25k+ <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="mt-14 text-center">
+    <div className="inline-flex items-center gap-3.5 bg-gradient-to-r from-emerald-500/10 via-teal-500/5 to-transparent border border-emerald-500/20 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-emerald-950 font-semibold text-sm md:text-[15px] leading-relaxed">
+        <strong className="text-emerald-800 font-black">Pro Tip:</strong> Visit between November and March for fresh strawberries. If you're visiting in peak weekends, book your cab and stay weeks in advance as the roads get crowded.
+      </p>
+    </div>
+  </div>
+</section>
+
+{/* Shopping Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-purple-500 selection:text-white">
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-purple-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-100 text-emerald-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🛍️ Farm to Table
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+      Shopping in Mahabaleshwar
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Mahabaleshwar is synonymous with its strawberry heritage—bring home delicious jams, squashes, and local handicrafts.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🍓
+          </div>
+          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Berry Harvest
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+          Strawberry Products
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Nothing beats the <span className="font-semibold text-gray-900">fresh strawberry preserves, jams, crushes, and fruit-topped chikkis</span> found in every shop.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Iconic Flavors
+      </div>
+    </div>
+
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-300 shadow-lg hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🍯
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-700 transition-colors duration-200">
+          Pure Honey
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Pick up <span className="font-semibold text-gray-900">raw, organic forest honey</span> harvested from the rich biodiversity of the Sahyadri ranges.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+        Natural Nectar
+      </div>
+    </div>
+
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🌽
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+          Chikki & Fudge
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Don't forget the famous <span className="font-semibold text-gray-900">peanut chikki and buttery, mouth-watering chocolate or strawberry fudge</span>.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+        Sweet Delights
+      </div>
+    </div>
+
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-indigo-300 shadow-lg hover:shadow-xl hover:shadow-indigo-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-xl flex items-center justify-center border border-indigo-100/70 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🧶
+          </div>
+          <span className="text-xs font-bold bg-indigo-100/60 text-indigo-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Local Crafts
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-indigo-800 transition-colors duration-200">
+          Leather & Artifacts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Mahabaleshwar's market is also known for <span className="font-semibold text-gray-900">durable leather footwear (Kolhapuri chappals) and quirky local handicrafts</span>.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-indigo-600 tracking-wider uppercase">
+        Artisan Goods
+      </div>
+    </div>
+
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧴
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+          Herbal Extracts
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Explore a variety of <span className="font-semibold text-gray-900">natural essential oils, soaps, and herbal skincare products</span> extracted from local hill-grown herbs.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+        Wellness Products
+      </div>
+    </div>
+  </div>
+
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500/10 via-teal-500/5 to-transparent border border-emerald-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-emerald-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-emerald-900 font-bold">Shopping Tip:</strong> Always sample the fudge and jams before purchasing to ensure freshness. For leather goods, visit the main market area for a wider variety of styles.
+      </p>
+    </div>
+  </div>
+</section>
           {/* WHY VISIT */}
           <section className="mb-28 bg-gradient-to-r from-green-600 to-emerald-700 text-white p-4 md:p-12 rounded-3xl text-center shadow-2xl">
             <h2 className="text-4xl font-black italic mb-6">
