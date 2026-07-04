@@ -58,7 +58,7 @@ const ParkData = [
     id: 4,
     name: "Sundarbans National Park",
     state: "West Bengal",
-    image: "https://explorenationalpark.com/blog/wp-content/uploads/2023/04/Sundarbans-National-Park-Safari.webp",
+    image: "https://i0.wp.com/kaziranganationalparkassam.in/wp-content/uploads/2021/06/pexels-photo-2689436.jpeg?ssl=1",
     description:
       "Largest mangrove forest in the world and habitat of Royal Bengal Tigers.",
     establishedYear: 1984,
@@ -160,7 +160,7 @@ const ParkData = [
     id: 10,
     name: "Valley of Flowers National Park",
     state: "Uttarakhand",
-    image: "https://media.licdn.com/dms/image/C5112AQHm2PxaQZVkxg/article-cover_image-shrink_720_1280/0/1566992855900?e=2147483647&v=beta&t=vvGVWOuwxWiVFgm3EYZg-saxzgfy6C770M0mE1sicbY",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhOZrswZrPECRgtFbUjtkR9DntEzvodInk35zdKwDUBg&s=10",
     description:
       "UNESCO site known for rare alpine flowers and scenic Himalayan views.",
     establishedYear: 1982,
@@ -176,7 +176,7 @@ const ParkData = [
   id: 11,
   name: "Dudhwa National Park",
   state: "Uttar Pradesh",
-  image: "https://www.dudhwanationalpark.in/image/dudhwa-wildlife-tour1.jpg",
+  image: "https://upecotourism.in/assets/images/dudhwa-national-park/cover-7.jpg",
   description: "Known for swamp deer (Barasingha) and dense Terai forests.",
   establishedYear: 1977,
   area: "490 sq km",
