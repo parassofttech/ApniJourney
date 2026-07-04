@@ -1,6 +1,6 @@
 import React from "react";
 import { Calendar, Clock, User, ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const articles = [
   {
@@ -135,9 +135,15 @@ const articles = [
   }
 ];
 
-export default articles;
+
 
 const LatestArticlesDetails = () => {
+
+  const { id } = useParams();
+
+const article = articles.find((a) => a.id === Number(id));
+
+if (!article) return <h1>Article Not Found</h1>;
   return (
     <section className="min-h-screen bg-gray-50 py-16">
       <div className="max-w-5xl mx-auto px-6">
