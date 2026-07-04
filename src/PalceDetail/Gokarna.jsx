@@ -53,128 +53,128 @@ const Gokarna = () => {
           </motion.p>
 
           {/* Introduction Section: Gokarna */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-600 selection:text-white">
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-600 selection:text-white">
 
-  {/* Advanced Radial Background Glows (Coastal Waves & Sunset Horizon Theme) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 left-10 w-96 h-96 bg-teal-500/10 blur-[130px] rounded-full"></div>
-    <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
-  </div>
+            {/* Advanced Radial Background Glows (Coastal Waves & Sunset Horizon Theme) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 left-10 w-96 h-96 bg-teal-500/10 blur-[130px] rounded-full"></div>
+              <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
+            </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-16">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-amber-50 border border-teal-100 text-teal-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      <span>🌊</span> Coastal Spotlight
-    </div>
-    <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
-      Discover Gokarna
-    </h2>
-    <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
-      The untamed coastal sanctuary—a beautiful, cliff-skirted peninsula in Karnataka where sacred ancient temple bells echo directly over pristine, isolated hippie coves.
-    </p>
-  </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-amber-50 border border-teal-100 text-teal-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                <span>🌊</span> Coastal Spotlight
+              </div>
+              <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
+                Discover Gokarna
+              </h2>
+              <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+                The untamed coastal sanctuary—a beautiful, cliff-skirted peninsula in Karnataka where sacred ancient temple bells echo directly over pristine, isolated hippie coves.
+              </p>
+            </div>
 
-  {/* Main Layout Container */}
-  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-    
-    {/* Left Column: Premium Introduction (Glass Card) */}
-    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-teal-950/5 rounded-3xl p-8 sticky top-6">
-      <div className="text-4xl mb-4">🕉️</div>
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        Where Sacred Sands Meet Bohemian Cliffs
-      </h3>
-      <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
-        Gokarna, literally translating to "Cow's Ear" due to the unique shape formed by the ear-like confluence of two rivers, is an exceptional town of dual souls. Tucked along the rugged Arabian Sea coastline, it has long been an important pilgrimage center for high-vibrational temple rituals.
-      </p>
-      <p className="text-gray-600 leading-relaxed text-[15.5px]">
-        Yet, right across its rocky mountain headlands lie some of India's most pristine, crescent-shaped beaches. Accessible primarily via <span className="font-semibold">cliffside treks</span>, Gokarna offers a quiet, slow-paced alternative to the tourist-heavy lanes of neighboring Goa.
-      </p>
-      
-      {/* Quick Stats Banner inside Left Card */}
-      <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
-        <div className="bg-teal-50/50 p-3 rounded-2xl">
-          <p className="text-2xl font-black text-teal-600">5 Main</p>
-          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Isolated Beaches</p>
-        </div>
-        <div className="bg-amber-50/50 p-3 rounded-2xl">
-          <p className="text-2xl font-black text-amber-600">4th Cent</p>
-          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Mahabaleshwar Roots</p>
-        </div>
-      </div>
-    </div>
+            {/* Main Layout Container */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
-    {/* Right Column: Dynamic Feature Grid */}
-    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
-      
-      {/* Card 1: Mahabaleshwar Temple */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-md hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-teal-50 flex items-center justify-center text-xl font-bold text-teal-600 mb-5 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
-          🔱
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
-          The Atmalinga Sanctum
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Step into a spiritual anchor. The 4th-century classical Dravidian <span className="font-semibold">Mahabaleshwar Temple</span> houses the highly revered, legendary Shiva Atmalinga, retaining its solemn, ancient stone traditions amidst old-town bazaars.
-        </p>
-      </div>
+              {/* Left Column: Premium Introduction (Glass Card) */}
+              <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-teal-950/5 rounded-3xl p-8 sticky top-6">
+                <div className="text-4xl mb-4">🕉️</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Where Sacred Sands Meet Bohemian Cliffs
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+                  Gokarna, literally translating to "Cow's Ear" due to the unique shape formed by the ear-like confluence of two rivers, is an exceptional town of dual souls. Tucked along the rugged Arabian Sea coastline, it has long been an important pilgrimage center for high-vibrational temple rituals.
+                </p>
+                <p className="text-gray-600 leading-relaxed text-[15.5px]">
+                  Yet, right across its rocky mountain headlands lie some of India's most pristine, crescent-shaped beaches. Accessible primarily via <span className="font-semibold">cliffside treks</span>, Gokarna offers a quiet, slow-paced alternative to the tourist-heavy lanes of neighboring Goa.
+                </p>
 
-      {/* Card 2: The Iconic Om Beach */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
-          🕉️
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          The Natural Om Crescent
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Relax along a divine curve. Named because its twin semicircular sandy coves naturally trace the shape of the sacred <span className="font-semibold">"Om" symbol</span>, this beach is home to iconic beachside shacks, boating trips, and standard surf sessions.
-        </p>
-      </div>
+                {/* Quick Stats Banner inside Left Card */}
+                <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
+                  <div className="bg-teal-50/50 p-3 rounded-2xl">
+                    <p className="text-2xl font-black text-teal-600">5 Main</p>
+                    <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Isolated Beaches</p>
+                  </div>
+                  <div className="bg-amber-50/50 p-3 rounded-2xl">
+                    <p className="text-2xl font-black text-amber-600">4th Cent</p>
+                    <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Mahabaleshwar Roots</p>
+                  </div>
+                </div>
+              </div>
 
-      {/* Card 3: Cliffside Beach Trek */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-xl font-bold text-emerald-600 mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
-          🥾
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
-          The Rocky Headland Trek
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Hike from one paradise to another. Trail across spectacular, rocky mountain headlands to navigate directly between Kudle, Om, Half Moon, and the entirely secluded <span className="font-semibold">Paradise Beach</span>, offering unparalleled open ocean vistas.
-        </p>
-      </div>
+              {/* Right Column: Dynamic Feature Grid */}
+              <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-      {/* Card 4: Bohemian Sunset Culture */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-md hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center text-xl font-bold text-rose-600 mb-5 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
-          🌅
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
-          Kudle Beach Drum Circles
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Soak in the acoustic beach energy. As sunset dyes the sky crimson, join the peaceful gatherings at Kudle Beach for impromptu drum circles, yoga flows, flea market trades, and simple, authentic wood-fired pizzas.
-        </p>
-      </div>
+                {/* Card 1: Mahabaleshwar Temple */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-md hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-teal-50 flex items-center justify-center text-xl font-bold text-teal-600 mb-5 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
+                    🔱
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+                    The Atmalinga Sanctum
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Step into a spiritual anchor. The 4th-century classical Dravidian <span className="font-semibold">Mahabaleshwar Temple</span> houses the highly revered, legendary Shiva Atmalinga, retaining its solemn, ancient stone traditions amidst old-town bazaars.
+                  </p>
+                </div>
 
-    </div>
-  </div>
+                {/* Card 2: The Iconic Om Beach */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+                    🕉️
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    The Natural Om Crescent
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Relax along a divine curve. Named because its twin semicircular sandy coves naturally trace the shape of the sacred <span className="font-semibold">"Om" symbol</span>, this beach is home to iconic beachside shacks, boating trips, and standard surf sessions.
+                  </p>
+                </div>
 
-  {/* Bottom Premium Sticky Note */}
-  <div className="mt-12 bg-gradient-to-r from-teal-950 via-slate-900 to-amber-950 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
-    <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
-    <div className="relative z-10 max-w-3xl">
-      <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
-      <p className="text-teal-100 mt-2 text-sm md:text-base leading-relaxed opacity-90">
-        In short, Gokarna is a deeply unique coastal retreat. It perfectly combines the heavy, historical devotion of its classic temple roots with the entirely disconnected, wild beauty of its rocky cliff hikes, offering an unparalleled beachside escape for conscious adventurers.
-      </p>
-    </div>
-  </div>
+                {/* Card 3: Cliffside Beach Trek */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-xl font-bold text-emerald-600 mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+                    🥾
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+                    The Rocky Headland Trek
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Hike from one paradise to another. Trail across spectacular, rocky mountain headlands to navigate directly between Kudle, Om, Half Moon, and the entirely secluded <span className="font-semibold">Paradise Beach</span>, offering unparalleled open ocean vistas.
+                  </p>
+                </div>
 
-</section>
+                {/* Card 4: Bohemian Sunset Culture */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-md hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center text-xl font-bold text-rose-600 mb-5 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
+                    🌅
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+                    Kudle Beach Drum Circles
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Soak in the acoustic beach energy. As sunset dyes the sky crimson, join the peaceful gatherings at Kudle Beach for impromptu drum circles, yoga flows, flea market trades, and simple, authentic wood-fired pizzas.
+                  </p>
+                </div>
 
-          
+              </div>
+            </div>
+
+            {/* Bottom Premium Sticky Note */}
+            <div className="mt-12 bg-gradient-to-r from-teal-950 via-slate-900 to-amber-950 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
+              <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+              <div className="relative z-10 max-w-3xl">
+                <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
+                <p className="text-teal-100 mt-2 text-sm md:text-base leading-relaxed opacity-90">
+                  In short, Gokarna is a deeply unique coastal retreat. It perfectly combines the heavy, historical devotion of its classic temple roots with the entirely disconnected, wild beauty of its rocky cliff hikes, offering an unparalleled beachside escape for conscious adventurers.
+                </p>
+              </div>
+            </div>
+
+          </section>
+
+
 
           {/* Gallery */}
           <div className="mt-10">
@@ -202,387 +202,676 @@ const Gokarna = () => {
           </div>
 
           {/* Best Time to Visit */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-sky-500 selection:text-white">
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-sky-500 selection:text-white">
 
-  {/* Advanced Radial Background Glows (Coastal Horizon & Golden Beach Theme) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-sky-400/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
-  </div>
+            {/* Advanced Radial Background Glows (Coastal Horizon & Golden Beach Theme) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-sky-400/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+            </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-16">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-50 to-amber-50 border border-sky-100 text-sky-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      🌊 Weather & Planning
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-sky-950 to-gray-950">
-      Best Time to Visit Gokarna
-    </h2>
-    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
-      Plan your perfect coastal getaway aligned with pleasant cliff-trekking breezes, calm beach waters, and starry shack nights.
-    </p>
-  </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-50 to-amber-50 border border-sky-100 text-sky-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🌊 Weather & Planning
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-sky-950 to-gray-950">
+                Best Time to Visit Gokarna
+              </h2>
+              <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+                Plan your perfect coastal getaway aligned with pleasant cliff-trekking breezes, calm beach waters, and starry shack nights.
+              </p>
+            </div>
 
-  {/* Main Interactive Grid Layout */}
-  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-    
-    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
-    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-sky-950/5 rounded-3xl p-8 flex flex-col justify-between">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl font-bold mb-6 border border-sky-100">
-          🔱
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
-          The Pristine Coast Windows
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
-          Gokarna is exceptionally charming and active from <span className="font-bold text-sky-700 bg-sky-50 px-1.5 py-0.5 rounded-md">October to March</span>. During this winter stretch, the high humidity drops significantly, leaving behind crisp coastal breezes, clear blue skies, and temperatures ranging between 18°C - 32°C.
-        </p>
-        <p className="text-gray-600 leading-relaxed text-[15.5px]">
-          During these premium months, navigating the famous five-beach <span className="font-semibold text-gray-900">Gokarna Cliff Trek</span>, catching sunsets at Kudle Beach, or seeking blessings at the ancient Mahabaleshwar Temple feels completely blissful.
-        </p>
-      </div>
+            {/* Main Interactive Grid Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
-      {/* Pro Tip Alert Section */}
-      <div className="mt-8 p-4 bg-gradient-to-r from-sky-50 to-amber-50 rounded-2xl border border-sky-100/50 flex gap-3 items-start">
-        <span className="text-lg mt-0.5">💡</span>
-        <p className="text-xs md:text-sm text-sky-900 font-medium leading-relaxed">
-          <strong className="text-sky-950">Pro Tip:</strong> Looking for a deeply spiritual or high-energy cultural loop? Try to align your visit with <strong className="text-sky-950">Maha Shivratri</strong> (usually in February). The entire beach town transforms with massive temple chariot processions and spiritual echoes along the shorelines.
-        </p>
-      </div>
-    </div>
+              {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+              <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-sky-950/5 rounded-3xl p-8 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl font-bold mb-6 border border-sky-100">
+                    🔱
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                    The Pristine Coast Windows
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+                    Gokarna is exceptionally charming and active from <span className="font-bold text-sky-700 bg-sky-50 px-1.5 py-0.5 rounded-md">October to March</span>. During this winter stretch, the high humidity drops significantly, leaving behind crisp coastal breezes, clear blue skies, and temperatures ranging between 18°C - 32°C.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed text-[15.5px]">
+                    During these premium months, navigating the famous five-beach <span className="font-semibold text-gray-900">Gokarna Cliff Trek</span>, catching sunsets at Kudle Beach, or seeking blessings at the ancient Mahabaleshwar Temple feels completely blissful.
+                  </p>
+                </div>
 
-    {/* Right Side: Seasonal Breakdown Matrix */}
-    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
-      
-      {/* Season 1: Winter Peak */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-sm hover:shadow-lg hover:shadow-sky-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-sky-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            ⛺
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-sky-700 transition-colors duration-200">
-              Crisp Coastlines (October – March)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              The premium tourist peak. Perfect weather for beach camping, water sports at Om Beach, cafe-hopping, and clear, starry night loops over the ocean.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Beach Peak
-        </span>
-      </div>
+                {/* Pro Tip Alert Section */}
+                <div className="mt-8 p-4 bg-gradient-to-r from-sky-50 to-amber-50 rounded-2xl border border-sky-100/50 flex gap-3 items-start">
+                  <span className="text-lg mt-0.5">💡</span>
+                  <p className="text-xs md:text-sm text-sky-900 font-medium leading-relaxed">
+                    <strong className="text-sky-950">Pro Tip:</strong> Looking for a deeply spiritual or high-energy cultural loop? Try to align your visit with <strong className="text-sky-950">Maha Shivratri</strong> (usually in February). The entire beach town transforms with massive temple chariot processions and spiritual echoes along the shorelines.
+                  </p>
+                </div>
+              </div>
 
-      {/* Season 2: Monsoon Greenery */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            🌧️
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
-              Monsoon Magic (June – September)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              Heavy tropical downpours turn the coastal cliffs incredibly lush and green. While water sports and beach shacks close down completely, it is perfect for raw, crowd-free nature vibes.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Lush Cliffs
-        </span>
-      </div>
+              {/* Right Side: Seasonal Breakdown Matrix */}
+              <div className="lg:col-span-7 flex flex-col justify-between gap-6">
 
-      {/* Season 3: Summer Heat */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            ☀️
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
-              Humid Summers (April – May)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              Temperatures climb past 35°C with intense coastal humidity. Afternoon trekking becomes exhausting, but early morning dips or watching golden sunsets from open cafes remains peaceful.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Quiet Windows
-        </span>
-      </div>
+                {/* Season 1: Winter Peak */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-sm hover:shadow-lg hover:shadow-sky-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-sky-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      ⛺
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-sky-700 transition-colors duration-200">
+                        Crisp Coastlines (October – March)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        The premium tourist peak. Perfect weather for beach camping, water sports at Om Beach, cafe-hopping, and clear, starry night loops over the ocean.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Beach Peak
+                  </span>
+                </div>
 
-    </div>
-  </div>
+                {/* Season 2: Monsoon Greenery */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-sm hover:shadow-lg hover:shadow-amber-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-amber-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      🌧️
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-amber-700 transition-colors duration-200">
+                        Monsoon Magic (June – September)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        Heavy tropical downpours turn the coastal cliffs incredibly lush and green. While water sports and beach shacks close down completely, it is perfect for raw, crowd-free nature vibes.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-amber-100/70 text-amber-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Lush Cliffs
+                  </span>
+                </div>
 
-</section>
-{/* Best Beach Stays & Wellness Retreats Section */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-600 selection:text-white">
-  
-  {/* Coastal Breeze Background Glows (Azure Teal & Sand Gold) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-teal-500/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-500/5 blur-[120px] rounded-full"></div>
-  </div>
+                {/* Season 3: Summer Heat */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      ☀️
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+                        Humid Summers (April – May)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        Temperatures climb past 35°C with intense coastal humidity. Afternoon trekking becomes exhausting, but early morning dips or watching golden sunsets from open cafes remains peaceful.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Quiet Windows
+                  </span>
+                </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-14">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-amber-50 border border-teal-100 text-teal-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      🌊 The Coastal Zen Stay Guide
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
-      Beach-Side Resorts & Wellness Havens in Gokarna
-    </h2>
-    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
-      From luxury eco-huts tucked inside private coves to serene yoga wellness retreats perched on the cliff-edges overlooking the Arabian Sea.
-    </p>
-  </div>
+              </div>
+            </div>
 
-  {/* Advanced Bento Grid Layout */}
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+          </section>
+          {/* Best Beach Stays & Wellness Retreats Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-600 selection:text-white">
 
-    {/* Card 1: Private Cove Eco-Luxury (Featured - Larger width) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            🛖
-          </div>
-          <span className="text-xs font-bold bg-teal-100/60 text-teal-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            Cove-Front Luxury
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
-          Luxury Eco-Huts in Private Coves
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Discover total seclusion at high-end properties nestled along private beaches like Om Beach or Half-Moon Beach. These eco-luxury retreats feature panoramic floor-to-ceiling glass fronts, open-air rainfall showers, and private wooden decks that lead directly into the pristine, gold-sand coastline.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-teal-700 tracking-wider uppercase">
-        Private Beach Access & Open-Air Rainfall Showers
-      </div>
-    </div>
+            {/* Coastal Breeze Background Glows (Azure Teal & Sand Gold) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-teal-500/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-500/5 blur-[120px] rounded-full"></div>
+            </div>
 
-    {/* Card 2: Cliffside Yoga Retreats */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🧘
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          Cliffside Yoga & Wellness Hubs
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Find your center at wellness resorts perched on dramatic cliff-edges. These sanctuaries offer daily sunrise yoga sessions on sea-facing decks, Ayurvedic massage therapy, and silent, minimalist living spaces designed to harmonize with the ocean breeze.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        Sunrise Yoga Decks & Ayurvedic Ocean-View Therapies
-      </div>
-    </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-amber-50 border border-teal-100 text-teal-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🌊 The Coastal Zen Stay Guide
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
+                Beach-Side Resorts & Wellness Havens in Gokarna
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+                From luxury eco-huts tucked inside private coves to serene yoga wellness retreats perched on the cliff-edges overlooking the Arabian Sea.
+              </p>
+            </div>
 
-    {/* Card 3: Traditional Coastal Heritage Homestays */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🏠
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
-          Coastal Heritage Homestays
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Immerse in authentic Konkani hospitality. These beautifully restored heritage homes feature red-tiled roofs, breezy central courtyards, and home-cooked, fresh coastal seafood that brings the soul of the coast to your dining table.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
-        Red-Tiled Heritage Architecture & Authentic Konkani Seafood
-      </div>
-    </div>
+            {/* Advanced Bento Grid Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
 
-    {/* Card 4: Modern Boutique Beach Villas (Featured - Larger width) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            ✨
-          </div>
-          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            Boutique Beach Chic
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
-          Contemporary Boutique Beach Villas
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          For the modern traveler, boutique villas combine minimalist design with coastal aesthetics. Expect clean, white-washed interiors, bohemian decor, sprawling pool-side patios, and direct walking paths to the serene, uncrowded sands of Nirvana Beach.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
-        Bohemian Pool-Side Patios & Minimalist Coastal Decor
-      </div>
-    </div>
+              {/* Card 1: Private Cove Eco-Luxury (Featured - Larger width) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🛖
+                    </div>
+                    <span className="text-xs font-bold bg-teal-100/60 text-teal-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Cove-Front Luxury
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
+                    Luxury Eco-Huts in Private Coves
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Discover total seclusion at high-end properties nestled along private beaches like Om Beach or Half-Moon Beach. These eco-luxury retreats feature panoramic floor-to-ceiling glass fronts, open-air rainfall showers, and private wooden decks that lead directly into the pristine, gold-sand coastline.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-teal-700 tracking-wider uppercase">
+                  Private Beach Access & Open-Air Rainfall Showers
+                </div>
+              </div>
 
-    {/* Card 5: Smart Adventure Basecamps */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🥾
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          Beach-Hopper Adventure Basecamps
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Ideal for young explorers. These social basecamps provide shared gear lockers, surfboard rentals, community hammocks, and nightly bonfire meetups for trekkers completing the legendary coastal beach-trek route.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        Surfboard Rentals & Coastal Trek Bonfire Meetups
-      </div>
-    </div>
+              {/* Card 2: Cliffside Yoga Retreats */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🧘
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Cliffside Yoga & Wellness Hubs
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Find your center at wellness resorts perched on dramatic cliff-edges. These sanctuaries offer daily sunrise yoga sessions on sea-facing decks, Ayurvedic massage therapy, and silent, minimalist living spaces designed to harmonize with the ocean breeze.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Sunrise Yoga Decks & Ayurvedic Ocean-View Therapies
+                </div>
+              </div>
 
-  </div>
-</section>
+              {/* Card 3: Traditional Coastal Heritage Homestays */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🏠
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+                    Coastal Heritage Homestays
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Immerse in authentic Konkani hospitality. These beautifully restored heritage homes feature red-tiled roofs, breezy central courtyards, and home-cooked, fresh coastal seafood that brings the soul of the coast to your dining table.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+                  Red-Tiled Heritage Architecture & Authentic Konkani Seafood
+                </div>
+              </div>
 
-{/* Restaurants & Culinary Experiences Section */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-500 selection:text-white">
-  
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-teal-600/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-teal-950/5 blur-[120px] rounded-full"></div>
-  </div>
+              {/* Card 4: Modern Boutique Beach Villas (Featured - Larger width) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      ✨
+                    </div>
+                    <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Boutique Beach Chic
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
+                    Contemporary Boutique Beach Villas
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    For the modern traveler, boutique villas combine minimalist design with coastal aesthetics. Expect clean, white-washed interiors, bohemian decor, sprawling pool-side patios, and direct walking paths to the serene, uncrowded sands of Nirvana Beach.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+                  Bohemian Pool-Side Patios & Minimalist Coastal Decor
+                </div>
+              </div>
 
-  <div className="text-center mb-14">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-amber-50 border border-teal-100 text-teal-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      🍤 Fresh Catch & Coastal Spice
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
-      Dining & Coastal Culinary Havens
-    </h2>
-    <p className="text-gray-600 mt-3 text-lg max-w-xl mx-auto font-medium">
-      From beachside shacks grilling the freshest catch of the day to high-end cafes offering world-fusion delicacies with ocean-front views.
-    </p>
-  </div>
+              {/* Card 5: Smart Adventure Basecamps */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🥾
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Beach-Hopper Adventure Basecamps
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Ideal for young explorers. These social basecamps provide shared gear lockers, surfboard rentals, community hammocks, and nightly bonfire meetups for trekkers completing the legendary coastal beach-trek route.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Surfboard Rentals & Coastal Trek Bonfire Meetups
+                </div>
+              </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+            </div>
+          </section>
 
-    {/* Card 1: Beachside Grill Shacks (Featured Large Layout) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            🐟
-          </div>
-          <span className="text-xs font-bold bg-teal-100/60 text-teal-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            Fisherman-Grill Style
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
-          Beachside Fresh-Catch Grills
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Experience true Gokarna flavor at iconic shacks right on the sand. Pick your own fresh catch from the morning's haul—think snapper, tiger prawns, or local pomfret—and have it grilled over charcoal with a spicy, secret coastal rub, served alongside chilled local brews and sunset skies.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-teal-700 tracking-wider uppercase">
-        Charcoal-Grilled Fresh Catch & Secret Spicy Coastal Rubs
-      </div>
-    </div>
+          {/* Restaurants & Culinary Experiences Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-500 selection:text-white">
 
-    {/* Card 2: Bohemian Fusion Cafes */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🍕
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          Bohemian Fusion Cafes
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          For global travelers, Gokarna boasts vibrant cafes serving world-fusion favorites—handmade pesto pasta, colorful smoothie bowls, and gourmet wood-fired pizzas—all while sitting on low bamboo floor-seats overlooking the blue horizon.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        Handmade Pesto Pasta & Vibrant Tropical Smoothie Bowls
-      </div>
-    </div>
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-teal-600/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-teal-950/5 blur-[120px] rounded-full"></div>
+            </div>
 
-    {/* Card 3: Konkani Seafood Thali */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🍱
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
-          Authentic Konkani Seafood Thalis
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Dive deep into local heritage dining. Local family-run kitchens serve authentic Konkani thalis loaded with tangy fish curry, crispy fried calamari, steamed rice, and fresh coconut-based side dishes that define the coastal lifestyle.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
-        Tangy Konkani Fish Curries & Crispy Fried Calamari
-      </div>
-    </div>
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-50 to-amber-50 border border-teal-100 text-teal-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🍤 Fresh Catch & Coastal Spice
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-teal-950 to-gray-950">
+                Dining & Coastal Culinary Havens
+              </h2>
+              <p className="text-gray-600 mt-3 text-lg max-w-xl mx-auto font-medium">
+                From beachside shacks grilling the freshest catch of the day to high-end cafes offering world-fusion delicacies with ocean-front views.
+              </p>
+            </div>
 
-    {/* Card 4: Sunset Cliff-Top Bars (Featured Large Layout) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            🍹
-          </div>
-          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            High-Altitude Sips
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
-          Sunset Cliff-Top Cocktail Lounges
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Elevate your evening at cliff-top lounges offering the best sunset views in Karnataka. Sip on tropical, fruit-infused cocktails while listening to the rhythmic crashing of waves against the rocks below—a must for every luxury traveler's itinerary.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        Tropical Fruit-Infused Cocktails & Panoramic Cliff-Edge Sunsets
-      </div>
-    </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
 
-    {/* Card 5: Artisan Bakery Corners */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🍪
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
-          Artisan Bakery & Tea Corners
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Wrap up your day at quiet bakery corners serving freshly baked sourdough, coconut-infused pastries, and aromatic ginger tea—perfect for those slow, mindful coastal evenings.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
-        Fresh Sourdough Loaves & Aromatic Ginger Tea
-      </div>
-    </div>
+              {/* Card 1: Beachside Grill Shacks (Featured Large Layout) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🐟
+                    </div>
+                    <span className="text-xs font-bold bg-teal-100/60 text-teal-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Fisherman-Grill Style
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
+                    Beachside Fresh-Catch Grills
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Experience true Gokarna flavor at iconic shacks right on the sand. Pick your own fresh catch from the morning's haul—think snapper, tiger prawns, or local pomfret—and have it grilled over charcoal with a spicy, secret coastal rub, served alongside chilled local brews and sunset skies.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-teal-700 tracking-wider uppercase">
+                  Charcoal-Grilled Fresh Catch & Secret Spicy Coastal Rubs
+                </div>
+              </div>
 
-  </div>
+              {/* Card 2: Bohemian Fusion Cafes */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🍕
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Bohemian Fusion Cafes
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    For global travelers, Gokarna boasts vibrant cafes serving world-fusion favorites—handmade pesto pasta, colorful smoothie bowls, and gourmet wood-fired pizzas—all while sitting on low bamboo floor-seats overlooking the blue horizon.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Handmade Pesto Pasta & Vibrant Tropical Smoothie Bowls
+                </div>
+              </div>
 
-  {/* Travel Guide Tip Banner */}
-  <div className="mt-12 text-center">
-    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-600/10 via-amber-600/5 to-transparent border border-teal-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
-      <span className="text-xl shrink-0">💡</span>
-      <p className="text-teal-950 font-medium text-sm md:text-base leading-relaxed">
-        <strong className="text-teal-900 font-bold">Gokarna Coastal Transit Tip:</strong> Gokarna is best explored at a slow pace. While the main town has narrow, busy streets, the best way to move between beaches like Om, Kudle, and Half-Moon is via the scenic coastal trekking paths or pre-booked local motorboats to enjoy the stunning rock formations from the sea!
-      </p>
-    </div>
-  </div>
+              {/* Card 3: Konkani Seafood Thali */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🍱
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+                    Authentic Konkani Seafood Thalis
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Dive deep into local heritage dining. Local family-run kitchens serve authentic Konkani thalis loaded with tangy fish curry, crispy fried calamari, steamed rice, and fresh coconut-based side dishes that define the coastal lifestyle.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+                  Tangy Konkani Fish Curries & Crispy Fried Calamari
+                </div>
+              </div>
 
-</section>
+              {/* Card 4: Sunset Cliff-Top Bars (Featured Large Layout) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🍹
+                    </div>
+                    <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      High-Altitude Sips
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+                    Sunset Cliff-Top Cocktail Lounges
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Elevate your evening at cliff-top lounges offering the best sunset views in Karnataka. Sip on tropical, fruit-infused cocktails while listening to the rhythmic crashing of waves against the rocks below—a must for every luxury traveler's itinerary.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Tropical Fruit-Infused Cocktails & Panoramic Cliff-Edge Sunsets
+                </div>
+              </div>
 
+              {/* Card 5: Artisan Bakery Corners */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-500/30 shadow-lg hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🍪
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+                    Artisan Bakery & Tea Corners
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Wrap up your day at quiet bakery corners serving freshly baked sourdough, coconut-infused pastries, and aromatic ginger tea—perfect for those slow, mindful coastal evenings.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+                  Fresh Sourdough Loaves & Aromatic Ginger Tea
+                </div>
+              </div>
+
+            </div>
+
+            {/* Travel Guide Tip Banner */}
+            <div className="mt-12 text-center">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-600/10 via-amber-600/5 to-transparent border border-teal-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-teal-950 font-medium text-sm md:text-base leading-relaxed">
+                  <strong className="text-teal-900 font-bold">Gokarna Coastal Transit Tip:</strong> Gokarna is best explored at a slow pace. While the main town has narrow, busy streets, the best way to move between beaches like Om, Kudle, and Half-Moon is via the scenic coastal trekking paths or pre-booked local motorboats to enjoy the stunning rock formations from the sea!
+                </p>
+              </div>
+            </div>
+
+          </section>
+
+          {/* Budget Breakdown Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-teal-500 selection:text-white">
+
+            {/* Cyber-Atmospheric Background Glows */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-teal-400/10 to-blue-400/10 blur-[140px] rounded-full"></div>
+            </div>
+
+            {/* Header Block */}
+            <div className="text-center mb-16">
+              <span className="inline-flex items-center gap-1.5 bg-teal-500/10 border border-teal-500/20 text-teal-600 dark:text-teal-400 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-md">
+                🌊 Coastal Serenity
+              </span>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900">
+                Budget Breakdown for Gokarna
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+                Plan your escape to this tranquil temple town and beach paradise, where the Arabian Sea meets golden sands.
+              </p>
+            </div>
+
+            {/* Premium Tier Matrix */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+              {/* Card 1: Budget Traveler */}
+              <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-teal-400/60 shadow-md hover:shadow-xl hover:shadow-teal-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg font-bold border border-teal-100 shadow-sm group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                      ⛺
+                    </div>
+                    <span className="text-[10px] font-black tracking-widest uppercase bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md">
+                      Nomad Tier
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Beach Drifter
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Best for solo backpackers staying in beach shacks, using public transport, and eating local seafood.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹500 – ₹1k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹300 – ₹600</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚶 Local</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹50 – ₹150</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-teal-600 tracking-tight">
+                    ₹850 – ₹1,750 <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2: Mid Range */}
+              <div className="group bg-white border-2 border-teal-500 hover:border-teal-400 shadow-xl hover:shadow-2xl hover:shadow-teal-500/10 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 relative ring-8 ring-teal-500/5">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-teal-500 to-blue-500 text-white font-black text-[10px] tracking-widest uppercase px-4 py-1 rounded-full shadow-md">
+                  Recommended
+                </div>
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg font-bold border border-teal-100 shadow-sm group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                      ✨
+                    </div>
+                    <span className="text-[10px] tracking-widest uppercase bg-teal-50 text-teal-700 px-2.5 py-1 rounded-md font-bold">
+                      Balanced
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Sun & Surf Seeker
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Ideal for beach-side resorts, guided trek groups, and cafes with ocean views.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹2k – ₹4k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹1k – ₹2k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚕 Cab</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹500 – ₹1k</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-teal-600 tracking-tight">
+                    ₹3,500 – ₹7,000 <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3: Luxury */}
+              <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-blue-400/60 shadow-md hover:shadow-xl hover:shadow-blue-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg font-bold border border-blue-100 shadow-sm group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+                      💎
+                    </div>
+                    <span className="text-[10px] tracking-widest uppercase bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md font-bold">
+                      Elite Comfort
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Oceanfront Escape
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    High-end villas, private beach access, and gourmet culinary experiences.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹8k – ₹15k+</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹2k – ₹4k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚗 Priv.</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹2k – ₹4k</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-blue-600 tracking-tight">
+                    ₹12k – ₹23k+ <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-14 text-center">
+              <div className="inline-flex items-center gap-3.5 bg-gradient-to-r from-teal-500/10 via-blue-500/5 to-transparent border border-teal-500/20 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-teal-950 font-semibold text-sm md:text-[15px] leading-relaxed">
+                  <strong className="text-teal-800 font-black">Pro Tip:</strong> Don't miss the famous 'Beach Trek' connecting Om Beach, Half Moon Beach, and Paradise Beach—it offers some of the most stunning coastal vistas in India.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Shopping Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-purple-500 selection:text-white">
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-purple-400/15 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-teal-400/15 blur-[120px] rounded-full"></div>
+            </div>
+
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-50 to-teal-50 border border-purple-100 text-purple-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🐚 Coastal Souvenirs
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-purple-950 to-gray-950">
+                Shopping in Gokarna
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+                Discover eclectic beach vibes, handmade accessories, and spiritual artifacts in this laid-back coastal haven.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-300 shadow-lg hover:shadow-xl hover:shadow-purple-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      📿
+                    </div>
+                    <span className="text-xs font-bold bg-purple-100/60 text-purple-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Boho Chic
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-800 transition-colors duration-200">
+                    Handmade Jewelry
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Explore eclectic <span className="font-semibold text-gray-900">shell necklaces, bead bracelets, and bohemian silver jewelry</span> found in the local shacks and markets.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-purple-600 tracking-wider uppercase">
+                  Artisanal Trinkets
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    👕
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+                    Beachwear & Sarongs
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Grab colorful <span className="font-semibold text-gray-900">lightweight sarongs, airy tunics, and comfortable beachwear</span> perfect for the tropical climate.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+                  Coastal Fashion
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🕉️
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Temple Artifacts
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Explore shops near the Mahabaleshwara Temple for <span className="font-semibold text-gray-900">small brass idols, sacred threads, and spiritual artifacts</span>.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Spiritual Finds
+                </div>
+              </div>
+
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-pink-300 shadow-lg hover:shadow-xl hover:shadow-pink-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-pink-50 text-xl flex items-center justify-center border border-pink-100/70 group-hover:bg-pink-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🪵
+                    </div>
+                    <span className="text-xs font-bold bg-pink-100/60 text-pink-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Handcrafted Decor
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-pink-800 transition-colors duration-200">
+                    Wooden Crafts
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Discover unique <span className="font-semibold text-gray-900">hand-carved wooden sculptures, wall hangings, and home decor pieces</span> made by local village artisans.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-pink-600 tracking-wider uppercase">
+                  Artisan Decor
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-indigo-300 shadow-lg hover:shadow-xl hover:shadow-indigo-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-xl flex items-center justify-center border border-indigo-100/70 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🕯️
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-indigo-700 transition-colors duration-200">
+                    Essential Oils & Scents
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Pick up <span className="font-semibold text-gray-900">natural incense sticks, aromatic oils, and scented candles</span> to bring the relaxing beach vibe home.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-indigo-600 tracking-wider uppercase">
+                  Aromatherapy
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500/10 via-teal-500/5 to-transparent border border-purple-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-purple-950 font-medium text-sm md:text-base leading-relaxed">
+                  <strong className="text-purple-900 font-bold">Shopping Tip:</strong> For the most unique items, explore the small, quaint stalls near Kudle and Om beaches during the evening—they often carry stuff you won't find in the main temple town markets!
+                </p>
+              </div>
+            </div>
+          </section>
 
           {/* Tourism Link */}
           <div className="mt-8 text-center">

@@ -620,6 +620,295 @@ const Bhopal = () => {
 
 </section>
 
+{/* Budget Breakdown Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+  
+  {/* Cyber-Atmospheric Background Glows */}
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-emerald-400/10 to-teal-400/10 blur-[140px] rounded-full"></div>
+  </div>
+
+  {/* Header Block */}
+  <div className="text-center mb-16">
+    <span className="inline-flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-md">
+      湖 City of Lakes
+    </span>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900">
+      Budget Breakdown for Bhopal
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+      Explore the seamless blend of historic heritage and modern urban life in the city of Nawabs.
+    </p>
+  </div>
+
+  {/* Premium Tier Matrix */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+    {/* Card 1: Budget Traveler */}
+    <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-emerald-400/60 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold border border-emerald-100 shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+            🚲
+          </div>
+          <span className="text-[10px] font-black tracking-widest uppercase bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md">
+            Nomad Tier
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Lake Side Nomad
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Perfect for students and backpackers enjoying street food near Upper Lake and budget hostels.
+        </p>
+
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏠 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹500 – ₹1k</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹250 – ₹500</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚌 Local</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹50 – ₹150</span>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-emerald-600 tracking-tight">
+          ₹800 – ₹1,650 <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 2: Mid Range */}
+    <div className="group bg-white border-2 border-emerald-500 hover:border-emerald-400 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 relative ring-8 ring-emerald-500/5">
+      <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-black text-[10px] tracking-widest uppercase px-4 py-1 rounded-full shadow-md">
+        Recommended
+      </div>
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold border border-emerald-100 shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+            ✨
+          </div>
+          <span className="text-[10px] tracking-widest uppercase bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-bold">
+            Balanced
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Heritage Explorer
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Ideal for comfortable hotels, guided tours of Van Vihar, and authentic Mughlai dinners.
+        </p>
+
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹2k – ₹4k</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹800 – ₹1.5k</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚕 Cab</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹700 – ₹1.2k</span>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-emerald-600 tracking-tight">
+          ₹3,500 – ₹6,700 <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 3: Luxury */}
+    <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-teal-400/60 shadow-md hover:shadow-xl hover:shadow-teal-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between mb-6">
+          <div className="w-11 h-11 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg font-bold border border-teal-100 shadow-sm group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+            👑
+          </div>
+          <span className="text-[10px] tracking-widest uppercase bg-teal-50 text-teal-700 px-2.5 py-1 rounded-md font-bold">
+            Elite Comfort
+          </span>
+        </div>
+        
+        <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+          Nawabi Luxury
+        </h3>
+        <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+          Premium heritage properties, private chauffeur, and curated gourmet experiences.
+        </p>
+
+        <div className="space-y-3 pt-4 border-t border-gray-100">
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹7k – ₹15k+</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹2k – ₹4k</span>
+          </div>
+          <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+            <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚗 Priv.</span>
+            <span className="text-gray-900 font-extrabold text-sm">₹2.5k – ₹4k</span>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+        <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+        <div className="text-2xl font-black text-teal-600 tracking-tight">
+          ₹11.5k – ₹23k+ <span className="text-xs font-bold text-gray-400">/ day</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="mt-14 text-center">
+    <div className="inline-flex items-center gap-3.5 bg-gradient-to-r from-emerald-500/10 via-teal-500/5 to-transparent border border-emerald-500/20 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-emerald-950 font-semibold text-sm md:text-[15px] leading-relaxed">
+        <strong className="text-emerald-800 font-black">Pro Tip:</strong> Try the famous Bhopal Poha-Jalebi breakfast at a local stall near New Market—it’s an authentic city experience you shouldn't miss.
+      </p>
+    </div>
+  </div>
+</section>
+
+{/* Shopping Section */}
+<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-blue-500 selection:text-white">
+  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="absolute top-10 right-10 w-96 h-96 bg-blue-400/15 blur-[120px] rounded-full"></div>
+    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-400/15 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div className="text-center mb-14">
+    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-emerald-50 border border-blue-100 text-blue-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+      🛍️ Cultural Markets
+    </div>
+    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-blue-950 to-gray-950">
+      Shopping in Bhopal
+    </h2>
+    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+      Discover the vibrant bazaars offering everything from traditional Zari-Zardosi work to contemporary handicrafts.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🧵
+          </div>
+          <span className="text-xs font-bold bg-blue-100/60 text-blue-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Traditional Art
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-800 transition-colors duration-200">
+          Zari-Zardosi Fabrics
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Bhopal is renowned for its <span className="font-semibold text-gray-900">intricate golden embroidery (Zari-Zardosi)</span> on purses, sarees, and traditional dresses.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+        Nawabi Craft
+      </div>
+    </div>
+
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🏺
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+          Terracotta Pottery
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Explore beautiful <span className="font-semibold text-gray-900">hand-crafted terracotta items</span>, which reflect the indigenous artistic traditions of Madhya Pradesh.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+        Handmade Pottery
+      </div>
+    </div>
+
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          👜
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+          Leather Goods
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Browse through <span className="font-semibold text-gray-900">durable, stylish leather bags, belts, and accessories</span> sold in the old city's vibrant markets.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+        Quality Leather
+      </div>
+    </div>
+
+    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-300 shadow-lg hover:shadow-xl hover:shadow-purple-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm">
+            🖼️
+          </div>
+          <span className="text-xs font-bold bg-purple-100/60 text-purple-800 px-3 py-1 rounded-full uppercase tracking-wider">
+            Tribal Art
+          </span>
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-800 transition-colors duration-200">
+          Gond Paintings
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Take home <span className="font-semibold text-gray-900">vibrant, nature-inspired Gond art</span> directly from local state-run handicraft emporiums (Mrignayani).
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-purple-600 tracking-wider uppercase">
+        Authentic Tribal Art
+      </div>
+    </div>
+
+    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-pink-300 shadow-lg hover:shadow-xl hover:shadow-pink-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+      <div>
+        <div className="w-12 h-12 rounded-2xl bg-pink-50 text-xl flex items-center justify-center border border-pink-100/70 group-hover:bg-pink-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+          🧂
+        </div>
+        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-pink-700 transition-colors duration-200">
+          Local Spices
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+          Visit the old city markets to stock up on <span className="font-semibold text-gray-900">freshly ground local spices, pickles, and traditional papads</span>.
+        </p>
+      </div>
+      <div className="mt-6 text-xs font-bold text-pink-600 tracking-wider uppercase">
+        Organic Flavors
+      </div>
+    </div>
+  </div>
+
+  <div className="mt-12 text-center">
+    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-500/10 via-emerald-500/5 to-transparent border border-blue-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+      <span className="text-xl shrink-0">💡</span>
+      <p className="text-blue-950 font-medium text-sm md:text-base leading-relaxed">
+        <strong className="text-blue-900 font-bold">Shopping Tip:</strong> Head to 'Mrignayani Emporium' for fixed-price, authentic handicrafts from across MP if you prefer not to bargain in the chaotic but exciting street markets.
+      </p>
+    </div>
+  </div>
+</section>
 
           {/* CTA */}
           <div className="mt-20 text-center">

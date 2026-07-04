@@ -53,128 +53,128 @@ const Coorg = () => {
           </motion.p>
 
           {/* Introduction Section: Coorg */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-600 selection:text-white">
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-600 selection:text-white">
 
-  {/* Advanced Radial Background Glows (Highland Mist & Coffee Estates Theme) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 left-10 w-96 h-96 bg-emerald-600/10 blur-[130px] rounded-full"></div>
-    <div className="absolute bottom-10 right-10 w-96 h-96 bg-lime-500/10 blur-[120px] rounded-full"></div>
-  </div>
+            {/* Advanced Radial Background Glows (Highland Mist & Coffee Estates Theme) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 left-10 w-96 h-96 bg-emerald-600/10 blur-[130px] rounded-full"></div>
+              <div className="absolute bottom-10 right-10 w-96 h-96 bg-lime-500/10 blur-[120px] rounded-full"></div>
+            </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-16">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-lime-50 border border-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      <span>☕</span> Highland Spotlight
-    </div>
-    <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
-      Discover Coorg
-    </h2>
-    <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
-      The Scotland of India—a lush, mist-shrouded mountain paradise where aromatic coffee estates cascade down the rugged slopes of the Western Ghats.
-    </p>
-  </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-lime-50 border border-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                <span>☕</span> Highland Spotlight
+              </div>
+              <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+                Discover Coorg
+              </h2>
+              <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+                The Scotland of India—a lush, mist-shrouded mountain paradise where aromatic coffee estates cascade down the rugged slopes of the Western Ghats.
+              </p>
+            </div>
 
-  {/* Main Layout Container */}
-  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-    
-    {/* Left Column: Premium Introduction (Glass Card) */}
-    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-emerald-950/5 rounded-3xl p-8 sticky top-6">
-      <div className="text-4xl mb-4">⛰️</div>
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        The Land of Mist, Coffee, and Warriors
-      </h3>
-      <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
-        Coorg, officially known as Kodagu, is perched majestically on the eastern slopes of the Western Ghats in Karnataka. Renowned for its rolling green hills, dense teakwood forests, and continuous mist, it stands as India's premier coffee-producing heartland.
-      </p>
-      <p className="text-gray-600 leading-relaxed text-[15.5px]">
-        Beyond the scenery, it is the home of the proud, fiercely independent <span className="font-semibold">Kodava race</span>—distinguished by their unique martial traditions, exquisite local attire, and world-class hospitality that instantly makes you feel part of the clan.
-      </p>
-      
-      {/* Quick Stats Banner inside Left Card */}
-      <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
-        <div className="bg-emerald-50/50 p-3 rounded-2xl">
-          <p className="text-2xl font-black text-emerald-600">1,748m</p>
-          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Highest Peak (Tadiandamol)</p>
-        </div>
-        <div className="bg-lime-50/50 p-3 rounded-2xl">
-          <p className="text-2xl font-black text-lime-600">35%</p>
-          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">India's Coffee Share</p>
-        </div>
-      </div>
-    </div>
+            {/* Main Layout Container */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
-    {/* Right Column: Dynamic Feature Grid */}
-    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
-      
-      {/* Card 1: Coffee Plantation Trails */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-xl font-bold text-emerald-600 mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
-          🌱
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
-          Aromatic Estate Walks
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Lose yourself inside endless green grids. Wake up to the rich aroma of Arabica and Robusta beans, taking guided plantation walks under giant rosewood canopies tangled with black pepper vines.
-        </p>
-      </div>
+              {/* Left Column: Premium Introduction (Glass Card) */}
+              <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-emerald-950/5 rounded-3xl p-8 sticky top-6">
+                <div className="text-4xl mb-4">⛰️</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  The Land of Mist, Coffee, and Warriors
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+                  Coorg, officially known as Kodagu, is perched majestically on the eastern slopes of the Western Ghats in Karnataka. Renowned for its rolling green hills, dense teakwood forests, and continuous mist, it stands as India's premier coffee-producing heartland.
+                </p>
+                <p className="text-gray-600 leading-relaxed text-[15.5px]">
+                  Beyond the scenery, it is the home of the proud, fiercely independent <span className="font-semibold">Kodava race</span>—distinguished by their unique martial traditions, exquisite local attire, and world-class hospitality that instantly makes you feel part of the clan.
+                </p>
 
-      {/* Card 2: Namdroling Monastery (Golden Temple) */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
-          🏮
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          The Golden Pagodas of Bylakuppe
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Experience a serene Tibetan sanctuary. Located at the base of Coorg, the massive <span className="font-semibold">Namdroling Monastery</span> houses three spectacular, 40-foot gold-plated Buddha statues surrounded by intricate murals.
-        </p>
-      </div>
+                {/* Quick Stats Banner inside Left Card */}
+                <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
+                  <div className="bg-emerald-50/50 p-3 rounded-2xl">
+                    <p className="text-2xl font-black text-emerald-600">1,748m</p>
+                    <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Highest Peak (Tadiandamol)</p>
+                  </div>
+                  <div className="bg-lime-50/50 p-3 rounded-2xl">
+                    <p className="text-2xl font-black text-lime-600">35%</p>
+                    <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">India's Coffee Share</p>
+                  </div>
+                </div>
+              </div>
 
-      {/* Card 3: Abbey & Abbey Falls Cascades */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-md hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-sky-50 flex items-center justify-center text-xl font-bold text-sky-600 mb-5 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300">
-          🌊
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
-          The Roaring Abbey Falls
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Stand on a shaking hanging bridge to witness water crashing down from a height of 70 feet. Framed perfectly by private spice gardens, the falls offer an incredible, misty sensory rush.
-        </p>
-      </div>
+              {/* Right Column: Dynamic Feature Grid */}
+              <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-      {/* Card 4: Dubare Elephant Camp */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-lime-300 shadow-md hover:shadow-xl hover:shadow-lime-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-lime-50 flex items-center justify-center text-xl font-bold text-lime-600 mb-5 group-hover:bg-lime-600 group-hover:text-white transition-all duration-300">
-          🐘
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-lime-700 transition-colors duration-200">
-          Dubare River Echoes
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Cross the Kaveri River to reach a historic eco-camp. Participate in grooming, scrubbing, and feeding gentle giants, followed by peaceful river rafting along the shallow rocky streams.
-        </p>
-      </div>
+                {/* Card 1: Coffee Plantation Trails */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-xl font-bold text-emerald-600 mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+                    🌱
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+                    Aromatic Estate Walks
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Lose yourself inside endless green grids. Wake up to the rich aroma of Arabica and Robusta beans, taking guided plantation walks under giant rosewood canopies tangled with black pepper vines.
+                  </p>
+                </div>
 
-    </div>
-  </div>
+                {/* Card 2: Namdroling Monastery (Golden Temple) */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+                    🏮
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    The Golden Pagodas of Bylakuppe
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Experience a serene Tibetan sanctuary. Located at the base of Coorg, the massive <span className="font-semibold">Namdroling Monastery</span> houses three spectacular, 40-foot gold-plated Buddha statues surrounded by intricate murals.
+                  </p>
+                </div>
 
-  {/* Bottom Premium Sticky Note */}
-  <div className="mt-12 bg-gradient-to-r from-emerald-950 via-slate-900 to-lime-950 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
-    <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
-    <div className="relative z-10 max-w-3xl">
-      <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
-      <p className="text-emerald-100 mt-2 text-sm md:text-base leading-relaxed opacity-90">
-        In short, Coorg is an unmatched highland getaway. It perfectly pairs the tranquil, slow lifestyle of historic coffee plantations and misty eco-trails with spicy, authentic Pandi Curry gastronomy, making it an absolute sanctuary for luxury unwinding.
-      </p>
-    </div>
-  </div>
+                {/* Card 3: Abbey & Abbey Falls Cascades */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-md hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-sky-50 flex items-center justify-center text-xl font-bold text-sky-600 mb-5 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300">
+                    🌊
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
+                    The Roaring Abbey Falls
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Stand on a shaking hanging bridge to witness water crashing down from a height of 70 feet. Framed perfectly by private spice gardens, the falls offer an incredible, misty sensory rush.
+                  </p>
+                </div>
 
-</section>
+                {/* Card 4: Dubare Elephant Camp */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-lime-300 shadow-md hover:shadow-xl hover:shadow-lime-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-lime-50 flex items-center justify-center text-xl font-bold text-lime-600 mb-5 group-hover:bg-lime-600 group-hover:text-white transition-all duration-300">
+                    🐘
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-lime-700 transition-colors duration-200">
+                    Dubare River Echoes
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Cross the Kaveri River to reach a historic eco-camp. Participate in grooming, scrubbing, and feeding gentle giants, followed by peaceful river rafting along the shallow rocky streams.
+                  </p>
+                </div>
 
-          
+              </div>
+            </div>
+
+            {/* Bottom Premium Sticky Note */}
+            <div className="mt-12 bg-gradient-to-r from-emerald-950 via-slate-900 to-lime-950 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
+              <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+              <div className="relative z-10 max-w-3xl">
+                <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
+                <p className="text-emerald-100 mt-2 text-sm md:text-base leading-relaxed opacity-90">
+                  In short, Coorg is an unmatched highland getaway. It perfectly pairs the tranquil, slow lifestyle of historic coffee plantations and misty eco-trails with spicy, authentic Pandi Curry gastronomy, making it an absolute sanctuary for luxury unwinding.
+                </p>
+              </div>
+            </div>
+
+          </section>
+
+
 
           {/* Gallery */}
           <div className="mt-10">
@@ -202,389 +202,678 @@ const Coorg = () => {
           </div>
 
           {/* Best Time to Visit */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
 
-  {/* Advanced Radial Background Glows (Highland Mist & Coffee Plantation Theme) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
-  </div>
+            {/* Advanced Radial Background Glows (Highland Mist & Coffee Plantation Theme) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-400/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+            </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-16">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-amber-50 border border-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      ⛰️ Weather & Planning
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
-      Best Time to Visit Coorg
-    </h2>
-    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
-      Plan your perfect Western Ghats escape aligned with crisp spice-scented winters, rolling clouds, and roaring waterfalls.
-    </p>
-  </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-amber-50 border border-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                ⛰️ Weather & Planning
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+                Best Time to Visit Coorg
+              </h2>
+              <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+                Plan your perfect Western Ghats escape aligned with crisp spice-scented winters, rolling clouds, and roaring waterfalls.
+              </p>
+            </div>
 
-  {/* Main Interactive Grid Layout */}
-  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-    
-    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
-    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-emerald-950/5 rounded-3xl p-8 flex flex-col justify-between">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-6 border border-emerald-100">
-          ☕
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
-          The Coffee Valley Windows
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
-          Coorg opens its most magical and crisp weather loop from <span className="font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-md">October to March</span>. During this premium winter stretch, temperatures fluctuate beautifully between 15°C - 25°C, creating refreshing chilly mornings wrapped in thick blankets of white mist.
-        </p>
-        <p className="text-gray-600 leading-relaxed text-[15.5px]">
-          During these comfortable months, exploring the golden temple inside <span className="font-semibold text-gray-900">Bylakuppe Tibetan Settlement</span>, trekking the sprawling ridges of Raja's Seat, or walking through private spice and coffee plantation loops feels completely heavenly.
-        </p>
-      </div>
+            {/* Main Interactive Grid Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
-      {/* Pro Tip Alert Section */}
-      <div className="mt-8 p-4 bg-gradient-to-r from-emerald-50 to-amber-50 rounded-2xl border border-emerald-100/50 flex gap-3 items-start">
-        <span className="text-lg mt-0.5">💡</span>
-        <p className="text-xs md:text-sm text-emerald-900 font-medium leading-relaxed">
-          <strong className="text-amber-950">Pro Tip:</strong> Traveling right after the monsoons in October or early November? You will catch the spectacular <strong className="text-amber-950">Abbey and Abbey-adjacent waterfalls</strong> at their absolute maximum speed and volume, right when the coffee valley smells freshest.
-        </p>
-      </div>
-    </div>
+              {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+              <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-emerald-950/5 rounded-3xl p-8 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-6 border border-emerald-100">
+                    ☕
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                    The Coffee Valley Windows
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+                    Coorg opens its most magical and crisp weather loop from <span className="font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-md">October to March</span>. During this premium winter stretch, temperatures fluctuate beautifully between 15°C - 25°C, creating refreshing chilly mornings wrapped in thick blankets of white mist.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed text-[15.5px]">
+                    During these comfortable months, exploring the golden temple inside <span className="font-semibold text-gray-900">Bylakuppe Tibetan Settlement</span>, trekking the sprawling ridges of Raja's Seat, or walking through private spice and coffee plantation loops feels completely heavenly.
+                  </p>
+                </div>
 
-    {/* Right Side: Seasonal Breakdown Matrix */}
-    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
-      
-      {/* Season 1: Winter Peak */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            🌲
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
-              Crisp Coffee Winters (October – March)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              The premium tourist window. Ideal for high-altitude trekking up Tadiandamol Peak, cozy homestay bonfires, bird watching, and plantation safari loops.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Misty Peaks
-        </span>
-      </div>
+                {/* Pro Tip Alert Section */}
+                <div className="mt-8 p-4 bg-gradient-to-r from-emerald-50 to-amber-50 rounded-2xl border border-emerald-100/50 flex gap-3 items-start">
+                  <span className="text-lg mt-0.5">💡</span>
+                  <p className="text-xs md:text-sm text-emerald-900 font-medium leading-relaxed">
+                    <strong className="text-amber-950">Pro Tip:</strong> Traveling right after the monsoons in October or early November? You will catch the spectacular <strong className="text-amber-950">Abbey and Abbey-adjacent waterfalls</strong> at their absolute maximum speed and volume, right when the coffee valley smells freshest.
+                  </p>
+                </div>
+              </div>
 
-      {/* Season 2: Monsoon Cascades */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-blue-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            🌧️
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-200">
-              Heavy Monsoon Blends (June – September)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              The region receives intense rainfall, reviving the forest canopy into an electric green setup. Outdoor trekking lines pause, but it is a dream loop for luxury resort staycations.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Lush Rains
-        </span>
-      </div>
+              {/* Right Side: Seasonal Breakdown Matrix */}
+              <div className="lg:col-span-7 flex flex-col justify-between gap-6">
 
-      {/* Season 3: Summer Spice */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            ☀️
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
-              Mild Summer Respite (April – May)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              The weather gets warmer but stays significantly cooler than the scorching plains of South India, peaking around 34°C. Perfect for a quiet weekend escape and catching white coffee blossoms.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Blossom Phase
-        </span>
-      </div>
+                {/* Season 1: Winter Peak */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-sm hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-emerald-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      🌲
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors duration-200">
+                        Crisp Coffee Winters (October – March)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        The premium tourist window. Ideal for high-altitude trekking up Tadiandamol Peak, cozy homestay bonfires, bird watching, and plantation safari loops.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-emerald-100/70 text-emerald-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Misty Peaks
+                  </span>
+                </div>
 
-    </div>
-  </div>
+                {/* Season 2: Monsoon Cascades */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-sm hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-blue-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      🌧️
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-blue-700 transition-colors duration-200">
+                        Heavy Monsoon Blends (June – September)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        The region receives intense rainfall, reviving the forest canopy into an electric green setup. Outdoor trekking lines pause, but it is a dream loop for luxury resort staycations.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-blue-100/70 text-blue-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Lush Rains
+                  </span>
+                </div>
 
-</section>
-{/* Best Stays & Plantation Resorts Section */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-600 selection:text-white">
-  
-  {/* Coffee Estate Background Glows (Emerald Green & Mocha Brown) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-500/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-900/10 blur-[120px] rounded-full"></div>
-  </div>
+                {/* Season 3: Summer Spice */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      ☀️
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+                        Mild Summer Respite (April – May)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        The weather gets warmer but stays significantly cooler than the scorching plains of South India, peaking around 34°C. Perfect for a quiet weekend escape and catching white coffee blossoms.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Blossom Phase
+                  </span>
+                </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-14">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-amber-50 border border-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      ☕ The Mist-Woven Plantation Guide
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
-      Heritage Coffee Estates & Rainforest Resorts
-    </h2>
-    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
-      Wake up to the aroma of freshly roasted coffee in colonial bungalows or luxury glass-huts tucked deep within untouched evergreen forests.
-    </p>
-  </div>
+              </div>
+            </div>
 
-  {/* Advanced Bento Grid Layout */}
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+          </section>
+          {/* Best Stays & Plantation Resorts Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-600 selection:text-white">
 
-    {/* Card 1: Colonial Coffee Bungalows (Featured - Larger width) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            🏡
-          </div>
-          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            Heritage Plantation Tier
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
-          Colonial Coffee Heritage Bungalows
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Step back in time at century-old bungalows located inside private coffee estates. Featuring sprawling verandahs, high wooden ceilings, crackling indoor fireplaces, and expansive lawns that offer 360-degree views of the mist-covered Western Ghats.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-emerald-700 tracking-wider uppercase">
-        Indoor Fireplaces & Estate-View Sprawling Verandahs
-      </div>
-    </div>
+            {/* Coffee Estate Background Glows (Emerald Green & Mocha Brown) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-emerald-500/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-900/10 blur-[120px] rounded-full"></div>
+            </div>
 
-    {/* Card 2: Rainforest Treehouses */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🌳
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          Elevated Rainforest Treehouses
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          For the true nature lover, stay in premium treehouses built into giant rosewood trees. These units provide unmatched privacy, bird-watching decks, and direct contact with the sounds of the lush Coorg rainforest.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        Canopy Bird-Watching Decks & Rainforest Soundscapes
-      </div>
-    </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-amber-50 border border-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                ☕ The Mist-Woven Plantation Guide
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-emerald-950 to-gray-950">
+                Heritage Coffee Estates & Rainforest Resorts
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+                Wake up to the aroma of freshly roasted coffee in colonial bungalows or luxury glass-huts tucked deep within untouched evergreen forests.
+              </p>
+            </div>
 
-    {/* Card 3: Spice Garden Cottages */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🌶️
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
-          Aromatic Spice Estate Cottages
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Stay amidst the fragrant scent of black pepper, cardamom, and cinnamon. These cottages are tucked into working spice estates, perfect for guests looking for guided farm-walks and fresh, organic, farm-to-plate meals.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
-        Guided Spice Walks & Organic Farm-To-Plate Dining
-      </div>
-    </div>
+            {/* Advanced Bento Grid Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
 
-    {/* Card 4: Modern Boutique Wellness Huts (Featured - Larger width) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            🧘
-          </div>
-          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            Wellness Retreats
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
-          Cloud-Top Boutique Wellness Spas
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Elevate your wellness itinerary with boutique resorts located on the highest crests of the Coorg highlands. These offer open-air yoga decks engulfed in morning mist, heated indoor mineral pools, and viewing balconies looking over the vast, undulating plantation landscapes.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
-        Mist-Engulfed Yoga Decks & Heated Mineral Plunge Pools
-      </div>
-    </div>
+              {/* Card 1: Colonial Coffee Bungalows (Featured - Larger width) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🏡
+                    </div>
+                    <span className="text-xs font-bold bg-emerald-100/60 text-emerald-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Heritage Plantation Tier
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+                    Colonial Coffee Heritage Bungalows
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Step back in time at century-old bungalows located inside private coffee estates. Featuring sprawling verandahs, high wooden ceilings, crackling indoor fireplaces, and expansive lawns that offer 360-degree views of the mist-covered Western Ghats.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-emerald-700 tracking-wider uppercase">
+                  Indoor Fireplaces & Estate-View Sprawling Verandahs
+                </div>
+              </div>
 
-    {/* Card 5: Smart Transit Group Villas */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🏨
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          Smart Group Transit Villas
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Optimized for large families visiting for long-weekend escapes. These villas offer multiple interconnected suites, dedicated BBQ pits for cold-night outdoor social dining, and rapid shuttle access to major sightseeing points like Abbey Falls.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        Outdoor Social BBQ Pits & Fast Shuttle Transit Hubs
-      </div>
-    </div>
+              {/* Card 2: Rainforest Treehouses */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🌳
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Elevated Rainforest Treehouses
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    For the true nature lover, stay in premium treehouses built into giant rosewood trees. These units provide unmatched privacy, bird-watching decks, and direct contact with the sounds of the lush Coorg rainforest.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Canopy Bird-Watching Decks & Rainforest Soundscapes
+                </div>
+              </div>
 
-  </div>
-</section>
+              {/* Card 3: Spice Garden Cottages */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🌶️
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+                    Aromatic Spice Estate Cottages
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Stay amidst the fragrant scent of black pepper, cardamom, and cinnamon. These cottages are tucked into working spice estates, perfect for guests looking for guided farm-walks and fresh, organic, farm-to-plate meals.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+                  Guided Spice Walks & Organic Farm-To-Plate Dining
+                </div>
+              </div>
+
+              {/* Card 4: Modern Boutique Wellness Huts (Featured - Larger width) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🧘
+                    </div>
+                    <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Wellness Retreats
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+                    Cloud-Top Boutique Wellness Spas
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Elevate your wellness itinerary with boutique resorts located on the highest crests of the Coorg highlands. These offer open-air yoga decks engulfed in morning mist, heated indoor mineral pools, and viewing balconies looking over the vast, undulating plantation landscapes.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+                  Mist-Engulfed Yoga Decks & Heated Mineral Plunge Pools
+                </div>
+              </div>
+
+              {/* Card 5: Smart Transit Group Villas */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🏨
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Smart Group Transit Villas
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Optimized for large families visiting for long-weekend escapes. These villas offer multiple interconnected suites, dedicated BBQ pits for cold-night outdoor social dining, and rapid shuttle access to major sightseeing points like Abbey Falls.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Outdoor Social BBQ Pits & Fast Shuttle Transit Hubs
+                </div>
+              </div>
+
+            </div>
+          </section>
 
 
-{/* Restaurants & Culinary Experiences Section */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
-  
-  {/* Culinary Background Tints */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-950/5 blur-[120px] rounded-full"></div>
-  </div>
+          {/* Restaurants & Culinary Experiences Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
 
-  <div className="text-center mb-14">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-emerald-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      🍛 Authentic Kodava Cuisine & Coffee
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
-      Restaurants & Local Food Experiences
-    </h2>
-    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
-      From cozy plantation kitchens serving spicy Pandi Curry to world-class coffee houses overlooking rolling green hills.
-    </p>
-  </div>
+            {/* Culinary Background Tints */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-950/5 blur-[120px] rounded-full"></div>
+            </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-emerald-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🍛 Authentic Kodava Cuisine & Coffee
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+                Restaurants & Local Food Experiences
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+                From cozy plantation kitchens serving spicy Pandi Curry to world-class coffee houses overlooking rolling green hills.
+              </p>
+            </div>
 
-    {/* Card 1: Plantation Kitchens (Featured Large Layout) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            🥘
-          </div>
-          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            Authentic Kodava Dining
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
-          Traditional Kodava Plantation Kitchens
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          No trip to Coorg is complete without trying authentic Pandi Curry and Kadambuttu. Visit heritage-style kitchens that specialize in slow-cooked local recipes, prepared with traditional spices grown right in the backyards of the restaurant.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
-        Spicy Pandi Curry & Steaming Kadambuttu
-      </div>
-    </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
 
-    {/* Card 2: Coffee Estate Cafes */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          ☕
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
-          Estate-Fresh Coffee Houses
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Enjoy the freshest cup of coffee you've ever had. These cafes source beans directly from the surrounding estates, serving pour-overs, espressos, and filter coffee while you overlook the vast, emerald-green plantation slopes.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
-        Single-Origin Pour-Overs & Estate-Grown Filter Coffee
-      </div>
-    </div>
+              {/* Card 1: Plantation Kitchens (Featured Large Layout) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🥘
+                    </div>
+                    <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Authentic Kodava Dining
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+                    Traditional Kodava Plantation Kitchens
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    No trip to Coorg is complete without trying authentic Pandi Curry and Kadambuttu. Visit heritage-style kitchens that specialize in slow-cooked local recipes, prepared with traditional spices grown right in the backyards of the restaurant.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+                  Spicy Pandi Curry & Steaming Kadambuttu
+                </div>
+              </div>
 
-    {/* Card 3: Colonial Forest Grills */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🔥
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          Colonial-Era Wood-Fired Grills
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Dine under the stars at heritage outposts featuring open-air wood-fire ovens. These restaurants serve roasted meats, seasonal vegetable platters, and farm-fresh soups that capture the crisp, refreshing essence of the Coorg highlands.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        Open-Air Wood-Fire Ovens & Crisp Forest Soups
-      </div>
-    </div>
+              {/* Card 2: Coffee Estate Cafes */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    ☕
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+                    Estate-Fresh Coffee Houses
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Enjoy the freshest cup of coffee you've ever had. These cafes source beans directly from the surrounding estates, serving pour-overs, espressos, and filter coffee while you overlook the vast, emerald-green plantation slopes.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+                  Single-Origin Pour-Overs & Estate-Grown Filter Coffee
+                </div>
+              </div>
 
-    {/* Card 4: Artisan Bakery Corners (Featured Large Layout) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            🍰
-          </div>
-          <span className="text-xs font-bold bg-emerald-100/60 text-emerald-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            Bakery Treats
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
-          Artisan Bakery & Tea-Time Bites
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Indulge in Coorg’s famous homemade chocolates and baked goods. From decadent dark chocolate brownies to warm ginger cake, these artisan shops are perfect for afternoon tea-breaks on a rainy Coorg day.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
-        Homemade Dark Chocolate & Warm Ginger Cake Bites
-      </div>
-    </div>
+              {/* Card 3: Colonial Forest Grills */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🔥
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Colonial-Era Wood-Fired Grills
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Dine under the stars at heritage outposts featuring open-air wood-fire ovens. These restaurants serve roasted meats, seasonal vegetable platters, and farm-fresh soups that capture the crisp, refreshing essence of the Coorg highlands.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Open-Air Wood-Fire Ovens & Crisp Forest Soups
+                </div>
+              </div>
 
-    {/* Card 5: Fusion Hilltop Cafes */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🥗
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          Modern Fusion Hilltop Cafes
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Experience world-fusion cuisine in modern, glass-walled cafes perched atop the ridges. They serve thin-crust pizzas, continental breakfast platters, and fresh mountain fruit juices with panoramic plantation views.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        Continental Breakfast & Fresh Mountain Fruit Juices
-      </div>
-    </div>
+              {/* Card 4: Artisan Bakery Corners (Featured Large Layout) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-500/30 shadow-lg hover:shadow-xl hover:shadow-emerald-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🍰
+                    </div>
+                    <span className="text-xs font-bold bg-emerald-100/60 text-emerald-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Bakery Treats
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-800 transition-colors duration-200">
+                    Artisan Bakery & Tea-Time Bites
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Indulge in Coorg’s famous homemade chocolates and baked goods. From decadent dark chocolate brownies to warm ginger cake, these artisan shops are perfect for afternoon tea-breaks on a rainy Coorg day.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+                  Homemade Dark Chocolate & Warm Ginger Cake Bites
+                </div>
+              </div>
 
-  </div>
+              {/* Card 5: Fusion Hilltop Cafes */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🥗
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Modern Fusion Hilltop Cafes
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Experience world-fusion cuisine in modern, glass-walled cafes perched atop the ridges. They serve thin-crust pizzas, continental breakfast platters, and fresh mountain fruit juices with panoramic plantation views.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Continental Breakfast & Fresh Mountain Fruit Juices
+                </div>
+              </div>
 
-  {/* Travel Guide Tip Banner */}
-  <div className="mt-12 text-center">
-    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-600/10 via-emerald-600/5 to-transparent border border-amber-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
-      <span className="text-xl shrink-0">💡</span>
-      <p className="text-amber-950 font-medium text-sm md:text-base leading-relaxed">
-        <strong className="text-amber-900 font-bold">Coorg Plantation Transit Tip:</strong> Coorg's beauty is spread across large distances. To save time and truly enjoy the plantation atmosphere, rent a local SUV for your entire stay—it's essential for navigating the steep, narrow, and often muddy estate roads comfortably!
-      </p>
-    </div>
-  </div>
+            </div>
 
-</section>
+            {/* Travel Guide Tip Banner */}
+            <div className="mt-12 text-center">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-600/10 via-emerald-600/5 to-transparent border border-amber-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-amber-950 font-medium text-sm md:text-base leading-relaxed">
+                  <strong className="text-amber-900 font-bold">Coorg Plantation Transit Tip:</strong> Coorg's beauty is spread across large distances. To save time and truly enjoy the plantation atmosphere, rent a local SUV for your entire stay—it's essential for navigating the steep, narrow, and often muddy estate roads comfortably!
+                </p>
+              </div>
+            </div>
 
+          </section>
+
+          {/* Budget Breakdown Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-emerald-500 selection:text-white">
+
+            {/* Cyber-Atmospheric Background Glows */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-emerald-400/10 to-green-400/10 blur-[140px] rounded-full"></div>
+            </div>
+
+            {/* Header Block */}
+            <div className="text-center mb-16">
+              <span className="inline-flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-md">
+                ☕ Scotland of India
+              </span>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900">
+                Budget Breakdown for Coorg
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+                Escape to the misty hills of the Western Ghats, where sprawling coffee plantations and lush landscapes define your journey.
+              </p>
+            </div>
+
+            {/* Premium Tier Matrix */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+              {/* Card 1: Budget Traveler */}
+              <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-emerald-400/60 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold border border-emerald-100 shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                      🥾
+                    </div>
+                    <span className="text-[10px] font-black tracking-widest uppercase bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md">
+                      Nomad Tier
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Hillside Nomad
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Perfect for trekkers opting for homestays, local bus transit, and traditional Kodava home-cooked meals.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏠 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹800 – ₹1.5k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹400 – ₹800</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚌 Bus</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹100 – ₹300</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-emerald-600 tracking-tight">
+                    ₹1,300 – ₹2,600 <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2: Mid Range */}
+              <div className="group bg-white border-2 border-emerald-500 hover:border-emerald-400 shadow-xl hover:shadow-2xl hover:shadow-emerald-500/10 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 relative ring-8 ring-emerald-500/5">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-green-500 text-white font-black text-[10px] tracking-widest uppercase px-4 py-1 rounded-full shadow-md">
+                  Recommended
+                </div>
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg font-bold border border-emerald-100 shadow-sm group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                      ☕
+                    </div>
+                    <span className="text-[10px] tracking-widest uppercase bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-bold">
+                      Balanced
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Estate Explorer
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Best for plantation resorts, rented cabs for sightseeing, and dining at premium hill cafes.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹3.5k – ₹7k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹1.5k – ₹3k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚕 Cab</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹2k – ₹3.5k</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-emerald-600 tracking-tight">
+                    ₹7k – ₹13.5k <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3: Luxury */}
+              <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-green-400/60 shadow-md hover:shadow-xl hover:shadow-green-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-green-50 text-green-600 flex items-center justify-center text-lg font-bold border border-green-100 shadow-sm group-hover:bg-green-500 group-hover:text-white transition-all duration-300">
+                      ✨
+                    </div>
+                    <span className="text-[10px] tracking-widest uppercase bg-green-50 text-green-700 px-2.5 py-1 rounded-md font-bold">
+                      Elite Comfort
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Luxury Plantation
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Luxury heritage resorts, private guided plantation walks, and exclusive estate-to-cup coffee experiences.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹15k – ₹35k+</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹4k – ₹8k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚗 Priv.</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹5k – ₹10k</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-green-600 tracking-tight">
+                    ₹24k – ₹53k+ <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-14 text-center">
+              <div className="inline-flex items-center gap-3.5 bg-gradient-to-r from-emerald-500/10 via-green-500/5 to-transparent border border-emerald-500/20 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-emerald-950 font-semibold text-sm md:text-[15px] leading-relaxed">
+                  <strong className="text-emerald-800 font-black">Pro Tip:</strong> Visit between October and March for the best weather, and try to book a stay within a working coffee estate to truly experience Coorg's essence.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Shopping Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-green-500 selection:text-white">
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-green-400/15 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-400/15 blur-[120px] rounded-full"></div>
+            </div>
+
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-50 to-emerald-50 border border-green-100 text-green-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🍃 Plantation Treasures
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-green-950 to-gray-950">
+                Shopping in Coorg
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+                From world-class coffee beans to aromatic spices and homemade chocolates, bring the essence of the hills home.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-green-300 shadow-lg hover:shadow-xl hover:shadow-green-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-green-50 text-xl flex items-center justify-center border border-green-100/70 group-hover:bg-green-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      ☕
+                    </div>
+                    <span className="text-xs font-bold bg-green-100/60 text-green-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Estate Special
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-green-800 transition-colors duration-200">
+                    Fresh Coffee Beans & Powder
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Coorg is famous for its <span className="font-semibold text-gray-900">Arabica and Robusta coffee</span>. Visit local estates to buy fresh, premium-grade beans or grounds.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-green-600 tracking-wider uppercase">
+                  Signature Produce
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🌶️
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+                    Aromatic Spices
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Pick up pure <span className="font-semibold text-gray-900">cardamom, black pepper, cinnamon, and cloves</span> sourced directly from the spice gardens.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+                  Home Essentials
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🍫
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Homemade Chocolates
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Don't miss the famous <span className="font-semibold text-gray-900">homemade chocolate shops</span> in Madikeri—perfect for gifts or personal indulgence.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Sweet Treats
+                </div>
+              </div>
+
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-300 shadow-lg hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🍯
+                    </div>
+                    <span className="text-xs font-bold bg-orange-100/60 text-orange-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Pure Harvest
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
+                    Wild Forest Honey
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Look for <span className="font-semibold text-gray-900">authentic Coorg honey</span>, often harvested from wild beehives in the surrounding forests.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+                  Organic Goodness
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🍷
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-700 transition-colors duration-200">
+                    Homemade Fruit Wines
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Try unique flavors like <span className="font-semibold text-gray-900">jackfruit, grape, or passion fruit wines</span> made by local households.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+                  Local Elixir
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500/10 via-emerald-500/5 to-transparent border border-green-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-green-950 font-medium text-sm md:text-base leading-relaxed">
+                  <strong className="text-green-900 font-bold">Shopping Tip:</strong> Always prefer buying coffee and spices from trusted estate-owned shops rather than road-side vendors to ensure you get the freshest, unadulterated quality.
+                </p>
+              </div>
+            </div>
+          </section>
           {/* Tourism Link */}
           <div className="mt-8 text-center">
             <a

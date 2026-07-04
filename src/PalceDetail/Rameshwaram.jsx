@@ -19,8 +19,8 @@ const Rameshwaram = () => {
           transition={{ duration: 1 }}
           className="w-full h-[420px] object-cover"
           onError={(e) =>
-            (e.target.src =
-              "https://images.unsplash.com/photo-1603389320685-446b5fdbf02d?auto=format&fit=crop&w=1200&q=80")
+          (e.target.src =
+            "https://images.unsplash.com/photo-1603389320685-446b5fdbf02d?auto=format&fit=crop&w=1200&q=80")
           }
         />
 
@@ -51,245 +51,245 @@ const Rameshwaram = () => {
           </motion.p>
 
           {/* Introduction Section: Rameshwaram */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-blue-600 selection:text-white">
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-blue-600 selection:text-white">
 
-  {/* Advanced Radial Background Glows (Mystical Marine & Sacred Island Theme) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 left-10 w-96 h-96 bg-blue-600/10 blur-[130px] rounded-full"></div>
-    <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
-  </div>
+            {/* Advanced Radial Background Glows (Mystical Marine & Sacred Island Theme) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 left-10 w-96 h-96 bg-blue-600/10 blur-[130px] rounded-full"></div>
+              <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-500/10 blur-[120px] rounded-full"></div>
+            </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-16">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-amber-50 border border-blue-100 text-blue-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      <span>⚓</span> Spiritual Spotlight
-    </div>
-    <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-blue-950 to-gray-950">
-      Discover Rameshwaram
-    </h2>
-    <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
-      The holy island town sitting on the edge of India's southern frontier, boasting legendary pillared corridors, sacred ocean baths, and ghost-town ruins.
-    </p>
-  </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-amber-50 border border-blue-100 text-blue-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                <span>⚓</span> Spiritual Spotlight
+              </div>
+              <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-blue-950 to-gray-950">
+                Discover Rameshwaram
+              </h2>
+              <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+                The holy island town sitting on the edge of India's southern frontier, boasting legendary pillared corridors, sacred ocean baths, and ghost-town ruins.
+              </p>
+            </div>
 
-  {/* Main Layout Container */}
-  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-    
-    {/* Left Column: Premium Introduction (Glass Card) */}
-    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-blue-950/5 rounded-3xl p-8 sticky top-6">
-      <div className="text-4xl mb-4">🔱</div>
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        India's Sacred Oceanic Bridge
-      </h3>
-      <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
-        Rameshwaram, isolated beautifully on Pamban Island in Tamil Nadu, is a powerhouse of history, spirituality, and epic poetry. As one of India's core <span className="font-semibold">Char Dham</span> pilgrimage destinations, this pristine island directly overlooks the calm waters of the Gulf of Mannar.
-      </p>
-      <p className="text-gray-600 leading-relaxed text-[15.5px]">
-        Steeped completely in Ramayana lore, it is the mystical point where ancient faith meets high engineering marvels. It forms an incredible experience of grand Dravidian temple stones, aqua-blue maritime views, and endless coastal horizons.
-      </p>
-      
-      {/* Quick Stats Banner inside Left Card */}
-      <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
-        <div className="bg-blue-50/50 p-3 rounded-2xl">
-          <p className="text-2xl font-black text-blue-600">1,212</p>
-          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Pillars in Corridor</p>
-        </div>
-        <div className="bg-amber-50/50 p-3 rounded-2xl">
-          <p className="text-2xl font-black text-amber-600">22</p>
-          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Sacred Kunds (Wells)</p>
-        </div>
-      </div>
-    </div>
+            {/* Main Layout Container */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
-    {/* Right Column: Dynamic Feature Grid */}
-    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
-      
-      {/* Card 1: Ramanathaswamy Temple Corridors */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-md hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-xl font-bold text-blue-600 mb-5 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
-          🛕
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
-          The World's Longest Corridor
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Walk through awe-inspiring Dravidian architectural scales. The outer corridor of the <span className="font-semibold">Ramanathaswamy Temple</span> features over 1,200 massive, intricately carved granite pillars stretching infinitely along pristine sandstone floors.
-        </p>
-      </div>
+              {/* Left Column: Premium Introduction (Glass Card) */}
+              <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-blue-950/5 rounded-3xl p-8 sticky top-6">
+                <div className="text-4xl mb-4">🔱</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  India's Sacred Oceanic Bridge
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+                  Rameshwaram, isolated beautifully on Pamban Island in Tamil Nadu, is a powerhouse of history, spirituality, and epic poetry. As one of India's core <span className="font-semibold">Char Dham</span> pilgrimage destinations, this pristine island directly overlooks the calm waters of the Gulf of Mannar.
+                </p>
+                <p className="text-gray-600 leading-relaxed text-[15.5px]">
+                  Steeped completely in Ramayana lore, it is the mystical point where ancient faith meets high engineering marvels. It forms an incredible experience of grand Dravidian temple stones, aqua-blue maritime views, and endless coastal horizons.
+                </p>
 
-      {/* Card 2: Iconic Pamban Rail Bridge */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
-          🚂
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          The Historic Pamban Bridge
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Experience a gripping over-sea transit. Watch or ride along the engineering wonder that is the <span className="font-semibold">Pamban Bridge</span>, slicing straight through the open teal ocean waves to connect the island directly to the Indian mainland.
-        </p>
-      </div>
+                {/* Quick Stats Banner inside Left Card */}
+                <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
+                  <div className="bg-blue-50/50 p-3 rounded-2xl">
+                    <p className="text-2xl font-black text-blue-600">1,212</p>
+                    <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Pillars in Corridor</p>
+                  </div>
+                  <div className="bg-amber-50/50 p-3 rounded-2xl">
+                    <p className="text-2xl font-black text-amber-600">22</p>
+                    <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Sacred Kunds (Wells)</p>
+                  </div>
+                </div>
+              </div>
 
-      {/* Card 3: Ghost Town of Dhanushkodi */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-slate-300 shadow-md hover:shadow-xl hover:shadow-slate-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center text-xl font-bold text-slate-700 mb-5 group-hover:bg-slate-700 group-hover:text-white transition-all duration-300">
-          ⏳
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-slate-800 transition-colors duration-200">
-          Dhanushkodi: The Ghost Town
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Explore the edge of reality. Drive out to the desolate, hauntingly beautiful ruins of <span className="font-semibold">Dhanushkodi</span>—destroyed in a 1964 cyclone—where the roaring Indian Ocean explicitly meets the calm Bay of Bengal at Land's End.
-        </p>
-      </div>
+              {/* Right Column: Dynamic Feature Grid */}
+              <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-      {/* Card 4: Sacred Sea Bathing & Wells */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-cyan-300 shadow-md hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-cyan-50 flex items-center justify-center text-xl font-bold text-cyan-600 mb-5 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300">
-          🌊
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
-          Agni Theertham Purification
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Partake in rich, ancient cleansing rituals. Take a sacred dip in the placid ocean waters of Agni Theertham, followed by a ceremonial walk to be bathed by the historic, mineral-rich waters of the <span className="font-semibold">22 inner temple wells</span>.
-        </p>
-      </div>
+                {/* Card 1: Ramanathaswamy Temple Corridors */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-blue-300 shadow-md hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-xl font-bold text-blue-600 mb-5 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                    🛕
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+                    The World's Longest Corridor
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Walk through awe-inspiring Dravidian architectural scales. The outer corridor of the <span className="font-semibold">Ramanathaswamy Temple</span> features over 1,200 massive, intricately carved granite pillars stretching infinitely along pristine sandstone floors.
+                  </p>
+                </div>
 
-    </div>
-  </div>
+                {/* Card 2: Iconic Pamban Rail Bridge */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+                    🚂
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    The Historic Pamban Bridge
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Experience a gripping over-sea transit. Watch or ride along the engineering wonder that is the <span className="font-semibold">Pamban Bridge</span>, slicing straight through the open teal ocean waves to connect the island directly to the Indian mainland.
+                  </p>
+                </div>
 
-  {/* Bottom Premium Sticky Note */}
-  <div className="mt-12 bg-gradient-to-r from-blue-900 via-sky-950 to-amber-700 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
-    <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
-    <div className="relative z-10 max-w-3xl">
-      <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
-      <p className="text-blue-50 mt-2 text-sm md:text-base leading-relaxed opacity-90">
-        In short, Rameshwaram is a profoundly immersive island journey. It masterfully interweaves structural marvels, deep ocean winds, and raw architectural weight with ancient cultural roots, presenting an unforgettable off-shore experience at the very tip of the country.
-      </p>
-    </div>
-  </div>
+                {/* Card 3: Ghost Town of Dhanushkodi */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-slate-300 shadow-md hover:shadow-xl hover:shadow-slate-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center text-xl font-bold text-slate-700 mb-5 group-hover:bg-slate-700 group-hover:text-white transition-all duration-300">
+                    ⏳
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-slate-800 transition-colors duration-200">
+                    Dhanushkodi: The Ghost Town
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Explore the edge of reality. Drive out to the desolate, hauntingly beautiful ruins of <span className="font-semibold">Dhanushkodi</span>—destroyed in a 1964 cyclone—where the roaring Indian Ocean explicitly meets the calm Bay of Bengal at Land's End.
+                  </p>
+                </div>
 
-</section>
+                {/* Card 4: Sacred Sea Bathing & Wells */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-cyan-300 shadow-md hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-cyan-50 flex items-center justify-center text-xl font-bold text-cyan-600 mb-5 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300">
+                    🌊
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+                    Agni Theertham Purification
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Partake in rich, ancient cleansing rituals. Take a sacred dip in the placid ocean waters of Agni Theertham, followed by a ceremonial walk to be bathed by the historic, mineral-rich waters of the <span className="font-semibold">22 inner temple wells</span>.
+                  </p>
+                </div>
 
-         {/* Best Time to Visit */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-sky-500 selection:text-white">
+              </div>
+            </div>
 
-  {/* Advanced Radial Background Glows (Sacred Coastline & Heritage Temple Theme) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-sky-400/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
-  </div>
+            {/* Bottom Premium Sticky Note */}
+            <div className="mt-12 bg-gradient-to-r from-blue-900 via-sky-950 to-amber-700 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
+              <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+              <div className="relative z-10 max-w-3xl">
+                <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
+                <p className="text-blue-50 mt-2 text-sm md:text-base leading-relaxed opacity-90">
+                  In short, Rameshwaram is a profoundly immersive island journey. It masterfully interweaves structural marvels, deep ocean winds, and raw architectural weight with ancient cultural roots, presenting an unforgettable off-shore experience at the very tip of the country.
+                </p>
+              </div>
+            </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-16">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-50 to-amber-50 border border-sky-100 text-sky-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      🌅 Weather & Planning
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-sky-950 to-gray-950">
-      Best Time to Visit Rameshwaram
-    </h2>
-    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
-      Plan your perfect island pilgrimage aligned with pleasant maritime breezes and dramatic coastal sunsets.
-    </p>
-  </div>
+          </section>
 
-  {/* Main Interactive Grid Layout */}
-  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-    
-    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
-    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-sky-950/5 rounded-3xl p-8 flex flex-col justify-between">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl font-bold mb-6 border border-sky-100">
-          🕉️
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
-          The Sacred Island Windows
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
-          Rameshwaram offers its most comfortable and spiritually enriching weather from <span className="font-bold text-sky-700 bg-sky-50 px-1.5 py-0.5 rounded-md">October to March</span>. During these winter months, the intense tropical humidity drops as pleasant sea breezes cruise between 20°C - 30°C.
-        </p>
-        <p className="text-gray-600 leading-relaxed text-[15.5px]">
-          During this premium timeline, structural wonders like the monumental <span className="font-semibold text-gray-900">Pamban Bridge rail crossings</span>, the majestic Ramanathaswamy Temple pillared corridors, and the ghost town of Dhanushkodi are highly accessible.
-        </p>
-      </div>
+          {/* Best Time to Visit */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-sky-500 selection:text-white">
 
-      {/* Pro Tip Alert Section */}
-      <div className="mt-8 p-4 bg-gradient-to-r from-sky-50 to-amber-50 rounded-2xl border border-sky-100/50 flex gap-3 items-start">
-        <span className="text-lg mt-0.5">💡</span>
-        <p className="text-xs md:text-sm text-sky-900 font-medium leading-relaxed">
-          <strong className="text-sky-950">Pro Tip:</strong> Want to witness the ghost town of Dhanushkodi and the starting point of Ram Setu with maximum clarity? Plan your trip loops for January or February when foggy mornings give way to crystal-clear turquoise horizons.
-        </p>
-      </div>
-    </div>
+            {/* Advanced Radial Background Glows (Sacred Coastline & Heritage Temple Theme) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-sky-400/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-400/10 blur-[120px] rounded-full"></div>
+            </div>
 
-    {/* Right Side: Seasonal Breakdown Matrix */}
-    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
-      
-      {/* Season 1: Winter Peak */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-sm hover:shadow-lg hover:shadow-sky-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-sky-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            🛕
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-sky-700 transition-colors duration-200">
-              Winter Comfort (October – March)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              The grand premium season. Highly favorable for beach exploration, watching stunning ocean sunrises over Agni Tirtham, and taking spiritual holy dips across all 22 teerthams.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Spiritual Peak
-        </span>
-      </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-50 to-amber-50 border border-sky-100 text-sky-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🌅 Weather & Planning
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-sky-950 to-gray-950">
+                Best Time to Visit Rameshwaram
+              </h2>
+              <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+                Plan your perfect island pilgrimage aligned with pleasant maritime breezes and dramatic coastal sunsets.
+              </p>
+            </div>
 
-      {/* Season 2: Monsoon Retreat */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-sm hover:shadow-lg hover:shadow-teal-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-teal-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            🌧️
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-teal-700 transition-colors duration-200">
-              Monsoon Rhythms (July – September)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              Rameshwaram experiences moderate rains with high wind currents. The coastal landscape looks incredibly raw, though boat operations and bridge train schedules can encounter occasional delays.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-teal-100/70 text-teal-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Ocean Breeze
-        </span>
-      </div>
+            {/* Main Interactive Grid Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
-      {/* Season 3: Summer Humid Peak */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            ☀️
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
-              Summer Humidity (April – June)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              Intense coastal heat pushing up to 38°C with heavy humidity. Best suited for late evening architecture walks inside the temple interiors or enjoying crowd-free beach view discounts.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Quiet Stays
-        </span>
-      </div>
+              {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+              <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-sky-950/5 rounded-3xl p-8 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl font-bold mb-6 border border-sky-100">
+                    🕉️
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                    The Sacred Island Windows
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+                    Rameshwaram offers its most comfortable and spiritually enriching weather from <span className="font-bold text-sky-700 bg-sky-50 px-1.5 py-0.5 rounded-md">October to March</span>. During these winter months, the intense tropical humidity drops as pleasant sea breezes cruise between 20°C - 30°C.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed text-[15.5px]">
+                    During this premium timeline, structural wonders like the monumental <span className="font-semibold text-gray-900">Pamban Bridge rail crossings</span>, the majestic Ramanathaswamy Temple pillared corridors, and the ghost town of Dhanushkodi are highly accessible.
+                  </p>
+                </div>
 
-    </div>
-  </div>
+                {/* Pro Tip Alert Section */}
+                <div className="mt-8 p-4 bg-gradient-to-r from-sky-50 to-amber-50 rounded-2xl border border-sky-100/50 flex gap-3 items-start">
+                  <span className="text-lg mt-0.5">💡</span>
+                  <p className="text-xs md:text-sm text-sky-900 font-medium leading-relaxed">
+                    <strong className="text-sky-950">Pro Tip:</strong> Want to witness the ghost town of Dhanushkodi and the starting point of Ram Setu with maximum clarity? Plan your trip loops for January or February when foggy mornings give way to crystal-clear turquoise horizons.
+                  </p>
+                </div>
+              </div>
 
-</section>
+              {/* Right Side: Seasonal Breakdown Matrix */}
+              <div className="lg:col-span-7 flex flex-col justify-between gap-6">
+
+                {/* Season 1: Winter Peak */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-sm hover:shadow-lg hover:shadow-sky-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-sky-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      🛕
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-sky-700 transition-colors duration-200">
+                        Winter Comfort (October – March)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        The grand premium season. Highly favorable for beach exploration, watching stunning ocean sunrises over Agni Tirtham, and taking spiritual holy dips across all 22 teerthams.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Spiritual Peak
+                  </span>
+                </div>
+
+                {/* Season 2: Monsoon Retreat */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-teal-300 shadow-sm hover:shadow-lg hover:shadow-teal-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-teal-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      🌧️
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-teal-700 transition-colors duration-200">
+                        Monsoon Rhythms (July – September)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        Rameshwaram experiences moderate rains with high wind currents. The coastal landscape looks incredibly raw, though boat operations and bridge train schedules can encounter occasional delays.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-teal-100/70 text-teal-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Ocean Breeze
+                  </span>
+                </div>
+
+                {/* Season 3: Summer Humid Peak */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-orange-300 shadow-sm hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-orange-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      ☀️
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-orange-700 transition-colors duration-200">
+                        Summer Humidity (April – June)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        Intense coastal heat pushing up to 38°C with heavy humidity. Best suited for late evening architecture walks inside the temple interiors or enjoying crowd-free beach view discounts.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-orange-100/70 text-orange-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Quiet Stays
+                  </span>
+                </div>
+
+              </div>
+            </div>
+
+          </section>
 
           {/* Gallery */}
           <div className="mt-10">
@@ -312,8 +312,8 @@ const Rameshwaram = () => {
                   whileHover={{ scale: 1.05 }}
                   className="rounded-2xl shadow-md h-52 w-full object-cover"
                   onError={(e) =>
-                    (e.target.src =
-                      "https://images.unsplash.com/photo-1603389320685-446b5fdbf02d?auto=format&fit=crop&w=900&q=80")
+                  (e.target.src =
+                    "https://images.unsplash.com/photo-1603389320685-446b5fdbf02d?auto=format&fit=crop&w=900&q=80")
                   }
                 />
               ))}
@@ -321,271 +321,560 @@ const Rameshwaram = () => {
           </div>
 
           {/* Best Hotels & Resorts Section */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-600 selection:text-white">
-  
-  {/* Coastal Spiritual Background Glows (Ocean Cyan & Sacred Ochre Tints) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-600/5 blur-[120px] rounded-full"></div>
-  </div>
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-600 selection:text-white">
 
-  {/* Header Title Section */}
-  <div className="text-center mb-14">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-50 to-amber-50 border border-cyan-100 text-cyan-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      🌅 The Sacred Island Stay Guide
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-cyan-950 to-gray-950">
-      Best Hotels & Resorts in Rameshwaram
-    </h2>
-    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
-      From premier coastal spiritual retreats near the main shrine to tranquil beachside properties and budget-friendly pilgrim stays.
-    </p>
-  </div>
+            {/* Coastal Spiritual Background Glows (Ocean Cyan & Sacred Ochre Tints) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-cyan-500/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-600/5 blur-[120px] rounded-full"></div>
+            </div>
 
-  {/* Advanced Bento Grid Layout */}
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+            {/* Header Title Section */}
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-50 to-amber-50 border border-cyan-100 text-cyan-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🌅 The Sacred Island Stay Guide
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-cyan-950 to-gray-950">
+                Best Hotels & Resorts in Rameshwaram
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+                From premier coastal spiritual retreats near the main shrine to tranquil beachside properties and budget-friendly pilgrim stays.
+              </p>
+            </div>
 
-    {/* Card 1: Premium Temple-Proximity Stays (Featured - Larger width) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-600/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            🛕
-          </div>
-          <span className="text-xs font-bold bg-amber-100/60 text-amber-900 px-3 py-1 rounded-full uppercase tracking-wider">
-            Temple Circuit Premier
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-800 transition-colors duration-200">
-          Premium Spiritual Stays near Ramanathaswamy Temple
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Experience effortless dawn rituals by staying at top properties like <span className="font-semibold text-gray-900">Daiwik Hotels</span> or premium boutique options located within walking radius of the East Gopuram. These hotels are expertly tailored for family travelers, offering clean custom foot-washes, specialized spaces for post-teertham changes, and serene, alcohol-free vegetarian dining atmospheres.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-cyan-700 tracking-wider uppercase">
-        Early Morning Ritual Curation & Sacred Chants Ambient
-      </div>
-    </div>
+            {/* Advanced Bento Grid Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
 
-    {/* Card 2: Quiet Coastal & Beachfront Retreats */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🌊
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
-          Tranquil Pamban Coastline Resorts
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Unwind away from temple hubbub along the clean beach grids facing the Gulf of Mannar. Premium options here offer open sea-facing sunrise balconies, private sandy sit-outs, and quiet evening sea-breeze lawns perfect for meditation.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
-        Sunrise Ocean Decks & Gulf Meditation Lawns
-      </div>
-    </div>
+              {/* Card 1: Premium Temple-Proximity Stays (Featured - Larger width) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-600/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🛕
+                    </div>
+                    <span className="text-xs font-bold bg-amber-100/60 text-amber-900 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Temple Circuit Premier
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-800 transition-colors duration-200">
+                    Premium Spiritual Stays near Ramanathaswamy Temple
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Experience effortless dawn rituals by staying at top properties like <span className="font-semibold text-gray-900">Daiwik Hotels</span> or premium boutique options located within walking radius of the East Gopuram. These hotels are expertly tailored for family travelers, offering clean custom foot-washes, specialized spaces for post-teertham changes, and serene, alcohol-free vegetarian dining atmospheres.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-cyan-700 tracking-wider uppercase">
+                  Early Morning Ritual Curation & Sacred Chants Ambient
+                </div>
+              </div>
 
-    {/* Card 3: Organized Budget Family Bhavans */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🙏
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          Clean Heritage Pilgrim Ashrams & Dharamshalas
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Excellent value-focused stay options managed with spotlessly clean community layouts. Perfect for multi-generational group trips looking for massive family interconnected rooms, prompt cold/hot water access, and simple local support desks.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        Interconnected Family Rows & Clean Water Infrastructure
-      </div>
-    </div>
+              {/* Card 2: Quiet Coastal & Beachfront Retreats */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🌊
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+                    Tranquil Pamban Coastline Resorts
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Unwind away from temple hubbub along the clean beach grids facing the Gulf of Mannar. Premium options here offer open sea-facing sunrise balconies, private sandy sit-outs, and quiet evening sea-breeze lawns perfect for meditation.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+                  Sunrise Ocean Decks & Gulf Meditation Lawns
+                </div>
+              </div>
 
-    {/* Card 4: Dhanushkodi Eco-Perimeter Outposts (Featured - Larger width) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            🐚
-          </div>
-          <span className="text-xs font-bold bg-cyan-100/60 text-cyan-800 px-3 py-1 rounded-full uppercase tracking-wider">
-            Ghost Town Fringe
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-800 transition-colors duration-200">
-          Dhanushkodi Route Highway Lodges & Eco-Stays
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Position your journey close to the surreal landscapes of <span className="font-semibold text-gray-900">Dhanushkodi</span>. Modern roadside boutique villas along this corridor give you immediate highway access for early 4:00 AM drives to the lands-end point, cutting past massive crowd loops.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
-        Express Highway Junctions & Early Sunrise Access
-      </div>
-    </div>
+              {/* Card 3: Organized Budget Family Bhavans */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🙏
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Clean Heritage Pilgrim Ashrams & Dharamshalas
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Excellent value-focused stay options managed with spotlessly clean community layouts. Perfect for multi-generational group trips looking for massive family interconnected rooms, prompt cold/hot water access, and simple local support desks.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Interconnected Family Rows & Clean Water Infrastructure
+                </div>
+              </div>
 
-    {/* Card 5: Smart Transit Hub Hotels */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🚉
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          Rameshwaram Railway Transit Junctions
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Sleek, straightforward business-class lodgings near the central railway terminus and bus terminals. Offers prompt 24-hour checkout loops, fast secure luggage cloakrooms, and efficient automated auto-rickshaw tie-ups.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        24-Hour Flexible Check-Out & Fast Luggage Desks
-      </div>
-    </div>
+              {/* Card 4: Dhanushkodi Eco-Perimeter Outposts (Featured - Larger width) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🐚
+                    </div>
+                    <span className="text-xs font-bold bg-cyan-100/60 text-cyan-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Ghost Town Fringe
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-800 transition-colors duration-200">
+                    Dhanushkodi Route Highway Lodges & Eco-Stays
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Position your journey close to the surreal landscapes of <span className="font-semibold text-gray-900">Dhanushkodi</span>. Modern roadside boutique villas along this corridor give you immediate highway access for early 4:00 AM drives to the lands-end point, cutting past massive crowd loops.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+                  Express Highway Junctions & Early Sunrise Access
+                </div>
+              </div>
 
-  </div>
-</section>
+              {/* Card 5: Smart Transit Hub Hotels */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🚉
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Rameshwaram Railway Transit Junctions
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Sleek, straightforward business-class lodgings near the central railway terminus and bus terminals. Offers prompt 24-hour checkout loops, fast secure luggage cloakrooms, and efficient automated auto-rickshaw tie-ups.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  24-Hour Flexible Check-Out & Fast Luggage Desks
+                </div>
+              </div>
+
+            </div>
+          </section>
 
 
-{/* Restaurants & Cafes Section */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
-  
-  {/* Culinary Background Tints */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-950/5 blur-[120px] rounded-full"></div>
-  </div>
+          {/* Restaurants & Cafes Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-600 selection:text-white">
 
-  <div className="text-center mb-14">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-cyan-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      🍛 South Indian Comfort Cooking
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
-      Best Restaurants & Cafes in Rameshwaram
-    </h2>
-    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
-      From unlimited piping-hot Tamil Nadu plantain leaf meals to fresh ghee-dripping idli platters for hungry pilgrims.
-    </p>
-  </div>
+            {/* Culinary Background Tints */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-amber-600/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-950/5 blur-[120px] rounded-full"></div>
+            </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-cyan-50 border border-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🍛 South Indian Comfort Cooking
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+                Best Restaurants & Cafes in Rameshwaram
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+                From unlimited piping-hot Tamil Nadu plantain leaf meals to fresh ghee-dripping idli platters for hungry pilgrims.
+              </p>
+            </div>
 
-    {/* Card 1: Iconic Unlimited Plantain Leaf Mess Circuits (Featured) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            🍃
-          </div>
-          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            Authentic Tamil Nadu Bhojanams
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
-          Traditional Brahmin Veg Messes & Grand Lunch Halls
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Savor wholesome regional purity at highly revered local food hallmarks like <span className="font-semibold text-gray-900">Hotel Sabarish</span> or classic mess joints nearby. These spots dish out incredible, fast-paced lunch spreads featuring unlimited mounds of steaming rice, authentic tangy <span className="font-semibold text-gray-900">Kara Kuzhambu</span>, pepper-heavy rasams, fresh local poriyals, and traditional sweet payasam to fuel your long pilgrimage walks.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
-        Unlimited Ponni Rice Rounds & Ghee Rasam Pours
-      </div>
-    </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
 
-    {/* Card 2: Crispy Tiffin Institutions */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🥞
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
-          Ghee Roast & Fluffy Podi Idli Junctions
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Perfect for super-fast post-sea-bath breakfast hunger. Local points like <span className="font-semibold text-gray-900">Aangan Traditional Veg</span> excel at serving mountain-sized paper ghee roasts, melting hot podi idlis, and highly stacked vada sets paired with extra spicy coconut chanterelle chutneys.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
-        Triple-Chutney Podi Blasters & Fast Tiffin Loops
-      </div>
-    </div>
+              {/* Card 1: Iconic Unlimited Plantain Leaf Mess Circuits (Featured) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🍃
+                    </div>
+                    <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Authentic Tamil Nadu Bhojanams
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+                    Traditional Brahmin Veg Messes & Grand Lunch Halls
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Savor wholesome regional purity at highly revered local food hallmarks like <span className="font-semibold text-gray-900">Hotel Sabarish</span> or classic mess joints nearby. These spots dish out incredible, fast-paced lunch spreads featuring unlimited mounds of steaming rice, authentic tangy <span className="font-semibold text-gray-900">Kara Kuzhambu</span>, pepper-heavy rasams, fresh local poriyals, and traditional sweet payasam to fuel your long pilgrimage walks.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-700 tracking-wider uppercase">
+                  Unlimited Ponni Rice Rounds & Ghee Rasam Pours
+                </div>
+              </div>
 
-    {/* Card 3: North Indian & Multi-Cuisine Pilgrim Hubs */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🍲
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
-          Pan-Indian Pure Veg Luxury Diners
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          To accommodate travelers from all corners of India, premium hotel restaurants serve beautifully executed, no-onion-no-garlic options of rich Punjabi paneer recipes, Gujarati kadi variants, and crisp tandoori flatbreads.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
-        Custom No-Onion-Garlic Menus & Tandoori Comforts
-      </div>
-    </div>
+              {/* Card 2: Crispy Tiffin Institutions */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🥞
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+                    Ghee Roast & Fluffy Podi Idli Junctions
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Perfect for super-fast post-sea-bath breakfast hunger. Local points like <span className="font-semibold text-gray-900">Aangan Traditional Veg</span> excel at serving mountain-sized paper ghee roasts, melting hot podi idlis, and highly stacked vada sets paired with extra spicy coconut chanterelle chutneys.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+                  Triple-Chutney Podi Blasters & Fast Tiffin Loops
+                </div>
+              </div>
 
-    {/* Card 4: Coastal Sea-Breeze Filter Coffee Shacks */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            ☕
-          </div>
-          <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            Nostalgic Coffee Yards
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
-          Frothy Kumbakonam Degree Coffee Stalls
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Recharge your batteries after the 22-wells holy bath ritual with strong, traditional brass-cup <span className="font-semibold text-gray-900">Kumbakonam Degree Coffee</span>. Thickened over slow-steamed country milk and mixed with high-grade chicory blends, it's the perfect refreshing pick-me-up.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
-        Aromatic Chicory Froths & Fresh Hot Banana Fritters
-      </div>
-    </div>
+              {/* Card 3: North Indian & Multi-Cuisine Pilgrim Hubs */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🍲
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+                    Pan-Indian Pure Veg Luxury Diners
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    To accommodate travelers from all corners of India, premium hotel restaurants serve beautifully executed, no-onion-no-garlic options of rich Punjabi paneer recipes, Gujarati kadi variants, and crisp tandoori flatbreads.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+                  Custom No-Onion-Garlic Menus & Tandoori Comforts
+                </div>
+              </div>
 
-    {/* Card 5: Sweet Prasad Confectioners */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🍬
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
-          Traditional Laddu & Tirunelveli Halwa Counters
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Take home traditional treats for your neighbors. Local sweetmakers offer travel-hardy sweet packets of ghee-rich wheat <span className="font-semibold text-gray-900">Tirunelveli Halwa</span>, aromatic cardamon boondi laddus, and crisp mysore paks.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
-        Travel-Secured Ghee Packs & Dry-Fruit Ladoos
-      </div>
-    </div>
+              {/* Card 4: Coastal Sea-Breeze Filter Coffee Shacks */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-500/30 shadow-lg hover:shadow-xl hover:shadow-amber-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      ☕
+                    </div>
+                    <span className="text-xs font-bold bg-amber-100/60 text-amber-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Nostalgic Coffee Yards
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+                    Frothy Kumbakonam Degree Coffee Stalls
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Recharge your batteries after the 22-wells holy bath ritual with strong, traditional brass-cup <span className="font-semibold text-gray-900">Kumbakonam Degree Coffee</span>. Thickened over slow-steamed country milk and mixed with high-grade chicory blends, it's the perfect refreshing pick-me-up.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Aromatic Chicory Froths & Fresh Hot Banana Fritters
+                </div>
+              </div>
 
-  </div>
+              {/* Card 5: Sweet Prasad Confectioners */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-cyan-500/30 shadow-lg hover:shadow-xl hover:shadow-cyan-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-xl flex items-center justify-center border border-cyan-100/70 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🍬
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-cyan-700 transition-colors duration-200">
+                    Traditional Laddu & Tirunelveli Halwa Counters
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Take home traditional treats for your neighbors. Local sweetmakers offer travel-hardy sweet packets of ghee-rich wheat <span className="font-semibold text-gray-900">Tirunelveli Halwa</span>, aromatic cardamon boondi laddus, and crisp mysore paks.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-cyan-600 tracking-wider uppercase">
+                  Travel-Secured Ghee Packs & Dry-Fruit Ladoos
+                </div>
+              </div>
 
-  {/* Travel Guide Tip Banner */}
-  <div className="mt-12 text-center">
-    <div className="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-600/10 via-amber-600/5 to-transparent border border-cyan-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
-      <span className="text-xl shrink-0">💡</span>
-      <p className="text-cyan-950 font-medium text-sm md:text-base leading-relaxed">
-        <strong className="text-cyan-900 font-bold">Rameshwaram Traveler Tip:</strong> The grand temple corridors have a strict mobile-phone prohibition policy. Remember to leave your devices safely in your hotel room locker or check them into the official temple counter before heading out for the holy Mani Darshanam or the 22 Kund Teertham wells bath.
-      </p>
-    </div>
-  </div>
+            </div>
 
-</section>
+            {/* Travel Guide Tip Banner */}
+            <div className="mt-12 text-center">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-600/10 via-amber-600/5 to-transparent border border-cyan-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-cyan-950 font-medium text-sm md:text-base leading-relaxed">
+                  <strong className="text-cyan-900 font-bold">Rameshwaram Traveler Tip:</strong> The grand temple corridors have a strict mobile-phone prohibition policy. Remember to leave your devices safely in your hotel room locker or check them into the official temple counter before heading out for the holy Mani Darshanam or the 22 Kund Teertham wells bath.
+                </p>
+              </div>
+            </div>
 
+          </section>
+
+          {/* Budget Breakdown Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-cyan-500 selection:text-white">
+
+            {/* Cyber-Atmospheric Background Glows */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-cyan-300/10 to-blue-300/10 blur-[140px] rounded-full"></div>
+            </div>
+
+            {/* Header Block */}
+            <div className="text-center mb-16">
+              <span className="inline-flex items-center gap-1.5 bg-cyan-500/10 border border-cyan-500/20 text-cyan-600 dark:text-cyan-400 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-md">
+                🌊 Coastal Heritage Planner
+              </span>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900">
+                Budget Breakdown for Rameshwaram
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+                Analyze daily cost structures to experience the spiritual serenity and architectural marvels of this holy island city.
+              </p>
+            </div>
+
+            {/* Premium Tier Matrix */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+              {/* Card 1: Budget Traveler */}
+              <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-cyan-400/60 shadow-md hover:shadow-xl hover:shadow-cyan-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-lg font-bold border border-cyan-100 shadow-sm group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                      🐚
+                    </div>
+                    <span className="text-[10px] font-black tracking-widest uppercase bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md">
+                      Pilgrim Tier
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Spiritual Traveler
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Best for solo pilgrims and budget explorers staying in guesthouses near the temple complex.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹500 – ₹1,200</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹300 – ₹700</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚌 Local</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹100 – ₹300</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-cyan-600 tracking-tight">
+                    ₹900 – ₹2,200 <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2: Mid Range */}
+              <div className="group bg-white border-2 border-cyan-500 hover:border-cyan-400 shadow-xl hover:shadow-2xl hover:shadow-cyan-500/10 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 relative ring-8 ring-cyan-500/5">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-black text-[10px] tracking-widest uppercase px-4 py-1 rounded-full shadow-md">
+                  Recommended
+                </div>
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-lg font-bold border border-cyan-100 shadow-sm group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                      🏝️
+                    </div>
+                    <span className="text-[10px] tracking-widest uppercase bg-cyan-50 text-cyan-700 px-2.5 py-1 rounded-md font-bold">
+                      Balanced
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Island Explorer
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Ideal for families visiting temples, the Pamban Bridge, and serene beachside resorts.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹2.5k – ₹6k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹1k – ₹2k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚕 Cab</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹1k – ₹2k</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-cyan-600 tracking-tight">
+                    ₹4,500 – ₹10k <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3: Luxury */}
+              <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-blue-400/60 shadow-md hover:shadow-xl hover:shadow-blue-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg font-bold border border-blue-100 shadow-sm group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+                      ✨
+                    </div>
+                    <span className="text-[10px] tracking-widest uppercase bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md font-bold">
+                      Elite Coastal
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Seafront Luxury
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Premium stays at luxury resorts, private beach access, and personalized island tours.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹8k – ₹25k+</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹2k – ₹5k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚗 Priv.</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹2k – ₹5k</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-blue-600 tracking-tight">
+                    ₹12k – ₹35k+ <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-14 text-center">
+              <div className="inline-flex items-center gap-3.5 bg-gradient-to-r from-cyan-500/10 via-blue-500/5 to-transparent border border-cyan-500/20 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-cyan-950 font-semibold text-sm md:text-[15px] leading-relaxed">
+                  <strong className="text-cyan-800 font-black">Pro Tip:</strong> Don't miss a drive across the Pamban Bridge during sunset. It is an engineering marvel and offers some of the most breathtaking views of the Indian Ocean.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Shopping Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-amber-500 selection:text-white">
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-amber-400/15 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-400/15 blur-[120px] rounded-full"></div>
+            </div>
+
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-cyan-50 border border-amber-100 text-amber-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🛍️ Coastal Souvenirs
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-amber-950 to-gray-950">
+                Shopping in Rameshwaram
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+                Take home the beauty of the island with unique conch shell crafts, hand-woven textiles, and organic coastal produce.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🐚
+                    </div>
+                    <span className="text-xs font-bold bg-amber-100/60 text-amber-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Shell Art
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-800 transition-colors duration-200">
+                    Conch Shell Handicrafts
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Rameshwaram is renowned for its <span className="font-semibold text-gray-900">intricate shell crafts</span>. From decorative mirrors and lamps to jewelry, these are perfect, unique mementos of your coastal journey.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Coastal Artistry
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    📿
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+                    Rudraksha Beads
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Find authentic <span className="font-semibold text-gray-900">Rudraksha beads</span> and spiritual artifacts, widely available in the markets surrounding the Ramanathaswamy Temple.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+                  Spiritual Relics
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-emerald-300 shadow-lg hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-xl flex items-center justify-center border border-emerald-100/70 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🌴
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+                    Palm Leaf Crafts
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Discover traditional, locally made <span className="font-semibold text-gray-900">palm leaf products</span>, including baskets and decorative mats, crafted by island artisans.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-emerald-600 tracking-wider uppercase">
+                  Eco-Friendly Decor
+                </div>
+              </div>
+
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-300 shadow-lg hover:shadow-xl hover:shadow-purple-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      👕
+                    </div>
+                    <span className="text-xs font-bold bg-purple-100/60 text-purple-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Local Textiles
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-800 transition-colors duration-200">
+                    Hand-woven Sarees
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Explore the region's soft, <span className="font-semibold text-gray-900">hand-woven cotton sarees</span> which are perfectly suited for the coastal climate and known for their durability.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-purple-600 tracking-wider uppercase">
+                  Comfortable Weaves
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-rose-300 shadow-lg hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-rose-50 text-xl flex items-center justify-center border border-rose-100/70 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🧂
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-rose-700 transition-colors duration-200">
+                    Coastal Sea Salt
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Take home pure, unprocessed coastal sea salt, harvested from the salt pans near the island coast—an essential culinary treasure.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-rose-600 tracking-wider uppercase">
+                  Pure Island Harvest
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-500/10 via-cyan-500/5 to-transparent border border-amber-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-amber-950 font-medium text-sm md:text-base leading-relaxed">
+                  <strong className="text-amber-900 font-bold">Shopping Tip:</strong> When buying conch shell crafts or Rudraksha beads, explore the smaller stalls inside the temple vicinity. They often carry unique, artisan-made items at much better values than the larger stores!
+                </p>
+              </div>
+            </div>
+          </section>
           {/* Official Links */}
           <div className="mt-8 text-center">
             <a

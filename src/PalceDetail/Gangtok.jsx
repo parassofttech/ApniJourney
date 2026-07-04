@@ -67,135 +67,135 @@ const Gangtok = () => {
               transition={{ delay: 0.4 }}
               className="mt-10 text-slate-500 text-lg md:text-2xl max-w-4xl mx-auto leading-relaxed font-medium"
             >
-              Wrapped in clouds and prayer flags, Gangtok blends 
-              <span className="text-indigo-900 font-bold italic"> Buddhist serenity</span> 
+              Wrapped in clouds and prayer flags, Gangtok blends
+              <span className="text-indigo-900 font-bold italic"> Buddhist serenity</span>
               with Himalayan adventure.
             </motion.p>
           </header>
 
           {/* Introduction Section: Gangtok */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-700 selection:text-white">
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-rose-700 selection:text-white">
 
-  {/* Advanced Radial Background Glows (Himalayan Ridges & Monastic Gold Theme) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 left-10 w-96 h-96 bg-rose-900/10 blur-[130px] rounded-full"></div>
-    <div className="absolute bottom-10 right-10 w-96 h-96 bg-sky-500/10 blur-[120px] rounded-full"></div>
-  </div>
+            {/* Advanced Radial Background Glows (Himalayan Ridges & Monastic Gold Theme) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 left-10 w-96 h-96 bg-rose-900/10 blur-[130px] rounded-full"></div>
+              <div className="absolute bottom-10 right-10 w-96 h-96 bg-sky-500/10 blur-[120px] rounded-full"></div>
+            </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-16">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-sky-50 border border-rose-100 text-rose-900 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      <span>🏔️</span> Alpine Spotlight
-    </div>
-    <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
-      Discover Gangtok
-    </h2>
-    <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
-      The Cloud-Kissed Ridge—a pristine, high-altitude sanctuary where ancient Buddhist prayer wheels spin against the dramatic backdrop of the mighty Khangchendzonga.
-    </p>
-  </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-50 to-sky-50 border border-rose-100 text-rose-900 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                <span>🏔️</span> Alpine Spotlight
+              </div>
+              <h2 className="text-4xl md:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-rose-950 to-gray-950">
+                Discover Gangtok
+              </h2>
+              <p className="text-gray-500 mt-4 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+                The Cloud-Kissed Ridge—a pristine, high-altitude sanctuary where ancient Buddhist prayer wheels spin against the dramatic backdrop of the mighty Khangchendzonga.
+              </p>
+            </div>
 
-  {/* Main Layout Container */}
-  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-    
-    {/* Left Column: Premium Introduction (Glass Card) */}
-    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-rose-950/5 rounded-3xl p-8 sticky top-6">
-      <div className="text-4xl mb-4">🏮</div>
-      <h3 className="text-2xl font-bold text-gray-900 mb-4">
-        The Capital Above the Clouds
-      </h3>
-      <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
-        Gangtok, rising beautifully at an elevation of 1,650 meters along a dramatic cloud-swept ridge in Sikkim, stands as a beacon of clean, organized, and culturally rich mountain living. Translating directly to "Hill Top" in the local tongue, it has evolved from an ancient silk-route trading post into a hyper-clean, pedestrian-first highland escape.
-      </p>
-      <p className="text-gray-600 leading-relaxed text-[15.5px]">
-        Enveloped by rare orchid sanctuaries, misty rhododendron trails, and continuous vistas of the world's third-highest peak (<span className="font-semibold">Mt. Khangchendzonga</span>), Gangtok effortlessly pairs sharp modern infrastructure with deep, timeless Tibetan Buddhist mysticism.
-      </p>
-      
-      {/* Quick Stats Banner inside Left Card */}
-      <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
-        <div className="bg-rose-50/50 p-3 rounded-2xl">
-          <p className="text-2xl font-black text-rose-700">1,650m</p>
-          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Highland Altitude</p>
-        </div>
-        <div className="bg-sky-50/50 p-3 rounded-2xl">
-          <p className="text-2xl font-black text-sky-600">8,586m</p>
-          <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Khangchendzonga Peak</p>
-        </div>
-      </div>
-    </div>
+            {/* Main Layout Container */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
-    {/* Right Column: Dynamic Feature Grid */}
-    <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
-      
-      {/* Card 1: Rumtek Monastery */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-md hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center text-xl font-bold text-rose-700 mb-5 group-hover:bg-rose-700 group-hover:text-white transition-all duration-300">
-          ☸️
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
-          The Dharma of Rumtek
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Step into absolute spiritual symmetry. Perched on a hill facing Gangtok, the 16th-century <span className="font-semibold">Rumtek Monastery</span> serves as a world-renowned seat of Tibetan Buddhism, filled with priceless gold reliquaries and ancient murals.
-        </p>
-      </div>
+              {/* Left Column: Premium Introduction (Glass Card) */}
+              <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-rose-950/5 rounded-3xl p-8 sticky top-6">
+                <div className="text-4xl mb-4">🏮</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  The Capital Above the Clouds
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+                  Gangtok, rising beautifully at an elevation of 1,650 meters along a dramatic cloud-swept ridge in Sikkim, stands as a beacon of clean, organized, and culturally rich mountain living. Translating directly to "Hill Top" in the local tongue, it has evolved from an ancient silk-route trading post into a hyper-clean, pedestrian-first highland escape.
+                </p>
+                <p className="text-gray-600 leading-relaxed text-[15.5px]">
+                  Enveloped by rare orchid sanctuaries, misty rhododendron trails, and continuous vistas of the world's third-highest peak (<span className="font-semibold">Mt. Khangchendzonga</span>), Gangtok effortlessly pairs sharp modern infrastructure with deep, timeless Tibetan Buddhist mysticism.
+                </p>
 
-      {/* Card 2: MG Marg Promenade */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
-          🚶‍♂️
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
-          MG Marg Boulevard
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Stroll through India's premier smoke-free, litter-free pedestrian promenade. Lined with European-style benches, vibrant mountain cafes, and traditional handicraft boutiques, it is the beating urban heart of the capital.
-        </p>
-      </div>
+                {/* Quick Stats Banner inside Left Card */}
+                <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4 text-center">
+                  <div className="bg-rose-50/50 p-3 rounded-2xl">
+                    <p className="text-2xl font-black text-rose-700">1,650m</p>
+                    <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Highland Altitude</p>
+                  </div>
+                  <div className="bg-sky-50/50 p-3 rounded-2xl">
+                    <p className="text-2xl font-black text-sky-600">8,586m</p>
+                    <p className="text-xs font-semibold text-gray-500 uppercase mt-0.5">Khangchendzonga Peak</p>
+                  </div>
+                </div>
+              </div>
 
-      {/* Card 3: Nathu La Pass & Tsomgo Lake */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-md hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-sky-50 flex items-center justify-center text-xl font-bold text-sky-600 mb-5 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300">
-          🏔️
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
-          Glacial Lakes & Silk Routes
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Ascend to frozen heights. Take a breathtaking drive to the sacred, oval-shaped <span className="font-semibold">Tsomgo (Changu) Lake</span>, which reflects changing mountain colors, and proceed further to the historic Indo-China border at Nathu La Pass.
-        </p>
-      </div>
+              {/* Right Column: Dynamic Feature Grid */}
+              <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-      {/* Card 4: Gangtok Ropeway Aerial Vistas */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
-        <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-xl font-bold text-emerald-600 mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
-          🚡
-        </div>
-        <h4 className="text-lg font-bold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
-          The Sky-High Ropeway
-        </h4>
-        <p className="text-gray-600 text-sm leading-relaxed mt-2">
-          Glide silently over mountain crevices. This premium zig-zag cable car ride offers a dramatic bird's-eye view of the cascading city grid, deep green valleys, and mist-veiled hills sprawling far below.
-        </p>
-      </div>
+                {/* Card 1: Rumtek Monastery */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-md hover:shadow-xl hover:shadow-rose-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center text-xl font-bold text-rose-700 mb-5 group-hover:bg-rose-700 group-hover:text-white transition-all duration-300">
+                    ☸️
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-rose-800 transition-colors duration-200">
+                    The Dharma of Rumtek
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Step into absolute spiritual symmetry. Perched on a hill facing Gangtok, the 16th-century <span className="font-semibold">Rumtek Monastery</span> serves as a world-renowned seat of Tibetan Buddhism, filled with priceless gold reliquaries and ancient murals.
+                  </p>
+                </div>
 
-    </div>
-  </div>
+                {/* Card 2: MG Marg Promenade */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-amber-300 shadow-md hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-xl font-bold text-amber-600 mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+                    🚶‍♂️
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    MG Marg Boulevard
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Stroll through India's premier smoke-free, litter-free pedestrian promenade. Lined with European-style benches, vibrant mountain cafes, and traditional handicraft boutiques, it is the beating urban heart of the capital.
+                  </p>
+                </div>
 
-  {/* Bottom Premium Sticky Note */}
-  <div className="mt-12 bg-gradient-to-r from-rose-950 via-slate-900 to-sky-950 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
-    <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
-    <div className="relative z-10 max-w-3xl">
-      <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
-      <p className="text-rose-100 mt-2 text-sm md:text-base leading-relaxed opacity-90">
-        In short, Gangtok is a brilliantly sophisticated Himalayan gateway. It seamlessly bridges the deep, monastic silence of ancient chanting halls with the modern culinary energy of its cafes and clean, alpine nature trails—making it an absolute crown-jewel experience for Northeast expeditions.
-      </p>
-    </div>
-  </div>
+                {/* Card 3: Nathu La Pass & Tsomgo Lake */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-md hover:shadow-xl hover:shadow-sky-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-sky-50 flex items-center justify-center text-xl font-bold text-sky-600 mb-5 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300">
+                    🏔️
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-sky-700 transition-colors duration-200">
+                    Glacial Lakes & Silk Routes
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Ascend to frozen heights. Take a breathtaking drive to the sacred, oval-shaped <span className="font-semibold">Tsomgo (Changu) Lake</span>, which reflects changing mountain colors, and proceed further to the historic Indo-China border at Nathu La Pass.
+                  </p>
+                </div>
 
-</section>
+                {/* Card 4: Gangtok Ropeway Aerial Vistas */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-emerald-300 shadow-md hover:shadow-xl hover:shadow-emerald-500/5 transition-all duration-300 rounded-3xl p-6 hover:-translate-y-1">
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-xl font-bold text-emerald-600 mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+                    🚡
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 group-hover:text-emerald-700 transition-colors duration-200">
+                    The Sky-High Ropeway
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                    Glide silently over mountain crevices. This premium zig-zag cable car ride offers a dramatic bird's-eye view of the cascading city grid, deep green valleys, and mist-veiled hills sprawling far below.
+                  </p>
+                </div>
 
-          
+              </div>
+            </div>
+
+            {/* Bottom Premium Sticky Note */}
+            <div className="mt-12 bg-gradient-to-r from-rose-950 via-slate-900 to-sky-950 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden group">
+              <div className="absolute right-0 top-0 translate-x-10 -translate-y-10 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+              <div className="relative z-10 max-w-3xl">
+                <h4 className="text-xl font-extrabold tracking-wide">The Ultimate Verdict</h4>
+                <p className="text-rose-100 mt-2 text-sm md:text-base leading-relaxed opacity-90">
+                  In short, Gangtok is a brilliantly sophisticated Himalayan gateway. It seamlessly bridges the deep, monastic silence of ancient chanting halls with the modern culinary energy of its cafes and clean, alpine nature trails—making it an absolute crown-jewel experience for Northeast expeditions.
+                </p>
+              </div>
+            </div>
+
+          </section>
+
+
 
           {/* GALLERY */}
           <section className="mt-28">
@@ -240,243 +240,532 @@ const Gangtok = () => {
           </section>
 
           {/* Best Time to Visit */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-indigo-500 selection:text-white">
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-indigo-500 selection:text-white">
 
-  {/* Advanced Radial Background Glows (Himalayan Mist & Glacial Horizon Theme) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-indigo-400/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-sky-400/10 blur-[120px] rounded-full"></div>
-  </div>
+            {/* Advanced Radial Background Glows (Himalayan Mist & Glacial Horizon Theme) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-indigo-400/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-sky-400/10 blur-[120px] rounded-full"></div>
+            </div>
 
-  {/* Header Title Section */}
-  <div className="text-center mb-16">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-50 to-sky-50 border border-indigo-100 text-indigo-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      ⛰️ Weather & Planning
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-indigo-950 to-gray-950">
-      Best Time to Visit Gangtok
-    </h2>
-    <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
-      Plan your perfect Eastern Himalayan retreat aligned with crisp snow-bound winters, vibrant spring orchid blooms, or clear peak horizons.
-    </p>
-  </div>
+            {/* Header Title Section */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-50 to-sky-50 border border-indigo-100 text-indigo-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                ⛰️ Weather & Planning
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-indigo-950 to-gray-950">
+                Best Time to Visit Gangtok
+              </h2>
+              <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+                Plan your perfect Eastern Himalayan retreat aligned with crisp snow-bound winters, vibrant spring orchid blooms, or clear peak horizons.
+              </p>
+            </div>
 
-  {/* Main Interactive Grid Layout */}
-  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-    
-    {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
-    <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-indigo-950/5 rounded-3xl p-8 flex flex-col justify-between">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl font-bold mb-6 border border-indigo-100">
-          🏔️
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
-          The Dual Himalayan Windows
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
-          Gangtok offers two premium tourist cycles: <span className="font-bold text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded-md">March to May</span> for a vibrant spring and <span className="font-bold text-sky-700 bg-sky-50 px-1.5 py-0.5 rounded-md">October to mid-December</span> for crisp winter skies. During these peak windows, temperatures hover comfortably between 10°C and 22°C, escaping the harsh sub-zero freeze while offering maximum accessibility.
-        </p>
-        <p className="text-gray-600 leading-relaxed text-[15.5px]">
-          During these clear blocks, driving up to the high-altitude <span className="font-semibold text-gray-900">Tsomgo Lake</span> and Baba Mandir, walking along the car-free loops of MG Marg, or catching sunrise panoramas over Mt. Kanchenjunga feels absolutely surreal.
-        </p>
-      </div>
+            {/* Main Interactive Grid Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
-      {/* Pro Tip Alert Section */}
-      <div className="mt-8 p-4 bg-gradient-to-r from-indigo-50 to-sky-50 rounded-2xl border border-indigo-100/50 flex gap-3 items-start">
-        <span className="text-lg mt-0.5">💡</span>
-        <p className="text-xs md:text-sm text-indigo-900 font-medium leading-relaxed">
-          <strong className="text-indigo-950">Pro Tip:</strong> Looking to see heavy snow? Target late December to February. While high-altitude permits to Nathu La Pass often get blocked due to thick snow accumulation, the frozen loops of Tsomgo Lake offer an unbelievable winter-wonderland experience.
-        </p>
-      </div>
-    </div>
+              {/* Left Side: Peak Season Overview (Glassmorphic Card) */}
+              <div className="lg:col-span-5 bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl shadow-indigo-950/5 rounded-3xl p-8 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl font-bold mb-6 border border-indigo-100">
+                    🏔️
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                    The Dual Himalayan Windows
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15.5px] mb-4">
+                    Gangtok offers two premium tourist cycles: <span className="font-bold text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded-md">March to May</span> for a vibrant spring and <span className="font-bold text-sky-700 bg-sky-50 px-1.5 py-0.5 rounded-md">October to mid-December</span> for crisp winter skies. During these peak windows, temperatures hover comfortably between 10°C and 22°C, escaping the harsh sub-zero freeze while offering maximum accessibility.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed text-[15.5px]">
+                    During these clear blocks, driving up to the high-altitude <span className="font-semibold text-gray-900">Tsomgo Lake</span> and Baba Mandir, walking along the car-free loops of MG Marg, or catching sunrise panoramas over Mt. Kanchenjunga feels absolutely surreal.
+                  </p>
+                </div>
 
-    {/* Right Side: Seasonal Breakdown Matrix */}
-    <div className="lg:col-span-7 flex flex-col justify-between gap-6">
-      
-      {/* Season 1: Autumn Horizon */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-indigo-300 shadow-sm hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-indigo-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            🍁
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-indigo-700 transition-colors duration-200">
-              Clear Autumn Peaks (October – December)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              The grand post-monsoon cycle. The atmosphere clears up completely, offering the absolute sharpest, unobstructed view loops of snow-capped Himalayan ranges.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-indigo-100/70 text-indigo-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Crystal Views
-        </span>
-      </div>
+                {/* Pro Tip Alert Section */}
+                <div className="mt-8 p-4 bg-gradient-to-r from-indigo-50 to-sky-50 rounded-2xl border border-indigo-100/50 flex gap-3 items-start">
+                  <span className="text-lg mt-0.5">💡</span>
+                  <p className="text-xs md:text-sm text-indigo-900 font-medium leading-relaxed">
+                    <strong className="text-indigo-950">Pro Tip:</strong> Looking to see heavy snow? Target late December to February. While high-altitude permits to Nathu La Pass often get blocked due to thick snow accumulation, the frozen loops of Tsomgo Lake offer an unbelievable winter-wonderland experience.
+                  </p>
+                </div>
+              </div>
 
-      {/* Season 2: Spring Blooms */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-sm hover:shadow-lg hover:shadow-sky-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-sky-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            🌸
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-sky-700 transition-colors duration-200">
-              Vibrant Spring & Flowers (March – May)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              As snow melts, rhododendrons and exotic orchids erupt across the valleys. Beautiful, pleasant daytime climate—perfect for exploring Rumtek Monastery.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Valley Blooms
-        </span>
-      </div>
+              {/* Right Side: Seasonal Breakdown Matrix */}
+              <div className="lg:col-span-7 flex flex-col justify-between gap-6">
 
-      {/* Season 3: Monsoon Rains */}
-      <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex gap-4 items-start sm:items-center">
-          <div className="w-0.5 md:w-12 h-12 rounded-xl bg-rose-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-            🌧️
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 text-lg group-hover:text-rose-700 transition-colors duration-200">
-              Heavy Monsoon Phase (June – September)
-            </h4>
-            <p className="text-gray-500 text-sm mt-1 max-w-md">
-              The mountain terrain receives intense rainfall, often resulting in landslides and road closures along the Teesta River loops. Avoid heavy travel during this period.
-            </p>
-          </div>
-        </div>
-        <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1 rounded-full self-start sm:self-auto">
-          Unstable Zone
-        </span>
-      </div>
+                {/* Season 1: Autumn Horizon */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-indigo-300 shadow-sm hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-indigo-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      🍁
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-indigo-700 transition-colors duration-200">
+                        Clear Autumn Peaks (October – December)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        The grand post-monsoon cycle. The atmosphere clears up completely, offering the absolute sharpest, unobstructed view loops of snow-capped Himalayan ranges.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-indigo-100/70 text-indigo-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Crystal Views
+                  </span>
+                </div>
 
-    </div>
-  </div>
+                {/* Season 2: Spring Blooms */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-sky-300 shadow-sm hover:shadow-lg hover:shadow-sky-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-sky-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      🌸
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-sky-700 transition-colors duration-200">
+                        Vibrant Spring & Flowers (March – May)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        As snow melts, rhododendrons and exotic orchids erupt across the valleys. Beautiful, pleasant daytime climate—perfect for exploring Rumtek Monastery.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-sky-100/70 text-sky-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Valley Blooms
+                  </span>
+                </div>
 
-</section>
+                {/* Season 3: Monsoon Rains */}
+                <div className="group bg-white/50 backdrop-blur-md border border-gray-100 hover:border-rose-300 shadow-sm hover:shadow-lg hover:shadow-rose-500/5 transition-all duration-300 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex gap-4 items-start sm:items-center">
+                    <div className="w-0.5 md:w-12 h-12 rounded-xl bg-rose-50 text-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      🌧️
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-lg group-hover:text-rose-700 transition-colors duration-200">
+                        Heavy Monsoon Phase (June – September)
+                      </h4>
+                      <p className="text-gray-500 text-sm mt-1 max-w-md">
+                        The mountain terrain receives intense rainfall, often resulting in landslides and road closures along the Teesta River loops. Avoid heavy travel during this period.
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold tracking-wider uppercase bg-rose-100/70 text-rose-800 px-3 py-1 rounded-full self-start sm:self-auto">
+                    Unstable Zone
+                  </span>
+                </div>
 
-{/* Best Heritage Stays & Himalayan Retreats Section */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-purple-600 selection:text-white">
-  
-  {/* Himalayan Mist Background Glows (Purple & Saffron) */}
-  <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-    <div className="absolute top-10 right-10 w-96 h-96 bg-purple-500/10 blur-[120px] rounded-full"></div>
-    <div className="absolute bottom-10 left-10 w-96 h-96 bg-orange-500/10 blur-[120px] rounded-full"></div>
-  </div>
+              </div>
+            </div>
 
-  <div className="text-center mb-14">
-    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-50 to-orange-50 border border-purple-100 text-purple-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-      🏔️ The Himalayan Kingdom Stay Guide
-    </div>
-    <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-purple-950 to-gray-950">
-      Mountain View Haveli & Monastic Retreats
-    </h2>
-    <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
-      From luxury glass-fronted suites overlooking the Kanchenjunga massif to peaceful Buddhist heritage stays nestled in the quiet corners of the Eastern Himalayas.
-    </p>
-  </div>
+          </section>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+          {/* Best Heritage Stays & Himalayan Retreats Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-purple-600 selection:text-white">
 
-    {/* Card 1: Kanchenjunga View Suites (Featured) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-500/30 shadow-lg hover:shadow-xl hover:shadow-purple-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            ✨
-          </div>
-          <span className="text-xs font-bold bg-purple-100/60 text-purple-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            Peak View Luxury
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-800 transition-colors duration-200">
-          Kanchenjunga Panoramic Suites
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Wake up to the golden sunrise over the world’s third-highest peak. These suites offer floor-to-ceiling glass walls, private observation decks, and heated wooden interiors designed for the Himalayan chill.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-purple-700 tracking-wider uppercase">
-        Floor-to-Ceiling Peak Views & Heated Timber Interiors
-      </div>
-    </div>
+            {/* Himalayan Mist Background Glows (Purple & Saffron) */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-purple-500/10 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-orange-500/10 blur-[120px] rounded-full"></div>
+            </div>
 
-    {/* Card 2: Monastic Wellness Stays */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          📿
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
-          Monastic Heritage Stays
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Experience authentic Sikkimese culture in stays inspired by local monastery architecture. Featuring intricate wood carvings, peaceful meditation gardens, and direct access to morning chanting sessions.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
-        Meditation Gardens & Traditional Wood Craft
-      </div>
-    </div>
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-50 to-orange-50 border border-purple-100 text-purple-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🏔️ The Himalayan Kingdom Stay Guide
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-purple-950 to-gray-950">
+                Mountain View Haveli & Monastic Retreats
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+                From luxury glass-fronted suites overlooking the Kanchenjunga massif to peaceful Buddhist heritage stays nestled in the quiet corners of the Eastern Himalayas.
+              </p>
+            </div>
 
-    {/* Card 3: Cloud-Forest Boutique Lodges */}
-    <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-500/30 shadow-lg hover:shadow-xl hover:shadow-purple-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
-          🌲
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-700 transition-colors duration-200">
-          Cloud-Forest Eco-Lodges
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Tucked away in the misty Rhododendron forests surrounding Gangtok. These lodges offer a true immersion into nature, with bird-watching balconies and guided trails into the high-altitude wildlife corridors.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-purple-600 tracking-wider uppercase">
-        Rhododendron Trails & Bird-Watching Balconies
-      </div>
-    </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
 
-    {/* Card 4: Modern City Chic (Featured) */}
-    <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
-      <div>
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
-            🏙️
-          </div>
-          <span className="text-xs font-bold bg-purple-100/60 text-purple-950 px-3 py-1 rounded-full uppercase tracking-wider">
-            City Central
-          </span>
-        </div>
-        <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
-          MG Marg Boutique Hotels
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
-          Stay right in the heart of the action. These chic hotels offer modern amenities, trendy café terraces overlooking the bustling MG Marg, and quick access to the city’s best handicraft shops.
-        </p>
-      </div>
-      <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
-        MG Marg Terrace Cafes & Local Handicraft Access
-      </div>
-    </div>
-  </div>
-</section>
+              {/* Card 1: Kanchenjunga View Suites (Featured) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-500/30 shadow-lg hover:shadow-xl hover:shadow-purple-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      ✨
+                    </div>
+                    <span className="text-xs font-bold bg-purple-100/60 text-purple-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Peak View Luxury
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-800 transition-colors duration-200">
+                    Kanchenjunga Panoramic Suites
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Wake up to the golden sunrise over the world’s third-highest peak. These suites offer floor-to-ceiling glass walls, private observation decks, and heated wooden interiors designed for the Himalayan chill.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-purple-700 tracking-wider uppercase">
+                  Floor-to-Ceiling Peak Views & Heated Timber Interiors
+                </div>
+              </div>
 
-{/* Culinary Section */}
-<section className="relative max-w-6xl mx-auto md:px-6 py-16">
-  <div className="text-center mb-14">
-    <h2 className="text-4xl font-black text-gray-950">High-Altitude Flavors</h2>
-    <p className="text-gray-500 mt-3 text-lg">Authentic Momos, Thukpa, and Himalayan spice blends.</p>
-  </div>
-  
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-     {/* Add local food cards here... */}
-  </div>
-</section>
+              {/* Card 2: Monastic Wellness Stays */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    📿
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-700 transition-colors duration-200">
+                    Monastic Heritage Stays
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Experience authentic Sikkimese culture in stays inspired by local monastery architecture. Featuring intricate wood carvings, peaceful meditation gardens, and direct access to morning chanting sessions.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+                  Meditation Gardens & Traditional Wood Craft
+                </div>
+              </div>
 
+              {/* Card 3: Cloud-Forest Boutique Lodges */}
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-purple-500/30 shadow-lg hover:shadow-xl hover:shadow-purple-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-purple-50 text-xl flex items-center justify-center border border-purple-100/70 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🌲
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-purple-700 transition-colors duration-200">
+                    Cloud-Forest Eco-Lodges
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Tucked away in the misty Rhododendron forests surrounding Gangtok. These lodges offer a true immersion into nature, with bird-watching balconies and guided trails into the high-altitude wildlife corridors.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-purple-600 tracking-wider uppercase">
+                  Rhododendron Trails & Bird-Watching Balconies
+                </div>
+              </div>
+
+              {/* Card 4: Modern City Chic (Featured) */}
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-orange-500/30 shadow-lg hover:shadow-xl hover:shadow-orange-900/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-orange-50 text-xl flex items-center justify-center border border-orange-100/70 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🏙️
+                    </div>
+                    <span className="text-xs font-bold bg-purple-100/60 text-purple-950 px-3 py-1 rounded-full uppercase tracking-wider">
+                      City Central
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-orange-800 transition-colors duration-200">
+                    MG Marg Boutique Hotels
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Stay right in the heart of the action. These chic hotels offer modern amenities, trendy café terraces overlooking the bustling MG Marg, and quick access to the city’s best handicraft shops.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-orange-600 tracking-wider uppercase">
+                  MG Marg Terrace Cafes & Local Handicraft Access
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Culinary Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16">
+            <div className="text-center mb-14">
+              <h2 className="text-4xl font-black text-gray-950">High-Altitude Flavors</h2>
+              <p className="text-gray-500 mt-3 text-lg">Authentic Momos, Thukpa, and Himalayan spice blends.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Add local food cards here... */}
+            </div>
+          </section>
+
+          {/* Budget Breakdown Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-purple-500 selection:text-white">
+
+            {/* Cyber-Atmospheric Background Glows */}
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-purple-400/10 to-indigo-400/10 blur-[140px] rounded-full"></div>
+            </div>
+
+            {/* Header Block */}
+            <div className="text-center mb-16">
+              <span className="inline-flex items-center gap-1.5 bg-purple-500/10 border border-purple-500/20 text-purple-600 dark:text-purple-400 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-md">
+                🏔️ Himalayan Gateway
+              </span>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900">
+                Budget Breakdown for Gangtok
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium leading-relaxed">
+                Discover the vibrant mountain capital of Sikkim, where traditional culture meets cloud-kissed peaks.
+              </p>
+            </div>
+
+            {/* Premium Tier Matrix */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+              {/* Card 1: Budget Traveler */}
+              <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-purple-400/60 shadow-md hover:shadow-xl hover:shadow-purple-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-lg font-bold border border-purple-100 shadow-sm group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                      🎒
+                    </div>
+                    <span className="text-[10px] font-black tracking-widest uppercase bg-gray-100 text-gray-600 px-2.5 py-1 rounded-md">
+                      Nomad Tier
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Mountain Nomad
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Perfect for backpackers, staying in cozy hostels, and enjoying authentic momos at MG Marg.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏠 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹800 – ₹1.5k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹400 – ₹800</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚌 Local</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹100 – ₹300</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-purple-600 tracking-tight">
+                    ₹1,300 – ₹2,600 <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2: Mid Range */}
+              <div className="group bg-white border-2 border-purple-500 hover:border-purple-400 shadow-xl hover:shadow-2xl hover:shadow-purple-500/10 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 relative ring-8 ring-purple-500/5">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-black text-[10px] tracking-widest uppercase px-4 py-1 rounded-full shadow-md">
+                  Recommended
+                </div>
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-lg font-bold border border-purple-100 shadow-sm group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                      ✨
+                    </div>
+                    <span className="text-[10px] tracking-widest uppercase bg-purple-50 text-purple-700 px-2.5 py-1 rounded-md font-bold">
+                      Balanced
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Culture Seeker
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Ideal for comfortable boutique hotels, day trips to Tsomgo Lake, and cafe hopping.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹3.5k – ₹6k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹1.5k – ₹2.5k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚕 Cab</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹2k – ₹4k</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-purple-600 tracking-tight">
+                    ₹7,000 – ₹12,500 <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3: Luxury */}
+              <div className="group bg-white/70 backdrop-blur-xl border border-gray-200 hover:border-indigo-400/60 shadow-md hover:shadow-xl hover:shadow-indigo-500/5 rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-11 h-11 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg font-bold border border-indigo-100 shadow-sm group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                      👑
+                    </div>
+                    <span className="text-[10px] tracking-widest uppercase bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-md font-bold">
+                      Elite Comfort
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-black text-gray-900 tracking-tight">
+                    Himalayan Luxe
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1.5 mb-6 font-medium leading-relaxed">
+                    Luxury mountain retreats, private guided sightseeing, and exclusive dining experiences.
+                  </p>
+
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🏨 Stay</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹10k – ₹25k+</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🍽️ Food</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹3k – ₹6k</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-gray-50/50 p-2.5 rounded-xl border border-gray-100">
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider pl-1">🚗 Priv.</span>
+                      <span className="text-gray-900 font-extrabold text-sm">₹5k – ₹8k</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 pt-5 border-t border-dashed border-gray-200">
+                  <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Estimated Velocity</div>
+                  <div className="text-2xl font-black text-indigo-600 tracking-tight">
+                    ₹18k – ₹39k+ <span className="text-xs font-bold text-gray-400">/ day</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-14 text-center">
+              <div className="inline-flex items-center gap-3.5 bg-gradient-to-r from-purple-500/10 via-indigo-500/5 to-transparent border border-purple-500/20 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-purple-950 font-semibold text-sm md:text-[15px] leading-relaxed">
+                  <strong className="text-purple-800 font-black">Pro Tip:</strong> Apply for Inner Line Permits (ILP) at least a day in advance for restricted areas like Tsomgo Lake and Nathu La Pass to ensure a smooth journey.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Shopping Section */}
+          <section className="relative max-w-6xl mx-auto md:px-6 py-16 selection:bg-pink-500 selection:text-white">
+            <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-10 right-10 w-96 h-96 bg-pink-400/15 blur-[120px] rounded-full"></div>
+              <div className="absolute bottom-10 left-10 w-96 h-96 bg-blue-400/15 blur-[120px] rounded-full"></div>
+            </div>
+
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-50 to-blue-50 border border-pink-100 text-pink-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+                🛍️ Himalayan Treasures
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-950 via-pink-950 to-gray-950">
+                Shopping in Gangtok
+              </h2>
+              <p className="text-gray-500 mt-3 text-lg max-w-xl mx-auto font-medium">
+                Explore the bustling markets for authentic Sikkimese handicrafts, warm woolens, and sacred Buddhist artifacts.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-pink-300 shadow-lg hover:shadow-xl hover:shadow-pink-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-pink-50 text-xl flex items-center justify-center border border-pink-100/70 group-hover:bg-pink-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      🧶
+                    </div>
+                    <span className="text-xs font-bold bg-pink-100/60 text-pink-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Warm Gear
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-pink-800 transition-colors duration-200">
+                    Hand-woven Woolens
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Find incredibly soft <span className="font-semibold text-gray-900">woolens, sweaters, and shawls</span> with unique Himalayan motifs in the markets around MG Marg.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-pink-600 tracking-wider uppercase">
+                  Authentic Warmth
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-blue-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-blue-50 text-xl flex items-center justify-center border border-blue-100/70 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🖼️
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-blue-700 transition-colors duration-200">
+                    Thangka Paintings
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Admire and collect intricate <span className="font-semibold text-gray-900">Thangka scrolls</span>, which are traditional Tibetan Buddhist paintings on cotton or silk.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-blue-600 tracking-wider uppercase">
+                  Sacred Art
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-amber-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber-50 text-xl flex items-center justify-center border border-amber-100/70 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🎭
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-amber-700 transition-colors duration-200">
+                    Buddhist Masks
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Take home <span className="font-semibold text-gray-900">elaborate wooden dance masks</span> used in local monastery festivals (Chham dances).
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-amber-600 tracking-wider uppercase">
+                  Traditional Craft
+                </div>
+              </div>
+
+              <div className="group md:col-span-2 bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-teal-300 shadow-lg hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="flex items-center justify-between gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-teal-50 text-xl flex items-center justify-center border border-teal-100/70 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                      📿
+                    </div>
+                    <span className="text-xs font-bold bg-teal-100/60 text-teal-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Religious Artifacts
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-teal-800 transition-colors duration-200">
+                    Prayer Wheels & Beads
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Discover a wide range of <span className="font-semibold text-gray-900">handheld prayer wheels, mala beads, and singing bowls</span> sourced from local monasteries.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-teal-600 tracking-wider uppercase">
+                  Spiritual Souvenirs
+                </div>
+              </div>
+
+              <div className="group bg-white/60 backdrop-blur-xl border border-gray-200/60 hover:border-red-300 shadow-lg hover:shadow-xl hover:shadow-red-500/5 transition-all duration-300 rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-1">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-red-50 text-xl flex items-center justify-center border border-red-100/70 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm mb-6">
+                    🫖
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-red-700 transition-colors duration-200">
+                    Local Tea
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-[15px] mt-3">
+                    Sikkim's high-altitude <span className="font-semibold text-gray-900">Temi Tea</span> is famous globally—pick up a premium package for your home.
+                  </p>
+                </div>
+                <div className="mt-6 text-xs font-bold text-red-600 tracking-wider uppercase">
+                  Premium Tea
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500/10 via-blue-500/5 to-transparent border border-pink-100/70 backdrop-blur-md px-6 py-4 rounded-2xl text-left max-w-2xl mx-auto shadow-sm">
+                <span className="text-xl shrink-0">💡</span>
+                <p className="text-pink-950 font-medium text-sm md:text-base leading-relaxed">
+                  <strong className="text-pink-900 font-bold">Shopping Tip:</strong> Visit 'Lal Bazaar' if you want a truly local experience and better prices, especially for tea and regional dry goods, compared to the more commercialized souvenir shops.
+                </p>
+              </div>
+            </div>
+          </section>
           {/* CTA */}
           <div className="mt-20 text-center">
             <motion.a
