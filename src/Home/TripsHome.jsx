@@ -97,7 +97,7 @@ const fetchUsers = async () => {
   }, []);
 
   const fetchTrips = async () => {
-
+    console.log(trips);
    
     try {
       setLoading(true);
@@ -114,6 +114,8 @@ const fetchUsers = async () => {
         
       });
       setTrips(data.slice(-8).reverse());
+      console.log(res.data);
+console.log(data);
 
       // setTrips(Array.isArray(data) ? data : []);
     } catch (err) {
@@ -335,7 +337,9 @@ useEffect(() => {
       <div className="max-w-3xl  mx-auto py-10 space-y-10">
 
         {trips.map((trip, index) => {
+          if (!trip) return null;
 
+        
          
   const id = trip._id || trip.id;
 
@@ -390,14 +394,14 @@ useEffect(() => {
     <button
       onClick={(e) => {
         e.stopPropagation();
-        setOpenMenu(openMenu === trip._id ? null : trip._id);
+        setOpenMenu(openMenu === id ? null : id);
       }}
       className="p-2 rounded-full hover:bg-gray-100 transition"
     >
       <MoreVertical size={20} />
     </button>
 
-    {openMenu === trip._id && (
+    {openMenu === id && (
       <div
         onClick={(e) => e.stopPropagation()}
         className="absolute top-10 right-0 w-52 bg-white rounded-xl shadow-2xl border z-50"
@@ -424,7 +428,7 @@ useEffect(() => {
           Share
         </button>
 
-        {trip.userId === currentUser._id || trip.userId === currentUser.id ? (
+        {trip.userId === currentUser?._id || trip.userId === currentUser?.id ? (
   <button
     onClick={() => handleDelete(id)}
     className="flex ml-4 py-2 pb-4 text-red-600  hover:bg-red-600 transition"
@@ -502,11 +506,11 @@ useEffect(() => {
             </button>
 
             <button
-  onClick={() => getComments(trip._id)}
+  onClick={() => getComments(id)}
   className="flex items-center gap-2 hover:text-blue-600 transition"
 >
   <MessageCircle size={22} />
-  <span>{comments[trip._id || trip.id]?.length || 0}</span>
+  <span>{comments[id]?.length || 0}</span>
 </button>
 
             
@@ -529,7 +533,7 @@ useEffect(() => {
             />
           </button>
           
-         {trip.userId === currentUser._id || trip.userId === currentUser.id ? (
+         {trip.userId === currentUser?._id || trip.userId === currentUser?.id ? (
   <button
     onClick={() => handleDelete(id)}
     className="  text-red-600  hover:bg-red-600 transition"
@@ -562,9 +566,9 @@ useEffect(() => {
         {/* Comments */}
         
 
-       <button onClick={()=>getComments(trip._id)} className="mt-2 text-gray-800">
+       <button onClick={()=>getComments(id)} className="mt-2 text-gray-800">
   {/* .length use karein, taaki "Array" render na ho, "Number" render ho */}
-  View all {comments[trip._id || trip.id]?.length || 0} comments
+  View all {comments[id]?.length || 0} comments
 </button>
 
 
@@ -574,18 +578,18 @@ useEffect(() => {
     <div className="flex gap-2">
       <input
         type="text"
-        value={commentText[trip._id || trip.id] || ""}
+        value={commentText[id] || ""}
         onChange={(e) =>
           setCommentText({
             ...commentText,
-            [trip._id || trip.id]: e.target.value,
+            [id]: e.target.value,
           })
         }
         placeholder="Write a comment..."
         className="flex-1 border rounded-xl px-4 py-2 outline-none"
       />
       <button
-        onClick={() => addComment(trip._id || trip.id)}
+        onClick={() => addComment(id)}
         className="bg-blue-600 text-white px-4 rounded-xl"
       >
         Post
@@ -594,7 +598,7 @@ useEffect(() => {
 
     {/* 2. Comments List Section (Ek hi jagah map karein) */}
     <div className="mt-4 space-y-2">
-      {(comments[trip._id || trip.id] || []).map((comment) => (
+      {(comments[id] || []).map((comment) => (
         <div
           key={comment._id || Math.random()} // Unique ID use karein
           className="bg-gray-100 rounded-xl px-4 py-2"
