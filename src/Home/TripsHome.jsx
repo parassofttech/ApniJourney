@@ -8,15 +8,24 @@ import {
   Send,
   Bookmark,
   MoreHorizontal,
+  MoreVertical,
   MapPin,
   Calendar,
   IndianRupee,
   Star,
   Eye,
   Plus,
+  Delete,
+  DeleteIcon,
+  Trash2,
+  Share2,
+  Flag ,
+  Edit,
 } from "lucide-react";
 
 const TripsHome = () => {
+
+  
   const [trips, setTrips] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -32,18 +41,64 @@ const [stats, setStats] = useState({ trips: 0 });
   const [savedPosts, setSavedPosts] = useState({});
 
   // Dummy comments count
-  const [comments] = useState({
-    1: 12,
-    2: 8,
-    3: 16,
-    4: 22,
-  });
+  
+  const [comments, setComments] = useState({});
+  const [searchTerm, setSearchTerm] = useState("");
+const [commentText, setCommentText] = useState({});
+const [showComments, setShowComments] = useState({});
+
+const [showMenu, setShowMenu] = useState({});
+const [openMenu, setOpenMenu] = useState(null);
+
+
+  const [users, setUsers] = useState([]);
+  // const [loading, setLoading] = useState(true);
+
+  const API_URL = "https://apnijourney-api.onrender.com/api/auth/users";
+  const token = localStorage.getItem("token");
+  const authConfig = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
+
+ 
+  
+ 
+const currentUser = JSON.parse(localStorage.getItem("user"));
+
+
+const fetchUsers = async () => {
+   
+    try {
+      const res = await axios.get(API_URL, authConfig);
+      const data = Array.isArray(res.data.user) ? res.data.user : (Array.isArray(res.data) ? res.data : []);
+      setUsers(data);
+    } catch (err) {
+      setError(err.response?.data?.message || "Failed to fetch users");
+    } finally {
+      
+    }
+  };
+
+  useEffect(() => {
+    fetchUsers();
+  }, []);
+
+  const filteredUsers = users.filter(user => 
+    user.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+    user.email.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // if (loading) return (
+  //   <div className="flex h-96 items-center justify-center">
+  //     <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-blue-600"></div>
+  //   </div>
+  // );
 
   useEffect(() => {
     fetchTrips();
   }, []);
 
   const fetchTrips = async () => {
+
+   
     try {
       setLoading(true);
 
@@ -58,7 +113,7 @@ const [stats, setStats] = useState({ trips: 0 });
         trips: data.length,
         
       });
-      setTrips(data.slice(-6).reverse());
+      setTrips(data.slice(-8).reverse());
 
       // setTrips(Array.isArray(data) ? data : []);
     } catch (err) {
@@ -74,7 +129,9 @@ const [stats, setStats] = useState({ trips: 0 });
 
     try {
       await axios.delete(
-        `https://apnijourney-api.onrender.com/api/trips/${id}`
+        `https://apnijourney-api.onrender.com/api/trips/${id}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      }
       );
 
       setTrips((prev) =>
@@ -120,6 +177,111 @@ const [stats, setStats] = useState({ trips: 0 });
     alert("Trip link copied.");
   }
 };
+const addComment = async (tripId) => {
+  const text = commentText[tripId];
+
+  if (!text?.trim()) return;
+
+  try {
+    const token = localStorage.getItem("token");
+
+    const res = await axios.post(
+      `https://apnijourney-api.onrender.com/api/comments/${tripId}`,
+      { text: text },
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
+
+    
+    setComments((prev) => ({
+      ...prev,
+      [tripId]: [...(prev[tripId] || []), res.data],
+    }));
+
+   
+    setCommentText((prev) => ({
+      ...prev,
+      [tripId]: "",
+    }));
+
+    
+    setShowComments((prev) => ({
+      ...prev,
+      [tripId]: true,
+    }));
+
+    
+  } catch (err) {
+    console.log(err);
+    alert("Failed to add comment"+ (err.response?.data?.message || "Unauthorized"));
+  }
+};
+
+const getComments = async (tripId) => {
+  
+  if (!tripId) {
+    console.error("Error: Trip ID is undefined!");
+    return;
+  }
+
+  try {
+    if (showComments[tripId]) {
+      setShowComments((prev) => ({ ...prev, [tripId]: false }));
+      return;
+    }
+
+    const res = await axios.get(
+      `https://apnijourney-api.onrender.com/api/comments/${tripId}`
+    );
+
+    setComments((prev) => ({
+      ...prev,
+      [tripId]: res.data,
+    }));
+
+    setShowComments((prev) => ({ ...prev, [tripId]: true }));
+  } catch (err) {
+    console.error("Backend Error:", err.response?.data || err.message);
+  }
+};
+
+// TripsHome.jsx ke top level par add karein
+useEffect(() => {
+  const fetchAllCommentCounts = async () => {
+    try {
+      // Har trip ke liye loop chala kar count laayein
+      trips.forEach(async (trip) => {
+        const tripId = trip._id || trip.id;
+        const res = await axios.get(`https://apnijourney-api.onrender.com/api/comments/${tripId}`);
+        
+        // State update karein taaki UI update ho jaye
+        setComments((prev) => ({
+          ...prev,
+          [tripId]: res.data,
+        }));
+      });
+    } catch (err) {
+      console.log("Error loading initial comments:", err);
+    }
+  };
+
+  if (trips.length > 0) {
+    fetchAllCommentCounts();
+  }
+}, [trips]); // Jab bhi trips load honge, ye chalega
+
+useEffect(() => {
+  const handleClick = () => setOpenMenu(null);
+
+  document.addEventListener("click", handleClick);
+
+  return () => {
+    document.removeEventListener("click", handleClick);
+  };
+}, []);
 
   if (loading) {
     return (
@@ -137,10 +299,10 @@ const [stats, setStats] = useState({ trips: 0 });
       {/* Top Header */}
 
       <div className="sticky top-0 z-50 bg-white border-b">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
 
           <div>
-            <h1 className="text-3xl font-black">
+            <h1 className="md:text-3xl font-black">
               My Journeys ✈️
             </h1>
 
@@ -170,9 +332,11 @@ const [stats, setStats] = useState({ trips: 0 });
 
       {/* Feed */}
 
-      <div className="max-w-3xl mx-auto py-10 space-y-10">
+      <div className="max-w-3xl  mx-auto py-10 space-y-10">
 
         {trips.map((trip, index) => {
+
+         
   const id = trip._id || trip.id;
 
   return (
@@ -185,40 +349,102 @@ const [stats, setStats] = useState({ trips: 0 });
     >
       {/* ---------- Post Header ---------- */}
 
-      <div className="flex items-center justify-between px-5 py-4">
+      
 
-        <div className="flex items-center gap-3">
+<div className="flex items-center justify-between px-5 py-4">
 
-          <img
+  {/* Left */}
+  <div className="flex items-center gap-3">
+    <img
             src="https://i.pravatar.cc/150?img=12"
             alt="user"
             className="w-12 h-12 rounded-full object-cover"
           />
-
           <div>
 
-            <h3 className="font-bold text-gray-900">
-              {trip.userName || "Traveler"}
+            <h3 className="font-bold text-2xl text-gray-900">
+              {trip.name || "Traveler"}
             </h3>
+            {/* <div>
+              {filteredUsers.length > 0 ? (
+                filteredUsers.map((user) => (
+                <div>{user._id}</div>
+              )  )):(<div></div>)
+                }
+            </div> */}
 
-            <div className="flex items-center gap-1 text-gray-500 text-sm">
+            <div className="flex items-center gap-1 text-gray-900 text-sm">
               <MapPin size={14} />
               {trip.destination}
             </div>
 
           </div>
+    
 
-        </div>
+    
+  </div>
 
-        <MoreHorizontal className="cursor-pointer" />
+  {/* Right Menu */}
+  <div className="relative ml-4">
 
+    <button
+      onClick={(e) => {
+        e.stopPropagation();
+        setOpenMenu(openMenu === trip._id ? null : trip._id);
+      }}
+      className="p-2 rounded-full hover:bg-gray-100 transition"
+    >
+      <MoreVertical size={20} />
+    </button>
+
+    {openMenu === trip._id && (
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="absolute top-10 right-0 w-52 bg-white rounded-xl shadow-2xl border z-50"
+      >
+        <button
+          onClick={() => navigate(`/trip/${trip._id}`)}
+          className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-100"
+        >
+          <Eye size={18} />
+          View Details
+        </button>
+
+        <button
+          onClick={() => {
+            navigator.share({
+              title: trip.title,
+              text: trip.destination,
+              url: `${window.location.origin}/trip/${trip._id}`,
+            });
+          }}
+          className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-100"
+        >
+          <Share2 size={18} />
+          Share
+        </button>
+
+        {trip.userId === currentUser._id || trip.userId === currentUser.id ? (
+  <button
+    onClick={() => handleDelete(id)}
+    className="flex ml-4 py-2 pb-4 text-red-600  hover:bg-red-600 transition"
+  >
+    <Trash2 size={24}/>Delete
+  </button>
+):(<div className="hidden">
+  
+</div>)}
       </div>
+    )}
 
+  </div>
+
+</div>
       
 
       {/* ---------- Trip Image ---------- */}
 
-      <div className="w-full h-[500px] bg-gray-100">
+      <div className="w-full h-[450px]  bg-gray-100">
         {/* like show in image */}
       {animateLike === id && (
   <motion.div
@@ -229,7 +455,7 @@ const [stats, setStats] = useState({ trips: 0 });
   >
     <Heart
       className="fill-red-500 text-red-500"
-      size={120}
+      size={100}
     />
   </motion.div>
 )}
@@ -256,24 +482,31 @@ const [stats, setStats] = useState({ trips: 0 });
 
           <div className="flex gap-5">
 
-            <button onClick={() => toggleLike(id)}>
+            <button onClick={() => toggleLike(id)}
+              className="flex flex-row items-center gap-2">
               <Heart
                 size={28}
-                className={`transition ${
+                className={` transition ${
                   likedPosts[id]
                     ? "fill-red-500 text-red-500"
                     : "text-gray-700"
-                }`}
+                  
+                }`,"flex "}
+                
               />
+              <span className=" text-black">
+          {(likedPosts[id] ? 1 : 0) +
+            5 +
+            index}
+        </span>
             </button>
 
             <button
-onClick={()=>{
-setSelectedTrip(trip);
-setOpenComments(true);
-}}
+  onClick={() => getComments(trip._id)}
+  className="flex items-center gap-2 hover:text-blue-600 transition"
 >
-<MessageCircle size={28}/>
+  <MessageCircle size={22} />
+  <span>{comments[trip._id || trip.id]?.length || 0}</span>
 </button>
 
             
@@ -283,7 +516,9 @@ setOpenComments(true);
 
           </div>
 
-          <button onClick={() => toggleSave(id)}>
+          <div className="flex gap-4 ">
+            <button onClick={() => toggleSave(id)}
+              className="">
             <Bookmark
               size={27}
               className={`${
@@ -293,16 +528,23 @@ setOpenComments(true);
               }`}
             />
           </button>
-
+          
+         {trip.userId === currentUser._id || trip.userId === currentUser.id ? (
+  <button
+    onClick={() => handleDelete(id)}
+    className="  text-red-600  hover:bg-red-600 transition"
+  >
+    <Trash2 size={24}/>
+  </button>
+):(<div className="hidden">
+  
+</div>)}
+          </div>
         </div>
+   
+        
 
-        {/* Likes */}
-
-        <p className="mt-4 font-bold text-gray-900">
-          {(likedPosts[id] ? 1 : 0) +
-            240 +
-            index} Likes
-        </p>
+       
 
         {/* Caption */}
 
@@ -318,63 +560,70 @@ setOpenComments(true);
         </p>
 
         {/* Comments */}
+        
 
-        <button className="mt-3 text-gray-500">
-          View all {comments[id] || 0} comments
-        </button>
+       <button onClick={()=>getComments(trip._id)} className="mt-2 text-gray-800">
+  {/* .length use karein, taaki "Array" render na ho, "Number" render ho */}
+  View all {comments[trip._id || trip.id]?.length || 0} comments
+</button>
+
+
+       {showComments[trip._id || trip.id] && (
+  <div className="mt-4 border-t pt-4">
+    {/* 1. Comment Input Section */}
+    <div className="flex gap-2">
+      <input
+        type="text"
+        value={commentText[trip._id || trip.id] || ""}
+        onChange={(e) =>
+          setCommentText({
+            ...commentText,
+            [trip._id || trip.id]: e.target.value,
+          })
+        }
+        placeholder="Write a comment..."
+        className="flex-1 border rounded-xl px-4 py-2 outline-none"
+      />
+      <button
+        onClick={() => addComment(trip._id || trip.id)}
+        className="bg-blue-600 text-white px-4 rounded-xl"
+      >
+        Post
+      </button>
+    </div>
+
+    {/* 2. Comments List Section (Ek hi jagah map karein) */}
+    <div className="mt-4 space-y-2">
+      {(comments[trip._id || trip.id] || []).map((comment) => (
+        <div
+          key={comment._id || Math.random()} // Unique ID use karein
+          className="bg-gray-100 rounded-xl px-4 py-2"
+        >
+          <p className="font-bold text-sm text-black">
+            {trip.name || "Anonymous"}
+          </p>
+          <p className="text-gray-900">{comment.text}</p>
+        </div>
+      ))}
+    </div>
+    {/* Sirf tab dikhega jab login user hi trip ka owner ho */}
+
+  </div>
+)}
+
 
         {/* Date */}
 
-        <div className="mt-4 flex items-center gap-2 text-gray-400 text-sm">
+        <div className="mt-3 flex items-center gap-2 text-gray-400 text-sm">
           <Calendar size={15} />
           {trip.startDate?.split("T")[0]}
         </div>
 
-        {/* Info Cards */}
-
-        <div className="grid grid-cols-2 gap-4 mt-6">
-
-          <div className="bg-green-50 rounded-2xl p-4 flex items-center gap-3">
-
-            <IndianRupee className="text-green-600" />
-
-            <div>
-
-              <p className="text-xs text-gray-500">
-                Budget
-              </p>
-
-              <p className="font-bold">
-                ₹{trip.budget?.toLocaleString() || 0}
-              </p>
-
-            </div>
-
-          </div>
-
-          <div className="bg-yellow-50 rounded-2xl p-4 flex items-center gap-3">
-
-            <Star className="fill-yellow-400 text-yellow-400" />
-
-            <div>
-
-              <p className="text-xs text-gray-500">
-                Rating
-              </p>
-
-              <p className="font-bold">
-                {trip.rating || "4.8"}
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
+        
 
         {/* Buttons */}
 
-        <div className="flex gap-3 mt-6 pb-6">
+        <div className="flex gap-3 mt-5 pb-6">
 
           <Link
             to={`/trip/${id}`}
@@ -384,12 +633,8 @@ setOpenComments(true);
             View Details
           </Link>
 
-          <button
-            onClick={() => handleDelete(id)}
-            className="px-5 bg-red-500 text-white rounded-xl hover:bg-red-600 transition"
-          >
-            Delete
-          </button>
+          {/* Sirf tab dikhega jab login user hi trip ka owner ho */}
+
 
         </div>
 

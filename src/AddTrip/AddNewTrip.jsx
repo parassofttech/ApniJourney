@@ -10,10 +10,12 @@ import {
   Wallet,
   Star,
   NotebookPen,
+  User,
 } from "lucide-react";
 
 const AddTrip = () => {
   const [trip, setTrip] = useState({
+    name:"",
     title: "",
     destination: "",
     category: "",
@@ -29,10 +31,11 @@ const AddTrip = () => {
   const [previewImages, setPreviewImages] = useState([]);
   const [message, setMessage] = useState("");
   const [progress, setProgress] = useState(0);
+  const postUser = localStorage.getItem("loggedInUser")
 
   //  Progress calculation
   useEffect(() => {
-    const fields = ["title", "destination", "startDate"];
+    const fields = ["name", "title", "destination", "startDate"];
     const filled = fields.filter((f) => trip[f] !== "").length;
     setProgress(Math.round((filled / fields.length) * 100));
   }, [trip]);
@@ -64,7 +67,7 @@ const AddTrip = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!trip.title || !trip.destination || !trip.startDate) {
+    if (!trip.name || !trip.title || !trip.destination || !trip.startDate) {
       return setMessage("⚠️ Please fill all required fields!");
       
     }
@@ -89,12 +92,15 @@ console.log("Token:", token);
 });
 console.log(localStorage.getItem("token"));
 
+  localStorage.setItem("postuser", postUser)
+
 
 
       if (response.data.success) {
         setMessage("✅ Trip saved successfully to MongoDB!");
         // Reset form
         setTrip({
+          name:"",
           title: "",
           destination: "",
           category: "",
@@ -172,6 +178,7 @@ console.log(localStorage.getItem("token"));
 
             {/* Reusable Input Style */}
             {[
+              { label: "Name *", name: "name", icon: <User className="inline mr-2 text-blue-600" />, placeholder: "Enter your name" },
               { label: "Trip Title *", name: "title", icon: <NotebookPen className="inline mr-2 text-blue-600" />, placeholder: "e.g. Goa Adventure Trip" },
               { label: "Destination *", name: "destination", icon: <MapPin className="inline mr-2 text-red-500" />, placeholder: "e.g. Goa, India" },
             ].map((field, i) => (

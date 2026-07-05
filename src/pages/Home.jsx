@@ -49,20 +49,24 @@ const Home = () => {
         {/* <div><DestinationCard/></div> */}
         
         {/* <div><UpcomingTrips/></div> */}
-         <div><TravelBooking/></div>
+
          
          <div><TourismLanding/></div>
         
-        <div><OffersSection/></div>
+        
+        <div><TripsHome/></div>
 
         <div><WildlifeSlider/></div>
+        <div><TravelBooking/></div>
 
         <div><WhyChooseApnijourney/></div>
+        <div><OffersSection/></div>
 
         <div><BlogHighlights/></div>
+
         {/* <div className="mb-7"><PhotoGallery/></div> */}
         <div><WeatherInfo/></div>
-        <div><TripsHome/></div>
+        
         <div><CTASection/></div>
         <div><TravelGuide/></div>
         <div><LatestTravelArticles/></div>
