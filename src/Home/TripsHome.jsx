@@ -1,28 +1,48 @@
-import React, { useEffect, useState, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { 
-  MapPin, 
-  Calendar, 
-  Trash2, 
-  Eye, 
-  Plus, 
-  ChevronRight, 
-  ChevronLeft, 
+import {
+  Heart,
+  MessageCircle,
+  Send,
+  Bookmark,
+  MoreHorizontal,
+  MapPin,
+  Calendar,
+  IndianRupee,
   Star,
-  IndianRupee 
+  Eye,
+  Plus,
 } from "lucide-react";
 
 const TripsHome = () => {
   const [trips, setTrips] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const scrollRef = useRef(null);
+  const [animateLike, setAnimateLike] = useState(null);
+  const [openComments,setOpenComments]=useState(false);
+const [selectedTrip,setSelectedTrip]=useState(null);
+const [stats, setStats] = useState({ trips: 0 });
 
-  
+  // Store likes
+  const [likedPosts, setLikedPosts] = useState({});
+
+  // Store saved posts
+  const [savedPosts, setSavedPosts] = useState({});
+
+  // Dummy comments count
+  const [comments] = useState({
+    1: 12,
+    2: 8,
+    3: 16,
+    4: 22,
+  });
 
   useEffect(() => {
+    fetchTrips();
+  }, []);
+
   const fetchTrips = async () => {
     try {
       setLoading(true);
@@ -33,7 +53,14 @@ const TripsHome = () => {
 
       const data = res.data.trips || res.data.data || res.data;
 
-      setTrips(Array.isArray(data) ? data : []);
+      setStats({
+      
+        trips: data.length,
+        
+      });
+      setTrips(data.slice(-6).reverse());
+
+      // setTrips(Array.isArray(data) ? data : []);
     } catch (err) {
       console.log(err);
       setError(err.response?.data?.message || "Failed to fetch trips");
@@ -42,171 +69,428 @@ const TripsHome = () => {
     }
   };
 
-  fetchTrips();
-}, []);
-
   const handleDelete = async (id) => {
-  if (!window.confirm("Delete this adventure?")) return;
+    if (!window.confirm("Delete this trip?")) return;
 
-  try {
-    await axios.delete(
-      `https://apnijourney-api.onrender.com/api/trips/${id}`
-    );
+    try {
+      await axios.delete(
+        `https://apnijourney-api.onrender.com/api/trips/${id}`
+      );
 
-    setTrips((prev) => prev.filter((trip) => (trip._id || trip.id) !== id));
-  } catch (err) {
-    console.log(err);
-    setError("Failed to delete trip");
-  }
-};
-
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      const { scrollLeft, clientWidth } = scrollRef.current;
-      const scrollTo = direction === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth;
-      scrollRef.current.scrollTo({ left: scrollTo, behavior: "smooth" });
+      setTrips((prev) =>
+        prev.filter((trip) => (trip._id || trip.id) !== id)
+      );
+    } catch (err) {
+      console.log(err);
+      alert("Delete failed");
     }
   };
 
-  
+  const toggleLike = (id) => {
+  setLikedPosts((prev) => ({
+    ...prev,
+    [id]: !prev[id],
+  }));
 
-  // --- SKELETON LOADING STATE ---
-  if (loading) return (
-    <div className="min-h-screen bg-gray-50 flex gap-6 p-10 overflow-hidden">
-      {[1, 2, 3].map((i) => (
-        <div key={i} className="w-80 h-[450px] bg-white rounded-3xl animate-pulse shadow-sm p-6">
-          <div className="h-48 bg-gray-200 rounded-2xl mb-4" />
-          <div className="h-6 bg-gray-200 w-3/4 mb-4" />
-          <div className="h-4 bg-gray-100 w-1/2" />
+  setAnimateLike(id);
+
+  setTimeout(() => {
+    setAnimateLike(null);
+  }, 600);
+};
+
+  const toggleSave = (id) => {
+    setSavedPosts((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
+
+  const shareTrip = async (trip) => {
+  const url = `${window.location.origin}/trip/${trip._id}`;
+
+  if (navigator.share) {
+    await navigator.share({
+      title: trip.title,
+      text: trip.description,
+      url,
+    });
+  } else {
+    navigator.clipboard.writeText(url);
+    alert("Trip link copied.");
+  }
+};
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-slate-100 flex justify-center items-center">
+        <div className="text-xl font-bold animate-pulse">
+          Loading Trips...
         </div>
-      ))}
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-cyan-100 via-white to-blue-100">
+      <div className="fixed inset-0 -z-10 bg-gradient-to-br from-cyan-100 via-white to-blue-100"/>
+      {/* Top Header */}
+
+      <div className="sticky top-0 z-50 bg-white border-b">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+          <div>
+            <h1 className="text-3xl font-black">
+              My Journeys ✈️
+            </h1>
+
+            <p className="text-gray-500">
+              {trips.length} Travel Posts
+            </p>
+          </div>
+
+          <Link
+            to="/add-trip"
+            className="flex items-center gap-2 bg-blue-600 text-white px-5 py-3 rounded-xl hover:bg-blue-700 transition"
+          >
+            <Plus size={18} />
+            Add Trip
+          </Link>
+
+        </div>
+      </div>
+
+      {/* Error */}
+
+      {error && (
+        <div className="max-w-3xl mx-auto mt-5 bg-red-100 text-red-600 p-4 rounded-xl">
+          {error}
+        </div>
+      )}
+
+      {/* Feed */}
+
+      <div className="max-w-3xl mx-auto py-10 space-y-10">
+
+        {trips.map((trip, index) => {
+  const id = trip._id || trip.id;
+
+  return (
+    <motion.div
+      key={id}
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.08 }}
+      className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200"
+    >
+      {/* ---------- Post Header ---------- */}
+
+      <div className="flex items-center justify-between px-5 py-4">
+
+        <div className="flex items-center gap-3">
+
+          <img
+            src="https://i.pravatar.cc/150?img=12"
+            alt="user"
+            className="w-12 h-12 rounded-full object-cover"
+          />
+
+          <div>
+
+            <h3 className="font-bold text-gray-900">
+              {trip.userName || "Traveler"}
+            </h3>
+
+            <div className="flex items-center gap-1 text-gray-500 text-sm">
+              <MapPin size={14} />
+              {trip.destination}
+            </div>
+
+          </div>
+
+        </div>
+
+        <MoreHorizontal className="cursor-pointer" />
+
+      </div>
+
+      
+
+      {/* ---------- Trip Image ---------- */}
+
+      <div className="w-full h-[500px] bg-gray-100">
+        {/* like show in image */}
+      {animateLike === id && (
+  <motion.div
+    initial={{ scale: 0, opacity: 0 }}
+    animate={{ scale: 1.4, opacity: 1 }}
+    exit={{ opacity: 0 }}
+    className="absolute inset-0 flex items-center justify-center"
+  >
+    <Heart
+      className="fill-red-500 text-red-500"
+      size={120}
+    />
+  </motion.div>
+)}
+        {trip.photos?.length ? (
+          <img
+            src={trip.photos[0]}
+            alt={trip.destination}
+            onDoubleClick={()=>toggleLike(id)}
+            className="w-full h-full object-cover transition duration-700 cursor-pointer"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-gray-400">
+            No Image
+          </div>
+        )}
+
+      </div>
+
+      {/* ---------- Action Buttons ---------- */}
+
+      <div className="px-5 pt-4">
+
+        <div className="flex items-center justify-between">
+
+          <div className="flex gap-5">
+
+            <button onClick={() => toggleLike(id)}>
+              <Heart
+                size={28}
+                className={`transition ${
+                  likedPosts[id]
+                    ? "fill-red-500 text-red-500"
+                    : "text-gray-700"
+                }`}
+              />
+            </button>
+
+            <button
+onClick={()=>{
+setSelectedTrip(trip);
+setOpenComments(true);
+}}
+>
+<MessageCircle size={28}/>
+</button>
+
+            
+            <button onClick={() => shareTrip(trip)}>
+    <Send size={27}/>
+</button>
+
+          </div>
+
+          <button onClick={() => toggleSave(id)}>
+            <Bookmark
+              size={27}
+              className={`${
+                savedPosts[id]
+                  ? "fill-black text-black"
+                  : "text-gray-700"
+              }`}
+            />
+          </button>
+
+        </div>
+
+        {/* Likes */}
+
+        <p className="mt-4 font-bold text-gray-900">
+          {(likedPosts[id] ? 1 : 0) +
+            240 +
+            index} Likes
+        </p>
+
+        {/* Caption */}
+
+        <p className="mt-2 text-gray-700 leading-7">
+          <span className="font-bold">
+            {trip.userName || "Traveler"}
+          </span>{" "}
+          visited{" "}
+          <span className="font-semibold text-blue-600">
+            {trip.destination}
+          </span>
+          . {trip.description || "An unforgettable journey with amazing views and memories."}
+        </p>
+
+        {/* Comments */}
+
+        <button className="mt-3 text-gray-500">
+          View all {comments[id] || 0} comments
+        </button>
+
+        {/* Date */}
+
+        <div className="mt-4 flex items-center gap-2 text-gray-400 text-sm">
+          <Calendar size={15} />
+          {trip.startDate?.split("T")[0]}
+        </div>
+
+        {/* Info Cards */}
+
+        <div className="grid grid-cols-2 gap-4 mt-6">
+
+          <div className="bg-green-50 rounded-2xl p-4 flex items-center gap-3">
+
+            <IndianRupee className="text-green-600" />
+
+            <div>
+
+              <p className="text-xs text-gray-500">
+                Budget
+              </p>
+
+              <p className="font-bold">
+                ₹{trip.budget?.toLocaleString() || 0}
+              </p>
+
+            </div>
+
+          </div>
+
+          <div className="bg-yellow-50 rounded-2xl p-4 flex items-center gap-3">
+
+            <Star className="fill-yellow-400 text-yellow-400" />
+
+            <div>
+
+              <p className="text-xs text-gray-500">
+                Rating
+              </p>
+
+              <p className="font-bold">
+                {trip.rating || "4.8"}
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Buttons */}
+
+        <div className="flex gap-3 mt-6 pb-6">
+
+          <Link
+            to={`/trip/${id}`}
+            className="flex-1 bg-blue-600 text-white py-3 rounded-xl flex justify-center items-center gap-2 hover:bg-blue-700 transition"
+          >
+            <Eye size={18} />
+            View Details
+          </Link>
+
+          <button
+            onClick={() => handleDelete(id)}
+            className="px-5 bg-red-500 text-white rounded-xl hover:bg-red-600 transition"
+          >
+            Delete
+          </button>
+
+        </div>
+
+      </div>
+
+    </motion.div>
+  );
+})}
+
+      </div>
     </div>
   );
 
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-200/30 via-green-200/30 to-blue-200/40 -z-10 px-2 lg:px-12 overflow-hidden">
-      {/* Decorative Background Elements */}
-      {/* <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-100 rounded-full " />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-100 rounded-full " /> */}
+  // ---------- Empty State ----------
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        
-        {/* HEADER SECTION */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-          <div>
-            <motion.h1 
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="text-5xl font-black text-slate-900 tracking-tight"
-            >
-              My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Journeys</span>
-            </motion.h1>
-            <p className="text-slate-500 mt-2 text-lg">You have explored {trips.length} destinations so far.</p>
-          </div>
-          
-          <Link to="/add-trip" className="group flex items-center gap-2 bg-slate-900 text-white px-6 py-3.5 rounded-2xl hover:bg-blue-600 transition-all shadow-lg shadow-slate-200">
-            <Plus className="w-5 h-5 group-hover:rotate-90 transition-transform" />
-            <span className="font-semibold">New Adventure</span>
+  if (trips.length === 0) {
+    return (
+      <div className="min-h-screen bg-[#fafafa] flex items-center justify-center px-6">
+        <div className="bg-white rounded-3xl shadow-xl p-12 text-center max-w-md w-full">
+
+          <div className="text-7xl mb-6">🏕️</div>
+
+          <h2 className="text-3xl font-bold text-gray-800">
+            No Trips Yet
+          </h2>
+
+          <p className="text-gray-500 mt-3 leading-7">
+            Looks like you haven't shared any travel memories.
+            Start your first adventure today and inspire others.
+          </p>
+
+          <Link
+            to="/add-trip"
+            className="inline-flex items-center gap-2 mt-8 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-semibold transition"
+          >
+            <Plus size={20} />
+            Add Your First Trip
           </Link>
+
         </div>
+      </div>
+    );
+  }
 
-        {/* TRIPS SECTION */}
-        {trips.length === 0 ? (
-          <div className="h-[60vh] flex flex-col items-center justify-center bg-white/50 backdrop-blur-md border border-white rounded-[40px] shadow-sm">
-            <div className="p-6 bg-blue-50 rounded-full mb-4 text-blue-500 text-4xl">🏝️</div>
-            <p className="text-xl font-bold text-slate-800">Your passport is empty!</p>
-            <p className="text-slate-500 mb-6">Start planning your next escape today.</p>
-          </div>
-        ) : (
-          <div className="relative group">
-            {/* Scroll Navigation */}
-            <button onClick={() => scroll("left")} className="absolute -left-4 top-1/2 -translate-y-1/2 z-20 bg-white p-3 rounded-full shadow-xl opacity-0 group-hover:opacity-100 transition-opacity border border-slate-100 hover:text-blue-600">
-              <ChevronLeft size={24} />
-            </button>
-            <button onClick={() => scroll("right")} className="absolute -right-4 top-1/2 -translate-y-1/2 z-20 bg-white p-3 rounded-full shadow-xl opacity-0 group-hover:opacity-100 transition-opacity border border-slate-100 hover:text-blue-600">
-              <ChevronRight size={24} />
-            </button>
+  // ---------- Main Feed ----------
 
-            <div 
-              ref={scrollRef}
-              className="flex gap-8 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory pb-12 pt-4 px-2"
-            >
-              <AnimatePresence>
-                {trips.map((trip, idx) => (
-                  <motion.div
-                    key={trip._id || idx}
-                    initial={{ opacity: 0, scale: 0.9, y: 20 }}
-                    animate={{ opacity: 1, scale: 1, y: 0 }}
-                    transition={{ delay: idx * 0.1 }}
-                    className="snap-center flex-shrink-0 w-55 md:w-96 bg-white rounded-[32px] shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] transition-all duration-500 overflow-hidden border border-slate-100/50 group/card"
-                  >
-                    {/* Image Header */}
-                    <div className="h-56 relative overflow-hidden">
-                      {trip.photos?.length ? (
-                        <img src={trip.photos[0]} alt="" className="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-700" />
-                      ) : (
-                        <div className="w-full h-full bg-slate-100 flex items-center justify-center text-slate-400">
-                          No Preview
-                        </div>
-                      )}
-                      <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1.5 rounded-xl flex items-center gap-1.5 shadow-sm">
-                        <Star className="w-4 h-4 text-orange-400 fill-orange-400" />
-                        <span className="text-xs font-bold text-slate-700">{trip.rating || "N/A"}</span>
-                      </div>
-                    </div>
+  return (
+    <div className="min-h-screen bg-[#fafafa]">
 
-                    {/* Card Body */}
-                    <div className="p-7">
-                      <div className="flex items-start justify-between mb-4">
-                        <div>
-                          <h3 className="text-2xl font-bold text-slate-800 leading-tight mb-1 group-hover/card:text-blue-600 transition-colors">
-                            {trip.title || "Untitled Trip"}
-                          </h3>
-                          <div className="flex items-center gap-1 text-slate-400">
-                            <MapPin size={14} className="text-red-400" />
-                            <span className="text-sm font-medium">{trip.destination}</span>
-                          </div>
-                        </div>
-                      </div>
+      {/* Header */}
+      <div className="sticky top-0 z-50 bg-white border-b backdrop-blur-lg">
+        <div className="max-w-3xl mx-auto h-16 flex items-center justify-between px-5">
 
-                      <div className="grid grid-cols-2 gap-4 py-4 border-y border-slate-50 mb-6">
-                        <div className="flex items-center gap-2">
-                          <div className="p-2 bg-slate-50 rounded-lg text-slate-500"><Calendar size={16}/></div>
-                          <span className="text-xs font-semibold text-slate-600 uppercase">{trip.startDate?.split('T')[0] || "TBD"}</span>
-                        </div>
-                        <div className="flex items-center gap-2 justify-end">
-                          <div className="p-2 bg-green-50 rounded-lg text-green-600"><IndianRupee size={16}/></div>
-                          <span className="text-sm font-bold text-slate-700">₹{trip.budget?.toLocaleString() || "0"}</span>
-                        </div>
-                      </div>
+          <h1 className="text-3xl font-black bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+            ApniJourney
+          </h1>
 
-                      <div className="flex gap-3">
-                        <Link 
-                          to={`/trip/${trip._id || trip.id}`}
-                          className="flex-1 flex items-center justify-center gap-2 bg-blue-50 text-blue-600 py-3 rounded-2xl font-bold hover:bg-blue-600 hover:text-white transition-all"
-                        >
-                          <Eye size={18} /> Details
-                        </Link>
-                        <button 
-                          onClick={() => handleDelete(trip._id || trip.id)}
-                          className="p-3.5 bg-rose-50 text-rose-500 rounded-2xl hover:bg-rose-500 hover:text-white transition-all shadow-sm"
-                        >
-                          <Trash2 size={20} />
-                        </button>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
-              </AnimatePresence>
-            </div>
-          </div>
-        )}
+          <Link
+            to="/add-trip"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-xl font-semibold transition"
+          >
+            + New Trip
+          </Link>
+
+        </div>
       </div>
 
+      {/* Feed */}
+      <div className="max-w-3xl mx-auto py-8 space-y-8">
+
+        {/* 👇 Part 2 ka trips.map() yahi paste karna */}
+
+      </div>
+
+      {/* Footer */}
+
+      <div className="py-10 text-center text-gray-400 text-sm">
+        ❤️ Made with love by ApniJourney
+      </div>
+
+      {/* Scrollbar Hide */}
+
       <style jsx>{`
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        body{
+          background:#fafafa;
+        }
+
+        ::-webkit-scrollbar{
+          width:8px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+          background:#d1d5db;
+          border-radius:20px;
+        }
+
+        ::-webkit-scrollbar-track{
+          background:transparent;
+        }
       `}</style>
+
     </div>
   );
 };
