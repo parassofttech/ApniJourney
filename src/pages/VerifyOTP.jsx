@@ -14,6 +14,7 @@ const VerifyOTP = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+
   // ✅ email auto aayega
   const email = location.state?.email;
 
@@ -74,7 +75,7 @@ const VerifyOTP = () => {
 
       if (data.success) {
         handleSuccess("New OTP Sent Successfully 📩");
-        setTimer(60); // OTP bhejte hi timer wapas reset kar diya
+        setTimer(120); // OTP bhejte hi timer wapas reset kar diya
       }
     } catch (error) {
       handleError(
