@@ -300,7 +300,7 @@ useEffect(() => {
       <div className="fixed inset-0 -z-10 bg-gradient-to-br from-cyan-100 via-white to-blue-100"/>
       {/* Top Header */}
 
-      <div className="sticky top-0 z-50 bg-white border-b">
+      <div className=" z-50 bg-white border-b">
         <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
 
           <div>
@@ -487,15 +487,15 @@ useEffect(() => {
           <div className="flex gap-5">
 
             <button onClick={() => toggleLike(id)}
-              className="flex flex-row items-center gap-2">
+              className="flex  items-center gap-2">
               <Heart
                 size={28}
-                className={` transition ${
+                className={`transition ${
                   likedPosts[id]
                     ? "fill-red-500 text-red-500"
                     : "text-gray-700"
                   
-                }`,"flex "}
+                }`}
                 
               />
               <span className=" text-black">
@@ -642,11 +642,17 @@ useEffect(() => {
 
         </div>
 
+        
+
       </div>
 
     </motion.div>
+    
   );
 })}
+   <div className="flex justify-center ">
+    <button className="bg-blue-700 p-3 rounded-2xl text-white">View More Post</button>
+   </div>
 
       </div>
     </div>

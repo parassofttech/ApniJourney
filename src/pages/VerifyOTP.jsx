@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import axios from "axios";
-import { ShieldCheck, Loader2 } from "lucide-react";
+import { ShieldCheck, Loader2, RefreshCw } from "lucide-react"; // RefreshCw icon add kiya
 import { handleError, handleSuccess } from "../utils";
 
-export default function VerifyOTP() {
+const VerifyOTP = () => {
   const [otp, setOtp] = useState("");
   const [loading, setLoading] = useState(false);
+  const [resendLoading, setResendLoading] = useState(false); // Resend ke liye alag loading state
+  const [timer, setTimer] = useState(60); // 60 seconds ka timer
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -15,11 +17,25 @@ export default function VerifyOTP() {
   // ✅ email auto aayega
   const email = location.state?.email;
 
-  // ❗ safety (agar direct open kare)
-  if (!email) {
-    navigate("/signup");
-  }
+  // Timer logic: Har second timer ghtega jab tak 0 na ho jaye
+  useEffect(() => {
+    let interval;
+    if (timer > 0) {
+      interval = setInterval(() => {
+        setTimer((prev) => prev - 1);
+      }, 1000);
+    }
+    return () => clearInterval(interval);
+  }, [timer]);
 
+  // ❗ Safety check
+  useEffect(() => {
+    if (!email) {
+      navigate("/signup");
+    }
+  }, [email, navigate]);
+
+  // 1. Verify OTP Function
   const verify = async () => {
     if (!otp) {
       alert("Please enter OTP");
@@ -28,7 +44,6 @@ export default function VerifyOTP() {
 
     try {
       setLoading(true);
-
       const { data } = await axios.post(
         "https://apnijourney-api.onrender.com/api/auth/verify-otp",
         { email, otp }
@@ -47,11 +62,30 @@ export default function VerifyOTP() {
     }
   };
 
-  useEffect(() => {
-  if (!email) {
-    navigate("/register"); // ya jo tumhara actual route hai
-  }
-}, [email, navigate]);
+  // 2. Resend OTP Function (Naya Added)
+  const handleResendOtp = async () => {
+    try {
+      setResendLoading(true);
+      // Aapke backend ka resend-otp endpoint url (Apne routes ke mutabik change kar lena agar zaroorat ho)
+      const { data } = await axios.post(
+        "https://apnijourney-api.onrender.com/api/auth/resend-otp",
+        { email }
+      );
+
+      if (data.success) {
+        handleSuccess("New OTP Sent Successfully 📩");
+        setTimer(60); // OTP bhejte hi timer wapas reset kar diya
+      }
+    } catch (error) {
+      handleError(
+        error.response?.data?.message || "Failed to resend OTP ❌"
+      );
+    } finally {
+      setResendLoading(false);
+    }
+  };
+
+  if (!email) return null; // Prevent UI flash while redirecting
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 px-4">
@@ -61,28 +95,28 @@ export default function VerifyOTP() {
         animate={{ opacity: 1, y: 0 }}
         className="w-full max-w-md bg-white/60 backdrop-blur-xl shadow-2xl rounded-3xl p-10"
       >
-
         <div className="text-center mb-8">
           <ShieldCheck className="mx-auto text-indigo-600 mb-3" size={32} />
           <h2 className="text-3xl font-bold">Enter OTP</h2>
-          <p className="text-gray-500 text-sm">
-            OTP sent to your email
+          <p className="text-gray-500 text-sm mt-1">
+            OTP sent to <span className="font-semibold text-gray-700">{email}</span>
           </p>
         </div>
 
-        {/* OTP ONLY */}
+        {/* OTP Input */}
         <input
           type="text"
           maxLength={6}
           placeholder="Enter OTP"
-          className="w-full px-4 py-3 border rounded-xl mb-6 text-center text-lg tracking-widest"
+          className="w-full px-4 py-3 border rounded-xl mb-6 text-center text-lg tracking-widest focus:outline-none focus:ring-2 focus:ring-indigo-500"
           onChange={(e) => setOtp(e.target.value)}
         />
 
+        {/* Verify Button */}
         <button
           onClick={verify}
           disabled={loading}
-          className="w-full bg-indigo-600 text-white py-3 rounded-xl font-bold flex justify-center items-center gap-2"
+          className="w-full bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-400 text-white py-3 rounded-xl font-bold flex justify-center items-center gap-2 transition"
         >
           {loading ? (
             <>
@@ -94,19 +128,42 @@ export default function VerifyOTP() {
           )}
         </button>
 
-        <button
-          onClick={() => navigate("/signup")}
-          className="mt-5 text-gray-600 hover:text-blue-600"
-        >
-          ← Back
-        </button>
+        {/* Resend OTP Section */}
+        <div className="mt-6 text-center text-sm text-gray-500">
+          Didn't receive the code?{" "}
+          <button
+            onClick={handleResendOtp}
+            disabled={timer > 0 || resendLoading}
+            className="text-indigo-600 font-bold hover:underline disabled:text-gray-400 disabled:no-underline inline-flex items-center gap-1 ml-1"
+          >
+            {resendLoading ? (
+              <Loader2 className="animate-spin" size={14} />
+            ) : timer > 0 ? (
+              `Resend in ${timer}s`
+            ) : (
+              <>
+                <RefreshCw size={14} /> Resend OTP
+              </>
+            )}
+          </button>
+        </div>
+
+        {/* Back Button */}
+        <div className="text-center mt-4">
+          <button
+            onClick={() => navigate("/signup")}
+            className="text-gray-500 hover:text-indigo-600 text-sm font-medium transition"
+          >
+            ← Back to Signup
+          </button>
+        </div>
 
       </motion.div>
     </div>
   );
-}
+};
 
-
+export default VerifyOTP;
 
 
 
