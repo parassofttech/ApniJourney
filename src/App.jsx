@@ -43,16 +43,18 @@ import BudgetTravel from "./TravelGuidePages/BudgetTravel";
 import WeekendTrips from "./TravelGuidePages/WeekendTrips";
 import PackingChecklist from "./TravelGuidePages/PackingChecklist";
 import ThingsDoInGoa from "./TravelGuidePages/ThingsDoInGoa";
+import ScrollToTop from "./ScrollToTop";
 
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop/>
       <div className="flex flex-col h-screen">
         {/* Main Content Area */}
         
         <Header/>
-        <div className="flex-1 overflow-auto">
+        <div id="main-content" className="flex-1 overflow-auto">
           <AdminRoutes />
           <div className="mb-18">
 

@@ -12,25 +12,29 @@ import {
   NotebookPen,
   User,
 } from "lucide-react";
- const userName = localStorage.getItem("loggedInUser")
+import { handleError, handleSuccess } from "../utils";
+ 
 const AddTrip = () => {
-  const [trip, setTrip] = useState({
-    name:userName||"",
-    title: "",
-    destination: "",
-    category: "",
-    startDate: "",
-    endDate: "",
-    budget: "",
-    rating: "",
-    description: "",
-    notes: "",
-    photos: [],
-  });
+  const userName = localStorage.getItem("loggedInUser");
 
-  const [previewImages, setPreviewImages] = useState([]);
-  const [message, setMessage] = useState("");
-  const [progress, setProgress] = useState(0);
+const [trip, setTrip] = useState({
+  name: userName || "",
+  title: "",
+  destination: "",
+  category: "",
+  startDate: "",
+  endDate: "",
+  budget: "",
+  rating: "",
+  description: "",
+  notes: "",
+  photos: [], // File objects store honge
+});
+
+const [previewImages, setPreviewImages] = useState([]);
+const [message, setMessage] = useState("");
+const [progress, setProgress] = useState(0);
+const [uploading, setUploading] = useState(false);
  
 
   //  Progress calculation
@@ -45,86 +49,175 @@ const AddTrip = () => {
     setTrip({ ...trip, [e.target.name]: e.target.value });
   };
 
-  //  Convert file to Base64
-  const convertToBase64 = (file) => {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = (error) => reject(error);
-    });
-  };
+ 
 
   //  Handle photo upload
-  const handlePhotoUpload = async (e) => {
-    const files = Array.from(e.target.files);
-    const base64Images = await Promise.all(files.map(convertToBase64));
-    setTrip({ ...trip, photos: base64Images });
-    setPreviewImages(base64Images);
+ const handlePhotoUpload = (e) => {
+  const files = Array.from(e.target.files);
+
+  // Sirf image files allow
+  const imageFiles = files.filter((file) =>
+    file.type.startsWith("image/")
+  );
+
+  if (imageFiles.length === 0) {
+    handleError(" Please select valid image files.");
+    return;
+  }
+
+  const maxSize = 10 * 1024 * 1024; // 10 MB
+
+  const validFiles = imageFiles.filter((file) => {
+    if (file.size > maxSize) {
+      alert(`${file.name} is larger than 10 MB.`);
+      return false;
+    }
+    return true;
+  });
+
+  // Total images 10 se zyada na ho
+  const totalImages = trip.photos.length + validFiles.length;
+
+  if (totalImages > 10) {
+    handleError("You can upload a maximum of 10 images.");
+    return;
+  }
+
+  // Purani + nayi images
+  setTrip((prev) => ({
+    ...prev,
+    photos: [...prev.photos, ...validFiles],
+  }));
+
+  // Purane previews + naye previews
+  const newPreviews = validFiles.map((file) =>
+    URL.createObjectURL(file)
+  );
+
+  setPreviewImages((prev) => [...prev, ...newPreviews]);
+
+  // Same image dobara select karne ke liye
+  e.target.value = "";
+};
+
+const removeImage = (index) => {
+  URL.revokeObjectURL(previewImages[index]);
+
+  setPreviewImages((prev) =>
+    prev.filter((_, i) => i !== index)
+  );
+
+  setTrip((prev) => ({
+    ...prev,
+    photos: prev.photos.filter((_, i) => i !== index),
+  }));
+};
+
+useEffect(() => {
+  return () => {
+    previewImages.forEach((url) => URL.revokeObjectURL(url));
   };
+}, [previewImages]);
 
   //  Submit trip (Send to MongoDB)
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+ const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    if (!trip.title || !trip.destination || !trip.startDate) {
-      return setMessage("⚠️ Please fill all required fields!");
-      
-    }
-    const token = localStorage.getItem("token");
-console.log("Token from localStorage:", token);
+  if (!trip.title || !trip.destination || !trip.startDate) {
+    handleError("⚠️ Please fill all required fields!");
+    return;
+  }
 
-    if (!token) {
-  alert("❌ Please login first");
-  return;
-}
+  const token = localStorage.getItem("token");
 
-console.log("Token:", token);
+  if (!token) {
+    handleError(" Please login first.");
+    return;
+  }
 
-    try {
-      const response = await axios.post("https://apnijourney-api.onrender.com/api/trips", trip, {
-  headers:{
-      Authorization: `Bearer ${token}`,
-      "Content-Type": "application/json"
-    },
-    
-    
-});
-console.log(localStorage.getItem("token"));
+  try {
+    setUploading(true);
 
-  
+    const formData = new FormData();
 
+    // Text Fields
+    formData.append("name", trip.name);
+    formData.append("title", trip.title);
+    formData.append("destination", trip.destination);
+    formData.append("category", trip.category);
+    formData.append("startDate", trip.startDate);
+    formData.append("endDate", trip.endDate);
+    formData.append("budget", trip.budget);
+    formData.append("rating", trip.rating);
+    formData.append("description", trip.description);
+    formData.append("notes", trip.notes);
 
+    // Multiple Images
+    trip.photos.forEach((photo) => {
+      formData.append("photos", photo);
+    });
 
-      if (response.data.success) {
-        setMessage("✅ Trip saved successfully to MongoDB!");
-        // Reset form
-        setTrip({
-          name:userName||"",
-          title: "",
-          destination: "",
-          category: "",
-          startDate: "",
-          endDate: "",
-          budget: "",
-          rating: "",
-          description: "",
-          notes: "",
-          photos: [],
-        });
-        setPreviewImages([]);
-        setProgress(0);
-      } else {
-        setMessage("❌ Failed to save trip!");
+    const response = await axios.post(
+      "https://apnijourney-api.onrender.com/api/trips",
+      formData,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "multipart/form-data",
+        },
       }
-    } catch (error) {
-      console.error("Error saving trip:", error);
-      setMessage("❌ Error connecting to server. Check backend.");
-    }
+    );
 
-    setTimeout(() => setMessage(""), 4000);
+    if (response.data.success) {
+      handleSuccess(" Trip added successfully!");
+
+      // Reset Form
+      setTrip({
+        name: userName || "",
+        title: "",
+        destination: "",
+        category: "",
+        startDate: "",
+        endDate: "",
+        budget: "",
+        rating: "",
+        description: "",
+        notes: "",
+        photos: [],
+      });
+
+      previewImages.forEach((url) => URL.revokeObjectURL(url));
+setPreviewImages([]);
+      setProgress(0);
+    } else {
+      handleError(" Failed to save trip.");
+    }
+  } catch (error) {
+    console.error(error);
+
+    handleError(
+      error.response?.data?.message || " Image upload failed."
+    );
+  } finally {
+    setUploading(false);
+
     
+  }
+};
+
+useEffect(() => {
+  return () => {
+    previewImages.forEach((url) => URL.revokeObjectURL(url));
   };
+}, [previewImages]);
+
+  let getEnquiry =()=>{  
+    axios.get(`https://apnijourney-api.onrender.com/api/trips`).then((res)=>{
+      return res.data
+    }).then((finalData)=>{
+        setTripList(finalData.tripList)
+    })
+  }
 
   return (
   <div className="flex flex-col w-full relative overflow-hidden">
@@ -316,35 +409,53 @@ console.log(localStorage.getItem("token"));
                 className="w-full bg-white/80 border border-dashed border-blue-300 p-4 rounded-2xl hover:bg-blue-50 transition"
               />
             </div>
-              <p className="ml-6 text-gray-600">no more than 65kb</p>
+              <p className="ml-6 text-gray-600">Each image should be less than 10Mb</p>
             {/* Preview */}
             {previewImages.length > 0 && (
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
                 {previewImages.map((src, index) => (
-                  <motion.img
-                    key={index}
-                    src={src}
-                    alt=""
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: index * 0.1 }}
-                    className="rounded-2xl object-cover h-32 w-full shadow-lg hover:scale-105 transition"
-                  />
-                ))}
+  <div key={index} className="relative">
+    <img
+      src={src}
+      className="h-32 w-full rounded-xl object-cover"
+      alt=""
+    />
+
+    <button
+      type="button"
+      onClick={() => removeImage(index)}
+      className="absolute top-2 right-2 bg-red-500 text-white rounded-full w-7 h-7"
+    >
+      ✕
+    </button>
+  </div>
+))}
               </div>
             )}
               
             {/* Submit */}
             <div className="text-center mt-8">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                type="submit"
-                className="w-full md:w-auto px-12 py-4 bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white font-bold rounded-2xl shadow-[0_15px_40px_rgba(59,130,246,0.35)] hover:shadow-[0_20px_50px_rgba(59,130,246,0.45)] transition-all tracking-wide"
-              >
-                ✨ Add Trip
-              </motion.button>
-            </div>
+  <motion.button
+    whileHover={!uploading ? { scale: 1.05 } : {}}
+    whileTap={!uploading ? { scale: 0.95 } : {}}
+    type="submit"
+    disabled={uploading}
+    className={`w-full md:w-auto px-12 py-4 text-white font-bold rounded-2xl transition-all tracking-wide ${
+      uploading
+        ? "bg-gray-500 cursor-not-allowed"
+        : "bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 shadow-[0_15px_40px_rgba(59,130,246,0.35)] hover:shadow-[0_20px_50px_rgba(59,130,246,0.45)]"
+    }`}
+  >
+    {uploading ? (
+      <div className="flex items-center justify-center gap-3">
+        <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+        <span>Uploading...</span>
+      </div>
+    ) : (
+      "✨ Add Trip"
+    )}
+  </motion.button>
+</div>
 
           </form>
         </div>

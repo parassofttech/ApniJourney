@@ -22,6 +22,13 @@ import {
   Flag ,
   Edit,
 } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { handleError } from "../utils";
 const userName = localStorage.getItem("loggedInUser")
 const TripsHome = () => {
 
@@ -101,18 +108,14 @@ const fetchUsers = async () => {
     user.email.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // if (loading) return (
-  //   <div className="flex h-96 items-center justify-center">
-  //     <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-blue-600"></div>
-  //   </div>
-  // );
+  
 
   useEffect(() => {
     fetchTrips();
   }, []);
 
   const fetchTrips = async () => {
-    console.log(trips);
+    
    
     try {
       setLoading(true);
@@ -122,16 +125,14 @@ const fetchUsers = async () => {
       );
 
       const data = res.data.trips || res.data.data || res.data;
-
+      
       setStats({
       
         trips: data.length,
         
       });
       setTrips(data.slice(-6).reverse());
-      console.log(res.data);
-console.log(data);
-
+      
       // setTrips(Array.isArray(data) ? data : []);
     } catch (err) {
       console.log(err);
@@ -152,14 +153,14 @@ console.log(data);
       }
       );
 
-      fetchUsers()
+      fetchTrips()
 
       setTrips((prev) =>
         prev.filter((trip) => (trip._id || trip.id) !== id)
       );
     } catch (err) {
       console.log(err);
-      alert("Delete failed");
+      handleError("Delete failed");
     }
   };
 
@@ -240,7 +241,7 @@ const addComment = async (tripId) => {
     
   } catch (err) {
     console.log(err);
-    alert("Failed to add comment"+ (err.response?.data?.message || "Unauthorized"));
+    handleError("Failed to add comment"+ (err.response?.data?.message || "Unauthorized"));
   }
 };
 
@@ -469,21 +470,35 @@ useEffect(() => {
                 <Heart className="fill-white text-white drop-shadow-xl" size={80} />
               </motion.div>
             )}
+{trip.photos?.length > 0 ? (
+         <Swiper
+  modules={[Navigation, Pagination]}
+  navigation
+  pagination={{ clickable: true }}
+  spaceBetween={0}
+  slidesPerView={1}
+  className="w-full h-full"
+>
+  {trip.photos?.map((photo, index) => (
+    <SwiperSlide key={index}>
+      <img
+        src={photo}
+        alt={`Trip ${index + 1}`}
+        onDoubleClick={() => toggleLike(id)}
+        className="w-full h-full object-cover cursor-pointer"
+        loading="lazy"
+      />
+    </SwiperSlide>
+  ))}
+</Swiper>
+) : (
+  <div className="w-full h-full flex items-center justify-center">
+    No Image 
+  </div>
+)}
 
-            {trip.photos?.length ? (
-              <img
-                src={trip.photos[0]}
-                alt={trip.destination}
-                onDoubleClick={() => toggleLike(id)}
-                className="w-full h-full object-cover transition duration-500 cursor-pointer group-hover:scale-102"
-                loading="lazy"
-              />
-            ) : (
-              <div className="w-full h-full flex flex-col items-center justify-center text-gray-300 gap-1.5">
-                <span className="text-2xl">📸</span>
-                <span className="text-xs font-medium">No Image Uploaded</span>
-              </div>
-            )}
+
+
           </div>
 
           {/* ---------- Action Toolbar ---------- */}
@@ -612,7 +627,7 @@ useEffect(() => {
             <div className="mt-1 md:mt-4 pt-2 md:pt-3.5 border-t border-gray-50 flex gap-2">
               <Link
                 to={`/trip/${id}`}
-                className="w-full bg-slate-50 text-gray-800 md:py-2 rounded-xl flex justify-center items-center gap-1.5 font-bold text-xs hover:bg-blue-50 hover:text-blue-600 border border-gray-100 transition duration-200"
+                className="w-full bg-slate-50 text-gray-800 py-2 rounded-xl flex justify-center items-center gap-1.5 font-bold text-xs hover:bg-blue-50 hover:text-blue-600 border border-gray-100 transition duration-200"
               >
                 <Eye size={14} />
                 View Full Details
