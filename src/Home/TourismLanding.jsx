@@ -43,7 +43,7 @@ const TourismLanding = () => {
               <div className="col-span-2 lg:col-span-7 h-[350px] lg:h-full overflow-hidden rounded-[30px] shadow-2xl">
                 <motion.img
                   whileHover={{ scale: 1.05 }}
-                  src="https://www.distinctdestinations.in/DistinctDestinationsBackEndImg/BlogImage/srinagar-city-of-gardens-lakes-and-the-gateway-to-the-paradise-on-earth-valley-L-distinctdestinations.jpg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrYfmaZxYkWAeEpoyMooviJ1P-biXKQwXIDWwBaTUwPTFwhfrEqB9TVtk&s=10"
                   alt="India"
                   className="w-full h-full object-cover"
                 />

@@ -166,7 +166,7 @@ const destinationsData = [
     category: "Spiritual",
     location: "Tamil Nadu, India",
     description: "A sacred coastal town linked to the Ramayana, with stunning sea bridges and temples.",
-    image: "https://www.tirthayatra.org/wp-content/uploads/2025/03/Rameswaram-_-Pilgrim-Centres-1.png",
+    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkEc-ydRBTIjDm-M62rTqj4MhYsu-jy3JLUTGXtUIFhPp_0MrKHLG-8O9sfJrdK5tjNMGEVq-S7vxgVeJesjEIO247yglPGjWf4sVpHtvkvpfr-D2CRHtATV7qhU1aR5xGkj6g=w675-h390-n-k-no",
     rating: 4.7
   },
   {

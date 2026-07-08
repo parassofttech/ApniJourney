@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Pencil, Trash2, Plus, Search, Calendar, MapPin, DollarSign, Filter, ExternalLink } from "lucide-react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Sidebar from "../components/Sidebar";
 
 const AdminTrips = () => {
   const [trips, setTrips] = useState([]);
@@ -60,12 +61,15 @@ const AdminTrips = () => {
   );
 
   return (
-    <div className="p-2 ml-13 md:ml-65  lg:ml-60  space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
+    <div>
+      <Sidebar/>
+
+      <div className="p-4 ml-15 md:ml-70   space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
       
       {/* --- Page Header --- */}
       <div className="flex flex-col md:flex-row md:items-center ml-15 justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-black text-slate-900  tracking-tight">Trips Inventory</h1>
+          <h1 className="text-3xl mt-4 font-black text-slate-900  tracking-tight">Trips Inventory</h1>
           <p className="text-slate-500 font-medium">Manage destinations, pricing, and schedules.</p>
         </div>
         {/* <button 
@@ -186,6 +190,7 @@ const AdminTrips = () => {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 };

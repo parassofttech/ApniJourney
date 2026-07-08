@@ -19,7 +19,7 @@ const destinations = [
     name: "Manali",
     state: "Himachal Pradesh",
     image:
-      "https://www.naturetravelagency.com/uploads/1703234831best%20time%20to%20visit%20Manali%20for%20snowfall.jpg",
+      "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcR3KXQM9jumObFgdcyHKs2KOADAQk8VZBcjhJSXJcFVMra8Mfy1OlJfL6WZZB4Cc6CLrb4F_5fM3y88zYKUKv-BycU&s=19",
     description: 
     <div>
         <ul className="text-start">
@@ -33,7 +33,7 @@ const destinations = [
     name: "Leh-Ladakh",
     state: "jammu & Kashmir",
     image:
-      "https://www.kashmirtourpackage.org/blog/wp-content/uploads/2024/02/Leh-Ladakh.jpg",
+      "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSBcqo1nOQOED8H8pwdzKkTNMr7KZTP8-hrqQDdfUmi_bajm6X0F1IQbAoOvMEnNIry-Iu5PfYaMm2VtAWhvfll6qs&s=19",
     description:
        <div>
         <ul className="text-start">
@@ -155,7 +155,7 @@ const destinations = [
     name: "Andaman & Nicobar ",
     state: "Andaman & Nicobar islands",
     image:
-      "https://www.easeindiatrip.com/blog/wp-content/uploads/2024/11/Andaman-and-Nicobar-Islands-04.jpg",
+      "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTMvToRnVYNagM-Ho2M3cBME3PY0Y7aZ4lToUIK4-WpJAAWBaMvAPKx_qGs8jK7Z5QdhjeZWFWq5c1FHInN0elnf6eG&s=19",
     description:
        <div>
         <ul className="text-start">

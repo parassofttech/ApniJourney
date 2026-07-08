@@ -31,7 +31,7 @@ const blogs = [
   {
     id: "darjeeling",
     title: "Darjeeling: The Queen of Hills 🍃",
-    image: "https://hikerwolf.com/wp-content/uploads/2020/04/Darjeeling-toy-train-route.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcS81O4-C0srUvPn7febDA1bgtKFiKmmYVAdb7SAebQ8nTHvMPfJhVWe9F0rcTopgHfwb4K8uthro92HajjeAGD2S_nQ&s=19",
     date: "July 12, 2025",
     excerpt:
       "Ride the toy train, sip aromatic teas, and wake up to views of the mighty Kanchenjunga in this misty hill station.",

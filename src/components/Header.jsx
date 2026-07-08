@@ -231,7 +231,7 @@ const Header = () => {
       className="w-10 h-10 rounded-full overflow-hidden border-2 border-blue-500 hover:border-blue-700 transition"
     >
       <img
-        src="https://cdn-icons-png.flaticon.com/512/149/149071.png" // default profile image
+        src="https://i.pinimg.com/236x/13/74/20/137420f5b9c39bc911e472f5d20f053e.jpg" // default profile image
         alt="Profile"
         className="w-full h-full object-cover"
       />
@@ -278,7 +278,7 @@ const Header = () => {
       className="w-10 h-10 rounded-full overflow-hidden border-2 border-blue-500 hover:border-blue-700 transition"
     >
       <img
-        src="https://cdn-icons-png.flaticon.com/512/149/149071.png" // default profile image
+        src="https://i.pinimg.com/236x/13/74/20/137420f5b9c39bc911e472f5d20f053e.jpg" // default profile image
         alt="Profile"
         className="w-full h-full object-cover"
       />

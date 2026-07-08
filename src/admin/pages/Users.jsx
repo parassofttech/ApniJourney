@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Trash2, UserCheck, UserX, Search, MoreVertical, Mail, Calendar, ShieldAlert } from "lucide-react";
 import axios from "axios";
+import Sidebar from "../components/Sidebar";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -61,11 +62,15 @@ const Users = () => {
   );
 
   return (
-    <div className="p-2 ml-13 md:ml-65  lg:ml-60 space-y-6 animate-in fade-in duration-500">
+   <div>
+
+    <Sidebar/>
+
+     <div className="p-4 ml-15 md:ml-70 space-y-6 animate-in fade-in duration-500">
       
       {/* --- Top Header & Search --- */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
-        <div className="ml-10">
+        <div className="p-10">
           <h1 className="text-2xl font-extrabold text-slate-800">User Directory</h1>
           <p className="text-slate-500 text-sm">Manage your community and account permissions</p>
         </div>
@@ -173,6 +178,7 @@ const Users = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 };
 

@@ -39,7 +39,7 @@ const testimonials = [
     quote:
       "Offline maps and photo uploads worked flawlessly on my Ladakh trip. Solid app.",
     avatar:
-      "https://i.pinimg.com/736x/8d/f9/45/8df94550b999ae191a71effa1072f030.jpg",
+      "https://img.magnific.com/free-photo/handsome-young-cheerful-man-with-arms-crossed_171337-1073.jpg?semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 5,

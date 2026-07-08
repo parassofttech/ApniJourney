@@ -48,13 +48,13 @@ const Sidebar = () => {
       {/* 🔥 Overlay for mobile */}
       {isMobile && !collapse && (
         <div
-          className="fixed inset-0 bg-black/40 z-40"
+          className="fixed inset-0  bg-black/40 z-40"
           onClick={() => setCollapse(true)}
         />
       )}
 
       <div
-        className={`fixed z-50 h-screen ${
+        className={`fixed z-50 md:mt-2 h-screen ${
           collapse ? "w-20" : "w-72"
         } bg-[#0F172A] text-slate-300 transition-all duration-500 ease-in-out flex flex-col shadow-2xl border-r border-white/5
         

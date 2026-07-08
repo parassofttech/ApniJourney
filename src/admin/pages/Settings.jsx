@@ -3,6 +3,7 @@ import {
   User, Shield, Bell, Globe, Camera, Save, 
   Lock, Eye, EyeOff, CheckCircle2, Moon, Sun 
 } from "lucide-react";
+import Sidebar from "../components/Sidebar";
 
 const Settings = () => {
   const [activeTab, setActiveTab] = useState("profile");
@@ -18,7 +19,10 @@ const Settings = () => {
   ];
 
   return (
-    <div className="p-4 ml-13 md:ml-65  lg:ml-60 lg:p-8 max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700">
+    <div>
+      <Sidebar/>
+
+      <div className="p-4 ml-15 md:ml-70 lg:p-8 max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700">
       
       {/* Header */}
       <div className="m-10">
@@ -156,6 +160,7 @@ const Settings = () => {
 
         </div>
       </div>
+    </div>
     </div>
   );
 };

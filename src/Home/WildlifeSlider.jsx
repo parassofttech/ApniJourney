@@ -28,7 +28,7 @@ const destinations = [
   {
     id: 4,
     title: "Samaspur Bird Sanctuary",
-    image: "https://upecoboard.up.gov.in/img/innerpage/samaspur.png",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVRCoxwkayv2wZmmw8GjVdfw4B9LboHljw0s_2UyRT5F2npJAClIG7o7Y&s=10",
     desc: "A haven for migratory birds during the winter season.",
     color: "from-teal-900/80"
   }

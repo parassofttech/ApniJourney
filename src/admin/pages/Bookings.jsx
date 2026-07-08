@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Trash2, CheckCircle, XCircle } from "lucide-react";
 import axios from "axios";
+import Sidebar from "../components/Sidebar";
 
 const Bookings = () => {
   const [bookings, setBookings] = useState([]);
@@ -55,7 +56,10 @@ const Bookings = () => {
   if (loading) return <p>Loading bookings...</p>;
 
   return (
-    <div className="ml-[26vh] space-y-6">
+   <div>
+    <Sidebar/>
+
+     <div className="p-4 ml-15 md:ml-70 space-y-6">
 
       {/* Header */}
       <div className="flex justify-between items-center">
@@ -128,6 +132,7 @@ const Bookings = () => {
         </table>
       </div>
     </div>
+   </div>
   );
 };
 

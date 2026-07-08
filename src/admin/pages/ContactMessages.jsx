@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Trash2, Mail, User, Clock, Eye, X, Send, Search } from "lucide-react";
+import Sidebar from "../components/Sidebar";
 
 const ContactMessages = () => {
   const [messages, setMessages] = useState([]);
@@ -55,11 +56,14 @@ const ContactMessages = () => {
   );
 
   return (
-    <div className="p-2 ml-13 md:ml-65  lg:ml-60 space-y-6 animate-in fade-in duration-700">
+    <div>
+      <Sidebar/>
+
+      <div className="p-4 ml-15 md:ml-70 space-y-6 animate-in fade-in duration-700">
       
       {/* --- Dashboard Header --- */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <div className="ml-8">
+        <div className="p-10">
           <h1 className="text-3xl font-black text-slate-900">Inbound Messages</h1>
           <p className="text-slate-500">Respond to customer inquiries and feedback</p>
         </div>
@@ -186,6 +190,7 @@ const ContactMessages = () => {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };
