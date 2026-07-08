@@ -28,7 +28,7 @@ const Login = () => {
       const res = await axios.post("https://apnijourney-api.onrender.com/api/auth/login", form);
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("isAdmin", res.data.isAdmin);
-      localStorage.setItem("user", res.data.user);
+      localStorage.setItem("user", JSON.stringify(res.data.user));
       localStorage.setItem('loggedInUser', res.data.user.name)
       localStorage.setItem('email', res.data.user.email)
       navigate("/");
