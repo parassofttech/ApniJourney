@@ -5,11 +5,13 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import { auth, provider } from "../firebase";
 import { signInWithPopup } from "firebase/auth";
+import { handleError } from "../utils";
 
 const Login = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -18,6 +20,9 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
+    if(!form.email || !form.password){
+      return handleError("Email or Password is required")
+    }
 
     try {
       const res = await axios.post("https://apnijourney-api.onrender.com/api/auth/login", form);
@@ -27,22 +32,59 @@ const Login = () => {
       localStorage.setItem('loggedInUser', res.data.user.name)
       navigate("/");
     } catch (err) {
-      setError(err.response?.data?.message || "Login failed");
+      handleError(err.response?.data?.message || "Login failed");
     }
   };
 
 
-  const googleLogin = async ()=>{
+ const googleLogin = async () => {
+  try {
+    setLoading(true);
+
     const result = await signInWithPopup(auth, provider);
 
-    const res = await axios.post("https://apnijourney-api.onrender.com/api/auth/google-login",{
-      name: result.user.displayName,
-      email: result.user.email
-    });
+    const user = result.user;
 
-    localStorage.setItem("token",res.data.token);
+    const res = await axios.post(
+      "https://apnijourney-api.onrender.com/api/auth/google-login",
+      {
+        name: user.displayName,
+        email: user.email,
+        photo: user.photoURL,
+      }
+    );
+    console.log(res);
+    // Token save
+    localStorage.setItem("token", res.data.token);
+      localStorage.setItem("isAdmin", res.data.user.isAdmin);
+      localStorage.setItem("user", JSON.stringify(res.data.user));
+      localStorage.setItem('loggedInUser', res.data.user.name)
+
+    // User data save (optional)
+    localStorage.setItem(
+      "user",
+      JSON.stringify({
+        name: user.displayName,
+        email: user.email,
+        photo: user.photoURL,
+      })
+    );
+
     navigate("/");
-  };
+
+  } catch (error) {
+    console.log("Google Login Error:");
+  console.log(error.response?.data);
+  console.log(error.response?.status);
+
+    handleError(
+      error.response?.data?.message || "Google login failed"
+    );
+
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-100 via-green-50 to-white flex flex-col items-center justify-center px-4">
@@ -116,14 +158,29 @@ const Login = () => {
           </Link>
         </p>
       </motion.div>
-      <div className="mt-9">
+      <div className="flex items-center my-6">
+  <div className="flex-1 h-px bg-gray-300"></div>
+
+  <span className="px-4 text-sm font-medium text-gray-700 uppercase">
+    OR
+  </span>
+
+  <div className="flex-1 h-px bg-gray-300"></div>
+</div>
+      <div className="mt-4">
 
       </div>
-      <div>
-        <button onClick={googleLogin}>
-        Continue with Google
-      </button>
-      </div>
+      <button
+  onClick={googleLogin}
+  className="flex items-center justify-center gap-3 w-full rounded-xl border py-3 hover:bg-gray-100 transition"
+>
+  <img
+    src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+    className="w-5 h-5"
+  />
+
+  Continue with Google
+</button>
     </div>
   );
 };

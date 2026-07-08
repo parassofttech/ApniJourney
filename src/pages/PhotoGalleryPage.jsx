@@ -47,8 +47,8 @@ const PhotoGalleryPage = () => {
   return (
     <div className="min-h-screen bg-[#fafafa] dark:bg-[#020617] transition-colors duration-500 overflow-x-hidden">
       
-      {/* 🚀 --- ADVANCED HERO SECTION --- */}
-      <section className="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
+      {/*   ADVANCED HERO SECTION  */}
+      <section className="relative h-[50vh] md:h-[70vh] w-full flex items-center justify-center overflow-hidden">
         {/* Animated Background */}
         <motion.div style={{ y: y1 }} className="absolute inset-0 z-0">
           <img 

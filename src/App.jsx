@@ -45,6 +45,8 @@ import PackingChecklist from "./TravelGuidePages/PackingChecklist";
 import ThingsDoInGoa from "./TravelGuidePages/ThingsDoInGoa";
 import ScrollToTop from "./ScrollToTop";
 
+import TripsBlog from "./pages/TripsBlog";
+
 
 const App = () => {
   return (
@@ -93,6 +95,7 @@ const App = () => {
             <Route path="/weekend-trips" element={<WeekendTrips/>} />
             <Route path="/packing-checklist" element={<PackingChecklist/>} />
             <Route path="/things-to-do-goa" element={<ThingsDoInGoa/>} />
+            <Route path="/trips-blog" element={<TripsBlog />} />
             {/* <Route path="admin-trips" element={<AdminTrips />} />
             <Route path="/admin/users" element={<Users />} /> */}
 

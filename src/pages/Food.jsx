@@ -26,7 +26,7 @@ const Food = () => {
     <div className=" bg-gradient-to-b from-[#fffcf7] via-green-500/30 to-yellow-400/30 -z-10 min-h-screen font-sans selection:bg-orange-200">
       
       {/* 🔥 PREMIUM HERO SECTION */}
-      <div className="relative h-[85vh] w-full overflow-hidden flex items-center justify-center">
+      <div className="relative h-[40vh] md:h-[70vh] w-full overflow-hidden flex items-center justify-center">
         <motion.img
           initial={{ scale: 1.2 }}
           animate={{ scale: 1 }}
@@ -73,7 +73,7 @@ const Food = () => {
       </div>
 
       {/* 🧭 FILTER TABS */}
-      <div className="sticky top-0 z-40 bg-[#fffcf7]/80 backdrop-blur-md py-6 border-b border-gray-100">
+      <div className="sticky top-0 z-40 bg-[#fffcf7]/80 backdrop-blur-md  md:py-6 border-b border-gray-100">
         <div className="flex justify-center gap-4 overflow-x-auto px-4 no-scrollbar">
           {categories.map((cat) => (
             <button

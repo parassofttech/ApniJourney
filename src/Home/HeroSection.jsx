@@ -27,7 +27,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-screen w-full flex flex-col justify-center items-center overflow-hidden">
+    <section className="relative h-[68vh] md:h-[80vh] w-full flex flex-col justify-center items-center overflow-hidden">
       
       {/* 🎥 Background Video with Transition */}
       <div className="absolute inset-0 w-full h-full">
@@ -57,7 +57,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-8"
+          className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-2 md:mb-8"
         >
           <Sparkles className="w-4 h-4 text-cyan-400" />
           <span className="text-sm font-medium tracking-wider uppercase text-cyan-100">
@@ -82,10 +82,10 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="text-lg md:text-2xl text-blue-100/80 max-w-3xl mx-auto font-light leading-relaxed mb-12"
+          className="text-lg md:text-2xl text-blue-100/80 max-w-3xl mx-auto font-light leading-relaxed mb-2 md:mb-10"
         >
-          From the heights of Himalayas to the waves of Kanyakumari, <br className="hidden md:block"/>
-          your extraordinary journey starts here.
+          From the heights of Himalayas to the waves of Kanyakumari, <br className="hidden md:flex"/>
+          <p className="hidden md:flex justify-center">your extraordinary journey starts here.</p>
         </motion.p>
 
         {/* 🔍 Smart Search Bar */}
@@ -120,7 +120,7 @@ const HeroSection = () => {
         </motion.div>
 
         {/* 📊 Quick Stats / Features */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 opacity-60">
+        <div className="mt-4 md:mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 opacity-60">
             {[
                 { label: "Destinations", value: "500+" },
                 { label: "Experiences", value: "1200+" },

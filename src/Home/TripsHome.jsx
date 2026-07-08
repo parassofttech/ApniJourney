@@ -28,11 +28,11 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { handleError } from "../utils";
-const userName = localStorage.getItem("loggedInUser")
+import { handleError, handleSuccess } from "../utils";
+
 const TripsHome = () => {
 
-  
+  const userName = localStorage.getItem("loggedInUser")
   const [trips, setTrips] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -152,6 +152,7 @@ const fetchUsers = async () => {
         headers: { Authorization: `Bearer ${token}` },
       }
       );
+      handleSuccess("Your Trip is deleted")
 
       fetchTrips()
 
@@ -164,17 +165,55 @@ const fetchUsers = async () => {
     }
   };
 
-  const toggleLike = (id) => {
-  setLikedPosts((prev) => ({
-    ...prev,
-    [id]: !prev[id],
-  }));
+ const toggleLike = async (id) => {
 
-  setAnimateLike(id);
+  if(!token){
+    return handleError("Please login to like this trip.");
+  }
+  try {
+    // Instant UI update
+    setTrips((prevTrips) =>
+      prevTrips.map((trip) => {
+        const tripId = trip._id || trip.id;
 
-  setTimeout(() => {
-    setAnimateLike(null);
-  }, 600);
+        if (tripId !== id) return trip;
+
+        const isLiked = trip.likes?.includes(currentUser?._id);
+
+        return {
+          ...trip,
+          likes: isLiked
+            ? trip.likes.filter((userId) => userId !== currentUser._id)
+            : [...(trip.likes || []), currentUser._id],
+        };
+      })
+    );
+
+    // Animation
+    setAnimateLike(id);
+
+    setTimeout(() => {
+      setAnimateLike(null);
+    }, 600);
+
+
+    // Backend update
+    await axios.post(
+      `https://apnijourney-api.onrender.com/api/trips/${id}/like`,
+      {},
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
+
+  } catch (err) {
+    console.log(err.response?.data);
+
+    // Error aaye to data wapas fetch kar lo
+    fetchTrips();
+  }
 };
 
   const toggleSave = (id) => {
@@ -204,7 +243,7 @@ const addComment = async (tripId) => {
 
   if (!text?.trim()) return;
   if(!token)
-  return alert("Login First then comments")
+  return handleError("Please login to comment this trip.");
 
   try {
     const token = localStorage.getItem("token");
@@ -458,7 +497,7 @@ useEffect(() => {
           </div>
 
           {/* ---------- Trip Image Viewport ---------- */}
-          <div className="relative w-full aspect-[4/5] bg-slate-50 overflow-hidden group">
+          <div className="relative w-full aspect-[4/5] md:aspect-[4/4] bg-slate-50 overflow-hidden group">
             {/* Pop-up Double Tap Heart Feedback */}
             {animateLike === id && (
               <motion.div
@@ -477,7 +516,7 @@ useEffect(() => {
   pagination={{ clickable: true }}
   spaceBetween={0}
   slidesPerView={1}
-  className="w-full h-full"
+  className="trip-swiper w-full h-full"
 >
   {trip.photos?.map((photo, index) => (
     <SwiperSlide key={index}>
@@ -505,20 +544,29 @@ useEffect(() => {
           <div className="px-4 pt-3.5 flex items-center justify-between">
             <div className="flex gap-4">
               {/* Like Button */}
-              <button 
-                onClick={() => toggleLike(id)}
-                className="group flex items-center gap-1.5 text-gray-700 hover:text-rose-500 transition"
-              >
-                <Heart
-                  size={22}
-                  className={`transition-transform duration-150 active:scale-95 ${
-                    likedPosts[id] ? "fill-rose-500 text-rose-500 scale-105" : "text-gray-700"
-                  }`}
-                />
-                <span className={`text-xs font-bold ${likedPosts[id] ? "text-rose-600" : "text-gray-600"}`}>
-                  {(likedPosts[id] ? 1 : 0) + 5 + index}
-                </span>
-              </button>
+              <button
+  onClick={() => toggleLike(id)}
+  className="group flex items-center gap-1.5 text-gray-700 hover:text-rose-500 transition"
+>
+  <Heart
+  size={22}
+  className={`transition-transform duration-150 active:scale-95 ${
+   trip.likes?.includes(currentUser?._id)
+      ? "fill-rose-500 text-rose-500 scale-105"
+      : "text-gray-700"
+  }`}
+/>
+
+<span
+  className={`text-xs font-bold ${
+    trip.likes?.includes(currentUser?._id)
+      ? "text-rose-600"
+      : "text-gray-600"
+  }`}
+>
+  {trip.likes?.length || ""}
+</span>
+</button>
 
               {/* Comments Toggle Trigger */}
               <button
@@ -526,7 +574,7 @@ useEffect(() => {
                 className="flex items-center gap-1.5 text-gray-700 hover:text-blue-600 transition"
               >
                 <MessageCircle size={21} />
-                <span className="text-xs font-bold text-gray-600">{comments[id]?.length || 0}</span>
+                <span className="text-xs font-bold text-gray-600">{comments[id]?.length || ""}</span>
               </button>
 
               {/* Share Icon */}
@@ -556,7 +604,7 @@ useEffect(() => {
           <div className="px-4 pb-4 pt-2">
             <p className="text-gray-700 text-sm leading-relaxed">
               <span className="font-bold text-gray-900 mr-1.5 hover:underline cursor-pointer">
-                {trip.userName || "Traveler"}
+                {trip.name || trip.userName || "Traveler"}
               </span>
               <span>visited </span>
               <span className="font-bold text-blue-600 tracking-tight">
@@ -577,10 +625,10 @@ useEffect(() => {
             {showComments[id] && (
               <div className="mt-3.5 border-t border-gray-50 pt-3.5 space-y-3 animate-in slide-in-from-top-2 duration-200">
                 {/* Inline Quick Comment Input Box */}
-                <div className="flex gap-2.5 items-center bg-gray-50 rounded-xl p-1.5 border border-gray-100">
-                  <span className="text-xs font-bold text-gray-500 pl-2 shrink-0 max-w-[80px] truncate">
+                <div className="flex gap-2.5 pl-2 items-center bg-gray-50 rounded-xl p-1.5 border border-gray-100">
+                  {/* <span className="text-xs font-bold text-gray-500 pl-2 shrink-0 max-w-[80px] truncate">
                     {currentUser?.name || "Me"}
-                  </span>
+                  </span> */}
                   <input
                     type="text"
                     value={commentText[id] || ""}
@@ -640,8 +688,8 @@ useEffect(() => {
 
     {/* Load More Button Wrapper */}
     <div className="flex justify-center pt-2">
-      <button className="bg-white text-gray-800 font-bold border border-gray-200 text-xs px-6 py-3 rounded-xl shadow-sm hover:shadow-md hover:bg-gray-50 transition duration-200 transform active:scale-98">
-        Load More Journeys
+      <button onClick={()=>navigate("/trips-blog")} className="bg-blue-200 text-gray-800 font-bold border border-gray-200  px-6 py-4 rounded-xl shadow-sm hover:shadow-md hover:bg-gray-50 transition duration-200 transform active:scale-98">
+        View More Journeys
       </button>
     </div>
   </div>
@@ -734,6 +782,8 @@ useEffect(() => {
         ::-webkit-scrollbar-track{
           background:transparent;
         }
+          
+          
       `}</style>
 
     </div>

@@ -81,7 +81,7 @@ const [temperature,setTemereture] = useState('')
        
 
 {/* 🔥 Hero Section with Background Video */}
-<section className="relative w-full h-[80vh] overflow-hidden">
+<section className="relative w-full h-[40vh] md:h-[70vh] overflow-hidden">
 
   {/* Background Video */}
   <video

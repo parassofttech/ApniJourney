@@ -102,7 +102,7 @@ const FounderSection = () => {
             <div className="flex-1 text-center md:text-left mt-8 md:mt-0">
               <Quote className="text-blue-500 opacity-20 mb-4 hidden md:block" size={48} />
               <h3 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">{founderName}</h3>
-              <p className="text-xl font-medium text-slate-400 mt-2">Founder & Lead Architect</p>
+              <p className="text-xl font-medium text-slate-400 mt-2">Founder & CEO</p>
 
               <div className="mt-8 relative">
                 <p className="text-slate-300 text-lg leading-relaxed font-medium">

@@ -10,3 +10,16 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;             /* Chrome, Safari */
 }
+
+/* Swiper navigation only desktop */
+.trip-swiper .swiper-button-next,
+.trip-swiper .swiper-button-prev {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .trip-swiper .swiper-button-next,
+  .trip-swiper .swiper-button-prev {
+    display: flex;
+  }
+}

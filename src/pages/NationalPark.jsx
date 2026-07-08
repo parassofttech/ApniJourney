@@ -18,7 +18,7 @@ const NationalPark = () => {
     <div className="min-h-screen bg-gradient-to-b from-green-500/50 via-blue-500/30 to-yellow-400/30 -z-10 overflow-hidden">
       
       {/* --- HERO SECTION --- */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[47vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Animated Background Overlay */}
         <div className="absolute inset-0 bg-black/40 z-10" />
         <motion.img 
@@ -58,7 +58,7 @@ const NationalPark = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4 }}
-            className="max-w-xl mx-auto relative group"
+            className="max-w-xl mx-auto relative  p-3 group"
           >
             <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-emerald-500 transition-colors" size={20} />
             <input 
@@ -71,7 +71,7 @@ const NationalPark = () => {
         </div>
 
         {/* Floating Stats */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex gap-10 text-white/80  md:flex">
+        <div className="absolute bottom-2 md:bottom-10 left-1/2 -translate-x-1/2 z-20 flex gap-10 text-white/80  md:flex">
           <div className="text-center">
              <p className="text-2xl font-bold text-white">100+</p>
              <p className="text-[10px] uppercase font-bold tracking-widest text-emerald-400">Parks</p>

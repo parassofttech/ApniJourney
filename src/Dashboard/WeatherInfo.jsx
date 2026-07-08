@@ -95,7 +95,7 @@ const WeatherInfo = () => {
             Live Weather
           </h2>
 
-          <form onSubmit={handleSearch} className="flex justify-center gap-3 mt-4">
+          <form onSubmit={handleSearch} className="flex justify-center gap-3 mt-4 mx-5 md:flex">
             <input
               type="text"
               value={city}

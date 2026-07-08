@@ -20,7 +20,7 @@ const About = () => {
     <div className=" bg-gradient-to-b from-blue-400/30 via-green-400/30 to-yellow-300/40 -z-10 text-white overflow-hidden">
 
       {/* HERO SECTION */}
-      <section className="relative h-[90vh] flex items-center justify-center text-center">
+      <section className="relative h-[50vh] md:h-[70vh] flex items-center justify-center text-center">
 
         <div className="absolute inset-0">
           <img

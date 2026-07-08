@@ -494,7 +494,7 @@ const Destinations = () => {
     <div className="min-h-screen bg-gradient-to-b from-blue-400/30 via-green-500/30 to-yellow-400/30 -z-10 ">
 
       {/* 🏔️ IMMERSIVE HERO SECTION */}
-      <section className="relative w-full min-h-[75vh] md:h-[60vh] flex items-center justify-center py-16 md:py-0">
+      <section className="relative w-full h-[47vh] md:h-[70vh] flex items-center justify-center py-16 md:py-0">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?q=80&w=2070"
@@ -553,7 +553,7 @@ const Destinations = () => {
       </section>
 
       {/* 🌏 DESTINATIONS GRID */}
-      <section className="max-w-7xl mx-auto py-20 px-6">
+      <section className="max-w-7xl mx-auto py-5 sm:py-15 px-6">
         <div className="flex items-end justify-between mb-12">
           <div className="text-left">
             <h2 className="text-4xl font-black text-gray-900">Popular Getaways</h2>

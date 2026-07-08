@@ -254,8 +254,13 @@ const Header = () => {
       </div>
 
       {/* Mobile Dropdown Menu */}
-      <AnimatePresence>
-        {menuOpen && (
+
+      <button
+  onClick={() => setMenuOpen(!menuOpen)}
+  aria-label={menuOpen ? "Close menu" : "Open menu"}
+  className="w-full lg:hidden p-2 rounded-lg hover:bg-gray-100 transition"
+>
+  {menuOpen && (
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -264,6 +269,7 @@ const Header = () => {
             className="lg:hidden bg-gray-300 shadow-lg border-t border-gray-100"
           >
             <div className="flex font-bold  flex-col space-y-4 p-5">
+              
               <Link
   to="/"
   onClick={() => setMenuOpen(false)}
@@ -406,7 +412,8 @@ const Header = () => {
             </div>
           </motion.div>
         )}
-      </AnimatePresence>
+</button>
+      
     </motion.nav>
   );
 };
