@@ -30,6 +30,7 @@ const Login = () => {
       localStorage.setItem("isAdmin", res.data.isAdmin);
       localStorage.setItem("user", JSON.stringify(res.data.user));
       localStorage.setItem('loggedInUser', res.data.user.name)
+      localStorage.setItem('email', res.data.user.email)
       navigate("/");
     } catch (err) {
       handleError(err.response?.data?.message || "Login failed");
@@ -53,22 +54,17 @@ const Login = () => {
         photo: user.photoURL,
       }
     );
-    console.log(res);
+    console.log(res.data.user);
     // Token save
     localStorage.setItem("token", res.data.token);
       localStorage.setItem("isAdmin", res.data.user.isAdmin);
       localStorage.setItem("user", JSON.stringify(res.data.user));
       localStorage.setItem('loggedInUser', res.data.user.name)
+      localStorage.setItem('email', res.data.user.email)
 
     // User data save (optional)
-    localStorage.setItem(
-      "user",
-      JSON.stringify({
-        name: user.displayName,
-        email: user.email,
-        photo: user.photoURL,
-      })
-    );
+    
+    window.dispatchEvent(new Event("storage"));
 
     navigate("/");
 
@@ -94,16 +90,19 @@ const Login = () => {
         transition={{ duration: 0.6 }}
         className="w-full max-w-md bg-white rounded-3xl shadow-lg p-8 space-y-6"
       >
-        <div className="flex justify-center mb-2">
+        <div className="flex ml-4 mb-2">
           <img
             src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
             alt="login-logo"
             className="w-14 h-14"
           />
+          <span className="ml-4 text-3xl font-extrabold bg-gradient-to-r from-blue-600 via-cyan-500 to-green-500 bg-clip-text text-transparent tracking-wide">
+  Apni<span className="text-gray-800">Journey</span>
+</span>
         </div>
 
-        <h2 className="text-3xl font-bold text-center text-blue-700">
-          Welcome & Login 👋
+        <h2 className="text-3xl  font-bold  text-blue-700">
+           Login 
         </h2>
 
         {error && (
@@ -123,7 +122,18 @@ const Login = () => {
               value={form.email}
               onChange={handleChange}
               autoComplete="new-email" // prevent autofill
-              className="w-full mt-1 p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-700 focus:outline-none"
+              className="
+                    peer
+                    w-full
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
             />
           </div>
 
@@ -136,16 +146,27 @@ const Login = () => {
               value={form.password}
               onChange={handleChange}
               autoComplete="new-password" // prevent autofill
-              className="w-full mt-1 p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-700 focus:outline-none"
+              className="
+                    peer
+                    w-full
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
             />
           </div>
 
           <button
-            type="submit"
-            className="w-full bg-blue-700 text-white py-3 rounded-xl font-semibold hover:bg-blue-800 transition-all shadow-md"
-          >
-            Login
-          </button>
+  type="submit"
+  className="block w-[50%] mx-auto bg-blue-700 text-white py-3 rounded-xl font-semibold hover:bg-blue-800 transition-all shadow-md"
+>
+  Login
+</button>
         </form>
 
         <p className="text-center text-sm text-gray-500">
@@ -172,7 +193,7 @@ const Login = () => {
       </div>
       <button
   onClick={googleLogin}
-  className="flex items-center justify-center gap-3 w-full rounded-xl border py-3 hover:bg-gray-100 transition"
+  className="flex w-[70%] md:w-[60%] lg:w-[45%] items-center justify-center gap-3  rounded-xl border py-3 hover:bg-gray-100 transition"
 >
   <img
     src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
@@ -186,258 +207,4 @@ const Login = () => {
 };
 
 export default Login;
-
-
-
-
-
-///  this right
-
-// import React, { useState } from 'react'
-// import { Link, useNavigate } from 'react-router-dom'
-// import { handleError, handleSuccess } from '../utils'
-
-
-// const Login = () => {
-//   const [loginInfo, setLoginInfo] = useState({
-//     email: '',
-//     password: ''
-//   })
-
-//   const navigate = useNavigate()
-
-//   const handlechange = (e) => {
-//     const inputValue = e.target.value
-//     const inputName = e.target.name
-//     const copyloginInfo = { ...loginInfo }
-//     copyloginInfo[inputName] = inputValue
-//     setLoginInfo(copyloginInfo)
-//   }
-
-//   const handleLogin = async (e) => {
-//     e.preventDefault()
-//     const { email, password } = loginInfo
-
-//     if (!email || !password) {
-//       return handleError('Email and password are required')
-//     }
-
-//     try {
-//       const url = "http://localhost:8000/api/auth/login"
-//       const response = await fetch(url, {
-//         method: "POST",
-//         headers: {
-//           'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify(loginInfo)
-//       })
-
-//       const result = await response.json()
-//       const { success, message, jwtToken, name, error } = result
-
-//       if (success) {
-//         handleSuccess(message)
-//         localStorage.setItem('token', jwtToken)
-//         localStorage.setItem('loggedInUser', name)
-//         setTimeout(() => navigate('/'), 100)
-//       } else if (error) {
-//         handleError(error?.details[0].message)
-//       } else {
-//         handleError(message)
-//       }
-//     } catch (err) {
-//       handleError(err)
-//     }
-//   }
-
-//   return (
-//     <div className="min-h-screen flex items-center justify-center  from-blue-100 to-blue-300 px-4">
-      
-//       <div className="w-full max-w-md bg-white rounded-2xl shadow-[8px_8px_24px_0px_rgba(66,68,90,1)] p-8">
-        
-//         <h1 className="text-3xl font-bold text-center text-blue-700 mb-6">
-//           Welcome Back 👋
-//         </h1>
-
-//         <form onSubmit={handleLogin} className="space-y-5">
-
-//           <div>
-//             <label className="block text-gray-600 font-medium mb-1">
-//               Email
-//             </label>
-//             <input
-//               onChange={handlechange}
-//               type="email"
-//               name="email"
-//               placeholder="Enter your email"
-//               value={loginInfo.email}
-//               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-//             />
-//           </div>
-
-//           <div>
-//             <label className="block text-gray-600 font-medium mb-1">
-//               Password
-//             </label>
-//             <input
-//               onChange={handlechange}
-//               type="password"
-//               name="password"
-//               placeholder="Enter your password"
-//               value={loginInfo.password}
-//               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-//             />
-//           </div>
-
-//           <button
-//             type="submit"
-//             className="w-full bg-blue-700 text-white py-2 rounded-lg text-lg font-semibold hover:bg-blue-800 transition duration-300"
-//           >
-//             Login
-//           </button>
-//         </form>
-
-//         <p className="text-center text-gray-600 mt-6">
-//           Don&apos;t have an account?{" "}
-//           <Link
-//             to="/signup"
-//             className="text-blue-700 font-semibold hover:underline"
-//           >
-//             Signup
-//           </Link>
-//         </p>
-
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Login
-
-
-
-
-// it is trial
-
-
-// import React, { useState } from 'react'
-// import { Link, useNavigate } from 'react-router-dom'
-// import { handleError, handleSuccess } from '../utils'
-
-
-// const Login = () => {
-//   const [loginInfo, setLoginInfo] = useState({
-//     email: '',
-//     password: ''
-//   })
-
-//   const navigate = useNavigate()
-
-//   const handlechange = (e) => {
-//     const inputValue = e.target.value
-//     const inputName = e.target.name
-//     const copyloginInfo = { ...loginInfo }
-//     copyloginInfo[inputName] = inputValue
-//     setLoginInfo(copyloginInfo)
-//   }
-
-//   const handleLogin = async (e) => {
-//     e.preventDefault()
-//     const { email, password } = loginInfo
-
-//     if (!email || !password) {
-//       return handleError('Email and password are required')
-//     }
-
-//     try {
-//       const url = "http://localhost:8000/api/auth/login"
-//       const response = await fetch(url, {
-//         method: "POST",
-//         headers: {
-//           'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify(loginInfo)
-//       })
-
-//       const result = await response.json()
-//       const { success, message, jwtToken, name, error } = result
-
-//       if (success) {
-//         handleSuccess(message)
-//         localStorage.setItem('token', jwtToken)
-//         localStorage.setItem('loggedInUser', name)
-//         setTimeout(() => navigate('/'), 100)
-//       } else if (error) {
-//         handleError(error?.details[0].message)
-//       } else {
-//         handleError(message)
-//       }
-//     } catch (err) {
-//       handleError(err)
-//     }
-//   }
-
-//   return (
-//     <div className="min-h-screen flex items-center justify-center  from-blue-100 to-blue-300 px-4">
-      
-//       <div className="w-full max-w-md bg-white rounded-2xl shadow-[8px_8px_24px_0px_rgba(66,68,90,1)] p-8">
-        
-//         <h1 className="text-3xl font-bold text-center text-blue-700 mb-6">
-//           Welcome Back 👋
-//         </h1>
-
-//         <form onSubmit={handleLogin} className="space-y-5">
-
-//           <div>
-//             <label className="block text-gray-600 font-medium mb-1">
-//               Email
-//             </label>
-//             <input
-//               onChange={handlechange}
-//               type="email"
-//               name="email"
-//               placeholder="Enter your email"
-//               value={loginInfo.email}
-//               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-//             />
-//           </div>
-
-//           <div>
-//             <label className="block text-gray-600 font-medium mb-1">
-//               Password
-//             </label>
-//             <input
-//               onChange={handlechange}
-//               type="password"
-//               name="password"
-//               placeholder="Enter your password"
-//               value={loginInfo.password}
-//               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-//             />
-//           </div>
-
-//           <button
-//             type="submit"
-//             className="w-full bg-blue-700 text-white py-2 rounded-lg text-lg font-semibold hover:bg-blue-800 transition duration-300"
-//           >
-//             Login
-//           </button>
-//         </form>
-
-//         <p className="text-center text-gray-600 mt-6">
-//           Don&apos;t have an account?{" "}
-//           <Link
-//             to="/signup"
-//             className="text-blue-700 font-semibold hover:underline"
-//           >
-//             Signup
-//           </Link>
-//         </p>
-
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Login
 

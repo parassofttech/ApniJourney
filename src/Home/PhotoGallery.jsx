@@ -11,46 +11,36 @@ const PhotoGalleryDash = () => {
 
   useEffect(() => {
     const fetchPhotos = async () => {
-      try {
-        setLoading(true);
-        setError("");
+  try {
+    setLoading(true);
+    setError("");
 
-        // Try to load from backend first
-        const res = await axios.get("https://apnijourney-api.onrender.com/api/trips");
+    const res = await axios.get(
+      "https://apnijourney-api.onrender.com/api/trips/detail"
+    );
+     
+    const trips =
+      res.data.trips ||
+      res.data.data ||
+      (Array.isArray(res.data) ? res.data : []);
 
-        let trips = [];
-        if (Array.isArray(res.data)) trips = res.data;
-        else if (Array.isArray(res.data.trips)) trips = res.data.trips;
-        else if (Array.isArray(res.data.data)) trips = res.data.data;
+      console.log(trips)
 
-        // Combine all photos
-        const backendPhotos = trips.flatMap((trip) =>
-          Array.isArray(trip.photos)
-            ? trip.photos.map((p) =>
-                p.startsWith("data:image")
-                  ? p
-                  : `${axios.defaults.baseURL}/${p.replace(/\\/g, "/")}`
-              )
-            : []
-        );
+    // Sabhi trips ki sabhi photos
+    const allPhotos = trips.flatMap((trip) =>
+      Array.isArray(trip.photos)
+        ? trip.photos.filter(Boolean)
+        : []
+    );
 
-        // If backend empty, fallback to localStorage
-        if (backendPhotos.length === 0) {
-          const localTrips = JSON.parse(localStorage.getItem("trips")) || [];
-          const localPhotos = localTrips.flatMap((trip) =>
-            Array.isArray(trip.photos) ? trip.photos : []
-          );
-          setPhotos(localPhotos);
-        } else {
-          setPhotos(backendPhotos);
-        }
-      } catch (err) {
-        console.error("Error loading photos:", err);
-        setError("Failed to load photos from server.");
-      } finally {
-        setLoading(false);
-      }
-    };
+    setPhotos(allPhotos);
+  } catch (err) {
+    console.error(err);
+    setError("Failed to load photos.");
+  } finally {
+    setLoading(false);
+  }
+};
 
     fetchPhotos();
   }, []);
@@ -107,15 +97,15 @@ const PhotoGalleryDash = () => {
             transition={{ duration: 0.3, delay: index * 0.05 }}
           >
             <img
-              src={src}
-              alt={`trip-photo-${index}`}
-              className="w-full h-40 object-cover"
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src =
-                  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80";
-              }}
-            />
+  src={src}
+  alt={`Trip ${index}`}
+  className="w-full h-44 object-cover"
+  loading="lazy"
+  onError={(e) => {
+    e.target.src =
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80";
+  }}
+/>
             <div className="absolute bottom-0 left-0 right-0 bg-black/40 text-white text-xs py-1 px-2 backdrop-blur-sm">
               Memory #{index + 1}
             </div>

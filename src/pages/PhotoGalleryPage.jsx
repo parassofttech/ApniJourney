@@ -6,6 +6,7 @@ import {
   Camera, Sparkles, Map, ChevronDown 
 } from "lucide-react";
 import Footer from "../Home/Footer";
+import PhotoGalleryDash from "../Home/PhotoGallery";
 
 axios.defaults.baseURL = "https://apnijourney-api.onrender.com";
 
@@ -13,6 +14,7 @@ const PhotoGalleryPage = () => {
   const [photos, setPhotos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedImg, setSelectedImg] = useState(null);
+  const [stats, setStats] = useState({ trips: 0 });
   const token = localStorage.getItem("token");
 
   // Parallax Effect for Hero
@@ -23,26 +25,31 @@ const PhotoGalleryPage = () => {
   useEffect(() => {
     const fetchPhotos = async () => {
       try {
-        const res = await axios.get("/api/trips", {
-          headers: { Authorization: `Bearer ${token}` },
+        const res = await axios.get("/api/trips/detail", {
+         
         });
-        let trips = res.data.trips || res.data.data || res.data || [];
+        const trips = res.data.trips || res.data.data || res.data || [];
         const userPhotos = trips.flatMap(trip =>
-          Array.isArray(trip.photos) ? trip.photos.map(p =>
-            p.startsWith("data:image") ? p : `${axios.defaults.baseURL}/${p.replace(/\\/g, "/")}`
-          ) : []
+          Array.isArray(trip.photos) ? trip.photos.filter(Boolean) : []
         );
-        setPhotos(userPhotos);
+
+
+        setStats({
+      
+        trips: userPhotos.length,
+        
+      });
+      setPhotos(userPhotos.reverse());
+       
       } catch (err) {
         console.error(err);
       } finally {
         setLoading(false);
       }
     };
-    if (token) fetchPhotos();
-  }, [token]);
+    fetchPhotos();
+  }, []);
 
-  if (!token) return <div className="h-screen flex items-center justify-center font-bold text-xl">Please Login to view memories.</div>;
 
   return (
     <div className="min-h-screen bg-[#fafafa] dark:bg-[#020617] transition-colors duration-500 overflow-x-hidden">
@@ -98,6 +105,8 @@ const PhotoGalleryPage = () => {
       </section>
 
       {/* 🖼️ --- GALLERY SECTION --- */}
+
+      
       <section className="relative z-20 -mt-20 bg-white dark:bg-[#020617] rounded-t-[3rem] px-6 pt-16 pb-32 shadow-[0_-20px_50px_rgba(0,0,0,0.1)]">
         <div className="max-w-7xl mx-auto">
           
@@ -119,7 +128,7 @@ const PhotoGalleryPage = () => {
                </button> */}
             </div>
           </div>
-
+          
           {/* Loading State */}
           {loading ? (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -165,6 +174,8 @@ const PhotoGalleryPage = () => {
           )}
         </div>
       </section>
+
+
 
       {/* --- PREMIUM LIGHTBOX MODAL --- */}
       <AnimatePresence>

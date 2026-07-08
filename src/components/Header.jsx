@@ -13,6 +13,7 @@ import { Contact, GalleryHorizontal, Menu, Plus, X,
   Info,
   Phone,
   Shield,
+  LogOut,
 } from "lucide-react";
 import TripMateLogo   from '../assets/TripMate_app_logo.png'
 
@@ -21,6 +22,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [loggedInUser,setLoggedInUser]= useState('')
   const isAdmin = localStorage.getItem("isAdmin");
+  const [user, setUser] = useState(null);
 
   useEffect(()=>{
      setLoggedInUser(localStorage.getItem('loggedInUser'))
@@ -29,13 +31,45 @@ const Header = () => {
   const handleLoginClick = () => {
     navigate("/login");
   };
+   useEffect(() => {
+    const updateUser = () => {
+      const token = localStorage.getItem("token");
+      const name = localStorage.getItem("loggedInUser");
+
+      if (token) {
+        setUser({
+          name: name || "User",
+        });
+      } else {
+        setUser(null);
+      }
+    };
+
+    updateUser();
+
+    window.addEventListener("storage", updateUser);
+
+    return () => {
+      window.removeEventListener("storage", updateUser);
+    };
+  }, []);
+
+   const handleLogout = () => {
+    localStorage.clear();
+    localStorage.removeItem("token");
+    
+    localStorage.removeItem("email");
+    setUser(null);
+
+    navigate("/login");
+  };
 
   return (
     <motion.nav
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="bg-white shadow-lg fixed top-0 left-0 w-full z-50"
+      className="bg-white shadow-lg h-16 md:h-18 fixed top-0 left-0 w-full z-50"
     >
       <div className="max-w-7xl mx-auto px-6 py-4   flex lg:items-center position  justify-between">
         {/* LOGO */}
@@ -128,7 +162,7 @@ const Header = () => {
             Add Trip
           </Link>
           <Link
-            to="/photo"
+            to="/photos"
             className="relative text-gray-700 font-medium transition duration-300 
             hover:text-blue-600 
              after:content-[''] after:absolute after:left-0 after:-bottom-1 
@@ -179,7 +213,7 @@ const Header = () => {
              hover:after:w-full"              >
                 Terms & Conditions
               </Link>
-          {isAdmin === "true" && (
+               {isAdmin === "true" && (
   <Link
   to="/admin/dashboard"
     onClick={() => setMenuOpen(false) }
@@ -189,11 +223,10 @@ const Header = () => {
 
   </Link>
 )}
-          <div className="">
-            
-             {loggedInUser ? (
-  <div className="relative ">
-    <button
+              <div className="hidden md:flex items-center gap-3">
+              {user ? (
+                <>
+                  <button
       onClick={() => navigate("/profile")}
       className="w-10 h-10 rounded-full overflow-hidden border-2 border-blue-500 hover:border-blue-700 transition"
     >
@@ -203,17 +236,28 @@ const Header = () => {
         className="w-full h-full object-cover"
       />
     </button>
-  </div>
-) : (
-  <button
-    onClick={handleLoginClick}
-    className="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-600 transition"
-  >
-    Login
-  </button>
-)}
 
-              </div>
+                  {/* <button
+                    onClick={handleLogout}
+                    className="p-3 rounded-full bg-red-500/20 hover:bg-red-500/30 transition"
+                  >
+                    <LogOut
+                      size={18}
+                      className="text-red-400"
+                    />
+                  </button> */}
+                </>
+              ) : (
+                <Link
+                  to="/login"
+                  className="px-5 py-2 rounded-full bg-linear-to-r from-cyan-500 to-purple-600 text-white font-semibold hover:scale-105 transition"
+                >
+                  Login
+                </Link>
+              )}
+            </div>
+         
+          
 
           {/* Login Button */}
           
@@ -227,10 +271,9 @@ const Header = () => {
           {menuOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
          <div className="lg:hidden flex fixed position right-14">
-            
-             {loggedInUser ? (
-  <div className="relative ">
-    <button
+            {user ? (
+                <>
+                   <button
       onClick={() => navigate("/profile")}
       className="w-10 h-10 rounded-full overflow-hidden border-2 border-blue-500 hover:border-blue-700 transition"
     >
@@ -240,15 +283,18 @@ const Header = () => {
         className="w-full h-full object-cover"
       />
     </button>
-  </div>
-) : (
-  <button
-    onClick={handleLoginClick}
-    className="bg-blue-500 text-white px-3 py-2 rounded-full hover:bg-blue-600 transition"
-  >
-    Login
-  </button>
-)}
+
+                  
+                </>
+              ) : (
+                <button
+                  onClick={() => navigate("/login")}
+                  className="px-5 py-2 rounded-full bg-linear-to-r from-cyan-500 to-purple-600 text-white font-semibold hover:scale-105 transition"
+                >
+                  Login
+                </button>
+              )}
+            
 
               </div>
       </div>
@@ -327,7 +373,7 @@ const Header = () => {
 </Link>
 
 <Link
-  to="/photo"
+  to="/photos"
   onClick={() => setMenuOpen(false)}
   className="flex items-center gap-2 text-gray-700 hover:text-blue-600 font-medium transition"
 >
@@ -376,28 +422,39 @@ const Header = () => {
   </Link>
 )}
 
-              <div className="hidden lg:flex">
-                {loggedInUser ? (
-  <div className="relative">
-    <button
-      onClick={() => navigate("/profile")}
-      className="w-10 h-10 rounded-full overflow-hidden border-2 border-blue-500 hover:border-blue-700 transition"
-    >
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/149/149071.png" // default profile image
-        alt="Profile"
-        className="w-full h-full object-cover"
-      />
-    </button>
+              <div className=" sm:w-[40%]">
+                {user ? (
+                <>
+                  <Link
+  to="/profile"
+  onClick={() => setMobileMenu(false)}
+  className="flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 border border-white/10 hover:bg-white/20 transition"
+>
+  <div className="w-10 h-10 rounded-full bg-linear-to-r from-cyan-500 to-purple-600 flex items-center justify-center text-white font-bold">
+    {user.name.charAt(0).toUpperCase()}
   </div>
-) : (
-  <button
-    onClick={handleLoginClick}
-    className="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-600 transition"
-  >
-    Login
-  </button>
-)}
+
+  <span className="text-gray-800 font-medium">
+    {user.name}
+  </span>
+</Link>
+
+                  <button
+                    onClick={handleLogout}
+                    className="w-full py-3 rounded-xl bg-red-500 text-white font-bold"
+                  >
+                    Logout
+                  </button>
+                </>
+              ) : (
+                <button
+                
+                  onClick={() => navigate("/login")}
+                  className="px-5 py-2 rounded-full bg-linear-to-r from-cyan-500 to-purple-600 text-white font-semibold hover:scale-105 transition"
+                >
+                  Login
+                </button>
+              )}
 
               </div>
               {/* <button

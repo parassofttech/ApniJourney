@@ -27,7 +27,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-[68vh] md:h-[80vh] w-full flex flex-col justify-center items-center overflow-hidden">
+    <section className="relative h-[68vh] sm:h-[80vh] w-full flex flex-col justify-center items-center overflow-hidden">
       
       {/* 🎥 Background Video with Transition */}
       <div className="absolute inset-0 w-full h-full">
@@ -78,7 +78,7 @@ const HeroSection = () => {
           </span>
         </motion.h1>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
@@ -86,7 +86,7 @@ const HeroSection = () => {
         >
           From the heights of Himalayas to the waves of Kanyakumari, <br className="hidden md:flex"/>
           <p className="hidden md:flex justify-center">your extraordinary journey starts here.</p>
-        </motion.p>
+        </motion.div>
 
         {/* 🔍 Smart Search Bar */}
         <motion.div

@@ -3,8 +3,9 @@ import { Users, Map, CreditCard, MessageSquare, ArrowUpRight, Plus, ExternalLink
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
+import Sidebar from "../components/Sidebar";
 
-const Dashboard = () => {
+const AdminDashboard = () => {
   const [stats, setStats] = useState({ users: 0, trips: 0, messages: 0, revenue: 124500 });
   const [recentUsers, setRecentUsers] = useState([]);
   const [recentTrips, setRecentTrips] = useState([]);
@@ -84,7 +85,9 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="p-4 ml-13 md:ml-65  lg:ml-60 lg:p-8 max-w-[1600px] mx-auto animate-in fade-in duration-700">
+    <div>
+      <Sidebar/>
+      <div className="p-4 ml-13 md:ml-65  lg:ml-60 lg:p-8 max-w-[1600px] mx-auto animate-in fade-in duration-700">
       
       {/* Welcome Header */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center m-10 gap-6">
@@ -214,7 +217,8 @@ const Dashboard = () => {
         </div>
       </div>
     </div>
+    </div>
   );
 };
 
-export default Dashboard;
+export default AdminDashboard;

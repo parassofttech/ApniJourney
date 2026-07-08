@@ -7,9 +7,13 @@ import {
   User, Mail, Phone, MapPin, Calendar, Globe, AlignLeft, CheckCircle2 
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+const loggedInUser = localStorage.getItem("loggedInUser")
+
+const userEmail = localStorage.getItem("email")
+
 
 const defaultProfile = {
-  name: "", email: "", phone: "", location: "",
+  name: loggedInUser||"", email:userEmail|| "", phone: "", location: "",
   dob: "", country: "", bio: "", profileImage: "",
 };
 
@@ -20,32 +24,9 @@ const Profile = () => {
   const [dark, setDark] = useState(localStorage.getItem("theme") === "dark");
   const [savingMsg, setSavingMsg] = useState("");
   const navigate = useNavigate();
-  const [loggedInUser, setLoggedInUser] = useState('');
-
-  useEffect(() => {
-    setLoggedInUser(localStorage.getItem('loggedInUser'));
-    const fetchProfile = async () => {
-      try {
-        const token = localStorage.getItem("token");
-        if (token) {
-          const res = await axios.get("https://apnijourney-api.onrender.com/api/auth/profile", {
-            headers: { Authorization: `Bearer ${token}` },
-          });
-          const backendUser = res.data.user;
-          if (backendUser) {
-            setProfile((prev) => ({ ...prev, name: backendUser.name, email: backendUser.email || "" }));
-          }
-        }
-      } catch (err) { console.warn("Guest Mode Active"); }
-
-      const stored = JSON.parse(localStorage.getItem("loggedInUser"));
-      if (stored) {
-        setProfile((p) => ({ ...p, ...stored }));
-        if (stored.profileImage) setPreview(stored.profileImage);
-      }
-    };
-    fetchProfile();
-  }, []);
+  
+  
+ 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -60,6 +41,8 @@ const Profile = () => {
       setPreview(reader.result);
       setProfile((p) => ({ ...p, profileImage: reader.result }));
     };
+    localStorage.setItem("profileimage",file.name)
+    console.log(file.name)
     reader.readAsDataURL(file);
   };
 
@@ -67,6 +50,7 @@ const Profile = () => {
     localStorage.setItem("loggedInUser", JSON.stringify(profile));
     setEditMode(false);
     setSavingMsg("Profile updated successfully!");
+  
     setTimeout(() => setSavingMsg(""), 3000);
   };
 
@@ -77,6 +61,7 @@ localStorage.removeItem("isAdmin");
     window.location.href = "/login";
   };
 
+  
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-300/40 via-green-500/30 to-yellow-400/30 text-black transition-colors duration-500 pb-20 pt-24 px-4">
       <div className="max-w-6xl mx-auto">
@@ -122,7 +107,7 @@ localStorage.removeItem("isAdmin");
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-5xl font-black text-gray-900 dark:text-blue-400">
-                      {profile.name?.charAt(0)?.toUpperCase() || "U"}
+                      {loggedInUser?.charAt(0)?.toUpperCase() || "U"}
                     </div>
                   )}
                 </div>
@@ -140,8 +125,8 @@ localStorage.removeItem("isAdmin");
                 )}
               </div>
 
-              <h2 className="text-2xl font-black text-slate-900 mb-1">{profile.name}</h2>
-              <p className="text-blue-900 font-bold text-sm mb-4">@{profile.name?.toLowerCase().replace(/\s/g, '_') || 'user'}</p>
+              <h2 className="text-2xl font-black text-slate-900 mb-1">{loggedInUser}</h2>
+              <p className="text-blue-900 font-bold text-sm mb-4">@{loggedInUser?.toLowerCase().replace(/\s/g, '_') || 'user'}</p>
 
               <div className="bg-slate-800/90 rounded-2xl p-4 mb-6 text-sm text-slate-50 italic">
                 "{profile.bio || "Add a bio to let people know about your travel spirit!"}"
@@ -230,212 +215,4 @@ const ProfileInput = ({ icon, label, name, value, editMode, onChange, placeholde
 );
 
 export default Profile;
-
-
-
-
-// import React, { useEffect, useState } from "react";
-// import axios from "axios";
-// import { motion, AnimatePresence } from "framer-motion";
-// import { useNavigate } from "react-router-dom";
-
-// const Profile = () => {
-//   const [user, setUser] = useState(null);
-//   const [isGuest, setIsGuest] = useState(true);
-//   const [loading, setLoading] = useState(true);
-//   const [editMode, setEditMode] = useState(false);
-//   const [form, setForm] = useState({ name: "", email: "" });
-//   const [message, setMessage] = useState("");
-//   const navigate = useNavigate();
-
-//   // Fetch user data
-//   useEffect(() => {
-//     const fetchProfile = async () => {
-//       try {
-//         const token = localStorage.getItem("token");
-//         if (!token) {
-//           setIsGuest(true);
-//           setLoading(false);
-//           return;
-//         }
-
-//         const res = await axios.get("http://localhost:5000/api/auth/profile", {
-//           headers: { Authorization: `Bearer ${token}` },
-//         });
-
-//         setUser(res.data.user);
-//         setForm({ name: res.data.user.name, email: res.data.user.email });
-//         setIsGuest(false);
-//       } catch (err) {
-//         console.error("Profile fetch error:", err);
-//         setIsGuest(true);
-//       } finally {
-//         setLoading(false);
-//       }
-//     };
-//     fetchProfile();
-//   }, []);
-
-//   // Logout
-//   const handleLogout = () => {
-//     localStorage.removeItem("token");
-//     localStorage.removeItem("user");
-//     setUser(null);
-//     setIsGuest(true);
-//     navigate("/login");
-//   };
-
-//   // Handle Edit
-//   const handleEditToggle = () => {
-//     setEditMode(!editMode);
-//     setMessage("");
-//   };
-
-//   // Save updated profile
-//   const handleSave = async () => {
-//     try {
-//       const token = localStorage.getItem("token");
-//       if (!token) return;
-
-//       const res = await axios.put(
-//         "http://localhost:5000/api/auth/update",
-//         form,
-//         { headers: { Authorization: `Bearer ${token}` } }
-//       );
-
-//       setUser(res.data.user);
-//       setEditMode(false);
-//       setMessage("✅ Profile updated successfully!");
-//     } catch (err) {
-//       console.error(err);
-//       setMessage("❌ Error updating profile.");
-//     }
-//   };
-
-//   if (loading) {
-//     return (
-//       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-white">
-//         <motion.div
-//           animate={{ rotate: 360 }}
-//           transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
-//           className="w-10 h-10 border-4 border-green-500 border-t-transparent rounded-full"
-//         ></motion.div>
-//       </div>
-//     );
-//   }
-
-//   const displayUser = isGuest
-//     ? {
-//         name: "Guest Traveler",
-//         email: "guest@travelapp.com",
-//         createdAt: new Date().toISOString(),
-//       }
-//     : user;
-
-//   return (
-//     <div className="min-h-screen bg-gradient-to-br from-green-100 via-white to-green-50 flex items-center justify-center p-6">
-//       <motion.div
-//         initial={{ opacity: 0, scale: 0.9 }}
-//         animate={{ opacity: 1, scale: 1 }}
-//         transition={{ duration: 0.5 }}
-//         className="bg-white rounded-3xl shadow-2xl w-full max-w-md p-8 relative overflow-hidden"
-//       >
-//         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-green-400 to-blue-400"></div>
-
-//         {/* Avatar */}
-//         <div className="text-center mt-4">
-//           <motion.img
-//             src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${displayUser.name}`}
-//             alt="avatar"
-//             className="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-green-400 shadow-lg"
-//             whileHover={{ scale: 1.05 }}
-//           />
-//           <h2 className="text-2xl font-bold text-gray-800">{displayUser.name}</h2>
-//           <p className="text-gray-500">{displayUser.email}</p>
-//         </div>
-
-//         {/* Edit Mode Toggle */}
-//         {!isGuest && (
-//           <div className="flex justify-center mt-3">
-//             <button
-//               onClick={handleEditToggle}
-//               className="text-sm text-green-600 hover:underline"
-//             >
-//               {editMode ? "Cancel Edit" : "Edit Profile ✏️"}
-//             </button>
-//           </div>
-//         )}
-
-//         <AnimatePresence>
-//           {editMode && (
-//             <motion.div
-//               initial={{ opacity: 0, y: 10 }}
-//               animate={{ opacity: 1, y: 0 }}
-//               exit={{ opacity: 0, y: 10 }}
-//               className="mt-6 space-y-4"
-//             >
-//               <input
-//                 type="text"
-//                 value={form.name}
-//                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-//                 placeholder="Full Name"
-//                 className="w-full p-3 border rounded-xl focus:ring-2 focus:ring-green-400"
-//               />
-//               <input
-//                 type="email"
-//                 value={form.email}
-//                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-//                 placeholder="Email"
-//                 className="w-full p-3 border rounded-xl focus:ring-2 focus:ring-green-400"
-//               />
-//               <button
-//                 onClick={handleSave}
-//                 className="w-full bg-green-500 text-white py-3 rounded-xl hover:bg-green-600 transition font-semibold"
-//               >
-//                 Save Changes
-//               </button>
-//             </motion.div>
-//           )}
-//         </AnimatePresence>
-
-//         {/* Message */}
-//         {message && (
-//           <p className="text-center mt-4 text-green-600 font-medium">{message}</p>
-//         )}
-
-//         {/* Details */}
-//         {!editMode && (
-//           <div className="mt-6 space-y-3 text-gray-700">
-//             <div className="flex justify-between border-b pb-2">
-//               <span className="font-semibold">Joined On</span>
-//               <span>{new Date(displayUser.createdAt).toLocaleDateString()}</span>
-//             </div>
-//           </div>
-//         )}
-
-//         {/* Action Buttons */}
-//         <div className="mt-8 flex justify-center">
-//           {isGuest ? (
-//             <button
-//               onClick={() => navigate("/login")}
-//               className="bg-green-500 text-white px-6 py-2 rounded-xl hover:bg-green-600 transition"
-//             >
-//               Login
-//             </button>
-//           ) : (
-//             <button
-//               onClick={handleLogout}
-//               className="bg-red-500 text-white px-6 py-2 rounded-xl hover:bg-red-600 transition"
-//             >
-//               Logout
-//             </button>
-//           )}
-//         </div>
-//       </motion.div>
-//     </div>
-//   );
-// };
-
-// export default Profile;
-
 

@@ -29,7 +29,7 @@ import About from "./pages/About";
 import PhotoGalleryPage from "./pages/PhotoGalleryPage";
 import WeatherInfoPage from "./pages/WeatherInfoPage";
 import VerifyOTP from "./pages/VerifyOTP";
-import AdminRoutes from "./admin/routes/AdminRoutes";
+
 import AdminTrips from "./admin/pages/AdminTrips";
 import Users from "./admin/pages/Users";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -46,6 +46,8 @@ import ThingsDoInGoa from "./TravelGuidePages/ThingsDoInGoa";
 import ScrollToTop from "./ScrollToTop";
 
 import TripsBlog from "./pages/TripsBlog";
+import AdminDashboard from "./admin/pages/AdminDashboard";
+import Admin from "./admin/pages/Admin";
 
 
 const App = () => {
@@ -57,8 +59,8 @@ const App = () => {
         
         <Header/>
         <div id="main-content" className="flex-1 overflow-auto">
-          <AdminRoutes />
-          <div className="mb-18">
+          
+          <div className="mb-16">
 
           </div>
           <Routes>
@@ -81,7 +83,7 @@ const App = () => {
             <Route path="/national-park" element={<NationalPark />} />
             <Route path="/national-park/:id" element={<NationalParkDetail />} />
             <Route path="/about" element={<About />} />
-            <Route path="/photo" element={<PhotoGalleryPage />} />
+            <Route path="/photos" element={<PhotoGalleryPage />} />
             <Route path="/weatherpage" element={<WeatherInfoPage />} />
             <Route path="/verify" element={<VerifyOTP />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -96,6 +98,8 @@ const App = () => {
             <Route path="/packing-checklist" element={<PackingChecklist/>} />
             <Route path="/things-to-do-goa" element={<ThingsDoInGoa/>} />
             <Route path="/trips-blog" element={<TripsBlog />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/admin/dashboard" element={<AdminDashboard/>} />
             {/* <Route path="admin-trips" element={<AdminTrips />} />
             <Route path="/admin/users" element={<Users />} /> */}
 

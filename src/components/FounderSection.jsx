@@ -115,7 +115,7 @@ const FounderSection = () => {
                 {[
                   { icon: Globe, label: "Global Access", color: "text-blue-400" },
                   { icon: Sparkles, label: "Smart Planning", color: "text-purple-400" },
-                  { icon: Heart, label: "Passenger-First", color: "text-rose-400" },
+                  { icon: Heart, label: "Passenger First", color: "text-rose-400" },
                   { icon: Sparkles, label: "Zero Hidden Costs", color: "text-emerald-400" }
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-4 bg-[#1e293b]/50 p-4 rounded-2xl border border-slate-800 group-hover:border-slate-700 transition-colors">

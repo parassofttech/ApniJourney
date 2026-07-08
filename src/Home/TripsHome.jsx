@@ -207,12 +207,16 @@ const fetchUsers = async () => {
         },
       }
     );
+    console.log(JSON.parse(localStorage.getItem("user")));
+     console.log("Current User ID:", currentUser._id);
+
 
   } catch (err) {
     console.log(err.response?.data);
 
     // Error aaye to data wapas fetch kar lo
     fetchTrips();
+   
   }
 };
 
@@ -551,7 +555,7 @@ useEffect(() => {
   <Heart
   size={22}
   className={`transition-transform duration-150 active:scale-95 ${
-   trip.likes?.includes(currentUser?._id)
+   trip.likes?.includes(currentUser?._id||currentUser?.id)
       ? "fill-rose-500 text-rose-500 scale-105"
       : "text-gray-700"
   }`}
@@ -559,7 +563,7 @@ useEffect(() => {
 
 <span
   className={`text-xs font-bold ${
-    trip.likes?.includes(currentUser?._id)
+    trip.likes?.includes(currentUser?._id||currentUser?.id)
       ? "text-rose-600"
       : "text-gray-600"
   }`}

@@ -167,7 +167,7 @@ useEffect(() => {
         },
       }
     );
-
+    
     if (response.data.success) {
       handleSuccess(" Trip added successfully!");
 
@@ -240,7 +240,7 @@ useEffect(() => {
         <div className="md:col-span-2 bg-white/70 backdrop-blur-2xl border border-white/40 rounded-3xl shadow-[0_25px_60px_rgba(0,0,0,0.08)] p-10">
 
           <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 mb-6 text-center tracking-wide">
-            🧳 Add New Trip
+            Add New Trip
           </h2>
 
           {/* Progress Bar */}
@@ -285,8 +285,32 @@ useEffect(() => {
                   value={trip[field.name]}
                   onChange={handleChange}
                   placeholder={field.placeholder}
-                  className="w-full bg-white/80 border border-gray-200 p-4 rounded-2xl focus:ring-2 focus:ring-blue-400 focus:shadow-[0_0_20px_rgba(59,130,246,0.2)] transition-all outline-none"
+                  className="
+                    peer
+                    w-full
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
                 />
+                <span
+                  className="
+                    absolute
+                    left-0
+                    bottom-0
+                    h-0.5
+                    w-0
+                    bg-cyan-500
+                    transition-all
+                    duration-300
+                    peer-focus:w-full
+                  "
+                ></span>
               </div>
             ))}
 
@@ -297,8 +321,20 @@ useEffect(() => {
                 name="category"
                 value={trip.category}
                 onChange={handleChange}
-                className="w-full bg-white/80 border border-gray-200 p-4 rounded-2xl focus:ring-2 focus:ring-blue-400 outline-none transition-all"
+                className="
+                    peer
+                    w-full
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
               >
+                
                 <option value="">Select Category</option>
                 <option>Adventure</option>
                 <option>Family Trip</option>
@@ -321,7 +357,18 @@ useEffect(() => {
                   name="startDate"
                   value={trip.startDate}
                   onChange={handleChange}
-                  className="w-full bg-white/80 border border-gray-200 p-4 rounded-2xl focus:ring-2 focus:ring-blue-400 outline-none"
+                  className="
+                    peer
+                    w-full
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
                 />
               </div>
 
@@ -332,7 +379,18 @@ useEffect(() => {
                   name="endDate"
                   value={trip.endDate}
                   onChange={handleChange}
-                  className="w-full bg-white/80 border border-gray-200 p-4 rounded-2xl focus:ring-2 focus:ring-blue-400 outline-none"
+                  className="
+                    peer
+                    w-full
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
                 />
               </div>
             </div>
@@ -349,7 +407,18 @@ useEffect(() => {
                   value={trip.budget}
                   onChange={handleChange}
                   placeholder="e.g. 25000"
-                  className="w-full bg-white/80 border border-gray-200 p-4 rounded-2xl focus:ring-2 focus:ring-blue-400 outline-none"
+                  className="
+                    peer
+                    w-full
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
                 />
               </div>
 
@@ -365,7 +434,18 @@ useEffect(() => {
                   min="1"
                   max="5"
                   placeholder="Give your experience rating"
-                  className="w-full bg-white/80 border border-gray-200 p-4 rounded-2xl focus:ring-2 focus:ring-blue-400 outline-none"
+                  className="
+                    peer
+                    w-full
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
                 />
               </div>
             </div>
@@ -379,7 +459,18 @@ useEffect(() => {
                 onChange={handleChange}
                 rows="4"
                 placeholder="Write about your travel experience..."
-                className="w-full bg-white/80 border border-gray-200 p-4 rounded-2xl focus:ring-2 focus:ring-blue-400 outline-none"
+                className="
+                    peer
+                    w-full
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
               />
             </div>
 
@@ -392,7 +483,18 @@ useEffect(() => {
                 onChange={handleChange}
                 rows="3"
                 placeholder="Special memories or notes"
-                className="w-full bg-white/80 border border-gray-200 p-4 rounded-2xl focus:ring-2 focus:ring-blue-400 outline-none"
+                className="
+                    peer
+                    w-full
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
               />
             </div>
 
@@ -452,7 +554,7 @@ useEffect(() => {
         <span>Uploading...</span>
       </div>
     ) : (
-      "✨ Add Trip"
+      " Add Trip"
     )}
   </motion.button>
 </div>
