@@ -178,13 +178,13 @@ const fetchUsers = async () => {
 
         if (tripId !== id) return trip;
 
-        const isLiked = trip.likes?.includes(currentUser?._id);
+        const isLiked = trip.likes?.includes(currentUser?._id || currentUser?.id);
 
         return {
           ...trip,
           likes: isLiked
-            ? trip.likes.filter((userId) => userId !== currentUser._id)
-            : [...(trip.likes || []), currentUser._id],
+            ? trip.likes.filter((userId) => userId !== currentUser?._id || currentUser?.id)
+            : [...(trip.likes || []), currentUser?._id || currentUser?.id],
         };
       })
     );
@@ -208,7 +208,7 @@ const fetchUsers = async () => {
       }
     );
     console.log(JSON.parse(localStorage.getItem("user")));
-     console.log("Current User ID:", currentUser._id);
+     console.log("Current User ID:", currentUser?._id || currentUser?.id);
 
 
   } catch (err) {

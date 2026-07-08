@@ -6,6 +6,8 @@ import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, A
 import Sidebar from "../components/Sidebar";
 
 const AdminDashboard = () => {
+
+  const isAdmin = localStorage.getItem("isAdmin")
   const [stats, setStats] = useState({ users: 0, trips: 0, messages: 0, revenue: 124500 });
   const [recentUsers, setRecentUsers] = useState([]);
   const [recentTrips, setRecentTrips] = useState([]);
@@ -217,6 +219,10 @@ const AdminDashboard = () => {
         </div>
       </div>
     </div>
+    {!isAdmin && 
+    <div>
+      you are not admin
+    </div> }
     </div>
   );
 };
