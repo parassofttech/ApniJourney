@@ -6,6 +6,7 @@ import {
   MapPin, Calendar, Wallet, Star, ArrowLeft, 
   Info, Camera, Clock, Tag, ChevronRight 
 } from "lucide-react";
+import { optimizeCloudinaryImage } from "../utils/cloudinary";
 
 axios.defaults.baseURL = "https://apnijourney-api.onrender.com";
 
@@ -87,10 +88,12 @@ const TripDetail = () => {
               className="relative aspect-[16/9] rounded-[3rem] overflow-hidden shadow-2xl shadow-blue-900/10"
             >
               <img 
-                src={photos[0] || "https://images.unsplash.com/photo-1488646953014-85cb44e25828"} 
+                src={optimizeCloudinaryImage(photos[0]) || "https://images.unsplash.com/photo-1488646953014-85cb44e25828"} 
                 className="w-full h-full object-cover" 
                 alt={title}
                 loading="lazy"
+  decoding="async"
+  fetchPriority="low"
             
               />
               <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl shadow-lg border border-white/20">
@@ -185,7 +188,7 @@ const TripDetail = () => {
                       whileHover={{ scale: 1.03 }}
                       className="aspect-square rounded-2xl overflow-hidden shadow-sm"
                     >
-                      <img src={photo} className="w-full h-full object-cover" alt="trip-moment" />
+                      <img src={optimizeCloudinaryImage(photo)} className="w-full h-full object-cover" alt="trip-moment" />
                     </motion.div>
                   ))}
                 </div>

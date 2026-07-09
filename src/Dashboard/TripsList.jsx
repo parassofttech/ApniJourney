@@ -37,7 +37,7 @@ const TripsList = () => {
         >
           {trip.photos && trip.photos.length > 0 && (
             <img
-              src={URL.createObjectURL(trip.photos[0])}
+              src={URL.createObjectURL(optimizeCloudinaryImage(trip.photos[0]))}
               alt={trip.title}
               className="h-40 w-full object-cover"
             />

@@ -13,6 +13,7 @@ import {
   Star,
   IndianRupee 
 } from "lucide-react";
+import { optimizeCloudinaryImage } from "../utils/cloudinary";
 
 const Trips = () => {
   const [trips, setTrips] = useState([]);
@@ -140,7 +141,7 @@ const Trips = () => {
                     {/* Image Header */}
                     <div className="h-56 relative overflow-hidden">
                       {trip.photos?.length ? (
-                        <img src={trip.photos[0]} alt="" className="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-700" />
+                        <img src={optimizeCloudinaryImage(trip.photos[0])} alt={trip.destination} className="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-700" />
                       ) : (
                         <div className="w-full h-full bg-slate-100 flex items-center justify-center text-slate-400">
                           No Preview

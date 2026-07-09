@@ -8,6 +8,7 @@ const ContactMessages = () => {
   const [loading, setLoading] = useState(true);
   const [selectedMsg, setSelectedMsg] = useState(null); // Modal state
   const [searchTerm, setSearchTerm] = useState("");
+  const [stats, setStats] = useState({ contact: 0 });
 
   const API_URL = "https://apnijourney-api.onrender.com/api/contact";
 
@@ -16,7 +17,14 @@ const ContactMessages = () => {
     try {
       const res = await axios.get(API_URL);
       const data = res.data.messages || (Array.isArray(res.data) ? res.data : []);
-      setMessages(data);
+
+      setStats({
+      
+        users: data.length,
+        
+      });
+      setMessages(data.reverse());
+      
     } catch (err) {
       console.error("Fetch error:", err);
       setMessages([]);

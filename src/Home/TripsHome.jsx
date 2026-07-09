@@ -29,6 +29,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { handleError, handleSuccess } from "../utils";
+import { optimizeCloudinaryImage } from "../utils/cloudinary";
 
 const TripsHome = () => {
 
@@ -286,7 +287,45 @@ const addComment = async (tripId) => {
     handleError("Failed to add comment"+ (err.response?.data?.message || "Unauthorized"));
   }
 };
+const handleDeleteComment = async (tripId, commentId) => {
+  // ✅ NAYA SAFETY CHECK: Agar commentId undefined hai toh function yahin ruk jayega
+  if (!commentId) {
+    console.error("Error: commentId is missing!", { tripId, commentId });
+    return alert("Error: Comment ID nahi mil rahi hai.");
+  }
 
+  const confirmDelete = window.confirm("Are you sure you want to delete this comment?");
+  if (!confirmDelete) return;
+
+  try {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      return handleError("Please login to delete a comment.");
+    }
+
+    // Ab yahan kabhi 'undefined' nahi jayega
+    await axios.delete(
+      `https://apnijourney-api.onrender.com/api/comments/${commentId}`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
+
+    setComments((prev) => ({
+      ...prev,
+      [tripId]: prev[tripId].filter((comment) => comment._id !== commentId && comment.id !== commentId),
+    }));
+
+  } catch (err) {
+    console.error("Delete Error:", err);
+    handleError(
+      "Failed to delete comment: " + 
+      (err.response?.data?.message || "Something went wrong")
+    );
+  }
+};
 const getComments = async (tripId) => {
   
   if (!tripId) {
@@ -303,6 +342,8 @@ const getComments = async (tripId) => {
     const res = await axios.get(
       `https://apnijourney-api.onrender.com/api/comments/${tripId}`
     );
+     console.log(res.data)
+     console.log(currentUser);
 
     setComments((prev) => ({
       ...prev,
@@ -527,11 +568,13 @@ useEffect(() => {
   {trip.photos?.map((photo, index) => (
     <SwiperSlide key={index}>
       <img
-        src={photo}
+        src={optimizeCloudinaryImage(photo)}
         alt={`Trip ${index + 1}`}
         onDoubleClick={() => toggleLike(id)}
         className="w-full h-full object-cover cursor-pointer"
         loading="lazy"
+        
+        fetchPriority="low"
       />
     </SwiperSlide>
   ))}
@@ -656,12 +699,24 @@ useEffect(() => {
                     (comments[id] || []).map((comment) => (
                       <div
                         key={comment._id || comment.id || Math.random()} 
-                        className="bg-slate-50/70 rounded-xl px-3.5 py-2 border border-gray-100 text-xs"
+                        className="flex justify-between bg-slate-50/70 rounded-xl px-3.5 py-2 border border-gray-100 text-xs"
                       >
-                        <span className="font-bold text-gray-900 block mb-0.5">
+                        <div>
+                          <span className="font-bold text-gray-900 block mb-0.5">
                           {comment.name || "Anonymous"}
                         </span>
                         <p className="text-gray-600 leading-normal">{comment.text}</p>
+                        </div>
+                        {(comment.user?._id === currentUser?._id || comment.user === currentUser?._id||comment.user?._id === currentUser?.id ) && (
+                    <div className="border-t border-gray-50 mt-1 pt-1">
+                      <button
+                        onClick={() => handleDeleteComment(id , comment._id || comment.id)}
+                        className="w-full px-4 py-2   text-xs font-bold text-rose-600 hover:bg-rose-50 flex items-center gap-2.5 transition"
+                      >
+                        <Trash2 size={15} />
+                      </button>
+                    </div>
+                  )}
                       </div>
                     ))
                   ) : (

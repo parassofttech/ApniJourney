@@ -4,6 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
 import Sidebar from "../components/Sidebar";
+import { optimizeCloudinaryImage } from "../../utils/cloudinary";
 
 const AdminDashboard = () => {
 
@@ -74,7 +75,7 @@ const AdminDashboard = () => {
     <div className="flex h-[80vh] items-center justify-center">
       <div className="relative flex items-center justify-center">
         <div className="h-16 w-16 animate-spin rounded-full border-4 border-slate-200 border-t-blue-600"></div>
-        <img src="/logo.png" className="absolute w-6 h-6 animate-pulse" alt="" />
+        <img src="/logo.png" className="absolute w-11 h-11 animate-pulse" alt="" />
       </div>
     </div>
   );
@@ -193,7 +194,9 @@ const AdminDashboard = () => {
               {recentTrips.slice(0, 3).map(t => (
                 <div key={t._id} className="flex items-center gap-4 p-3 bg-slate-50/50 rounded-2xl hover:bg-blue-50 transition-colors">
                   <div className="h-12 w-12 bg-white rounded-xl overflow-hidden border border-slate-100 p-1">
-                    <img src={t.image || t.photos?.[0] || "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?q=80&w=100"} className="w-full h-full object-cover rounded-lg" alt=""/>
+                    <img src={optimizeCloudinaryImage(t.image || t.photos?.[0]) || "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?q=80&w=100"} className="w-full h-full object-cover rounded-lg" alt="trip"
+                    loading="lazy"
+fetchPriority="low"/>
                   </div>
                   <div className="flex-1">
                     <p className="text-sm font-bold text-slate-800 leading-tight">{t.title}</p>

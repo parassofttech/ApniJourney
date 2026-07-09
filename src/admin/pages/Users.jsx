@@ -8,6 +8,7 @@ const Users = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [stats, setStats] = useState({ users: 0 });
 
   const API_URL = "https://apnijourney-api.onrender.com/api/auth/users";
   const token = localStorage.getItem("token");
@@ -18,7 +19,12 @@ const Users = () => {
     try {
       const res = await axios.get(API_URL, authConfig);
       const data = Array.isArray(res.data.user) ? res.data.user : (Array.isArray(res.data) ? res.data : []);
-      setUsers(data);
+      setStats({
+      
+        users: data.length,
+        
+      });
+      setUsers(data.reverse());
     } catch (err) {
       setError(err.response?.data?.message || "Failed to fetch users");
     } finally {

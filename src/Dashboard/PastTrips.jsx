@@ -118,8 +118,11 @@ const PastTrips = () => {
                 className="min-w-[250px] max-w-[250px] bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition cursor-pointer flex-shrink-0"
               >
                 <img
-                  src={tripImage}
+                  src={optimizeCloudinaryImage(tripImage)}
                   alt={trip.title || "Trip"}
+                  loading="lazy"
+  
+  fetchPriority="low"
                   className="h-32 w-full object-cover"
                   onError={(e) => (e.target.style.display = "none")}
                 />

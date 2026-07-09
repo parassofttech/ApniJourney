@@ -3,11 +3,13 @@ import { Pencil, Trash2, Plus, Search, Calendar, MapPin, DollarSign, Filter, Ext
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
+import { optimizeCloudinaryImage } from "../../utils/cloudinary";
 
 const AdminTrips = () => {
   const [trips, setTrips] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
+  const [stats, setStats] = useState({ trips: 0 });
   const navigate = useNavigate();
 
   const API_URL = "https://apnijourney-api.onrender.com/api/trips";
@@ -22,7 +24,14 @@ const AdminTrips = () => {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = res.data.trips || res.data.data || res.data || [];
-      setTrips(Array.isArray(data) ? data : []);
+      setStats({
+      
+        trips: data.length,
+        
+      });
+      setTrips(data.reverse());
+
+
     } catch (err) {
       console.error("Fetch Error:", err);
     } finally {
@@ -72,12 +81,7 @@ const AdminTrips = () => {
           <h1 className="text-3xl mt-4 font-black text-slate-900  tracking-tight">Trips Inventory</h1>
           <p className="text-slate-500 font-medium">Manage destinations, pricing, and schedules.</p>
         </div>
-        {/* <button 
-          onClick={() => navigate("/admin/add-trip")}
-          className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-2xl font-bold shadow-lg shadow-blue-200 hover:shadow-blue-400 transition-all active:scale-95"
-        >
-          <Plus size={20} strokeWidth={3} /> Add New Expedition
-        </button> */}
+        
       </div>
 
       {/* --- Filter Bar --- */}
@@ -117,8 +121,10 @@ const AdminTrips = () => {
                     <div className="flex items-center gap-4">
                       <div className="h-14 w-20 rounded-2xl overflow-hidden bg-slate-100 flex-shrink-0 shadow-sm border border-white">
                         <img 
-                          src={trip.photos[0] || "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=200&auto=format&fit=crop"} 
+                          src={optimizeCloudinaryImage(trip.photos[0]) || "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=200&auto=format&fit=crop"} 
                           alt="trip" 
+                          loading="lazy"
+fetchPriority="low"
                           className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
                         />
                       </div>

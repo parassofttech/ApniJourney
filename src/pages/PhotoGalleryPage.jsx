@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
-import { 
-  X, Maximize2, Image as ImageIcon, 
-  Camera, Sparkles, Map, ChevronDown 
+import {
+  X, Maximize2, Image as ImageIcon,
+  Camera, Sparkles, Map, ChevronDown
 } from "lucide-react";
 import Footer from "../Home/Footer";
 import PhotoGalleryDash from "../Home/PhotoGallery";
+import { optimizeCloudinaryImage } from "../utils/cloudinary";
 
 axios.defaults.baseURL = "https://apnijourney-api.onrender.com";
 
@@ -26,7 +27,7 @@ const PhotoGalleryPage = () => {
     const fetchPhotos = async () => {
       try {
         const res = await axios.get("/api/trips/detail", {
-         
+
         });
         const trips = res.data.trips || res.data.data || res.data || [];
         const userPhotos = trips.flatMap(trip =>
@@ -35,12 +36,12 @@ const PhotoGalleryPage = () => {
 
 
         setStats({
-      
-        trips: userPhotos.length,
-        
-      });
-      setPhotos(userPhotos.reverse());
-       
+
+          trips: userPhotos.length,
+
+        });
+        setPhotos(userPhotos.reverse());
+
       } catch (err) {
         console.error(err);
       } finally {
@@ -53,49 +54,49 @@ const PhotoGalleryPage = () => {
 
   return (
     <div className="min-h-screen bg-[#fafafa] dark:bg-[#020617] transition-colors duration-500 overflow-x-hidden">
-      
+
       {/*   ADVANCED HERO SECTION  */}
       <section className="relative h-[50vh] md:h-[70vh] w-full flex items-center justify-center overflow-hidden">
         {/* Animated Background */}
         <motion.div style={{ y: y1 }} className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80" 
+          <img
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80"
             className="w-full h-full object-cover brightness-[0.4] dark:brightness-[0.2]"
             alt="Hero Background"
           />
         </motion.div>
-        
+
         <motion.div style={{ opacity }} className="relative z-10 text-center px-4">
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }} 
-            animate={{ opacity: 1, y: 0 }} 
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-white text-xs font-bold tracking-widest uppercase mb-6"
           >
             <Sparkles size={14} className="text-yellow-400" /> Digital Scrapbook
           </motion.div>
-          
-          <motion.h1 
-            initial={{ opacity: 0, scale: 0.9 }} 
+
+          <motion.h1
+            initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
             className="text-6xl md:text-8xl font-black text-white mb-6 tracking-tighter"
           >
             Memories in <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Motion.</span>
           </motion.h1>
-          
-          <motion.p 
-             initial={{ opacity: 0 }} 
-             animate={{ opacity: 1 }} 
-             transition={{ delay: 0.4 }}
-             className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto font-medium"
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto font-medium"
           >
             Every mile has a story. Relive your favorite moments from your global explorations in high definition.
           </motion.p>
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div 
-          animate={{ y: [0, 10, 0] }} 
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
           className="absolute bottom-10 text-white/50 flex flex-col items-center gap-2"
         >
@@ -106,10 +107,10 @@ const PhotoGalleryPage = () => {
 
       {/* 🖼️ --- GALLERY SECTION --- */}
 
-      
+
       <section className="relative z-20 -mt-20 bg-white dark:bg-[#020617] rounded-t-[3rem] px-6 pt-16 pb-32 shadow-[0_-20px_50px_rgba(0,0,0,0.1)]">
         <div className="max-w-7xl mx-auto">
-          
+
           {/* Section Header */}
           <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-16 border-b border-slate-100 dark:border-slate-800 pb-10">
             <div>
@@ -119,27 +120,27 @@ const PhotoGalleryPage = () => {
               <p className="text-slate-500 mt-2 font-medium">Synced from your recent trips and shared adventures.</p>
             </div>
             <div className="flex items-center gap-4">
-               <div className="text-right hidden md:block">
-                  <p className="text-xs font-bold text-slate-400 uppercase">Total Memories</p>
-                  <p className="text-2xl font-black text-blue-600">{photos.length}</p>
-               </div>
-               {/* <button className="bg-slate-900 dark:bg-blue-600 text-white px-6 py-3 rounded-2xl font-bold flex items-center gap-2 hover:scale-105 transition-transform">
+              <div className="text-right hidden md:block">
+                <p className="text-xs font-bold text-slate-400 uppercase">Total Memories</p>
+                <p className="text-2xl font-black text-blue-600">{photos.length}</p>
+              </div>
+              {/* <button className="bg-slate-900 dark:bg-blue-600 text-white px-6 py-3 rounded-2xl font-bold flex items-center gap-2 hover:scale-105 transition-transform">
                   <Map size={18} /> View on Map
                </button> */}
             </div>
           </div>
-          
+
           {/* Loading State */}
           {loading ? (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {[1,2,3,4,5,6,7,8].map(n => (
+              {[1, 2, 3, 4, 5, 6, 7, 8].map(n => (
                 <div key={n} className="aspect-square bg-slate-100 dark:bg-slate-800 rounded-3xl animate-pulse" />
               ))}
             </div>
           ) : photos.length === 0 ? (
             <div className="text-center py-20">
               <div className="bg-slate-50 dark:bg-slate-900 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-slate-300">
-                 <ImageIcon size={40} />
+                <ImageIcon size={40} />
               </div>
               <p className="text-slate-400 font-bold">No photos found yet. Start your first trip!</p>
             </div>
@@ -157,11 +158,11 @@ const PhotoGalleryPage = () => {
                   onClick={() => setSelectedImg(src)}
                 >
                   <img
-                    src={src}
+                    src={optimizeCloudinaryImage(src)}
                     alt={`memory-${index}`}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
-                
+
                   />
                   {/* Glass Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
@@ -186,39 +187,60 @@ const PhotoGalleryPage = () => {
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/98 backdrop-blur-xl p-4 md:p-12"
             onClick={() => setSelectedImg(null)}
           >
-            <button 
-                          className="absolute top-6 right-6 p-3 bg-white/10 hover:bg-white/20 text-white rounded-2xl transition-all"
-                          onClick={() => setSelectedImg(null)}
-                        >
-                          <X size={24} />
-                        </button>
+            <button
+              onClick={() => setSelectedImg(null)}
+              className="
+    absolute
+    top-6 right-4
+    md:top-6 md:right-6
+    z-50
+    group
+    flex items-center justify-center
+    w-12 h-12
+    rounded-full
+    bg-white/10
+    backdrop-blur-xl
+    border border-white/20
+    shadow-xl
+    transition-all
+    duration-300
+    hover:bg-red-500
+    hover:rotate-90
+    hover:shadow-red-500/30
+  "
+            >
+              <X
+                size={24}
+                className="text-white group-hover:scale-110 transition-transform duration-300"
+              />
+            </button>
 
             <motion.div
-              initial={{  scale: 0.8, y: 20 }}
+              initial={{ scale: 0.8, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.8, y: 20 }}
               className="relative max-w-6xl w-full max-h-[85vh] flex flex-col items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
               <img
-                src={selectedImg}
+                src={optimizeCloudinaryImage(selectedImg)}
                 alt="Enlarged Memory"
                 loading="lazy"
                 decoding="async"
                 fetchPriority="low"
                 className="max-w-full max-h-[80vh] rounded-3xl shadow-[0_0_80px_rgba(0,0,0,0.5)] object-contain border border-white/5"
               />
-              
+
               <div className="mt-8 flex items-center gap-6">
-                 <button className="text-white/40 hover:text-white transition-colors text-xs font-bold uppercase tracking-[0.3em]">Previous</button>
-                 <div className="h-px w-20 bg-white/20"></div>
-                 <button className="text-white/40 hover:text-white transition-colors text-xs font-bold uppercase tracking-[0.3em]">Next</button>
+                <button className="text-white/40 hover:text-white transition-colors text-xs font-bold uppercase tracking-[0.3em]">Previous</button>
+                <div className="h-px w-20 bg-white/20"></div>
+                <button className="text-white/40 hover:text-white transition-colors text-xs font-bold uppercase tracking-[0.3em]">Next</button>
               </div>
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
-     <Footer/>
+      <Footer />
     </div>
   );
 };

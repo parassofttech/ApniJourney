@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Maximize2, Image as ImageIcon } from "lucide-react";
+import { optimizeCloudinaryImage } from "../utils/cloudinary";
 
 axios.defaults.baseURL = "https://apnijourney-api.onrender.com";
 
@@ -31,11 +32,11 @@ const PhotoGalleryDash = () => {
 
 
         setStats({
-      
-        trips: userPhotos.length,
-        
-      });
-      setPhotos(userPhotos.reverse());
+
+          trips: userPhotos.length,
+
+        });
+        setPhotos(userPhotos.reverse());
       } catch (err) {
         setError("Failed to load memories.");
       } finally {
@@ -72,7 +73,7 @@ const PhotoGalleryDash = () => {
             onClick={() => setSelectedImg(src)}
           >
             <img
-              src={src}
+              src={optimizeCloudinaryImage(src)}
               alt={`trip-${index}`}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               onError={(e) => (e.target.src = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800")}
@@ -98,11 +99,32 @@ const PhotoGalleryDash = () => {
             onClick={() => setSelectedImg(null)} // Close on background click
           >
             {/* Close Button */}
-            <button 
-              className="absolute top-6 right-6 p-3 bg-white/10 hover:bg-white/20 text-white rounded-2xl transition-all"
+            <button
               onClick={() => setSelectedImg(null)}
+              className="
+                absolute
+                top-6 right-4
+                md:top-6 md:right-6
+                z-50
+                group
+                flex items-center justify-center
+                w-12 h-12
+                rounded-full
+                bg-white/10
+                backdrop-blur-xl
+                border border-white/20
+                shadow-xl
+                transition-all
+                duration-300
+                hover:bg-red-500
+                hover:rotate-90
+                hover:shadow-red-500/30
+              "
             >
-              <X size={24} />
+              <X
+                size={24}
+                className="text-white group-hover:scale-110 transition-transform duration-300"
+              />
             </button>
 
             {/* Big Image */}
@@ -114,7 +136,7 @@ const PhotoGalleryDash = () => {
               onClick={(e) => e.stopPropagation()} // Prevent close when clicking image
             >
               <img
-                src={selectedImg}
+                src={optimizeCloudinaryImage(selectedImg)}
                 alt="Selected"
                 className="max-w-full max-h-[85vh] rounded-2xl shadow-2xl object-contain border border-white/10"
               />

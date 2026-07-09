@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { optimizeCloudinaryImage } from "../utils/cloudinary";
 
 const UpcomingTrips = () => {
   // ✅ STATE (always correct initial values)
@@ -131,7 +132,7 @@ const UpcomingTrips = () => {
               <img
                 src={
                   Array.isArray(trip?.photos) && trip.photos.length > 0
-                    ? trip.photos[0]
+                    ? optimizeCloudinaryImage(trip.photos[0])
                     : "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
                 }
                 alt={trip?.title || "Trip"}
