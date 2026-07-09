@@ -100,6 +100,9 @@ const OffersSection = () => {
                   <img
                     src={offer.image}
                     alt={offer.title}
+                    loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   {/* Advanced Dark Overlay Gradient */}

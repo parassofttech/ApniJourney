@@ -63,7 +63,7 @@ localStorage.removeItem("isAdmin");
 
   
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-300/40 via-green-500/30 to-yellow-400/30 text-black transition-colors duration-500 pb-20 pt-24 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-blue-300/40 via-green-500/30 to-yellow-400/30 text-black transition-colors duration-500 pb-20 pt-9 md:pt-24 px-4">
       <div className="max-w-6xl mx-auto">
         {/* --- Top Header Section --- */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
@@ -93,10 +93,10 @@ localStorage.removeItem("isAdmin");
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div className="grid   grid-cols-1 lg:grid-cols-12 gap-8">
           {/* --- Left Column: Profile Card --- */}
           <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="lg:col-span-4">
-            <div className="sticky top-28 bg-white bg-gradient-to-b from-blue-400/60 via-green-500/30 to-yellow-400/30 rounded-[2.5rem] p-8 shadow-xl border border-slate-100 text-center z-10">
+            <div className="sticky top-28  bg-white bg-gradient-to-b from-blue-400/60 via-green-500/30 to-yellow-400/30 rounded-[2.5rem] p-8 shadow-xl border border-slate-100 text-center z-10">
               <div className="relative w-40 h-40 mx-auto mb-6">
                 <div className="w-full h-full bg-black/85 rounded-full overflow-hidden ring-4 ring-blue-900/30 shadow-lg">
                   {preview || profile.profileImage ? (

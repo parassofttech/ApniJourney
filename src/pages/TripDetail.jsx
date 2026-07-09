@@ -89,7 +89,9 @@ const TripDetail = () => {
               <img 
                 src={photos[0] || "https://images.unsplash.com/photo-1488646953014-85cb44e25828"} 
                 className="w-full h-full object-cover" 
-                alt={title} 
+                alt={title}
+                loading="lazy"
+            
               />
               <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl shadow-lg border border-white/20">
                 <div className="flex items-center gap-1.5">

@@ -10,6 +10,7 @@ const PhotoGalleryDash = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [selectedImg, setSelectedImg] = useState(null); // Full screen image state
+  const [stats, setStats] = useState({ trips: 0 });
 
   const token = localStorage.getItem("token");
 
@@ -19,23 +20,22 @@ const PhotoGalleryDash = () => {
     const fetchPhotos = async () => {
       try {
         setLoading(true);
-        const res = await axios.get("/api/trips", {
+        const res = await axios.get("https://apnijourney-api.onrender.com/api/trips", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
-        let trips = res.data.trips || res.data.data || res.data || [];
-        
-        const userPhotos = trips.flatMap((trip) =>
-          Array.isArray(trip.photos)
-            ? trip.photos.map((p) =>
-                p.startsWith("data:image")
-                  ? p
-                  : `${axios.defaults.baseURL}/${p.replace(/\\/g, "/")}`
-              )
-            : []
+        const trips = res.data.trips || res.data.data || res.data || [];
+        const userPhotos = trips.flatMap(trip =>
+          Array.isArray(trip.photos) ? trip.photos.filter(Boolean) : []
         );
 
-        setPhotos(userPhotos);
+
+        setStats({
+      
+        trips: userPhotos.length,
+        
+      });
+      setPhotos(userPhotos.reverse());
       } catch (err) {
         setError("Failed to load memories.");
       } finally {

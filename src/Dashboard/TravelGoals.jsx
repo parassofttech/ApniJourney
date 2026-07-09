@@ -15,7 +15,7 @@ const TravelGoals = () => {
       try {
         setLoading(true);
 
-        const res = await axios.get("/api/trips", {
+        const res = await axios.get("https://apnijourney-api.onrender.com/api/trips", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

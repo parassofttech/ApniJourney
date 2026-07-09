@@ -87,7 +87,19 @@ const handleSubmit = async (e) => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Your Name"
-              className="w-full border border-gray-300 p-4 rounded-xl pl-12 focus:ring-2 focus:ring-blue-400 transition"
+             className="
+                    peer
+                    ml-11
+                    w-[90%]
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
             />
             <MapPin className="absolute left-4 top-4 w-5 h-5 text-blue-500" />
           </div>
@@ -100,7 +112,19 @@ const handleSubmit = async (e) => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Your Email"
-              className="w-full border border-gray-300 p-4 rounded-xl pl-12 focus:ring-2 focus:ring-blue-400 transition"
+              className="
+                    peer
+                    ml-11
+                    w-[90%]
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
             />
             <Mail className="absolute left-4 top-4 w-5 h-5 text-blue-500" />
           </div>
@@ -113,7 +137,19 @@ const handleSubmit = async (e) => {
               value={formData.subject}
               onChange={handleChange}
               placeholder="Subject"
-              className="w-full border border-gray-300 p-4 rounded-xl pl-12 focus:ring-2 focus:ring-blue-400 transition"
+              className="
+                    peer
+                    ml-11
+                    w-[90%]
+                    bg-transparent
+                    text-black
+                    py-3
+                    outline-none
+                    border-b
+                    border-gray-600
+                    placeholder:italic
+                    placeholder:text-gray-400
+                  "
             />
             <Phone className="absolute left-4 top-4 w-5 h-5 text-blue-500" />
           </div>

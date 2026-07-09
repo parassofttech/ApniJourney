@@ -177,6 +177,9 @@ const TestimonialsSection = () => {
                   <img
                     src={t.avatar}
                     alt={`${t.name} avatar`}
+                    loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                     className="w-12 h-12 rounded-full object-cover flex-shrink-0"
                     onError={(e) =>
                       (e.target.src =

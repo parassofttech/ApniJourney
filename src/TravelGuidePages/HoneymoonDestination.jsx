@@ -42,7 +42,10 @@ const HoneymoonDestination = () => {
           {honeymoonPlaces.map((dest, i) => (
             <motion.div whileHover={{ y: -12 }} key={i} className="group relative cursor-pointer">
               <div className="relative h-[190px] md:h-[290px] w-full rounded-[2.5rem] overflow-hidden shadow-2xl">
-                <img src={dest.image} alt={dest.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img src={dest.image} alt={dest.name}
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity duration-300"></div>
                 <div className="absolute top-6 left-6">
                   <span className="bg-white/20 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full border border-white/10">{dest.tag}</span>

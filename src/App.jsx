@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components
@@ -6,26 +6,31 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
 // Pages
-import Home from "./pages/Home";
-import Dashboard from "./pages/Dashboard";
+const Home = lazy(() => import("./pages/Home"));
+const Dashboard = lazy(() => import("./pages/Dashboard"));
 import AddTrip from "./pages/AddTrip";
 import TripDetail from "./pages/TripDetail";
 import Trip from "./pages/Trips";
 import IndiaGate from "./components/IndiaGate";
 import DestinationDetail from "./pages/DestinationDetail";
 import Header from "./components/Header";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Trips from "./pages/Trips";
-import Profile from "./pages/Profile";
-import Destinations from "./components/Destinations";
+const Trips = lazy(() => import("./pages/Trips"));
+const Login = lazy(() => import("./pages/Login"));
+const Register = lazy(() => import("./pages/Register"));
+const Profile = lazy(() => import("./pages/Profile"));
+const About = lazy(() => import("./pages/About"));
+const Destinations = lazy(() => import("./components/Destinations"));
+
 import DestinationDetails from "./components/DestinationDetails";
 import Contact from "./components/Contact";
-import Food from "./pages/Food";
-import FoodDetail from "./pages/FoodDetail";
+const Food = lazy(() => import("./pages/Food"));
+
+const FoodDetail = lazy(() => import("./pages/FoodDetail"));
+
+const NationalPark = lazy(() => import("./pages/NationalPark"));
 import NationalParkDetail from "./pages/NationalParkDetail";
-import NationalPark from "./pages/NationalPark";
-import About from "./pages/About";
+
+
 import PhotoGalleryPage from "./pages/PhotoGalleryPage";
 import WeatherInfoPage from "./pages/WeatherInfoPage";
 import VerifyOTP from "./pages/VerifyOTP";
@@ -44,8 +49,8 @@ import WeekendTrips from "./TravelGuidePages/WeekendTrips";
 import PackingChecklist from "./TravelGuidePages/PackingChecklist";
 import ThingsDoInGoa from "./TravelGuidePages/ThingsDoInGoa";
 import ScrollToTop from "./ScrollToTop";
+const TripsBlog = lazy(() => import("./pages/TripsBlog"));
 
-import TripsBlog from "./pages/TripsBlog";
 import AdminDashboard from "./admin/pages/AdminDashboard";
 import Admin from "./admin/pages/Admin";
 import ContactMessages from "./admin/pages/ContactMessages";
@@ -54,6 +59,7 @@ import Settings from "./admin/pages/Settings";
 
 const App = () => {
   return (
+    <div>
     <Router>
       <ScrollToTop/>
       <div className="flex flex-col h-screen">
@@ -127,6 +133,7 @@ const App = () => {
          
       </div>
     </Router>
+    </div>
   );
 };
 

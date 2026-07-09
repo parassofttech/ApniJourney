@@ -48,6 +48,9 @@ const DestinationCard = ({ destinations }) => {
             <img
               src={destination.image}
               alt={destination.name}
+              loading="lazy"
+  decoding="async"
+  fetchPriority="low"
               className="w-full h-60 object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white font-semibold text-lg p-3 text-center">

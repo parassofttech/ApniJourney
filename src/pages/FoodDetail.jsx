@@ -43,6 +43,9 @@ const FoodDetail = () => {
   <img
     src={food.images[0]}
     alt={food.dish}
+    loading="lazy"
+                decoding="async"
+                fetchPriority="low"
     className="max-h-full max-w-full object-cover rounded-2xl"
   />
 </motion.div>
@@ -118,6 +121,9 @@ const FoodDetail = () => {
                     src={img} 
                     className="w-full h-auto max-h-[80vh] object-cover hover:scale-105 transition-transform duration-1000" 
                     alt="Food detail"
+                    loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                   />
                 </motion.div>
               ))}

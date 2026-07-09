@@ -1,84 +1,104 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
+import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
-import HeroSection from '../Home/HeroSection'
-import SearchBar from '../Home/SearchBar'
-import PopularDestinations from '../Home/PopularDestinations'
-// import UpcomingTrips from '../Dashboard/UpcomingTrips'
-import FeaturesSection from '../Home/FeaturesSection'
-import OffersSection from '../Home/OffersSection'
-import TestimonialsSection from '../Home/TestimonialsSection'
-import BlogHighlights from '../Home/BlogHighlights'
-import PhotoGallery from '../Home/PhotoGallery'
-import CTASection from '../Home/CTASection'
-import AppHighlights from '../Home/AppHighlights'
-import NewsletterSignup from '../Home/NewsletterSignup'
-import Footer from '../Home/Footer'
-import DestinationCard from "../Home/DestinationCard";
-// import Destination from "../Home/Destination";
-import DestPopular from "../Home/DestPopular";
-
-import TravelBooking from "../Home/TravelBooking";
-import UpcomingTrips from "../Home/UpcomingTrips";
-import TourismLanding from "../Home/TourismLanding";
-import WildlifeSlider from "../Home/WildlifeSlider";
-import WeatherInfo from "../Dashboard/WeatherInfo";
-import WhyChooseApnijourney from "../Home/WhyChooseApnijourney";
-import FAQs from "../Home/FAQs";
-import LatestTravelArticles from "../Home/LatestTravelArticles";
-import TripsHome from "../Home/TripsHome";
-import TravelGuide from "../Home/TravelGuide";
-// import GoogleAds from "../components/GoogleAds";
-
+import Footer from "../Home/Footer";
+const HeroSection = lazy(() => import("../Home/HeroSection"));
+const DestPopular = lazy(() => import("../Home/DestPopular"));
+const PopularDestinations = lazy(() => import("../Home/PopularDestinations"));
+const TourismLanding = lazy(() => import("../Home/TourismLanding"));
+const TripsHome = lazy(() => import("../Home/TripsHome"));
+const WildlifeSlider = lazy(() => import("../Home/WildlifeSlider"));
+const TravelBooking = lazy(() => import("../Home/TravelBooking"));
+const WhyChooseApnijourney = lazy(() => import("../Home/WhyChooseApnijourney"));
+const OffersSection = lazy(() => import("../Home/OffersSection"));
+const BlogHighlights = lazy(() => import("../Home/BlogHighlights"));
+const WeatherInfo = lazy(() => import("../Dashboard/WeatherInfo"));
+const CTASection = lazy(() => import("../Home/CTASection"));
+const TravelGuide = lazy(() => import("../Home/TravelGuide"));
+const LatestTravelArticles = lazy(() => import("../Home/LatestTravelArticles"));
+const FAQs = lazy(() => import("../Home/FAQs"));
+const FeaturesSection = lazy(() => import("../Home/FeaturesSection"));
+const TestimonialsSection = lazy(() => import("../Home/TestimonialsSection"));
+const NewsletterSignup = lazy(() => import("../Home/NewsletterSignup"));
 
 
 
 const Home = () => {
   return (
    
-    <div>
-
-    
-      {/* <h1 className="hidden">
-      ApniJourney -  Explore Travel Destinations and Weather Information
-      </h1> */}
-        <div><HeroSection/></div>
-        {/* <div><SearchBar/></div> */}
-        {/* <GoogleAds/> */}
-        <div className="relative "><DestPopular/></div>
-        <div><PopularDestinations/></div>
-        {/* <div><DestinationCard/></div> */}
-        
-        {/* <div><UpcomingTrips/></div> */}
-
-         
-         <div><TourismLanding/></div>
-        
-        
-        <div><TripsHome/></div>
-
-        <div><WildlifeSlider/></div>
-        <div><TravelBooking/></div>
-
-        <div><WhyChooseApnijourney/></div>
-        <div><OffersSection/></div>
-
-        <div><BlogHighlights/></div>
-
-        {/* <div className="mb-7"><PhotoGallery/></div> */}
-        <div><WeatherInfo/></div>
-        
-        <div><CTASection/></div>
-        <div><TravelGuide/></div>
-        <div><LatestTravelArticles/></div>
-        
-        <div><FAQs/></div>
-        <div><FeaturesSection/></div>
-        {/* <div className="max-sm:hidden min-lg:visible"><AppHighlights/></div> */}
-         <div><TestimonialsSection/></div>
-        <div ><NewsletterSignup/></div>
-        
-        <div className="max-sm:hidden min-lg:visible"><Footer/></div>
+   <Suspense fallback={
+   
+   <div className="flex h-[80vh] items-center justify-center">
+      <div className="relative flex items-center justify-center">
+        <div className="h-16 w-16 animate-spin rounded-full border-4 border-slate-200 border-t-blue-600"></div>
+        <img src="/logo.png" className="absolute w-11 h-11 animate-pulse" alt="" />
+      </div>
     </div>
+  }>
+  <HeroSection />
+  <div className="relative "><DestPopular/></div>
+  <PopularDestinations />
+
+  
+    <TourismLanding />
+  
+
+  
+    <TripsHome />
+  
+
+  
+    <WildlifeSlider />
+ 
+
+    <TravelBooking />
+  
+
+ 
+    <WhyChooseApnijourney />
+  
+
+
+    <OffersSection />
+  
+
+  
+    <BlogHighlights />
+  
+
+ 
+    {/* <WeatherInfo /> */}
+  
+
+  
+    <CTASection />
+  
+
+ 
+    <TravelGuide />
+  
+
+  
+    <LatestTravelArticles />
+ 
+
+  
+    <FAQs />
+  
+
+  
+    <FeaturesSection />
+ 
+
+  
+    <TestimonialsSection />
+  
+
+  
+    <NewsletterSignup />
+    <div className="max-sm:hidden min-lg:visible"><Footer/></div>
+  
+</Suspense>
   );
 };
 

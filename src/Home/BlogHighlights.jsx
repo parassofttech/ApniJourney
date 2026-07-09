@@ -125,6 +125,9 @@ const BlogHighlights = () => {
                 <motion.img
                   src={blog.image}
                   alt={blog.title}
+                  loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                 />
                 <div className="absolute top-3 left-3 bg-white/90 text-sm font-semibold text-blue-700 px-3 py-1 rounded-full flex items-center gap-2 shadow-sm">

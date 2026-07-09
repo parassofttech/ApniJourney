@@ -175,13 +175,13 @@ const fetchUsers = async () => {
 
         if (tripId !== id) return trip;
 
-        const isLiked = trip.likes?.includes(currentUser?._id);
+        const isLiked = trip.likes?.includes(currentUser?._id || currentUser?.id);
 
         return {
           ...trip,
           likes: isLiked
-            ? trip.likes.filter((userId) => userId !== currentUser._id)
-            : [...(trip.likes || []), currentUser._id],
+            ? trip.likes.filter((userId) => userId !== currentUser?._id || currentUser?.id)
+            : [...(trip.likes || []), currentUser?._id || currentUser?.id],
         };
       })
     );
@@ -204,12 +204,15 @@ const fetchUsers = async () => {
         },
       }
     );
+    
+
 
   } catch (err) {
     console.log(err.response?.data);
 
     // Error aaye to data wapas fetch kar lo
     fetchTrips();
+   
   }
 };
 
@@ -554,60 +557,60 @@ useEffect(() => {
                      <Heart className="fill-white text-white drop-shadow-xl" size={80} />
                    </motion.div>
                  )}
-     {trip.photos?.length > 0 ? (
-              <Swiper
-       modules={[Navigation, Pagination]}
-       navigation
-       pagination={{ clickable: true }}
-       spaceBetween={0}
-       slidesPerView={1}
-       className="trip-swiper w-full h-full"
-     >
-       {trip.photos?.map((photo, index) => (
-         <SwiperSlide key={index}>
-           <img
-             src={photo}
-             alt={`Trip ${index + 1}`}
-             onDoubleClick={() => toggleLike(id)}
-             className="w-full h-full object-cover cursor-pointer"
-             loading="lazy"
-           />
-         </SwiperSlide>
-       ))}
-     </Swiper>
-     ) : (
-       <div className="w-full h-full flex items-center justify-center">
-         No Image 
-       </div>
-     )}
-     
-     
-     
-               </div>
-     
-               {/* ---------- Action Toolbar ---------- */}
-               <div className="px-4 pt-3.5 flex items-center justify-between">
-                 <div className="flex gap-4">
-                   {/* Like Button */}
-                   <button
-       onClick={() => toggleLike(id)}
-       className="group flex items-center gap-1.5 text-gray-700 hover:text-rose-500 transition"
-     >
-       <Heart
-       size={22}
-       className={`transition-transform duration-150 active:scale-95 ${
-        trip.likes?.includes(currentUser?._id)
-           ? "fill-rose-500 text-rose-500 scale-105"
-           : "text-gray-700"
-       }`}
-     />
-     
-     <span
-       className={`text-xs font-bold ${
-         trip.likes?.includes(currentUser?._id)
-           ? "text-rose-600"
-           : "text-gray-600"
-       }`}
+    {trip.photos?.length > 0 ? (
+             <Swiper
+      modules={[Navigation, Pagination]}
+      navigation
+      pagination={{ clickable: true }}
+      spaceBetween={0}
+      slidesPerView={1}
+      className="trip-swiper w-full h-full"
+    >
+      {trip.photos?.map((photo, index) => (
+        <SwiperSlide key={index}>
+          <img
+            src={photo}
+            alt={`Trip ${index + 1}`}
+            onDoubleClick={() => toggleLike(id)}
+            className="w-full h-full object-cover cursor-pointer"
+            loading="lazy"
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+    ) : (
+      <div className="w-full h-full flex items-center justify-center">
+        No Image 
+      </div>
+    )}
+    
+    
+    
+              </div>
+    
+              {/* ---------- Action Toolbar ---------- */}
+              <div className="px-4 pt-3.5 flex items-center justify-between">
+                <div className="flex gap-4">
+                  {/* Like Button */}
+                  <button
+      onClick={() => toggleLike(id)}
+      className="group flex items-center gap-1.5 text-gray-700 hover:text-rose-500 transition"
+    >
+      <Heart
+      size={22}
+      className={`transition-transform duration-150 active:scale-95 ${
+       trip.likes?.includes(currentUser?._id||currentUser?.id)
+          ? "fill-rose-500 text-rose-500 scale-105"
+          : "text-gray-700"
+      }`}
+    />
+    
+    <span
+      className={`text-xs font-bold ${
+        trip.likes?.includes(currentUser?._id||currentUser?.id)
+          ? "text-rose-600"
+          : "text-gray-600"
+      }`}
      >
        {trip.likes?.length || ""}
      </span>

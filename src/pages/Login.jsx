@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { auth, provider } from "../firebase";
 import { signInWithPopup } from "firebase/auth";
 import { handleError } from "../utils";
+import TripMateLogo   from '../assets/TripMate_app_logo.png'
 
 const Login = () => {
   const navigate = useNavigate();
@@ -54,7 +55,7 @@ const Login = () => {
         photo: user.photoURL,
       }
     );
-    console.log(res.data.user);
+   
     // Token save
     localStorage.setItem("token", res.data.token);
       localStorage.setItem("isAdmin", res.data.user.isAdmin);
@@ -90,13 +91,13 @@ const Login = () => {
         transition={{ duration: 0.6 }}
         className="w-full max-w-md bg-white rounded-3xl shadow-lg p-8 space-y-6"
       >
-        <div className="flex ml-4 mb-2">
+        <div className="flex justify-center mb-2">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            src={TripMateLogo}
             alt="login-logo"
             className="w-14 h-14"
           />
-          <span className="ml-4 text-3xl font-extrabold bg-gradient-to-r from-blue-600 via-cyan-500 to-green-500 bg-clip-text text-transparent tracking-wide">
+          <span className="p-2 ml-2 text-3xl font-extrabold bg-gradient-to-r from-blue-600 via-cyan-500 to-green-500 bg-clip-text text-transparent tracking-wide">
   Apni<span className="text-gray-800">Journey</span>
 </span>
         </div>

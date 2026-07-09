@@ -81,6 +81,9 @@ const LatestTravelArticles=()=> {
           <img
             src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600&auto=format&fit=crop&q=80"
             alt="Featured Travel Story"
+            loading="lazy"
+                decoding="async"
+                fetchPriority="low"
             className="h-[500px] w-full object-cover group-hover:scale-105 transition duration-700"
           />
 
@@ -131,6 +134,9 @@ const LatestTravelArticles=()=> {
                 <img
                   src={article.image}
                   alt={article.title}
+                  loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                   className="h-60 w-full object-cover group-hover:scale-110 transition duration-700"
                 />
               </div>

@@ -26,6 +26,7 @@ const About = () => {
           <img
             src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2000"
             alt="Travel"
+
             className="w-full h-full object-cover scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-[#0a0f1c]/90 to-[#0a0f1c]" />
@@ -73,6 +74,9 @@ const About = () => {
             transition={{ duration: 0.6 }}
             src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=2000"
             alt="Travel Planning"
+            loading="lazy"
+                decoding="async"
+                fetchPriority="low" 
             className="rounded-3xl shadow-2xl border border-white/10"
           />
         </div>

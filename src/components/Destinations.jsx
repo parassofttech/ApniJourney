@@ -500,6 +500,9 @@ const Destinations = () => {
             src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?q=80&w=2070"
             className="w-full h-full object-cover"
             alt="Hero"
+            loading="lazy"
+                decoding="async"
+              
           />
           <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
         </div>
@@ -594,6 +597,8 @@ const Destinations = () => {
                     src={place.image}
                     alt={place.name}
                     loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                     className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                   />
 

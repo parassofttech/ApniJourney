@@ -77,6 +77,9 @@ const SoloTravel = () => {
           <img 
             src={dest.image} 
             alt={dest.name} 
+            loading="lazy"
+                decoding="async"
+                fetchPriority="low" 
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
           

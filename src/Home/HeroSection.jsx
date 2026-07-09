@@ -43,6 +43,7 @@ const HeroSection = () => {
         </video> */}
 
         <img src="https://tailkits.com/hero-section-images-12.png" alt="hero-section"
+        
         className="w-full h-full object-cover " />
 
 

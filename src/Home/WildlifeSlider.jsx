@@ -49,27 +49,28 @@ const WildlifeSlider = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center py-20 px-6 overflow-hidden">
 
-  {/* 🎥 Background Video */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover"
-  >
-    <source src="https://videos.pexels.com/video-files/2330728/2330728-uhd_2560_1440_24fps.mp4" type="video/mp4" />
-  </video>
+      {/* 🎥 Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="https://videos.pexels.com/video-files/2330728/2330728-uhd_2560_1440_24fps.mp4"
+          type="video/mp4" />
+      </video>
 
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-[#fffcf7]" />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-[#fffcf7]" />
 
-  
 
-  {/* Background Subtle Glow */}
-  <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(34,197,94,0.05),transparent)] pointer-events-none" />
+
+      {/* Background Subtle Glow */}
+      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(34,197,94,0.05),transparent)] pointer-events-none" />
 
       {/* Header Section */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         className="text-center mb-16 relative z-10"
@@ -84,16 +85,16 @@ const WildlifeSlider = () => {
 
       {/* Slider Container */}
       <div className="relative w-full max-w-7xl h-[550px] flex items-center justify-center">
-        
+
         {/* Navigation Buttons */}
-        <button 
+        <button
           onClick={prevSlide}
           className="absolute left-0 z-30 p-4 bg-white/10 hover:bg-emerald-500 backdrop-blur-md rounded-full text-white transition-all -translate-x-1/2 hidden md:block"
         >
           <ChevronLeft size={24} />
         </button>
 
-        <button 
+        <button
           onClick={nextSlide}
           className="absolute right-0 z-30 p-4 bg-white/10 hover:bg-emerald-500 backdrop-blur-md rounded-full text-white transition-all translate-x-1/2 hidden md:block"
         >
@@ -112,10 +113,13 @@ const WildlifeSlider = () => {
               className="relative h-full rounded-[2.5rem] overflow-hidden group cursor-pointer border border-white/10"
             >
               {/* Image with Parallax Zoom */}
-              <img 
-                src={item.image} 
+              <img
+                src={item.image}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 alt={item.title}
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
               />
 
               {/* Gradient Overlay */}
@@ -124,16 +128,16 @@ const WildlifeSlider = () => {
               {/* Content */}
               <div className="absolute inset-x-0 bottom-0 p-8 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
                 <div className="flex items-center gap-2 mb-3">
-                   <div className="p-2 bg-white/20 backdrop-blur-md rounded-lg">
-                      <PawPrint size={14} className="text-emerald-300" />
-                   </div>
-                   <span className="text-[10px] text-white/60 font-black uppercase tracking-widest">Wildlife Sanctuary</span>
+                  <div className="p-2 bg-white/20 backdrop-blur-md rounded-lg">
+                    <PawPrint size={14} className="text-emerald-300" />
+                  </div>
+                  <span className="text-[10px] text-white/60 font-black uppercase tracking-widest">Wildlife Sanctuary</span>
                 </div>
-                
+
                 <h3 className="text-2xl font-bold text-white mb-3 leading-tight group-hover:text-emerald-300 transition-colors">
                   {item.title}
                 </h3>
-                
+
                 <p className="text-white/70 text-sm font-medium mb-6 opacity-0 group-hover:opacity-100 transition-opacity delay-100">
                   {item.desc}
                 </p>
@@ -151,12 +155,12 @@ const WildlifeSlider = () => {
       </div>
 
       {/* Footer Button */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         className="mt-20"
       >
-        <button onClick={()=>navigate('/national-park')} className="relative group bg-orange-500 text-white px-12 py-5 rounded-2xl font-black uppercase text-xs tracking-[0.3em] overflow-hidden">
+        <button onClick={() => navigate('/national-park')} className="relative group bg-orange-500 text-white px-12 py-5 rounded-2xl font-black uppercase text-xs tracking-[0.3em] overflow-hidden">
           <span className="relative z-10 flex items-center gap-3">
             View All <ArrowUpRight size={18} />
           </span>

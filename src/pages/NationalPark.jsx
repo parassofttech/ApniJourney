@@ -28,6 +28,7 @@ const NationalPark = () => {
           src="https://images.unsplash.com/photo-1440581572325-0bea30075d9d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D" 
           className="absolute inset-0 w-full h-full object-cover"
           alt="Nature Background"
+          
         />
         
         <div className="relative z-20 text-center px-6">
@@ -115,6 +116,9 @@ const NationalPark = () => {
                     <img
                       src={park.image}
                       alt={park.name}
+                      loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

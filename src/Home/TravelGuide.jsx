@@ -147,9 +147,8 @@ const TravelGuide = () => {
 </div>
 
       </div>
-      {/* =========================================================================
-    RESPONSIVE WEEKEND ESCAPES SECTION (Mobile: 2-Columns | Desktop: 4-Columns)
-    ========================================================================= */}
+      {/* 
+    RESPONSIVE WEEKEND ESCAPES SECTION  */}
 <section id="weekend-delhi" className="relative bg-slate-50 py-14 sm:py-24 overflow-hidden selection:bg-orange-600 selection:text-white">
   
   {/* Advanced Ambient Glowing Orbs */}

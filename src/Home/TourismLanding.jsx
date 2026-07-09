@@ -45,6 +45,9 @@ const TourismLanding = () => {
                   whileHover={{ scale: 1.05 }}
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrYfmaZxYkWAeEpoyMooviJ1P-biXKQwXIDWwBaTUwPTFwhfrEqB9TVtk&s=10"
                   alt="India"
+                  loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -56,6 +59,9 @@ const TourismLanding = () => {
                     src="https://images.unsplash.com/photo-1514222134-b57cbb8ce073"
                     className="w-full h-full object-cover"
                     alt="mountain"
+                    loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"
                   />
                 </div>
 
@@ -89,6 +95,9 @@ const TourismLanding = () => {
                       src={`https://i.pravatar.cc/100?img=${i + 10}`}
                       className="w-9 h-9 rounded-full border-2 border-white"
                       alt="user"
+                      loading="lazy"
+                      decoding="async"
+                      fetchPriority="low"
                     />
                   ))}
                 </div>

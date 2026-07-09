@@ -207,8 +207,7 @@ const fetchUsers = async () => {
         },
       }
     );
-    console.log(JSON.parse(localStorage.getItem("user")));
-     console.log("Current User ID:", currentUser?._id || currentUser?.id);
+    
 
 
   } catch (err) {
@@ -421,6 +420,9 @@ useEffect(() => {
       src={trip.userPhoto}
       alt={trip.name || "User"}
       className="w-10 h-10 rounded-full object-cover ring-2 ring-blue-50"
+       loading="lazy"
+                 
+                  fetchPriority="low"
     />
   ) : (
     // Condition 2: Agar photo nahi hai, toh Name ka First Letter dikhega (Dynamic Vibrant Background ke sath)

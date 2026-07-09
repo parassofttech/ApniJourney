@@ -226,16 +226,28 @@ const Header = () => {
               <div className="hidden md:flex items-center gap-3">
               {user ? (
                 <>
-                  <button
-      onClick={() => navigate("/profile")}
-      className="w-10 h-10 rounded-full overflow-hidden border-2 border-blue-500 hover:border-blue-700 transition"
-    >
-      <img
-        src="https://i.pinimg.com/236x/13/74/20/137420f5b9c39bc911e472f5d20f053e.jpg" // default profile image
-        alt="Profile"
-        className="w-full h-full object-cover"
-      />
+                  {user.userPhoto ? (
+                   
+    // Condition 1: Agar user ne photo lagayi hai
+
+     <button onClick={()=>navigate('/profile')}>
+    <img
+      src={user.userPhoto}
+      alt={user.name || "User"}
+      className="w-10 h-10 rounded-full object-cover ring-2 ring-blue-50"
+       loading="lazy"
+                 
+                  fetchPriority="low"
+    />
     </button>
+  ) : (
+    // Condition 2: Agar photo nahi hai, toh Name ka First Letter dikhega (Dynamic Vibrant Background ke sath)
+    <button onClick={()=>navigate('/profile')}>
+    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm tracking-wider uppercase ring-2 ring-blue-50 shadow-sm">
+      {(user.name || user.userName || "U").charAt(0)}
+    </div>
+    </button>
+  )}
 
                   {/* <button
                     onClick={handleLogout}
@@ -273,16 +285,28 @@ const Header = () => {
          <div className="lg:hidden flex fixed position right-14">
             {user ? (
                 <>
-                   <button
-      onClick={() => navigate("/profile")}
-      className="w-10 h-10 rounded-full overflow-hidden border-2 border-blue-500 hover:border-blue-700 transition"
-    >
-      <img
-        src="https://i.pinimg.com/236x/13/74/20/137420f5b9c39bc911e472f5d20f053e.jpg" // default profile image
-        alt="Profile"
-        className="w-full h-full object-cover"
-      />
+                  {user.userPhoto ? (
+                   
+    // Condition 1: Agar user ne photo lagayi hai
+
+     <button onClick={()=>navigate('/profile')}>
+    <img
+      src={user.userPhoto}
+      alt={user.name || "User"}
+      className="w-10 h-10 rounded-full object-cover ring-2 ring-blue-50"
+       loading="lazy"
+                 
+                  fetchPriority="low"
+    />
     </button>
+  ) : (
+    // Condition 2: Agar photo nahi hai, toh Name ka First Letter dikhega (Dynamic Vibrant Background ke sath)
+    <button onClick={()=>navigate('/profile')}>
+    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm tracking-wider uppercase ring-2 ring-blue-50 shadow-sm">
+      {(user.name || user.userName || "U").charAt(0)}
+    </div>
+    </button>
+  )}
 
                   
                 </>

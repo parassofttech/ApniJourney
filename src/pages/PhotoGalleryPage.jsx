@@ -161,6 +161,7 @@ const PhotoGalleryPage = () => {
                     alt={`memory-${index}`}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
+                
                   />
                   {/* Glass Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
@@ -185,24 +186,26 @@ const PhotoGalleryPage = () => {
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/98 backdrop-blur-xl p-4 md:p-12"
             onClick={() => setSelectedImg(null)}
           >
-            <motion.button 
-              whileHover={{ rotate: 90 }}
-              className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors"
-              onClick={() => setSelectedImg(null)}
-            >
-              <X size={40} strokeWidth={1.5} />
-            </motion.button>
+            <button 
+                          className="absolute top-6 right-6 p-3 bg-white/10 hover:bg-white/20 text-white rounded-2xl transition-all"
+                          onClick={() => setSelectedImg(null)}
+                        >
+                          <X size={24} />
+                        </button>
 
             <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              className="relative max-w-6xl w-full h-full flex flex-col items-center justify-center"
+              initial={{  scale: 0.8, y: 20 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.8, y: 20 }}
+              className="relative max-w-6xl w-full max-h-[85vh] flex flex-col items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
               <img
                 src={selectedImg}
                 alt="Enlarged Memory"
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
                 className="max-w-full max-h-[80vh] rounded-3xl shadow-[0_0_80px_rgba(0,0,0,0.5)] object-contain border border-white/5"
               />
               
