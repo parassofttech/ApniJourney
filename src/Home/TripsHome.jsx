@@ -61,7 +61,7 @@ const [showComments, setShowComments] = useState({});
 
 const [showMenu, setShowMenu] = useState({});
 const [openMenu, setOpenMenu] = useState(null);
-
+const [liking, setLiking] = useState(false);
 
   const [users, setUsers] = useState([]);
 
@@ -170,6 +170,10 @@ const fetchUsers = async () => {
 
   if(!token){
     return handleError("Please login to like this trip.");
+
+    if (liking) return;
+
+  setLiking(true);
   }
   try {
     // Instant UI update
@@ -217,6 +221,8 @@ const fetchUsers = async () => {
     // Error aaye to data wapas fetch kar lo
     fetchTrips();
    
+  } finally{
+     setLiking(false);
   }
 };
 
@@ -594,6 +600,7 @@ useEffect(() => {
             <div className="flex gap-4">
               {/* Like Button */}
               <button
+              disabled={liking}
   onClick={() => toggleLike(id)}
   className="group flex items-center gap-1.5 text-gray-700 hover:text-rose-500 transition"
 >
