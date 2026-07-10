@@ -34,21 +34,16 @@ const Footer = () => {
     <footer className="relative min-h-[500px] flex items-end text-gray-200 overflow-hidden">
 
       {/* 🎥 Background Video with Overlay */}
-      <div className="absolute inset-0 -z-20">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover"
-        >
-          <source
-            src="https://videos.pexels.com/video-files/852368/852368-hd_1280_720_24fps.mp4"
-            type="video/mp4"
-          />
-        </video>
-        {/* Modern Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+      <div className="absolute inset-0 w-full h-full">
+       
+
+        <img src="https://images.squarespace-cdn.com/content/v1/64ba44348b6a05559a816bc1/1690282971608-B4BD48EE7DOGJDWKOL52/A+Guide+to+Travel+Photography-152.jpg" alt="hero-section"
+        
+        className="w-full h-full object-cover " />
+
+
+        {/* Cinematic Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-[#020617]"></div>
       </div>
 
       {/* 🧪 Main Content Container */}

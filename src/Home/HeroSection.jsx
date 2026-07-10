@@ -4,14 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Search, MapPin, Plane, Compass, Sparkles } from "lucide-react";
 
 const HeroSection = () => {
-  const videos = [
-    
-    "https://videos.pexels.com/video-files/856191/856191-hd_1920_1080_30fps.mp4",
-    "https://videos.pexels.com/video-files/34379970/14564702_2560_1440_30fps.mp4",
-    "https://videos.pexels.com/video-files/16668740/16668740-uhd_2560_1440_24fps.mp4",
-    "https://videos.pexels.com/video-files/20123299/20123299-uhd_2560_1440_25fps.mp4",
-    "https://videos.pexels.com/video-files/3696013/3696013-hd_1920_1080_24fps.mp4"
-  ];
+ 
 
   const [currentVideo, setCurrentVideo] = useState(0);
   const [location, setLocation] = useState("");
@@ -31,16 +24,7 @@ const HeroSection = () => {
       
       {/* 🎥 Background Video with Transition */}
       <div className="absolute inset-0 w-full h-full">
-        {/* <video
-          key={currentVideo}
-          autoPlay
-          muted
-          playsInline
-          className="w-full h-full object-cover transition-opacity duration-1000"
-          onEnded={() => setCurrentVideo((prev) => (prev + 1) % videos.length)}
-        >
-          <source src={videos[currentVideo]} type="video/mp4" />
-        </video> */}
+       
 
         <img src="https://tailkits.com/hero-section-images-12.png" alt="hero-section"
         

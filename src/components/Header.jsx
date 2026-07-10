@@ -15,7 +15,7 @@ import { Contact, GalleryHorizontal, Menu, Plus, X,
   Shield,
   LogOut,
 } from "lucide-react";
-import TripMateLogo   from '../assets/TripMate_app_logo.png'
+import ApniJourneyLogo   from '/logo.png'
 
 const Header = () => {
   const navigate = useNavigate();
@@ -78,7 +78,7 @@ const Header = () => {
           onClick={() => navigate("/")}
         >
           <img
-            src={TripMateLogo}
+            src={ApniJourneyLogo}
             alt="ApniJourny Logo"
             className="w-10 h-10"
           />
