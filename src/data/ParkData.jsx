@@ -75,7 +75,7 @@ const ParkData = [
     id: 5,
     name: "Gir National Park",
     state: "Gujarat",
-    image: "https://tripmusing.com/wp-content/uploads/2025/03/Gir-National-Park-and-Santuary.webp",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/90/Gir_lion-Gir_forest%2Cjunagadh%2Cgujarat%2Cindia.jpeg",
     description:
       "The only place in the world where Asiatic Lions roam freely.",
     establishedYear: 1965,
