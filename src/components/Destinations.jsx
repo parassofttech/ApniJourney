@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { MapPin, Search, Compass, Star, ArrowRight, Filter } from "lucide-react";
 import Footer from "../Home/Footer";
 
+import Rameshwaram  from "../assets/images/rameswaram.webp"
+
 const destinationsData = [
   {
     name: "Manali",
@@ -13,7 +15,7 @@ const destinationsData = [
     category: "Mountains",
     location: "Himachal Pradesh, India",
     description: "A paradise for adventure lovers with snow-capped peaks, pine forests, and vibrant cafes.",
-    image: "https://www.naturetravelagency.com/uploads/1703234831best%20time%20to%20visit%20Manali%20for%20snowfall.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcR3KXQM9jumObFgdcyHKs2KOADAQk8VZBcjhJSXJcFVMra8Mfy1OlJfL6WZZB4Cc6CLrb4F_5fM3y88zYKUKv-BycU&s=19",
     rating: 4.8
   },
   {
@@ -31,7 +33,7 @@ const destinationsData = [
     category: "Nature",
     location: "Kerala, India",
     description: "Cruise through tranquil canals on houseboats surrounded by lush greenery and serene coconut palms.",
-    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.1.0&fm=jpg&q=60&w=3000",
+    image: "https://img.magnific.com/premium-photo/kerala-most-beautiful-place-india_1111209-1012.jpg",
     rating: 4.9
   },
   {
@@ -58,7 +60,7 @@ const destinationsData = [
     category: "Beaches",
     location: "Goa, India",
     description: "Golden beaches, vibrant nightlife, Portuguese heritage — Goa is India’s coastal charm.",
-    image: "https://media.moustachescapes.com/location/1740561583.jpg",
+    image: "https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Goa-Travel.jpg?w=1000&ssl=1",
     rating: 4.8
   },
   {
@@ -85,7 +87,7 @@ const destinationsData = [
     category: "Spiritual",
     location: "Uttar Pradesh, India",
     description: "Experience spiritual India along the sacred Ganges — where life, death, and devotion meet.",
-    image: "https://www.wildernesstravel.com/wp-content/uploads/2024/11/varanasi-ganges-river-india-1680x826.jpg",
+    image: "https://img.magnific.com/premium-photo/unset-varanasi-ghats-ganges-river-with-boats-sacred-temples_1076263-6699.jpg?semt=ais_hybrid&w=740&q=80",
     rating: 4.8
   },
   {
@@ -94,7 +96,7 @@ const destinationsData = [
     category: "Beaches",
     location: "Bay of Bengal, India",
     description: "Crystal-clear waters, coral reefs, and tropical adventures await in this island paradise.",
-    image: "https://www.easeindiatrip.com/blog/wp-content/uploads/2024/11/Andaman-and-Nicobar-Islands-04.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTMvToRnVYNagM-Ho2M3cBME3PY0Y7aZ4lToUIK4-WpJAAWBaMvAPKx_qGs8jK7Z5QdhjeZWFWq5c1FHInN0elnf6eG&s=19",
     rating: 4.9
   },
   {
@@ -121,7 +123,7 @@ const destinationsData = [
     category: "Nature",
     location: "Jammu & Kashmir, India",
     description: "Famous for Dal Lake houseboats, Mughal gardens, and snow-capped peaks — heaven on earth.",
-    image: "https://www.distinctdestinations.in/DistinctDestinationsBackEndImg/BlogImage/srinagar-city-of-gardens-lakes-and-the-gateway-to-the-paradise-on-earth-valley-L-distinctdestinations.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrYfmaZxYkWAeEpoyMooviJ1P-biXKQwXIDWwBaTUwPTFwhfrEqB9TVtk&s=10",
     rating: 4.9
   },
   {
@@ -139,7 +141,7 @@ const destinationsData = [
     category: "Nature",
     location: "Meghalaya, India",
     description: "The wettest place on Earth — home to living root bridges and lush, emerald valleys.",
-    image: "https://imgcld.yatra.com/ytimages/image/upload/v1517482183/AdvNation/ANN_DES76/ann_bottom_Cherrapunji_mLjALE.jpg",
+    image: "https://www.transindiatravels.com/wp-content/uploads/nohkalikai-falls1.jpg",
     rating: 4.7
   },
   {
@@ -148,7 +150,7 @@ const destinationsData = [
     category: "Mountains",
     location: "Tamil Nadu, India",
     description: "A charming hill station with tea gardens, lakes, and the famous Nilgiri Mountain Railway.",
-    image: "https://clubmahindra.gumlet.io/blog/media/section_images/ultimate-o-8ac88a2da056a3d.jpg?w=376&dpr=2.6",
+    image: "https://www.adotrip.com/public/blogs/master_images/6899af5b0da03-Places%20to%20Visit%20in%20Ooty.jpg",
     rating: 4.5
   },
   {
@@ -157,7 +159,7 @@ const destinationsData = [
     category: "Heritage",
     location: "Karnataka, India",
     description: "A city of heritage and culture, best known for its grand palace and Dussehra festivities.",
-    image: "https://cdn.britannica.com/27/242227-050-48358A10/Mysore-Palace-Mysuru-Karnataka-India.jpg",
+    image: "https://media.istockphoto.com/id/186269117/photo/mysore-palace-india.jpg?s=612x612&w=0&k=20&c=PvoxbILmbr67vgr3GCVwJc9qoIq3Kz6wrH0ywoXb-u4=",
     rating: 4.6
   },
   {
@@ -166,7 +168,7 @@ const destinationsData = [
     category: "Spiritual",
     location: "Tamil Nadu, India",
     description: "A sacred coastal town linked to the Ramayana, with stunning sea bridges and temples.",
-    image: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkEc-ydRBTIjDm-M62rTqj4MhYsu-jy3JLUTGXtUIFhPp_0MrKHLG-8O9sfJrdK5tjNMGEVq-S7vxgVeJesjEIO247yglPGjWf4sVpHtvkvpfr-D2CRHtATV7qhU1aR5xGkj6g=w675-h390-n-k-no",
+    image: Rameshwaram,
     rating: 4.7
   },
   {
@@ -202,7 +204,7 @@ const destinationsData = [
     category: "Metropolitan",
     location: "Telangana, India",
     description: "A blend of old-world charm and modern tech — from Charminar to world-class Biryani.",
-    image: "https://s7ap1.scene7.com/is/image/incredibleindia/2-charminar_hyderabad_telangana-1-city-hero?qlt=82&ts=1742190636845",
+    image: "https://img.magnific.com/premium-photo/charminar-where-history-architecture-unite_1002227-24.jpg?semt=ais_hybrid&w=740&q=80",
     rating: 4.6
   },
   {
@@ -229,7 +231,7 @@ const destinationsData = [
     category: "Mountains",
     location: "Rajasthan, India",
     description: "Rajasthan’s only hill station, known for Dilwara Temples and scenic Nakki Lake.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Mount_Abu.jpg",
+    image: "https://cdn-dbjpa.nitrocdn.com/nzvijokfIarHcyxHSfEXZFNJJSjfexQU/assets/images/optimized/rev-a5e019e/maharajataxiservice.com/wp-content/uploads/2020/02/guru-shikhar-peak-cover.jpg",
     rating: 4.4
   },
   {
@@ -238,7 +240,7 @@ const destinationsData = [
     category: "Mountains",
     location: "Tamil Nadu, India",
     description: "The Princess of Hill Stations — misty valleys, lakes, and pine forests.",
-    image: "https://www.indiantempletour.com/wp-content/uploads/2022/08/Kodaikanal-Package-Tour.jpg",
+    image: "https://s3.india.com/wp-content/uploads/2025/08/Kodaikanal-on-budget.jpg?impolicy=Medium_Widthonly&w=350&h=263",
     rating: 4.6
   },
   {
@@ -247,7 +249,7 @@ const destinationsData = [
     category: "Heritage",
     location: "Karnataka, India",
     description: "A UNESCO World Heritage Site with stunning ruins of the Vijayanagara Empire.",
-    image: "https://s7ap1.scene7.com/is/image/incredibleindia/a-journey-through-masthead-hero-1?qlt=82&ts=1727368343764",
+    image: "https://kevinstandagephotography.wordpress.com/wp-content/uploads/2015/04/introduction-to-hampi.jpg?w=890&h=593",
     rating: 4.8
   },
   {
@@ -256,7 +258,7 @@ const destinationsData = [
     category: "Beaches",
     location: "Karnataka, India",
     description: "A peaceful beach town offering spiritual vibes and pristine coastlines.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Delight_india.jpg",
+    image: "https://gokarna360.in/wp-content/uploads/2026/02/Half-Mooon-Beach.webp",
     rating: 4.5
   },
   {
@@ -301,7 +303,7 @@ const destinationsData = [
     category: "Mountains",
     location: "Sikkim, India",
     description: "A gateway to the Himalayas with monasteries, lakes, and mountain views.",
-    image: "https://s7ap1.scene7.com/is/image/incredibleindia/tsomgo-lake-gangtok-sikkim-3-attr-hero?qlt=82&ts=1742159961340",
+    image: "https://hillstarholidays.com/wp-content/uploads/2022/09/3rd-image.jpg",
     rating: 4.8
   },
   {
@@ -319,7 +321,7 @@ const destinationsData = [
     category: "Mountains",
     location: "Arunachal Pradesh, India",
     description: "A spiritual town with India’s largest monastery and snow-covered landscapes.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/TawangMonastery-ArunachalPradesh-1.jpg",
+    image: "https://clubmahindra.gumlet.io/blog/media/section_images/tawangtrav-7ae54851935ac49.jpg?w=376&dpr=2.6",
     rating: 4.7
   },
   {
@@ -328,7 +330,7 @@ const destinationsData = [
     category: "Nature",
     location: "Assam, India",
     description: "A wildlife haven famous for one-horned rhinoceroses and lush grasslands.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Beauty_of_Kaziranga_National_Park.jpg",
+    image: "https://i0.wp.com/kaziranganationalparkassam.in/wp-content/uploads/2024/09/DSC_0758.jpg?resize=648%2C415&ssl=1",
     rating: 4.8
   },
   {
@@ -346,7 +348,7 @@ const destinationsData = [
     category: "Nature",
     location: "Nagaland, India",
     description: "A breathtaking valley known for seasonal flowers and trekking trails.",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/8e/e2/01/get-lost.jpg?w=1200&h=-1&s=1",
+    image: "https://holaciti.com/assets/place/1764656615place.webp",
     rating: 4.7
   },
   {
@@ -373,7 +375,7 @@ const destinationsData = [
     category: "Spiritual",
     location: "Rajasthan, India",
     description: "A sacred town known for the Brahma Temple and the annual Camel Fair.",
-    image: "https://images.prismic.io/travelfika/aAoliPIqRLdaBkoF_image_1.webp?auto=format,compress",
+    image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/73/22/0f.jpg",
     rating: 4.5
   },
   {
@@ -409,7 +411,7 @@ const destinationsData = [
     category: "Beaches",
     location: "Tamil Nadu, India",
     description: "The southernmost tip of India where three seas meet in a beautiful confluence.",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/bb/cf/09/thiruvalluvar-statue.jpg?w=1200&h=700&s=1",
+    image: "https://static.toiimg.com/thumb/msid-85859533,width-748,height-499,resizemode=4,imgsize-85434/.jpg",
     rating: 4.7
   },
   {
@@ -427,7 +429,7 @@ const destinationsData = [
     category: "Nature",
     location: "Kerala, India",
     description: "Famous for backwaters, houseboats, and tranquil lagoons.",
-    image: "https://deih43ym53wif.cloudfront.net/large_alleppey-kerala-india-shutterstock_1154918653_25793b1171.jpeg",
+    image: "https://cdn.getyourguide.com/img/tour/50cb571df411a.jpeg/68.jpg",
     rating: 4.9
   },
   {
@@ -436,7 +438,7 @@ const destinationsData = [
     category: "Heritage",
     location: "Rajasthan, India",
     description: "Known for the Great Wall of India and its majestic hilltop fort.",
-    image: "https://www.tripsavvy.com/thmb/aAGwc8xIxFZ6IAd-MsJjomh80jE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-186361655-5c1b7361c9e77c00019049d3.jpg",
+    image: "https://www.go2india.in/rajasthan/images/b-kumbhalgarh-badal-mahal.jpg",
     rating: 4.7
   },
   {
@@ -497,7 +499,7 @@ const Destinations = () => {
       <section className="relative w-full h-[47vh] md:h-[70vh] flex items-center justify-center py-16 md:py-0">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?q=80&w=2070"
+            src="https://img.magnific.com/premium-photo/kerala-most-beautiful-place-india_1111209-1012.jpg"
             className="w-full h-full object-cover"
             alt="Hero"
             loading="lazy"
