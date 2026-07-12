@@ -32,6 +32,7 @@ const Login = () => {
       localStorage.setItem("user", JSON.stringify(res.data.user));
       localStorage.setItem('loggedInUser', res.data.user.name)
       localStorage.setItem('email', res.data.user.email)
+      console.log(JSON.parse(localStorage.getItem("user")));
       navigate("/");
     } catch (err) {
       handleError(err.response?.data?.message || "Login failed");
@@ -50,11 +51,13 @@ const Login = () => {
     const res = await axios.post(
       "https://apnijourney-api.onrender.com/api/auth/google-login",
       {
+        id: user._id,
         name: user.displayName,
         email: user.email,
         photo: user.photoURL,
       }
     );
+    console.log(JSON.parse(localStorage.getItem("user")));
    
     // Token save
     localStorage.setItem("token", res.data.token);

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Search, MapPin, Plane, Compass, Sparkles } from "lucide-react";
+import HeroSectionImage from "../assets/images/hero-section.webp";
 
 const HeroSection = () => {
  
@@ -20,13 +21,13 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-[68vh] sm:h-[80vh] w-full flex flex-col justify-center items-center overflow-hidden">
+    <section className="relative h-[68vh] max-sm:h-[80vh] w-full flex flex-col justify-center items-center overflow-hidden">
       
       {/* 🎥 Background Video with Transition */}
       <div className="absolute inset-0 w-full h-full">
        
 
-        <img src="https://tailkits.com/hero-section-images-12.png" alt="hero-section"
+        <img src={HeroSectionImage} alt="hero-section"
         
         className="w-full h-full object-cover " />
 

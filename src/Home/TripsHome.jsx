@@ -183,13 +183,26 @@ const fetchUsers = async () => {
 
         if (tripId !== id) return trip;
 
-        const isLiked = trip.likes?.includes(currentUser?._id || currentUser?.id);
+       const currentUserId = String(currentUser?.id || currentUser?._id);
+
+console.log("Current User ID:", currentUserId);
+console.log("Trip Likes:", trip.likes);
+console.log(JSON.parse(localStorage.getItem("user")));
+console.log(
+  "Is Liked:",
+  trip.likes?.some((id) => String(id) === currentUserId)
+  
+);
+
+        const isLiked = trip.likes?.some(
+  (id) => String(id) === currentUserId
+);
 
         return {
           ...trip,
           likes: isLiked
-            ? trip.likes.filter((userId) => userId !== currentUser?._id || currentUser?.id)
-            : [...(trip.likes || []), currentUser?._id || currentUser?.id],
+  ? trip.likes.filter((id) => String(id) !== currentUserId)
+  : [...(trip.likes || []), currentUserId]
         };
       })
     );
