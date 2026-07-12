@@ -11,7 +11,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import Footer from "../home/Footer";
+import Footer from "../Home/Footer";
 import FounderSection from "../components/FounderSection";
 import HeroSection from '../assets/images/about-herosection.webp';
 import Image from  '../assets/images/image-abt.webp'
