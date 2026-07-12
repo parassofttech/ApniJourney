@@ -23,7 +23,7 @@ const foodData = [
     calories: "400 kcal",
     bestPlace: "Local Monastery Kitchens",
     ingredients: ["Noodles", "Vegetarianetables", "Chicken", "Spices"],
-    images: ["https://foodtrails25.com/wp-content/uploads/2019/09/How-to-make-Thukpa-Noodle-Soup.jpg"],
+    images: ["https://nishkitchen.com/wp-content/uploads/2024/08/Thukpa-3-500x500.jpg"],
     description: "Thukpa is a noodle soup enjoyed in the cold regions.",
     history: "Influenced by Tibetan cuisine."
   },
@@ -93,7 +93,7 @@ const foodData = [
     calories: "160 kcal",
     bestPlace: "Ahmedabad Street Food",
     ingredients: ["Gram flour", "Curd", "Mustard seeds"],
-    images: ["https://maayeka.com/wp-content/uploads/2011/11/sooji-ka-dhokla-instant-recipe-1-of-1.jpg"],
+    images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4cSH_fqhz76dRvWV8LkzjL-4QqRAOjLIfeJAlLpQpuocFgvTk9MaFKN9t&s=10"],
     description: "Soft steamed snack.",
     history: "Popular Gujarati breakfast."
   },
@@ -177,7 +177,7 @@ const foodData = [
     calories: "350 kcal",
     bestPlace: "Indore Sarafa Bazaar",
     ingredients: ["Flattened rice", "Turmeric"],
-    images: ["https://www.cookshideout.com/wp-content/uploads/2014/04/Indori-Poha_FI.jpg"],
+    images: ["https://www.cuisineindiasociety.in/wp/wp-content/uploads/2025/05/Untitled-1.jpg"],
     description: "Famous breakfast combo.",
     history: "Central India specialty."
   },
@@ -191,7 +191,7 @@ const foodData = [
     calories: "300 kcal",
     bestPlace: "Mumbai Street Stalls",
     ingredients: ["Potato", "Pav bread"],
-    images: ["https://ministryofcurry.com/wp-content/uploads/2024/06/vada-pav-3.jpg"],
+    images: ["https://www.vegrecipesofindia.com/wp-content/uploads/2025/12/vada-pav-1.jpg"],
     description: "Indian burger.",
     history: "Invented in 1960s Mumbai."
   },
@@ -219,7 +219,7 @@ const foodData = [
     calories: "450 kcal",
     bestPlace: "Shillong Markets",
     ingredients: ["Rice", "Pork"],
-    images: ["https://gayathriscookspot.com/wp-content/uploads/2018/11/Jadoh-1.jpg"],
+    images: ["https://www.thenortheaststore.com/image/cache/catalog/Blog2/Jadoh-600x315w.jpg"],
     description: "Rice and meat delicacy.",
     history: "Khasi tribal origin."
   },
@@ -275,7 +275,7 @@ const foodData = [
     calories: "400 kcal",
     bestPlace: "Amritsar Dhaba",
     ingredients: ["Mustard leaves", "Butter"],
-    images: ["https://upload.wikimedia.org/wikipedia/commons/c/c8/Saagroti.jpg"],
+    images: ["https://static.toiimg.com/thumb/54670698.cms?imgsize=77257&width=800&height=800"],
     description: "Winter specialty.",
     history: "Farmer’s traditional meal."
   },
@@ -303,7 +303,7 @@ const foodData = [
     calories: "300 kcal",
     bestPlace: "Gangtok Street",
     ingredients: ["Flour", "Vegetarianetables/Meat"],
-    images: ["https://www.spicypunch.com/wp-content/uploads/2021/05/chicken-momos-recipe-1.jpg"],
+    images: ["https://images.jdmagicbox.com/quickquotes/images_main/wheat-flour-achari-chaap-frozen-momo-f8l1lk4c.jpg"],
     description: "Steamed dumplings.",
     history: "Tibetan influence."
   },
@@ -345,7 +345,7 @@ const foodData = [
     calories: "350 kcal",
     bestPlace: "Tribal Homes",
     ingredients: ["Fish", "Bamboo shoot"],
-    images: ["https://s7ap1.scene7.com/is/image/incredibleindia/mui-borok-gastronomy-agartala-blog-gas-hero?qlt=82&ts=1726651182594"],
+    images: ["https://thumbs.dreamstime.com/b/mui-borok-tripuri-cuisine-called-shidal-bengali-burma-small-oil-pasted-dry-fermented-fish-137315381.jpg"],
     description: "Traditional Tripuri dish.",
     history: "Tribal cuisine."
   },
