@@ -58,7 +58,7 @@ const ParkData = [
     id: 4,
     name: "Sundarbans National Park",
     state: "West Bengal",
-    image: "https://i0.wp.com/kaziranganationalparkassam.in/wp-content/uploads/2021/06/pexels-photo-2689436.jpeg?ssl=1",
+    image: "https://www.insideindianjungles.com/wp-content/uploads/2019/07/sunder-bans.jpg",
     description:
       "Largest mangrove forest in the world and habitat of Royal Bengal Tigers.",
     establishedYear: 1984,
