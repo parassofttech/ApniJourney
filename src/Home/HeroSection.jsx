@@ -43,7 +43,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-2 md:mb-8"
+          className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-2 md:mb-4"
         >
           <Sparkles className="w-4 h-4 text-cyan-400" />
           <span className="text-sm font-medium tracking-wider uppercase text-cyan-100">
