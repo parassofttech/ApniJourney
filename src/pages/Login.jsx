@@ -32,8 +32,12 @@ const Login = () => {
       localStorage.setItem("user", JSON.stringify(res.data.user));
       localStorage.setItem('loggedInUser', res.data.user.name)
       localStorage.setItem('email', res.data.user.email)
-      console.log(JSON.parse(localStorage.getItem("user")));
+      
+
+      window.dispatchEvent(new Event("storage"));
+      
       navigate("/");
+
     } catch (err) {
       handleError(err.response?.data?.message || "Login failed");
     }
@@ -57,7 +61,7 @@ const Login = () => {
         photo: user.photoURL,
       }
     );
-    console.log(JSON.parse(localStorage.getItem("user")));
+    
    
     // Token save
     localStorage.setItem("token", res.data.token);
@@ -183,7 +187,7 @@ const Login = () => {
           </Link>
         </p>
       </motion.div>
-      <div className="flex items-center my-6">
+      {/* <div className="flex items-center my-6">
   <div className="flex-1 h-px bg-gray-300"></div>
 
   <span className="px-4 text-sm font-medium text-gray-700 uppercase">
@@ -205,7 +209,7 @@ const Login = () => {
   />
 
   Continue with Google
-</button>
+</button> */}
     </div>
   );
 };

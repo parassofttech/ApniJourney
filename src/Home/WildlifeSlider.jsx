@@ -7,7 +7,7 @@ const destinations = [
   {
     id: 1,
     title: "National Chambal Sanctuary",
-    image: "https://www.shutterstock.com/image-photo/crocodiles-large-semiaquatic-reptiles-powerful-600nw-2662580205.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFiO1x7BS4FB_B-PT02vW39WoqzmoO6TvBUZPKIj3vNnsSkwyyT0awhmU&s=10",
     desc: "Home to the rare gharials and Ganges river dolphins.",
     color: "from-blue-900/80"
   },
@@ -50,16 +50,12 @@ const WildlifeSlider = () => {
     <div className="relative min-h-screen flex flex-col items-center justify-center py-20 px-6 overflow-hidden">
 
       {/* 🎥 Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="https://videos.pexels.com/video-files/2330728/2330728-uhd_2560_1440_24fps.mp4"
-          type="video/mp4" />
-      </video>
+      <img
+  src="https://www.shutterstock.com/image-photo/serene-landscape-aru-valley-near-260nw-2487853101.jpg"
+  alt="Nature Background"
+  className="absolute inset-0 w-full h-full object-cover"
+  loading="lazy"
+/>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-[#fffcf7]" />

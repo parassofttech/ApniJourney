@@ -1,11 +1,13 @@
 import React from "react";
 import DestinationCard from "./DestinationCard";
 
+import TajMahal from "../assets/images/tajmahal.webp"
+
 const destinations = [
   {
     name: "Taj Mahal",
     state: "India",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg",
+    image: TajMahal,
     description:
      <div>
         <ul className="text-start">
@@ -68,7 +70,7 @@ const destinations = [
     name: "Varanasi",
     state: "Uttar Pradesh",
     image:
-      "https://d22eux7aqicogj.cloudfront.net/assets/destination-hero-image/varanasi.webp",
+      "https://img.magnific.com/premium-photo/unset-varanasi-ghats-ganges-river-with-boats-sacred-temples_1076263-6699.jpg?semt=ais_hybrid&w=740&q=80",
     description:
       <div>
         <ul className="text-start">
@@ -87,7 +89,7 @@ const destinations = [
     name: "Kerala",
     state: "Kerala",
     image:
-      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2VyYWxhJTIwdG91cmlzbXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+      "https://img.magnific.com/premium-photo/kerala-most-beautiful-place-india_1111209-1012.jpg",
     description:
        <div>
         <ul className="text-start">

@@ -11,8 +11,10 @@ import {
   ArrowRight
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import Footer from "../Home/Footer";
+import Footer from "../home/Footer";
 import FounderSection from "../components/FounderSection";
+import HeroSection from '../assets/images/about-herosection.webp';
+import Image from  '../assets/images/image-abt.webp'
 
 const About = () => {
   const navigate = useNavigate()
@@ -24,7 +26,7 @@ const About = () => {
 
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2000"
+            src={HeroSection}
             alt="Travel"
 
             className="w-full h-full object-cover scale-110"
@@ -72,7 +74,7 @@ const About = () => {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=2000"
+            src={Image}
             alt="Travel Planning"
             loading="lazy"
                 decoding="async"

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Tag, ArrowRight, Sparkles, Clock } from "lucide-react";
+import Advanture  from "../assets/images/advanture.jpg"
 
 const offers = [
   {
@@ -8,7 +9,7 @@ const offers = [
     title: "Summer Special",
     discount: "30% OFF",
     description: "Experience the cool breeze of the Himalayas this summer.",
-    image: "https://www.tourmyindia.com/blog//wp-content/uploads/2022/06/Best-Summer-Destinations-in-India.jpg",
+    image: "https://hblimg.mmtcdn.com/content/hubble/img/desttvimg/mmt/destination/t_ufs/m_Phuket_tv_destination_img_1_l_629_1005.jpg",
     link: "#",
     tag: "Trending"
   },
@@ -17,7 +18,7 @@ const offers = [
     title: "Adventure Pass",
     discount: "BOGO DEAL",
     description: "Book 2 adventure trips & get 1 valley pass absolutely free.",
-    image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80",
+    image: Advanture,
     link: "https://www.yatra.com/",
     tag: "Best Value"
   },
@@ -26,7 +27,7 @@ const offers = [
     title: "Luxury Escape",
     discount: "25% OFF",
     description: "Indulge in royalty with premium heritage hotel bookings.",
-    image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaBxRLg-D55Cm_v04psHxEveSA-mluMc0_S06NhAM9QBILoG0jmVbLPz4x&s=10",
     link: "https://www.goibibo.com/",
     tag: "Luxury"
   },

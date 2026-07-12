@@ -49,7 +49,7 @@ const testimonials = [
     quote:
       "Great UX. The trip notes + expense split feature made group travel simple and fun.",
     avatar:
-      "https://pbs.twimg.com/profile_images/1270730220341825536/qecoh2hI_400x400.jpg",
+      "https://www.shutterstock.com/image-photo/portrait-beautiful-young-woman-long-260nw-2577224529.jpg",
   },
   {
     id: 6,

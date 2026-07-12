@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { MapPin, ArrowUpRight } from "lucide-react";
+import Mumbai from "../assets/images/mumbai.jpg"
+import Rameshwaram from "../assets/images/rameswaram.webp"
 
 const destinations = [
   {
@@ -39,8 +41,7 @@ const destinations = [
     name: "Mumbai",
     state: "Maharashtra",
     category: "Metropolis",
-    image:
-      "https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Mumbai.jpg?w=1000&ssl=1",
+    image: Mumbai,
     description:
       "The city of dreams, home to Bollywood and the iconic Marine Drive.",
   },
@@ -50,7 +51,7 @@ const destinations = [
     state: "Tamil Nadu",
     category: "Spiritual",
     image:
-      "https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Rameswaram-Imghh.png?w=1000&ssl=1",
+      Rameshwaram,
     description:
       "A sacred pilgrimage town known for its breathtaking sea bridges.",
   },

@@ -15,7 +15,7 @@ import { Contact, GalleryHorizontal, Menu, Plus, X,
   Shield,
   LogOut,
 } from "lucide-react";
-import ApniJourneyLogo   from '/logo.png'
+import ApniJourneyLogo   from '../assets/images/logo.png'
 
 const Header = () => {
   const navigate = useNavigate();

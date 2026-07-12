@@ -10,7 +10,7 @@ const articles = [
     date: "June 25, 2026",
     readTime: "6 min read",
     image:
-      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&auto=format&fit=crop&q=80",
+      "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcR3KXQM9jumObFgdcyHKs2KOADAQk8VZBcjhJSXJcFVMra8Mfy1OlJfL6WZZB4Cc6CLrb4F_5fM3y88zYKUKv-BycU&s=19",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const articles = [
     date: "June 20, 2026",
     readTime: "8 min read",
     image:
-      "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1200&auto=format&fit=crop&q=80",
+      "https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/Goa-Travel.jpg?w=1000&ssl=1",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const articles = [
     date: "June 18, 2026",
     readTime: "5 min read",
     image:
-      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuMzpVn8KRuvEhxDUojVZmldZstnknyYfhPGOlv2BJdl5u6CgN1jI4FlY&s=10",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const articles = [
     date: "June 15, 2026",
     readTime: "7 min read",
     image:
-      "https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=1200&auto=format&fit=crop&q=80",
+      "https://www.shutterstock.com/image-photo/mountains-view-aurang-kel-azad-260nw-2507475391.jpg",
   },
 ];
 
@@ -79,7 +79,7 @@ const LatestTravelArticles=()=> {
         <div className="relative overflow-hidden rounded-[32px] mb-10 group">
 
           <img
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600&auto=format&fit=crop&q=80"
+            src="https://www.shutterstock.com/image-photo/beautiful-mountains-landscape-pictures-arang-260nw-2499596223.jpg"
             alt="Featured Travel Story"
             loading="lazy"
                 decoding="async"

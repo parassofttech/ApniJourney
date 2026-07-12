@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Play, Star } from "lucide-react";
+import LandStory  from "../assets/images/land2.jpg"
 
 const TourismLanding = () => {
   return (
@@ -11,18 +12,8 @@ const TourismLanding = () => {
 
         {/* 🎥 Background Video (Only Hero Section) */}
         <div className="absolute inset-0 w-full h-full -z-20">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source
-              src="https://videos.pexels.com/video-files/6583583/6583583-uhd_2560_1440_25fps.mp4"
-              type="video/mp4"
-            />
-          </video>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWFVW9-UvtH5_KDa69wKOKR9XWKLwpjpCcb5IFGL9yszcJlQEVFR9KE1I&s=10" alt="background"
+          className="w-full h-full object-cover" />
         </div>
 
         {/* White Gradient Overlay */}
@@ -56,7 +47,7 @@ const TourismLanding = () => {
                 <div className="h-[170px] lg:h-full overflow-hidden rounded-[25px] shadow-xl">
                   <motion.img
                     whileHover={{ scale: 1.1 }}
-                    src="https://images.unsplash.com/photo-1514222134-b57cbb8ce073"
+                    src={LandStory}
                     className="w-full h-full object-cover"
                     alt="mountain"
                     loading="lazy"
@@ -67,7 +58,7 @@ const TourismLanding = () => {
 
                 <div className="h-[170px] lg:h-full overflow-hidden rounded-[25px] shadow-xl relative">
                   <img
-                    src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3"
+                    src="https://img.magnific.com/premium-photo/kerala-most-beautiful-place-india_1111209-1012.jpg"
                     className="w-full h-full object-cover"
                     alt="upsplash"
                   />

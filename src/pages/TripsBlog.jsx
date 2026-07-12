@@ -165,57 +165,76 @@ const TripsBlog = () => {
 
   const toggleLike = async (id) => {
 
-    if (!token) {
-      return handleError("Please login to like this trip.");
-    }
-    try {
-      // Instant UI update
-      setTrips((prevTrips) =>
-        prevTrips.map((trip) => {
-          const tripId = trip._id || trip.id;
+  if(!token){
+    return handleError("Please login to like this trip.");
 
-          if (tripId !== id) return trip;
+    if (liking) return;
 
-          const isLiked = trip.likes?.includes(currentUser?._id || currentUser?.id);
+  setLiking(true);
+  }
+  try {
+    // Instant UI update
+    setTrips((prevTrips) =>
+      prevTrips.map((trip) => {
+        const tripId = trip._id || trip.id;
 
-          return {
-            ...trip,
-            likes: isLiked
-              ? trip.likes.filter((userId) => userId !== currentUser?._id || currentUser?.id)
-              : [...(trip.likes || []), currentUser?._id || currentUser?.id],
-          };
-        })
-      );
+        if (tripId !== id) return trip;
 
-      // Animation
-      setAnimateLike(id);
+       const currentUserId = String(currentUser?.id || currentUser?._id);
 
-      setTimeout(() => {
-        setAnimateLike(null);
-      }, 600);
+console.log("Current User ID:", currentUserId);
+console.log("Trip Likes:", trip.likes);
+console.log(JSON.parse(localStorage.getItem("user")));
+console.log(
+  "Is Liked:",
+  trip.likes?.some((id) => String(id) === currentUserId)
+  
+);
+
+        const isLiked = trip.likes?.some(
+  (id) => String(id) === currentUserId
+);
+
+        return {
+          ...trip,
+          likes: isLiked
+  ? trip.likes.filter((id) => String(id) !== currentUserId)
+  : [...(trip.likes || []), currentUserId]
+        };
+      })
+    );
+
+    // Animation
+    setAnimateLike(id);
+
+    setTimeout(() => {
+      setAnimateLike(null);
+    }, 600);
 
 
-      // Backend update
-      await axios.post(
-        `https://apnijourney-api.onrender.com/api/trips/${id}/like`,
-        {},
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
+    // Backend update
+    await axios.post(
+      `https://apnijourney-api.onrender.com/api/trips/${id}/like`,
+      {},
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
+    
 
 
+  } catch (err) {
+    console.log(err.response?.data);
 
-    } catch (err) {
-      console.log(err.response?.data);
-
-      // Error aaye to data wapas fetch kar lo
-      fetchTrips();
-
-    }
-  };
+    // Error aaye to data wapas fetch kar lo
+    fetchTrips();
+   
+  } finally{
+     setLiking(false);
+  }
+};
 
   const toggleSave = (id) => {
     setSavedPosts((prev) => ({

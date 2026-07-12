@@ -13,6 +13,9 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
+import FooterImg from '../assets/images/footer.webp'
+
+
 const Footer = () => {
   const year = new Date().getFullYear();
 
@@ -37,7 +40,7 @@ const Footer = () => {
       <div className="absolute inset-0 w-full h-full">
        
 
-        <img src="https://images.squarespace-cdn.com/content/v1/64ba44348b6a05559a816bc1/1690282971608-B4BD48EE7DOGJDWKOL52/A+Guide+to+Travel+Photography-152.jpg" alt="hero-section"
+        <img src={FooterImg}
         
         className="w-full h-full object-cover " />
 

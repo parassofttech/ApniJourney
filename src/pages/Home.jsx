@@ -21,6 +21,8 @@ const FeaturesSection = lazy(() => import("../Home/FeaturesSection"));
 const TestimonialsSection = lazy(() => import("../Home/TestimonialsSection"));
 const NewsletterSignup = lazy(() => import("../Home/NewsletterSignup"));
 
+import Logo  from "../assets/images/logo.png"
+
 
 
 const Home = () => {
@@ -31,7 +33,7 @@ const Home = () => {
    <div className="flex h-[80vh] items-center justify-center">
       <div className="relative flex items-center justify-center">
         <div className="h-16 w-16 animate-spin rounded-full border-4 border-slate-200 border-t-blue-600"></div>
-        <img src="/logo.png" className="absolute w-11 h-11 animate-pulse" alt="" />
+        <img src={Logo}   className="absolute w-11 h-11 animate-pulse" alt="" />
       </div>
     </div>
   }>
@@ -63,7 +65,7 @@ const Home = () => {
   
 
   
-    <BlogHighlights />
+    {/* <BlogHighlights /> */}
   
 
  
