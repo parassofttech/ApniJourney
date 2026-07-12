@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { FiSearch, FiMapPin, FiArrowRight } from "react-icons/fi"; // Icons ke liye
 import foodData from "../data/foodData";
 import Footer from "../Home/Footer";
+import FoodHeroSection from '../assets/images/food-herosec.jpg'
 
 const Food = () => {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ const Food = () => {
           initial={{ scale: 1.2 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5 }}
-          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+        src={FoodHeroSection}
           alt="Indian Cuisine"
           loading="lazy"
                 decoding="async"
