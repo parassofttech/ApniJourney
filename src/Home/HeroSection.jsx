@@ -21,7 +21,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-[68vh] max-sm:h-[80vh] w-full flex flex-col justify-center items-center overflow-hidden">
+    <section className="relative h-[68vh] sm:h-[80vh] w-full flex flex-col justify-center items-center overflow-hidden">
       
       {/* 🎥 Background Video with Transition */}
       <div className="absolute inset-0 w-full h-full">
