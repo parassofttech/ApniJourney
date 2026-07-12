@@ -304,7 +304,7 @@ const ParkData = [
   id: 19,
   name: "Namdapha National Park",
   state: "Arunachal Pradesh",
-  image: "https://www.outdoers.in/wp-content/uploads/2025/06/PXL_20250209_040123016-scaled.jpg",
+  image: "https://www.tusktravel.com/blog/wp-content/uploads/2019/11/Namdapha-National-Park-Red-Panda.jpg",
   description: "One of India’s richest biodiversity hotspots.",
   establishedYear: 1983,
   area: "1985 sq km",
