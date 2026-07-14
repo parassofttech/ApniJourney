@@ -138,6 +138,7 @@ const PhotoGalleryDash = () => {
               <img
                 src={optimizeCloudinaryImage(selectedImg)}
                 alt="Selected"
+                loading="lazy"
                 className="max-w-full max-h-[85vh] rounded-2xl shadow-2xl object-contain border border-white/10"
               />
               <div className="absolute -bottom-10 left-0 text-white/60 text-sm font-medium italic">

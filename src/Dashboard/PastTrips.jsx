@@ -122,7 +122,7 @@ const PastTrips = () => {
                   alt={trip.title || "Trip"}
                   loading="lazy"
   
-  fetchPriority="low"
+  
                   className="h-32 w-full object-cover"
                   onError={(e) => (e.target.style.display = "none")}
                 />

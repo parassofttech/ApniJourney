@@ -82,8 +82,7 @@ const LatestTravelArticles=()=> {
             src="https://www.shutterstock.com/image-photo/beautiful-mountains-landscape-pictures-arang-260nw-2499596223.jpg"
             alt="Featured Travel Story"
             loading="lazy"
-                decoding="async"
-                fetchPriority="low"
+                
             className="h-[500px] w-full object-cover group-hover:scale-105 transition duration-700"
           />
 

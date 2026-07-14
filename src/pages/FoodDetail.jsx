@@ -122,8 +122,7 @@ const FoodDetail = () => {
                     className="w-full h-auto max-h-[80vh] object-cover hover:scale-105 transition-transform duration-1000" 
                     alt="Food detail"
                     loading="lazy"
-                decoding="async"
-                fetchPriority="low"
+                
                   />
                 </motion.div>
               ))}

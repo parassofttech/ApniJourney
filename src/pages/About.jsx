@@ -77,8 +77,7 @@ const About = () => {
             src={Image}
             alt="Travel Planning"
             loading="lazy"
-                decoding="async"
-                fetchPriority="low" 
+               
             className="rounded-3xl shadow-2xl border border-white/10"
           />
         </div>

@@ -46,7 +46,7 @@ const Footer = () => {
 
 
         {/* Cinematic Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-[#020617]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-[#020617]"></div>
       </div>
 
       {/* 🧪 Main Content Container */}
@@ -59,7 +59,7 @@ const Footer = () => {
       >
 
         {/* 💎 Glass Card Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[40px] p-8 md:p-14 shadow-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 bg-black/50 backdrop-blur-xl border border-black/10 rounded-[40px] p-8 md:p-14 shadow-2xl">
 
           {/* BRAND SECTION (4 Cols) */}
           <motion.div variants={itemVariants} className="md:col-span-5">
@@ -159,7 +159,7 @@ const Footer = () => {
             {[
               { icon: Github, color: "hover:bg-gray-800",link:"https://github.com/parassofttech/ApniJourney" },
               { icon: Linkedin, color: "hover:bg-blue-700",link:"https://in.linkedin.com/in/paras-sahu-02849029a" },
-              // { icon: Instagram, color: "hover:bg-pink-600",link:"" }
+              { icon: Instagram, color: "hover:bg-pink-600",link:"https://www.instagram.com/apnijourneyy?igsh=MWM2OGMycnUyaXNnNw%3D%3D" }
             ].map((social, i) => (
               <a
                 key={i}

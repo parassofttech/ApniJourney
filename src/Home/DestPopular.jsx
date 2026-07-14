@@ -122,7 +122,7 @@ const destinations = [
     name: "RiShiKesh & Haridwar",
     state: "Uttarakhand",
     image:
-      "https://seasontours.org/wp-content/uploads/2024/03/2-13.webp",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhUEJYMzJ3a4Y74HPHE5fHcKK58Z6ZMJl8vDlE2UXwA4Up5gLrLSMZVB8&s=10",
     description:
       <div>
         <ul className="text-start">

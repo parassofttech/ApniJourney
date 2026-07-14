@@ -599,8 +599,7 @@ const Destinations = () => {
                     src={place.image}
                     alt={place.name}
                     loading="lazy"
-                decoding="async"
-                fetchPriority="low"
+               
                     className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                   />
 

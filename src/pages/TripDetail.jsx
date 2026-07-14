@@ -105,8 +105,7 @@ const TripDetail = () => {
                 className="w-full h-full object-cover" 
                 alt={title}
                 loading="lazy"
-  decoding="async"
-  fetchPriority="low"
+  
             
               />
               <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl shadow-lg border border-white/20">

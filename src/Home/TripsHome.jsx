@@ -185,14 +185,7 @@ const fetchUsers = async () => {
 
        const currentUserId = String(currentUser?.id || currentUser?._id);
 
-console.log("Current User ID:", currentUserId);
-console.log("Trip Likes:", trip.likes);
-console.log(JSON.parse(localStorage.getItem("user")));
-console.log(
-  "Is Liked:",
-  trip.likes?.some((id) => String(id) === currentUserId)
-  
-);
+
 
         const isLiked = trip.likes?.some(
   (id) => String(id) === currentUserId
@@ -426,13 +419,13 @@ useEffect(() => {
   <div className="fixed inset-0 -z-10 bg-gradient-to-tr from-cyan-100/30 via-transparent to-blue-100/40 pointer-events-none"/>
   
   {/* Top Header - Glassmorphic Aesthetic */}
-  <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
+  <div className="  bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
     <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
       <div>
         <h1 className="text-2xl md:text-3xl font-black tracking-tight bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent flex items-center gap-2">
           Journeys <span className="animate-bounce text-xl md:text-2xl">✈️</span>
         </h1>
-        <p className="text-xs font-semibold text-gray-400 mt-0.5">
+        <p className="text-xs ab font-semibold text-gray-400 mt-0.5">
           ✨ Exploring {trips.length} Travel Stories
         </p>
       </div>
@@ -482,7 +475,7 @@ useEffect(() => {
       className="w-10 h-10 rounded-full object-cover ring-2 ring-blue-50"
        loading="lazy"
                  
-                  fetchPriority="low"
+                  
     />
   ) : (
     // Condition 2: Agar photo nahi hai, toh Name ka First Letter dikhega (Dynamic Vibrant Background ke sath)
@@ -572,7 +565,7 @@ useEffect(() => {
                 exit={{ scale: 1.4, opacity: 0 }}
                 className="absolute  inset-0 z-20 flex items-center justify-center pointer-events-none"
               >
-                <Heart className="fill-white text-white drop-shadow-xl" size={80} />
+                <Heart className="fill-red-500 text-red-500 drop-shadow-xl" size={80} />
               </motion.div>
             )}
 {trip.photos?.length > 0 ? (
@@ -593,7 +586,7 @@ useEffect(() => {
         className="w-full h-full object-cover cursor-pointer"
         loading="lazy"
         
-        fetchPriority="low"
+        
       />
     </SwiperSlide>
   ))}

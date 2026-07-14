@@ -1,46 +1,4 @@
-// import React from "react";
-// import { motion } from "framer-motion";
 
-// const DashboardSections = () => {
-//   return (
-//     <div className="px-4 pt-6">
-//       {/* Quick Stats / Overview */}
-//       <motion.div
-//         initial={{ opacity: 0, y: 20 }}
-//         animate={{ opacity: 1, y: 0 }}
-//         transition={{ duration: 0.5 }}
-//         className="grid grid-cols-3 gap-4"
-//       >
-//         <div className="bg-white p-4 rounded-2xl shadow text-center">
-//           <p className="text-gray-400 text-sm">Total Trips</p>
-//           <p className="font-bold text-lg">12</p>
-//         </div>
-//         <div className="bg-white p-4 rounded-2xl shadow text-center">
-//           <p className="text-gray-400 text-sm">Upcoming</p>
-//           <p className="font-bold text-lg">2</p>
-//         </div>
-//         <div className="bg-white p-4 rounded-2xl shadow text-center">
-//           <p className="text-gray-400 text-sm">Favorites</p>
-//           <p className="font-bold text-lg">5</p>
-//         </div>
-//       </motion.div>
-
-//       {/* Add New Trip Button */}
-//       <motion.div
-//         initial={{ scale: 0.8, opacity: 0 }}
-//         animate={{ scale: 1, opacity: 1 }}
-//         transition={{ delay: 0.3 }}
-//         className="mt-6"
-//       >
-//         <button className="w-full bg-blue-500 text-white py-3 rounded-2xl font-semibold hover:bg-blue-600 transition">
-//           + Add New Trip
-//         </button>
-//       </motion.div>
-//     </div>
-//   );
-// };
-
-// export default DashboardSections;
 
 
 

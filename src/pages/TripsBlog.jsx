@@ -62,7 +62,8 @@ const TripsBlog = () => {
 
   const [showMenu, setShowMenu] = useState({});
   const [openMenu, setOpenMenu] = useState(null);
-
+  
+  const [liking, setLiking] = useState(false);
 
   const [users, setUsers] = useState([]);
 
@@ -182,14 +183,7 @@ const TripsBlog = () => {
 
        const currentUserId = String(currentUser?.id || currentUser?._id);
 
-console.log("Current User ID:", currentUserId);
-console.log("Trip Likes:", trip.likes);
-console.log(JSON.parse(localStorage.getItem("user")));
-console.log(
-  "Is Liked:",
-  trip.likes?.some((id) => String(id) === currentUserId)
-  
-);
+
 
         const isLiked = trip.likes?.some(
   (id) => String(id) === currentUserId
@@ -473,7 +467,7 @@ console.log(
         <div className="fixed inset-0 -z-10 bg-gradient-to-tr from-cyan-100/30 via-transparent to-blue-100/40 pointer-events-none" />
 
         {/* Top Header - Glassmorphic Aesthetic */}
-        <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div className="bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
           <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
             <div>
               <h1 className="text-2xl md:text-3xl font-black tracking-tight bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent flex items-center gap-2">
@@ -616,7 +610,7 @@ console.log(
                       exit={{ scale: 1.4, opacity: 0 }}
                       className="absolute  inset-0 z-20 flex items-center justify-center pointer-events-none"
                     >
-                      <Heart className="fill-white text-white drop-shadow-xl" size={80} />
+                      <Heart className="fill-red-500 text-red-500 drop-shadow-xl" size={80} />
                     </motion.div>
                   )}
                   {trip.photos?.length > 0 ? (

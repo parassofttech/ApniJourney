@@ -49,15 +49,9 @@ const Dashboard = () => {
       <section className="relative w-full h-[40vh] md:h-[70vh] overflow-hidden">
 
         {/* Background Video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover"
-        >
-          <source src="https://cdn.pixabay.com/video/2022/09/24/132382-753435508_large.mp4" type="video/mp4" />
-        </video>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/054/876/032/small/mirror-image-snow-capped-mountain-peaks-reflected-in-pristine-lake-free-photo.jpg" alt="dashboard herosection"
+        className="absolute top-0 left-0 w-full h-full object-cover" />
+
 
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/60"></div>

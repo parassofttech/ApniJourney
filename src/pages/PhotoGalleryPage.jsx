@@ -226,8 +226,7 @@ const PhotoGalleryPage = () => {
                 src={optimizeCloudinaryImage(selectedImg)}
                 alt="Enlarged Memory"
                 loading="lazy"
-                decoding="async"
-                fetchPriority="low"
+                
                 className="max-w-full max-h-[80vh] rounded-3xl shadow-[0_0_80px_rgba(0,0,0,0.5)] object-contain border border-white/5"
               />
 
