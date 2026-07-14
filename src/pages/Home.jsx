@@ -42,11 +42,12 @@ const Home = () => {
   <PopularDestinations />
 
   
-    <TourismLanding />
+    
   
 
   
     <TripsHome />
+    <TourismLanding />
   
 
   

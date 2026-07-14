@@ -55,6 +55,9 @@ import AdminDashboard from "./admin/pages/AdminDashboard";
 import Admin from "./admin/pages/Admin";
 import ContactMessages from "./admin/pages/ContactMessages";
 import Settings from "./admin/pages/Settings";
+import ForgotPassword from "./pages/ForgotPassword";
+import VerifyForgotOTP from "./pages/VerifyForgotOTP";
+import ResetPassword from "./pages/ResetPassword";
 
 
 const App = () => {
@@ -109,9 +112,12 @@ const App = () => {
             <Route path="/admin" element={<Admin />} />
             <Route path="/admin/dashboard" element={<AdminDashboard/>} />
             <Route path="/admin/trips" element={<AdminTrips />} />
-        <Route path="/admin/users" element={<Users />} />
-        <Route path="/admin/message" element={<ContactMessages />} />
-        <Route path="/admin/settings" element={<Settings />} />
+            <Route path="/admin/users" element={<Users />} />
+            <Route path="/admin/message" element={<ContactMessages />} />
+            <Route path="/admin/settings" element={<Settings />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/verify-forgot-otp" element={<VerifyForgotOTP />} />
+            <Route path="/reset-password" element={<ResetPassword />} />
             {/* <Route path="admin-trips" element={<AdminTrips />} />
             <Route path="/admin/users" element={<Users />} /> */}
 

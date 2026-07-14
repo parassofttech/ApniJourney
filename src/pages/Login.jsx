@@ -168,6 +168,14 @@ const Login = () => {
                   "
             />
           </div>
+          <div className="flex justify-start mt-2">
+  <Link
+    to="/forgot-password"
+    className="text-blue-600 text-sm hover:underline"
+  >
+    Forgot Password?
+  </Link>
+</div>
 
           <button
   type="submit"
