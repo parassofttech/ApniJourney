@@ -1,0 +1,14 @@
+# robots.txt for ApniJourney
+
+User-agent: *
+Allow: /
+
+# Block unnecessary folders (optional)
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://apnijourney.com/sitemap.xml
+
+# Host
+Host: https://apnijourney.com
