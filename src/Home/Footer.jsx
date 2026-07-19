@@ -41,7 +41,7 @@ const Footer = () => {
        
 
         <img src={FooterImg}
-        
+        alt="footer image"
         className="w-full h-full object-cover " />
 
 

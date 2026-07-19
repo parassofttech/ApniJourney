@@ -58,14 +58,16 @@ import Settings from "./admin/pages/Settings";
 import ForgotPassword from "./pages/ForgotPassword";
 import VerifyForgotOTP from "./pages/VerifyForgotOTP";
 import ResetPassword from "./pages/ResetPassword";
+import ScrollRestoration from "./ScrollRestoration";
 
 
 const App = () => {
   return (
     <div>
     <Router>
-      <ScrollToTop/>
-      <div className="flex flex-col h-screen">
+      {/* <ScrollToTop/> */}
+      <ScrollRestoration/>
+      <div className="flex flex-col ">
         {/* Main Content Area */}
         
         <Header/>
