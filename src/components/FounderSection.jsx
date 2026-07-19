@@ -81,7 +81,7 @@ const FounderSection = () => {
                   {initials}
                 </div>
                 <img
-                  src="/paras.jpg"
+                  src="/paras.webp"
                   alt={founderName}
                   className="relative z-10 w-full h-full object-cover transition-all duration-700"
                   onError={(e) => { e.target.style.opacity = 0; }}
