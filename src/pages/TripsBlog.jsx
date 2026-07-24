@@ -75,6 +75,20 @@ const TripsBlog = () => {
   const authConfig = token ? { headers: { Authorization: `Bearer ${token}` } } : {};
   const currentUser = JSON.parse(localStorage.getItem("user"));
 
+
+  const fallbackTrips = [
+    {
+      _id: "fallback-1",
+      name: "Aarav Sharma",
+      destination: "Manali, Himachal Pradesh",
+      description: "Breathtaking snow-capped peaks, serene pine forests, and cozy café hopping beside the Beas river. An absolute winter paradise!",
+      photos: ["https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80"],
+      likes: ["mock-user-1", "mock-user-2"],
+      startDate: "2026-06-15",
+    },
+    
+  ];
+
   const handleChange = (e, tripId) => {
     const { value } = e.target;
     setCommentText((prev) => ({
