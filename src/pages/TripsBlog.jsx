@@ -135,7 +135,7 @@ const TripsBlog = () => {
       // setTrips(Array.isArray(data) ? data : []);
     } catch (err) {
       console.log(err);
-      setError(err.response?.data?.message || "Failed to fetch trips");
+      setTrips(fallbackTrips);
     } finally {
       setLoading(false);
     }
