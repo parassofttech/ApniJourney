@@ -86,7 +86,24 @@ const TripsBlog = () => {
       likes: ["mock-user-1", "mock-user-2"],
       startDate: "2026-06-15",
     },
-    
+    {
+      _id: "fallback-2",
+      name: "Priya Menon",
+      destination: "Goa Beaches",
+      description: "Golden sands, vibrant night markets, Portuguese architecture, and unforgettable golden hour sunsets by Vagator beach.",
+      photos: ["https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80"],
+      likes: ["mock-user-3"],
+      startDate: "2026-06-20",
+    },
+    {
+      _id: "fallback-3",
+      name: "Vikram Rathore",
+      destination: "Leh-Ladakh",
+      description: "Majestic high-altitude mountain passes, crystal clear blue Pangong lake, and starry night camping under the Milky Way.",
+      photos: ["https://images.unsplash.com/photo-1581793745862-99ffe1c9fff0?auto=format&fit=crop&w=800&q=80"],
+      likes: ["mock-user-1", "mock-user-4", "mock-user-5"],
+      startDate: "2026-07-01",
+    }
   ];
 
   const handleChange = (e, tripId) => {
