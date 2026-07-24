@@ -37,14 +37,14 @@ const Jaipur = () => {
         {/* Content */}
         <div className="p-8">
           {/* Title */}
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="text-4xl font-extrabold text-center text-amber-800 mb-4"
           >
             🏰 Jaipur – The Pink City of Royal Heritage
-          </motion.h1>
+          </motion.h2>
 
           {/* Intro */}
           <motion.p

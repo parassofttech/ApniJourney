@@ -6,6 +6,7 @@ import Goa from "../PalceDetail/Goa";
 import Mumbai from "../PalceDetail/Mumbai";
 import Rameshwaram from "../PalceDetail/Rameshwaram";
 import Jaipur from "../PalceDetail/Jaipur";
+import Darjeeling from "../PalceDetail/Darjeeling";
 
 // Sample data — ideally ye data API se aayega
 const destinationData = {
@@ -25,7 +26,7 @@ const destinationData = {
     description:
 
     <div>
-        <IndiaGate/>
+        <Darjeeling/>
     </div>,
    
   },

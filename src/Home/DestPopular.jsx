@@ -5,6 +5,7 @@ import TajMahal from "../assets/images/tajmahal.webp"
 
 const destinations = [
   {
+    id:"taj-mahal",
     name: "Taj Mahal",
     state: "India",
     image: TajMahal,
@@ -18,6 +19,7 @@ const destinations = [
      </div>,
   },
   {
+    id:"manali",
     name: "Manali",
     state: "Himachal Pradesh",
     image:
@@ -32,6 +34,7 @@ const destinations = [
     </div>,
   },
   {
+    id:"ladakh",
     name: "Leh-Ladakh",
     state: "jammu & Kashmir",
     image:
@@ -50,6 +53,7 @@ const destinations = [
     </div>,
   },
   {
+    id:"jaipur",
     name: "Jaipur",
     state: "Rajasthan",
     image:
@@ -67,6 +71,7 @@ const destinations = [
     </div>,
   },
   {
+    id:"varanasi",
     name: "Varanasi",
     state: "Uttar Pradesh",
     image:
@@ -86,6 +91,7 @@ const destinations = [
     </div>,
   },
   {
+    id:"kerala",
     name: "Kerala",
     state: "Kerala",
     image:
@@ -103,6 +109,7 @@ const destinations = [
     </div>,
   },
   {
+    id:"udaipur",
     name: "Udaipur",
     state: "Rajasthan",
     image:
@@ -119,7 +126,8 @@ const destinations = [
     </div>,
   },
   {
-    name: "RiShiKesh & Haridwar",
+    id:"rishikesh",
+    name: "Rishikesh & Haridwar",
     state: "Uttarakhand",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhUEJYMzJ3a4Y74HPHE5fHcKK58Z6ZMJl8vDlE2UXwA4Up5gLrLSMZVB8&s=10",
@@ -136,6 +144,7 @@ const destinations = [
     </div>,
   },
    {
+    id:"goa",
     name: "Goa",
     state: "Goa",
     image:
@@ -154,6 +163,7 @@ const destinations = [
     </div>,
   },
   {
+    id:"andaman-islands",
     name: "Andaman & Nicobar ",
     state: "Andaman & Nicobar islands",
     image:

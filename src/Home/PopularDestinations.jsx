@@ -16,16 +16,14 @@ const destinations = [
     description:
       "The iconic white marble mausoleum, a symbol of love and a World Wonder.",
   },
-  {
-    id: 2,
-    name: "India Gate",
-    state: "Delhi",
-    category: "Monument",
-    image:
-      "https://i0.wp.com/indiatravel.com/wp-content/uploads/2021/12/New-Delhi-imghh.jpg?w=1000&ssl=1",
-    description:
-      "A majestic war memorial surrounded by lush gardens and history.",
-  },
+ {
+  id: 2,
+  name: "Darjeeling",
+  state: "West Bengal",
+  category: "Hill Station",
+  image: "https://hikerwolf.com/wp-content/uploads/2020/04/Darjeeling-toy-train-route.jpg",
+  description: "A picturesque hill station known for its stunning tea gardens, panoramic views of Kanchenjunga, and the historic Himalayan Railway."
+},
   {
     id: 3,
     name: "Goa Beaches",

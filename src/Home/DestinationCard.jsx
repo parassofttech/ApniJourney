@@ -1,11 +1,12 @@
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const DestinationCard = ({ destinations }) => {
   const [selectedDestination, setSelectedDestination] = useState(null);
   const sliderRef = useRef(null); 
-
+ const navigate = useNavigate()
   const scroll = (direction) => {
     const { current } = sliderRef;
     if (!current) return;
@@ -43,7 +44,9 @@ const DestinationCard = ({ destinations }) => {
             key={index}
             whileHover={{ scale: 1.05 }}
             className="relative min-w-[200px] sm:min-w-[300px] cursor-pointer rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition"
-            onClick={() => setSelectedDestination(destination)}
+            onClick={() =>
+                      navigate(`/destinations/${destination.id}`)
+                    }
           >
             <img
               src={destination.image}
