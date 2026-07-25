@@ -24,6 +24,7 @@ import MapView from "../Dashboard/MapView";
 import WeatherInfo from "../Dashboard/WeatherInfo";
 import PastTrips from "../Dashboard/PastTrips";
 import Footer from "../Home/Footer"
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
   const [trips, setTrips] = useState([]);
@@ -45,6 +46,10 @@ const Dashboard = () => {
 
     <div className="pt-[6px] mb-[10px] bg-gradient-to-b from-blue-400/30 via-green-400/30 to-blue-300/40 -z-10">
 
+     <Helmet>
+        <title>User Dashboard - ApniJourney</title>
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       {/* 🔥 Hero Section with Background Video */}
       <section className="relative w-full h-[40vh] md:h-[70vh] overflow-hidden">
 

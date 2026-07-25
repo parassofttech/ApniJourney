@@ -49,12 +49,12 @@ const Home = () => {
     <TripsHome />
     <TourismLanding />
   
-
+    <TravelBooking />
   
     <WildlifeSlider />
  
 
-    <TravelBooking />
+    
   
 
  

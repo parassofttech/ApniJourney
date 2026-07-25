@@ -7,6 +7,7 @@ import {
   User, Mail, Phone, MapPin, Calendar, Globe, AlignLeft, CheckCircle2 
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 const loggedInUser = localStorage.getItem("loggedInUser")
 
 const userEmail = localStorage.getItem("email")
@@ -64,6 +65,10 @@ localStorage.removeItem("isAdmin");
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-300/40 via-green-500/30 to-yellow-400/30 text-black transition-colors duration-500 pb-20 pt-9 md:pt-24 px-4">
+      <Helmet>
+        <title>User Profile - ApniJourney</title>
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <div className="max-w-6xl mx-auto">
         {/* --- Top Header Section --- */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">

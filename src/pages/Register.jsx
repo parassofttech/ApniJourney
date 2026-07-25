@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { handleError, handleSuccess } from '../utils'
+import { Helmet } from 'react-helmet-async'
 
 const Register = () => {
 
@@ -76,6 +77,11 @@ const Register = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-100 via-green-50 to-white px-4">
+     
+     <Helmet>
+        <title>User Register - ApniJourney</title>
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
 
       <div className="w-full max-w-md bg-white rounded-2xl p-8 shadow-[8px_8px_24px_rgba(66,68,90,0.35)]">
 

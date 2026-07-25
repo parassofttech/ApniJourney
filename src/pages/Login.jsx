@@ -7,6 +7,7 @@ import { auth, provider } from "../firebase";
 import { signInWithPopup } from "firebase/auth";
 import { handleError } from "../utils";
 import TripMateLogo   from '../assets/TripMate_app_logo.png'
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -92,6 +93,11 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-100 via-green-50 to-white flex flex-col items-center justify-center px-4">
+
+      <Helmet>
+        <title>Login - ApniJourney</title>
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
