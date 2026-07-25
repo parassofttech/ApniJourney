@@ -27,14 +27,14 @@ const Manali = () => {
         {/* HERO SECTION */}
         <div className="relative h-[500px] overflow-hidden group">
           <motion.img
-            src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQyXzRVsuzbC9aPqM93sZJ1Z2zxV5N8W7cDAnnDOvqgXAEwrvGnAPeaLRvlPjKUCX4l47JdudsWtr72WpB-UkZcC7M&s=19"
+            src="https://miro.medium.com/v2/resize:fit:1400/1*hUPBsSyh_jT3O9LbrPNhBA.jpeg"
             alt="Manali Hills"
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 2 }}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-black/40" />
+          
 
           <div className="absolute bottom-10 left-10 text-white">
             <h1 className="text-6xl md:text-8xl font-black italic drop-shadow-2xl">
@@ -49,7 +49,7 @@ const Manali = () => {
         <div className="p-3 md:p-2 -mt-16 relative z-10 bg-white rounded-t-[3rem]">
 
           {/* ABOUT SECTION */}
-          <section className="mb-24 md:p-16 text-center">
+          <section className="mb-2 md:p-16 text-center">
             <h2 className="text-4xl font-black text-green-900 italic mb-8">
               About The Destination
             </h2>
@@ -61,7 +61,7 @@ const Manali = () => {
           </section>
 
           {/* Introduction */}
-<section className="relative max-w-6xl mx-auto  md:px-6 py-16 selection:bg-sky-500 selection:text-white">
+<section className="relative max-w-6xl mx-auto  md:px-6  selection:bg-sky-500 selection:text-white">
 
   {/* Advanced Radial Background Glows (Alpine Theme) */}
   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -190,10 +190,10 @@ const Manali = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
               {[
-                "https://lh3.googleusercontent.com/gps-cs-s/AHVAwer0YcZTsX9AcNInXvW7kSRqM3s0NxsO3bsDASKbfULHSTd1VbeM0eycnXRY0Q7DeGgxxHyebSOzw0ZeKtAP3qwdrGN0HUI6Ol31dtpMqoAcVoN0fMj-BhANCP9A-hgQeqZoSo2c=w675-h390-n-k-no",
-                "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepFVBHZuCqRj99KFQxIQfYycUvCTBtdlcUb5QX2bGhppowus-oehtBIzQ66V3mylTnLqK3ypAxB-s14r9M-tqAJM0MK7AmbiPk0MZW-EeUdumqfGvGwT76TKguIvSW8aiwAhT8=w675-h390-n-k-no",
-                "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRPlS89pBrLwhqgpntjCNFRUfYvLGSwFJw0GVA4xJ-q7cDQkKGlCc7nVBwIZOpPJZolHrg1EhSP24wb7jFlR3uk3iI&s=19",
-                "https://lh3.googleusercontent.com/gps-cs-s/AHVAweraUXkV7Ad9ggpDHpL3x7IScKuu9bqfAIoJzqNOvbhVFn4_At06EqfJ8Qnh6Gmh-wtRKkKw3CmmZF4IRwwR73FU-LVsKWAPWl7pqAKfyM52uxZWqgq76snkK2NGsOKeAAOJ7E1_=w675-h390-n-k-no",
+                "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQyXzRVsuzbC9aPqM93sZJ1Z2zxV5N8W7cDAnnDOvqgXAEwrvGnAPeaLRvlPjKUCX4l47JdudsWtr72WpB-UkZcC7M&s=19",
+                "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnKeWPsLbcnv9IeoYK9rzM04xl3e6Y41TLz9_DY1xWIlw9kBbIQ6ByT4xA8k1Pix4a5uNYu-3KItRhkdsH-nZV7UC5Aas1K-qbApiWKOBSzQ1FGDMvCYO0-cKlLpGDCM3BLQVCY=w675-h390-n-k-no",
+                "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRmM94y_mpp91HxOsmvevmXb1uVJiJcvRBiSGaVpDW2lvMI6LNF15hwKcK7NSv8bWNzrlhBmVrg_8W7-PD_iYhwV40&s=19",
+                "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlAV4B8yaOiaUkfTHYjgq4vMkgvam-AmPrZQTuO6am59wNn5MGweMr5vg1uDSOFtMWVnv5tJh2w8EtZEm0qb8g0o_TnrCEejKWrCOOuCT1EUvgDlt9sLfNXINS48M_fDZVeLut3=w675-h390-n-k-no",
                 "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTECfLF3SfvdVWteW23gC5ZYgaU_qSI97NBKvb466TH5LOxmoHny1K5zbcXuv-MeN2ZZmZ4pVE8MAMSC_16MqEX-EE&s=19",
                 "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQlmJeaLOiVRItXiOXLcN9nkMyKQ01g11uB0ZCAtO4ymG-luzZ2YfXHbkPFEovD5PubZJ4btRWiMS8WndIU87w47Gw&s=19"
               ].map((img, i) => (
