@@ -59,6 +59,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import VerifyForgotOTP from "./pages/VerifyForgotOTP";
 import ResetPassword from "./pages/ResetPassword";
 import ScrollRestoration from "./ScrollRestoration";
+import Error404 from "./pages/Error404";
 
 
 const App = () => {
@@ -120,6 +121,9 @@ const App = () => {
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/verify-forgot-otp" element={<VerifyForgotOTP />} />
             <Route path="/reset-password" element={<ResetPassword />} />
+
+            <Route path="*" element={<Error404 />} />
+
             {/* <Route path="admin-trips" element={<AdminTrips />} />
             <Route path="/admin/users" element={<Users />} /> */}
 
