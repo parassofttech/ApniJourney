@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Contact, GalleryHorizontal, Menu, Plus, X, 
@@ -14,6 +14,10 @@ import { Contact, GalleryHorizontal, Menu, Plus, X,
   Phone,
   Shield,
   LogOut,
+  ChevronDown,
+  BookOpen,
+  PlusCircleIcon,
+  GalleryVertical
 } from "lucide-react";
 import ApniJourneyLogo   from '../assets/images/logo.png'
 
@@ -64,6 +68,20 @@ const Header = () => {
     navigate("/login");
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <motion.nav
       initial={{ y: -50, opacity: 0 }}
@@ -88,7 +106,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex  md:space-x-4 lg:space-x-3 items-center">
+        <div className="hidden lg:flex ml-8 md:space-x-4 lg:space-x-3 items-center">
           <Link
             to="/"
             className="relative text-gray-700 font-medium transition duration-300 
@@ -151,26 +169,63 @@ const Header = () => {
              hover:after:w-full"              >
                 Weather Page
               </Link> */}
+         <div className="relative" ref={dropdownRef}>
+    {/* Trips Main Toggle Button */}
+    <button
+      onClick={() => setIsOpen(!isOpen)}
+      className="flex items-center gap-1.5 text-gray-700 font-medium transition duration-300 hover:text-blue-600 relative py-2 group"
+    >
+      <span>Trips</span>
+      <ChevronDown
+        size={16}
+        className={`transition-transform duration-300 ${isOpen ? "rotate-180 text-blue-600" : ""}`}
+      />
+      <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full" />
+    </button>
+
+    {/* Dropdown Menu Box */}
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: 8, scale: 0.96 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 8, scale: 0.96 }}
+          transition={{ duration: 0.15 }}
+          className="absolute left-0 top-full mt-1 w-52 bg-white rounded-2xl shadow-xl border border-gray-100 py-2 z-50 overflow-hidden"
+        >
+          
+
           <Link
             to="/add-trip"
-            className="relative text-gray-700 font-medium transition duration-300 
-            hover:text-blue-600 
-             after:content-[''] after:absolute after:left-0 after:-bottom-1 
-             after:w-0 after:h-[2px] after:bg-blue-600 
-             after:transition-all after:duration-300 
-             hover:after:w-full"          >
-            Add Trip
+            onClick={() => setIsOpen(false)}
+            className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+          >
+            <PlusCircleIcon size={16} className="text-blue-500 shrink-0" />
+            <span className="font-medium">Add Trip</span>
           </Link>
+
+          <Link
+            to="/trips-blog"
+            onClick={() => setIsOpen(false)}
+            className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+          >
+            <BookOpen size={16} className="text-blue-500 shrink-0" />
+            <span className="font-medium">Trips Blog</span>
+          </Link>
+
           <Link
             to="/photos"
-            className="relative text-gray-700 font-medium transition duration-300 
-            hover:text-blue-600 
-             after:content-[''] after:absolute after:left-0 after:-bottom-1 
-             after:w-0 after:h-[2px] after:bg-blue-600 
-             after:transition-all after:duration-300 
-             hover:after:w-full"          >
-            Photos
+            onClick={() => setIsOpen(false)}
+            className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition"
+          >
+            <GalleryHorizontal size={16} className="text-blue-500 shrink-0" />
+            <span className="font-medium">Photos</span>
           </Link>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  </div>
+          
           <Link
                 to="/about"
                 onClick={() => setMenuOpen(false)}
@@ -379,13 +434,20 @@ const Header = () => {
 >
   <Trees size={18} /> National Parks
 </Link>
-
 <Link
   to="/weatherpage"
   onClick={() => setMenuOpen(false)}
   className="flex items-center gap-2 text-gray-700 hover:text-blue-600 font-medium transition"
 >
   <CloudSun size={18} /> Weather Page
+</Link>
+
+<Link
+  to="/trips-blog"
+  onClick={() => setMenuOpen(false)}
+  className="flex items-center gap-2 text-gray-700 hover:text-blue-600 font-medium transition"
+>
+  <CloudSun size={18} /> Trips Blog
 </Link>
 
 <Link
