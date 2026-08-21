@@ -5,13 +5,28 @@ const foodData = [
     slug: "andhra-pradesh",
     capital: "Amaravati",
     dish: "Pulihora",
-    type: "Vegetarianetarian",
-    calories: "350 kcal",
-    bestPlace: "Local Temples & Homes",
-    ingredients: ["Rice", "Tamarind", "Peanuts", "Curry leaves"],
-    images: ["https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/pulihora.jpg"],
-    description: "Pulihora is a tangy tamarind rice dish popular in Andhra Pradesh.",
-    history: "Traditionally prepared during festivals and temple offerings."
+    type: "Vegetarian",
+    calories: "350 kcal per serving",
+    bestPlace: "Local Temples (like Tirupati Balaji) & Traditional Andhra Homes",
+    ingredients: [
+      "Sona Masuri Rice", 
+      "Fresh Tamarind Extract", 
+      "Raw Peanuts & Cashews", 
+      "Curry Leaves", 
+      "Green & Red Chilies", 
+      "Mustard Seeds & Chana Dal", 
+      "Asafoetida (Hing)", 
+      "Turmeric Powder", 
+      "Sesame Oil / Pure Ghee"
+    ],
+    images: [
+      "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/pulihora.jpg"
+    ],
+    description: "Pulihora, universally known as Andhra Tamarind Rice, is an iconic culinary masterpiece of South India. It is a harmonious and vibrant symphony of sour, spicy, salty, and nutty flavors. Prepared essentially with freshly cooked rice infused with a thick, aromatic tamarind paste, tempering (tadka) of crispy lentils, crunchy peanuts, fragrant curry leaves, and a generous hint of spicy green chilies, Pulihora holds a foundational place in Telugu culinary culture.",
+    history: "The history of Pulihora dates back over a thousand years, deeply rooted in ancient temple traditions and royal dynastic kitchens of the Telugu region, including the Satavahanas, Kakatiyas, and the Vijayanagara Empire. Historically, before refrigeration, tamarind served as a natural preservative, allowing cooked rice mixed with tamarind and oil to stay fresh for long journeys or temple pilgrimages. Ancient temple epigraphs and scriptures describe 'Chithrannam' (tamarind rice) being offered as 'Naivedyam' to deities. Even today, at world-famous shrines like the Tirumala Venkateswara Temple, Pulihora is prepared on a massive scale as a sacred prasadam, maintaining recipes handed down through generations of temple cooks.",
+    culturalSignificance: "Pulihora is much more than just a comforting meal; it is an emotional and cultural anchor for people from Andhra Pradesh and Telangana. No major festival—be it Ugadi (Telugu New Year), Varalakshmi Vratam, Sankranti, or Deepawali—is complete without the preparation of Pulihora. It is traditionally the first item cooked during auspicious ceremonies, housewarmings, and family get-togethers. Furthermore, in traditional Telugu households, Pulihora is packed for long-distance train journeys, picnics, and road trips because its shelf life improves over a few hours as the rice absorbs the deep flavors of the spices and tamarind.",
+    nutritionalBreakdown: "A standard 200-gram serving of Pulihora contains approximately 350 kilocalories. Carbohydrates are provided mainly by the rice, supplying instant energy. Fats are sourced from pure sesame oil or groundnut oil, along with healthy monounsaturated fats from peanuts and cashews, which support heart health. Proteins are supplemented by roasted chana dal, urad dal, and peanuts. Tamarind is rich in antioxidants, tartaric acid, and vitamin C, aiding digestion and boosting immunity, while turmeric acts as a powerful natural anti-inflammatory agent.",
+    detailedRecipeAndTips: "To prepare authentic Andhra Pulihora, follow these steps: 1. Rice Preparation: Cook Sona Masuri rice so that the grains remain separate and firm. Spread it wide on a large plate to cool down completely. 2. Extracting Tamarind Juice: Soak a lemon-sized ball of quality tamarind in warm water, extract a thick pulp, and strain out impurities. 3. The Pulihora Paste: Heat sesame oil in a heavy-bottomed pan, splutter mustard seeds, cumin seeds, split chana dal, urad dal, and add a handful of raw peanuts and broken cashews. Sauté until golden. 4. Infusing Flavors: Add sliced green chilies, dry red chilies, fresh curry leaves, a pinch of asafoetida, and turmeric powder. Pour in the tamarind extract and simmer until the oil separates. 5. Mixing: Gently fold this spiced paste into the cooled rice with salt. Let it rest for 30-45 minutes before serving for best flavors."
   },
 
   {
@@ -20,12 +35,24 @@ const foodData = [
     capital: "Itanagar",
     dish: "Thukpa",
     type: "Non-Vegetarian",
-    calories: "400 kcal",
-    bestPlace: "Local Monastery Kitchens",
-    ingredients: ["Noodles", "Vegetarianetables", "Chicken", "Spices"],
-    images: ["https://nishkitchen.com/wp-content/uploads/2024/08/Thukpa-3-500x500.jpg"],
-    description: "Thukpa is a noodle soup enjoyed in the cold regions.",
-    history: "Influenced by Tibetan cuisine."
+    calories: "400 kcal per serving",
+    bestPlace: "Local Monastery Kitchens & Tawang Local Eateries",
+    ingredients: [
+      "Fresh Noodles", 
+      "Assorted Vegetables (Cabbage, Carrots, Beans)", 
+      "Chicken Pieces", 
+      "Ginger, Garlic & Spring Onions", 
+      "Tibetan Spices & Sichuan Pepper", 
+      "Soy Sauce & Clear Broth"
+    ],
+    images: [
+      "https://nishkitchen.com/wp-content/uploads/2024/08/Thukpa-3-500x500.jpg"
+    ],
+    description: "Thukpa is a deeply comforting, piping-hot noodle soup that holds a special place in the hearts and kitchens of Arunachal Pradesh, especially in the chilly mountainous regions like Tawang and West Kameng. It features soft noodles immersed in a rich, aromatic, and spiced bone or vegetable broth, tossed with tender pieces of chicken and fresh mountain vegetables. Every spoonful delivers a warming blend of ginger, garlic, and subtle Himalayan herbs.",
+    history: "The origins of Thukpa are deeply intertwined with Tibetan and Himalayan Buddhist culture, having traveled across high-altitude trade routes into the North-Eastern frontiers of India. Historically, nomadic communities and monks relied on Thukpa as a complete, single-bowl meal to generate instant body heat and combat the severe sub-zero temperatures of the Himalayas. Over centuries, local tribal communities in Arunachal Pradesh adopted this recipe, blending it with indigenous herbs and regional cooking techniques.",
+    culturalSignificance: "In Arunachal Pradesh, Thukpa is more than just comfort food; it is a symbol of warmth, hospitality, and community bonding. It is frequently prepared during local festivals like Losar (Tibetan New Year), community gatherings, and bitter winter evenings. Serving a steaming bowl of Thukpa to guests is considered a gesture of deep respect and care, welcoming them from the harsh mountain cold into the warmth of a traditional home.",
+    nutritionalBreakdown: "A standard 350-gram bowl of Thukpa contains approximately 400 kilocalories. Carbohydrates from the noodles provide steady, sustained energy for high-altitude living. Lean protein from chicken helps in muscle recovery and tissue maintenance. The clear broth provides essential hydration and electrolytes, while fresh ginger and garlic offer powerful antimicrobial properties, boosting immunity and improving blood circulation in cold weather.",
+    detailedRecipeAndTips: "To prepare authentic Arunachal-style Thukpa, follow these steps: 1. Broth Preparation: Simmer chicken bones or vegetable scraps with crushed ginger, garlic, and onions for over an hour to build a deep, flavorful clear stock. Strain the broth. 2. Sautéing Ingredients: In a wok, heat a little oil, sauté chopped garlic, ginger, green chilies, and add sliced vegetables and chicken pieces until partially cooked. 3. Combining: Pour the prepared clear stock into the wok, add soy sauce, salt, and Tibetan spices, and let it simmer until the chicken is completely tender. 4. Adding Noodles: Boil noodles separately until al dente, rinse with cold water to stop cooking, and divide them into serving bowls. 5. Assembly: Ladle the piping-hot, spiced chicken and vegetable broth directly over the noodles, garnish generously with chopped spring onions and fresh coriander, and serve hot."
   },
 
   {
@@ -33,13 +60,26 @@ const foodData = [
     slug: "assam",
     capital: "Dispur",
     dish: "Masor Tenga",
-    type: "Non-Vegetarian",
-    calories: "300 kcal",
-    bestPlace: "Traditional Assamese Homes",
-    ingredients: ["Fish", "Tomato", "Lemon", "Mustard oil"],
-    images: ["https://static.toiimg.com/thumb/60448103.cms?imgsize=2641337&width=800&height=800"],
-    description: "Masor Tenga is a tangy fish curry from Assam.",
-    history: "A staple food in Assamese households."
+    type: "Non-Vergetarian",
+    calories: "300 kcal per serving",
+    bestPlace: "Traditional Assamese Homes & Local Eateries across Guwahati",
+    ingredients: [
+      "Fresh River Fish (Rohu or Labeo)", 
+      "Ripe Tomatoes", 
+      "Elephant Apple (Ou Tenga) or Lemon/Kaji Nemu", 
+      "Mustard Oil", 
+      "Turmeric Powder", 
+      "Panch Phoron (Assamese spice mix)", 
+      "Fresh Coriander Leaves"
+    ],
+    images: [
+      "https://static.toiimg.com/thumb/60448103.cms?imgsize=2641337&width=800&height=800"
+    ],
+    description: "Masor Tenga is an iconic, light, and refreshing tangy fish curry that defines the culinary identity of Assam. The word 'Tenga' translates to sour in Assamese. Unlike heavy, spice-laden Indian curries, Masor Tenga uses natural souring agents like elephant apple (ou tenga), tomatoes, kaji nemu (Assamese lemon), or dried mangosteen to create a distinctively zesty, translucent broth that pairs harmoniously with steamed white rice.",
+    history: "The tradition of cooking Masor Tenga dates back centuries, rooted in the fertile Brahmaputra river valley where fresh fish is abundant. Historically, indigenous Assamese communities discovered various souring agents available in their lush local flora to preserve food and aid digestion in Assam's humid, tropical climate. Over generations, this dish evolved from a simple tribal preparation into a mandatory centerpiece of daily Assamese household meals and festive feasts like Bihu.",
+    culturalSignificance: "In Assamese culture, a traditional meal is considered incomplete without a bowl of Tenga. It is typically served at the end of a multi-course lunch or dinner to cleanse the palate and aid digestion. During Rongali Bihu and other major regional celebrations, preparing a flavorful Masor Tenga for visiting family and guests is a symbol of warmth, cultural pride, and traditional hospitality.",
+    nutritionalBreakdown: "A standard 250-gram serving of Masor Tenga contains approximately 300 kilocalories. River fish provides high-quality lean protein and essential Omega-3 fatty acids, which promote heart and brain health. Mustard oil contains healthy monounsaturated fats. Natural souring agents like tomatoes and Kaji Nemu are rich in Vitamin C and antioxidants, while turmeric acts as a potent anti-inflammatory agent, making this dish exceptionally light on the stomach.",
+    detailedRecipeAndTips: "To prepare authentic Assamese Masor Tenga, follow these steps: 1. Fish Preparation: Clean fresh river fish pieces, rub them with turmeric powder and salt, and lightly shallow-fry them in mustard oil until golden; set them aside. 2. Tempering: In the same mustard oil, splutter a pinch of 'Panch Phoron' and dried red chilies. 3. Souring Base: Add chopped tomatoes and your choice of souring agent (such as mashed elephant apple or tender sorrel leaves) along with turmeric and salt. Sauté until soft. 4. Simmering Broth: Pour in required water to create a light, soupy broth and let it boil thoroughly until the sour flavors infuse the liquid. 5. Final Assembly: Gently drop the fried fish pieces into the boiling tangy broth, simmer for 3-4 minutes, garnish with fresh coriander or a squeeze of Kaji Nemu juice, and serve piping hot with steamed rice."
   },
 
   {
