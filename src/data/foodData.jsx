@@ -658,42 +658,78 @@ const foodData = [
     state: "Uttar Pradesh",
     slug: "uttar-pradesh",
     capital: "Lucknow",
-    dish: "Tunday Kababi",
+    dish: "Lucknowi Galouti Kebab",
     type: "Non-Vegetarian",
-    calories: "350 kcal",
-    bestPlace: "Tunday Kababi, Lucknow",
-    ingredients: ["Minced meat", "Spices"],
-    images: ["https://b.zmtcdn.com/data/pictures/chains/1/801511/52e9803a79161bac614b90c455952d36.jpg"],
-    description: "Famous Awadhi kebab.",
-    history: "Created for a Nawab."
+    calories: "380 kcal per serving",
+    bestPlace: "Tunday Kababi (Chowk, Aminabad), Royal Awadhi Dastarkhans across Lucknow",
+    ingredients: [
+      "Finely minced Mutton (Lamb)", 
+      "Raw Papaya paste (Natural tenderizer)", 
+      "Roast Gram Flour (Besan) & Roasted Cashew nut paste", 
+      "Ghee / Clarified Butter", 
+      "Authentic Awadhi Potli Masala (Nutmeg, Mace, Green Cardamom, Cloves, Cinnamon)", 
+      "Saffron infused in warm milk & Kewra water", 
+      "Served with Ulte Taware ki Roti and Mint Chutney"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Galouti_kebab.jpg"
+    ],
+    description: "Lucknowi Galouti Kebab is a legendary culinary marvel of Awadhi cuisine, world-renowned for its melt-in-the-mouth texture. Finely minced mutton, marinated with raw papaya paste and a complex blend of over 20 exotic aromatic spices ('Potli Masala'), is formed into delicate patties and shallow-fried in pure desi ghee until it literally dissolves on your tongue. Paired with soft, paper-thin 'Ulte Taware ki Roti', it offers an unforgettable royal experience.",
+    history: "The creation of Galouti Kebab is a fascinating royal tale from 18th-century Awadh. It was originally crafted for the aging Nawab Wajid Ali Shah, who had lost his teeth but still possessed an undying love for rich meat dishes. He challenged his royal Khansamas to create a meat kebab so soft that even someone without teeth could enjoy it. The master chefs perfected this velvety masterpiece using raw papaya as a natural meat tenderizer and a secret blend of royal spices.",
+    culturalSignificance: "In Uttar Pradesh, especially within the cultural heartland of Lucknow, Galouti Kebabs represent the pinnacle of Nawabi sophistication, refined hospitality ('Tehzeeb'), and culinary heritage. Preparing these delicate kebabs requires consummate skill and patience, making them the star centerpiece of grand weddings, festive celebrations, and traditional Dastarkhans.",
+    nutritionalBreakdown: "A standard serving (4-5 pieces) contains approximately 380 kilocalories. Minced mutton supplies dense high-grade protein and iron, while cashew paste and pure desi ghee provide rich fats that deliver sustained energy. Because the meat is pre-tenderized with papaya enzymes, it is exceptionally easy to digest.",
+    detailedRecipeAndTips: "To prepare authentic Lucknowi Galouti Kebabs at home, follow these steps: 1. Fine Mincing: Finely mince boneless mutton multiple times until it has a paste-like, smooth texture. 2. Marination: Mix the mutton mince thoroughly with raw papaya paste (crucial for melting texture), ginger-garlic paste, roasted cashew paste, and roasted gram flour. 3. Potli Masala: Grind whole aromatic spices (nutmeg, mace, green cardamom, cloves, cinnamon, and black pepper) into a fine powder and mix into the meat. Cover and refrigerate for at least 4 hours. 4. Shaping: Gently shape small portions of the delicate mixture into flat, round patties using greased palms. 5. Shallow Frying: Heat pure desi ghee on a heavy flat griddle (tawa) on medium heat, place the kebabs gently, and shallow-fry until golden-brown and crisp on both sides, serving hot with Ulte Taware ki Roti."
   },
 
-  {
+ {
     state: "Uttarakhand",
     slug: "uttarakhand",
-    capital: "Dehradun",
+    capital: "Dehradun (Winter) / Bhararisain (Summer)",
     dish: "Kafuli",
     type: "Vegetarian",
-    calories: "250 kcal",
-    bestPlace: "Local Garhwali Homes",
-    ingredients: ["Spinach", "Fenugreek"],
-    images: ["https://images.archanaskitchen.com/images/recipes/indian/main-course/north-indian-vegetarian-recipes/sabzi-recipes/Uttaranchal_Style_Garwhali_Kafuli_Recipe_Spinach_Curry_9378_675c6867d2.jpg"],
-    description: "Green leafy curry.",
-    history: "Garhwali traditional dish."
+    calories: "210 kcal per serving",
+    bestPlace: "Traditional Pahadi Dhabas & Homestays across Dehradun, Nainital & Almora",
+    ingredients: [
+      "Spinach (Palak) and Fenugreek Leaves (Methi)", 
+      "Rice flour or Wheat flour (as a thickener)", 
+      "Ginger, Garlic, Green Chilies, and Cumin Seeds", 
+      "Pure Mustard Oil (Sarson ka Tel)", 
+      "Curd or Buttermilk (Chhaas) for slight tanginess"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/e/ea/Kafuli_Uttarakhand_dish.jpg"
+    ],
+    description: "Kafuli is a nutrient-dense, soulful, and signature dish of Kumaoni and Garhwali cuisine in Uttarakhand. It is a thick, dark-green gravy prepared by slow-cooking spinach and fenugreek leaves in an iron kadhai, thickened with a smooth rice flour slurry and enriched with curd. Tempered simply with garlic, ginger, and cumin in pungent mustard oil, Kafuli offers a deeply comforting, earthy, and mildly tangy flavor profile that pairs wonderfully with steamed mountain rice.",
+    history: "The origins of Kafuli are rooted deeply in the ancient agricultural traditions of the Himalayan hills. Historically, winter green vegetables like spinach and fenugreek grew in abundance across terraced mountain fields. Cooking them slowly in heavy iron pots allowed rural families to extract maximum iron, warmth, and essential nutrition to combat harsh mountain winters, preserving a time-tested recipe handed down across generations.",
+    culturalSignificance: "In Uttarakhand, Kafuli represents the pure, unpretentious essence of Pahadi hospitality and healthy living. It is a staple dish during traditional festivals like Harela and family gatherings. Serving a warm bowl of Kafuli with rice reflects the grounded, nature-connected lifestyle of the mountain people.",
+    nutritionalBreakdown: "A standard 250-gram serving of Kafuli contains approximately 210 kilocalories. Because it is packed with dark leafy greens like spinach and fenugreek cooked in iron vessels, it is an exceptional source of dietary iron, calcium, vitamins A and C, and fiber. The addition of curd and rice flour provides a balanced dose of protein and complex carbohydrates with minimal fat.",
+    detailedRecipeAndTips: "To prepare authentic Uttarakhand-style Kafuli at home, follow these steps: 1. Blanching Greens: Thoroughly wash spinach and fenugreek leaves, blanch them briefly in hot water, and grind them into a smooth green puree. 2. Cooking Base: Heat pure mustard oil in a traditional iron kadhai, splutter cumin seeds, and add crushed garlic, ginger, and green chilies. 3. Simmering: Pour the green puree into the tempering, add water, and let it simmer on low heat. 4. Thickening Slurry: Stir in a smooth paste of rice flour (or wheat flour) mixed with a little water, along with a dash of curd or buttermilk to achieve a velvety, thick gravy. 5. Finishing: Simmer for 10-15 minutes until all flavors meld together, and serve piping hot with steamed rice."
   },
 
   {
     state: "West Bengal",
-    slug: "west-bengal",
+    slug: "west-Bengal",
     capital: "Kolkata",
-    dish: "Rasgulla",
-    type: "Sweet",
-    calories: "150 kcal",
-    bestPlace: "K.C. Das, Kolkata",
-    ingredients: ["Chenna", "Sugar syrup"],
-    images: ["https://glutenfreeindian.com/wp-content/uploads/2019/10/shutterstock_1182461014-1.jpg"],
-    description: "Spongy sweet dessert.",
-    history: "Invented in 19th century."
+    dish: "Shorshe Ilish",
+    type: "Non-Vegetarian",
+    calories: "420 kcal per serving",
+    bestPlace: "Oh! Calcutta, Ballygunge Phuchka Stalls, and Traditional Bengali Households across Kolkata",
+    ingredients: [
+      "Ilish (Hilsa Fish fillets)", 
+      "Black and Yellow Mustard Seeds (Shorshe)", 
+      "Green Chilies & Turmeric Powder", 
+      "Pungent Mustard Oil (Mustard oil is essential for authentic flavor)", 
+      "Nigella Seeds (Kalonji) for tempering", 
+      "Salt to taste"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/4/4b/Shorshe_Ilish.jpg"
+    ],
+    description: "Shorshe Ilish is the undisputed monarch of Bengali cuisine, a majestic dish that celebrates the legendary Hilsa fish cooked in a sharp, pungent, and aromatic mustard gravy. Tender, oil-rich Ilish fillets are simmered in a smooth paste of ground mustard seeds, green chilies, and turmeric, tempered with nigella seeds in pure mustard oil. The result is a magnificent interplay of the fish's natural buttery richness and the fiery, nasal-clearing kick of mustard.",
+    history: "The history of Shorshe Ilish is deeply tied to the rivers of Bengal, particularly the Padma and Hooghly rivers where the migratory Hilsa fish ascends during the monsoon season. For centuries, Bengali poets, royalty, and common folk alike have revered the Hilsa as the 'Queen of Fish'. Mustard paste was traditionally adopted as the ideal culinary companion to cut through the rich, oily texture of the fish, creating a timeless pairing passed down through generations.",
+    culturalSignificance: "In Bengali culture, Shorshe Ilish is far more than a meal; it is a profound cultural ritual and a symbol of monsoon festivity, homecoming, and elite culinary pride. Traditionally, the arrival of the first monsoon Hilsa sparks grand celebrations across households and markets. Serving Shorshe Ilish with steaming white rice represents the pinnacle of Bengali hospitality and heritage.",
+    nutritionalBreakdown: "A standard 300-gram serving of Shorshe Ilish contains approximately 420 kilocalories. Hilsa fish is exceptionally rich in heart-healthy Omega-3 fatty acids, high-grade animal protein, and essential vitamins that promote cardiovascular health and brain function. Mustard seeds and mustard oil add beneficial antioxidants and stimulate healthy digestion.",
+    detailedRecipeAndTips: "To prepare authentic Bengali-style Shorshe Ilish at home, follow these steps: 1. Preparing Fish: Clean Hilsa fish steaks or fillets gently, rub with a pinch of turmeric powder and salt, and set aside. 2. Mustard Paste: Soak yellow and black mustard seeds along with a few green chilies and a pinch of salt in warm water for 20 minutes, then grind them into a smooth, fine paste (adding salt during grinding prevents the mustard from turning bitter). 3. Tempering: Heat pure mustard oil in a pan until smoking point, then lower the heat and splutter nigella seeds (kalonji) and slit green chilies. 4. Simmering: Pour the mustard paste along with turmeric and water into the pan, bringing it to a gentle simmer. 5. Cooking Fish: Carefully slide the raw Hilsa fillets into the simmering gravy, cover the pan, and cook on medium-low heat for 8 to 10 minutes until the fish is tender and infused with the pungent mustard flavors, serving hot over fragrant white rice."
   }
 
 ];
