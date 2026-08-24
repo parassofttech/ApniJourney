@@ -327,12 +327,24 @@ const foodData = [
     capital: "Bhopal",
     dish: "Poha Jalebi",
     type: "Vegetarian",
-    calories: "350 kcal",
-    bestPlace: "Indore Sarafa Bazaar",
-    ingredients: ["Flattened rice", "Turmeric"],
-    images: ["https://www.cuisineindiasociety.in/wp/wp-content/uploads/2025/05/Untitled-1.jpg"],
-    description: "Famous breakfast combo.",
-    history: "Central India specialty."
+    calories: "350 kcal per serving",
+    bestPlace: "Sarafa Bazaar (Indore) & Street Vendors across Bhopal & Gwalior",
+    ingredients: [
+      "Flattened Rice (Poha)", 
+      "Fennel Seeds (Saunf) & Mustard Seeds", 
+      "Green Chilies, Turmeric & Curry Leaves", 
+      "Sev (Crispy Chickpea Noodles) & Pomegranate Arils for garnishing", 
+      "Fermented Maida Batter for Jalebi", 
+      "Saffron-infused Sugar Syrup"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Poha_Jalebi_Indore.jpg"
+    ],
+    description: "Poha Jalebi is the undisputed king of breakfast in Madhya Pradesh, legendary for its unique and delightful sweet-and-spicy flavor combination. Steamed, soft, and lightly spiced flattened rice (poha) tossed with fennel seeds and turmeric is topped with crunchy sev, fresh coriander, and pomegranate. It is served side-by-side with piping-hot, crispy, saffron-infused spiral jalebis, creating a match made in culinary heaven that balances savory warmth with sugary crunch.",
+    history: "The tradition of eating Poha Jalebi dates back over a century, heavily influenced by the culinary heritage of the Maratha Holkar rulers in Indore. Historically, poha was adopted as a staple because it is lightweight, quick to digest, and requires minimal cooking time during busy mornings. Over generations, pairing it with freshly fried hot jalebis became an iconic street food tradition, particularly celebrated in Indore's famous night markets like Sarafa Bazaar.",
+    culturalSignificance: "In Madhya Pradesh, Poha Jalebi is more than just breakfast—it is a cultural emotion and a daily ritual. Families, college students, and working professionals gather at bustling local tea stalls every morning to enjoy this duo while reading newspapers or chatting. Serving Poha Jalebi is a reflection of the state's warm, vibrant, and unpretentious street food culture.",
+    nutritionalBreakdown: "A standard plate of Poha Jalebi contains approximately 350 kilocalories. Poha is easily digestible, light on the stomach, rich in iron, and acts as a great source of healthy carbohydrates for morning energy. Though jalebis add a rush of simple sugars, the overall meal provides a quick energy boost, making it ideal for starting an active day.",
+    detailedRecipeAndTips: "To prepare authentic MP-style Poha Jalebi at home, follow these steps: 1. Washing Poha: Rinse flattened rice gently in a colander under running water just until soft, then drain completely and mix with turmeric powder and salt so it absorbs the bright yellow hue. 2. Tempering: Heat oil in a pan, splutter mustard seeds, cumin seeds, fennel seeds (crucial for the authentic Indore flavor), curry leaves, and green chilies. Add chopped onions if desired and sauté until translucent. 3. Steaming Poha: Toss the soaked poha into the tempering, cover with a lid, and let it steam on low heat for 3 to 4 minutes until warm and fluffy. 4. Jalebi Preparation: Pipe fermented flour batter in concentric circular spirals into hot ghee or oil, fry until crisp, and immediately soak them in warm saffron-infused sugar syrup. 5. Serving: Plate the hot poha, garnish generously with fine sev and pomegranate seeds, and serve alongside the crispy hot jalebis."
   },
 
   {
@@ -341,26 +353,49 @@ const foodData = [
     capital: "Mumbai",
     dish: "Vada Pav",
     type: "Vegetarian",
-    calories: "300 kcal",
-    bestPlace: "Mumbai Street Stalls",
-    ingredients: ["Potato", "Pav bread"],
-    images: ["https://www.vegrecipesofindia.com/wp-content/uploads/2025/12/vada-pav-1.jpg"],
-    description: "Indian burger.",
-    history: "Invented in 1960s Mumbai."
+    calories: "300 kcal per serving",
+    bestPlace: "Kalyan, Dadar Street Stalls & Authentic Khau Gallis across Mumbai & Pune",
+    ingredients: [
+      "Boiled Potatoes", 
+      "Soft Burger Buns (Pav)", 
+      "Gram Flour (Besan) Batter", 
+      "Garlic, Green Chilies & Ginger Paste", 
+      "Mustard Seeds, Curry Leaves & Turmeric", 
+      "Dry Garlic-Coconut Chutney (Dry Lasoon Chutney)"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/4/4b/Vada_Pav_in_Mumbai.jpg"
+    ],
+    description: "Vada Pav is the undisputed King of Mumbai street food, often lovingly called the Indian burger. It features a golden, crispy spiced potato dumpling (batata vada) nestled inside a soft, buttery pav slathered with fiery dry garlic-coconut chutney and green chilies. It delivers an explosion of textures and flavors in every single bite—crunchy, soft, spicy, and tangy all at once.",
+    history: "The origins of Vada Pav date back to the late 1960s near Mumbai's Dadar railway station, pioneered by local street vendors looking for an affordable, quick, and filling meal for textile mill workers. As Mumbai's bustling commuter culture grew, Vada Pav became the ultimate on-the-go snack, providing cheap and instant nourishment for millions of office-goers, students, and laborers.",
+    culturalSignificance: "In Maharashtrian culture, Vada Pav is far more than just a quick bite; it is a cultural icon and a great equalizer enjoyed by everyone from daily wage earners to Bollywood celebrities. It represents the resilient, fast-paced spirit of Mumbai ('Aamchi Mumbai') and is an indispensable part of rainy evenings, cricket matches, and everyday snacking.",
+    nutritionalBreakdown: "A standard single serving of Vada Pav contains approximately 300 kilocalories. Boiled potatoes provide easily digestible carbohydrates for quick energy, while gram flour and peanuts in the dry chutney offer a dose of plant protein and healthy fats. Enjoyed in moderation, it serves as a hearty and satisfying snack.",
+    detailedRecipeAndTips: "To prepare authentic Maharashtrian Vada Pav at home, follow these steps: 1. Preparing Potato Stuffing: Mash boiled potatoes and temper them with mustard seeds, curry leaves, crushed green chili-garlic-ginger paste, turmeric, and fresh coriander. Shape the mixture into smooth round balls. 2. Making Batter: Whisk gram flour (besan) with water, a pinch of turmeric, carom seeds (ajwain), and salt to form a smooth, medium-thick coating batter. 3. Frying Vadas: Dip each potato ball into the besan batter and drop it into hot oil, frying on medium-high heat until golden brown and crispy. 4. Dry Garlic Chutney: Blend roasted garlic pods, dry coconut flakes, roasted peanuts, and Kashmiri red chili powder into a coarse, fiery dry powder. 5. Assembly: Slit a soft pav down the center, spread generous amounts of dry garlic chutney inside, place the hot batata vada in the middle, press gently, and serve with fried salted green chilies."
   },
 
-  {
+ {
     state: "Manipur",
     slug: "manipur",
     capital: "Imphal",
     dish: "Eromba",
-    type: "Vegetarian",
-    calories: "250 kcal",
-    bestPlace: "Local Homes",
-    ingredients: ["Boiled Vegetarianetables", "Fermented fish"],
-    images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF0ateF_3ZZSaogUXiurFDwHfKe-UDl09P7A&s"],
-    description: "Traditional Manipuri dish.",
-    history: "Indigenous tribal cuisine."
+    type: "Non-Vegetarian",
+    calories: "220 kcal per serving",
+    bestPlace: "Traditional Meitei Households & Local Markets across Imphal",
+    ingredients: [
+      "Boiled Potatoes & Local Seasonal Vegetables", 
+      "Fermented Fish (Ngari)", 
+      "U-Morok (King Chili - one of the world's hottest chilies)", 
+      "Fresh Bamboo Shoots or Ngari Paste", 
+      "Fresh Herbs (Coriander, Sawtooth coriander / Awaphothibi)"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/e/ec/Eromba_with_rice.jpg"
+    ],
+    description: "Eromba is a beloved, deeply flavorful, and fiery culinary masterpiece from the valleys of Manipur. It is a traditional mashed delicacy made by combining boiled potatoes and seasonal local vegetables with fermented fish (Ngari) and pounded with fiery U-Morok (King chili). Unlike regular curries, Eromba has a thick, rustic, mashed consistency and is packed with pungent umami flavors, making it an absolute treat for spice lovers when paired with warm steamed rice.",
+    history: "The roots of Eromba go back centuries into the indigenous Meitei tribal traditions of Manipur. Historically, local communities relied on locally available tubers, wild forest greens, and fermented fish for sustenance. Fermentation (Ngari) was originally adopted as a vital preservation technique to store fish through humid monsoons and cold winters, eventually becoming the signature flavor backbone of Manipuri cuisine.",
+    culturalSignificance: "In Manipuri culture, Eromba holds a special place in daily home-cooked meals and social gatherings. It is a dish that defines comfort and hospitality in the region. Offering a bowl of spicy Eromba with rice to guests reflects the warm, unpretentious, and vibrant culinary identity of the state.",
+    nutritionalBreakdown: "A standard 200-gram serving of Eromba contains approximately 220 kilocalories. Boiled potatoes and vegetables provide healthy complex carbohydrates and vital dietary fiber, while fermented fish adds high-grade protein and natural probiotics that support gut health. The King chili (U-Morok) is packed with capsaicin, which boosts metabolism and provides immense natural warmth.",
+    detailedRecipeAndTips: "To prepare authentic Manipuri Eromba at home, follow these steps: 1. Boiling Ingredients: Boil potatoes and local vegetables (like bamboo shoots, beans, or banana stems) in water until completely soft and tender. 2. Preparing the Base: Dry-roast fermented fish (Ngari) lightly on a pan until aromatic. 3. Pounding: In a traditional mortar and pestle, combine the boiled vegetables, roasted Ngari, fiery U-Morok (King chili) to taste, and salt, pounding them together into a coarse, well-mixed mash. 4. Garnishing: Mix in finely chopped local herbs like sawtooth coriander for an authentic fragrance, and serve immediately alongside hot steamed rice."
   },
 
   {
