@@ -478,7 +478,8 @@ useEffect(() => {
   )}
 
   {/* Main Feed Container */}
-  <div className="max-w-xl mx-auto px-4 py-8 space-y-8">
+  <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {trips.map((trip, index) => {
       if (!trip) return null;
       const id = trip._id || trip.id;
@@ -795,6 +796,7 @@ useEffect(() => {
       <button onClick={()=>navigate("/trips-blog")} className="bg-blue-200 text-gray-800 font-bold border border-gray-200  px-6 py-4 rounded-xl shadow-sm hover:shadow-md hover:bg-gray-50 transition duration-200 transform active:scale-98">
         View More Journeys
       </button>
+    </div>
     </div>
   </div>
 </div>
