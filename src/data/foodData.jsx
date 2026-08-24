@@ -478,28 +478,52 @@ const foodData = [
     state: "Odisha",
     slug: "odisha",
     capital: "Bhubaneswar",
-    dish: "Pakhala Bhata",
+    dish: "Dalma",
     type: "Vegetarian",
-    calories: "250 kcal",
-    bestPlace: "Odisha Homes",
-    ingredients: ["Fermented rice", "Curd"],
-    images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFtGmdVmvlkCvcosHavurnisVyfA897eAetQ&s"],
-    description: "Cooling summer dish.",
-    history: "Temple cuisine of Jagannath."
+    calories: "280 kcal per serving",
+    bestPlace: "Temple Kitchens of Jagannath Temple (Puri) & Traditional Odia Homes",
+    ingredients: [
+      "Toor Dal (Yellow Pigeon Peas) or Chana Dal", 
+      "Fresh Seasonal Vegetables (Raw Papaya, Pumpkin, Yam, Raw Banana, Brinjal)", 
+      "Roasted Cumin and Red Chili Powder (Bhaja Masala)", 
+      "Grated Coconut & Fresh Coriander", 
+      "Pure Desi Ghee or Mustard Oil", 
+      "Pinch of Asafoetida (Hing) and Turmeric"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/2a/Dalma_Odisha_Dish.jpg"
+    ],
+    description: "Dalma is the soulful heart of Odia cuisine, a magnificent and deeply nourishing one-pot meal that blends lentils with an assortment of fresh seasonal vegetables. Slow-cooked to a rich, harmonious consistency, it is seasoned with aromatic roasted cumin-chili powder and tempered with pure desi ghee or mustard oil. Crowned with grated coconut, Dalma offers a sublime balance of earthy protein, tender vegetables, and subtle spices.",
+    history: "The origins of Dalma are spiritually and historically intertwined with the ancient temple culture of Lord Jagannath in Puri, dating back nearly a millennium. In traditional temple mahaprasad preparation, Dalma is cooked in massive earthen pots over wood fires without using onions or garlic, adhering strictly to ancient Ayurvedic principles of wholesome, satvik nutrition. Over centuries, this temple offering became the beloved everyday comfort food of every Odia household.",
+    culturalSignificance: "In Odisha, Dalma represents the essence of purity, hospitality, and cultural identity. It is an indispensable part of daily meals, festive spreads, and religious rituals across the state. Serving a steaming bowl of Dalma with fragrant rice reflects the warm, nurturing, and spiritually grounded nature of Odia families.",
+    nutritionalBreakdown: "A standard 300-gram serving of Dalma contains approximately 280 kilocalories. Combining protein-rich toor dal with a diverse array of fresh root and garden vegetables provides an exceptional supply of dietary fiber, vitamins A and C, iron, and essential minerals. Because it is lightly spiced and rich in plant nutrients, it is extremely easy to digest and suitable for all age groups.",
+    detailedRecipeAndTips: "To prepare authentic Odia-style Dalma at home, follow these steps: 1. Boiling Dal and Vegetables: Wash toor dal and place it in a pot or pressure cooker with water, turmeric, and salt. Chop seasonal vegetables (like raw banana, pumpkin, papaya, and eggplant) into large chunks and add them directly into the dal. 2. Cooking: Cook until the lentils are soft and the vegetables are tender yet retain their shape (do not over-mash). 3. Bhaja Masala: Dry-roast cumin seeds and dry red chilies on a pan, then grind them into a coarse, aromatic powder ('Bhaja Masala'). 4. Tempering: Heat a spoon of pure desi ghee or mustard oil, add a pinch of asafoetida (hing), whole cumin seeds, and a dry red chili, then pour the tempering into the dalma. 5. Finishing: Stir in the prepared Bhaja Masala and freshly grated coconut, simmer for a couple of minutes, and serve piping hot over fragrant steamed rice."
   },
 
   {
     state: "Punjab",
     slug: "punjab",
     capital: "Chandigarh",
-    dish: "Sarson da Saag",
+    dish: "Makki di Roti & Sarson ka Saag",
     type: "Vegetarian",
-    calories: "400 kcal",
-    bestPlace: "Amritsar Dhaba",
-    ingredients: ["Mustard leaves", "Butter"],
-    images: ["https://static.toiimg.com/thumb/54670698.cms?imgsize=77257&width=800&height=800"],
-    description: "Winter specialty.",
-    history: "Farmer’s traditional meal."
+    calories: "550 kcal per serving",
+    bestPlace: "Traditional Dhabas along GT Road & Punjabi Village Kitchens",
+    ingredients: [
+      "Mustard Greens (Sarson ka Saag) & Spinach", 
+      "Cornmeal (Makki ka Atta)", 
+      "Pure Desi Ghee or White Butter (Makhan)", 
+      "Ginger, Garlic, Green Chilies & Onions", 
+      "Makki di Roti binding aids (Warm water & a touch of wheat flour)", 
+      "Jaggery (Gur) for serving"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/3/36/Sarson_ka_Saag_and_Makki_di_Roti.jpg"
+    ],
+    description: "Sarson ka Saag and Makki di Roti is the undisputed culinary anthem of Punjab, embodying the hearty, vibrant spirit of the Land of Five Rivers. Sarson ka Saag is a rich, velvety green curry made from crushed mustard greens and spinach, slow-cooked with warming spices and thickened with maize flour. It is served piping hot alongside rustic, golden cornmeal flatbreads (makki di roties), generously slathered with dollops of melting homemade white butter and accompanied by sweet jaggery and raw onions.",
+    history: "The history of this iconic pairing goes back centuries into the agricultural heartland of rural Punjab. Historically, mustard crops grew in abundance across the fertile Indo-Gangetic plains during the winter harvest season. Farmers and rural families relied on this nutrient-dense, heat-generating meal to sustain themselves through chilly winter mornings before heading out for rigorous farming labor in the fields. Over generations, it evolved into a global symbol of Punjabi hospitality and culinary pride.",
+    culturalSignificance: "In Punjabi culture, Sarson ka Saag and Makki di Roti is much more than seasonal comfort food; it is a profound cultural emblem associated with Lohri celebrations, winter family gatherings, and joyful community spirit. Serving a massive dollop of white butter over steaming hot saag and roti to guests is the ultimate expression of Punjabi warmth, generosity ('dil-dariya'), and affection.",
+    nutritionalBreakdown: "A standard serving contains approximately 550 kilocalories. Mustard greens are an extraordinary powerhouse of dietary fiber, vitamins A, C, and K, and vital antioxidants that boost immunity. Cornmeal (makki) provides sustained complex carbohydrates and iron, while pure white butter and desi ghee supply healthy fats that aid nutrient absorption and provide vital warmth during cold weather.",
+    detailedRecipeAndTips: "To prepare authentic Punjabi-style Sarson ka Saag and Makki di Roti at home, follow these steps: 1. Preparing the Saag: Thoroughly wash and chop mustard greens (sarson), bathua, and spinach. Boil them with ginger, garlic, and green chilies until tender, then blend coarsely or mash traditionally using a wooden hand-churner ('madhani'). 2. Thickening & Tempering: Stir in a handful of maize flour (makki ka atta) into the greens to bind it, then temper with a rich tadka of onions, garlic, and red chilies in pure desi ghee. 3. Making Makki di Roti: Knead cornmeal (makki ka atta) using warm water into a pliable dough. Since cornmeal lacks gluten, pat it gently between wet palms or roll it carefully between plastic sheets. 4. Cooking Roti: Cook the rolled roti on a hot tawa on medium heat, applying desi ghee until golden-brown spots appear on both sides. 5. Serving: Serve the saag piping hot topped with a generous melting slab of homemade white butter (makhan), accompanied by makki di roti, jaggery (gur), and sliced radishes."
   },
 
   {
