@@ -82,18 +82,31 @@ const foodData = [
     detailedRecipeAndTips: "To prepare authentic Assamese Masor Tenga, follow these steps: 1. Fish Preparation: Clean fresh river fish pieces, rub them with turmeric powder and salt, and lightly shallow-fry them in mustard oil until golden; set them aside. 2. Tempering: In the same mustard oil, splutter a pinch of 'Panch Phoron' and dried red chilies. 3. Souring Base: Add chopped tomatoes and your choice of souring agent (such as mashed elephant apple or tender sorrel leaves) along with turmeric and salt. Sauté until soft. 4. Simmering Broth: Pour in required water to create a light, soupy broth and let it boil thoroughly until the sour flavors infuse the liquid. 5. Final Assembly: Gently drop the fried fish pieces into the boiling tangy broth, simmer for 3-4 minutes, garnish with fresh coriander or a squeeze of Kaji Nemu juice, and serve piping hot with steamed rice."
   },
 
-  {
+ {
     state: "Bihar",
     slug: "bihar",
     capital: "Patna",
     dish: "Litti Chokha",
-    type: "Vegetarianetarian",
-    calories: "500 kcal",
-    bestPlace: "Street Vendors, Patna",
-    ingredients: ["Wheat flour", "Sattu", "Mustard oil"],
-    images: ["https://www.secondrecipe.com/wp-content/uploads/2019/11/litti-chokha-1.jpg"],
-    description: "Traditional dish served with mashed Vegetarianetables.",
-    history: "Eaten during ancient Magadh period."
+    type: "Vegetarian",
+    calories: "500 kcal per serving",
+    bestPlace: "Street Vendors, Patna & Traditional Bihari Villages",
+    ingredients: [
+      "Whole Wheat Flour", 
+      "Roasted Gram Flour (Sattu)", 
+      "Mustard Oil", 
+      "Garlic, Ginger & Green Chilies", 
+      "Ajwain (Carom seeds) & Nigella seeds", 
+      "Eggplant (Baingan), Tomatoes, & Potatoes for Chokha", 
+      "Pure Desi Ghee"
+    ],
+    images: [
+      "https://www.secondrecipe.com/wp-content/uploads/2019/11/litti-chokha-1.jpg"
+    ],
+    description: "Litti Chokha is the crown jewel of Bihari cuisine, representing an incredible symphony of rustic flavors and wholesome nutrition. Litti consists of hard wheat flour balls stuffed with a spicy, tangy filling made of roasted gram flour (sattu) spiced with mustard oil, garlic, and traditional herbs. It is traditionally baked over cow dung cakes or charcoal embers until smoky and charred, then generously dunked in pure desi ghee. It is served alongside 'Chokha', a smoky, mouth-watering mash made of roasted eggplant, tomatoes, and potatoes infused with raw mustard oil and green chilies.",
+    history: "The history of Litti Chokha goes back thousands of years to the ancient Magadh empire. Historically, Litti was created as a strategic survival and military food for soldiers and travelers during the Maurya and Gupta dynasties. Because it requires very little water to prepare, stays fresh for days without refrigeration, and can be easily baked on open fires during long marches, it became an indispensable staple. Over centuries, it transitioned from royal military rations to the quintessential comfort food of every Bihari household.",
+    culturalSignificance: "Litti Chokha is much more than a meal in Bihar; it is a profound cultural symbol deeply tied to community warmth and regional pride. During traditional winter feasts and festivals like Chhath Puja, large batches of Litti are roasted outdoors on open fires, bringing families and neighbors together. Serving Litti dripping with hot ghee alongside spicy chokha is considered the ultimate gesture of hospitality in any Bihari home.",
+    nutritionalBreakdown: "A standard 350-gram serving of Litti Chokha contains approximately 500 kilocalories. Sattu (roasted gram flour) is an incredible powerhouse of plant-based protein, complex carbohydrates, and iron, providing sustained energy without spiking blood sugar. Whole wheat flour supplies ample dietary fiber, aiding smooth digestion. The roasting process requires minimal oil in the preparation of litti itself, while the vegetable chokha provides essential vitamins, minerals, and antioxidants.",
+    detailedRecipeAndTips: "To prepare authentic Bihari Litti Chokha at home, follow these steps: 1. Making the Dough: Knead whole wheat flour with a pinch of salt, carom seeds (ajwain), and a spoonful of ghee or oil into a firm, stiff dough and let it rest. 2. Preparing the Sattu Filling: Mix roasted gram flour (sattu) with finely chopped garlic, ginger, green chilies, mustard oil, lemon juice, pickle masala, and salt to create a crumbly, flavorful stuffing. 3. Shaping Litti: Divide the dough into equal portions, flatten them slightly, stuff a generous amount of sattu mixture inside, and seal them into round balls. 4. Baking/Roasting: Traditionally bake them over charcoal or coal embers until the outer crust turns golden-brown with characteristic dark charred spots, then brush them heavily with melted desi ghee. 5. Preparing the Chokha: Roast whole eggplants and tomatoes directly over an open flame until charred, peel off the skin, mash them thoroughly with boiled potatoes, raw mustard oil, chopped onions, green chilies, and fresh coriander leaves to serve piping hot with the prepared littis."
   },
 
   {
@@ -101,13 +114,25 @@ const foodData = [
     slug: "chhattisgarh",
     capital: "Raipur",
     dish: "Chila",
-    type: "Vegetarianetarian",
-    calories: "250 kcal",
-    bestPlace: "Local Markets",
-    ingredients: ["Rice flour", "Gram flour", "Spices"],
-    images: ["https://upload.wikimedia.org/wikipedia/commons/5/5a/CHILA%28THE_DOSA_OF_CHHATTISGARH%29.jpg"],
-    description: "Chila is a healthy breakfast dish.",
-    history: "Part of tribal cuisine."
+    type: "Vegetarian",
+    calories: "250 kcal per serving",
+    bestPlace: "Local Markets & Traditional Chhattisgarhi Kitchens",
+    ingredients: [
+      "Rice Flour", 
+      "Gram Flour (Besan)", 
+      "Finely Chopped Onions & Green Chilies", 
+      "Fresh Coriander Leaves", 
+      "Cumin Seeds & Turmeric Powder", 
+      "Mustard Oil or Ghee for cooking"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/5/5a/CHILA%28THE_DOSA_OF_CHHATTISGARH%29.jpg"
+    ],
+    description: "Chila is a wholesome, quick, and nutritious flatbread or pancake that forms a core part of Chhattisgarhi daily cuisine. Often referred to as the 'Dosa of Chhattisgarh', it is made from a smooth, spiced batter of rice flour and gram flour, seasoned with onions, green chilies, and fresh herbs. Cooked on a hot griddle until it develops a light, crispy golden edge while remaining soft in the center, it is typically served hot with tangy tomato chutney or green coriander chutney.",
+    history: "The roots of Chila are deeply embedded in the ancient agricultural and tribal traditions of Chhattisgarh, often called the 'Rice Bowl of India'. Historically, local farming communities utilized freshly milled rice flour combined with gram flour to create a quick, energizing breakfast that could be whipped up instantly before heading out to the fields. Over generations, this simple peasant recipe has evolved into a beloved comfort food enjoyed across both rural villages and urban households throughout the state.",
+    culturalSignificance: "In Chhattisgarhi culture, Chila is synonymous with warmth and effortless hospitality. It is frequently prepared during relaxed mornings, family breakfast gatherings, and regional festivals like Hareli and Pola. Offering a freshly prepared, hot Chila with homemade chutney to guests reflects the simple, grounded, and welcoming nature of the local people.",
+    nutritionalBreakdown: "A standard 150-gram serving of Chila contains approximately 250 kilocalories. Rice flour provides readily digestible complex carbohydrates for quick energy, while gram flour (besan) adds a healthy dose of plant-based protein and dietary fiber. Minimal oil is required for cooking, making it light on the stomach, highly nutritious, and suitable for people of all age groups.",
+    detailedRecipeAndTips: "To prepare authentic Chhattisgarhi Chila, follow these steps: 1. Making the Batter: In a large mixing bowl, combine equal parts of rice flour and gram flour (besan). Gradually add water while whisking continuously to form a smooth, flowing batter without lumps. 2. Adding Aromatics: Mix in finely chopped onions, green chilies, fresh coriander leaves, cumin seeds, turmeric powder, and salt to taste. 3. Resting the Batter: Let the batter rest for 10 to 15 minutes so the rice flour absorbs the flavors and achieves the ideal consistency. 4. Cooking: Heat a flat iron griddle (tawa) and grease it lightly with mustard oil or ghee. Pour a ladleful of batter in the center and spread it outward in circular motions to form a thin pancake. 5. Sizzling: Cover and cook on medium heat until the edges turn golden and crisp, flip it over for a minute, and serve piping hot with spicy tomato or mint chutney."
   },
 
   {

@@ -162,7 +162,7 @@ const FoodDetail = () => {
               <h2 className="text-3xl font-black text-gray-900 mb-6 flex items-center gap-3">
                 <FiBookOpen className="text-orange-500"/> Culinary Essence
               </h2>
-              <p className="text-2xl text-gray-600 leading-relaxed font-light italic border-l-4 border-orange-500 pl-6">
+              <p className="text-2xl text-gray-600 leading-relaxed  italic border-l-4 border-orange-500 pl-6">
                 "{food.description}"
               </p>
             </div>
@@ -204,7 +204,7 @@ const FoodDetail = () => {
                   <h4 className="text-xl font-bold mb-4 text-white flex items-center gap-2">
                     ✨ Cultural Significance
                   </h4>
-                  <p className="text-gray-300 leading-relaxed text-base font-light">
+                  <p className="text-gray-00 leading-relaxed text-base ">
                     {food.culturalSignificance}
                   </p>
                 </div>
@@ -217,7 +217,7 @@ const FoodDetail = () => {
                 <h3 className="text-3xl font-black mb-6 flex items-center gap-3 text-gray-900">
                   <FiActivity className="text-orange-500"/> Nutritional Overview
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-lg font-light">
+                <p className="text-gray-800 leading-relaxed text-lg ">
                   {food.nutritionalBreakdown}
                 </p>
               </div>
@@ -228,7 +228,7 @@ const FoodDetail = () => {
                 <h3 className="text-3xl font-black mb-6 flex items-center gap-3 text-gray-900">
                   🍳 Traditional Preparation Guide
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-lg font-light">
+                <p className="text-gray-700 leading-relaxed text-lg ">
                   {food.detailedRecipeAndTips}
                 </p>
               </div>
