@@ -607,14 +607,26 @@ const foodData = [
     state: "Telangana",
     slug: "telangana",
     capital: "Hyderabad",
-    dish: "Haleem",
+    dish: "Hyderabadi Dum Biryani",
     type: "Non-Vegetarian",
-    calories: "500 kcal",
-    bestPlace: "Hyderabad Ramadan Bazaars",
-    ingredients: ["Wheat", "Meat"],
-    images: ["https://i.ytimg.com/vi/1iQbz7hvXU8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCuI53GJixTMNg0nngSTpLpCuVeqg"],
-    description: "Slow cooked meat stew.",
-    history: "Introduced by Arabs."
+    calories: "600 kcal per serving",
+    bestPlace: "Paradise, Shadab Hotel, and Heritage Bawarchis across Hyderabad",
+    ingredients: [
+      "Basmati Rice (Long-grain aged)", 
+      "Marinated Mutton or Chicken", 
+      "Fresh Yogurt, Ginger-Garlic Paste & Raw Papaya Paste", 
+      "Saffron soaked in warm milk & Kewra water", 
+      "Fried Brown Onions (Barista) & Fresh Mint and Coriander", 
+      "Pure Desi Ghee and Whole Aromatic Spices (Cardamom, Cloves, Cinnamon, Star Anise)"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/5/5a/Hyderabadi_Chicken_Biryani.jpg"
+    ],
+    description: "Hyderabadi Dum Biryani is universally celebrated as the crown jewel of Indian cuisine, legendary for its peerless aroma, rich heritage, and complex flavors. Prepared using the authentic 'Kacchi Biryani' method, raw marinated meat layered with partially cooked aromatic basmati rice is sealed in a heavy-bottomed handi with dough ('dum'). Slow-cooked over gentle embers, the meat cooks to absolute tenderness in its own juices and yogurt while absorbing the exquisite fragrance of saffron, fried onions, and whole spices.",
+    history: "The origins of this culinary masterpiece date back to the 17th century in the royal kitchens of the Nizams of Hyderabad, blending Mughalai culinary techniques with native Telugu spices and Persian influences. Legend has it that the Nizam's royal khansamas (chefs) created hundreds of variations of biryani, with the slow-cooked Dum method emerging as the ultimate royal banquet offering served to nobles and foreign dignitaries.",
+    culturalSignificance: "In Telangana, Hyderabadi Dum Biryani is far more than a meal; it is a profound cultural institution and a symbol of legendary Hyderabadi hospitality ('Mehmaan-nawazi'). No wedding, celebration, or family gathering is complete without serving authentic dum biryani. Sharing a handi of biryani represents unity, joy, and deep-rooted culinary pride.",
+    nutritionalBreakdown: "A standard 400-gram serving of Hyderabadi Dum Biryani contains approximately 600 kilocalories. Long-grain basmati rice provides complex carbohydrates, while tender mutton or chicken supplies high-grade protein and iron. Yogurt and ghee offer rich fats and probiotics, creating a hearty and calorie-dense feast designed for celebration.",
+    detailedRecipeAndTips: "To prepare authentic Hyderabadi Dum Biryani at home, follow these steps: 1. Marination: Marinate chicken or mutton overnight with thick yogurt, ginger-garlic paste, raw papaya paste, red chili powder, fried onions (barista), mint, coriander, and whole spices. 2. Rice Preparation: Boil aged basmati rice with whole spices (shahi jeera, cardamom, cloves) and salt until it is exactly 70% cooked (parboiled), then drain excess water. 3. Layering (Dum): In a heavy-bottomed handi, spread the marinated meat at the bottom, top it with layers of the parboiled rice, saffron-infused milk, dollops of pure ghee, and generous amounts of fried onions. 4. Sealing: Seal the rim of the handi tightly with wheat flour dough and place a heavy lid on top to trap all steam. 5. Slow Cooking: Cook on high flame for 10 minutes, then place the handi on a tawa and 'dum' cook on very low heat for 45 minutes before gently opening to reveal the aromatic layers."
   },
 
   {
@@ -623,12 +635,23 @@ const foodData = [
     capital: "Agartala",
     dish: "Mui Borok",
     type: "Non-Vegetarian",
-    calories: "350 kcal",
-    bestPlace: "Tribal Homes",
-    ingredients: ["Fish", "Bamboo shoot"],
-    images: ["https://thumbs.dreamstime.com/b/mui-borok-tripuri-cuisine-called-shidal-bengali-burma-small-oil-pasted-dry-fermented-fish-137315381.jpg"],
-    description: "Traditional Tripuri dish.",
-    history: "Tribal cuisine."
+    calories: "320 kcal per serving",
+    bestPlace: "Traditional Tripuri Households & Local Kitchens across Agartala",
+    ingredients: [
+      "Berma (Fermented dried fish - the umami backbone of Tripuri cuisine)", 
+      "Pork or Dried Fish chunks", 
+      "Fresh Bamboo Shoots & Green Papaya", 
+      "Mentsing (Local aromatic herbs) & Bermura leaves", 
+      "Gound chili paste (without oil or frying)"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Tripuri_cuisine_Mui_Borok.jpg"
+    ],
+    description: "Mui Borok represents the traditional, oil-free culinary heritage of the indigenous Tripuri community. It is centered around 'Berma', a distinctively pungent, sun-dried, and fermented small fish paste that imparts a rich umami depth to every dish. Cooked traditionally without using any cooking oil or heavy frying, the ingredients—such as pork, fresh bamboo shoots, wild herbs, and green vegetables—are boiled or stewed together, resulting in a clean, deeply aromatic, and health-packed meal served with warm rice.",
+    history: "The history of Mui Borok dates back ancient centuries into the tribal heritage of Tripura's indigenous Kokborok-speaking communities. Historically, because cooking oil was scarce or avoided in traditional hill practices, boiling and roasting over wood fires became the primary techniques. Berma (fermentation) was invented to preserve protein through humid tropical monsoons, creating a unique flavor profile passed down unchanged through generations.",
+    culturalSignificance: "In Tripuri culture, Mui Borok is a profound symbol of ethnic identity, ancestral roots, and traditional hospitality. No community celebration, wedding, or festival like Garia Puja is complete without preparing authentic dishes centered around Berma and bamboo shoots. Serving a traditional Tripuri meal reflects deep respect and a connection to the bountiful forests and rivers of the state.",
+    nutritionalBreakdown: "A standard 300-gram serving of Mui Borok contains approximately 320 kilocalories. Because it is prepared entirely without oil and relies on boiling and stewing, it is extremely low in saturated fats and high in dietary fiber, natural proteins, and probiotics derived from fermented fish.",
+    detailedRecipeAndTips: "To prepare authentic Tripura-style Mui Borok at home, follow these steps: 1. Preparing Berma Base: Take authentic Berma (fermented fish paste) and dissolve it in warm water, straining out any hard bones to create a thick, pungent aromatic broth. 2. Boiling Vegetables and Meat: In a pot, add water along with sliced bamboo shoots, chunks of pork or dried fish, green papaya, and wild herbs. 3. Simmering: Pour the prepared Berma broth into the pot along with crushed green chilies and salt to taste. 4. Oil-Free Cooking: Simmer everything gently on medium heat without adding any oil until the meat is tender and the vegetables melt into a rich, flavorful broth. 5. Serving: Serve piping hot alongside a generous mound of plain steamed rice."
   },
 
   {
