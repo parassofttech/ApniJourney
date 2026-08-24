@@ -189,18 +189,30 @@ const foodData = [
     detailedRecipeAndTips: "To prepare authentic Gujarati Dhokla at home, follow these steps: 1. Making the Batter: In a large bowl, whisk together gram flour (besan), yogurt, a pinch of turmeric powder, salt, ginger-green chili paste, and water to create a smooth, pouring batter without lumps. 2. Fermentation & Rising: Let the batter rest. Just before steaming, stir in fruit salt (Eno) along with a splash of lemon juice over it; watch it fizz and immediately fold it gently into the batter. 3. Steaming: Pour the aerated batter instantly into a greased steaming tray and steam on high heat in a steamer or pressure cooker for 15 to 20 minutes until a toothpick inserted comes out clean. 4. Tempering (Tadka): Allow it to cool slightly and cut into square pieces. In a pan, heat oil, splutter mustard seeds, sesame seeds, curry leaves, and sliced green chilies, then add water and sugar to make a syrup. 5. Finishing: Pour this sweet-tangy tempering evenly over the dhokla squares, garnish generously with fresh coriander and grated coconut, and serve with green mint chutney."
   },
 
-  {
+ {
     state: "Haryana",
     slug: "haryana",
     capital: "Chandigarh",
     dish: "Bajra Khichdi",
     type: "Vegetarian",
-    calories: "420 kcal",
-    bestPlace: "Village Dhaba",
-    ingredients: ["Pearl millet", "Ghee"],
-    images: ["https://static.toiimg.com/thumb/73419237.cms?imgsize=2132758&width=800&height=800"],
-    description: "Nutritious winter meal.",
-    history: "Traditional farmer dish."
+    calories: "420 kcal per serving",
+    bestPlace: "Village Dhabas & Traditional Haryanvi Homes",
+    ingredients: [
+      "Pearl Millet (Bajra)", 
+      "Yellow Moong Dal (optional or pure millet)", 
+      "Pure Desi Ghee", 
+      "Ginger & Garlic Paste", 
+      "Whole Spices (Cumin, Cloves, Black Peppercorns)", 
+      "Salt to taste"
+    ],
+    images: [
+      "https://static.toiimg.com/thumb/73419237.cms?imgsize=2132758&width=800&height=800"
+    ],
+    description: "Bajra Khichdi is a deeply comforting, wholesome, and energy-dense one-pot meal that forms the culinary backbone of rural Haryana, especially during the harsh winter months. Made primarily from coarsely pounded pearl millet (bajra) and sometimes combined with lentils, it is slow-cooked to a soft, porridge-like consistency with warming spices. Finished with a generous dollop of rich, homemade desi ghee, it provides immense internal warmth and sustained nourishment.",
+    history: "The tradition of cooking Bajra Khichdi dates back centuries in the arid and semi-arid agricultural plains of northern India, where pearl millet (bajra) is a resilient, drought-resistant crop that thrives in harsh weather. Historically, farming communities relied on bajra as a primary source of sustenance because of its incredible heat-generating properties and long shelf life. Over generations, this humble peasant meal has been perfected into a symbol of robust rural health and longevity.",
+    culturalSignificance: "In Haryanvi culture, Bajra Khichdi is synonymous with winter warmth, rustic hospitality, and the hard-working lifestyle of farmers ('Jaats'). It is traditionally cooked in heavy brass or clay pots over slow wood fires in rural courtyards. Serving a hot bowl of khichdi dripping with pure ghee to visiting guests or family members during cold evenings represents the affectionate, nurturing spirit of Haryanvi households.",
+    nutritionalBreakdown: "A standard 300-gram serving of Bajra Khichdi contains approximately 420 kilocalories. Pearl millet is an exceptional superfood rich in complex carbohydrates, dietary fiber, iron, magnesium, and plant-based protein. It releases energy slowly, keeping the body warm and maintaining stable blood sugar levels. Pure desi ghee provides healthy saturated fats that aid nutrient absorption and support joint health.",
+    detailedRecipeAndTips: "To prepare authentic Haryanvi Bajra Khichdi at home, follow these steps: 1. Preparing the Millet: Soak whole pearl millet (bajra) grains overnight. The next day, drain the water and coarsely pound the softened grains in a mortar-pestle or pulse them briefly in a food processor without reducing them to powder. 2. Initial Sauté: In a heavy-bottomed pressure cooker or pot, heat a generous amount of pure desi ghee. Add cumin seeds, cloves, black peppercorns, and finely minced ginger-garlic. 3. Cooking: Add the coarsely pounded bajra along with water and salt. If desired, a handful of washed yellow moong dal can be added for extra texture. 4. Pressure Cooking: Pressure cook the mixture on medium-low heat for 15 to 20 whistles (or slow-cook it covered in a heavy pot for over an hour) until the millet grains break down completely into a smooth, creamy porridge texture. 5. Finishing: Stir well, mash slightly with the back of a ladle, and serve piping hot in bowls with an extra generous dollop of melted desi ghee, accompanied by jaggery (gur) or spicy mixed pickle."
   },
 
   {
@@ -209,12 +221,24 @@ const foodData = [
     capital: "Shimla",
     dish: "Dham",
     type: "Vegetarian",
-    calories: "380 kcal",
-    bestPlace: "Local Festivals",
-    ingredients: ["Rice", "Rajma", "Curd"],
-    images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9MVC6sR8DqDk2RND-B1eYkD3VV_8zaImASw&s"],
-    description: "Festive meal served during celebrations.",
-    history: "Part of Himachali culture."
+    calories: "380 kcal per serving",
+    bestPlace: "Local Festivals, Mandi & Traditional Himachali Weddings",
+    ingredients: [
+      "Staple Rice", 
+      "Madra (Chana Dal cooked in Yogurt Gravy)", 
+      "Rajma (Red Kidney Beans)", 
+      "Khatta (Sweet and Sour Tamarind/Jaggery Sauce)", 
+      "Boondi or Paneer", 
+      "Pure Ghee & Traditional Spices"
+    ],
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9MVC6sR8DqDk2RND-B1eYkD3VV_8zaImASw&s"
+    ],
+    description: "Himachali Dham is not just a single dish, but an elaborate, multi-course vegetarian feast traditionally prepared during community gatherings, weddings, and major festivals like Baisakhi and Kullu Dussehra. Cooked exclusively by master generational chefs known as 'Bhotus' or 'Botis', it features a harmonious sequence of dishes including fragrant rice, protein-rich dal, madra (chana dal in a rich yogurt gravy), and khatta (a tangy sweet-sour sauce), all prepared without the use of onions or garlic.",
+    history: "The tradition of Dham dates back over a thousand years, deeply rooted in the royal courts and temple culture of the Himalayan kingdom. Historical accounts suggest that ancient kings commissioned this grand community feast to foster unity and equality among subjects, as everyone sat together on the ground in rows ('Pangat') to partake in the meal. The unique cooking technique relies entirely on slow-cooking in heavy brass vessels ('charalis') over wood fires to preserve maximum nutrients and authentic aroma.",
+    culturalSignificance: "Dham holds a deeply sacred and emotional place in Himachali culture. It represents community bonding, spiritual devotion, and ancestral heritage. No auspicious family event or temple celebration in valleys like Mandi, Kangra, or Chamba is complete without serving a traditional Dham. Eating Dham seated on the floor together symbolizes unity, humility, and the sharing of divine blessings ('Prasadam').",
+    nutritionalBreakdown: "A standard serving of Himachali Dham contains approximately 380 kilocalories. Because it incorporates various lentils (chana dal and rajma), it is exceptionally high in plant-based proteins, dietary fiber, and essential amino acids. The use of curd-based gravies (Madra) provides healthy probiotics and calcium, while pure ghee aids smooth digestion in the cold mountain climate without heavy spices.",
+    detailedRecipeAndTips: "To understand and prepare elements of the traditional Himachali Dham: 1. Preparing the Rice: High-quality mountain rice is boiled to fluffy perfection and served as the base of the leaf plate ('Pattal'). 2. Cooking Madra: Soak chana dal overnight, boil it, and simmer it slowly in a rich, whipped yogurt gravy seasoned with cardamom, cloves, cinnamon, and fennel seeds until thick. 3. Making Khatta: Prepare a sweet and sour sauce using tamarind paste, jaggery, and dry mango powder, often featuring black chickpeas or pumpkin. 4. Serving Protocol: Traditionally, all items of the Dham are served in a specific sequence on fresh leaf plates (pattals) made of sal or banyan leaves, starting with rice and dal, followed by madra, and concluding with khatta and a sweet boondi dessert."
   },
 
   {
@@ -223,12 +247,24 @@ const foodData = [
     capital: "Ranchi",
     dish: "Thekua",
     type: "Sweet",
-    calories: "200 kcal",
-    bestPlace: "Local Homes",
-    ingredients: ["Wheat flour", "Jaggery"],
-    images: ["https://c.ndtvimg.com/2018-11/1ivb9hq_thekua_625x300_13_November_18.jpg"],
-    description: "Traditional sweet snack.",
-    history: "Made during Chhath festival."
+    calories: "200 kcal per serving",
+    bestPlace: "Local Homes & Chhath Puja Kitchens across Ranchi & Jamshedpur",
+    ingredients: [
+      "Whole Wheat Flour (Atta)", 
+      "Pure Jaggery (Gur) or Sugar", 
+      "Grated Coconut & Dry Fruits (Cashews, Raisins)", 
+      "Fennel Seeds (Saunf) for aroma", 
+      "Pure Desi Ghee or Cold-pressed Oil for deep frying", 
+      "A pinch of Cardamom Powder"
+    ],
+    images: [
+      "https://c.ndtvimg.com/2018-11/1ivb9hq_thekua_625x300_13_November_18.jpg"
+    ],
+    description: "Thekua is a divine, dense, and deliciously crunchy sweet snack that holds a legendary status in the cultural heritage of Jharkhand and neighbouring Bihar. Prepared with a sturdy dough of whole wheat flour, melted jaggery, grated coconut, and aromatic fennel seeds, the mixture is hand-molded into intricate geometric patterns using traditional wooden molds ('saancha') and then slow-fried in pure desi ghee until it achieves a rich golden-brown crisp exterior with a soft, crumbly interior.",
+    history: "The origins of Thekua go back ancient centuries, intertwined with the agricultural harvest traditions and tribal heritage of the Chota Nagpur plateau. Historically, because of its exceptional shelf life, it served as an ideal travel ration for warriors, pilgrims, and traders crossing forest trails. Over generations, it evolved into an indispensable ritual offering during ancient sun-worship festivals, preserving age-old culinary techniques passed down from mothers to daughters.",
+    culturalSignificance: "Thekua is considered one of the most sacred and auspicious prasad items in the region, most notably prepared during the rigorous four-day Chhath Puja festival. Making Thekua requires utmost purity, devotion, and community involvement, with family members coming together to shape each piece by hand. Offering it to the setting and rising Sun God represents gratitude for life, agricultural abundance, and spiritual well-being.",
+    nutritionalBreakdown: "A standard 50-gram serving (roughly 2 pieces) of Thekua contains approximately 200 kilocalories. Unlike refined white sugar sweets, using organic jaggery provides essential minerals like iron, magnesium, and antioxidants. Whole wheat flour supplies complex dietary fiber, while dry fruits and ghee deliver healthy fats and sustained energy, making it a wholesome and nutrient-dense traditional sweet.",
+    detailedRecipeAndTips: "To prepare authentic Jharkhand-style Thekua at home, follow these steps: 1. Preparing the Jaggery Syrup: Melt jaggery in warm water just until dissolved (do not boil into a thick syrup), let it cool down completely, and strain out any impurities. 2. Mixing the Dough: In a large bowl, combine whole wheat flour, semolina (sooji) for extra crunch, grated dry coconut, crushed fennel seeds, cardamom powder, and a couple of spoons of hot ghee. Rub everything well with your fingertips. 3. Kneading: Gradually add the cooled jaggery water to bind the mixture into a very stiff, crumbly dough (do not knead it like soft chapati dough). 4. Shaping: Divide into small lemon-sized balls, press them onto a traditional wooden carved mold ('saancha') or a fork/back of a strainer to imprint beautiful patterns. 5. Slow Frying: Heat pure desi ghee or oil in a heavy kadhai on low-medium heat. Gently slide in the shaped thekuas and fry them patiently on low flame until they turn deep golden-brown and crisp. Let them cool completely so they harden to perfection."
   },
 
   {
