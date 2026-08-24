@@ -398,18 +398,30 @@ const foodData = [
     detailedRecipeAndTips: "To prepare authentic Manipuri Eromba at home, follow these steps: 1. Boiling Ingredients: Boil potatoes and local vegetables (like bamboo shoots, beans, or banana stems) in water until completely soft and tender. 2. Preparing the Base: Dry-roast fermented fish (Ngari) lightly on a pan until aromatic. 3. Pounding: In a traditional mortar and pestle, combine the boiled vegetables, roasted Ngari, fiery U-Morok (King chili) to taste, and salt, pounding them together into a coarse, well-mixed mash. 4. Garnishing: Mix in finely chopped local herbs like sawtooth coriander for an authentic fragrance, and serve immediately alongside hot steamed rice."
   },
 
-  {
+ {
     state: "Meghalaya",
     slug: "meghalaya",
     capital: "Shillong",
     dish: "Jadoh",
     type: "Non-Vegetarian",
-    calories: "450 kcal",
-    bestPlace: "Shillong Markets",
-    ingredients: ["Rice", "Pork"],
-    images: ["https://www.thenortheaststore.com/image/cache/catalog/Blog2/Jadoh-600x315w.jpg"],
-    description: "Rice and meat delicacy.",
-    history: "Khasi tribal origin."
+    calories: "480 kcal per serving",
+    bestPlace: "Traditional Khasi Khana stalls, Bara Bazaar & Police Bazaar (Shillong)",
+    ingredients: [
+      "Local Red Hill Rice (Gidak)", 
+      "Pork chunks and pork fat", 
+      "Black Sesame paste (for the characteristic dark version)", 
+      "Ginger, Garlic & Onions", 
+      "Bay leaves and local aromatic herbs", 
+      "Turmeric and local spices"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/22/Jadoh.jpg"
+    ],
+    description: "Jadoh is the legendary crown jewel of Khasi cuisine in Meghalaya. It is a deeply aromatic and flavorful one-pot rice dish cooked with succulent pieces of pork and pork fat, seasoned with a rich blend of ginger, garlic, onions, and local herbs. Often prepared using indigenous red hill rice, some traditional variations incorporate black sesame seed paste (known as Jadoh Snem), which gives the dish a distinctive earthy flavor and a deep, dark hue.",
+    history: "The history of Jadoh is deeply rooted in the ancient tribal traditions of the Khasi and Jaintia hills of Meghalaya. Historically, hill communities required high-energy, nutrient-dense meals to sustain themselves through the cold, wet mountain climate and rigorous daily farming. Pork and indigenous red rice have been dietary staples for centuries, perfectly combining in Jadoh to provide long-lasting warmth and endurance.",
+    culturalSignificance: "In Meghalaya, Jadoh is much more than a routine meal; it is a profound cultural symbol central to community life, clan gatherings, and traditional festivals like Nongkrem Dance. Preparing Jadoh with high-quality pork and sharing it with family and guests reflects the deep-rooted hospitality, warmth, and culinary heritage of the Khasi people.",
+    nutritionalBreakdown: "A standard 350-gram serving of Jadoh contains approximately 480 kilocalories. Indigenous red hill rice is rich in iron, fiber, and B-complex vitamins, while pork supplies high-grade protein and healthy fats that generate internal body heat, making it ideal for the chilly weather of Shillong.",
+    detailedRecipeAndTips: "To prepare authentic Meghalayan Jadoh at home, follow these steps: 1. Preparing the Pork: Sauté finely chopped pork fat in a pot until the fat renders slightly, then add minced ginger, garlic, and sliced onions, frying until golden brown. 2. Adding Meat: Toss in bite-sized chunks of pork along with turmeric and salt, cooking them over medium heat until tender and juicy. 3. Mixing Rice: Add washed indigenous red rice (or regular short-grain rice if red rice isn't available) to the pork mixture and roast gently for a few minutes. 4. Slow Cooking: Pour in water or pork stock in the correct proportion, cover tightly, and let it slow-cook on low heat until the rice grains absorb all the rich meaty flavors and become fluffy. 5. Serving: Serve piping hot, optionally garnished with fried onions or local herbs."
   },
 
   {
@@ -418,26 +430,48 @@ const foodData = [
     capital: "Aizawl",
     dish: "Bai",
     type: "Vegetarian",
-    calories: "200 kcal",
-    bestPlace: "Local Kitchens",
-    ingredients: ["Vegetarianetables", "Bamboo shoot"],
-    images: ["https://images.slurrp.com/prod/rich_article/kwxhjwjlwoe.webp?impolicy=slurrp-20210601&width=880&height=500"],
-    description: "Healthy boiled dish.",
-    history: "Tribal food tradition."
+    calories: "180 kcal per serving",
+    bestPlace: "Traditional Mizo Kitchens & Local Eateries across Aizawl",
+    ingredients: [
+      "Pork or Dried Fish (Optional, though vegetarian version uses local greens)", 
+      "Local Mustard Leaves or Bamboo Shoots", 
+      "Vawksat (Smoked Pork) or plain vegetable broth", 
+      "Bawngtui (Local herbs / Epfo)", 
+      "Salt and baking soda (to tenderize greens)"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/8/87/Mizo_Bai.jpg"
+    ],
+    description: "Bai is the ultimate comfort food and the national dish of Mizoram, celebrated for its clean, simple, and earthy flavors. It is a soupy, boiled stew typically made with local seasonal greens, bamboo shoots, and pork broth (or smoked pork), flavored simply with herbs and local seasonings without the use of heavy oils or frying spices. The result is a light, deeply nourishing broth that is traditionally served alongside steamed rice.",
+    history: "The history of Bai is tied directly to the indigenous lifestyle of the Mizo hill tribes, whose cooking philosophy revolves around boiling and steaming rather than frying. Historically, forest foraging provided abundant wild greens, bamboo shoots, and herbs. Boiling them together into a single-pot soup ('Bai') allowed families to extract maximum nutrition and warmth while conserving scarce resources during lean mountain seasons.",
+    culturalSignificance: "In Mizo culture, Bai is a staple of everyday hospitality and home cooking. No traditional meal in Mizoram is complete without a hot bowl of Bai accompanying steamed rice. Offering a warm bowl of Bai to visitors reflects the simple, grounded, and welcoming nature of the Mizo people.",
+    nutritionalBreakdown: "A standard 250-gram serving of Bai contains approximately 180 kilocalories. Because it is oil-free and relies entirely on boiling fresh greens and lean broths, it is extremely low in fat, highly digestible, and packed with vitamins, minerals, and dietary fiber, making it a stellar example of healthy traditional eating.",
+    detailedRecipeAndTips: "To prepare authentic Mizo Bai at home, follow these steps: 1. Boiling Broth: In a pot, add water along with pieces of smoked pork (if making the non-vegetarian version) or vegetable stock, letting it simmer until the rich flavors infuse the water. 2. Adding Greens: Add sliced bamboo shoots and washed local mustard leaves or spinach into the boiling broth. 3. Seasoning: Add a pinch of salt and traditional local herbs or epfo leaves. A tiny pinch of baking soda can be added to help soften the fibrous greens quickly. 4. Simmering: Let everything simmer gently on medium heat until the greens dissolve slightly into a light, soupy consistency. 5. Serving: Serve piping hot in bowls as a side broth with steamed rice."
   },
 
-  {
+ {
     state: "Nagaland",
     slug: "nagaland",
     capital: "Kohima",
-    dish: "Smoked Pork with Bamboo Shoot",
+    dish: "Smoked Pork with Raja Mircha",
     type: "Non-Vegetarian",
-    calories: "500 kcal",
-    bestPlace: "Local Tribal Homes",
-    ingredients: ["Pork", "Bamboo shoot"],
-    images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC4ZpfruxwFUod_mLcbwMq1ey3dEVRwjaFJA&s"],
-    description: "Smoky flavored pork dish.",
-    history: "Traditional Naga cuisine."
+    calories: "520 kcal per serving",
+    bestPlace: "Night Market Kohima, Hornbill Festival Food Stalls & Traditional Naga Kitchens",
+    ingredients: [
+      "Smoked Pork chunks", 
+      "Raja Mircha (Ghost Pepper - one of the world's hottest chilies)", 
+      "Axone (Fermented Soybean paste for pungent umami flavor)", 
+      "Local Ginger, Garlic & Naga Chives", 
+      "Salt to taste"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Smoked_Pork_Naga_Dish.jpg"
+    ],
+    description: "Smoked Pork with Raja Mircha is an iconic and fiery culinary masterpiece that defines the bold flavors of Nagaland. Tender chunks of wood-smoked pork are slow-cooked with 'Axone' (pungent fermented soybean paste) and fiery 'Raja Mircha' (Ghost pepper). This dish is famous for its intense smoky aroma, complex fermented umami depth, and blistering heat, making it an unforgettable experience for adventurous food lovers when paired with plain boiled rice.",
+    history: "The history of this dish is deeply embedded in the ancient tribal traditions of Nagaland's various indigenous Naga communities. Historically, wood-smoking was the primary method used to preserve meat through long, damp mountain winters before modern refrigeration. Fermented soybeans (Axone) and wild chilies were utilized to enhance flavor, provide essential proteins, and preserve food while celebrating community feasts and tribal identity.",
+    culturalSignificance: "In Naga culture, smoked pork is a symbol of prestige, celebration, and deep-rooted hospitality. It is a mandatory centerpiece during major festivals like the Hornbill Festival and community feasts. Serving a spicy smoked pork dish signifies respect and deep warmth toward guests and clan members.",
+    nutritionalBreakdown: "A standard 350-gram serving contains approximately 520 kilocalories. Smoked pork provides an exceptionally high amount of dense protein and healthy fats to generate body heat in cold mountain climates. Fermented soybeans (Axone) offer valuable probiotics and amino acids, while Ghost pepper (Raja Mircha) provides capsaicin, which revs up metabolism and stimulates circulation.",
+    detailedRecipeAndTips: "To prepare authentic Nagaland-style Smoked Pork at home, follow these steps: 1. Preparing Meat: Cut wood-smoked pork into bite-sized chunks. If the pork is very dry or hard, soak it briefly in warm water to soften. 2. Sautéing Aromatics: In a heavy-bottomed pot, add the pork along with crushed ginger, garlic, and water, letting it simmer until the pork fat renders and the meat turns tender. 3. Adding Axone and Chili: Stir in authentic Axone (fermented soybean paste) for that distinct pungent aroma, along with whole or slit Raja Mircha (Ghost peppers) depending on your heat tolerance. 4. Simmering: Cover and let everything slow-cook together on low heat for 20 to 30 minutes so the smoky flavor fuses completely with the fiery chili and beans. 5. Serving: Serve hot alongside a generous bowl of plain steamed rice to balance the fiery heat."
   },
 
   {
