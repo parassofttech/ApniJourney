@@ -135,32 +135,58 @@ const foodData = [
     detailedRecipeAndTips: "To prepare authentic Chhattisgarhi Chila, follow these steps: 1. Making the Batter: In a large mixing bowl, combine equal parts of rice flour and gram flour (besan). Gradually add water while whisking continuously to form a smooth, flowing batter without lumps. 2. Adding Aromatics: Mix in finely chopped onions, green chilies, fresh coriander leaves, cumin seeds, turmeric powder, and salt to taste. 3. Resting the Batter: Let the batter rest for 10 to 15 minutes so the rice flour absorbs the flavors and achieves the ideal consistency. 4. Cooking: Heat a flat iron griddle (tawa) and grease it lightly with mustard oil or ghee. Pour a ladleful of batter in the center and spread it outward in circular motions to form a thin pancake. 5. Sizzling: Cover and cook on medium heat until the edges turn golden and crisp, flip it over for a minute, and serve piping hot with spicy tomato or mint chutney."
   },
 
-  {
+ {
     state: "Goa",
     slug: "goa",
     capital: "Panaji",
     dish: "Goan Fish Curry",
     type: "Non-Vegetarian",
-    calories: "450 kcal",
-    bestPlace: "Beach Shacks, Goa",
-    ingredients: ["Fish", "Coconut milk", "Red chili"],
-    images: ["https://www.recipetineats.com/tachyon/2020/10/Goan-Fish-Curry_6-SQ.jpg?resize=500%2C500"],
-    description: "Spicy and tangy seafood curry.",
-    history: "Portuguese influence on Goan cuisine."
+    calories: "450 kcal per serving",
+    bestPlace: "Beach Shacks, Panaji & Traditional Goan Seafood Restaurants",
+    ingredients: [
+      "Fresh Sea Fish (Surmai or Pomfret)", 
+      "Freshly Grated Coconut", 
+      "Kashmiri Dry Red Chilies", 
+      "Coriander Seeds, Cumin & Turmeric", 
+      "Tamarind Pulp", 
+      "Garlic & Peppercorns", 
+      "Coconut Oil"
+    ],
+    images: [
+      "https://www.recipetineats.com/tachyon/2020/10/Goan-Fish-Curry_6-SQ.jpg?resize=500%2C500"
+    ],
+    description: "Goan Fish Curry (locally known as 'Howan') is the undisputed king of Goan cuisine, celebrated globally for its vibrant color and mesmerizing blend of flavors. It features tender pieces of fresh sea fish simmered in a rich, velvety coconut milk gravy infused with fiery red chilies, aromatic spices, and a sharp tangy punch of tamarind. Served alongside piping-hot boiled red rice ('Ukde Tandul'), it delivers a quintessential taste of India's tropical coastline.",
+    history: "The history of Goan Fish Curry is deeply rooted in the coastal heritage of the Konkan region, shaped by centuries of maritime trade and cultural exchange. While indigenous Konkani communities originally cooked fish with local coconuts, kokum, and wild spices, the arrival of Portuguese explorers in the 15th century introduced new ingredients like tomatoes, potatoes, and notably, New World chili peppers, which gave the curry its signature fiery red hue and depth.",
+    culturalSignificance: "In Goa, fish curry and rice ('Nuste Ani Xit') is not merely food; it is a way of life. It forms the emotional and nutritional centerpiece of every Goan household, enjoyed daily by locals regardless of their background. Preparing a fresh batch of fish curry using catch straight from the Arabian Sea symbolizes the deep connection Goans share with their beaches, festivals, and monsoon seasons.",
+    nutritionalBreakdown: "A standard 300-gram serving of Goan Fish Curry contains approximately 450 kilocalories. Sea fish is an exceptional source of high-quality protein, iodine, and heart-healthy Omega-3 fatty acids. Fresh coconut milk provides healthy medium-chain triglycerides (MCTs) that boost metabolism, while tamarind and spices offer powerful digestive and antioxidant benefits.",
+    detailedRecipeAndTips: "To prepare authentic Goan Fish Curry at home, follow these steps: 1. Preparing the Masala Paste: Grind freshly grated coconut, Kashmiri dry red chilies, coriander seeds, cumin, turmeric, garlic cloves, and peppercorns with a little water into an ultra-smooth, bright red paste. 2. Extracting Juices: Soak quality tamarind in warm water to extract a thick, sour pulp. 3. Simmering the Base: Transfer the ground coconut paste into a clay pot or heavy-bottomed pan, add the tamarind extract, sliced onions, salt, and water to adjust the gravy consistency. Bring it to a gentle boil. 4. Adding Fish: Once the gravy simmers and the raw spice aroma disappears, carefully slide in cleaned pieces of fresh fish (like Kingfish or Pomfret). 5. Finishing: Simmer gently for 4 to 5 minutes until the fish is just cooked through (do not overcook), drizzle a spoonful of raw coconut oil on top for aroma, and serve hot with red rice."
   },
 
-  {
+ {
     state: "Gujarat",
     slug: "gujarat",
     capital: "Gandhinagar",
     dish: "Dhokla",
-    type: "Vegetarianetarian",
-    calories: "160 kcal",
-    bestPlace: "Ahmedabad Street Food",
-    ingredients: ["Gram flour", "Curd", "Mustard seeds"],
-    images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4cSH_fqhz76dRvWV8LkzjL-4QqRAOjLIfeJAlLpQpuocFgvTk9MaFKN9t&s=10"],
-    description: "Soft steamed snack.",
-    history: "Popular Gujarati breakfast."
+    type: "Vegetarian",
+    calories: "160 kcal per serving",
+    bestPlace: "Ahmedabad Street Food Markets & Traditional Farsan Houses",
+    ingredients: [
+      "Gram Flour (Besan)", 
+      "Fresh Curd / Yogurt", 
+      "Ginger & Green Chili Paste", 
+      "Fruit Salt (Eno) or Baking Soda", 
+      "Mustard Seeds & Green Chilies for tempering", 
+      "Fresh Coriander & Grated Coconut for garnishing", 
+      "Lemon Juice & Sugar Syrup"
+    ],
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4cSH_fqhz76dRvWV8LkzjL-4QqRAOjLIfeJAlLpQpuocFgvTk9MaFKN9t&s=10"
+    ],
+    description: "Dhokla is a world-renowned, feather-light, and spongy savory steamed cake that proudly represents the vibrant vegetarian culinary heritage of Gujarat. Made from a fermented batter of gram flour and yogurt, it is steamed to perfection, resulting in a porous, cloud-like texture. It is then finished with a vibrant tempering of mustard seeds, curry leaves, green chilies, and a sweet-tangy lemon syrup that makes every bite melt in your mouth.",
+    history: "The history of Dhokla dates back centuries within the mercantile communities of Gujarat, with historical mentions found in Jain texts as early as the 11th century. Originally, similar fermented lentil and rice snacks were known as 'Dukkika'. Over time, the recipe evolved into using easily accessible gram flour (besan). Because Gujarat's climate is hot and dry, fermentation naturally aided in preserving food, improving digestibility, and enhancing nutritional value, turning Dhokla into an everyday staple.",
+    culturalSignificance: "In Gujarati culture, Dhokla is much more than a breakfast item; it is an emotion and an essential part of hospitality. It is served as a welcoming snack ('Farsan') to guests, packed for long train journeys, and relished during festivals like Navratri, Uttarayan (Kite Festival), and Diwali. Sharing freshly prepared, warm dhokla symbolizes warmth, joy, and the famous Gujarati ethos of sharing food with love.",
+    nutritionalBreakdown: "A standard 100-gram serving of Dhokla contains approximately 160 kilocalories. Because it is steamed rather than fried, it is exceptionally low in fat and cholesterol-free. Gram flour provides a good amount of plant-based protein and dietary fiber, while the natural fermentation process breaks down complex starches, making it extremely light on the stomach and easy to digest for all age groups.",
+    detailedRecipeAndTips: "To prepare authentic Gujarati Dhokla at home, follow these steps: 1. Making the Batter: In a large bowl, whisk together gram flour (besan), yogurt, a pinch of turmeric powder, salt, ginger-green chili paste, and water to create a smooth, pouring batter without lumps. 2. Fermentation & Rising: Let the batter rest. Just before steaming, stir in fruit salt (Eno) along with a splash of lemon juice over it; watch it fizz and immediately fold it gently into the batter. 3. Steaming: Pour the aerated batter instantly into a greased steaming tray and steam on high heat in a steamer or pressure cooker for 15 to 20 minutes until a toothpick inserted comes out clean. 4. Tempering (Tadka): Allow it to cool slightly and cut into square pieces. In a pan, heat oil, splutter mustard seeds, sesame seeds, curry leaves, and sliced green chilies, then add water and sugar to make a syrup. 5. Finishing: Pour this sweet-tangy tempering evenly over the dhokla squares, garnish generously with fresh coriander and grated coconut, and serve with green mint chutney."
   },
 
   {
