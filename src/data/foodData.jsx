@@ -526,18 +526,30 @@ const foodData = [
     detailedRecipeAndTips: "To prepare authentic Punjabi-style Sarson ka Saag and Makki di Roti at home, follow these steps: 1. Preparing the Saag: Thoroughly wash and chop mustard greens (sarson), bathua, and spinach. Boil them with ginger, garlic, and green chilies until tender, then blend coarsely or mash traditionally using a wooden hand-churner ('madhani'). 2. Thickening & Tempering: Stir in a handful of maize flour (makki ka atta) into the greens to bind it, then temper with a rich tadka of onions, garlic, and red chilies in pure desi ghee. 3. Making Makki di Roti: Knead cornmeal (makki ka atta) using warm water into a pliable dough. Since cornmeal lacks gluten, pat it gently between wet palms or roll it carefully between plastic sheets. 4. Cooking Roti: Cook the rolled roti on a hot tawa on medium heat, applying desi ghee until golden-brown spots appear on both sides. 5. Serving: Serve the saag piping hot topped with a generous melting slab of homemade white butter (makhan), accompanied by makki di roti, jaggery (gur), and sliced radishes."
   },
 
-  {
+ {
     state: "Rajasthan",
     slug: "rajasthan",
     capital: "Jaipur",
     dish: "Dal Baati Churma",
     type: "Vegetarian",
-    calories: "450 kcal",
-    bestPlace: "Jaipur Restaurants",
-    ingredients: ["Wheat", "Dal", "Ghee"],
-    images: ["https://assets.cntraveller.in/photos/64c7775e1e94724098a803da/master/w_1600%2Cc_limit/Thaali%2520and%2520more%2520.jpeg"],
-    description: "Iconic Rajasthani dish.",
-    history: "Rajput warrior food."
+    calories: "650 kcal per serving",
+    bestPlace: "Traditional Heritage Restaurants & Royal Kitchens across Jaipur, Jodhpur & Udaipur",
+    ingredients: [
+      "Coarse Wheat Flour (Gehu ka Atta) for Baati", 
+      "Mixed Lentils (Chana Dal, Moong Dal, Tur Dal) for Dal", 
+      "Pure Desi Ghee (In generous amounts)", 
+      "Semolina (Sooji) & Yogurt for Baati texture", 
+      "Jaggery or Powdered Sugar & Cardamom for Churma", 
+      "Whole Spices, Garlic, and Dried Red Chilies for tempering"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/2/29/Dal_Baati_Churma_with_ghee.jpg"
+    ],
+    description: "Dal Baati Churma is the absolute crown jewel and culinary masterpiece of royal Rajasthan. It features three distinct elements that harmonize into perfection: crunchy, baked wheat-flour balls (baati) drenched in rich melted ghee; a spicy, flavorful, multi-lentil soup (dal); and a sweet, crumbly, powdered-wheat confection (churma). Every bite delivers an unforgettable explosion of rustic textures, robust spices, and buttery richness.",
+    history: "The history of Dal Baati Churma dates back centuries to the era of Rajput warriors and desert kingdoms. Historically, baatis were designed as survival rations for soldiers and travelers navigating the harsh Thar Desert. Because they required minimal water to bake and stayed fresh for days, soldiers would bury dough balls in hot desert sands to bake under the sun, later crushing them and mixing them with ghee, milk, or jaggery. Over time, royal kitchens elevated this survival food into a grand ceremonial feast.",
+    culturalSignificance: "In Rajasthani culture, Dal Baati Churma is synonymous with celebration, hospitality, and festivity. No wedding, festival (like Gangaur or Teej), or family gathering in Rajasthan is complete without serving this grand dish. Traditionally, baatis are crushed into a bowl and flooded with hot dal and a heavy ladle of pure ghee, symbolizing prosperity, warmth, and the welcoming ethos of the desert state.",
+    nutritionalBreakdown: "A standard traditional serving of Dal Baati Churma contains approximately 650 kilocalories. The mixed lentils provide an exceptional source of plant-based protein and dietary fiber, while whole wheat flour offers complex carbohydrates. The heavy use of pure desi ghee delivers rich, healthy fats that provide sustained energy and warmth, making it a wholesome and calorie-dense meal designed for active lifestyles.",
+    detailedRecipeAndTips: "To prepare authentic Rajasthani Dal Baati Churma at home, follow these steps: 1. Making Baati Dough: Mix coarse wheat flour, semolina, a pinch of salt, carom seeds, and melted ghee. Knead into a very stiff dough using warm water or milk. 2. Baking Baatis: Shape into round balls and bake them in a traditional baati oven or a regular oven at moderate heat until they turn golden brown and crack slightly on top, ensuring they are cooked through. 3. Preparing Dal: Boil mixed lentils (chana, moong, tur) and temper them with a fiery tadka of mustard seeds, cumin, garlic, onions, and dry red chilies in ghee. 4. Making Churma: Crush a couple of baked baatis while hot, grind them coarsely, and mix thoroughly with powdered sugar (or jaggery), cardamom powder, and roasted nuts tossed in ghee. 5. Serving: Submerge hot baatis in a bowl of melted desi ghee, serve alongside spicy dal and sweet churma, garnished with fresh coriander and lemon."
   },
 
   {
@@ -545,27 +557,50 @@ const foodData = [
     slug: "sikkim",
     capital: "Gangtok",
     dish: "Momos",
-    type: "Vegetarian/Non-Vegetarian",
-    calories: "300 kcal",
-    bestPlace: "Gangtok Street",
-    ingredients: ["Flour", "Vegetarianetables/Meat"],
-    images: ["https://images.jdmagicbox.com/quickquotes/images_main/wheat-flour-achari-chaap-frozen-momo-f8l1lk4c.jpg"],
-    description: "Steamed dumplings.",
-    history: "Tibetan influence."
+    type: "Non-Vegetarian",
+    calories: "280 kcal per serving",
+    bestPlace: "MG Marg, Local Steamed Dumpling Stalls & Traditional Eateries across Gangtok",
+    ingredients: [
+      "All-purpose Flour (Maida) for the wrapper", 
+      "Minced Pork, Chicken, or Mixed Vegetables", 
+      "Finely minced Onions, Ginger, Garlic, and Coriander", 
+      "Soy Sauce and a pinch of Pepper", 
+      "Spicy Tomato-Sesame Chutney (Dalle Khursani accompaniment)"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a1/Momos_plate.jpg"
+    ],
+    description: "Momos are the undisputed culinary pride of Sikkim, representing a delicate art form of steamed dumplings. Encased in a paper-thin, translucent wheat wrapper, the filling consists of succulent minced meat or fresh vegetables infused with ginger, garlic, and aromatic herbs. Steamed to perfection in multi-tiered bamboo steamers, they are served piping hot alongside a fiery, tangy tomato-sesame or local Dalle Khursani chili chutney that elevates the flavor profile to perfection.",
+    history: "The history of momos in Sikkim dates back centuries, rooted in the ancient culinary traditions of the Himalayan region, particularly influenced by Tibetan traders, Bhutanese settlers, and indigenous Sikkimese communities. Originally prepared in high-altitude mountain passes as a portable, high-protein meal, momos eventually spread across the valleys and found a permanent home in Sikkim's vibrant food culture, evolving into a global phenomenon.",
+    culturalSignificance: "In Sikkimese culture, momos are far more than a popular snack; they are a symbol of togetherness, celebration, and hospitality. Making momos is traditionally a collaborative family affair where members gather around to roll, fill, and pleat them together. They are an essential offering during festivals like Losar (Tibetan New Year), family reunions, and everyday gatherings across the state.",
+    nutritionalBreakdown: "A standard 250-gram serving (roughly 6-8 pieces) contains approximately 280 kilocalories. Because they are steamed rather than deep-fried, traditional momos are remarkably low in fat and cholesterol. Lean meat or vegetable fillings provide a balanced amount of protein, fiber, and essential minerals, making them a light yet satisfying meal option.",
+    detailedRecipeAndTips: "To prepare authentic Sikkim-style Momos at home, follow these steps: 1. Making the Wrapper: Knead all-purpose flour with a pinch of salt and warm water into a smooth, firm dough, then cover and rest it for 30 minutes. 2. Preparing Filling: Mix finely minced chicken or pork with minced onions, ginger, garlic, finely chopped coriander, a splash of soy sauce, salt, and pepper. 3. Rolling & Shaping: Roll small portions of dough into thin, round wrappers, place a spoonful of filling in the center, and pleat the edges together to seal them in a crescent or coin shape. 4. Steaming: Arrange the momos on a greased multi-tiered steamer basket, cover with a lid, and steam over boiling water for 10 to 12 minutes until the wrappers turn translucent and cooked. 5. Chutney & Serving: Serve piping hot alongside a fiery red tomato-sesame dipping chutney."
   },
 
   {
     state: "Tamil Nadu",
     slug: "tamil-nadu",
     capital: "Chennai",
-    dish: "Dosa",
+    dish: "Masala Dosa",
     type: "Vegetarian",
-    calories: "200 kcal",
-    bestPlace: "Chennai Restaurants",
-    ingredients: ["Rice batter", "Lentils"],
-    images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1H8Mu-pfh7Rb3kFFqkAs9BGl3KstjAFkb4A&s"],
-    description: "Crispy fermented crepe.",
-    history: "Ancient South Indian dish."
+    calories: "350 kcal per serving",
+    bestPlace: "Saravana Bhavan, Mylapore Traditional Tiffin Stalls & Heritage Eateries across Chennai & Madurai",
+    ingredients: [
+      "Parboiled Rice & Urad Dal (Black Gram) fermented batter", 
+      "Boiled Potatoes", 
+      "Onions, Mustard Seeds, Curry Leaves & Green Chilies", 
+      "Turmeric and Asafoetida (Hing)", 
+      "Pure Ghee or Gingelly Oil for roasting", 
+      "Served with Fresh Coconut Chutney & Sambar"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/b/b5/Masala_Dosa.jpg"
+    ],
+    description: "Masala Dosa is the undisputed monarch of South Indian tiffin culture, celebrated worldwide for its incredible texture and taste. It features a crisp, golden-brown fermented rice and lentil crepe spread paper-thin on a hot griddle, enveloping a savory, spiced potato masala filling seasoned with mustard seeds, curry leaves, and onions. Served piping hot alongside soothing coconut chutney and piping-hot lentil sambar, it offers an unforgettable contrast of a crunchy exterior and a soft, flavorful interior.",
+    history: "The origins of Dosa trace back over two thousand years to ancient South India, with historical mentions found in early Sangam literature. While the plain dosa has ancient roots, the modern Masala Dosa—featuring the spiced potato filling—evolved around the temple towns of Udupi and spread across Tamil Nadu, becoming a global culinary icon cherished across continents.",
+    culturalSignificance: "In Tamil culture, Masala Dosa is a sacred pillar of daily life and culinary tradition. It is enjoyed across all strata of society, from bustling roadside tiffin centers to grand wedding feasts. Preparing a flawless, paper-thin, crispy dosa is considered an art form passed down through generations, embodying warmth, hospitality, and South Indian pride.",
+    nutritionalBreakdown: "A standard serving of Masala Dosa contains approximately 350 kilocalories. The fermentation process of rice and urad dal pre-digests nutrients, making the batter exceptionally rich in probiotics, Vitamin B complex, and easily digestible carbohydrates. Potatoes provide quick energy, while coconut chutney and sambar supply essential dietary fiber and plant proteins.",
+    detailedRecipeAndTips: "To prepare authentic Tamil Nadu-style Masala Dosa at home, follow these steps: 1. Making the Batter: Soak parboiled rice and urad dal with a pinch of fenugreek seeds, grind them into a smooth batter, and let it ferment overnight until light and airy. 2. Preparing Potato Masala: Boil potatoes, mash them roughly, and sauté with sliced onions, mustard seeds, curry leaves, green chilies, turmeric, and a splash of water to form a moist masala. 3. Spreading Dosa: Pour a ladleful of fermented batter onto a hot, seasoned cast-iron tawa and spread it outward in swift circular motions to make a thin crepe. 4. Roasting: Drizzle pure ghee or oil around the edges, letting it roast until the bottom turns deep golden-brown and crisp. 5. Assembly: Place a generous portion of potato masala in the center, fold the dosa over it, and serve immediately with fresh coconut chutney and sambar."
   },
 
   {
