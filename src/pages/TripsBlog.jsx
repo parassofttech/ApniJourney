@@ -527,7 +527,8 @@ const TripsBlog = () => {
         )}
 
         {/* Main Feed Container */}
-        <div className="max-w-xl mx-auto px-4 py-8 space-y-8">
+         <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {trips.map((trip, index) => {
             if (!trip) return null;
             const id = trip._id || trip.id;
@@ -833,6 +834,7 @@ const TripsBlog = () => {
 
 
 
+        </div>
         </div>
       </div>
 
