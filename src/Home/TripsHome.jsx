@@ -162,7 +162,7 @@ const fetchUsers = async () => {
         trips: data.length,
         
       });
-      setTrips(data.slice(-6).reverse());
+      setTrips(data.slice(-26).reverse());
       
       // setTrips(Array.isArray(data) ? data : []);
     } catch (err) {

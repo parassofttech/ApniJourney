@@ -60,11 +60,20 @@ import VerifyForgotOTP from "./pages/VerifyForgotOTP";
 import ResetPassword from "./pages/ResetPassword";
 import ScrollRestoration from "./ScrollRestoration";
 import Error404 from "./pages/Error404";
-
+import Logo  from "./assets/images/logo.png"
 
 const App = () => {
   return (
     <div>
+      <Suspense fallback={
+         
+         <div className="flex h-[80vh] items-center justify-center">
+            <div className="relative flex items-center justify-center">
+              <div className="h-16 w-16 animate-spin rounded-full border-4 border-slate-200 border-t-blue-600"></div>
+              <img src={Logo}   className="absolute w-11 h-11 animate-pulse" alt="" />
+            </div>
+          </div>
+        }></Suspense>
     <Router>
       {/* <ScrollToTop/> */}
       <ScrollRestoration/>

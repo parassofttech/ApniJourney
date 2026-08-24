@@ -312,7 +312,7 @@ const foodData = [
       "Pachadi & Payasam (Kheer)"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/3/36/Kalyana_Sadya.jpg"
+      "https://images.timesnownews.com/thumb/msid-151378083,thumbsize-153170,width-1280,height-720,resizemode-75/151378083.jpg"
     ],
     description: "Kerala Sadya is a magnificent, multi-course vegetarian banquet traditionally served on a fresh plantain leaf during auspicious occasions, temple festivals, and Onam. Comprising anywhere from 20 to 28 traditional dishes, Sadya offers an incredible balance of sweet, sour, salty, spicy, and bitter flavors. From the earthy red Matta rice drenched in piping-hot sambar and rich coconut-based aviyal to crisp banana chips and sweet payasam, it represents the absolute pinnacle of South Indian culinary art.",
     history: "The tradition of Sadya dates back over two millennia to the ancient Chera dynasty and Sangam era. Rooted deeply in the Ayurvedic philosophy of eating seasonal, balanced, and locally sourced whole foods, Sadya was originally designed as a wholesome communal feast to celebrate agricultural abundance, harvest seasons, and spiritual harmony. Over centuries, temple kitchens and royal courts perfected its precise multi-course structure and ritualistic serving protocol.",
@@ -338,7 +338,7 @@ const foodData = [
       "Saffron-infused Sugar Syrup"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Poha_Jalebi_Indore.jpg"
+      "https://thumbs.dreamstime.com/b/north-indian-vegan-breakfast-poha-jalebi-poha-jalebi-125773393.jpg"
     ],
     description: "Poha Jalebi is the undisputed king of breakfast in Madhya Pradesh, legendary for its unique and delightful sweet-and-spicy flavor combination. Steamed, soft, and lightly spiced flattened rice (poha) tossed with fennel seeds and turmeric is topped with crunchy sev, fresh coriander, and pomegranate. It is served side-by-side with piping-hot, crispy, saffron-infused spiral jalebis, creating a match made in culinary heaven that balances savory warmth with sugary crunch.",
     history: "The tradition of eating Poha Jalebi dates back over a century, heavily influenced by the culinary heritage of the Maratha Holkar rulers in Indore. Historically, poha was adopted as a staple because it is lightweight, quick to digest, and requires minimal cooking time during busy mornings. Over generations, pairing it with freshly fried hot jalebis became an iconic street food tradition, particularly celebrated in Indore's famous night markets like Sarafa Bazaar.",
@@ -364,7 +364,7 @@ const foodData = [
       "Dry Garlic-Coconut Chutney (Dry Lasoon Chutney)"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/4/4b/Vada_Pav_in_Mumbai.jpg"
+      "https://www.awesomecuisine.com/wp-content/uploads/2007/11/vada_pav.jpg"
     ],
     description: "Vada Pav is the undisputed King of Mumbai street food, often lovingly called the Indian burger. It features a golden, crispy spiced potato dumpling (batata vada) nestled inside a soft, buttery pav slathered with fiery dry garlic-coconut chutney and green chilies. It delivers an explosion of textures and flavors in every single bite—crunchy, soft, spicy, and tangy all at once.",
     history: "The origins of Vada Pav date back to the late 1960s near Mumbai's Dadar railway station, pioneered by local street vendors looking for an affordable, quick, and filling meal for textile mill workers. As Mumbai's bustling commuter culture grew, Vada Pav became the ultimate on-the-go snack, providing cheap and instant nourishment for millions of office-goers, students, and laborers.",
@@ -389,7 +389,7 @@ const foodData = [
       "Fresh Herbs (Coriander, Sawtooth coriander / Awaphothibi)"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/e/ec/Eromba_with_rice.jpg"
+      "https://bharatkasafar.wordpress.com/wp-content/uploads/2015/03/eromba.jpg"
     ],
     description: "Eromba is a beloved, deeply flavorful, and fiery culinary masterpiece from the valleys of Manipur. It is a traditional mashed delicacy made by combining boiled potatoes and seasonal local vegetables with fermented fish (Ngari) and pounded with fiery U-Morok (King chili). Unlike regular curries, Eromba has a thick, rustic, mashed consistency and is packed with pungent umami flavors, making it an absolute treat for spice lovers when paired with warm steamed rice.",
     history: "The roots of Eromba go back centuries into the indigenous Meitei tribal traditions of Manipur. Historically, local communities relied on locally available tubers, wild forest greens, and fermented fish for sustenance. Fermentation (Ngari) was originally adopted as a vital preservation technique to store fish through humid monsoons and cold winters, eventually becoming the signature flavor backbone of Manipuri cuisine.",
@@ -415,7 +415,7 @@ const foodData = [
       "Turmeric and local spices"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/2/22/Jadoh.jpg"
+      "https://blog.swiggy.com/wp-content/uploads/2024/08/Image-No-1-Jadoh-1024x538.png"
     ],
     description: "Jadoh is the legendary crown jewel of Khasi cuisine in Meghalaya. It is a deeply aromatic and flavorful one-pot rice dish cooked with succulent pieces of pork and pork fat, seasoned with a rich blend of ginger, garlic, onions, and local herbs. Often prepared using indigenous red hill rice, some traditional variations incorporate black sesame seed paste (known as Jadoh Snem), which gives the dish a distinctive earthy flavor and a deep, dark hue.",
     history: "The history of Jadoh is deeply rooted in the ancient tribal traditions of the Khasi and Jaintia hills of Meghalaya. Historically, hill communities required high-energy, nutrient-dense meals to sustain themselves through the cold, wet mountain climate and rigorous daily farming. Pork and indigenous red rice have been dietary staples for centuries, perfectly combining in Jadoh to provide long-lasting warmth and endurance.",
@@ -440,7 +440,7 @@ const foodData = [
       "Salt and baking soda (to tenderize greens)"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/8/87/Mizo_Bai.jpg"
+      "https://images.slurrp.com/prod/rich_article/kwxhjwjlwoe.webp?impolicy=slurrp-20210601&width=1200&height=675"
     ],
     description: "Bai is the ultimate comfort food and the national dish of Mizoram, celebrated for its clean, simple, and earthy flavors. It is a soupy, boiled stew typically made with local seasonal greens, bamboo shoots, and pork broth (or smoked pork), flavored simply with herbs and local seasonings without the use of heavy oils or frying spices. The result is a light, deeply nourishing broth that is traditionally served alongside steamed rice.",
     history: "The history of Bai is tied directly to the indigenous lifestyle of the Mizo hill tribes, whose cooking philosophy revolves around boiling and steaming rather than frying. Historically, forest foraging provided abundant wild greens, bamboo shoots, and herbs. Boiling them together into a single-pot soup ('Bai') allowed families to extract maximum nutrition and warmth while conserving scarce resources during lean mountain seasons.",
@@ -465,7 +465,7 @@ const foodData = [
       "Salt to taste"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Smoked_Pork_Naga_Dish.jpg"
+      "https://rootsandleisure.com/wp-content/uploads/2017/01/IMG_5238.jpg"
     ],
     description: "Smoked Pork with Raja Mircha is an iconic and fiery culinary masterpiece that defines the bold flavors of Nagaland. Tender chunks of wood-smoked pork are slow-cooked with 'Axone' (pungent fermented soybean paste) and fiery 'Raja Mircha' (Ghost pepper). This dish is famous for its intense smoky aroma, complex fermented umami depth, and blistering heat, making it an unforgettable experience for adventurous food lovers when paired with plain boiled rice.",
     history: "The history of this dish is deeply embedded in the ancient tribal traditions of Nagaland's various indigenous Naga communities. Historically, wood-smoking was the primary method used to preserve meat through long, damp mountain winters before modern refrigeration. Fermented soybeans (Axone) and wild chilies were utilized to enhance flavor, provide essential proteins, and preserve food while celebrating community feasts and tribal identity.",
@@ -491,7 +491,7 @@ const foodData = [
       "Pinch of Asafoetida (Hing) and Turmeric"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/2/2a/Dalma_Odisha_Dish.jpg"
+      "https://www.seema.com/wp-content/uploads/2022/04/Dalma-recipe.jpg"
     ],
     description: "Dalma is the soulful heart of Odia cuisine, a magnificent and deeply nourishing one-pot meal that blends lentils with an assortment of fresh seasonal vegetables. Slow-cooked to a rich, harmonious consistency, it is seasoned with aromatic roasted cumin-chili powder and tempered with pure desi ghee or mustard oil. Crowned with grated coconut, Dalma offers a sublime balance of earthy protein, tender vegetables, and subtle spices.",
     history: "The origins of Dalma are spiritually and historically intertwined with the ancient temple culture of Lord Jagannath in Puri, dating back nearly a millennium. In traditional temple mahaprasad preparation, Dalma is cooked in massive earthen pots over wood fires without using onions or garlic, adhering strictly to ancient Ayurvedic principles of wholesome, satvik nutrition. Over centuries, this temple offering became the beloved everyday comfort food of every Odia household.",
@@ -517,7 +517,7 @@ const foodData = [
       "Jaggery (Gur) for serving"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/3/36/Sarson_ka_Saag_and_Makki_di_Roti.jpg"
+      "https://c.ndtvimg.com/2022-07/5thst8q8_saag_625x300_08_July_22.png"
     ],
     description: "Sarson ka Saag and Makki di Roti is the undisputed culinary anthem of Punjab, embodying the hearty, vibrant spirit of the Land of Five Rivers. Sarson ka Saag is a rich, velvety green curry made from crushed mustard greens and spinach, slow-cooked with warming spices and thickened with maize flour. It is served piping hot alongside rustic, golden cornmeal flatbreads (makki di roties), generously slathered with dollops of melting homemade white butter and accompanied by sweet jaggery and raw onions.",
     history: "The history of this iconic pairing goes back centuries into the agricultural heartland of rural Punjab. Historically, mustard crops grew in abundance across the fertile Indo-Gangetic plains during the winter harvest season. Farmers and rural families relied on this nutrient-dense, heat-generating meal to sustain themselves through chilly winter mornings before heading out for rigorous farming labor in the fields. Over generations, it evolved into a global symbol of Punjabi hospitality and culinary pride.",
@@ -543,7 +543,7 @@ const foodData = [
       "Whole Spices, Garlic, and Dried Red Chilies for tempering"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/2/29/Dal_Baati_Churma_with_ghee.jpg"
+      "https://cdn.uengage.io/uploads/28289/image-V8VDBE-1768222811.png"
     ],
     description: "Dal Baati Churma is the absolute crown jewel and culinary masterpiece of royal Rajasthan. It features three distinct elements that harmonize into perfection: crunchy, baked wheat-flour balls (baati) drenched in rich melted ghee; a spicy, flavorful, multi-lentil soup (dal); and a sweet, crumbly, powdered-wheat confection (churma). Every bite delivers an unforgettable explosion of rustic textures, robust spices, and buttery richness.",
     history: "The history of Dal Baati Churma dates back centuries to the era of Rajput warriors and desert kingdoms. Historically, baatis were designed as survival rations for soldiers and travelers navigating the harsh Thar Desert. Because they required minimal water to bake and stayed fresh for days, soldiers would bury dough balls in hot desert sands to bake under the sun, later crushing them and mixing them with ghee, milk, or jaggery. Over time, royal kitchens elevated this survival food into a grand ceremonial feast.",
@@ -568,7 +568,7 @@ const foodData = [
       "Spicy Tomato-Sesame Chutney (Dalle Khursani accompaniment)"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/a/a1/Momos_plate.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIJJse0v8UhCy3n3vlJOSZgzOl72vepA51cpvV_A3BQrpif6yjKNe07sNo&s=10"
     ],
     description: "Momos are the undisputed culinary pride of Sikkim, representing a delicate art form of steamed dumplings. Encased in a paper-thin, translucent wheat wrapper, the filling consists of succulent minced meat or fresh vegetables infused with ginger, garlic, and aromatic herbs. Steamed to perfection in multi-tiered bamboo steamers, they are served piping hot alongside a fiery, tangy tomato-sesame or local Dalle Khursani chili chutney that elevates the flavor profile to perfection.",
     history: "The history of momos in Sikkim dates back centuries, rooted in the ancient culinary traditions of the Himalayan region, particularly influenced by Tibetan traders, Bhutanese settlers, and indigenous Sikkimese communities. Originally prepared in high-altitude mountain passes as a portable, high-protein meal, momos eventually spread across the valleys and found a permanent home in Sikkim's vibrant food culture, evolving into a global phenomenon.",
@@ -594,7 +594,7 @@ const foodData = [
       "Served with Fresh Coconut Chutney & Sambar"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/b/b5/Masala_Dosa.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoNlnATEJhjkiWyWT9cNyX4wgv1dkxZooXBSHeiZjLEwlHZK5H30f-4xc&s=10"
     ],
     description: "Masala Dosa is the undisputed monarch of South Indian tiffin culture, celebrated worldwide for its incredible texture and taste. It features a crisp, golden-brown fermented rice and lentil crepe spread paper-thin on a hot griddle, enveloping a savory, spiced potato masala filling seasoned with mustard seeds, curry leaves, and onions. Served piping hot alongside soothing coconut chutney and piping-hot lentil sambar, it offers an unforgettable contrast of a crunchy exterior and a soft, flavorful interior.",
     history: "The origins of Dosa trace back over two thousand years to ancient South India, with historical mentions found in early Sangam literature. While the plain dosa has ancient roots, the modern Masala Dosa—featuring the spiced potato filling—evolved around the temple towns of Udupi and spread across Tamil Nadu, becoming a global culinary icon cherished across continents.",
@@ -620,7 +620,7 @@ const foodData = [
       "Pure Desi Ghee and Whole Aromatic Spices (Cardamom, Cloves, Cinnamon, Star Anise)"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/5/5a/Hyderabadi_Chicken_Biryani.jpg"
+      "https://vismaifood.com/storage/app/uploads/public/980/eb9/ed6/thumb__1200_0_0_0_auto.jpg"
     ],
     description: "Hyderabadi Dum Biryani is universally celebrated as the crown jewel of Indian cuisine, legendary for its peerless aroma, rich heritage, and complex flavors. Prepared using the authentic 'Kacchi Biryani' method, raw marinated meat layered with partially cooked aromatic basmati rice is sealed in a heavy-bottomed handi with dough ('dum'). Slow-cooked over gentle embers, the meat cooks to absolute tenderness in its own juices and yogurt while absorbing the exquisite fragrance of saffron, fried onions, and whole spices.",
     history: "The origins of this culinary masterpiece date back to the 17th century in the royal kitchens of the Nizams of Hyderabad, blending Mughalai culinary techniques with native Telugu spices and Persian influences. Legend has it that the Nizam's royal khansamas (chefs) created hundreds of variations of biryani, with the slow-cooked Dum method emerging as the ultimate royal banquet offering served to nobles and foreign dignitaries.",
@@ -645,7 +645,7 @@ const foodData = [
       "Gound chili paste (without oil or frying)"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Tripuri_cuisine_Mui_Borok.jpg"
+      "https://s7ap1.scene7.com/is/image/incredibleindia/mui-borok-gastronomy-agartala-blog-gas-hero?qlt=82&ts=1726651182594"
     ],
     description: "Mui Borok represents the traditional, oil-free culinary heritage of the indigenous Tripuri community. It is centered around 'Berma', a distinctively pungent, sun-dried, and fermented small fish paste that imparts a rich umami depth to every dish. Cooked traditionally without using any cooking oil or heavy frying, the ingredients—such as pork, fresh bamboo shoots, wild herbs, and green vegetables—are boiled or stewed together, resulting in a clean, deeply aromatic, and health-packed meal served with warm rice.",
     history: "The history of Mui Borok dates back ancient centuries into the tribal heritage of Tripura's indigenous Kokborok-speaking communities. Historically, because cooking oil was scarce or avoided in traditional hill practices, boiling and roasting over wood fires became the primary techniques. Berma (fermentation) was invented to preserve protein through humid tropical monsoons, creating a unique flavor profile passed down unchanged through generations.",
@@ -672,7 +672,7 @@ const foodData = [
       "Served with Ulte Taware ki Roti and Mint Chutney"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Galouti_kebab.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqEsrd7SwpKYHZIsLIHBCisCGPctcrS_ZFGvC5EpAWuonnnn5VKiJH0dJV&s=10"
     ],
     description: "Lucknowi Galouti Kebab is a legendary culinary marvel of Awadhi cuisine, world-renowned for its melt-in-the-mouth texture. Finely minced mutton, marinated with raw papaya paste and a complex blend of over 20 exotic aromatic spices ('Potli Masala'), is formed into delicate patties and shallow-fried in pure desi ghee until it literally dissolves on your tongue. Paired with soft, paper-thin 'Ulte Taware ki Roti', it offers an unforgettable royal experience.",
     history: "The creation of Galouti Kebab is a fascinating royal tale from 18th-century Awadh. It was originally crafted for the aging Nawab Wajid Ali Shah, who had lost his teeth but still possessed an undying love for rich meat dishes. He challenged his royal Khansamas to create a meat kebab so soft that even someone without teeth could enjoy it. The master chefs perfected this velvety masterpiece using raw papaya as a natural meat tenderizer and a secret blend of royal spices.",
@@ -697,7 +697,7 @@ const foodData = [
       "Curd or Buttermilk (Chhaas) for slight tanginess"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/e/ea/Kafuli_Uttarakhand_dish.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTr3HlUQoSlcTnIBBGy7gr3iBkNoXZlMimhXM72WGDVJnxJ5s88iyJ1S4&s=10"
     ],
     description: "Kafuli is a nutrient-dense, soulful, and signature dish of Kumaoni and Garhwali cuisine in Uttarakhand. It is a thick, dark-green gravy prepared by slow-cooking spinach and fenugreek leaves in an iron kadhai, thickened with a smooth rice flour slurry and enriched with curd. Tempered simply with garlic, ginger, and cumin in pungent mustard oil, Kafuli offers a deeply comforting, earthy, and mildly tangy flavor profile that pairs wonderfully with steamed mountain rice.",
     history: "The origins of Kafuli are rooted deeply in the ancient agricultural traditions of the Himalayan hills. Historically, winter green vegetables like spinach and fenugreek grew in abundance across terraced mountain fields. Cooking them slowly in heavy iron pots allowed rural families to extract maximum iron, warmth, and essential nutrition to combat harsh mountain winters, preserving a time-tested recipe handed down across generations.",
@@ -723,7 +723,7 @@ const foodData = [
       "Salt to taste"
     ],
     images: [
-      "https://upload.wikimedia.org/wikipedia/commons/4/4b/Shorshe_Ilish.jpg"
+      "https://www.cuisineindiasociety.in/wp/wp-content/uploads/2025/05/bengal.jpg"
     ],
     description: "Shorshe Ilish is the undisputed monarch of Bengali cuisine, a majestic dish that celebrates the legendary Hilsa fish cooked in a sharp, pungent, and aromatic mustard gravy. Tender, oil-rich Ilish fillets are simmered in a smooth paste of ground mustard seeds, green chilies, and turmeric, tempered with nigella seeds in pure mustard oil. The result is a magnificent interplay of the fish's natural buttery richness and the fiery, nasal-clearing kick of mustard.",
     history: "The history of Shorshe Ilish is deeply tied to the rivers of Bengal, particularly the Padma and Hooghly rivers where the migratory Hilsa fish ascends during the monsoon season. For centuries, Bengali poets, royalty, and common folk alike have revered the Hilsa as the 'Queen of Fish'. Mustard paste was traditionally adopted as the ideal culinary companion to cut through the rich, oily texture of the fish, creating a timeless pairing passed down through generations.",

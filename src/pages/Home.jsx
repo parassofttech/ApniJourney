@@ -62,7 +62,7 @@ const Home = () => {
   
 
 
-    <OffersSection />
+  {/* <OffersSection /> */}
   
 
   
