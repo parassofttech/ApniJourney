@@ -267,32 +267,58 @@ const foodData = [
     detailedRecipeAndTips: "To prepare authentic Jharkhand-style Thekua at home, follow these steps: 1. Preparing the Jaggery Syrup: Melt jaggery in warm water just until dissolved (do not boil into a thick syrup), let it cool down completely, and strain out any impurities. 2. Mixing the Dough: In a large bowl, combine whole wheat flour, semolina (sooji) for extra crunch, grated dry coconut, crushed fennel seeds, cardamom powder, and a couple of spoons of hot ghee. Rub everything well with your fingertips. 3. Kneading: Gradually add the cooled jaggery water to bind the mixture into a very stiff, crumbly dough (do not knead it like soft chapati dough). 4. Shaping: Divide into small lemon-sized balls, press them onto a traditional wooden carved mold ('saancha') or a fork/back of a strainer to imprint beautiful patterns. 5. Slow Frying: Heat pure desi ghee or oil in a heavy kadhai on low-medium heat. Gently slide in the shaped thekuas and fry them patiently on low flame until they turn deep golden-brown and crisp. Let them cool completely so they harden to perfection."
   },
 
-  {
+ {
     state: "Karnataka",
     slug: "karnataka",
     capital: "Bengaluru",
     dish: "Bisi Bele Bath",
     type: "Vegetarian",
-    calories: "400 kcal",
-    bestPlace: "MTR, Bengaluru",
-    ingredients: ["Rice", "Lentils", "Vegetarianetables"],
-    images: ["https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/bisi-bele-bath-recipe-500x375.jpg"],
-    description: "Spicy rice dish.",
-    history: "Originated in Mysore."
+    calories: "400 kcal per serving",
+    bestPlace: "MTR (Mavalli Tiffin Room), Bengaluru & Traditional Kannadiga Homes",
+    ingredients: [
+      "Sona Masuri Rice", 
+      "Toor Dal (Yellow Pigeon Peas)", 
+      "Fresh Mixed Vegetables (Beans, Carrots, Peas, Potatoes)", 
+      "Bisi Bele Bath Masala Powder (Roasted spices & dry coconut)", 
+      "Tamarind Pulp", 
+      "Grated Jaggery", 
+      "Cashews and Pure Desi Ghee or Coconut Oil"
+    ],
+    images: [
+      "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/bisi-bele-bath-recipe-500x375.jpg"
+    ],
+    description: "Bisi Bele Bath translates literally from Kannada as 'hot lentil rice dish'. It is an iconic, deeply comforting, and aromatic culinary masterpiece of Karnataka. This one-pot meal combines rice, lentils, fresh garden vegetables, and a complex freshly-ground spice blend simmered together to a rich, risotto-like consistency. Infused with tangy tamarind, a subtle hint of jaggery, and generously tempered with cashews roasted in pure desi ghee, it offers a harmonious blend of spicy, sour, and savory flavors.",
+    history: "The origins of Bisi Bele Bath trace back over 400 years to the royal kitchens of the Mysore Palace. Historically, palace khansamas (cooks) sought to create a nutritionally complete and flavorful meal that combined carbohydrates, plant protein, and vegetables in a single pot. Over centuries, this royal recipe transcended palace walls to become a beloved household staple across Karnataka, famously commercialized and popularized globally by legendary heritage eateries like Bengaluru's Mavalli Tiffin Room (MTR).",
+    culturalSignificance: "In Kannadiga culture, Bisi Bele Bath is much more than comfort food; it is an inseparable part of daily life, festive celebrations, and wedding feasts. Traditionally served piping hot accompanied by crunchy boondi, potato chips, or fresh raita, preparing a flawless batch of Bisi Bele Bath requires culinary skill and precise spice balancing. It is a mandatory menu item during family gatherings, housewarmings, and traditional breakfast routines across the state.",
+    nutritionalBreakdown: "A standard 300-gram serving of Bisi Bele Bath contains approximately 400 kilocalories. Combining rice and toor dal creates a complete biological protein containing all essential amino acids. Fresh vegetables supply abundant dietary fiber, vitamins, and minerals. The aromatic spice blend (containing cinnamon, cloves, and fenugreek) aids metabolism and digestion, while pure ghee provides healthy fats that support joint health and nutrient absorption.",
+    detailedRecipeAndTips: "To prepare authentic Karnataka-style Bisi Bele Bath at home, follow these steps: 1. Cooking Base: Cook rice and toor dal together with turmeric and water until they are soft and mushy. 2. Roasting Spices: Dry-roast coriander seeds, chana dal, urad dal, dried red chilies, cinnamon, cloves, dry coconut, and a pinch of asafoetida, then grind them into a fine Bisi Bele Bath powder. 3. Boiling Vegetables: In a large pot, boil mixed vegetables in water until tender, then add tamarind extract, jaggery, and salt. 4. Combining: Add the freshly ground spice powder, cooked rice-dal mixture, and a little water to adjust consistency, simmering on low heat until all flavors meld into a rich, unified porridge. 5. Tempering: Finish by generously pouring a tempering of mustard seeds, curry leaves, and golden-brown cashews fried in pure desi ghee, and serve piping hot."
   },
 
-  {
+ {
     state: "Kerala",
     slug: "kerala",
     capital: "Thiruvananthapuram",
-    dish: "Appam with Stew",
-    type: "Vegetarian/Non-Vegetarian",
-    calories: "300 kcal",
-    bestPlace: "Kochi Restaurants",
-    ingredients: ["Rice batter", "Coconut milk"],
-    images: ["https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Fmobile%2FAppam_and_Chicken_Stew20131126121303_88_1.jpg&w=3840&q=75"],
-    description: "Soft pancakes with stew.",
-    history: "Syrian Christian influence."
+    dish: "Kerala Sadya",
+    type: "Vegetarian",
+    calories: "1200 kcal per full feast",
+    bestPlace: "Traditional Temples, Marriage Halls & Authentic Restaurants across Kochi & Kozhikode",
+    ingredients: [
+      "Matta Rice (Red Palakkadan Rice)", 
+      "Fresh Coconut & Coconut Oil", 
+      "Sambar & Rasam", 
+      "Aviyal (Mixed vegetables in coconut yogurt gravy)", 
+      "Thoran (Dry vegetable stir-fry with grated coconut)", 
+      "Pappadam, Banana Chips & Jaggery Chips", 
+      "Pachadi & Payasam (Kheer)"
+    ],
+    images: [
+      "https://upload.wikimedia.org/wikipedia/commons/3/36/Kalyana_Sadya.jpg"
+    ],
+    description: "Kerala Sadya is a magnificent, multi-course vegetarian banquet traditionally served on a fresh plantain leaf during auspicious occasions, temple festivals, and Onam. Comprising anywhere from 20 to 28 traditional dishes, Sadya offers an incredible balance of sweet, sour, salty, spicy, and bitter flavors. From the earthy red Matta rice drenched in piping-hot sambar and rich coconut-based aviyal to crisp banana chips and sweet payasam, it represents the absolute pinnacle of South Indian culinary art.",
+    history: "The tradition of Sadya dates back over two millennia to the ancient Chera dynasty and Sangam era. Rooted deeply in the Ayurvedic philosophy of eating seasonal, balanced, and locally sourced whole foods, Sadya was originally designed as a wholesome communal feast to celebrate agricultural abundance, harvest seasons, and spiritual harmony. Over centuries, temple kitchens and royal courts perfected its precise multi-course structure and ritualistic serving protocol.",
+    culturalSignificance: "Sadya is far more than a meal in Kerala; it is a profound cultural institution symbolizing equality, community bonding, and festive joy. During the harvest festival of Onam, millions sit together on the floor in rows ('Pangat') to partake in the feast. Every single item placed on the plantain leaf has a designated spot, and finishing the meal by folding the leaf inwards signifies deep gratitude and satisfaction.",
+    nutritionalBreakdown: "A complete traditional Sadya serving contains approximately 1200 kilocalories. Because it is completely plant-based, dairy-free (mostly using coconut oil), and fiber-rich, it is remarkably wholesome. Matta rice provides sustained energy and complex carbohydrates, mixed vegetable dishes supply an array of vital vitamins and antioxidants, and authentic coconut oil offers healthy medium-chain fats that boost immunity and digestion.",
+    detailedRecipeAndTips: "To understand and prepare core elements of the traditional Kerala Sadya: 1. Serving Protocol: Lay out a fresh, washed banana leaf with the tapering tip pointing to the left side of the diner. 2. Arranging Sides: Place banana chips, jaggery chips, salt, and raw plantain along the top edge, followed by various pickles, pachadi, and kachchiy moru. 3. Main Course Sequence: Serve hot Matta rice in the lower center of the leaf. Pour parippu (lentil stew) with ghee, followed by sambar, rasam, and pulissery in sequential order over or beside the rice. 4. Vegetable Delicacies: Feature authentic preparations like Aviyal (vegetables simmered in ground coconut and curd), Thoran (stir-fried cabbage or beans with coconut), and Kalan. 5. Grand Finale: Conclude the feast by pouring rich, bubbling Ada Pradhaman or Paal Payasam (jaggery or milk-based kheer) directly onto the leaf."
   },
 
   {
