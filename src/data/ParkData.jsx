@@ -337,7 +337,7 @@ const ParkData = [
     ]
   },
   {
-    id: 13,
+    id: "pench-national-park",
     name: "Pench National Park",
     state: "Madhya Pradesh",
     tagline: "The Real Jungle Book Territory",
@@ -365,7 +365,7 @@ const ParkData = [
     ]
   },
   {
-    id: 14,
+    id: "manas-national-park",
     name: "Manas National Park",
     state: "Assam",
     tagline: "Project Tiger Reserve & UNESCO Heritage Sanctuary",
@@ -393,7 +393,7 @@ const ParkData = [
     ]
   },
   {
-    id: 15,
+    id: "keoladeo-national-park",
     name: "Keoladeo National Park",
     state: "Rajasthan",
     tagline: "The World-Famous Avian Sanctuary of Bharatpur",
@@ -421,7 +421,7 @@ const ParkData = [
     ]
   },
   {
-    id: 16,
+    id: "nagarhole-national-park",
     name: "Nagarhole National Park",
     state: "Karnataka",
     tagline: "Also Known as Rajiv Gandhi National Park",
@@ -449,7 +449,7 @@ const ParkData = [
     ]
   },
   {
-    id: 17,
+    id: "great-himalayan-national-park",
     name: "Great Himalayan National Park",
     state: "Himachal Pradesh",
     tagline: "A Pristine Alpine Wilderness in Kullu",
@@ -477,7 +477,7 @@ const ParkData = [
     ]
   },
   {
-    id: 18,
+    id: "desert-national-park",
     name: "Desert National Park",
     state: "Rajasthan",
     tagline: "The Golden Sand Dunes & Great Indian Bustard Habitat",
@@ -505,7 +505,7 @@ const ParkData = [
     ]
   },
   {
-    id: 19,
+    id: "namdapha-national-park",
     name: "Namdapha National Park",
     state: "Arunachal Pradesh",
     tagline: "India’s Easternmost Remote Biodiversity Hotspot",
@@ -533,7 +533,7 @@ const ParkData = [
     ]
   },
   {
-    id: 20,
+    id: "silent-valley-national-park",
     name: "Silent Valley National Park",
     state: "Kerala",
     tagline: "An Untouched Evergreen Rainforest Ecosystem",
