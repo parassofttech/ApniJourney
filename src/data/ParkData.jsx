@@ -85,7 +85,7 @@ const ParkData = [
     ]
   },
   {
-    id: 4,
+    id: "sundarbans-national-park",
     name: "Sundarbans National Park",
     state: "West Bengal",
     tagline: "The World's Largest Mangrove Wilderness",
