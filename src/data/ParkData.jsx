@@ -57,7 +57,7 @@ const ParkData = [
     ]
   },
   {
-    id: 3,
+    id: "ranthambore-park",
     name: "Ranthambore National Park",
     state: "Rajasthan",
     tagline: "The Historic Realm of Royal Bengal Tigers",
