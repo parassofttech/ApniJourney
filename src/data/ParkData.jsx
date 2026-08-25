@@ -57,7 +57,7 @@ const ParkData = [
     ]
   },
   {
-    id: "ranthambore-park",
+    id: 3,
     name: "Ranthambore National Park",
     state: "Rajasthan",
     tagline: "The Historic Realm of Royal Bengal Tigers",
@@ -85,7 +85,7 @@ const ParkData = [
     ]
   },
   {
-    id: "sundarbans-national-park",
+    id: 4,
     name: "Sundarbans National Park",
     state: "West Bengal",
     tagline: "The World's Largest Mangrove Wilderness",
@@ -113,7 +113,7 @@ const ParkData = [
     ]
   },
   {
-    id: "gir-national-park",
+    id: 5,
     name: "Gir National Park",
     state: "Gujarat",
     tagline: "The Sole Global Haven of Asiatic Lions",
@@ -141,7 +141,7 @@ const ParkData = [
     ]
   },
   {
-    id: "kanha-national-park",
+    id: 6,
     name: "Kanha National Park",
     state: "Madhya Pradesh",
     tagline: "The Legendary Heart of Indian Jungle Lore",
@@ -169,7 +169,7 @@ const ParkData = [
     ]
   },
   {
-    id: "bandipur-nt-park",
+    id: 7,
     name: "Bandipur National Park",
     state: "Karnataka",
     tagline: "A Pristine Jewel of the Nilgiri Biosphere",
@@ -197,7 +197,7 @@ const ParkData = [
     ]
   },
   {
-    id: "periyar-nt-park",
+    id: 8,
     name: "Periyar National Park",
     state: "Kerala",
     tagline: "The Enchanting Elephant Haven around Periyar Lake",
@@ -225,7 +225,7 @@ const ParkData = [
     ]
   },
   {
-    id: "hemis-nt-park",
+    id: 9,
     name: "Hemis National Park",
     state: "Ladakh",
     tagline: "High-Altitude Wilderness & Realm of the Snow Leopard",
@@ -253,7 +253,7 @@ const ParkData = [
     ]
   },
   {
-    id: "valley-nt-park",
+    id: 10,
     name: "Valley of Flowers National Park",
     state: "Uttarakhand",
     tagline: "A Himalayan Paradise of Endemic Alpine Blooms",
@@ -281,7 +281,7 @@ const ParkData = [
     ]
   },
   {
-    id: "dudhwa-nt-park",
+    id: 11,
     name: "Dudhwa National Park",
     state: "Uttar Pradesh",
     tagline: "The Untamed Terai Wilderness of Barasingha",
@@ -309,7 +309,7 @@ const ParkData = [
     ]
   },
   {
-    id: "satpura-nt-park",
+    id: 12,
     name: "Satpura National Park",
     state: "Madhya Pradesh",
     tagline: "Rugged Hills, Waterfalls and Walking Safaris",
@@ -337,7 +337,7 @@ const ParkData = [
     ]
   },
   {
-    id: "pench-nt-park",
+    id: 13,
     name: "Pench National Park",
     state: "Madhya Pradesh",
     tagline: "The Real Jungle Book Territory",
@@ -365,7 +365,7 @@ const ParkData = [
     ]
   },
   {
-    id: "manas-nt-park",
+    id: 14,
     name: "Manas National Park",
     state: "Assam",
     tagline: "Project Tiger Reserve & UNESCO Heritage Sanctuary",
@@ -393,7 +393,7 @@ const ParkData = [
     ]
   },
   {
-    id: "keoladeo-nt-park",
+    id: 15,
     name: "Keoladeo National Park",
     state: "Rajasthan",
     tagline: "The World-Famous Avian Sanctuary of Bharatpur",
@@ -421,7 +421,7 @@ const ParkData = [
     ]
   },
   {
-    id: "nagarhole-nt-park",
+    id: 16,
     name: "Nagarhole National Park",
     state: "Karnataka",
     tagline: "Also Known as Rajiv Gandhi National Park",
@@ -449,7 +449,7 @@ const ParkData = [
     ]
   },
   {
-    id: "great-nt-park",
+    id: 17,
     name: "Great Himalayan National Park",
     state: "Himachal Pradesh",
     tagline: "A Pristine Alpine Wilderness in Kullu",
@@ -477,7 +477,7 @@ const ParkData = [
     ]
   },
   {
-    id: "desert-nt-park",
+    id: 18,
     name: "Desert National Park",
     state: "Rajasthan",
     tagline: "The Golden Sand Dunes & Great Indian Bustard Habitat",
@@ -505,7 +505,7 @@ const ParkData = [
     ]
   },
   {
-    id: "namdapha-nt-park",
+    id: 19,
     name: "Namdapha National Park",
     state: "Arunachal Pradesh",
     tagline: "India’s Easternmost Remote Biodiversity Hotspot",
@@ -533,7 +533,7 @@ const ParkData = [
     ]
   },
   {
-    id: "silent-valley-nt-park",
+    id: 20,
     name: "Silent Valley National Park",
     state: "Kerala",
     tagline: "An Untouched Evergreen Rainforest Ecosystem",
