@@ -113,7 +113,7 @@ const ParkData = [
     ]
   },
   {
-    id: 5,
+    id: "gir-national-park",
     name: "Gir National Park",
     state: "Gujarat",
     tagline: "The Sole Global Haven of Asiatic Lions",
@@ -141,7 +141,7 @@ const ParkData = [
     ]
   },
   {
-    id: 6,
+    id: "kanha-national-park",
     name: "Kanha National Park",
     state: "Madhya Pradesh",
     tagline: "The Legendary Heart of Indian Jungle Lore",
