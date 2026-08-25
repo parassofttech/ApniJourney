@@ -197,7 +197,7 @@ const ParkData = [
     ]
   },
   {
-    id: 8,
+    id: "periyar-national-park",
     name: "Periyar National Park",
     state: "Kerala",
     tagline: "The Enchanting Elephant Haven around Periyar Lake",
@@ -225,7 +225,7 @@ const ParkData = [
     ]
   },
   {
-    id: 9,
+    id: "hemis-national-park",
     name: "Hemis National Park",
     state: "Ladakh",
     tagline: "High-Altitude Wilderness & Realm of the Snow Leopard",
@@ -253,7 +253,7 @@ const ParkData = [
     ]
   },
   {
-    id: 10,
+    id: "valley-nt-park",
     name: "Valley of Flowers National Park",
     state: "Uttarakhand",
     tagline: "A Himalayan Paradise of Endemic Alpine Blooms",
@@ -281,7 +281,7 @@ const ParkData = [
     ]
   },
   {
-    id: 11,
+    id: "dudhwa-nt-park",
     name: "Dudhwa National Park",
     state: "Uttar Pradesh",
     tagline: "The Untamed Terai Wilderness of Barasingha",
@@ -309,7 +309,7 @@ const ParkData = [
     ]
   },
   {
-    id: 12,
+    id: "satpura-nt-park",
     name: "Satpura National Park",
     state: "Madhya Pradesh",
     tagline: "Rugged Hills, Waterfalls and Walking Safaris",
@@ -337,7 +337,7 @@ const ParkData = [
     ]
   },
   {
-    id: "pench-national-park",
+    id: "pench-nt-park",
     name: "Pench National Park",
     state: "Madhya Pradesh",
     tagline: "The Real Jungle Book Territory",
@@ -365,7 +365,7 @@ const ParkData = [
     ]
   },
   {
-    id: "manas-national-park",
+    id: "manas-nt-park",
     name: "Manas National Park",
     state: "Assam",
     tagline: "Project Tiger Reserve & UNESCO Heritage Sanctuary",
@@ -393,7 +393,7 @@ const ParkData = [
     ]
   },
   {
-    id: "keoladeo-national-park",
+    id: "keoladeo-nt-park",
     name: "Keoladeo National Park",
     state: "Rajasthan",
     tagline: "The World-Famous Avian Sanctuary of Bharatpur",
@@ -421,7 +421,7 @@ const ParkData = [
     ]
   },
   {
-    id: "nagarhole-national-park",
+    id: "nagarhole-nt-park",
     name: "Nagarhole National Park",
     state: "Karnataka",
     tagline: "Also Known as Rajiv Gandhi National Park",
@@ -449,7 +449,7 @@ const ParkData = [
     ]
   },
   {
-    id: "great-himalayan-national-park",
+    id: "great-nt-park",
     name: "Great Himalayan National Park",
     state: "Himachal Pradesh",
     tagline: "A Pristine Alpine Wilderness in Kullu",
@@ -477,7 +477,7 @@ const ParkData = [
     ]
   },
   {
-    id: "desert-national-park",
+    id: "desert-nt-park",
     name: "Desert National Park",
     state: "Rajasthan",
     tagline: "The Golden Sand Dunes & Great Indian Bustard Habitat",
@@ -505,7 +505,7 @@ const ParkData = [
     ]
   },
   {
-    id: "namdapha-national-park",
+    id: "namdapha-nt-park",
     name: "Namdapha National Park",
     state: "Arunachal Pradesh",
     tagline: "India’s Easternmost Remote Biodiversity Hotspot",
@@ -533,7 +533,7 @@ const ParkData = [
     ]
   },
   {
-    id: "silent-valley-national-park",
+    id: "silent-valley-nt-park",
     name: "Silent Valley National Park",
     state: "Kerala",
     tagline: "An Untouched Evergreen Rainforest Ecosystem",
