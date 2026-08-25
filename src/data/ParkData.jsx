@@ -169,7 +169,7 @@ const ParkData = [
     ]
   },
   {
-    id: 7,
+    id: "bandipur-nt-park",
     name: "Bandipur National Park",
     state: "Karnataka",
     tagline: "A Pristine Jewel of the Nilgiri Biosphere",
@@ -197,7 +197,7 @@ const ParkData = [
     ]
   },
   {
-    id: "periyar-national-park",
+    id: "periyar-nt-park",
     name: "Periyar National Park",
     state: "Kerala",
     tagline: "The Enchanting Elephant Haven around Periyar Lake",
@@ -225,7 +225,7 @@ const ParkData = [
     ]
   },
   {
-    id: "hemis-national-park",
+    id: "hemis-nt-park",
     name: "Hemis National Park",
     state: "Ladakh",
     tagline: "High-Altitude Wilderness & Realm of the Snow Leopard",
